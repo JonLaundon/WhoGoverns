@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "office.schema.json",
+  "title": "Office (reduced — Spiral 1 A4 exception)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["office_id", "title", "body_id", "record_status"],
+  "properties": {
+    "office_id": { "type": "string" },
+    "title": { "type": "string" },
+    "body_id": { "type": "string" },
+    "office_type": { "type": "string", "enum": ["secretary_of_state", "minister_of_state", "parliamentary_under_secretary", "permanent_secretary", "other"] },
+    "source_ids": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": ["string", "null"] },
+    "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] },
+    "last_reviewed": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+  }
+}

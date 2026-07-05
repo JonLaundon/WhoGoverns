@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "relationship.schema.json",
+  "title": "Relationship",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["relationship_id", "from_body_id", "to_body_id", "relationship_type"],
+  "properties": {
+    "relationship_id": { "type": "string" },
+    "from_body_id": { "type": "string" },
+    "to_body_id": { "type": "string" },
+    "relationship_type": { "type": "string", "enum": ["sponsors", "accountable_to", "appoints", "funds", "regulates", "consults", "consents_to", "delegates_to", "reports_to", "audits", "other"] },
+    "source_id": { "type": ["string", "null"] },
+    "citation": { "type": "object" },
+    "start_date": { "type": ["string", "null"] },
+    "end_date": { "type": ["string", "null"] },
+    "legal_status": { "type": "string", "enum": ["current", "repealed", "prospective", "historical", "unknown"] },
+    "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] }
+  }
+}

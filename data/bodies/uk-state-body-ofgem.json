@@ -1,0 +1,24 @@
+{
+  "body_id": "uk-state-body-ofgem",
+  "name": "Ofgem",
+  "other_names": ["Office of Gas and Electricity Markets"],
+  "status": "active",
+  "body_type": "non_ministerial_department",
+  "jurisdiction": ["UK"],
+  "sponsor_department_id": "uk-state-body-department-for-energy-security-and-net-zero",
+  "parent_body_id": null,
+  "govuk_organisation_slug": "ofgem",
+  "external_ids": {
+    "govuk_content_id": "844d0880-14b1-4de1-bfb6-f233f3d5ae1d",
+    "govuk_analytics_identifier": "D108",
+    "company_number": null,
+    "charity_number": null
+  },
+  "founding_source_ids": [],
+  "framework_document_source_ids": [],
+  "annual_report_source_ids": [],
+  "classification_source_ids": ["source-official-dataset-govuk-organisations-api"],
+  "notes": "Non-ministerial department; the GB energy market regulator (statutory authority is GEMA, to model in Spiral 2). Sponsor DESNZ per API. Jurisdiction placeholder UK; actual remit GB — see issues/uncertain-records.md. Seed schema-test record.",
+  "record_status": "draft",
+  "last_reviewed": "2026-07-05"
+}

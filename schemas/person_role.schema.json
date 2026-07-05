@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "person_role.schema.json",
+  "title": "PersonRole (reduced — Spiral 1 A4 exception)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["person_role_id", "person_name", "body_id", "record_status"],
+  "properties": {
+    "person_role_id": { "type": "string" },
+    "person_name": { "type": "string" },
+    "office_id": { "type": ["string", "null"] },
+    "body_id": { "type": "string" },
+    "start_date": { "type": ["string", "null"] },
+    "end_date": { "type": ["string", "null"] },
+    "is_current": { "type": "boolean" },
+    "source_ids": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": ["string", "null"] },
+    "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] },
+    "last_reviewed": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+  }
+}

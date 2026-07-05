@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "source.schema.json",
+  "title": "Source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["source_id", "title", "source_type", "url", "accessed_date"],
+  "properties": {
+    "source_id": { "type": "string" },
+    "title": { "type": "string" },
+    "source_type": { "type": "string", "enum": ["act", "statutory_instrument", "framework_document", "annual_report", "official_dataset", "guidance", "direction", "delegation_scheme", "other"] },
+    "publisher": { "type": ["string", "null"] },
+    "url": { "type": "string", "format": "uri" },
+    "accessed_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "publication_date": { "type": ["string", "null"] },
+    "version_date": { "type": ["string", "null"] },
+    "legal_status": { "type": "string", "enum": ["current", "repealed", "prospective", "historical", "unknown"] },
+    "licence": { "type": ["string", "null"] },
+    "notes": { "type": ["string", "null"] }
+  }
+}

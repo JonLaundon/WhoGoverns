@@ -1,0 +1,1 @@
+{ "vocab": "record_status", "version": "0.1", "terms": ["draft", "extracted", "verified", "published", "deprecated"] }

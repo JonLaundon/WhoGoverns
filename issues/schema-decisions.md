@@ -1,0 +1,5 @@
+# Schema decisions log
+
+- **2026-07-05 — Spiral 1 active schema set.** Annex A13.1 lists the "five core schemas (Body, Source, Power, Duty, Veto)". The Spiral 1 POC populates Body, Source, Office, PersonRole, Relationship, Budget and Staffing, but **not** Power/Duty/Veto (deferred to Spiral 2). So the active/validated set for Spiral 1 is those seven; Power/Duty/Veto ship as draft stubs and are not validated against. Reasoned deviation from the literal A13.1 list, which predates the v0.3 officeholder/finance POC scope. Flag for sponsor review.
+- **2026-07-05 — `external_ids` object added to Body schema.** To store the GOV.UK `content_id` and `analytics_identifier` (stable external IDs, A5.1 intent) without polluting the top-level record. Holds govuk_content_id, govuk_analytics_identifier, company_number, charity_number.
+- **2026-07-05 — `status` vs `govuk_status`.** GOV.UK `govuk_status` values live/exempt both map to body `status = active` (exempt = exempt from GOV.UK publishing, not inactive). closed -> closed.

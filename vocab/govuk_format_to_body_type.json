@@ -1,0 +1,18 @@
+{
+  "vocab": "govuk_format_to_body_type",
+  "version": "0.1",
+  "note": "Maps the GOV.UK Organisations API 'format' string to the canonical body_type. 'Sub organisation', 'Court' and 'Devolved administration' are out of Spiral 1 scope; mapped to 'other' with review flag.",
+  "map": {
+    "Ministerial department": "ministerial_department",
+    "Non-ministerial department": "non_ministerial_department",
+    "Executive agency": "executive_agency",
+    "Executive non-departmental public body": "non_departmental_public_body",
+    "Advisory non-departmental public body": "advisory_body",
+    "Tribunal non-departmental public body": "tribunal",
+    "Public corporation": "public_corporation",
+    "Sub organisation": "other",
+    "Court": "other",
+    "Devolved administration": "other",
+    "Other": "other"
+  }
+}

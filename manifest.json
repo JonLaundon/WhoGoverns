@@ -1,0 +1,9 @@
+{
+  "project": "WhoGoverns",
+  "working_name": "The State Machine",
+  "annex_a_version": "0.3",
+  "spiral": 1,
+  "generated": null,
+  "record_counts": {},
+  "notes": "Empty manifest; populated by compile.py at build time."
+}

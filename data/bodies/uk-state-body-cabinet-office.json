@@ -1,0 +1,24 @@
+{
+  "body_id": "uk-state-body-cabinet-office",
+  "name": "Cabinet Office",
+  "other_names": [],
+  "status": "active",
+  "body_type": "ministerial_department",
+  "jurisdiction": ["UK"],
+  "sponsor_department_id": null,
+  "parent_body_id": null,
+  "govuk_organisation_slug": "cabinet-office",
+  "external_ids": {
+    "govuk_content_id": "96ae61d6-c2a1-48cb-8e67-da9d105ae381",
+    "govuk_analytics_identifier": "D2",
+    "company_number": null,
+    "charity_number": null
+  },
+  "founding_source_ids": [],
+  "framework_document_source_ids": [],
+  "annual_report_source_ids": [],
+  "classification_source_ids": ["source-official-dataset-govuk-organisations-api"],
+  "notes": "Live ministerial department per GOV.UK Organisations API (govuk_status live). Seed schema-test record.",
+  "record_status": "draft",
+  "last_reviewed": "2026-07-05"
+}

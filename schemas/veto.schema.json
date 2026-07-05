@@ -1,0 +1,7 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "veto.schema.json",
+  "title": "Veto (DRAFT — inactive until Spiral 2)",
+  "$comment": "Placeholder. Full schema per Annex A6 lands when Spiral 2 begins. validate.py does not validate against draft schemas.",
+  "type": "object"
+}

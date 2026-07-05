@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "staffing.schema.json",
+  "title": "Staffing",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["staffing_record_id", "body_id", "period", "metric", "value"],
+  "properties": {
+    "staffing_record_id": { "type": "string" },
+    "body_id": { "type": "string" },
+    "period": { "type": "string" },
+    "metric": { "type": "string", "enum": ["headcount", "fte"] },
+    "value": { "type": "number" },
+    "staff_group": { "type": "string", "enum": ["all", "civil_service", "senior_civil_service", "contractor", "other"] },
+    "source_id": { "type": ["string", "null"] },
+    "citation": { "type": "object" },
+    "notes": { "type": ["string", "null"] },
+    "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] }
+  }
+}
