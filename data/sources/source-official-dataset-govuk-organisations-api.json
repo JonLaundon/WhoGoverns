@@ -9,5 +9,5 @@
   "version_date": "2026-07-05",
   "legal_status": "current",
   "licence": "Open Government Licence v3.0",
-  "notes": "Machine-readable register of public organisations. Fields used: format, parent/child_organisations, govuk_status, content_id, analytics_identifier."
+  "notes": "Machine-readable register of public organisations. Fields used: format, parent/child_organisations, govuk_status, content_id, analytics_identifier. Raw pages cached under data/sources/raw/govuk-organisations-api/ by ingest_organisations.py. This access: 63 pages, 1255 organisations."
 }
