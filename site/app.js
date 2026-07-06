@@ -186,8 +186,9 @@ function init(graph) {
     }
     d.forming = d.status === "forming";
     const aliases = (d.other_names || []).join(" ");
+    const alsoHolds = (d.also_holds || []).join(" ");
     searchIndex.push({ id: d.id, label: d.label, sub: subOf(d),
-      text: (d.label + " " + aliases + " " + (d.holder || "")).toLowerCase() });
+      text: (d.label + " " + aliases + " " + (d.holder || "") + " " + alsoHolds).toLowerCase() });
   });
 
   cy = cytoscape({
@@ -419,8 +420,8 @@ function officeHtml(d) {
       <dt>Current holder</dt><dd>${esc(d.holder || "—")}</dd>
       ${d.holder_since ? `<dt>In post since</dt><dd>${esc(d.holder_since)}</dd>` : ""}
       <dt>Hosted at</dt><dd>${gotoBtn(d.body_id)}</dd>
-      ${d.holder_count > 1 ? `<dt>Holders</dt><dd>${d.holder_count}</dd>` : ""}
     </dl>
+    ${(d.also_holds && d.also_holds.length) ? `<h3>Also holds</h3><ul>${d.also_holds.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>` : ""}
     <h3>Source</h3>
     <p class="src">Appointment from the GOV.UK content API
       (<code>ordered_ministers → role_appointments</code>), Open Government Licence v3.0.
@@ -436,7 +437,7 @@ function buildLegend() {
     }).join("");
   $("#legend").innerHTML =
     `<p class="fhint">Click a type — or a heading — to show/hide it.</p>` +
-    group("Officials", ["prime_minister", "cabinet_minister", "junior_minister", "independent_official", "civil_servant"], OFFICE_TYPES, "office") +
+    group("Officials", ["prime_minister", "cabinet_minister", "junior_minister", "independent_official", "civil_servant", "other"], OFFICE_TYPES, "office") +
     group("Departments", ["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate"], BODY_TYPES, "dept") +
     group("Public bodies", ["executive_ndpb", "advisory_ndpb", "tribunal", "public_corporation", "royal_charter_body", "other_body"], BODY_TYPES, "pub") +
     `<h3>Links</h3>` +

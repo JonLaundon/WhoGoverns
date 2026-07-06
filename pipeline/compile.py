@@ -67,24 +67,43 @@ def build_graph(bodies, relationships, offices, person_roles):
             "govuk_slug": b.get("govuk_organisation_slug"),
             "other_names": b.get("other_names", []),
         }})
+    # Consolidate offices by person: one node per office-holder, at their most senior
+    # office. A person's other titles (the PM is also First Lord of the Treasury, etc.)
+    # fold into that node's `also_holds` instead of spawning extra nodes — which also
+    # clears the stray "other" office nodes that weren't in the PM's leads chain.
+    holder_of = {}
+    for pr in person_roles:
+        if pr.get("is_current") and pr["office_id"] not in holder_of:
+            holder_of[pr["office_id"]] = pr["person_name"]
+    seniority = {"prime_minister": 5, "cabinet_minister": 4, "junior_minister": 3,
+                 "independent_official": 2, "civil_servant": 2, "other": 1}
+    by_person = {}
     for o in offices:
+        person = holder_of.get(o["office_id"])
+        if person:
+            by_person.setdefault(person, []).append(o)
+    primary_ids, also_holds = set(), {}
+    for offs in by_person.values():
+        offs.sort(key=lambda o: (-seniority.get(o.get("office_type"), 0), o["office_id"]))
+        primary_ids.add(offs[0]["office_id"])
+        also_holds[offs[0]["office_id"]] = [o["title"] for o in offs[1:]]
+    for o in offices:
+        if o["office_id"] not in holder_of:
+            primary_ids.add(o["office_id"])   # an office with no current holder stands alone
+
+    for o in offices:
+        if o["office_id"] not in primary_ids:
+            continue
         held = holders.get(o["office_id"], [])
         nodes.append({"data": {
-            "id": o["office_id"],
-            "label": o["title"],
-            "kind": "office",
-            "office_type": o.get("office_type"),
-            "body_id": o["body_id"],
+            "id": o["office_id"], "label": o["title"], "kind": "office",
+            "office_type": o.get("office_type"), "body_id": o["body_id"],
             "holder": held[0][0] if held else None,
             "holder_since": held[0][1] if held else None,
-            "holder_count": len(held),
+            "also_holds": also_holds.get(o["office_id"], []),
         }})
-        edges.append({"data": {
-            "id": "hostedge-" + o["office_id"],
-            "source": o["office_id"],
-            "target": o["body_id"],
-            "kind": "office_of",
-        }})
+        edges.append({"data": {"id": "hostedge-" + o["office_id"],
+                               "source": o["office_id"], "target": o["body_id"], "kind": "office_of"}})
     for r in relationships:
         edges.append({"data": {
             "id": r["relationship_id"],
@@ -97,15 +116,17 @@ def build_graph(bodies, relationships, offices, person_roles):
     # flagged derived:true): the Prime Minister leads the cabinet; within a department
     # its cabinet minister(s) lead its junior ministers. This is what makes the map read
     # as an org chart (PM -> cabinet -> junior) rather than each office floating by its body.
-    pm = next((o for o in offices if o.get("office_type") == "prime_minister"), None)
+    pm = next((o for o in offices if o.get("office_type") == "prime_minister" and o["office_id"] in primary_ids), None)
     by_body = {}
     for o in offices:
-        by_body.setdefault(o["body_id"], []).append(o)
+        if o["office_id"] in primary_ids:
+            by_body.setdefault(o["body_id"], []).append(o)
     if pm:
-        for c in (o for o in offices if o.get("office_type") == "cabinet_minister"):
-            edges.append({"data": {"id": "leads-{}-{}".format(pm["office_id"], c["office_id"]),
-                                   "source": pm["office_id"], "target": c["office_id"],
-                                   "kind": "leads", "derived": True}})
+        for c in offices:
+            if c.get("office_type") == "cabinet_minister" and c["office_id"] in primary_ids:
+                edges.append({"data": {"id": "leads-{}-{}".format(pm["office_id"], c["office_id"]),
+                                       "source": pm["office_id"], "target": c["office_id"],
+                                       "kind": "leads", "derived": True}})
     for offs in by_body.values():
         cabs = [o for o in offs if o.get("office_type") == "cabinet_minister"]
         juns = [o for o in offs if o.get("office_type") == "junior_minister"]

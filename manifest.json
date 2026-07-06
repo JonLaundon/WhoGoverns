@@ -1,9 +1,9 @@
 {
   "annex_a_version": "0.4",
-  "generated": "2026-07-06T14:26:00",
+  "generated": "2026-07-06T18:25:02",
   "graph": {
-    "edges": 890,
-    "nodes": 788
+    "edges": 848,
+    "nodes": 764
   },
   "notes": "Compiled by pipeline/compile.py from data/. graph.json is the map contract; state_machine.sqlite is the query mirror (gitignored, regenerable).",
   "project": "WhoGoverns",

@@ -49,14 +49,6 @@
     },
     {
       "data": {
-        "id": "hostedge-office-deputy-leader-of-the-house-of-lords-2",
-        "kind": "office_of",
-        "source": "office-deputy-leader-of-the-house-of-lords-2",
-        "target": "uk-state-body-office-of-the-leader-of-the-house-of-lords"
-      }
-    },
-    {
-      "data": {
         "id": "hostedge-office-deputy-prime-minister-4",
         "kind": "office_of",
         "source": "office-deputy-prime-minister-4",
@@ -85,22 +77,6 @@
         "kind": "office_of",
         "source": "office-financial-secretary-to-the-treasury",
         "target": "uk-state-body-hm-treasury"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-first-lord-of-the-treasury",
-        "kind": "office_of",
-        "source": "office-first-lord-of-the-treasury",
-        "target": "uk-state-body-prime-ministers-office-10-downing-street"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-government-spokesperson-for-equalities-2",
-        "kind": "office_of",
-        "source": "office-government-spokesperson-for-equalities-2",
-        "target": "uk-state-body-office-of-the-leader-of-the-house-of-lords"
       }
     },
     {
@@ -137,62 +113,6 @@
     },
     {
       "data": {
-        "id": "hostedge-office-lord-president-of-the-council",
-        "kind": "office_of",
-        "source": "office-lord-president-of-the-council",
-        "target": "uk-state-body-the-office-of-the-leader-of-the-house-of-commons"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-lord-privy-seal",
-        "kind": "office_of",
-        "source": "office-lord-privy-seal",
-        "target": "uk-state-body-office-of-the-leader-of-the-house-of-lords"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-minister-for-intergovernmental-relations",
-        "kind": "office_of",
-        "source": "office-minister-for-intergovernmental-relations",
-        "target": "uk-state-body-cabinet-office"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-minister-for-the-civil-service",
-        "kind": "office_of",
-        "source": "office-minister-for-the-civil-service",
-        "target": "uk-state-body-prime-ministers-office-10-downing-street"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-minister-for-the-constitution-and-european-union-relations",
-        "kind": "office_of",
-        "source": "office-minister-for-the-constitution-and-european-union-relations",
-        "target": "uk-state-body-cabinet-office"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-minister-for-the-union",
-        "kind": "office_of",
-        "source": "office-minister-for-the-union",
-        "target": "uk-state-body-prime-ministers-office-10-downing-street"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-minister-for-women-and-equalities-3",
-        "kind": "office_of",
-        "source": "office-minister-for-women-and-equalities-3",
-        "target": "uk-state-body-department-for-education"
-      }
-    },
-    {
-      "data": {
         "id": "hostedge-office-minister-for-women-and-equalities-4",
         "kind": "office_of",
         "source": "office-minister-for-women-and-equalities-4",
@@ -205,14 +125,6 @@
         "kind": "office_of",
         "source": "office-minister-of-state-174",
         "target": "uk-state-body-cabinet-office"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-minister-of-state-175",
-        "kind": "office_of",
-        "source": "office-minister-of-state-175",
-        "target": "uk-state-body-department-for-education"
       }
     },
     {
@@ -305,22 +217,6 @@
     },
     {
       "data": {
-        "id": "hostedge-office-minister-of-state-197",
-        "kind": "office_of",
-        "source": "office-minister-of-state-197",
-        "target": "uk-state-body-cabinet-office"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-minister-of-state-198",
-        "kind": "office_of",
-        "source": "office-minister-of-state-198",
-        "target": "uk-state-body-cabinet-office"
-      }
-    },
-    {
-      "data": {
         "id": "hostedge-office-minister-of-state-201",
         "kind": "office_of",
         "source": "office-minister-of-state-201",
@@ -389,14 +285,6 @@
         "kind": "office_of",
         "source": "office-minister-of-state-international-development-latin-america-and-caribbean",
         "target": "uk-state-body-foreign-commonwealth-development-office"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-minister-of-state-minister-for-digital-government-and-data",
-        "kind": "office_of",
-        "source": "office-minister-of-state-minister-for-digital-government-and-data",
-        "target": "uk-state-body-department-for-culture-media-and-sport"
       }
     },
     {
@@ -493,14 +381,6 @@
         "kind": "office_of",
         "source": "office-parliamentary-secretary-18",
         "target": "uk-state-body-office-of-the-leader-of-the-house-of-lords"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-parliamentary-under-secretary-of-state-205",
-        "kind": "office_of",
-        "source": "office-parliamentary-under-secretary-of-state-205",
-        "target": "uk-state-body-department-for-work-pensions"
       }
     },
     {
@@ -665,26 +545,10 @@
     },
     {
       "data": {
-        "id": "hostedge-office-parliamentary-under-secretary-of-state-293",
-        "kind": "office_of",
-        "source": "office-parliamentary-under-secretary-of-state-293",
-        "target": "uk-state-body-department-for-education"
-      }
-    },
-    {
-      "data": {
         "id": "hostedge-office-parliamentary-under-secretary-of-state-294",
         "kind": "office_of",
         "source": "office-parliamentary-under-secretary-of-state-294",
         "target": "uk-state-body-department-for-business-and-trade"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-parliamentary-under-secretary-of-state-296",
-        "kind": "office_of",
-        "source": "office-parliamentary-under-secretary-of-state-296",
-        "target": "uk-state-body-cabinet-office"
       }
     },
     {
@@ -705,26 +569,10 @@
     },
     {
       "data": {
-        "id": "hostedge-office-parliamentary-under-secretary-of-state-301",
-        "kind": "office_of",
-        "source": "office-parliamentary-under-secretary-of-state-301",
-        "target": "uk-state-body-ministry-of-justice"
-      }
-    },
-    {
-      "data": {
         "id": "hostedge-office-parliamentary-under-secretary-of-state-302",
         "kind": "office_of",
         "source": "office-parliamentary-under-secretary-of-state-302",
         "target": "uk-state-body-department-for-science-innovation-and-technology"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-parliamentary-under-secretary-of-state-304",
-        "kind": "office_of",
-        "source": "office-parliamentary-under-secretary-of-state-304",
-        "target": "uk-state-body-department-for-transport"
       }
     },
     {
@@ -801,14 +649,6 @@
     },
     {
       "data": {
-        "id": "hostedge-office-parliamentary-under-secretary-of-state-minister-for-equalities-3",
-        "kind": "office_of",
-        "source": "office-parliamentary-under-secretary-of-state-minister-for-equalities-3",
-        "target": "uk-state-body-department-for-education"
-      }
-    },
-    {
-      "data": {
         "id": "hostedge-office-parliamentary-under-secretary-of-state-minister-for-industry",
         "kind": "office_of",
         "source": "office-parliamentary-under-secretary-of-state-minister-for-industry",
@@ -837,14 +677,6 @@
         "kind": "office_of",
         "source": "office-paymaster-general",
         "target": "uk-state-body-cabinet-office"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-president-of-the-board-of-trade",
-        "kind": "office_of",
-        "source": "office-president-of-the-board-of-trade",
-        "target": "uk-state-body-department-for-business-and-trade"
       }
     },
     {
@@ -921,14 +753,6 @@
     },
     {
       "data": {
-        "id": "hostedge-office-secretary-of-state-for-justice",
-        "kind": "office_of",
-        "source": "office-secretary-of-state-for-justice",
-        "target": "uk-state-body-ministry-of-justice"
-      }
-    },
-    {
-      "data": {
         "id": "hostedge-office-secretary-of-state-for-northern-ireland",
         "kind": "office_of",
         "source": "office-secretary-of-state-for-northern-ireland",
@@ -989,22 +813,6 @@
         "kind": "office_of",
         "source": "office-solicitor-general",
         "target": "uk-state-body-attorney-generals-office"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-uk-special-envoy-for-lgbt-rights",
-        "kind": "office_of",
-        "source": "office-uk-special-envoy-for-lgbt-rights",
-        "target": "uk-state-body-office-of-the-leader-of-the-house-of-lords"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-uk-special-envoy-on-preventing-sexual-violence-in-conflict",
-        "kind": "office_of",
-        "source": "office-uk-special-envoy-on-preventing-sexual-violence-in-conflict",
-        "target": "uk-state-body-foreign-commonwealth-development-office"
       }
     },
     {
@@ -6266,15 +6074,6 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-prime-minister-office-secretary-of-state-for-justice",
-        "kind": "leads",
-        "source": "office-prime-minister",
-        "target": "office-secretary-of-state-for-justice"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
         "id": "leads-office-prime-minister-office-secretary-of-state-for-northern-ireland",
         "kind": "leads",
         "source": "office-prime-minister",
@@ -6347,27 +6146,9 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-secretary-of-state-for-justice-office-assistant-whip-house-of-commons-6",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-justice",
-        "target": "office-assistant-whip-house-of-commons-6"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
         "id": "leads-office-deputy-prime-minister-4-office-minister-of-state-180",
         "kind": "leads",
         "source": "office-deputy-prime-minister-4",
-        "target": "office-minister-of-state-180"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-justice-office-minister-of-state-180",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-justice",
         "target": "office-minister-of-state-180"
       }
     },
@@ -6383,27 +6164,9 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-secretary-of-state-for-justice-office-minister-of-state-minister-for-prisons",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-justice",
-        "target": "office-minister-of-state-minister-for-prisons"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
         "id": "leads-office-deputy-prime-minister-4-office-parliamentary-under-secretary-of-state-246",
         "kind": "leads",
         "source": "office-deputy-prime-minister-4",
-        "target": "office-parliamentary-under-secretary-of-state-246"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-justice-office-parliamentary-under-secretary-of-state-246",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-justice",
         "target": "office-parliamentary-under-secretary-of-state-246"
       }
     },
@@ -6414,33 +6177,6 @@
         "kind": "leads",
         "source": "office-deputy-prime-minister-4",
         "target": "office-parliamentary-under-secretary-of-state-284"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-justice-office-parliamentary-under-secretary-of-state-284",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-justice",
-        "target": "office-parliamentary-under-secretary-of-state-284"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-deputy-prime-minister-4-office-parliamentary-under-secretary-of-state-301",
-        "kind": "leads",
-        "source": "office-deputy-prime-minister-4",
-        "target": "office-parliamentary-under-secretary-of-state-301"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-justice-office-parliamentary-under-secretary-of-state-301",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-justice",
-        "target": "office-parliamentary-under-secretary-of-state-301"
       }
     },
     {
@@ -6468,24 +6204,6 @@
         "kind": "leads",
         "source": "office-paymaster-general",
         "target": "office-minister-of-state-174"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-chancellor-of-the-duchy-of-lancaster-office-minister-of-state-198",
-        "kind": "leads",
-        "source": "office-chancellor-of-the-duchy-of-lancaster",
-        "target": "office-minister-of-state-198"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-paymaster-general-office-minister-of-state-198",
-        "kind": "leads",
-        "source": "office-paymaster-general",
-        "target": "office-minister-of-state-198"
       }
     },
     {
@@ -6581,24 +6299,6 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-chancellor-of-the-duchy-of-lancaster-office-parliamentary-under-secretary-of-state-296",
-        "kind": "leads",
-        "source": "office-chancellor-of-the-duchy-of-lancaster",
-        "target": "office-parliamentary-under-secretary-of-state-296"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-paymaster-general-office-parliamentary-under-secretary-of-state-296",
-        "kind": "leads",
-        "source": "office-paymaster-general",
-        "target": "office-parliamentary-under-secretary-of-state-296"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
         "id": "leads-office-chancellor-of-the-exchequer-office-economic-secretary-to-the-treasury-3",
         "kind": "leads",
         "source": "office-chancellor-of-the-exchequer",
@@ -6653,15 +6353,6 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-leader-of-the-house-of-lords-office-parliamentary-secretary-18",
-        "kind": "leads",
-        "source": "office-leader-of-the-house-of-lords",
-        "target": "office-parliamentary-secretary-18"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
         "id": "leads-office-secretary-of-state-for-transport-office-junior-lord-of-the-treasury-government-whip-9",
         "kind": "leads",
         "source": "office-secretary-of-state-for-transport",
@@ -6698,10 +6389,10 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-secretary-of-state-for-transport-office-parliamentary-under-secretary-of-state-304",
+        "id": "leads-office-leader-of-the-house-of-lords-office-parliamentary-secretary-18",
         "kind": "leads",
-        "source": "office-secretary-of-state-for-transport",
-        "target": "office-parliamentary-under-secretary-of-state-304"
+        "source": "office-leader-of-the-house-of-lords",
+        "target": "office-parliamentary-secretary-18"
       }
     },
     {
@@ -6711,15 +6402,6 @@
         "kind": "leads",
         "source": "office-secretary-of-state-for-education",
         "target": "office-minister-for-women-and-equalities-4"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-education-office-minister-of-state-175",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-education",
-        "target": "office-minister-of-state-175"
       }
     },
     {
@@ -6765,24 +6447,6 @@
         "kind": "leads",
         "source": "office-secretary-of-state-for-education",
         "target": "office-parliamentary-under-secretary-of-state-283"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-education-office-parliamentary-under-secretary-of-state-293",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-education",
-        "target": "office-parliamentary-under-secretary-of-state-293"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-education-office-parliamentary-under-secretary-of-state-minister-for-equalities-3",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-education",
-        "target": "office-parliamentary-under-secretary-of-state-minister-for-equalities-3"
       }
     },
     {
@@ -7031,15 +6695,6 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-secretary-of-state-for-work-and-pensions-office-parliamentary-under-secretary-of-state-205",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-work-and-pensions",
-        "target": "office-parliamentary-under-secretary-of-state-205"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
         "id": "leads-office-secretary-of-state-for-work-and-pensions-office-parliamentary-under-secretary-of-state-260",
         "kind": "leads",
         "source": "office-secretary-of-state-for-work-and-pensions",
@@ -7107,15 +6762,6 @@
         "kind": "leads",
         "source": "office-secretary-of-state-for-culture-media-and-sport-3",
         "target": "office-minister-of-state-210"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-culture-media-and-sport-3-office-minister-of-state-minister-for-digital-government-and-data",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-culture-media-and-sport-3",
-        "target": "office-minister-of-state-minister-for-digital-government-and-data"
       }
     },
     {
@@ -7254,7 +6900,7 @@
       }
     }
   ],
-  "generated": "2026-07-06T14:26:00",
+  "generated": "2026-07-06T18:25:02",
   "nodes": [
     {
       "data": {
@@ -16791,9 +16437,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Parliamentary Under-Secretary of State for Sentencing, Youth Justice and International"
+        ],
         "body_id": "uk-state-body-ministry-of-justice",
         "holder": "Jake Richards MP",
-        "holder_count": 1,
         "holder_since": "2025-09-07",
         "id": "office-assistant-whip-house-of-commons-6",
         "kind": "office",
@@ -16803,9 +16451,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-attorney-generals-office",
         "holder": "The Rt Hon Lord Hermer KC",
-        "holder_count": 1,
         "holder_since": "2024-07-05",
         "id": "office-attorney-general",
         "kind": "office",
@@ -16815,9 +16463,12 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Minister for Intergovernmental Relations",
+          "Chief Secretary to the Prime Minister"
+        ],
         "body_id": "uk-state-body-cabinet-office",
         "holder": "The Rt Hon Darren Jones MP",
-        "holder_count": 1,
         "holder_since": "2025-09-05",
         "id": "office-chancellor-of-the-duchy-of-lancaster",
         "kind": "office",
@@ -16827,9 +16478,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-hm-treasury",
         "holder": "The Rt Hon Rachel Reeves MP",
-        "holder_count": 1,
         "holder_since": "2024-07-05",
         "id": "office-chancellor-of-the-exchequer",
         "kind": "office",
@@ -16839,9 +16490,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-hm-treasury",
         "holder": "Lucy Rigby KC MP",
-        "holder_count": 1,
         "holder_since": "2026-05-14",
         "id": "office-chief-secretary-to-the-treasury",
         "kind": "office",
@@ -16851,21 +16502,11 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
-        "holder": "Lord Collins of Highbury",
-        "holder_count": 1,
-        "holder_since": "2024-07-09",
-        "id": "office-deputy-leader-of-the-house-of-lords-2",
-        "kind": "office",
-        "label": "Deputy Leader of the House of Lords",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [
+          "Lord Chancellor and Secretary of State for Justice"
+        ],
         "body_id": "uk-state-body-ministry-of-justice",
         "holder": "The Rt Hon David Lammy MP",
-        "holder_count": 1,
         "holder_since": "2025-09-05",
         "id": "office-deputy-prime-minister-4",
         "kind": "office",
@@ -16875,9 +16516,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-hm-treasury",
         "holder": "Rachel Blake MP",
-        "holder_count": 1,
         "holder_since": "2026-05-14",
         "id": "office-economic-secretary-to-the-treasury-3",
         "kind": "office",
@@ -16887,9 +16528,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-hm-treasury",
         "holder": "Daniel Tomlinson MP",
-        "holder_count": 1,
         "holder_since": "2025-09-01",
         "id": "office-exchequer-secretary-to-the-treasury",
         "kind": "office",
@@ -16899,9 +16540,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-hm-treasury",
         "holder": "Lord Livermore",
-        "holder_count": 1,
         "holder_since": "2024-07-08",
         "id": "office-financial-secretary-to-the-treasury",
         "kind": "office",
@@ -16911,33 +16552,9 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-prime-ministers-office-10-downing-street",
-        "holder": "The Rt Hon Sir Keir Starmer KCB KC MP",
-        "holder_count": 1,
-        "holder_since": "2024-07-05",
-        "id": "office-first-lord-of-the-treasury",
-        "kind": "office",
-        "label": "First Lord of the Treasury",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
-        "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
-        "holder": "Lord Collins of Highbury",
-        "holder_count": 1,
-        "holder_since": "2024-10-08",
-        "id": "office-government-spokesperson-for-equalities-2",
-        "kind": "office",
-        "label": "Government Spokesperson for Equalities",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-office-of-the-advocate-general-for-scotland",
         "holder": "Baroness Smith of Cluny KC",
-        "holder_count": 1,
         "holder_since": "2024-08-29",
         "id": "office-hm-advocate-general-for-scotland",
         "kind": "office",
@@ -16947,9 +16564,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Parliamentary Under-Secretary of State (Minister for Local Transport)"
+        ],
         "body_id": "uk-state-body-department-for-transport",
         "holder": "Lilian Greenwood MP",
-        "holder_count": 1,
         "holder_since": "2025-09-16",
         "id": "office-junior-lord-of-the-treasury-government-whip-9",
         "kind": "office",
@@ -16959,9 +16578,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Lord President of the Council"
+        ],
         "body_id": "uk-state-body-the-office-of-the-leader-of-the-house-of-commons",
         "holder": "The Rt Hon Sir Alan Campbell MP",
-        "holder_count": 1,
         "holder_since": "2025-09-05",
         "id": "office-leader-of-the-house-of-commons",
         "kind": "office",
@@ -16971,9 +16592,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Lord Privy Seal"
+        ],
         "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
         "holder": "The Rt Hon Baroness Smith of Basildon",
-        "holder_count": 1,
         "holder_since": "2024-07-05",
         "id": "office-leader-of-the-house-of-lords",
         "kind": "office",
@@ -16983,93 +16606,11 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-the-office-of-the-leader-of-the-house-of-commons",
-        "holder": "The Rt Hon Sir Alan Campbell MP",
-        "holder_count": 1,
-        "holder_since": "2025-09-05",
-        "id": "office-lord-president-of-the-council",
-        "kind": "office",
-        "label": "Lord President of the Council",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
-        "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
-        "holder": "The Rt Hon Baroness Smith of Basildon",
-        "holder_count": 1,
-        "holder_since": "2024-07-05",
-        "id": "office-lord-privy-seal",
-        "kind": "office",
-        "label": "Lord Privy Seal",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
-        "body_id": "uk-state-body-cabinet-office",
-        "holder": "The Rt Hon Darren Jones MP",
-        "holder_count": 1,
-        "holder_since": "2025-09-06",
-        "id": "office-minister-for-intergovernmental-relations",
-        "kind": "office",
-        "label": "Minister for Intergovernmental Relations",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
-        "body_id": "uk-state-body-prime-ministers-office-10-downing-street",
-        "holder": "The Rt Hon Sir Keir Starmer KCB KC MP",
-        "holder_count": 1,
-        "holder_since": "2024-07-05",
-        "id": "office-minister-for-the-civil-service",
-        "kind": "office",
-        "label": "Minister for the Civil Service",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
-        "body_id": "uk-state-body-cabinet-office",
-        "holder": "The Rt Hon Nick Thomas–Symonds MP",
-        "holder_count": 1,
-        "holder_since": "2024-07-08",
-        "id": "office-minister-for-the-constitution-and-european-union-relations",
-        "kind": "office",
-        "label": "Minister for the Cabinet Office (Minister for the Constitution and European Union Relations)",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
-        "body_id": "uk-state-body-prime-ministers-office-10-downing-street",
-        "holder": "The Rt Hon Sir Keir Starmer KCB KC MP",
-        "holder_count": 1,
-        "holder_since": "2024-07-05",
-        "id": "office-minister-for-the-union",
-        "kind": "office",
-        "label": "Minister for the Union",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
-        "body_id": "uk-state-body-department-for-education",
-        "holder": "The Rt Hon Bridget Phillipson MP",
-        "holder_count": 1,
-        "holder_since": "2024-07-08",
-        "id": "office-minister-for-women-and-equalities-3",
-        "kind": "office",
-        "label": "Minister for Women and Equalities",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [
+          "Minister of State (Minister for Skills)"
+        ],
         "body_id": "uk-state-body-department-for-education",
         "holder": "The Rt Hon Baroness Smith of Malvern",
-        "holder_count": 1,
         "holder_since": "2025-03-04",
         "id": "office-minister-for-women-and-equalities-4",
         "kind": "office",
@@ -17079,9 +16620,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Minister of State"
+        ],
         "body_id": "uk-state-body-cabinet-office",
         "holder": "Dame Angela Eagle DBE MP",
-        "holder_count": 1,
         "holder_since": "2026-06-12",
         "id": "office-minister-of-state-174",
         "kind": "office",
@@ -17091,21 +16634,9 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-department-for-education",
-        "holder": "The Rt Hon Baroness Smith of Malvern",
-        "holder_count": 1,
-        "holder_since": "2024-07-06",
-        "id": "office-minister-of-state-175",
-        "kind": "office",
-        "label": "Minister of State (Minister for Skills)",
-        "office_type": "junior_minister"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
         "holder": "Matthew Pennycook MP",
-        "holder_count": 1,
         "holder_since": "2024-07-06",
         "id": "office-minister-of-state-176",
         "kind": "office",
@@ -17115,9 +16646,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-foreign-commonwealth-development-office",
         "holder": "Stephen Doughty MP",
-        "holder_count": 1,
         "holder_since": "2024-07-08",
         "id": "office-minister-of-state-178",
         "kind": "office",
@@ -17127,9 +16658,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-justice",
         "holder": "Sarah Sackman KC MP",
-        "holder_count": 1,
         "holder_since": "2024-12-02",
         "id": "office-minister-of-state-180",
         "kind": "office",
@@ -17139,9 +16670,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-of-health-and-social-care",
         "holder": "Stephen Kinnock MP",
-        "holder_count": 1,
         "holder_since": "2024-07-08",
         "id": "office-minister-of-state-182",
         "kind": "office",
@@ -17151,9 +16682,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-education",
         "holder": "Georgia Gould OBE MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-minister-of-state-187",
         "kind": "office",
@@ -17163,9 +16694,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-of-health-and-social-care",
         "holder": "Karin Smyth MP",
-        "holder_count": 1,
         "holder_since": "2024-07-08",
         "id": "office-minister-of-state-188",
         "kind": "office",
@@ -17175,9 +16706,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-defence",
         "holder": "Lord Coaker",
-        "holder_count": 1,
         "holder_since": "2024-07-08",
         "id": "office-minister-of-state-190",
         "kind": "office",
@@ -17187,9 +16718,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-transport",
         "holder": "Lord Hendy of Richmond Hill CBE",
-        "holder_count": 1,
         "holder_since": "2024-07-08",
         "id": "office-minister-of-state-191",
         "kind": "office",
@@ -17199,9 +16730,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-education",
         "holder": "The Rt Hon Sir Stephen Timms MP",
-        "holder_count": 1,
         "holder_since": "2024-07-08",
         "id": "office-minister-of-state-192",
         "kind": "office",
@@ -17211,9 +16742,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-home-office",
         "holder": "The Rt Hon Lord Hanson of Flint",
-        "holder_count": 1,
         "holder_since": "2024-07-09",
         "id": "office-minister-of-state-195",
         "kind": "office",
@@ -17223,9 +16754,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-work-pensions",
         "holder": "Baroness Sherlock OBE",
-        "holder_count": 1,
         "holder_since": "2024-12-17",
         "id": "office-minister-of-state-196",
         "kind": "office",
@@ -17235,33 +16766,9 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-cabinet-office",
-        "holder": "The Rt Hon Darren Jones MP",
-        "holder_count": 1,
-        "holder_since": "2025-09-01",
-        "id": "office-minister-of-state-197",
-        "kind": "office",
-        "label": "Chief Secretary to the Prime Minister",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
-        "body_id": "uk-state-body-cabinet-office",
-        "holder": "Dame Angela Eagle DBE MP",
-        "holder_count": 1,
-        "holder_since": "2026-06-12",
-        "id": "office-minister-of-state-198",
-        "kind": "office",
-        "label": "Minister of State",
-        "office_type": "junior_minister"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
         "holder": "Alison McGovern MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-minister-of-state-201",
         "kind": "office",
@@ -17271,9 +16778,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-work-pensions",
         "holder": "The Rt Hon Dame Diana Johnson DBE MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-minister-of-state-203",
         "kind": "office",
@@ -17283,9 +16790,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-home-office",
         "holder": "Sarah Jones MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-minister-of-state-204",
         "kind": "office",
@@ -17295,9 +16802,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-home-office",
         "holder": "Alex Norris MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-minister-of-state-205",
         "kind": "office",
@@ -17307,9 +16814,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-business-and-trade",
         "holder": "Sir Chris Bryant MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-minister-of-state-206",
         "kind": "office",
@@ -17319,9 +16826,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-defence",
         "holder": "Luke Pollard MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-minister-of-state-207",
         "kind": "office",
@@ -17331,9 +16838,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Minister of State (Minister for Digital Government and Data)"
+        ],
         "body_id": "uk-state-body-department-for-culture-media-and-sport",
         "holder": "The Rt Hon Ian Murray MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-minister-of-state-210",
         "kind": "office",
@@ -17343,9 +16852,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
         "holder": "Stephen Morgan MP",
-        "holder_count": 1,
         "holder_since": "2026-06-12",
         "id": "office-minister-of-state-213",
         "kind": "office",
@@ -17355,9 +16864,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-foreign-commonwealth-development-office",
         "holder": "The Rt Hon Baroness Chapman of Darlington",
-        "holder_count": 1,
         "holder_since": "2025-02-28",
         "id": "office-minister-of-state-international-development-latin-america-and-caribbean",
         "kind": "office",
@@ -17367,21 +16876,9 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-department-for-culture-media-and-sport",
-        "holder": "The Rt Hon Ian Murray MP",
-        "holder_count": 1,
-        "holder_since": "2025-09-06",
-        "id": "office-minister-of-state-minister-for-digital-government-and-data",
-        "kind": "office",
-        "label": "Minister of State (Minister for Digital Government and Data)",
-        "office_type": "junior_minister"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
         "holder": "Michael Shanks MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-minister-of-state-minister-for-energy-2",
         "kind": "office",
@@ -17391,9 +16888,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
         "holder": "Lord Whitehead CBE",
-        "holder_count": 1,
         "holder_since": "2025-11-11",
         "id": "office-minister-of-state-minister-for-energy-security-and-net-zero",
         "kind": "office",
@@ -17403,9 +16900,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-business-and-trade",
         "holder": "Lord Stockwood",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-minister-of-state-minister-for-investment-2",
         "kind": "office",
@@ -17415,9 +16912,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-justice",
         "holder": "Lord Timpson OBE",
-        "holder_count": 1,
         "holder_since": "2024-07-05",
         "id": "office-minister-of-state-minister-for-prisons",
         "kind": "office",
@@ -17427,9 +16924,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
         "holder": "Lord Vallance",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-minister-of-state-minister-for-science-innovation-research-and-nuclear",
         "kind": "office",
@@ -17439,9 +16936,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-cabinet-office",
         "holder": "The Rt Hon Anna Turley MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-minister-of-state-minister-without-portfolio-3",
         "kind": "office",
@@ -17451,9 +16948,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Parliamentary Under-Secretary of State (Minister for Pensions)"
+        ],
         "body_id": "uk-state-body-department-for-work-pensions",
         "holder": "Torsten Bell MP",
-        "holder_count": 1,
         "holder_since": "2025-01-14",
         "id": "office-parliamentary-secretary-13",
         "kind": "office",
@@ -17463,9 +16962,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-cabinet-office",
         "holder": "Chris Ward MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-parliamentary-secretary-14",
         "kind": "office",
@@ -17475,9 +16974,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-cabinet-office",
         "holder": "Satvir Kaur MP",
-        "holder_count": 1,
         "holder_since": "2025-09-07",
         "id": "office-parliamentary-secretary-15",
         "kind": "office",
@@ -17487,9 +16986,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Parliamentary Under-Secretary of State"
+        ],
         "body_id": "uk-state-body-cabinet-office",
         "holder": "James Frith MP",
-        "holder_count": 1,
         "holder_since": "2026-03-03",
         "id": "office-parliamentary-secretary-16",
         "kind": "office",
@@ -17499,9 +17000,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-cabinet-office",
         "holder": "Baroness Anderson of Stoke-on-Trent",
-        "holder_count": 1,
         "holder_since": "2026-03-03",
         "id": "office-parliamentary-secretary-17",
         "kind": "office",
@@ -17511,9 +17012,13 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Deputy Leader of the House of Lords",
+          "Government Spokesperson for Equalities",
+          "UK Special Envoy for LGBT+ Rights"
+        ],
         "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
         "holder": "Lord Collins of Highbury",
-        "holder_count": 1,
         "holder_since": "2026-06-12",
         "id": "office-parliamentary-secretary-18",
         "kind": "office",
@@ -17523,21 +17028,9 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-department-for-work-pensions",
-        "holder": "Torsten Bell MP",
-        "holder_count": 1,
-        "holder_since": "2025-01-14",
-        "id": "office-parliamentary-under-secretary-of-state-205",
-        "kind": "office",
-        "label": "Parliamentary Under-Secretary of State (Minister for Pensions)",
-        "office_type": "junior_minister"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-defence",
         "holder": "Louise Sandher-Jones MP",
-        "holder_count": 1,
         "holder_since": "2026-06-12",
         "id": "office-parliamentary-under-secretary-of-state-245",
         "kind": "office",
@@ -17547,9 +17040,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-justice",
         "holder": "Catherine Atkinson MP",
-        "holder_count": 1,
         "holder_since": "2026-05-12",
         "id": "office-parliamentary-under-secretary-of-state-246",
         "kind": "office",
@@ -17559,9 +17052,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
         "holder": "Baroness Taylor of Stevenage",
-        "holder_count": 1,
         "holder_since": "2024-07-09",
         "id": "office-parliamentary-under-secretary-of-state-250",
         "kind": "office",
@@ -17571,9 +17064,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-of-health-and-social-care",
         "holder": "Baroness Merron",
-        "holder_count": 1,
         "holder_since": "2024-07-09",
         "id": "office-parliamentary-under-secretary-of-state-255",
         "kind": "office",
@@ -17583,9 +17076,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Parliamentary Under-Secretary of State (Minister for Equalities)"
+        ],
         "body_id": "uk-state-body-department-for-education",
         "holder": "Olivia Bailey MP",
-        "holder_count": 1,
         "holder_since": "2025-09-07",
         "id": "office-parliamentary-under-secretary-of-state-256",
         "kind": "office",
@@ -17595,9 +17090,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-education",
         "holder": "Josh MacAlister OBE MP",
-        "holder_count": 1,
         "holder_since": "2025-09-07",
         "id": "office-parliamentary-under-secretary-of-state-257",
         "kind": "office",
@@ -17607,9 +17102,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-work-pensions",
         "holder": "Andrew Western MP",
-        "holder_count": 1,
         "holder_since": "2024-07-09",
         "id": "office-parliamentary-under-secretary-of-state-260",
         "kind": "office",
@@ -17619,9 +17114,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-transport",
         "holder": "Simon Lightwood MP",
-        "holder_count": 1,
         "holder_since": "2024-07-09",
         "id": "office-parliamentary-under-secretary-of-state-266",
         "kind": "office",
@@ -17631,9 +17126,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
         "holder": "Emma Hardy MP",
-        "holder_count": 1,
         "holder_since": "2024-07-09",
         "id": "office-parliamentary-under-secretary-of-state-270",
         "kind": "office",
@@ -17643,9 +17138,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
         "holder": "Baroness Hayman of Ullock",
-        "holder_count": 1,
         "holder_since": "2024-07-09",
         "id": "office-parliamentary-under-secretary-of-state-272",
         "kind": "office",
@@ -17655,9 +17150,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-scotland-office",
         "holder": "Kirsty McNeill MP",
-        "holder_count": 1,
         "holder_since": "2024-07-09",
         "id": "office-parliamentary-under-secretary-of-state-273",
         "kind": "office",
@@ -17667,9 +17162,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-foreign-commonwealth-development-office",
         "holder": "Hamish Falconer MP",
-        "holder_count": 1,
         "holder_since": "2024-07-18",
         "id": "office-parliamentary-under-secretary-of-state-276",
         "kind": "office",
@@ -17679,9 +17174,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
         "holder": "Mary Creagh CBE MP",
-        "holder_count": 1,
         "holder_since": "2024-07-18",
         "id": "office-parliamentary-under-secretary-of-state-278",
         "kind": "office",
@@ -17691,9 +17186,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-home-office",
         "holder": "Mike Tapp MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-parliamentary-under-secretary-of-state-282",
         "kind": "office",
@@ -17703,9 +17198,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Parliamentary Under-Secretary of State (Minister for Equalities)"
+        ],
         "body_id": "uk-state-body-department-for-education",
         "holder": "Seema Malhotra MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-parliamentary-under-secretary-of-state-283",
         "kind": "office",
@@ -17715,9 +17212,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-justice",
         "holder": "Baroness Levitt KC",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-parliamentary-under-secretary-of-state-284",
         "kind": "office",
@@ -17727,9 +17224,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-defence",
         "holder": "Calvin Bailey MBE MP",
-        "holder_count": 1,
         "holder_since": "2026-06-12",
         "id": "office-parliamentary-under-secretary-of-state-287",
         "kind": "office",
@@ -17739,9 +17236,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
         "holder": "Samantha Dixon MBE MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-parliamentary-under-secretary-of-state-289",
         "kind": "office",
@@ -17751,9 +17248,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "UK Special Envoy on Preventing Sexual Violence in Conflict"
+        ],
         "body_id": "uk-state-body-foreign-commonwealth-development-office",
         "holder": "Chris Elmore MP",
-        "holder_count": 1,
         "holder_since": "2025-09-07",
         "id": "office-parliamentary-under-secretary-of-state-290",
         "kind": "office",
@@ -17763,9 +17262,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-business-and-trade",
         "holder": "Blair McDougall MP",
-        "holder_count": 1,
         "holder_since": "2025-09-07",
         "id": "office-parliamentary-under-secretary-of-state-292",
         "kind": "office",
@@ -17775,21 +17274,9 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-department-for-education",
-        "holder": "Olivia Bailey MP",
-        "holder_count": 1,
-        "holder_since": "2025-09-07",
-        "id": "office-parliamentary-under-secretary-of-state-293",
-        "kind": "office",
-        "label": "Parliamentary Under-Secretary of State (Minister for Equalities)",
-        "office_type": "junior_minister"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-business-and-trade",
         "holder": "Kate Dearden MP",
-        "holder_count": 1,
         "holder_since": "2025-09-07",
         "id": "office-parliamentary-under-secretary-of-state-294",
         "kind": "office",
@@ -17799,21 +17286,9 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-cabinet-office",
-        "holder": "James Frith MP",
-        "holder_count": 1,
-        "holder_since": "2026-03-03",
-        "id": "office-parliamentary-under-secretary-of-state-296",
-        "kind": "office",
-        "label": "Parliamentary Under-Secretary of State",
-        "office_type": "junior_minister"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-northern-ireland-office",
         "holder": "Matthew Patrick MP",
-        "holder_count": 1,
         "holder_since": "2025-09-07",
         "id": "office-parliamentary-under-secretary-of-state-297",
         "kind": "office",
@@ -17823,9 +17298,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-transport",
         "holder": "Keir Mather MP",
-        "holder_count": 1,
         "holder_since": "2025-09-07",
         "id": "office-parliamentary-under-secretary-of-state-300",
         "kind": "office",
@@ -17835,21 +17310,9 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-ministry-of-justice",
-        "holder": "Jake Richards MP",
-        "holder_count": 1,
-        "holder_since": "2025-09-07",
-        "id": "office-parliamentary-under-secretary-of-state-301",
-        "kind": "office",
-        "label": "Parliamentary Under-Secretary of State for Sentencing, Youth Justice and International",
-        "office_type": "junior_minister"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-science-innovation-and-technology",
         "holder": "Baroness Lloyd of Effra CBE",
-        "holder_count": 1,
         "holder_since": "2025-09-11",
         "id": "office-parliamentary-under-secretary-of-state-302",
         "kind": "office",
@@ -17859,21 +17322,9 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-department-for-transport",
-        "holder": "Lilian Greenwood MP",
-        "holder_count": 1,
-        "holder_since": "2025-09-16",
-        "id": "office-parliamentary-under-secretary-of-state-304",
-        "kind": "office",
-        "label": "Parliamentary Under-Secretary of State (Minister for Local Transport)",
-        "office_type": "junior_minister"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-of-health-and-social-care",
         "holder": "Sharon Hodgson MP",
-        "holder_count": 1,
         "holder_since": "2026-03-03",
         "id": "office-parliamentary-under-secretary-of-state-306",
         "kind": "office",
@@ -17883,9 +17334,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
         "holder": "Nesil Caliskan MP",
-        "holder_count": 1,
         "holder_since": "2026-05-12",
         "id": "office-parliamentary-under-secretary-of-state-307",
         "kind": "office",
@@ -17895,9 +17346,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-home-office",
         "holder": "Natalie Fleet MP",
-        "holder_count": 1,
         "holder_since": "2026-05-12",
         "id": "office-parliamentary-under-secretary-of-state-308",
         "kind": "office",
@@ -17907,9 +17358,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-of-health-and-social-care",
         "holder": "Preet Kaur Gill MP",
-        "holder_count": 1,
         "holder_since": "2026-05-12",
         "id": "office-parliamentary-under-secretary-of-state-310",
         "kind": "office",
@@ -17919,9 +17370,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-business-and-trade",
         "holder": "Lord Leong CBE",
-        "holder_count": 1,
         "holder_since": "2026-06-12",
         "id": "office-parliamentary-under-secretary-of-state-312",
         "kind": "office",
@@ -17931,9 +17382,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
         "holder": "Lord Lemos CMG CBE",
-        "holder_count": 1,
         "holder_since": "2026-06-12",
         "id": "office-parliamentary-under-secretary-of-state-313",
         "kind": "office",
@@ -17943,9 +17394,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-science-innovation-and-technology",
         "holder": "Kanishka Narayan MP",
-        "holder_count": 1,
         "holder_since": "2025-09-07",
         "id": "office-parliamentary-under-secretary-of-state-minister-for-ai-and-online-safety",
         "kind": "office",
@@ -17955,9 +17406,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
         "holder": "Katie White OBE MP",
-        "holder_count": 1,
         "holder_since": "2025-09-07",
         "id": "office-parliamentary-under-secretary-of-state-minister-for-climate",
         "kind": "office",
@@ -17967,9 +17418,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
         "holder": "Martin McCluskey MP",
-        "holder_count": 1,
         "holder_since": "2025-09-07",
         "id": "office-parliamentary-under-secretary-of-state-minister-for-energy-consumers",
         "kind": "office",
@@ -17979,21 +17430,9 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-department-for-education",
-        "holder": "Seema Malhotra MP",
-        "holder_count": 1,
-        "holder_since": "2024-10-08",
-        "id": "office-parliamentary-under-secretary-of-state-minister-for-equalities-3",
-        "kind": "office",
-        "label": "Parliamentary Under-Secretary of State (Minister for Equalities)",
-        "office_type": "junior_minister"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-business-and-trade",
         "holder": "Chris McDonald MP",
-        "holder_count": 1,
         "holder_since": "2025-09-11",
         "id": "office-parliamentary-under-secretary-of-state-minister-for-industry",
         "kind": "office",
@@ -18003,9 +17442,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-culture-media-and-sport",
         "holder": "Baroness Twycross",
-        "holder_count": 1,
         "holder_since": "2025-09-11",
         "id": "office-parliamentary-under-secretary-of-state-minister-for-museums-heritage-and-gambling-and-lords-minister",
         "kind": "office",
@@ -18015,9 +17454,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-culture-media-and-sport",
         "holder": "Stephanie Peacock MP",
-        "holder_count": 1,
         "holder_since": "2025-09-11",
         "id": "office-parliamentary-under-secretary-of-state-minister-for-sport-tourism-civil-society-and-youth",
         "kind": "office",
@@ -18027,9 +17466,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Minister for the Cabinet Office (Minister for the Constitution and European Union Relations)"
+        ],
         "body_id": "uk-state-body-cabinet-office",
         "holder": "The Rt Hon Nick Thomas–Symonds MP",
-        "holder_count": 1,
         "holder_since": "2024-07-08",
         "id": "office-paymaster-general",
         "kind": "office",
@@ -18039,21 +17480,13 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-department-for-business-and-trade",
-        "holder": "The Rt Hon Peter Kyle MP",
-        "holder_count": 1,
-        "holder_since": "2025-09-05",
-        "id": "office-president-of-the-board-of-trade",
-        "kind": "office",
-        "label": "President of the Board of Trade",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [
+          "First Lord of the Treasury",
+          "Minister for the Civil Service",
+          "Minister for the Union"
+        ],
         "body_id": "uk-state-body-prime-ministers-office-10-downing-street",
         "holder": "The Rt Hon Sir Keir Starmer KCB KC MP",
-        "holder_count": 1,
         "holder_since": "2024-07-05",
         "id": "office-prime-minister",
         "kind": "office",
@@ -18063,9 +17496,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "President of the Board of Trade"
+        ],
         "body_id": "uk-state-body-department-for-business-and-trade",
         "holder": "The Rt Hon Peter Kyle MP",
-        "holder_count": 1,
         "holder_since": "2025-09-05",
         "id": "office-secretary-of-state-2",
         "kind": "office",
@@ -18075,9 +17510,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-culture-media-and-sport",
         "holder": "The Rt Hon Lisa Nandy MP",
-        "holder_count": 1,
         "holder_since": "2024-07-05",
         "id": "office-secretary-of-state-for-culture-media-and-sport-3",
         "kind": "office",
@@ -18087,9 +17522,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-defence",
         "holder": "Dan Jarvis MBE MP",
-        "holder_count": 1,
         "holder_since": "2026-06-11",
         "id": "office-secretary-of-state-for-defence",
         "kind": "office",
@@ -18099,9 +17534,11 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Minister for Women and Equalities"
+        ],
         "body_id": "uk-state-body-department-for-education",
         "holder": "The Rt Hon Bridget Phillipson MP",
-        "holder_count": 1,
         "holder_since": "2024-07-05",
         "id": "office-secretary-of-state-for-education",
         "kind": "office",
@@ -18111,9 +17548,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
         "holder": "The Rt Hon Emma Reynolds MP",
-        "holder_count": 1,
         "holder_since": "2025-09-05",
         "id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
         "kind": "office",
@@ -18123,9 +17560,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-foreign-commonwealth-development-office",
         "holder": "The Rt Hon Yvette Cooper MP",
-        "holder_count": 1,
         "holder_since": "2025-09-05",
         "id": "office-secretary-of-state-for-foreign-commonwealth-and-development-affairs",
         "kind": "office",
@@ -18135,9 +17572,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-of-health-and-social-care",
         "holder": "The Rt Hon James Murray MP",
-        "holder_count": 1,
         "holder_since": "2026-05-14",
         "id": "office-secretary-of-state-for-health-and-social-care",
         "kind": "office",
@@ -18147,9 +17584,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
         "holder": "The Rt Hon Steve Reed OBE MP",
-        "holder_count": 1,
         "holder_since": "2025-09-05",
         "id": "office-secretary-of-state-for-housing-communities-local-government",
         "kind": "office",
@@ -18159,21 +17596,9 @@
     },
     {
       "data": {
-        "body_id": "uk-state-body-ministry-of-justice",
-        "holder": "The Rt Hon David Lammy MP",
-        "holder_count": 1,
-        "holder_since": "2025-09-05",
-        "id": "office-secretary-of-state-for-justice",
-        "kind": "office",
-        "label": "Lord Chancellor and Secretary of State for Justice",
-        "office_type": "cabinet_minister"
-      }
-    },
-    {
-      "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-northern-ireland-office",
         "holder": "The Rt Hon Hilary Benn MP",
-        "holder_count": 1,
         "holder_since": "2024-07-05",
         "id": "office-secretary-of-state-for-northern-ireland",
         "kind": "office",
@@ -18183,9 +17608,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-science-innovation-and-technology",
         "holder": "The Rt Hon Liz Kendall MP",
-        "holder_count": 1,
         "holder_since": "2025-09-05",
         "id": "office-secretary-of-state-for-science-innovation-and-technology",
         "kind": "office",
@@ -18195,9 +17620,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-scotland-office",
         "holder": "The Rt Hon Douglas Alexander MP",
-        "holder_count": 1,
         "holder_since": "2025-09-05",
         "id": "office-secretary-of-state-for-scotland",
         "kind": "office",
@@ -18207,9 +17632,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-home-office",
         "holder": "The Rt Hon Shabana Mahmood MP",
-        "holder_count": 1,
         "holder_since": "2025-09-05",
         "id": "office-secretary-of-state-for-the-home-department",
         "kind": "office",
@@ -18219,9 +17644,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-transport",
         "holder": "The Rt Hon Heidi Alexander MP",
-        "holder_count": 1,
         "holder_since": "2024-11-29",
         "id": "office-secretary-of-state-for-transport",
         "kind": "office",
@@ -18231,9 +17656,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-work-pensions",
         "holder": "The Rt Hon Pat McFadden MP",
-        "holder_count": 1,
         "holder_since": "2025-09-05",
         "id": "office-secretary-of-state-for-work-and-pensions",
         "kind": "office",
@@ -18243,9 +17668,9 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
         "holder": "The Rt Hon Ed Miliband MP",
-        "holder_count": 1,
         "holder_since": "2024-07-05",
         "id": "office-secretary-of-state",
         "kind": "office",
@@ -18255,38 +17680,14 @@
     },
     {
       "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-attorney-generals-office",
         "holder": "The Rt Hon Ellie Reeves KC MP",
-        "holder_count": 1,
         "holder_since": "2025-09-06",
         "id": "office-solicitor-general",
         "kind": "office",
         "label": "Solicitor General",
         "office_type": "junior_minister"
-      }
-    },
-    {
-      "data": {
-        "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
-        "holder": "Lord Collins of Highbury",
-        "holder_count": 1,
-        "holder_since": "2026-06-29",
-        "id": "office-uk-special-envoy-for-lgbt-rights",
-        "kind": "office",
-        "label": "UK Special Envoy for LGBT+ Rights",
-        "office_type": "other"
-      }
-    },
-    {
-      "data": {
-        "body_id": "uk-state-body-foreign-commonwealth-development-office",
-        "holder": "Chris Elmore MP",
-        "holder_count": 1,
-        "holder_since": "2026-06-19",
-        "id": "office-uk-special-envoy-on-preventing-sexual-violence-in-conflict",
-        "kind": "office",
-        "label": "UK Special Envoy on Preventing Sexual Violence in Conflict",
-        "office_type": "other"
       }
     }
   ]
