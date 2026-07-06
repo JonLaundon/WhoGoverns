@@ -418,12 +418,18 @@ function bodyHtml(d) {
   const aliases = (d.other_names || []).length
     ? `<h3>Also known as</h3><ul>${d.other_names.map((n) => `<li>${esc(n)}</li>`).join("")}</ul>` : "";
   const flag = d.needs_review ? ` <span class="flag" title="Classified from the API format field; flagged for a finer human pass">classification: review</span>` : "";
+  // All department sponsors (a body can be jointly sponsored, e.g. NISTA by Cabinet Office + HM Treasury).
+  const deptSponsors = cy.getElementById(d.id).incomers("edge[kind = 'sponsors']").sources()
+    .filter((s) => ["ministerial_department", "non_ministerial_department"].includes(s.data("body_type")));
+  const sponsorHtml = deptSponsors.nonempty()
+    ? deptSponsors.map((s) => `<button class="linkish" data-goto="${esc(s.id())}">${esc(s.data("label"))}</button>`).join(", ")
+    : (d.sponsor_department_id ? gotoBtn(d.sponsor_department_id) : "—");
   return `
     <p class="kicker">${esc(type)}${flag}</p>
     <h2>${esc(d.label)}</h2>
     <dl>
       <dt>Status</dt><dd>${esc(d.status)}${d.forming ? " (in formation)" : ""}</dd>
-      <dt>Sponsor</dt><dd>${gotoBtn(d.sponsor_department_id)}</dd>
+      <dt>Sponsor${deptSponsors.length > 1 ? "s" : ""}</dt><dd>${sponsorHtml}</dd>
       ${d.parent_body_id ? `<dt>Parent</dt><dd>${gotoBtn(d.parent_body_id)}</dd>` : ""}
       <dt>On GOV.UK</dt><dd>${govuk ? `<a href="${esc(govuk)}" rel="noopener" target="_blank">gov.uk page ↗</a>` : "—"}</dd>
     </dl>
