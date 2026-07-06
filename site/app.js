@@ -38,6 +38,38 @@ function level(d) {
   }[d.body_type] || 2;
 }
 
+// Two layouts. "hierarchy" is a top-down tiered preset: the people on top as an org
+// chart (PM -> cabinet -> junior -> other offices), the machines (bodies) in a grid
+// below, grouped by type. "rings" is the concentric office-centred overview.
+function hierarchyPositions() {
+  const W = 2400, pos = {};
+  const band = (pred, y) => {
+    const ns = cy.nodes().filter((n) => pred(n.data()));
+    ns.forEach((n, i) => { pos[n.id()] = { x: W * (i + 1) / (ns.length + 1), y }; });
+  };
+  band((d) => d.kind === "office" && d.office_type === "prime_minister", 40);
+  band((d) => d.kind === "office" && d.office_type === "cabinet_minister", 150);
+  band((d) => d.kind === "office" && d.office_type === "junior_minister", 280);
+  band((d) => d.kind === "office" && (d.office_type === "other" || d.office_type === "independent_official"), 400);
+  const order = ["ministerial_department", "non_ministerial_department", "executive_agency",
+    "executive_ndpb", "advisory_ndpb", "tribunal", "public_corporation",
+    "division_directorate", "royal_charter_body", "other_body"];
+  const bodies = cy.nodes().filter((n) => n.data("kind") === "body")
+    .sort((a, b) => order.indexOf(a.data("body_type")) - order.indexOf(b.data("body_type")));
+  const perRow = 42, dx = W / perRow, y0 = 540, dy = 46;
+  bodies.forEach((n, i) => { pos[n.id()] = { x: 40 + (i % perRow) * dx, y: y0 + Math.floor(i / perRow) * dy }; });
+  return pos;
+}
+
+function makeLayout(name) {
+  if (name === "hierarchy") {
+    const pos = hierarchyPositions();
+    return { name: "preset", positions: (n) => pos[n.id()] || { x: 0, y: 0 }, fit: true, padding: 30 };
+  }
+  return { name: "concentric", concentric: (n) => level(n.data()), levelWidth: () => 2,
+           minNodeSpacing: 8, spacingFactor: 0.9, animate: false };
+}
+
 let cy;                 // cytoscape instance
 let searchIndex = [];   // [{id, label, sub, text}]
 let GENERATED = "";
@@ -101,12 +133,14 @@ function init(graph) {
       { selector: "node.hl", style: { "label": "data(label)", "z-index": 99, "border-width": 2, "border-color": "#0b0c0c" } },
       { selector: "node:selected", style: { "label": "data(label)", "border-width": 3, "border-color": "#0b0c0c", "z-index": 100, "font-size": 11, "font-weight": "bold" } },
     ],
-    layout: { name: "concentric", concentric: (n) => level(n.data()), levelWidth: () => 2, minNodeSpacing: 8, spacingFactor: 0.9 },
+    layout: { name: "preset" },   // real layout is run below, once cy exists
   });
 
   cy.on("tap", "node", (e) => selectNode(e.target.id()));
   cy.on("tap", (e) => { if (e.target === cy) clearFocus(); });
 
+  cy.layout(makeLayout("hierarchy")).run();
+  cy.fit(undefined, 30);
   buildLegend();
   wireControls();
   $("#counts").textContent =
@@ -239,6 +273,12 @@ function wireControls() {
 
   $("#toggle-offices").addEventListener("change", applyFilters);
   $("#toggle-forming").addEventListener("change", applyFilters);
+
+  document.querySelectorAll("input[name='layout']").forEach((r) =>
+    r.addEventListener("change", (e) => {
+      cy.layout(makeLayout(e.target.value)).run();
+      cy.fit(undefined, 30);
+    }));
 }
 
 function applyFilters() {
