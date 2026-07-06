@@ -137,6 +137,12 @@ function makeLayout(name) {
 let cy;
 let searchIndex = [];
 let GENERATED = "";
+const hiddenTypes = new Set();     // body_type / office_type values currently filtered out
+const GROUP_TYPES = {
+  Officials: ["prime_minister", "cabinet_minister", "junior_minister", "independent_official", "civil_servant", "other"],
+  Departments: ["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate"],
+  "Public bodies": ["executive_ndpb", "advisory_ndpb", "tribunal", "public_corporation", "royal_charter_body", "other_body"],
+};
 let currentLayout = "rings";
 let basePos = {};        // unrotated node positions of the current layout
 let selectedId = null;
@@ -421,18 +427,59 @@ function officeHtml(d) {
       Office type is a heuristic tier; PM→cabinet→junior links are derived by convention.</p>`;
 }
 
-/* ---------- legend ---------- */
+/* ---------- legend = category / type filters ---------- */
 function buildLegend() {
-  const pick = (keys, map) => keys.map((k) => [map[k][0], map[k][1]]);
-  const rows = (title, entries, cls) => `<h3>${title}</h3>` + entries.map(([label, color]) =>
-    `<div class="row"><span class="swatch ${cls}" style="background:${color}"></span>${esc(label)}</div>`).join("");
+  const group = (title, keys, map, cls) =>
+    `<h3 data-group="${title}">${title}</h3>` + keys.map((k) => {
+      const [label, color] = map[k];
+      return `<div class="row" data-type="${k}"><span class="swatch ${cls}" style="background:${color}"></span>${esc(label)}</div>`;
+    }).join("");
   $("#legend").innerHTML =
-    rows("Officials", pick(["prime_minister", "cabinet_minister", "junior_minister", "independent_official", "civil_servant"], OFFICE_TYPES), "office") +
-    rows("Departments", pick(["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate"], BODY_TYPES), "dept") +
-    rows("Public bodies", pick(["executive_ndpb", "advisory_ndpb", "tribunal", "public_corporation", "royal_charter_body", "other_body"], BODY_TYPES), "pub") +
+    `<p class="fhint">Click a type — or a heading — to show/hide it.</p>` +
+    group("Officials", ["prime_minister", "cabinet_minister", "junior_minister", "independent_official", "civil_servant"], OFFICE_TYPES, "office") +
+    group("Departments", ["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate"], BODY_TYPES, "dept") +
+    group("Public bodies", ["executive_ndpb", "advisory_ndpb", "tribunal", "public_corporation", "royal_charter_body", "other_body"], BODY_TYPES, "pub") +
     `<h3>Links</h3>` +
     `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #d3d6d8;height:0;border-radius:0"></span>sponsors</div>` +
     `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #8a1a12;height:0;border-radius:0"></span>leads (PM → cabinet → junior) <span class="flag" style="margin-left:4px">derived</span></div>`;
+  $("#legend").querySelectorAll(".row[data-type]").forEach((row) =>
+    row.addEventListener("click", () => toggleType(row.getAttribute("data-type"), row)));
+  $("#legend").querySelectorAll("h3[data-group]").forEach((h) =>
+    h.addEventListener("click", () => toggleGroup(h.getAttribute("data-group"), h)));
+}
+function toggleType(type, row) {
+  hiddenTypes.has(type) ? hiddenTypes.delete(type) : hiddenTypes.add(type);
+  row.classList.toggle("off", hiddenTypes.has(type));
+  applyFilters();
+}
+function toggleGroup(name, h) {
+  const types = GROUP_TYPES[name] || [];
+  const hideAll = types.some((t) => !hiddenTypes.has(t));   // if any visible, hide the group
+  types.forEach((t) => hideAll ? hiddenTypes.add(t) : hiddenTypes.delete(t));
+  h.classList.toggle("group-off", hideAll);
+  $("#legend").querySelectorAll(".row[data-type]").forEach((row) => {
+    const t = row.getAttribute("data-type");
+    if (types.includes(t)) row.classList.toggle("off", hiddenTypes.has(t));
+  });
+  applyFilters();
+}
+
+/* ---------- dark mode ---------- */
+function applyTheme(dark) {
+  document.body.classList.toggle("dark", dark);
+  const btn = $("#theme-toggle");
+  if (btn) { btn.textContent = dark ? "☀️ Light" : "🌙 Dark"; btn.setAttribute("aria-pressed", String(dark)); }
+  try { localStorage.setItem("wg-theme", dark ? "dark" : "light"); } catch (e) { /* ignore */ }
+  if (!cy) return;
+  const ink = dark ? "#f1f3f4" : "#0b0c0c";     // thread/selection colour that reads on the canvas
+  cy.style()
+    .selector("edge.thread-edge").style({ "line-color": ink, "target-arrow-color": ink })
+    .selector("edge.hover-hl").style({ "line-color": ink, "target-arrow-color": ink })
+    .selector("node.thread-lbl").style({ "border-color": ink })
+    .selector("node.hover-hl").style({ "border-color": ink })
+    .selector("node:selected").style({ "border-color": ink })
+    .selector("node[?forming]").style({ "border-color": ink })
+    .update();
 }
 
 /* ---------- search + controls ---------- */
@@ -474,20 +521,24 @@ function wireControls() {
     if (m.length) { e.preventDefault(); selectNode(m[0].id); }
   });
 
-  $("#toggle-offices").addEventListener("change", applyFilters);
   $("#toggle-forming").addEventListener("change", applyFilters);
   document.querySelectorAll("input[name='layout']").forEach((r) =>
     r.addEventListener("change", (e) => { clearFocus(); runLayout(e.target.value); }));
+
+  // dark mode: stored preference, else the OS setting
+  let stored = null;
+  try { stored = localStorage.getItem("wg-theme"); } catch (e) { /* ignore */ }
+  const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  applyTheme(stored ? stored === "dark" : prefersDark);
+  $("#theme-toggle").addEventListener("click", () => applyTheme(!document.body.classList.contains("dark")));
 }
 
 function applyFilters() {
-  const showOffices = $("#toggle-offices").checked;
   const showForming = $("#toggle-forming").checked;
-  cy.batch(() => {
-    cy.nodes().forEach((n) => {
-      const d = n.data();
-      const hide = (d.kind === "office" && !showOffices) || (d.forming && !showForming);
-      n.style("display", hide ? "none" : "element");
-    });
-  });
+  cy.batch(() => cy.nodes().forEach((n) => {
+    const d = n.data();
+    const type = d.kind === "office" ? d.office_type : d.body_type;
+    const hide = hiddenTypes.has(type) || (d.forming && !showForming);
+    n.style("display", hide ? "none" : "element");
+  }));
 }

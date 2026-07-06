@@ -35,6 +35,9 @@ a:focus, input:focus, button:focus { outline: 3px solid var(--focus); outline-of
 .masthead { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
 .wordmark { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; }
 .tagline { color: var(--mid); font-size: 0.95rem; }
+.theme-toggle { margin-left: auto; align-self: center; font: inherit; font-size: 0.8rem;
+  padding: 4px 10px; border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+  border-radius: 4px; cursor: pointer; }
 .disclaimer { margin: 4px 0 0; font-size: 0.8rem; color: var(--mid); }
 
 .layout {
@@ -60,7 +63,14 @@ a:focus, input:focus, button:focus { outline: 3px solid var(--focus); outline-of
 
 .legend { margin-top: 8px; }
 .legend h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--mid); margin: 12px 0 6px; }
+.legend h3[data-group] { cursor: pointer; user-select: none; }
+.legend h3[data-group]::after { content: " ▾"; font-size: 0.7rem; }
+.legend h3.group-off::after { content: " ▸"; }
 .legend .row { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; margin: 3px 0; }
+.legend .row[data-type] { cursor: pointer; user-select: none; }
+.legend .row.off { opacity: 0.4; text-decoration: line-through; }
+.legend .row.off .swatch { filter: grayscale(1); }
+.legend .fhint { font-size: 0.7rem; color: var(--mid); margin: 2px 0 6px; }
 .legend .swatch { width: 13px; height: 13px; border-radius: 3px; flex: none; border: 1px solid rgba(0,0,0,0.25); }
 .legend .swatch.office { border-radius: 50%; }
 .legend .swatch.dept { border-radius: 3px; }
@@ -106,3 +116,12 @@ a:focus, input:focus, button:focus { outline: 3px solid var(--focus); outline-of
   #cy { position: relative; height: 60vh; }
   .stage { height: 60vh; }
 }
+
+/* Dark theme — overrides the CSS variables; the graph canvas darkens too. Node colours
+   are data-driven and read fine on the dark canvas; edge/label colours are swapped in JS. */
+body.dark {
+  --ink: #e8eaed; --mid: #9aa0a6; --line: #3c4043; --bg: #1b1c1e; --panel: #292a2d; --link: #8ab4f8;
+}
+body.dark #cy { background: radial-gradient(circle at 50% 45%, #232427 0%, #171819 100%); }
+body.dark .detail { background: var(--bg); }
+body.dark .hint { background: rgba(0,0,0,0.55); }
