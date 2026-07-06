@@ -3,7 +3,7 @@
 **Project:** WhoGoverns (working name "The State Machine")
 **Date:** 2026-07-05
 **Supersedes:** v0.1 (departments-only POC). v0.1 retained as historical record.
-**Governs:** Spiral 1 only. Binds to Project Plan v0.5 and Annex A v0.3.
+**Governs:** Spiral 1 only. Binds to Project Plan v0.5 and Annex A v0.4.
 **Status:** Signed off by sponsor 2026-07-05. Pre-Spiral 1 setup complete; build not yet started.
 
 > Reviewer note: a planning artefact. Nothing here adopts a policy position; it fixes what Spiral 1 builds.

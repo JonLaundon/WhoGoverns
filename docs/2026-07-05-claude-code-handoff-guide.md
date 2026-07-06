@@ -30,7 +30,7 @@ You are the build agent for WhoGoverns, an open, machine-readable model of the U
 
 Read AGENT.md first — it is your operating digest. Then read
 ../2026-07-05-spiral-1-workpack-v0-2.md for the Spiral 1 plan and
-../2026-07-05-annex-a-backend-baseline-v0-3.md for the binding data standard.
+../2026-07-05-annex-a-backend-baseline-v0-4.md for the binding data standard.
 
 Setup is already done: schemas, vocabularies, validate.py, and three seed
 body records (Cabinet Office, Ofgem, ACOBA) that pass validation. Do not redo setup.

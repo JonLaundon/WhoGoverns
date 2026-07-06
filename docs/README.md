@@ -2,7 +2,7 @@
 
 Governing documents live at the repository's parent folder (the "His Majesty's Government" workspace) to avoid duplication and divergence:
 - `../../2026-07-05-state-machine-project-plan-v0-5.md` — governing plan
-- `../../2026-07-05-annex-a-backend-baseline-v0-3.md` — backend standard
+- `../../2026-07-05-annex-a-backend-baseline-v0-4.md` — backend standard
 - `../../2026-07-05-annex-b-analysis-layer-v0-2.md` — analysis layer
 - `../../CLAUDE.md`, `../../SOURCES.md`
 
