@@ -270,13 +270,26 @@ function traverse(node, dir) {
   return acc;
 }
 
+// Downstream tree. For most nodes this is the whole subtree away from the centre; for the
+// Prime Minister it stops at the ministerial layer (cabinet + junior ministers, via 'leads'
+// edges) — otherwise selecting/hovering the PM would light up the entire state.
+function downstreamTree(node) {
+  if (node.data("office_type") === "prime_minister") {
+    const toCabinet = node.outgoers("edge[kind = 'leads']");
+    const cabinet = toCabinet.targets();
+    const toJunior = cabinet.outgoers("edge[kind = 'leads']");
+    return node.union(toCabinet).union(cabinet).union(toJunior).union(toJunior.targets());
+  }
+  return traverse(node, "out");
+}
+
 // Fade everything, then light up this node's WHOLE tree in black: the golden thread up
-// to the Prime Minister AND the full downstream subtree (every agency and public body it
+// to the Prime Minister AND the downstream subtree (every agency and public body it
 // sponsors, and theirs). Clears prior thread/hover classes first, so nothing lingers when
 // the highlighted node changes (hover to a new node, or revert to the selected one).
 function highlightThread(node) {
   const up = traverse(node, "in");     // node → minister → cabinet → PM
-  const tree = up.union(traverse(node, "out"));   // + the full downstream subtree
+  const tree = up.union(downstreamTree(node));   // + the downstream subtree
   cy.elements().addClass("faded").removeClass("thread-lbl thread-edge hover-hl");
   tree.removeClass("faded");
   tree.addClass("thread-edge");        // every edge in the tree drawn solid black
@@ -423,16 +436,30 @@ function buildLegend() {
 }
 
 /* ---------- search + controls ---------- */
+// Rank matches so an exact/prefix name hit wins over a mere substring: "Ministry of
+// Defence" resolves to MoD itself, not to some body whose text merely contains it.
+function searchMatches(q) {
+  return searchIndex
+    .filter((r) => r.text.includes(q))
+    .map((r) => {
+      const l = r.label.toLowerCase();
+      const score = l === q ? 0 : l.startsWith(q) ? 1 : l.includes(q) ? 2 : 3;
+      return { r, score };
+    })
+    .sort((a, b) => a.score - b.score || a.r.label.length - b.r.label.length)
+    .map((s) => s.r)
+    .slice(0, 14);
+}
+
 function wireControls() {
   const input = $("#search-input");
   const results = $("#search-results");
-  let matches = [];
 
   input.addEventListener("input", () => {
     const q = input.value.trim().toLowerCase();
     results.innerHTML = "";
     if (q.length < 2) return;
-    matches = searchIndex.filter((r) => r.text.includes(q)).slice(0, 14);
+    const matches = searchMatches(q);
     results.innerHTML = matches.map((m, i) =>
       `<li role="option" data-id="${esc(m.id)}" ${i === 0 ? 'aria-selected="true"' : ""}>` +
       `${esc(m.label)}<div class="r-sub">${esc(m.sub)}</div></li>`).join("");
@@ -440,7 +467,11 @@ function wireControls() {
       li.addEventListener("click", () => selectNode(li.getAttribute("data-id"))));
   });
   input.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" && matches.length) { e.preventDefault(); selectNode(matches[0].id); }
+    if (e.key !== "Enter") return;
+    const q = input.value.trim().toLowerCase();      // recompute now — never a stale list
+    if (q.length < 2) return;
+    const m = searchMatches(q);
+    if (m.length) { e.preventDefault(); selectNode(m[0].id); }
   });
 
   $("#toggle-offices").addEventListener("change", applyFilters);
