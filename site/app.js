@@ -239,6 +239,7 @@ function init(graph) {
       { selector: ".faded", style: { "opacity": 0.08, "text-opacity": 0 } },
       { selector: "node.thread-lbl", style: { "label": "data(label)", "z-index": 95, "border-width": 2, "border-color": "#0b0c0c" } },
       { selector: "edge.thread-edge", style: { "line-color": "#0b0c0c", "opacity": 1, "width": 2.5, "z-index": 85, "target-arrow-color": "#0b0c0c", "line-style": "solid" } },
+      { selector: "edge.thread-assoc", style: { "line-color": "#0b0c0c", "opacity": 0.55, "width": 1.4, "z-index": 84, "target-arrow-color": "#0b0c0c", "line-style": "dashed" } },
       { selector: "node.hover-hl", style: { "label": "data(label)", "z-index": 90, "border-width": 2, "border-color": "#0b0c0c" } },
       { selector: "edge.hover-hl", style: { "line-color": "#0b0c0c", "opacity": 1, "width": 2, "z-index": 80, "target-arrow-color": "#0b0c0c" } },
       { selector: "node:selected", style: { "label": "data(label)", "border-width": 3, "border-color": "#0b0c0c", "z-index": 100, "font-size": 11, "font-weight": "bold" } },
@@ -280,7 +281,7 @@ function positionTooltip(evt) {
 function unhover() {
   $("#tooltip").style.display = "none";
   if (selectedId) highlightThread(cy.getElementById(selectedId));
-  else cy.elements().removeClass("faded thread-lbl thread-edge hover-hl");
+  else cy.elements().removeClass("faded thread-lbl thread-edge thread-assoc hover-hl");
 }
 
 /* ---------- click: golden thread + rotation + details ---------- */
@@ -321,11 +322,22 @@ function downstreamTree(node) {
 function highlightThread(node) {
   const up = traverse(node, "in");     // node → minister → cabinet → PM
   const tree = up.union(downstreamTree(node));   // + the downstream subtree
-  cy.elements().addClass("faded").removeClass("thread-lbl thread-edge hover-hl");
+  cy.elements().addClass("faded").removeClass("thread-lbl thread-edge thread-assoc hover-hl");
   tree.removeClass("faded");
-  tree.addClass("thread-edge");        // every edge in the tree drawn solid black
   up.nodes().addClass("thread-lbl");   // label only the upward thread (downstream is too many)
   node.addClass("thread-lbl");
+  if (node.data("kind") === "body") {
+    // Selecting a body reaches its department's ministers — but only the accountable
+    // Secretary of State is a direct link; the department's OTHER ministers are merely
+    // associated (same department, different brief), so draw those dashed (as MoG does).
+    tree.edges().forEach((e) => {
+      const assoc = (e.data("kind") === "office_of" && ["junior_minister", "other"].includes(e.source().data("office_type")))
+        || (e.data("kind") === "leads" && e.target().data("office_type") === "junior_minister");
+      e.addClass(assoc ? "thread-assoc" : "thread-edge");
+    });
+  } else {
+    tree.edges().addClass("thread-edge");
+  }
 }
 
 // Smoothly rotate the ring layout by animating an angle applied to the base positions
@@ -382,7 +394,7 @@ function selectNode(id) {
 function clearFocus() {
   selectedId = null;
   $("#tooltip").style.display = "none";
-  cy.elements().removeClass("faded hover-hl thread-lbl thread-edge");
+  cy.elements().removeClass("faded hover-hl thread-lbl thread-edge thread-assoc");
   cy.$(":selected").unselect();
   if (currentLayout === "rings") animateRotation(0, 500);   // rotate back smoothly
   $("#detail-body").hidden = true;
@@ -517,6 +529,7 @@ function applyTheme(dark) {
   const ink = dark ? "#f1f3f4" : "#0b0c0c";     // thread/selection colour that reads on the canvas
   cy.style()
     .selector("edge.thread-edge").style({ "line-color": ink, "target-arrow-color": ink })
+    .selector("edge.thread-assoc").style({ "line-color": ink, "target-arrow-color": ink })
     .selector("edge.hover-hl").style({ "line-color": ink, "target-arrow-color": ink })
     .selector("node.thread-lbl").style({ "border-color": ink })
     .selector("node.hover-hl").style({ "border-color": ink })

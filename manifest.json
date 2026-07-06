@@ -1,8 +1,8 @@
 {
   "annex_a_version": "0.4",
-  "generated": "2026-07-06T19:46:56",
+  "generated": "2026-07-06T22:06:06",
   "graph": {
-    "edges": 882,
+    "edges": 883,
     "nodes": 798
   },
   "notes": "Compiled by pipeline/compile.py from data/. graph.json is the map contract; state_machine.sqlite is the query mirror (gitignored, regenerable).",

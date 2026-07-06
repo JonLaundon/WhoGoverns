@@ -1,9 +1,9 @@
 {
   "body_id": "uk-state-body-office-of-the-advocate-general-for-scotland",
   "last_reviewed": null,
-  "notes": "office_type heuristic = other; review.",
+  "notes": "Junior law officer (advises the UK government on Scots law); tiered as a junior minister, appointed by the PM.",
   "office_id": "office-hm-advocate-general-for-scotland",
-  "office_type": "other",
+  "office_type": "junior_minister",
   "record_status": "extracted",
   "source_ids": [
     "source-official-dataset-govuk-content-api"

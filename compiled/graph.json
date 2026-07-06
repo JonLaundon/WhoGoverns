@@ -7170,9 +7170,18 @@
         "source": "office-secretary-of-state-for-science-innovation-and-technology",
         "target": "office-parliamentary-under-secretary-of-state-minister-for-ai-and-online-safety"
       }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-prime-minister-office-hm-advocate-general-for-scotland",
+        "kind": "leads",
+        "source": "office-prime-minister",
+        "target": "office-hm-advocate-general-for-scotland"
+      }
     }
   ],
-  "generated": "2026-07-06T19:46:56",
+  "generated": "2026-07-06T22:06:06",
   "nodes": [
     {
       "data": {
@@ -17035,7 +17044,7 @@
         "id": "office-hm-advocate-general-for-scotland",
         "kind": "office",
         "label": "HM Advocate General for Scotland",
-        "office_type": "other"
+        "office_type": "junior_minister"
       }
     },
     {

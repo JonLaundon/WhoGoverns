@@ -105,7 +105,7 @@ def office_type_for(title):
         return "cabinet_minister"
     # Unambiguous junior ranks the title-word rules miss: whips, the junior Treasury
     # secretaries (Chief Secretary is already cabinet above), and the Solicitor General.
-    if "whip" in t or "secretary to the treasury" in t or "solicitor general" in t:
+    if "whip" in t or "secretary to the treasury" in t or "solicitor general" in t or "advocate general" in t:
         return "junior_minister"
     return "other"
 

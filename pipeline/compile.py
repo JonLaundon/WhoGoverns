@@ -135,6 +135,16 @@ def build_graph(bodies, relationships, offices, person_roles):
                 edges.append({"data": {"id": "leads-{}-{}".format(c["office_id"], j["office_id"]),
                                        "source": c["office_id"], "target": j["office_id"],
                                        "kind": "leads", "derived": True}})
+    # Fallback: a junior minister at a body with no cabinet minister (e.g. the law officers'
+    # standalone offices, like the Advocate General for Scotland) still answers to the PM —
+    # link it to the PM directly so it isn't left orphaned on the ring.
+    if pm:
+        led = {e["data"]["target"] for e in edges if e["data"]["kind"] == "leads"}
+        for o in offices:
+            if o.get("office_type") == "junior_minister" and o["office_id"] in primary_ids and o["office_id"] not in led:
+                edges.append({"data": {"id": "leads-{}-{}".format(pm["office_id"], o["office_id"]),
+                                       "source": pm["office_id"], "target": o["office_id"],
+                                       "kind": "leads", "derived": True}})
     return {"nodes": nodes, "edges": edges}
 
 
