@@ -21,7 +21,14 @@
   "name": "Investigatory Powers Commissioner's Office",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Intelligence Services Commissioner",
+    "ISC",
+    "Interception of Communications Commissioner",
+    "Interception Commissioner\t",
+    "Office of Surveillance Commissioners",
+    "OSC"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-home-office",

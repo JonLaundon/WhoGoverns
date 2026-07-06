@@ -21,7 +21,9 @@
   "name": "NHS Counter Fraud Authority",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Counter Fraud and Security Management Service"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-department-of-health-and-social-care",

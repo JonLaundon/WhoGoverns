@@ -21,7 +21,12 @@
   "name": "Foreign, Commonwealth & Development Office",
   "needs_classification_review": false,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Department for International Development",
+    "DFID",
+    "Foreign & Commonwealth Office",
+    "FCO"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": null,

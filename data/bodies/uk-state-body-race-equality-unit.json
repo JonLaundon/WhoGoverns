@@ -21,7 +21,9 @@
   "name": "Race Equality Unit",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Race Disparity Unit"
+  ],
   "parent_body_id": "uk-state-body-office-for-equality-and-opportunity",
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-cabinet-office",

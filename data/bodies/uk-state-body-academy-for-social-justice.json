@@ -21,7 +21,9 @@
   "name": "Academy for Social Justice",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Academy for Social Justice Commissioning"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-ministry-of-justice",

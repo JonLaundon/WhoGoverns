@@ -21,7 +21,10 @@
   "name": "Nuclear Restoration Services",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Dounreay ",
+    "Magnox Ltd"
+  ],
   "parent_body_id": "uk-state-body-nuclear-decommissioning-authority",
   "record_status": "extracted",
   "sponsor_department_id": null,

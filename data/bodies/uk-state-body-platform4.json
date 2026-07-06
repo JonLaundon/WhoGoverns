@@ -21,7 +21,10 @@
   "name": "Platform4",
   "needs_classification_review": false,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "London and Continental Railways Limited",
+    "LCR"
+  ],
   "parent_body_id": "uk-state-body-network-rail",
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-department-for-transport",

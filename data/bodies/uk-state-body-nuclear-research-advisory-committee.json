@@ -21,7 +21,10 @@
   "name": "Nuclear Research Advisory Committee",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Nuclear Research Advisory Council",
+    "NRAC"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-ministry-of-defence",

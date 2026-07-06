@@ -21,7 +21,10 @@
   "name": "UK Visas and Immigration",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "UK Border Agency",
+    "UKBA"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-home-office",

@@ -21,7 +21,9 @@
   "name": "Ministry of Justice",
   "needs_classification_review": false,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Department of Constitutional Affairs"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": null,

@@ -21,7 +21,9 @@
   "name": "FCDO Services ",
   "needs_classification_review": false,
   "notes": "In formation (govuk_status: joining); render dashed.",
-  "other_names": [],
+  "other_names": [
+    "FCO Services"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-foreign-commonwealth-development-office",

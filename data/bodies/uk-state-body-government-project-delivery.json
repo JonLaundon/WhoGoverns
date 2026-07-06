@@ -21,7 +21,9 @@
   "name": "Government Project Delivery",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Project Delivery Function"
+  ],
   "parent_body_id": "uk-state-body-civil-service",
   "record_status": "extracted",
   "sponsor_department_id": null,

@@ -21,7 +21,10 @@
   "name": "National Protective Security Authority",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Centre for the Protection of National Infrastructure",
+    "CPNI"
+  ],
   "parent_body_id": "uk-state-body-the-security-service-mi5",
   "record_status": "extracted",
   "sponsor_department_id": null,

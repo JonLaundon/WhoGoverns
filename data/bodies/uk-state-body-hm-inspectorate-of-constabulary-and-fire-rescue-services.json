@@ -21,7 +21,10 @@
   "name": "HM Inspectorate of Constabulary and Fire & Rescue Services",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "HM Inspectorate of Constabulary",
+    "HMIC"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-home-office",

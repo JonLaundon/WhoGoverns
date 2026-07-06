@@ -21,7 +21,9 @@
   "name": "Innovate UK",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Technology Strategy Board"
+  ],
   "parent_body_id": "uk-state-body-uk-research-and-innovation",
   "record_status": "extracted",
   "sponsor_department_id": null,

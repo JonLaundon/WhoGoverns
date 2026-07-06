@@ -21,7 +21,10 @@
   "name": "HM Prison and Probation Service",
   "needs_classification_review": false,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "National Offender Management Service",
+    "NOMS"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-ministry-of-justice",

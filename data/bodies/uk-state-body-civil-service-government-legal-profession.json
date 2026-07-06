@@ -21,7 +21,10 @@
   "name": "Government Legal Profession",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Government Legal Service",
+    "GLS"
+  ],
   "parent_body_id": "uk-state-body-civil-service",
   "record_status": "extracted",
   "sponsor_department_id": null,

@@ -21,7 +21,10 @@
   "name": "UK Fusion Energy",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "UK Industrial Fusion Solutions",
+    "UKIFS"
+  ],
   "parent_body_id": "uk-state-body-uk-atomic-energy-authority",
   "record_status": "extracted",
   "sponsor_department_id": null,

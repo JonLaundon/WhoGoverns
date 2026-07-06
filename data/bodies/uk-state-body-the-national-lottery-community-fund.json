@@ -21,7 +21,10 @@
   "name": "The National Lottery Community Fund",
   "needs_classification_review": false,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Big Lottery Fund",
+    "BIG"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-department-for-culture-media-and-sport",

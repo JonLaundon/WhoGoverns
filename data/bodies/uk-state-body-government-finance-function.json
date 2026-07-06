@@ -21,7 +21,9 @@
   "name": "Government Finance Function",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Government Finance Profession"
+  ],
   "parent_body_id": "uk-state-body-civil-service",
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-hm-treasury",

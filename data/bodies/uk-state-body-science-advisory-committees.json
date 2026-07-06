@@ -21,7 +21,10 @@
   "name": "Science Advisory Committees",
   "needs_classification_review": false,
   "notes": "In formation (govuk_status: joining); render dashed.",
-  "other_names": [],
+  "other_names": [
+    "General Advisory Committee on Science",
+    "GACS"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-food-standards-agency",

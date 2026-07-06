@@ -21,7 +21,10 @@
   "name": "Ethics and Integrity Commission",
   "needs_classification_review": false,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Committee on Standards in Public Life",
+    "CSPL"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-cabinet-office",

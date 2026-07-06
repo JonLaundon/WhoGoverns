@@ -21,7 +21,10 @@
   "name": "Government Skills",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Government Skills and Curriculum Unit",
+    "GSCU"
+  ],
   "parent_body_id": "uk-state-body-government-people-group",
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-cabinet-office",

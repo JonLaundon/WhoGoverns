@@ -21,7 +21,10 @@
   "name": "National Lottery Heritage Fund",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Heritage Lottery Fund (administered by the NHMF)",
+    "HLF"
+  ],
   "parent_body_id": "uk-state-body-national-heritage-memorial-fund",
   "record_status": "extracted",
   "sponsor_department_id": null,

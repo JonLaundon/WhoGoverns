@@ -21,7 +21,9 @@
   "name": "Government Property Function",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Government Property Profession"
+  ],
   "parent_body_id": "uk-state-body-civil-service",
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-cabinet-office",

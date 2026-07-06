@@ -21,7 +21,10 @@
   "name": "Central Advisory Committee on Compensation",
   "needs_classification_review": true,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Central Advisory Committee on Pensions and Compensation ",
+    "CAC Pensions and Compensation"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-ministry-of-defence",

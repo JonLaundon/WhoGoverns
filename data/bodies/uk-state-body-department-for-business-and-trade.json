@@ -21,7 +21,10 @@
   "name": "Department for Business and Trade",
   "needs_classification_review": false,
   "notes": null,
-  "other_names": [],
+  "other_names": [
+    "Department for International Trade",
+    "DIT"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": null,
