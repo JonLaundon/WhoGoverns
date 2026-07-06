@@ -19,8 +19,8 @@ so `other_names` stays "former names of this body":
 It never creates or deletes bodies and never touches classification — only appends
 to `other_names` (de-duplicated, idempotent).
 
-    py -3 enrich_aliases.py            # apply
-    py -3 enrich_aliases.py --dry-run  # report only
+    py -3 pipeline/enrich_aliases.py            # apply
+    py -3 pipeline/enrich_aliases.py --dry-run  # report only
 
 Boring by design: stdlib only, deterministic, no network.
 """
@@ -30,7 +30,7 @@ import json
 import os
 import sys
 
-REPO = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root (this file lives in pipeline/)
 RAW_GLOB = os.path.join(REPO, "data", "sources", "raw", "govuk-organisations-api", "page-*.json")
 BODIES_DIR = os.path.join(REPO, "data", "bodies")
 

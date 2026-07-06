@@ -15,8 +15,8 @@ overwritten — they are reconciled (body_type compared) and reported. To fully
 regenerate the machine-written records, delete data/bodies/*.json except the
 seeds and re-run.
 
-    py -3 transform_bodies.py            # write records
-    py -3 transform_bodies.py --dry-run  # report only, write nothing
+    py -3 pipeline/transform_bodies.py            # write records
+    py -3 pipeline/transform_bodies.py --dry-run  # report only, write nothing
 
 Boring by design: stdlib only, deterministic output (sorted keys), runnable
 standalone from a clean checkout after the ingest has run.
@@ -27,7 +27,7 @@ import json
 import os
 import sys
 
-REPO = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root (this file lives in pipeline/)
 RAW_GLOB = os.path.join(REPO, "data", "sources", "raw", "govuk-organisations-api", "page-*.json")
 BODIES_DIR = os.path.join(REPO, "data", "bodies")
 FORMAT_MAP_PATH = os.path.join(REPO, "vocab", "govuk_format_to_body_type.json")

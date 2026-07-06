@@ -7,8 +7,8 @@ SourceRecord for the dataset. It does NOT transform anything into Body or
 Relationship records — that is a separate script (task 2).
 
 Boring by design: stdlib only, runnable standalone from a clean checkout:
-    py -3 ingest_organisations.py            # full pull (all pages)
-    py -3 ingest_organisations.py --max-pages 2   # smoke test (first 2 pages)
+    py -3 pipeline/ingest_organisations.py            # full pull (all pages)
+    py -3 pipeline/ingest_organisations.py --max-pages 2   # smoke test (first 2 pages)
 
 Raw pages land under data/sources/raw/... (a subfolder), so validate.py — which
 globs data/sources/*.json non-recursively — never schema-validates them against
@@ -23,7 +23,7 @@ import time
 import urllib.error
 import urllib.request
 
-REPO = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root (this file lives in pipeline/)
 
 BASE_URL = "https://www.gov.uk/api/organisations"
 RAW_DIR = os.path.join(REPO, "data", "sources", "raw", "govuk-organisations-api")

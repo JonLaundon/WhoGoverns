@@ -1,9 +1,19 @@
 {
+  "annex_a_version": "0.4",
+  "generated": "2026-07-06T12:00:20",
+  "graph": {
+    "edges": 762,
+    "nodes": 788
+  },
+  "notes": "Compiled by pipeline/compile.py from data/. graph.json is the map contract; state_machine.sqlite is the query mirror (gitignored, regenerable).",
   "project": "WhoGoverns",
-  "working_name": "The State Machine",
-  "annex_a_version": "0.3",
+  "record_counts": {
+    "bodies": 663,
+    "offices": 125,
+    "person_roles": 125,
+    "relationships": 637,
+    "sources": 2
+  },
   "spiral": 1,
-  "generated": null,
-  "record_counts": {},
-  "notes": "Empty manifest; populated by compile.py at build time."
+  "working_name": "The State Machine"
 }

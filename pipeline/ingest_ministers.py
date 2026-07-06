@@ -13,8 +13,8 @@ first-class node, the person sits in it, the department hosts it. Only current
 appointments are taken (Spiral 1 = the sitting government); senior officials below
 minister are deferred.
 
-    py -3 ingest_ministers.py            # fetch, cache, write records
-    py -3 ingest_ministers.py --dry-run  # fetch + report, write nothing
+    py -3 pipeline/ingest_ministers.py            # fetch, cache, write records
+    py -3 pipeline/ingest_ministers.py --dry-run  # fetch + report, write nothing
 
 Boring by design: stdlib only, one job, polite HTTP (UA, timeout, retry, pause).
 """
@@ -29,7 +29,7 @@ import time
 import urllib.error
 import urllib.request
 
-REPO = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root (this file lives in pipeline/)
 BODIES_DIR = os.path.join(REPO, "data", "bodies")
 OFFICES_DIR = os.path.join(REPO, "data", "offices")
 PERSONROLES_DIR = os.path.join(REPO, "data", "person-roles")

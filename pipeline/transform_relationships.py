@@ -15,8 +15,8 @@ Both endpoints of an edge must be Body records we hold; edges to closed/out-of-s
 orgs are skipped and counted (see the report / issues log). Parent and child lists
 are unioned and de-duplicated, so an edge asserted from only one side is still caught.
 
-    py -3 transform_relationships.py            # write records + fill body fields
-    py -3 transform_relationships.py --dry-run  # report only, write nothing
+    py -3 pipeline/transform_relationships.py            # write records + fill body fields
+    py -3 pipeline/transform_relationships.py --dry-run  # report only, write nothing
 
 Boring by design: stdlib only, deterministic, no network. Idempotent — body fields
 are filled only when null; an existing value is verified and a mismatch reported,
@@ -28,7 +28,7 @@ import json
 import os
 import sys
 
-REPO = os.path.dirname(os.path.abspath(__file__))
+REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root (this file lives in pipeline/)
 RAW_GLOB = os.path.join(REPO, "data", "sources", "raw", "govuk-organisations-api", "page-*.json")
 BODIES_DIR = os.path.join(REPO, "data", "bodies")
 RELS_DIR = os.path.join(REPO, "data", "relationships")

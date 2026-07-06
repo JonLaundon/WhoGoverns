@@ -5,9 +5,16 @@ Open, machine-readable model of the UK state. Working name "The State Machine"; 
 Built to Annex A (backend baseline) of the governing plan. Boring by design: JSON records, JSON Schema validation, plain-Python scripts, SQLite compile, Git history.
 
 ## What runs, in what order
-1. `python3 ingest_organisations.py` — (build session) pull the GOV.UK Organisations API into `data/sources` + `data/bodies`. *Not yet written.*
-2. `python3 validate.py` — validate every record in `data/` against its schema; checks IDs, source links, provision_key duplicates.
-3. `python3 compile.py` — (build session) emit `compiled/graph.json` + `compiled/state_machine.sqlite`. *Not yet written.*
+Build scripts live in `pipeline/` (run order and details in `pipeline/README.md`). Run from the repo root with `py -3 pipeline/<script>.py`:
+1. `pipeline/ingest_organisations.py` → raw cache + Organisations SourceRecord
+2. `pipeline/transform_bodies.py` → `data/bodies/` (classified)
+3. `pipeline/transform_relationships.py` → `data/relationships/` + body sponsor/parent
+4. `pipeline/enrich_aliases.py` → old-name aliases on live successors
+5. `pipeline/ingest_ministers.py` → `data/offices/`, `data/person-roles/` + content SourceRecord
+6. `pipeline/compile.py` → `compiled/graph.json`, `compiled/state_machine.sqlite`, `manifest.json`
+
+Then, every session, from the repo root:
+- `py -3 validate.py` — validate every record in `data/` against its schema; checks IDs, source links, referential integrity, provision_key duplicates.
 
 ## Setup
 `pip install -r requirements.txt --break-system-packages`
