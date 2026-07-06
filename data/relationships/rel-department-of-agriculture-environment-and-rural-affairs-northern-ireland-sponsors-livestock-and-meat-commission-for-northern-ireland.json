@@ -1,0 +1,15 @@
+{
+  "citation": {
+    "provision": null,
+    "url": "https://www.gov.uk/api/organisations"
+  },
+  "end_date": null,
+  "from_body_id": "uk-state-body-department-of-agriculture-environment-and-rural-affairs-northern-ireland",
+  "legal_status": "current",
+  "record_status": "extracted",
+  "relationship_id": "rel-department-of-agriculture-environment-and-rural-affairs-northern-ireland-sponsors-livestock-and-meat-commission-for-northern-ireland",
+  "relationship_type": "sponsors",
+  "source_id": "source-official-dataset-govuk-organisations-api",
+  "start_date": null,
+  "to_body_id": "uk-state-body-livestock-and-meat-commission-for-northern-ireland"
+}

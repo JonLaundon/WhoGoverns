@@ -1,0 +1,15 @@
+{
+  "citation": {
+    "provision": null,
+    "url": "https://www.gov.uk/api/organisations"
+  },
+  "end_date": null,
+  "from_body_id": "uk-state-body-defence-nuclear-organisation",
+  "legal_status": "current",
+  "record_status": "extracted",
+  "relationship_id": "rel-defence-nuclear-organisation-sponsors-awe-nuclear-security-technologies",
+  "relationship_type": "sponsors",
+  "source_id": "source-official-dataset-govuk-organisations-api",
+  "start_date": null,
+  "to_body_id": "uk-state-body-awe-nuclear-security-technologies"
+}

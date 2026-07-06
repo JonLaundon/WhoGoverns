@@ -72,6 +72,12 @@ def main():
                         if ref not in source_ids:
                             warnings += 1
                             print("   ! warn {} -> {} not among source records".format(field, ref))
+            if folder == "relationships":
+                for field in ("from_body_id", "to_body_id"):
+                    ref = rec.get(field)
+                    if ref and ref not in body_ids:
+                        warnings += 1
+                        print("   ! warn {} -> {} not among body records".format(field, ref))
 
     # provision_key duplicate check (canonical records only) — none in Spiral 1
     seen = {}

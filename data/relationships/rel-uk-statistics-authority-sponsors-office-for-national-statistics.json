@@ -1,0 +1,15 @@
+{
+  "citation": {
+    "provision": null,
+    "url": "https://www.gov.uk/api/organisations"
+  },
+  "end_date": null,
+  "from_body_id": "uk-state-body-uk-statistics-authority",
+  "legal_status": "current",
+  "record_status": "extracted",
+  "relationship_id": "rel-uk-statistics-authority-sponsors-office-for-national-statistics",
+  "relationship_type": "sponsors",
+  "source_id": "source-official-dataset-govuk-organisations-api",
+  "start_date": null,
+  "to_body_id": "uk-state-body-office-for-national-statistics"
+}

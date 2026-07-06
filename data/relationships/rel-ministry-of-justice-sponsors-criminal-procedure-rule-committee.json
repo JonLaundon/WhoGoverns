@@ -1,0 +1,15 @@
+{
+  "citation": {
+    "provision": null,
+    "url": "https://www.gov.uk/api/organisations"
+  },
+  "end_date": null,
+  "from_body_id": "uk-state-body-ministry-of-justice",
+  "legal_status": "current",
+  "record_status": "extracted",
+  "relationship_id": "rel-ministry-of-justice-sponsors-criminal-procedure-rule-committee",
+  "relationship_type": "sponsors",
+  "source_id": "source-official-dataset-govuk-organisations-api",
+  "start_date": null,
+  "to_body_id": "uk-state-body-criminal-procedure-rule-committee"
+}

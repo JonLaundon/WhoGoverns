@@ -22,8 +22,8 @@
   "needs_classification_review": true,
   "notes": null,
   "other_names": [],
-  "parent_body_id": null,
+  "parent_body_id": "uk-state-body-met-office",
   "record_status": "extracted",
-  "sponsor_department_id": null,
+  "sponsor_department_id": "uk-state-body-ministry-of-defence",
   "status": "active"
 }

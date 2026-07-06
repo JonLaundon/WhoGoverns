@@ -1,0 +1,15 @@
+{
+  "citation": {
+    "provision": null,
+    "url": "https://www.gov.uk/api/organisations"
+  },
+  "end_date": null,
+  "from_body_id": "uk-state-body-national-infrastructure-and-service-transformation-authority",
+  "legal_status": "current",
+  "record_status": "extracted",
+  "relationship_id": "rel-national-infrastructure-and-service-transformation-authority-sponsors-government-project-delivery",
+  "relationship_type": "sponsors",
+  "source_id": "source-official-dataset-govuk-organisations-api",
+  "start_date": null,
+  "to_body_id": "uk-state-body-government-project-delivery"
+}

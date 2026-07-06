@@ -1,0 +1,15 @@
+{
+  "citation": {
+    "provision": null,
+    "url": "https://www.gov.uk/api/organisations"
+  },
+  "end_date": null,
+  "from_body_id": "uk-state-body-the-security-service-mi5",
+  "legal_status": "current",
+  "record_status": "extracted",
+  "relationship_id": "rel-the-security-service-mi5-sponsors-national-protective-security-authority",
+  "relationship_type": "sponsors",
+  "source_id": "source-official-dataset-govuk-organisations-api",
+  "start_date": null,
+  "to_body_id": "uk-state-body-national-protective-security-authority"
+}
