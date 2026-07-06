@@ -1,18 +1,43 @@
 {
   "vocab": "govuk_format_to_body_type",
-  "version": "0.1",
-  "note": "Maps the GOV.UK Organisations API 'format' string to the canonical body_type. 'Sub organisation', 'Court' and 'Devolved administration' are out of Spiral 1 scope; mapped to 'other' with review flag.",
+  "version": "0.2",
+  "note": "Maps the GOV.UK Organisations API 'format' string to the canonical body_type (vocab/body_type.json v0.2). Rewritten after the full ingest (2026-07-05): every 'format' value actually present in the 1255-org dataset is mapped, so nothing falls through silently. v0.1 mis-keyed 'Tribunal' (was 'Tribunal non-departmental public body') and 'Devolved government' (was 'Devolved administration'), and omitted five live formats — all fixed here. 'royal_charter_body' has no source 'format' (chartered bodies are outside this API) and is populated by a separate Privy Council tranche, not this map.",
+  "rule": "Any 'format' not present in 'map' below -> body_type 'other_body', and the record is flagged for review (AGENT.md rule 3: no uncontrolled vocabulary drift; never drop). Formats listed in 'flag_for_review' are mapped but coarse/coerced and should also carry a classification-review marker for a human pass.",
   "map": {
     "Ministerial department": "ministerial_department",
     "Non-ministerial department": "non_ministerial_department",
     "Executive agency": "executive_agency",
-    "Executive non-departmental public body": "non_departmental_public_body",
-    "Advisory non-departmental public body": "advisory_body",
-    "Tribunal non-departmental public body": "tribunal",
+    "Sub organisation": "division_directorate",
+    "Executive non-departmental public body": "executive_ndpb",
+    "Advisory non-departmental public body": "advisory_ndpb",
+    "Ad-hoc advisory group": "advisory_ndpb",
+    "Tribunal": "tribunal",
     "Public corporation": "public_corporation",
-    "Sub organisation": "other",
-    "Court": "other",
-    "Devolved administration": "other",
-    "Other": "other"
+    "Court": "other_body",
+    "Independent monitoring body": "other_body",
+    "Special health authority": "other_body",
+    "Executive office": "other_body",
+    "Civil service": "other_body",
+    "Devolved government": "other_body",
+    "Other": "other_body"
+  },
+  "flag_for_review": [
+    "Sub organisation",
+    "Court",
+    "Independent monitoring body",
+    "Special health authority",
+    "Executive office",
+    "Civil service",
+    "Devolved government",
+    "Other"
+  ],
+  "flag_notes": {
+    "Sub organisation": "Heterogeneous tail — some are true divisions/directorates, some near-agencies. Confirm on spot-check.",
+    "Court": "Constitutionally distinct from tribunals; parked in other_body pending a possible dedicated 'court' class.",
+    "Special health authority": "Could be executive_ndpb; left other_body until confirmed against sponsor/legislation.",
+    "Devolved government": "Devolved internal machinery is Spiral 5; other_body for now.",
+    "Executive office": "Single body; confirm identity before a firmer class.",
+    "Civil service": "The 'Civil Service' node itself; other_body.",
+    "Independent monitoring body": "Fits the other_body definition (statutory/mixed-function bodies)."
   }
 }

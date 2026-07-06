@@ -3,7 +3,7 @@
   "name": "Advisory Committee on Business Appointments",
   "other_names": ["ACOBA"],
   "status": "active",
-  "body_type": "advisory_body",
+  "body_type": "advisory_ndpb",
   "jurisdiction": ["UK"],
   "sponsor_department_id": "uk-state-body-cabinet-office",
   "parent_body_id": null,

@@ -91,3 +91,12 @@ Schemas built general; adding budgets, staffing, more officials, powers or devol
 | Content API minister parse varies by department | Handle missing `role_appointments` gracefully; log gaps in `issues/source-gaps.md` |
 | Whole-state graph is visually dense | Cytoscape layout + collapse-by-parent; entity pages carry the detail |
 | Git can't run in the Cowork sandbox (OneDrive) | Build/commit in Claude Code on the host (see the handoff guide) |
+
+---
+
+## 9. Addendum — 2026-07-06 (sponsor decisions; signed-off scope above unchanged)
+
+Two decisions taken during task-1 review (full detail in `issues/schema-decisions.md`). They refine *how* tasks 2, 4 and 6 build; they do not change the Spiral 1 deliverable.
+
+- **Body taxonomy re-based on the machineryofgovernment.uk category scheme** (pattern only, no data reuse). `body_type` → v0.2: dropped `regulator`; renamed to `executive_ndpb` / `advisory_ndpb` / `other_body`; added `division_directorate` (for the API `Sub organisation` format) and `royal_charter_body` (populated later from a Privy Council tranche, **not** from the GOV.UK API — chartered bodies are absent from it). Courts → `other_body`. The task-2 crosswalk (`vocab/govuk_format_to_body_type.json` v0.2) now covers all 16 formats in the dataset. **Supersedes the §8 risk-row phrasing** "map ambiguous formats to `other`" — the target catch-all is now `other_body`, with an explicit review flag on coarse formats.
+- **Officials/offices are first-class, power-holding nodes — not a body_type.** The map is **office-centred**: PM's office → Cabinet offices → other ministerial offices → departments → agencies/ALBs, with **Office as a graph node**, not a department attribute (affects **task 4** ministers and **task 6** map). Statutory powers vest in offices (corporations sole: "the Secretary of State may…"); the Power/Duty/Veto schema gains a polymorphic `holder` (`office_id` | `body_id`) — an **Annex A6 revision built in Spiral 2**, recorded now so officials are not skipped. No power population in Spiral 1.

@@ -10,7 +10,7 @@
     "name": { "type": "string" },
     "other_names": { "type": "array", "items": { "type": "string" } },
     "status": { "type": "string", "enum": ["active", "closed", "merged", "superseded"] },
-    "body_type": { "type": "string", "enum": ["executive_agency", "non_departmental_public_body", "non_ministerial_department", "ministerial_department", "regulator", "tribunal", "advisory_body", "public_corporation", "other"] },
+    "body_type": { "type": "string", "enum": ["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate", "executive_ndpb", "advisory_ndpb", "tribunal", "public_corporation", "royal_charter_body", "other_body"] },
     "jurisdiction": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["UK", "England", "Scotland", "Wales", "Northern Ireland"] } },
     "sponsor_department_id": { "type": ["string", "null"] },
     "parent_body_id": { "type": ["string", "null"] },

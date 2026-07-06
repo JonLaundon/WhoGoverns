@@ -1,1 +1,17 @@
-{ "vocab": "body_type", "version": "0.1", "terms": ["executive_agency", "non_departmental_public_body", "non_ministerial_department", "ministerial_department", "regulator", "tribunal", "advisory_body", "public_corporation", "other"] }
+{
+  "vocab": "body_type",
+  "version": "0.2",
+  "note": "Body classification key, aligned to the machineryofgovernment.uk category scheme (pattern only, no data reuse). Two tiers: departments and public bodies. 'regulator' (v0.1) dropped — regulation is a function captured via powers (Spiral 2), not a structural type; regulators keep their statutory form (usually non_ministerial_department or an NDPB). 'royal_charter_body' is retained but NOT populated from the GOV.UK Organisations API (chartered bodies sit outside it); it is filled by a separate Privy Council-sourced tranche, each cited to its charter. Officials (PM, ministers, civil servants) are NOT body types — they are the Office/PersonRole layer.",
+  "terms": [
+    "ministerial_department",
+    "non_ministerial_department",
+    "executive_agency",
+    "division_directorate",
+    "executive_ndpb",
+    "advisory_ndpb",
+    "tribunal",
+    "public_corporation",
+    "royal_charter_body",
+    "other_body"
+  ]
+}
