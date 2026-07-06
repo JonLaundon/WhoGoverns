@@ -140,10 +140,14 @@ let GENERATED = "";
 let currentLayout = "rings";
 let basePos = {};        // unrotated node positions of the current layout
 let selectedId = null;
+let currentAngle = 0;    // rotation currently applied to basePos (rings layout)
+let rotAnim = null;
 const $ = (sel) => document.querySelector(sel);
 
 function runLayout(name) {
   currentLayout = name;
+  if (rotAnim) { cancelAnimationFrame(rotAnim); rotAnim = null; }
+  currentAngle = 0;
   cy.layout(makeLayout(name)).run();
   basePos = {};
   cy.nodes().forEach((n) => { basePos[n.id()] = { x: n.position("x"), y: n.position("y") }; });
@@ -200,6 +204,7 @@ function init(graph) {
       }},
       { selector: "edge[kind = 'office_of']", style: { "line-color": "#e3b7be", "line-style": "dashed", "target-arrow-shape": "none" } },
       { selector: "edge[kind = 'leads']", style: { "line-color": "#8a1a12", "width": 1, "opacity": 0.45, "target-arrow-color": "#8a1a12", "target-arrow-shape": "triangle", "arrow-scale": 0.5 } },
+      { selector: "edge.rot-hide", style: { "display": "none" } },
       { selector: ".faded", style: { "opacity": 0.08, "text-opacity": 0 } },
       { selector: "node.thread-lbl", style: { "label": "data(label)", "z-index": 95, "border-width": 2, "border-color": "#0b0c0c" } },
       { selector: "edge.thread-edge", style: { "line-color": "#0b0c0c", "opacity": 1, "width": 2.5, "z-index": 85, "target-arrow-color": "#0b0c0c", "line-style": "solid" } },
@@ -227,8 +232,7 @@ function init(graph) {
 
 /* ---------- hover: title tooltip + link highlight ---------- */
 function hoverNode(node, evt) {
-  cy.elements().addClass("faded");
-  node.closedNeighborhood().removeClass("faded").addClass("hover-hl");
+  highlightThread(node);       // same full thread-to-PM as a click, minus rotation/detail
   const d = node.data();
   const n = node.connectedEdges().length;
   $("#tooltip").innerHTML =
@@ -243,10 +247,9 @@ function positionTooltip(evt) {
   t.style.top = (e.clientY + 14) + "px";
 }
 function unhover() {
-  cy.elements().removeClass("hover-hl");
   $("#tooltip").style.display = "none";
-  if (selectedId) applySelectionHighlight(cy.getElementById(selectedId));
-  else cy.elements().removeClass("faded");
+  if (selectedId) highlightThread(cy.getElementById(selectedId));
+  else cy.elements().removeClass("faded thread-lbl thread-edge hover-hl");
 }
 
 /* ---------- click: golden thread + rotation + details ---------- */
@@ -267,39 +270,60 @@ function upwardThread(node) {
   return acc;
 }
 
-function applySelectionHighlight(node) {
+// Fade everything, then light up ONLY this node's golden thread up to the PM plus one
+// hop of its children. Clears any previous thread/hover classes first, so stale black
+// connectors never linger when the highlighted node changes.
+function highlightThread(node) {
   const up = upwardThread(node);                 // node → minister → cabinet → PM
   const keep = up.union(node.outgoers()).union(node); // + one hop down (its bodies/juniors)
-  cy.elements().addClass("faded").removeClass("thread-lbl thread-edge");
+  cy.elements().addClass("faded").removeClass("thread-lbl thread-edge hover-hl");
   keep.removeClass("faded");
   up.nodes().addClass("thread-lbl");             // label ONLY the thread (avoids overlap)
   node.addClass("thread-lbl");
   up.edges().addClass("thread-edge");            // draw the thread solid black
 }
 
-// Rotate the whole ring layout so the selected node's spoke swings to the top,
-// making its golden thread read as a straight radial line (the MoG behaviour).
-function rotateToTop(node) {
-  const b = basePos[node.id()];
-  if (!b || (b.x === 0 && b.y === 0)) { cy.animate({ center: { eles: node } }, { duration: 250 }); return; }
-  const delta = (-Math.PI / 2) - Math.atan2(b.y, b.x);
-  const cos = Math.cos(delta), sin = Math.sin(delta);
+// Smoothly rotate the ring layout by animating an angle applied to the base positions
+// (an eased requestAnimationFrame loop — not an instant jump).
+function applyRotation(ang) {
+  const cos = Math.cos(ang), sin = Math.sin(ang);
   cy.batch(() => cy.nodes().forEach((n) => {
     const p = basePos[n.id()];
     if (p) n.position({ x: p.x * cos - p.y * sin, y: p.x * sin + p.y * cos });
   }));
-  cy.animate({ fit: { padding: 40 } }, { duration: 300 });
 }
-
-function restoreBasePositions() {
-  cy.batch(() => cy.nodes().forEach((n) => { const b = basePos[n.id()]; if (b) n.position({ x: b.x, y: b.y }); }));
+function animateRotation(target, duration) {
+  let delta = target - currentAngle;
+  while (delta > Math.PI) delta -= 2 * Math.PI;
+  while (delta < -Math.PI) delta += 2 * Math.PI;   // take the short way round
+  if (Math.abs(delta) < 0.002) { currentAngle = target; return; }
+  const start = currentAngle, t0 = performance.now(), dur = duration || 650;
+  if (rotAnim) cancelAnimationFrame(rotAnim);
+  // Hide edges while nodes move: otherwise all ~890 bezier edges recompute every
+  // frame and lock the renderer. They reappear (rendered once) when rotation settles.
+  cy.edges().addClass("rot-hide");
+  function step(now) {
+    const k = Math.min(1, (now - t0) / dur);
+    const e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;  // ease-in-out
+    currentAngle = start + delta * e;
+    applyRotation(currentAngle);
+    if (k < 1) { rotAnim = requestAnimationFrame(step); }
+    else { currentAngle = start + delta; rotAnim = null; cy.edges().removeClass("rot-hide"); }
+  }
+  rotAnim = requestAnimationFrame(step);
+}
+function rotateToTop(node) {
+  const b = basePos[node.id()];
+  if (!b || (b.x === 0 && b.y === 0)) return;     // PM sits at the centre: nothing to rotate
+  animateRotation((-Math.PI / 2) - Math.atan2(b.y, b.x), 650);
 }
 
 function selectNode(id) {
   const node = cy.getElementById(id);
   if (node.empty()) return;
   selectedId = id;
-  applySelectionHighlight(node);
+  $("#tooltip").style.display = "none";
+  highlightThread(node);
   cy.$(":selected").unselect();
   node.select();
   renderDetail(node.data());
@@ -309,9 +333,10 @@ function selectNode(id) {
 
 function clearFocus() {
   selectedId = null;
+  $("#tooltip").style.display = "none";
   cy.elements().removeClass("faded hover-hl thread-lbl thread-edge");
   cy.$(":selected").unselect();
-  if (currentLayout === "rings") { restoreBasePositions(); cy.animate({ fit: { padding: 40 } }, { duration: 300 }); }
+  if (currentLayout === "rings") animateRotation(0, 500);   // rotate back smoothly
   $("#detail-body").hidden = true;
   $("#detail-empty").hidden = false;
 }
