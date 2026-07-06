@@ -3,7 +3,7 @@
     "bodies": 663,
     "offices": 125,
     "person_roles": 125,
-    "relationships": 637,
+    "relationships": 639,
     "sources": 3
   },
   "edges": [
@@ -2429,6 +2429,22 @@
         "kind": "sponsors",
         "source": "uk-state-body-department-for-energy-security-and-net-zero",
         "target": "uk-state-body-committee-on-climate-change"
+      }
+    },
+    {
+      "data": {
+        "id": "rel-department-for-energy-security-and-net-zero-sponsors-committee-on-fuel-poverty",
+        "kind": "sponsors",
+        "source": "uk-state-body-department-for-energy-security-and-net-zero",
+        "target": "uk-state-body-committee-on-fuel-poverty"
+      }
+    },
+    {
+      "data": {
+        "id": "rel-department-for-energy-security-and-net-zero-sponsors-committee-on-radioactive-waste-management",
+        "kind": "sponsors",
+        "source": "uk-state-body-department-for-energy-security-and-net-zero",
+        "target": "uk-state-body-committee-on-radioactive-waste-management"
       }
     },
     {
@@ -7238,7 +7254,7 @@
       }
     }
   ],
-  "generated": "2026-07-06T13:26:08",
+  "generated": "2026-07-06T14:26:00",
   "nodes": [
     {
       "data": {
@@ -8876,7 +8892,7 @@
           "FPAG"
         ],
         "parent_body_id": null,
-        "sponsor_department_id": null,
+        "sponsor_department_id": "uk-state-body-department-for-energy-security-and-net-zero",
         "status": "active"
       }
     },
@@ -8904,7 +8920,7 @@
         "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
-        "sponsor_department_id": null,
+        "sponsor_department_id": "uk-state-body-department-for-energy-security-and-net-zero",
         "status": "active"
       }
     },
