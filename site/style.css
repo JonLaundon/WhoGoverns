@@ -1,7 +1,23 @@
-/* WhoGoverns map face — civic-minimal, GDS *principles* (not GDS brand assets).
-   System font stack (GDS Transport is a restricted asset and is deliberately not used).
-   High-contrast, keyboard-navigable; the graph canvas is backed by an accessible
-   search + details panel for non-visual use. */
+/* WhoGoverns map face — civic-minimal, high-contrast, keyboard-navigable; the graph
+   canvas is backed by an accessible search + details panel for non-visual use.
+
+   Typography adopts the TSP document system (tsp-branded.latex): Georgia serif body,
+   a display face for headings, generous paragraph spacing, no indent. COLOURS ARE
+   UNCHANGED — the palette below and the data-driven node colours are deliberately kept
+   (they are not the TSP brand colours). Beautique Display is PfB's *commercial* display
+   font and is NOT bundled: drop the licensed web-font file into site/fonts/ (see the
+   @font-face below) to switch headings to it; until then headings fall back to Georgia,
+   which keeps the face neutral. */
+
+/* Optional: enable PfB's display font for headings by adding the licensed file here.
+   If the file is absent the browser silently uses the Georgia fallback in --font-display. */
+@font-face {
+  font-family: "Beautique Display";
+  src: url("fonts/BeautiqueDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 :root {
   --ink: #0b0c0c;
@@ -12,6 +28,10 @@
   --focus: #ffdd00;
   --link: #1d70b8;
   --accent: #1d70b8;
+
+  /* Fonts (colours unchanged) — mirrors \setmainfont{Georgia} + \titlefont{Beautique Display}. */
+  --font-body: Georgia, "Times New Roman", Times, serif;
+  --font-display: "Beautique Display", Georgia, "Times New Roman", serif;
 }
 
 * { box-sizing: border-box; }
@@ -19,11 +39,15 @@
 html, body {
   margin: 0;
   height: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: var(--font-body);
   color: var(--ink);
   background: var(--bg);
-  line-height: 1.4;
+  line-height: 1.45;
 }
+
+/* Display headings — the brand titling face (Beautique Display, falling back to Georgia),
+   bold, matching the LaTeX \titleformat weights. Colours inherit (unchanged). */
+.wordmark, .detail-body h2, .detail-empty h2 { font-family: var(--font-display); font-weight: 700; }
 
 a { color: var(--link); }
 a:focus, input:focus, button:focus { outline: 3px solid var(--focus); outline-offset: 0; }
@@ -90,7 +114,8 @@ a:focus, input:focus, button:focus { outline: 3px solid var(--focus); outline-of
 .detail { border-left: 1px solid var(--line); padding: 16px; overflow-y: auto; background: #fff; }
 .detail-empty h2 { font-size: 1.1rem; }
 .detail-empty p { color: var(--mid); font-size: 0.9rem; }
-.detail-body h2 { font-size: 1.2rem; margin: 0 0 2px; }
+.detail-body h2 { font-size: 1.25rem; line-height: 1.15; margin: 0 0 2px; }
+.detail-body p { margin: 0 0 8px; }   /* parskip-style paragraph spacing, no indent */
 .detail-body .kicker { text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.72rem; color: var(--mid); margin: 0 0 10px; }
 .detail-body dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; margin: 12px 0; font-size: 0.88rem; }
 .detail-body dt { color: var(--mid); }
