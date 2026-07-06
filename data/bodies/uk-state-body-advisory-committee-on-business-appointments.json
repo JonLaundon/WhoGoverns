@@ -18,14 +18,13 @@
   "jurisdiction": [
     "UK"
   ],
-  "last_reviewed": "2026-07-05",
+  "last_reviewed": null,
   "name": "Advisory Committee on Business Appointments",
-  "notes": "Advisory NDPB, sponsor Cabinet Office per API. Advisory/low statutory power — deliberate test of A9.5 (influence is not legal authority). Seed schema-test record.",
-  "other_names": [
-    "ACOBA"
-  ],
+  "needs_classification_review": false,
+  "notes": null,
+  "other_names": [],
   "parent_body_id": null,
-  "record_status": "draft",
+  "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-cabinet-office",
   "status": "active"
 }

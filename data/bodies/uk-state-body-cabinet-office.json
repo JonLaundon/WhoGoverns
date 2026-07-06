@@ -1,24 +1,29 @@
 {
+  "annual_report_source_ids": [],
   "body_id": "uk-state-body-cabinet-office",
-  "name": "Cabinet Office",
-  "other_names": [],
-  "status": "active",
   "body_type": "ministerial_department",
-  "jurisdiction": ["UK"],
-  "sponsor_department_id": null,
-  "parent_body_id": null,
-  "govuk_organisation_slug": "cabinet-office",
+  "classification_source_ids": [
+    "source-official-dataset-govuk-organisations-api"
+  ],
   "external_ids": {
-    "govuk_content_id": "96ae61d6-c2a1-48cb-8e67-da9d105ae381",
-    "govuk_analytics_identifier": "D2",
+    "charity_number": null,
     "company_number": null,
-    "charity_number": null
+    "govuk_analytics_identifier": "D2",
+    "govuk_content_id": "96ae61d6-c2a1-48cb-8e67-da9d105ae381"
   },
   "founding_source_ids": [],
   "framework_document_source_ids": [],
-  "annual_report_source_ids": [],
-  "classification_source_ids": ["source-official-dataset-govuk-organisations-api"],
-  "notes": "Live ministerial department per GOV.UK Organisations API (govuk_status live). Seed schema-test record.",
-  "record_status": "draft",
-  "last_reviewed": "2026-07-05"
+  "govuk_organisation_slug": "cabinet-office",
+  "jurisdiction": [
+    "UK"
+  ],
+  "last_reviewed": null,
+  "name": "Cabinet Office",
+  "needs_classification_review": false,
+  "notes": null,
+  "other_names": [],
+  "parent_body_id": null,
+  "record_status": "extracted",
+  "sponsor_department_id": null,
+  "status": "active"
 }

@@ -3,8 +3,7 @@
   "body_id": "uk-state-body-ofgem",
   "body_type": "non_ministerial_department",
   "classification_source_ids": [
-    "source-official-dataset-govuk-organisations-api",
-    "source-official-dataset-cabinet-office-public-bodies"
+    "source-official-dataset-govuk-organisations-api"
   ],
   "external_ids": {
     "charity_number": null,
@@ -18,14 +17,13 @@
   "jurisdiction": [
     "UK"
   ],
-  "last_reviewed": "2026-07-05",
+  "last_reviewed": null,
   "name": "Ofgem",
-  "notes": "Non-ministerial department; the GB energy market regulator (statutory authority is GEMA, to model in Spiral 2). Sponsor DESNZ per API. Jurisdiction placeholder UK; actual remit GB — see issues/uncertain-records.md. Seed schema-test record.",
-  "other_names": [
-    "Office of Gas and Electricity Markets"
-  ],
+  "needs_classification_review": false,
+  "notes": null,
+  "other_names": [],
   "parent_body_id": null,
-  "record_status": "draft",
+  "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-department-for-energy-security-and-net-zero",
   "status": "active"
 }
