@@ -1,0 +1,12 @@
+{
+  "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
+  "last_reviewed": null,
+  "notes": "office_type heuristic = other; review.",
+  "office_id": "office-government-spokesperson-for-equalities-2",
+  "office_type": "other",
+  "record_status": "extracted",
+  "source_ids": [
+    "source-official-dataset-govuk-content-api"
+  ],
+  "title": "Government Spokesperson for Equalities"
+}

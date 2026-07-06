@@ -1,0 +1,15 @@
+{
+  "body_id": "uk-state-body-ministry-of-justice",
+  "end_date": null,
+  "is_current": true,
+  "last_reviewed": null,
+  "notes": null,
+  "office_id": "office-minister-of-state-minister-for-prisons",
+  "person_name": "Lord Timpson OBE",
+  "person_role_id": "personrole-minister-of-state-minister-for-prisons-timpson",
+  "record_status": "extracted",
+  "source_ids": [
+    "source-official-dataset-govuk-content-api"
+  ],
+  "start_date": "2024-07-05"
+}

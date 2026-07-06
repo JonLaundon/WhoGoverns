@@ -1,0 +1,12 @@
+{
+  "body_id": "uk-state-body-prime-ministers-office-10-downing-street",
+  "last_reviewed": null,
+  "notes": "office_type heuristic = other; review.",
+  "office_id": "office-minister-for-the-union",
+  "office_type": "other",
+  "record_status": "extracted",
+  "source_ids": [
+    "source-official-dataset-govuk-content-api"
+  ],
+  "title": "Minister for the Union"
+}

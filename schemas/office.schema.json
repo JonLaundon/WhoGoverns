@@ -9,7 +9,7 @@
     "office_id": { "type": "string" },
     "title": { "type": "string" },
     "body_id": { "type": "string" },
-    "office_type": { "type": "string", "enum": ["secretary_of_state", "minister_of_state", "parliamentary_under_secretary", "permanent_secretary", "other"] },
+    "office_type": { "type": "string", "enum": ["prime_minister", "cabinet_minister", "junior_minister", "civil_servant", "independent_official", "other"] },
     "source_ids": { "type": "array", "items": { "type": "string" } },
     "notes": { "type": ["string", "null"] },
     "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] },

@@ -1,0 +1,12 @@
+{
+  "body_id": "uk-state-body-cabinet-office",
+  "last_reviewed": null,
+  "notes": null,
+  "office_id": "office-minister-of-state-minister-without-portfolio-3",
+  "office_type": "junior_minister",
+  "record_status": "extracted",
+  "source_ids": [
+    "source-official-dataset-govuk-content-api"
+  ],
+  "title": "Minister of State (Minister without Portfolio)"
+}

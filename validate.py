@@ -41,6 +41,7 @@ def main():
 
     body_ids = {load(p).get("body_id") for p in glob.glob(os.path.join(REPO, "data/bodies/*.json"))}
     source_ids = {load(p).get("source_id") for p in glob.glob(os.path.join(REPO, "data/sources/*.json"))}
+    office_ids = {load(p).get("office_id") for p in glob.glob(os.path.join(REPO, "data/offices/*.json"))}
 
     for folder, schema_file in FOLDER_SCHEMA.items():
         schema_path = os.path.join(REPO, "schemas", schema_file)
@@ -78,6 +79,16 @@ def main():
                     if ref and ref not in body_ids:
                         warnings += 1
                         print("   ! warn {} -> {} not among body records".format(field, ref))
+            if folder in ("offices", "person-roles"):
+                ref = rec.get("body_id")
+                if ref and ref not in body_ids:
+                    warnings += 1
+                    print("   ! warn body_id -> {} not among body records".format(ref))
+            if folder == "person-roles":
+                ref = rec.get("office_id")
+                if ref and ref not in office_ids:
+                    warnings += 1
+                    print("   ! warn office_id -> {} not among office records".format(ref))
 
     # provision_key duplicate check (canonical records only) — none in Spiral 1
     seen = {}
