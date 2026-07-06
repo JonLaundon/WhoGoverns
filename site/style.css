@@ -61,8 +61,10 @@ a:focus, input:focus, button:focus { outline: 3px solid var(--focus); outline-of
 .legend { margin-top: 8px; }
 .legend h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--mid); margin: 12px 0 6px; }
 .legend .row { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; margin: 3px 0; }
-.legend .swatch { width: 14px; height: 14px; border-radius: 3px; flex: none; border: 1px solid rgba(0,0,0,0.2); }
-.legend .swatch.office { transform: rotate(45deg); border-radius: 2px; }
+.legend .swatch { width: 13px; height: 13px; border-radius: 3px; flex: none; border: 1px solid rgba(0,0,0,0.25); }
+.legend .swatch.office { border-radius: 50%; }
+.legend .swatch.dept { border-radius: 3px; }
+.legend .swatch.pub { transform: rotate(45deg); border-radius: 1px; }
 .counts { font-size: 0.75rem; color: var(--mid); margin-top: 14px; }
 
 /* Graph stage */
@@ -71,6 +73,10 @@ a:focus, input:focus, button:focus { outline: 3px solid var(--focus); outline-of
   radial-gradient(circle at 50% 45%, #fbfbfa 0%, #f3f2f1 100%); }
 .hint { position: absolute; bottom: 8px; left: 12px; margin: 0; font-size: 0.75rem;
   color: var(--mid); background: rgba(255,255,255,0.85); padding: 3px 8px; border-radius: 3px; }
+.tooltip { position: fixed; z-index: 50; display: none; pointer-events: none;
+  background: #0b0c0c; color: #fff; padding: 5px 9px; border-radius: 4px; font-size: 0.8rem;
+  max-width: 280px; box-shadow: 0 2px 6px rgba(0,0,0,0.3); }
+.tooltip .tt-sub { color: #c7cacb; font-size: 0.72rem; }
 
 /* Detail panel */
 .detail { border-left: 1px solid var(--line); padding: 16px; overflow-y: auto; background: #fff; }

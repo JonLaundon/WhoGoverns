@@ -1,46 +1,63 @@
-/* WhoGoverns map face. Reads compiled/graph.json, renders an office-centred
-   Cytoscape graph, and drives search + an entity details panel where every claim
-   links to its source. Boring by design: one file, no framework, no build step.
+/* WhoGoverns map face. Reads compiled/graph.json, renders the UK state as a radial
+   "sunburst" of concentric rings (PM at the centre, public bodies on the rim), and
+   drives search, hover, and an entity details panel where every claim links to its
+   source. Boring by design: one file, no framework, no build step.
    Serve from the repo root (py -3 -m http.server) and open /site/. */
 
 "use strict";
 
-// Human labels + colours per type. Colours are ordinary web colours (GDS palette
-// values are not restricted; the GDS Transport font and Crown logo are, and are not used).
+// Human labels + colours per type. Palette follows the machineryofgovernment.uk
+// category scheme (colours only — no data/code/design copied). Officials are circles,
+// departments rounded squares, NDPBs/tribunals diamonds, other bodies squares.
 const BODY_TYPES = {
-  ministerial_department:      ["Ministerial department", "#1d70b8"],
-  non_ministerial_department:  ["Non-ministerial department", "#28a197"],
-  executive_agency:            ["Executive agency", "#00703c"],
-  division_directorate:        ["Division / directorate", "#85994b"],
-  executive_ndpb:              ["Executive NDPB", "#4c2c92"],
-  advisory_ndpb:               ["Advisory NDPB", "#d53880"],
-  tribunal:                    ["Tribunal", "#f47738"],
-  public_corporation:          ["Public corporation", "#b58840"],
-  royal_charter_body:          ["Royal charter body", "#942514"],
-  other_body:                  ["Other body", "#626a6e"],
+  ministerial_department:      ["Ministerial department", "#e05a4f"],
+  non_ministerial_department:  ["Non-ministerial department", "#4a90d9"],
+  executive_agency:            ["Executive agency", "#8e6fc7"],
+  division_directorate:        ["Division / directorate", "#e8917d"],
+  executive_ndpb:              ["Executive NDPB", "#3fa35b"],
+  advisory_ndpb:               ["Advisory NDPB", "#e6c229"],
+  tribunal:                    ["Tribunal", "#e8883a"],
+  public_corporation:          ["Public corporation", "#e8a13a"],
+  royal_charter_body:          ["Royal charter body", "#9b6fc7"],
+  other_body:                  ["Other body", "#9aa0a6"],
 };
 const OFFICE_TYPES = {
-  prime_minister:   ["Prime Minister", "#0b0c0c"],
-  cabinet_minister: ["Cabinet minister", "#d4351c"],
-  junior_minister:  ["Junior minister", "#e8869a"],
-  other:            ["Other office", "#909699"],
+  prime_minister:       ["Prime Minister", "#7a1f1a"],
+  cabinet_minister:     ["Cabinet minister", "#c0392b"],
+  junior_minister:      ["Junior minister", "#f0a6a0"],
+  independent_official: ["Independent official", "#3fa35b"],
+  civil_servant:        ["Civil servant", "#4a90d9"],
+  other:                ["Other office", "#b0b4b8"],
 };
 
-// Concentric level — higher sits nearer the centre (office-centred: PM in the middle).
+// Seven rings, centre → rim (higher value = nearer the centre in a concentric layout):
+//   7 PM · 6 cabinet · 5 junior/under-secretaries · 4 independent officials ·
+//   3 ministerial + non-ministerial departments · 2 agencies + divisions · 1 public bodies.
 function level(d) {
   if (d.kind === "office") {
-    return { prime_minister: 10, cabinet_minister: 8, junior_minister: 5, other: 5 }[d.office_type] || 5;
+    return { prime_minister: 7, cabinet_minister: 6, junior_minister: 5,
+             independent_official: 4, civil_servant: 4, other: 5 }[d.office_type] || 5;
   }
-  return {
-    ministerial_department: 7, non_ministerial_department: 6, public_corporation: 4,
-    executive_agency: 4, executive_ndpb: 4, advisory_ndpb: 3, tribunal: 3,
-    division_directorate: 2, royal_charter_body: 2, other_body: 2,
-  }[d.body_type] || 2;
+  const b = d.body_type;
+  if (b === "ministerial_department" || b === "non_ministerial_department") return 3;
+  if (b === "executive_agency" || b === "division_directorate") return 2;
+  return 1; // executive/advisory NDPB, tribunal, public corp, royal charter, other body
 }
 
-// Two layouts. "hierarchy" is a top-down tiered preset: the people on top as an org
-// chart (PM -> cabinet -> junior -> other offices), the machines (bodies) in a grid
-// below, grouped by type. "rings" is the concentric office-centred overview.
+function bodyShape(bt) {
+  if (["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate"].includes(bt)) return "round-rectangle";
+  if (["executive_ndpb", "advisory_ndpb", "tribunal"].includes(bt)) return "diamond";
+  return "rectangle"; // public_corporation, royal_charter_body, other_body
+}
+
+function subOf(d) {
+  return d.kind === "office"
+    ? (OFFICE_TYPES[d.office_type] || OFFICE_TYPES.other)[0] + (d.holder ? " · " + d.holder : "")
+    : (BODY_TYPES[d.body_type] || BODY_TYPES.other_body)[0];
+}
+
+// Layouts. "rings" is the radial sunburst (default, MoG-style). "hierarchy" is the
+// top-down tiered org chart, kept as an alternative view.
 function hierarchyPositions() {
   const W = 2400, pos = {};
   const band = (pred, y) => {
@@ -61,19 +78,65 @@ function hierarchyPositions() {
   return pos;
 }
 
+// Radial sunburst with FIXED, evenly-stepped ring radii (unlike Cytoscape's concentric,
+// which balloons the radius of a crowded ring). Each ring is sorted by the node's "home
+// department" so a department and its ministers/agencies/bodies line up on the same
+// radial spoke — the machineryofgovernment.uk look.
+const RING_RADIUS = { 7: 0, 6: 110, 5: 190, 4: 260, 3: 340, 2: 480, 1: 760 };
+
+function homeDeptSortKey(node, byId, deptIndex) {
+  let cur = node, guard = 0;
+  while (cur && guard++ < 20) {
+    const d = cur.data();
+    if (d.kind === "body" && (d.body_type === "ministerial_department" || d.body_type === "non_ministerial_department")) {
+      return deptIndex[d.id] != null ? deptIndex[d.id] : 9999;
+    }
+    const next = d.kind === "office" ? d.body_id : (d.sponsor_department_id || d.parent_body_id);
+    if (!next) break;
+    cur = byId[next];
+  }
+  return 9999;
+}
+
+function ringsPositions() {
+  const byId = {};
+  cy.nodes().forEach((n) => { byId[n.id()] = n; });
+  // Stable department order (defines the angular sectors).
+  const depts = cy.nodes().filter((n) => ["ministerial_department", "non_ministerial_department"].includes(n.data("body_type")))
+    .sort((a, b) => a.data("label").localeCompare(b.data("label")));
+  const deptIndex = {};
+  depts.forEach((n, i) => { deptIndex[n.id()] = i; });
+
+  const byLevel = {};
+  cy.nodes().forEach((n) => { const L = level(n.data()); (byLevel[L] = byLevel[L] || []).push(n); });
+
+  const pos = {};
+  Object.keys(byLevel).forEach((L) => {
+    const r = RING_RADIUS[L] || 0;
+    const ns = byLevel[L];
+    if (r === 0) { ns.forEach((n) => { pos[n.id()] = { x: 0, y: 0 }; }); return; }
+    ns.sort((a, b) => homeDeptSortKey(a, byId, deptIndex) - homeDeptSortKey(b, byId, deptIndex)
+      || a.data("label").localeCompare(b.data("label")));
+    ns.forEach((n, i) => {
+      const ang = 2 * Math.PI * i / ns.length - Math.PI / 2;
+      pos[n.id()] = { x: r * Math.cos(ang), y: r * Math.sin(ang) };
+    });
+  });
+  return pos;
+}
+
 function makeLayout(name) {
   if (name === "hierarchy") {
     const pos = hierarchyPositions();
     return { name: "preset", positions: (n) => pos[n.id()] || { x: 0, y: 0 }, fit: true, padding: 30 };
   }
-  return { name: "concentric", concentric: (n) => level(n.data()), levelWidth: () => 2,
-           minNodeSpacing: 8, spacingFactor: 0.9, animate: false };
+  const pos = ringsPositions();
+  return { name: "preset", positions: (n) => pos[n.id()] || { x: 0, y: 0 }, fit: true, padding: 40 };
 }
 
-let cy;                 // cytoscape instance
-let searchIndex = [];   // [{id, label, sub, text}]
+let cy;
+let searchIndex = [];
 let GENERATED = "";
-
 const $ = (sel) => document.querySelector(sel);
 
 fetch("../compiled/graph.json")
@@ -88,25 +151,22 @@ fetch("../compiled/graph.json")
 function init(graph) {
   GENERATED = graph.generated || "";
 
-  // Enrich node data with presentation fields, and build the search index.
   graph.nodes.forEach((n) => {
     const d = n.data;
     if (d.kind === "office") {
       d.color = (OFFICE_TYPES[d.office_type] || OFFICE_TYPES.other)[1];
-      d.shape = "diamond";
-      d.size = d.office_type === "prime_minister" ? 30 : 18;
+      d.shape = "ellipse";
+      d.size = d.office_type === "prime_minister" ? 30 : d.office_type === "cabinet_minister" ? 20 : 15;
     } else {
       d.color = (BODY_TYPES[d.body_type] || BODY_TYPES.other_body)[1];
-      d.shape = "ellipse";
-      d.size = d.body_type === "ministerial_department" ? 34
-             : d.body_type === "non_ministerial_department" ? 24 : 16;
+      d.shape = bodyShape(d.body_type);
+      d.size = d.body_type === "ministerial_department" ? 26
+             : d.body_type === "non_ministerial_department" ? 20 : 13;
     }
     d.forming = d.status === "forming";
     const aliases = (d.other_names || []).join(" ");
-    const sub = d.kind === "office"
-      ? (OFFICE_TYPES[d.office_type] || OFFICE_TYPES.other)[0] + (d.holder ? " · " + d.holder : "")
-      : (BODY_TYPES[d.body_type] || BODY_TYPES.other_body)[0];
-    searchIndex.push({ id: d.id, label: d.label, sub, text: (d.label + " " + aliases + " " + (d.holder || "")).toLowerCase() });
+    searchIndex.push({ id: d.id, label: d.label, sub: subOf(d),
+      text: (d.label + " " + aliases + " " + (d.holder || "")).toLowerCase() });
   });
 
   cy = cytoscape({
@@ -119,27 +179,32 @@ function init(graph) {
         "width": "data(size)", "height": "data(size)",
         "border-width": 1, "border-color": "rgba(0,0,0,0.35)",
         "label": "", "font-size": 9, "color": "#0b0c0c",
-        "text-background-color": "#fff", "text-background-opacity": 0.85,
-        "text-background-padding": 2, "min-zoomed-font-size": 8,
+        "text-background-color": "#fff", "text-background-opacity": 0.9,
+        "text-background-padding": 2, "min-zoomed-font-size": 7,
       }},
       { selector: "node[?forming]", style: { "border-style": "dashed", "border-width": 2, "border-color": "#0b0c0c" } },
       { selector: "edge", style: {
-        "curve-style": "bezier", "width": 1, "line-color": "#c7cacb",
-        "target-arrow-color": "#c7cacb", "target-arrow-shape": "triangle", "arrow-scale": 0.55,
+        "curve-style": "bezier", "width": 1, "line-color": "#d3d6d8", "opacity": 0.5,
+        "target-arrow-color": "#d3d6d8", "target-arrow-shape": "triangle", "arrow-scale": 0.5,
       }},
       { selector: "edge[kind = 'office_of']", style: { "line-color": "#e3b7be", "line-style": "dashed", "target-arrow-shape": "none" } },
-      { selector: "edge[kind = 'leads']", style: { "line-color": "#0b0c0c", "width": 1.3, "opacity": 0.6, "target-arrow-color": "#0b0c0c", "target-arrow-shape": "triangle", "arrow-scale": 0.6 } },
-      { selector: ".faded", style: { "opacity": 0.12, "text-opacity": 0 } },
+      { selector: "edge[kind = 'leads']", style: { "line-color": "#8a1a12", "width": 1, "opacity": 0.45, "target-arrow-color": "#8a1a12", "target-arrow-shape": "triangle", "arrow-scale": 0.5 } },
+      { selector: ".faded", style: { "opacity": 0.08, "text-opacity": 0 } },
       { selector: "node.hl", style: { "label": "data(label)", "z-index": 99, "border-width": 2, "border-color": "#0b0c0c" } },
+      { selector: "node.hover-hl", style: { "label": "data(label)", "z-index": 90, "border-width": 2, "border-color": "#0b0c0c" } },
+      { selector: "edge.hover-hl", style: { "line-color": "#0b0c0c", "opacity": 1, "width": 2, "z-index": 80, "target-arrow-color": "#0b0c0c" } },
       { selector: "node:selected", style: { "label": "data(label)", "border-width": 3, "border-color": "#0b0c0c", "z-index": 100, "font-size": 11, "font-weight": "bold" } },
     ],
-    layout: { name: "preset" },   // real layout is run below, once cy exists
+    layout: { name: "preset" },   // real layout run below, once cy exists
   });
 
   cy.on("tap", "node", (e) => selectNode(e.target.id()));
   cy.on("tap", (e) => { if (e.target === cy) clearFocus(); });
+  cy.on("mouseover", "node", (e) => hoverNode(e.target, e));
+  cy.on("mouseout", "node", () => unhover());
+  cy.on("mousemove", "node", (e) => positionTooltip(e));
 
-  cy.layout(makeLayout("hierarchy")).run();
+  cy.layout(makeLayout("rings")).run();
   cy.fit(undefined, 30);
   buildLegend();
   wireControls();
@@ -149,7 +214,34 @@ function init(graph) {
   if (GENERATED) $("#generated").textContent = "Compiled " + GENERATED.replace("T", " ");
 }
 
-/* ---------- focus + selection ---------- */
+/* ---------- hover: title tooltip + link highlight ---------- */
+function hoverNode(node, evt) {
+  cy.elements("edge").addClass("faded");
+  const nbh = node.closedNeighborhood();
+  nbh.removeClass("faded").addClass("hover-hl");
+  const d = node.data();
+  const n = node.connectedEdges().length;
+  $("#tooltip").innerHTML =
+    `<strong>${esc(d.label)}</strong><br><span class="tt-sub">${esc(subOf(d))} · ${n} link${n === 1 ? "" : "s"}</span>`;
+  $("#tooltip").style.display = "block";
+  positionTooltip(evt);
+}
+function positionTooltip(evt) {
+  const e = evt.originalEvent || evt;
+  const t = $("#tooltip");
+  t.style.left = (e.clientX + 14) + "px";
+  t.style.top = (e.clientY + 14) + "px";
+}
+function unhover() {
+  cy.elements().removeClass("hover-hl");
+  cy.elements("edge").removeClass("faded");
+  $("#tooltip").style.display = "none";
+  // restore selection focus, if any
+  const sel = cy.$("node:selected");
+  if (sel.nonempty()) { cy.elements().addClass("faded"); sel.closedNeighborhood().removeClass("faded"); }
+}
+
+/* ---------- click: focus + details ---------- */
 function selectNode(id) {
   const node = cy.getElementById(id);
   if (node.empty()) return;
@@ -162,9 +254,8 @@ function selectNode(id) {
   cy.animate({ center: { eles: node }, zoom: Math.max(cy.zoom(), 1.1) }, { duration: 250 });
   renderDetail(node.data());
 }
-
 function clearFocus() {
-  cy.elements().removeClass("faded hl");
+  cy.elements().removeClass("faded hl hover-hl");
   cy.$(":selected").unselect();
   $("#detail-body").hidden = true;
   $("#detail-empty").hidden = false;
@@ -179,11 +270,7 @@ function renderDetail(d) {
   el.querySelectorAll("[data-goto]").forEach((b) =>
     b.addEventListener("click", () => selectNode(b.getAttribute("data-goto"))));
 }
-
-function nodeLabel(id) {
-  const n = cy.getElementById(id);
-  return n.empty() ? id : n.data("label");
-}
+function nodeLabel(id) { const n = cy.getElementById(id); return n.empty() ? id : n.data("label"); }
 function gotoBtn(id) {
   if (!id || cy.getElementById(id).empty()) return id ? esc(id) : "—";
   return `<button class="linkish" data-goto="${esc(id)}">${esc(nodeLabel(id))}</button>`;
@@ -193,7 +280,6 @@ function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({
 function bodyHtml(d) {
   const type = (BODY_TYPES[d.body_type] || BODY_TYPES.other_body)[0];
   const govuk = d.govuk_slug ? `https://www.gov.uk/government/organisations/${d.govuk_slug}` : null;
-  // Ministers hosted here = office nodes whose body_id points at this body.
   const ministers = cy.nodes().filter((n) => n.data("kind") === "office" && n.data("body_id") === d.id);
   let mins = "";
   if (ministers.length) {
@@ -218,7 +304,7 @@ function bodyHtml(d) {
     <h3>Source</h3>
     <p class="src">Existence, classification and sponsor relationship from the
       <a href="https://www.gov.uk/api/organisations" rel="noopener" target="_blank">GOV.UK Organisations API</a>
-      (Open Government Licence v3.0). Ministers from the GOV.UK content API.</p>`;
+      and the Cabinet Office Public Bodies Directory (Open Government Licence v3.0). Ministers from the GOV.UK content API.</p>`;
 }
 
 function officeHtml(d) {
@@ -235,22 +321,24 @@ function officeHtml(d) {
     <h3>Source</h3>
     <p class="src">Appointment from the GOV.UK content API
       (<code>ordered_ministers → role_appointments</code>), Open Government Licence v3.0.
-      Office type is a heuristic tier — see the project notes.</p>`;
+      Office type is a heuristic tier; PM→cabinet→junior links are derived by convention.</p>`;
 }
 
 /* ---------- legend ---------- */
 function buildLegend() {
-  const rows = (title, map, cls) => `<h3>${title}</h3>` + Object.values(map).map(([label, color]) =>
+  const pick = (keys, map) => keys.map((k) => [map[k][0], map[k][1]]);
+  const rows = (title, entries, cls) => `<h3>${title}</h3>` + entries.map(([label, color]) =>
     `<div class="row"><span class="swatch ${cls}" style="background:${color}"></span>${esc(label)}</div>`).join("");
-  $("#legend").innerHTML = rows("Bodies", BODY_TYPES, "") + rows("Offices", OFFICE_TYPES, "office") +
+  $("#legend").innerHTML =
+    rows("Officials", pick(["prime_minister", "cabinet_minister", "junior_minister", "independent_official", "civil_servant"], OFFICE_TYPES), "office") +
+    rows("Departments", pick(["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate"], BODY_TYPES), "dept") +
+    rows("Public bodies", pick(["executive_ndpb", "advisory_ndpb", "tribunal", "public_corporation", "royal_charter_body", "other_body"], BODY_TYPES), "pub") +
     `<h3>Links</h3>` +
-    `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #c7cacb;height:0;border-radius:0"></span>sponsors (body → body)</div>` +
-    `<div class="row"><span class="swatch" style="background:none;border-top:2px dashed #e3b7be;height:0;border-radius:0"></span>office at body</div>` +
-    `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #0b0c0c;height:0;border-radius:0"></span>leads: PM → cabinet → junior <span class="flag" style="margin-left:4px">derived</span></div>` +
-    `<h3>Marks</h3><div class="row"><span class="swatch" style="background:#fff;border:2px dashed #0b0c0c"></span>dashed = in formation</div>`;
+    `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #d3d6d8;height:0;border-radius:0"></span>sponsors</div>` +
+    `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #8a1a12;height:0;border-radius:0"></span>leads (PM → cabinet → junior) <span class="flag" style="margin-left:4px">derived</span></div>`;
 }
 
-/* ---------- search ---------- */
+/* ---------- search + controls ---------- */
 function wireControls() {
   const input = $("#search-input");
   const results = $("#search-results");
@@ -265,7 +353,7 @@ function wireControls() {
       `<li role="option" data-id="${esc(m.id)}" ${i === 0 ? 'aria-selected="true"' : ""}>` +
       `${esc(m.label)}<div class="r-sub">${esc(m.sub)}</div></li>`).join("");
     results.querySelectorAll("li").forEach((li) =>
-      li.addEventListener("click", () => { selectNode(li.getAttribute("data-id")); }));
+      li.addEventListener("click", () => selectNode(li.getAttribute("data-id"))));
   });
   input.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && matches.length) { e.preventDefault(); selectNode(matches[0].id); }
@@ -273,12 +361,8 @@ function wireControls() {
 
   $("#toggle-offices").addEventListener("change", applyFilters);
   $("#toggle-forming").addEventListener("change", applyFilters);
-
   document.querySelectorAll("input[name='layout']").forEach((r) =>
-    r.addEventListener("change", (e) => {
-      cy.layout(makeLayout(e.target.value)).run();
-      cy.fit(undefined, 30);
-    }));
+    r.addEventListener("change", (e) => { cy.layout(makeLayout(e.target.value)).run(); cy.fit(undefined, 30); }));
 }
 
 function applyFilters() {

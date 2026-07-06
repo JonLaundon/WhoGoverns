@@ -29,8 +29,8 @@
 
       <fieldset class="filters">
         <legend>Layout</legend>
-        <label><input type="radio" name="layout" id="layout-hierarchy" value="hierarchy" checked> Hierarchy (PM → cabinet → departments)</label>
-        <label><input type="radio" name="layout" id="layout-rings" value="rings"> Rings (whole-state overview)</label>
+        <label><input type="radio" name="layout" id="layout-rings" value="rings" checked> Rings (PM at the centre → public bodies on the rim)</label>
+        <label><input type="radio" name="layout" id="layout-hierarchy" value="hierarchy"> Hierarchy (top-down org chart)</label>
       </fieldset>
 
       <fieldset class="filters">
@@ -46,7 +46,8 @@
 
     <main class="stage" aria-label="State graph">
       <div id="cy" role="img" aria-label="Graph of UK state bodies and ministers. Use the search and the details panel for an accessible view."></div>
-      <p class="hint" id="hint">Click a node for details. Scroll to zoom, drag to pan.</p>
+      <div id="tooltip" class="tooltip" role="status" aria-live="polite"></div>
+      <p class="hint" id="hint">Hover to explore · click for details · scroll to zoom · drag to pan.</p>
     </main>
 
     <section class="detail" id="detail" aria-live="polite" aria-label="Selected entity details">
