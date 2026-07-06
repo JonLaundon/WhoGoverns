@@ -32,6 +32,8 @@ Body, Source, Office, PersonRole, Relationship are populated in Spiral 1 (full s
 
 **Functional axis (Spiral 1.5).** `functions[]` on Body is a SECOND, multi-valued axis orthogonal to `body_type` (a grouping like "regulator" cross-cuts four body_types, so it is a function not a form — decision #12 stands). Vocab `functions.json` v0.1. Populated: `regulation` only, from the DBT List of UK regulators, exact-match, cited via `function_source_ids`. Never tag a function from tacit knowledge — source it or leave it.
 
+**Off-register tranche (Spiral 1.5).** Bodies outside the GOV.UK Organisations API (`ingest_offregister.py`): `royal_charter_body` is now POPULATED (5 chartered bodies, sourced to the Privy Council register — 8th outer ring on the map); plus 17 independent statutory regulators as `other_body`+flag+`functions:["regulation"]` (health/legal professional regulators etc.), sourced to the DBT list. Scope = statutory-function test (exclude private/voluntary chartered institutes). Chartered bodies already on GOV.UK (BBC, Bank of England, British Council) keep their API classification — not re-added.
+
 **Officials are not a body_type.** Office is a first-class, power-holding node (a corporation sole: "the Secretary of State may…"). In Spiral 2, Power/Duty/Veto carry a polymorphic holder — `holder_type` (`office`|`body`), `office_id` when an office holds it, `body_id` the holder or hosting department. The map is office-centred: PM → Cabinet → ministers → departments → agencies/ALBs.
 
 ## Spiral 1 scope (v0.2, structure-first)

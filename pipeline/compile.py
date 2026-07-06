@@ -63,6 +63,8 @@ def build_graph(bodies, relationships, offices, person_roles):
             "status": b["status"],
             "needs_review": b.get("needs_classification_review", False),
             "functions": b.get("functions", []),
+            "source_ids": sorted(set(b.get("classification_source_ids", [])
+                                     + b.get("function_source_ids", []))),
             "sponsor_department_id": b.get("sponsor_department_id"),
             "parent_body_id": b.get("parent_body_id"),
             "govuk_slug": b.get("govuk_organisation_slug"),
@@ -205,7 +207,10 @@ def main():
 
     graph = build_graph(bodies, relationships, offices, person_roles)
     generated = datetime.datetime.now().isoformat(timespec="seconds")
-    graph_out = {"generated": generated, "counts": counts,
+    # Source lookup so the map can cite each record's ACTUAL source(s), not a fixed blurb.
+    source_index = {s["source_id"]: {"title": s.get("title"), "url": s.get("url"),
+                                     "publisher": s.get("publisher")} for s in sources}
+    graph_out = {"generated": generated, "counts": counts, "sources": source_index,
                  "nodes": graph["nodes"], "edges": graph["edges"]}
     write_json(GRAPH_JSON, graph_out)
 

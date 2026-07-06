@@ -14,6 +14,18 @@ Most accept `--dry-run` to report without writing.
 | 5 | `ingest_ministers.py` | `data/bodies/` + GOV.UK content API | `data/offices/`, `data/person-roles/` + content SourceRecord | yes |
 | 6 | `compile.py` | all of `data/` | `compiled/graph.json`, `compiled/state_machine.sqlite`, `manifest.json` | no |
 
+Refinement / enrichment passes run after `transform_bodies` and before `compile` (each
+create-if-absent or write-only-on-change, so re-running is safe):
+`refine_classification.py` (Cabinet Office rank-2 body_type), `refine_sponsors.py` (CO
+sponsor cross-check), `ingest_officials.py` (dept heads + perm secs).
+
+Spiral 1.5 added two more, also before `compile`:
+
+| Script | Reads | Writes | Network |
+|---|---|---|---|
+| `refine_functions.py` | DBT List of UK regulators (cached ODS) + `data/bodies/` | `functions:["regulation"]` + `function_source_ids` on matched bodies | no |
+| `ingest_offregister.py` | curated table (in-script) | 22 off-register `data/bodies/` (5 royal_charter_body + 17 statutory-regulator other_body) + charter/DBT SourceRecords | no |
+
 After any step, validate from the repo root:
 
     py -3 validate.py

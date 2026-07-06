@@ -64,9 +64,10 @@ const FUNCTION_INFO = {
   regulation: "Bodies that set, license, supervise or enforce rules on a sector or profession. Regulation is a function, not a legal form: these bodies are non-ministerial departments, executive NDPBs, public corporations and 'other' bodies alike — which is why they can't be a single body_type. Tagged from the Department for Business and Trade's List of UK regulators. (Professional and statutory self-regulators outside the GOV.UK register, and devolved regulators, are not yet held.)",
 };
 
-// Seven rings, centre → rim (higher value = nearer the centre in a concentric layout):
+// Eight rings, centre → rim (higher value = nearer the centre in a concentric layout):
 //   7 PM · 6 cabinet · 5 junior/under-secretaries · 4 independent officials ·
-//   3 ministerial + non-ministerial departments · 2 agencies + divisions · 1 public bodies.
+//   3 ministerial + non-ministerial departments · 2 agencies + divisions · 1 public bodies ·
+//   0 off-register royal-charter bodies (self-governing; no sponsor spine, so at the rim).
 function level(d) {
   if (d.kind === "office") {
     return { prime_minister: 7, cabinet_minister: 6, junior_minister: 5,
@@ -75,7 +76,8 @@ function level(d) {
   const b = d.body_type;
   if (b === "ministerial_department" || b === "non_ministerial_department") return 3;
   if (b === "executive_agency" || b === "division_directorate") return 2;
-  return 1; // executive/advisory NDPB, tribunal, public corp, royal charter, other body
+  if (b === "royal_charter_body") return 0; // 8th ring: off-register chartered bodies, at the rim
+  return 1; // executive/advisory NDPB, tribunal, public corp, other body
 }
 
 function bodyShape(bt) {
@@ -116,7 +118,7 @@ function hierarchyPositions() {
 // which balloons the radius of a crowded ring). Each ring is sorted by the node's "home
 // department" so a department and its ministers/agencies/bodies line up on the same
 // radial spoke — the machineryofgovernment.uk look.
-const RING_RADIUS = { 7: 0, 6: 110, 5: 190, 4: 260, 3: 340, 2: 480, 1: 760 };
+const RING_RADIUS = { 7: 0, 6: 110, 5: 190, 4: 260, 3: 340, 2: 480, 1: 760, 0: 980 };
 
 function homeDeptSortKey(node, byId, deptIndex) {
   let cur = node, guard = 0;
@@ -171,6 +173,7 @@ function makeLayout(name) {
 let cy;
 let searchIndex = [];
 let GENERATED = "";
+let SOURCES = {};   // source_id -> { title, url, publisher }, from graph.json
 const GROUP_TYPES = {
   Officials: ["prime_minister", "cabinet_minister", "junior_minister", "independent_official", "civil_servant", "other"],
   Departments: ["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate"],
@@ -204,6 +207,7 @@ fetch("../compiled/graph.json")
 
 function init(graph) {
   GENERATED = graph.generated || "";
+  SOURCES = graph.sources || {};
 
   graph.nodes.forEach((n) => {
     const d = n.data;
@@ -458,9 +462,20 @@ function bodyHtml(d) {
     ${mins}
     ${aliases}
     <h3>Source</h3>
-    <p class="src">Existence, classification and sponsor relationship from the
-      <a href="https://www.gov.uk/api/organisations" rel="noopener" target="_blank">GOV.UK Organisations API</a>
-      and the Cabinet Office Public Bodies Directory (Open Government Licence v3.0). Ministers from the GOV.UK content API.</p>`;
+    ${sourceHtml(d.source_ids)}`;
+}
+
+// Cite the record's ACTUAL sources (resolved via the graph's source index), not a fixed
+// blurb — off-register bodies come from the Privy Council register or the DBT regulators
+// list, not the GOV.UK API.
+function sourceHtml(ids) {
+  const items = (ids || []).map((id) => SOURCES[id]).filter(Boolean);
+  if (!items.length) return `<p class="src">Source pending.</p>`;
+  const li = items.map((s) => s.url
+    ? `<li><a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(s.title || s.url)} ↗</a></li>`
+    : `<li>${esc(s.title || "")}</li>`).join("");
+  return `<p class="src">Existence and classification cited to:</p><ul class="src-list">${li}</ul>` +
+    `<p class="src">Under the Open Government Licence v3.0 unless the source states otherwise.</p>`;
 }
 
 function officeHtml(d) {
