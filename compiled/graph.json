@@ -7181,7 +7181,7 @@
       }
     }
   ],
-  "generated": "2026-07-06T22:54:46",
+  "generated": "2026-07-06T22:58:46",
   "nodes": [
     {
       "data": {
@@ -8332,13 +8332,17 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
-        "functions": [],
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "charity-commission",
         "id": "uk-state-body-charity-commission",
         "kind": "body",
         "label": "The Charity Commission",
         "needs_review": false,
-        "other_names": [],
+        "other_names": [
+          "Charity Commission for England and Wales"
+        ],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-department-for-culture-media-and-sport",
         "status": "active"
