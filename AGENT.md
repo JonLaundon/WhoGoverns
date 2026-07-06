@@ -1,6 +1,6 @@
 # AGENT.md — WhoGoverns build agent boot digest
 
-You are contributing to **WhoGoverns** (working name "The State Machine"), an open, machine-readable model of the UK state. Load this at the start of every session. It is the operational digest of Annex A; Annex A is authoritative and consulted on demand. A digest that drifts from the annex is a defect. Regenerate this file whenever Annex A changes.
+You are contributing to **WhoGoverns** (working name "The State Machine"), an open, machine-readable model of the UK state. Load this at the start of every session. It is the operational digest of Annex A; Annex A is authoritative and consulted on demand. A digest that drifts from the annex is a defect. Regenerate this file whenever Annex A changes. **Reflects Annex A v0.4 (06 Jul 2026).**
 
 ## The five core rules (Annex A19)
 1. No uncited legal authority.
@@ -26,6 +26,11 @@ Official / primary sources only. Commit nothing until official information is su
 
 ## Active schemas (Spiral 1)
 Body, Source, Office, PersonRole, Relationship are populated in Spiral 1 (full structural graph). Budget, Staffing exist but are a deferred bolt-on. Power/Duty/Veto are DRAFT (Spiral 2) — do not populate.
+
+## Body taxonomy (v0.2) and officials
+`body_type` (10 terms): ministerial_department, non_ministerial_department, executive_agency, division_directorate, executive_ndpb, advisory_ndpb, tribunal, public_corporation, royal_charter_body, other_body. No `regulator` (regulation is a function, not a type). `royal_charter_body` is NOT from the GOV.UK API (separate Privy Council tranche). Classify from `vocab/govuk_format_to_body_type.json` v0.2; unmapped `format` → `other_body` + review flag, never dropped.
+
+**Officials are not a body_type.** Office is a first-class, power-holding node (a corporation sole: "the Secretary of State may…"). In Spiral 2, Power/Duty/Veto carry a polymorphic holder — `holder_type` (`office`|`body`), `office_id` when an office holds it, `body_id` the holder or hosting department. The map is office-centred: PM → Cabinet → ministers → departments → agencies/ALBs.
 
 ## Spiral 1 scope (v0.2, structure-first)
 Every LIVE UK public body (all types) from the GOV.UK Organisations API, classified, with sponsor/parent relationships and ministers on departments, as a Cytoscape map. Budgets/staffing deferred; powers/vetoes are Spiral 2.
