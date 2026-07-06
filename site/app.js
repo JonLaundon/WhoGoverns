@@ -254,33 +254,34 @@ function unhover() {
 
 /* ---------- click: golden thread + rotation + details ---------- */
 
-// The full "golden thread" up to the Prime Minister: a node, then repeatedly its
-// incomers (sponsor department, then that department's minister, then the cabinet
-// minister, then the PM), with the connecting edges.
-function upwardThread(node) {
+// Walk the graph from a node following edges one way: "in" = towards the centre
+// (sponsor department → minister → cabinet → PM), "out" = away (agencies → bodies →
+// sub-bodies, the whole downstream subtree). Returns the nodes AND connecting edges.
+function traverse(node, dir) {
   let acc = node;
   let frontier = node;
-  for (let i = 0; i < 15; i++) {
-    const inc = frontier.incomers();
-    const fresh = inc.nodes().difference(acc);
-    acc = acc.union(inc);
+  for (let i = 0; i < 25; i++) {
+    const step = dir === "in" ? frontier.incomers() : frontier.outgoers();
+    const fresh = step.nodes().difference(acc);
+    acc = acc.union(step);
     if (fresh.empty()) break;
     frontier = fresh;
   }
   return acc;
 }
 
-// Fade everything, then light up ONLY this node's golden thread up to the PM plus one
-// hop of its children. Clears any previous thread/hover classes first, so stale black
-// connectors never linger when the highlighted node changes.
+// Fade everything, then light up this node's WHOLE tree in black: the golden thread up
+// to the Prime Minister AND the full downstream subtree (every agency and public body it
+// sponsors, and theirs). Clears prior thread/hover classes first, so nothing lingers when
+// the highlighted node changes (hover to a new node, or revert to the selected one).
 function highlightThread(node) {
-  const up = upwardThread(node);                 // node → minister → cabinet → PM
-  const keep = up.union(node.outgoers()).union(node); // + one hop down (its bodies/juniors)
+  const up = traverse(node, "in");     // node → minister → cabinet → PM
+  const tree = up.union(traverse(node, "out"));   // + the full downstream subtree
   cy.elements().addClass("faded").removeClass("thread-lbl thread-edge hover-hl");
-  keep.removeClass("faded");
-  up.nodes().addClass("thread-lbl");             // label ONLY the thread (avoids overlap)
+  tree.removeClass("faded");
+  tree.addClass("thread-edge");        // every edge in the tree drawn solid black
+  up.nodes().addClass("thread-lbl");   // label only the upward thread (downstream is too many)
   node.addClass("thread-lbl");
-  up.edges().addClass("thread-edge");            // draw the thread solid black
 }
 
 // Smoothly rotate the ring layout by animating an angle applied to the base positions
@@ -312,10 +313,13 @@ function animateRotation(target, duration) {
   }
   rotAnim = requestAnimationFrame(step);
 }
+// Stand the node's spoke vertical, node at the BOTTOM — so its golden thread runs UP to
+// the PM (nearer the centre) and its downstream bodies fan DOWN to the rim, stacking the
+// tree top-to-bottom PM → … → node → bodies (the MoG reading).
 function rotateToTop(node) {
   const b = basePos[node.id()];
   if (!b || (b.x === 0 && b.y === 0)) return;     // PM sits at the centre: nothing to rotate
-  animateRotation((-Math.PI / 2) - Math.atan2(b.y, b.x), 650);
+  animateRotation((Math.PI / 2) - Math.atan2(b.y, b.x), 650);
 }
 
 function selectNode(id) {
