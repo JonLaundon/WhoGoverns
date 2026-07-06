@@ -1,1 +1,2 @@
 jsonschema>=4.0
+openpyxl>=3.0   # read the Cabinet Office Public Bodies Directory xlsx (pipeline/refine_classification.py)

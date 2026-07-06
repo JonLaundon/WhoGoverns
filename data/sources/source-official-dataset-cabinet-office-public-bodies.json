@@ -1,0 +1,13 @@
+{
+  "accessed_date": "2026-07-06",
+  "legal_status": "current",
+  "licence": "Open Government Licence v3.0",
+  "notes": "Directory of arm's-length bodies with authoritative classification (Executive/Advisory/Tribunal/Crown NDPB, Executive Agency, Non-Ministerial Department). Rank-2 classification source (Annex A3.2). Raw xlsx cached under data/sources/raw/cabinet-office-public-bodies/.",
+  "publication_date": null,
+  "publisher": "Cabinet Office",
+  "source_id": "source-official-dataset-cabinet-office-public-bodies",
+  "source_type": "official_dataset",
+  "title": "Cabinet Office Public Bodies Directory 2023/24",
+  "url": "https://www.gov.uk/government/publications/public-bodies-2024",
+  "version_date": "2025-05-29"
+}

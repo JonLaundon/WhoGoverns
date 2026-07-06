@@ -3,7 +3,8 @@
   "body_id": "uk-state-body-office-of-the-public-guardian",
   "body_type": "executive_agency",
   "classification_source_ids": [
-    "source-official-dataset-govuk-organisations-api"
+    "source-official-dataset-govuk-organisations-api",
+    "source-official-dataset-cabinet-office-public-bodies"
   ],
   "external_ids": {
     "charity_number": null,

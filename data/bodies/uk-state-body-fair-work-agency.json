@@ -1,9 +1,10 @@
 {
   "annual_report_source_ids": [],
   "body_id": "uk-state-body-fair-work-agency",
-  "body_type": "executive_agency",
+  "body_type": "executive_ndpb",
   "classification_source_ids": [
-    "source-official-dataset-govuk-organisations-api"
+    "source-official-dataset-govuk-organisations-api",
+    "source-official-dataset-cabinet-office-public-bodies"
   ],
   "external_ids": {
     "charity_number": null,

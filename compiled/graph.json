@@ -4,7 +4,7 @@
     "offices": 125,
     "person_roles": 125,
     "relationships": 637,
-    "sources": 2
+    "sources": 3
   },
   "edges": [
     {
@@ -6104,7 +6104,7 @@
       }
     }
   ],
-  "generated": "2026-07-06T12:00:20",
+  "generated": "2026-07-06T13:21:04",
   "nodes": [
     {
       "data": {
@@ -6166,12 +6166,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "administration-of-radioactive-substances-advisory-committee",
         "id": "uk-state-body-administration-of-radioactive-substances-advisory-committee",
         "kind": "body",
         "label": "Administration of Radioactive Substances Advisory Committee",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-department-of-health-and-social-care",
@@ -6222,12 +6222,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "advisory-committee-for-social-science",
         "id": "uk-state-body-advisory-committee-for-social-science",
         "kind": "body",
         "label": "Advisory Committee for Social Science",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [
           "Social Science Research Committee",
           "SSRC"
@@ -6239,12 +6239,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "advisory-committee-on-animal-feedingstuffs",
         "id": "uk-state-body-advisory-committee-on-animal-feedingstuffs",
         "kind": "body",
         "label": "Advisory Committee on Animal Feedingstuffs",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-food-standards-agency",
@@ -6300,12 +6300,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "advisory-committee-on-novel-foods-and-processes",
         "id": "uk-state-body-advisory-committee-on-novel-foods-and-processes",
         "kind": "body",
         "label": "Advisory Committee on Novel Foods and Processes",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-food-standards-agency",
@@ -6328,12 +6328,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "advisory-committee-on-the-microbiological-safety-of-food",
         "id": "uk-state-body-advisory-committee-on-the-microbiological-safety-of-food",
         "kind": "body",
         "label": "Advisory Committee on the Microbiological Safety of Food",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": "uk-state-body-science-advisory-committees",
         "sponsor_department_id": "uk-state-body-food-standards-agency",
@@ -6370,12 +6370,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "advisory-group-on-military-medicine",
         "id": "uk-state-body-advisory-group-on-military-medicine",
         "kind": "body",
         "label": "Advisory Group on Military and Emergency Response Medicine",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-ministry-of-defence",
@@ -6969,12 +6969,12 @@
     },
     {
       "data": {
-        "body_type": "division_directorate",
+        "body_type": "executive_agency",
         "govuk_slug": "building-digital-uk",
         "id": "uk-state-body-building-digital-uk",
         "kind": "body",
         "label": "Building Digital UK",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-department-for-science-innovation-and-technology",
@@ -7067,12 +7067,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "central-advisory-committee-on-compensation",
         "id": "uk-state-body-central-advisory-committee-on-compensation",
         "kind": "body",
         "label": "Central Advisory Committee on Compensation",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [
           "Central Advisory Committee on Pensions and Compensation ",
           "CAC Pensions and Compensation"
@@ -7633,12 +7633,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "executive_ndpb",
         "govuk_slug": "college-of-policing",
         "id": "uk-state-body-college-of-policing",
         "kind": "body",
         "label": "College of Policing",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-home-office",
@@ -7731,12 +7731,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "committee-on-fuel-poverty",
         "id": "uk-state-body-committee-on-fuel-poverty",
         "kind": "body",
         "label": "Committee on Fuel Poverty",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [
           "Fuel Poverty Advisory Group",
           "FPAG"
@@ -7762,12 +7762,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "committee-on-radioactive-waste-management",
         "id": "uk-state-body-committee-on-radioactive-waste-management",
         "kind": "body",
         "label": "Committee on Radioactive Waste Management",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": null,
@@ -7776,12 +7776,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "committee-on-toxicity-of-chemicals-in-food-consumer-products-and-the-environment",
         "id": "uk-state-body-committee-on-toxicity-of-chemicals-in-food-consumer-products-and-the-environment",
         "kind": "body",
         "label": "Committee on Toxicity of Chemicals in Food, Consumer Products and the Environment",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-food-standards-agency",
@@ -7860,7 +7860,7 @@
     },
     {
       "data": {
-        "body_type": "tribunal",
+        "body_type": "executive_ndpb",
         "govuk_slug": "competition-appeal-tribunal",
         "id": "uk-state-body-competition-appeal-tribunal",
         "kind": "body",
@@ -8142,12 +8142,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "defence-and-security-media-advisory-committee",
         "id": "uk-state-body-defence-and-security-media-advisory-committee",
         "kind": "body",
         "label": "Defence and Security Media Advisory Committee",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [
           "Defence, Press and Broadcasting Advisory Committee",
           "DPBAC"
@@ -8556,12 +8556,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "disabled-persons-transport-advisory-committee",
         "id": "uk-state-body-disabled-persons-transport-advisory-committee",
         "kind": "body",
         "label": "Disabled Persons Transport Advisory Committee",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-department-for-transport",
@@ -8858,12 +8858,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "export-guarantees-advisory-council",
         "id": "uk-state-body-export-guarantees-advisory-council",
         "kind": "body",
         "label": "Export Guarantees Advisory Council",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-uk-export-finance",
@@ -8872,7 +8872,7 @@
     },
     {
       "data": {
-        "body_type": "executive_agency",
+        "body_type": "executive_ndpb",
         "govuk_slug": "fair-work-agency",
         "id": "uk-state-body-fair-work-agency",
         "kind": "body",
@@ -10423,12 +10423,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "independent-medical-expert-group",
         "id": "uk-state-body-independent-medical-expert-group",
         "kind": "body",
         "label": "Independent Medical Expert Group",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-ministry-of-defence",
@@ -10552,12 +10552,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "industrial-development-advisory-board",
         "id": "uk-state-body-industrial-development-advisory-board",
         "kind": "body",
         "label": "Industrial Development Advisory Board",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": null,
@@ -10580,12 +10580,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "industrial-strategy-advisory-council",
         "id": "uk-state-body-industrial-strategy-advisory-council",
         "kind": "body",
         "label": "Industrial Strategy Advisory Council",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": null,
@@ -11389,12 +11389,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "national-crime-agency-remuneration-review-body",
         "id": "uk-state-body-national-crime-agency-remuneration-review-body",
         "kind": "body",
         "label": "National Crime Agency Remuneration Review Body ",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-home-office",
@@ -11573,12 +11573,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "executive_agency",
         "govuk_slug": "national-infrastructure-and-service-transformation-authority",
         "id": "uk-state-body-national-infrastructure-and-service-transformation-authority",
         "kind": "body",
         "label": "National Infrastructure and Service Transformation Authority",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [
           "Infrastructure and Projects Authority",
           "IPA",
@@ -12151,12 +12151,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "nuclear-research-advisory-committee",
         "id": "uk-state-body-nuclear-research-advisory-committee",
         "kind": "body",
         "label": "Nuclear Research Advisory Committee",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [
           "Nuclear Research Advisory Council",
           "NRAC"
@@ -13461,7 +13461,7 @@
     },
     {
       "data": {
-        "body_type": "advisory_ndpb",
+        "body_type": "executive_ndpb",
         "govuk_slug": "regulatory-policy-committee",
         "id": "uk-state-body-regulatory-policy-committee",
         "kind": "body",
@@ -13844,12 +13844,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "advisory_ndpb",
         "govuk_slug": "scientific-advisory-group-for-emergencies",
         "id": "uk-state-body-scientific-advisory-group-for-emergencies",
         "kind": "body",
         "label": "Scientific Advisory Group for Emergencies",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": null,
@@ -15142,12 +15142,12 @@
     },
     {
       "data": {
-        "body_type": "other_body",
+        "body_type": "executive_ndpb",
         "govuk_slug": "uk-shared-business-services-ltd",
         "id": "uk-state-body-uk-shared-business-services-ltd",
         "kind": "body",
         "label": "UK Shared Business Services Ltd",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-department-for-science-innovation-and-technology",
@@ -15156,12 +15156,12 @@
     },
     {
       "data": {
-        "body_type": "division_directorate",
+        "body_type": "executive_agency",
         "govuk_slug": "uk-space-agency",
         "id": "uk-state-body-uk-space-agency",
         "kind": "body",
         "label": "UK Space Agency",
-        "needs_review": true,
+        "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-department-for-science-innovation-and-technology",

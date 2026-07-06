@@ -1,24 +1,31 @@
 {
+  "annual_report_source_ids": [],
   "body_id": "uk-state-body-advisory-committee-on-business-appointments",
-  "name": "Advisory Committee on Business Appointments",
-  "other_names": ["ACOBA"],
-  "status": "active",
   "body_type": "advisory_ndpb",
-  "jurisdiction": ["UK"],
-  "sponsor_department_id": "uk-state-body-cabinet-office",
-  "parent_body_id": null,
-  "govuk_organisation_slug": "advisory-committee-on-business-appointments",
+  "classification_source_ids": [
+    "source-official-dataset-govuk-organisations-api",
+    "source-official-dataset-cabinet-office-public-bodies"
+  ],
   "external_ids": {
-    "govuk_content_id": "6e414d7c-61af-4113-b039-435e461ddaf2",
-    "govuk_analytics_identifier": "PB336",
+    "charity_number": null,
     "company_number": null,
-    "charity_number": null
+    "govuk_analytics_identifier": "PB336",
+    "govuk_content_id": "6e414d7c-61af-4113-b039-435e461ddaf2"
   },
   "founding_source_ids": [],
   "framework_document_source_ids": [],
-  "annual_report_source_ids": [],
-  "classification_source_ids": ["source-official-dataset-govuk-organisations-api"],
+  "govuk_organisation_slug": "advisory-committee-on-business-appointments",
+  "jurisdiction": [
+    "UK"
+  ],
+  "last_reviewed": "2026-07-05",
+  "name": "Advisory Committee on Business Appointments",
   "notes": "Advisory NDPB, sponsor Cabinet Office per API. Advisory/low statutory power — deliberate test of A9.5 (influence is not legal authority). Seed schema-test record.",
+  "other_names": [
+    "ACOBA"
+  ],
+  "parent_body_id": null,
   "record_status": "draft",
-  "last_reviewed": "2026-07-05"
+  "sponsor_department_id": "uk-state-body-cabinet-office",
+  "status": "active"
 }

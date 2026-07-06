@@ -1,7 +1,7 @@
 {
   "annual_report_source_ids": [],
   "body_id": "uk-state-body-advisory-committee-for-social-science",
-  "body_type": "other_body",
+  "body_type": "advisory_ndpb",
   "classification_source_ids": [
     "source-official-dataset-govuk-organisations-api"
   ],
@@ -19,8 +19,8 @@
   ],
   "last_reviewed": null,
   "name": "Advisory Committee for Social Science",
-  "needs_classification_review": true,
-  "notes": null,
+  "needs_classification_review": false,
+  "notes": "Classified advisory_ndpb from official name (CO directory: no exact match).",
   "other_names": [
     "Social Science Research Committee",
     "SSRC"
