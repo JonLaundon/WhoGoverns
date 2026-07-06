@@ -1,16 +1,16 @@
 {
   "annex_a_version": "0.4",
-  "generated": "2026-07-06T18:25:02",
+  "generated": "2026-07-06T19:46:56",
   "graph": {
-    "edges": 848,
-    "nodes": 764
+    "edges": 882,
+    "nodes": 798
   },
   "notes": "Compiled by pipeline/compile.py from data/. graph.json is the map contract; state_machine.sqlite is the query mirror (gitignored, regenerable).",
   "project": "WhoGoverns",
   "record_counts": {
     "bodies": 663,
-    "offices": 125,
-    "person_roles": 125,
+    "offices": 159,
+    "person_roles": 159,
     "relationships": 639,
     "sources": 3
   },

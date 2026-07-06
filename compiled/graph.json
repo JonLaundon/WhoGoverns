@@ -1,8 +1,8 @@
 {
   "counts": {
     "bodies": 663,
-    "offices": 125,
-    "person_roles": 125,
+    "offices": 159,
+    "person_roles": 159,
     "relationships": 639,
     "sources": 3
   },
@@ -77,6 +77,142 @@
         "kind": "office_of",
         "source": "office-financial-secretary-to-the-treasury",
         "target": "uk-state-body-hm-treasury"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-competition-and-markets-authority",
+        "kind": "office_of",
+        "source": "office-head-competition-and-markets-authority",
+        "target": "uk-state-body-competition-and-markets-authority"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-crown-prosecution-service",
+        "kind": "office_of",
+        "source": "office-head-crown-prosecution-service",
+        "target": "uk-state-body-crown-prosecution-service"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-food-standards-agency",
+        "kind": "office_of",
+        "source": "office-head-food-standards-agency",
+        "target": "uk-state-body-food-standards-agency"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-forestry-commission",
+        "kind": "office_of",
+        "source": "office-head-forestry-commission",
+        "target": "uk-state-body-forestry-commission"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-government-actuarys-department",
+        "kind": "office_of",
+        "source": "office-head-government-actuarys-department",
+        "target": "uk-state-body-government-actuarys-department"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-government-legal-department",
+        "kind": "office_of",
+        "source": "office-head-government-legal-department",
+        "target": "uk-state-body-government-legal-department"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-hm-revenue-customs",
+        "kind": "office_of",
+        "source": "office-head-hm-revenue-customs",
+        "target": "uk-state-body-hm-revenue-customs"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-land-registry",
+        "kind": "office_of",
+        "source": "office-head-land-registry",
+        "target": "uk-state-body-land-registry"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-national-crime-agency",
+        "kind": "office_of",
+        "source": "office-head-national-crime-agency",
+        "target": "uk-state-body-national-crime-agency"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-ns-i",
+        "kind": "office_of",
+        "source": "office-head-ns-i",
+        "target": "uk-state-body-ns-i"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-office-of-rail-and-road",
+        "kind": "office_of",
+        "source": "office-head-office-of-rail-and-road",
+        "target": "uk-state-body-office-of-rail-and-road"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-ofqual",
+        "kind": "office_of",
+        "source": "office-head-ofqual",
+        "target": "uk-state-body-ofqual"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-ofsted",
+        "kind": "office_of",
+        "source": "office-head-ofsted",
+        "target": "uk-state-body-ofsted"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-serious-fraud-office",
+        "kind": "office_of",
+        "source": "office-head-serious-fraud-office",
+        "target": "uk-state-body-serious-fraud-office"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-the-national-archives",
+        "kind": "office_of",
+        "source": "office-head-the-national-archives",
+        "target": "uk-state-body-the-national-archives"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-the-water-services-regulation-authority",
+        "kind": "office_of",
+        "source": "office-head-the-water-services-regulation-authority",
+        "target": "uk-state-body-the-water-services-regulation-authority"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-head-uk-statistics-authority",
+        "kind": "office_of",
+        "source": "office-head-uk-statistics-authority",
+        "target": "uk-state-body-uk-statistics-authority"
       }
     },
     {
@@ -677,6 +813,142 @@
         "kind": "office_of",
         "source": "office-paymaster-general",
         "target": "uk-state-body-cabinet-office"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-cabinet-office",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-cabinet-office",
+        "target": "uk-state-body-cabinet-office"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-department-for-business-and-trade",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-department-for-business-and-trade",
+        "target": "uk-state-body-department-for-business-and-trade"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-department-for-culture-media-and-sport",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-department-for-culture-media-and-sport",
+        "target": "uk-state-body-department-for-culture-media-and-sport"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-department-for-education",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-department-for-education",
+        "target": "uk-state-body-department-for-education"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-department-for-energy-security-and-net-zero",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-department-for-energy-security-and-net-zero",
+        "target": "uk-state-body-department-for-energy-security-and-net-zero"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-department-for-environment-food-rural-affairs",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-department-for-environment-food-rural-affairs",
+        "target": "uk-state-body-department-for-environment-food-rural-affairs"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-department-for-science-innovation-and-technology",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-department-for-science-innovation-and-technology",
+        "target": "uk-state-body-department-for-science-innovation-and-technology"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-department-for-transport",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-department-for-transport",
+        "target": "uk-state-body-department-for-transport"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-department-for-work-pensions",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-department-for-work-pensions",
+        "target": "uk-state-body-department-for-work-pensions"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-department-of-health-and-social-care",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-department-of-health-and-social-care",
+        "target": "uk-state-body-department-of-health-and-social-care"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-foreign-commonwealth-development-office",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-foreign-commonwealth-development-office",
+        "target": "uk-state-body-foreign-commonwealth-development-office"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-hm-treasury",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-hm-treasury",
+        "target": "uk-state-body-hm-treasury"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-home-office",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-home-office",
+        "target": "uk-state-body-home-office"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-ministry-of-defence",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-ministry-of-defence",
+        "target": "uk-state-body-ministry-of-defence"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-ministry-of-housing-communities-local-government",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-ministry-of-housing-communities-local-government",
+        "target": "uk-state-body-ministry-of-housing-communities-local-government"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-ministry-of-justice",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-ministry-of-justice",
+        "target": "uk-state-body-ministry-of-justice"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-permanent-secretary-northern-ireland-office",
+        "kind": "office_of",
+        "source": "office-permanent-secretary-northern-ireland-office",
+        "target": "uk-state-body-northern-ireland-office"
       }
     },
     {
@@ -6900,7 +7172,7 @@
       }
     }
   ],
-  "generated": "2026-07-06T18:25:02",
+  "generated": "2026-07-06T19:46:56",
   "nodes": [
     {
       "data": {
@@ -16553,6 +16825,210 @@
     {
       "data": {
         "also_holds": [],
+        "body_id": "uk-state-body-competition-and-markets-authority",
+        "holder": "Sarah Cardell",
+        "holder_since": null,
+        "id": "office-head-competition-and-markets-authority",
+        "kind": "office",
+        "label": "Head of Competition and Markets Authority",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-crown-prosecution-service",
+        "holder": "Stephen Parkinson",
+        "holder_since": null,
+        "id": "office-head-crown-prosecution-service",
+        "kind": "office",
+        "label": "Head of Crown Prosecution Service",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-food-standards-agency",
+        "holder": "Emily Miles",
+        "holder_since": null,
+        "id": "office-head-food-standards-agency",
+        "kind": "office",
+        "label": "Head of Food Standards Agency",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-forestry-commission",
+        "holder": "Richard Stanford",
+        "holder_since": null,
+        "id": "office-head-forestry-commission",
+        "kind": "office",
+        "label": "Head of Forestry Commission",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-government-actuarys-department",
+        "holder": "Fiona Dunsire",
+        "holder_since": null,
+        "id": "office-head-government-actuarys-department",
+        "kind": "office",
+        "label": "Head of Government Actuary's Department",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-government-legal-department",
+        "holder": "Susanna McGibbon",
+        "holder_since": null,
+        "id": "office-head-government-legal-department",
+        "kind": "office",
+        "label": "Head of Government Legal Department",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-hm-revenue-customs",
+        "holder": "Jim Harra",
+        "holder_since": null,
+        "id": "office-head-hm-revenue-customs",
+        "kind": "office",
+        "label": "Head of HM Revenue & Customs",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-land-registry",
+        "holder": "Simon Hayes",
+        "holder_since": null,
+        "id": "office-head-land-registry",
+        "kind": "office",
+        "label": "Head of HM Land Registry",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-national-crime-agency",
+        "holder": "Graeme Biggar",
+        "holder_since": null,
+        "id": "office-head-national-crime-agency",
+        "kind": "office",
+        "label": "Head of National Crime Agency",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-ns-i",
+        "holder": "Dax Harkins",
+        "holder_since": null,
+        "id": "office-head-ns-i",
+        "kind": "office",
+        "label": "Head of NS&I",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-office-of-rail-and-road",
+        "holder": "John Larkinson",
+        "holder_since": null,
+        "id": "office-head-office-of-rail-and-road",
+        "kind": "office",
+        "label": "Head of Office of Rail and Road",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-ofqual",
+        "holder": "Sir Ian Bauckham",
+        "holder_since": null,
+        "id": "office-head-ofqual",
+        "kind": "office",
+        "label": "Head of Ofqual",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-ofsted",
+        "holder": "Sir Martyn Oliver",
+        "holder_since": null,
+        "id": "office-head-ofsted",
+        "kind": "office",
+        "label": "Head of Ofsted",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-serious-fraud-office",
+        "holder": "Nick Ephgrave QPM",
+        "holder_since": null,
+        "id": "office-head-serious-fraud-office",
+        "kind": "office",
+        "label": "Head of Serious Fraud Office",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-the-national-archives",
+        "holder": "Dr Jeff James",
+        "holder_since": null,
+        "id": "office-head-the-national-archives",
+        "kind": "office",
+        "label": "Head of The National Archives",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-the-water-services-regulation-authority",
+        "holder": "David Black",
+        "holder_since": null,
+        "id": "office-head-the-water-services-regulation-authority",
+        "kind": "office",
+        "label": "Head of The Water Services Regulation Authority ",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-uk-statistics-authority",
+        "holder": "Professor Sir Ian Diamond",
+        "holder_since": null,
+        "id": "office-head-uk-statistics-authority",
+        "kind": "office",
+        "label": "Head of UK Statistics Authority",
+        "office_type": "independent_official"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
         "body_id": "uk-state-body-office-of-the-advocate-general-for-scotland",
         "holder": "Baroness Smith of Cluny KC",
         "holder_since": "2024-08-29",
@@ -17476,6 +17952,210 @@
         "kind": "office",
         "label": "Paymaster General",
         "office_type": "cabinet_minister"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-cabinet-office",
+        "holder": "Dame Antonia Romeo DCB",
+        "holder_since": null,
+        "id": "office-permanent-secretary-cabinet-office",
+        "kind": "office",
+        "label": "Permanent Secretary, Cabinet Office",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-department-for-business-and-trade",
+        "holder": "Amanda Brooks CBE",
+        "holder_since": null,
+        "id": "office-permanent-secretary-department-for-business-and-trade",
+        "kind": "office",
+        "label": "Permanent Secretary, Department for Business and Trade",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-department-for-culture-media-and-sport",
+        "holder": "Susannah Storey",
+        "holder_since": null,
+        "id": "office-permanent-secretary-department-for-culture-media-and-sport",
+        "kind": "office",
+        "label": "Permanent Secretary, Department for Culture, Media and Sport",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-department-for-education",
+        "holder": "Susan Acland-Hood",
+        "holder_since": null,
+        "id": "office-permanent-secretary-department-for-education",
+        "kind": "office",
+        "label": "Permanent Secretary, Department for Education",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
+        "holder": "Jonathan Brearley",
+        "holder_since": null,
+        "id": "office-permanent-secretary-department-for-energy-security-and-net-zero",
+        "kind": "office",
+        "label": "Permanent Secretary, Department for Energy Security and Net Zero",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+        "holder": "Paul Kissack",
+        "holder_since": null,
+        "id": "office-permanent-secretary-department-for-environment-food-rural-affairs",
+        "kind": "office",
+        "label": "Permanent Secretary, Department for Environment, Food & Rural Affairs",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+        "holder": "Emran Mian",
+        "holder_since": null,
+        "id": "office-permanent-secretary-department-for-science-innovation-and-technology",
+        "kind": "office",
+        "label": "Permanent Secretary, Department for Science, Innovation and Technology",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-department-for-transport",
+        "holder": "Jo Shanmugalingam CB",
+        "holder_since": null,
+        "id": "office-permanent-secretary-department-for-transport",
+        "kind": "office",
+        "label": "Permanent Secretary, Department for Transport",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-department-for-work-pensions",
+        "holder": "Sir Peter Schofield KCB",
+        "holder_since": null,
+        "id": "office-permanent-secretary-department-for-work-pensions",
+        "kind": "office",
+        "label": "Permanent Secretary, Department for Work and Pensions",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-department-of-health-and-social-care",
+        "holder": "Samantha Jones",
+        "holder_since": null,
+        "id": "office-permanent-secretary-department-of-health-and-social-care",
+        "kind": "office",
+        "label": "Permanent Secretary, Department of Health and Social Care",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-foreign-commonwealth-development-office",
+        "holder": "Nick Dyer",
+        "holder_since": null,
+        "id": "office-permanent-secretary-foreign-commonwealth-development-office",
+        "kind": "office",
+        "label": "Permanent Secretary, Foreign, Commonwealth & Development Office",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-hm-treasury",
+        "holder": "James Bowler CB",
+        "holder_since": null,
+        "id": "office-permanent-secretary-hm-treasury",
+        "kind": "office",
+        "label": "Permanent Secretary, HM Treasury",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-home-office",
+        "holder": "Gareth Davies CB",
+        "holder_since": null,
+        "id": "office-permanent-secretary-home-office",
+        "kind": "office",
+        "label": "Permanent Secretary, Home Office",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-ministry-of-defence",
+        "holder": "Jeremy Pocklington CB",
+        "holder_since": null,
+        "id": "office-permanent-secretary-ministry-of-defence",
+        "kind": "office",
+        "label": "Permanent Secretary, Ministry of Defence",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
+        "holder": "Dame Sarah Healey DCB CVO",
+        "holder_since": null,
+        "id": "office-permanent-secretary-ministry-of-housing-communities-local-government",
+        "kind": "office",
+        "label": "Permanent Secretary, Ministry of Housing, Communities and Local Government",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-ministry-of-justice",
+        "holder": "Dr Jo Farrar CB OBE",
+        "holder_since": null,
+        "id": "office-permanent-secretary-ministry-of-justice",
+        "kind": "office",
+        "label": "Permanent Secretary, Ministry of Justice",
+        "office_type": "civil_servant"
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-northern-ireland-office",
+        "holder": "Ms Julie Harrison",
+        "holder_since": null,
+        "id": "office-permanent-secretary-northern-ireland-office",
+        "kind": "office",
+        "label": "Permanent Secretary, Northern Ireland Office",
+        "office_type": "civil_servant"
       }
     },
     {

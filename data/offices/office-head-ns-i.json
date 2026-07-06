@@ -1,0 +1,12 @@
+{
+  "body_id": "uk-state-body-ns-i",
+  "last_reviewed": null,
+  "notes": "Accounting officer / head per CO Public Bodies Directory.",
+  "office_id": "office-head-ns-i",
+  "office_type": "independent_official",
+  "record_status": "extracted",
+  "source_ids": [
+    "source-official-dataset-cabinet-office-public-bodies"
+  ],
+  "title": "Head of NS&I"
+}

@@ -1,0 +1,12 @@
+{
+  "body_id": "uk-state-body-crown-prosecution-service",
+  "last_reviewed": null,
+  "notes": "Accounting officer / head per CO Public Bodies Directory.",
+  "office_id": "office-head-crown-prosecution-service",
+  "office_type": "independent_official",
+  "record_status": "extracted",
+  "source_ids": [
+    "source-official-dataset-cabinet-office-public-bodies"
+  ],
+  "title": "Head of Crown Prosecution Service"
+}
