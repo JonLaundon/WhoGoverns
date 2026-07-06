@@ -64,12 +64,10 @@ a:focus, input:focus, button:focus { outline: 3px solid var(--focus); outline-of
 .legend { margin-top: 8px; }
 .legend h3 { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--mid); margin: 12px 0 6px; }
 .legend h3[data-group] { cursor: pointer; user-select: none; }
-.legend h3[data-group]::after { content: " ▾"; font-size: 0.7rem; }
-.legend h3.group-off::after { content: " ▸"; }
+.legend h3[data-group]:hover { text-decoration: underline; }
 .legend .row { display: flex; align-items: center; gap: 8px; font-size: 0.8rem; margin: 3px 0; }
 .legend .row[data-type] { cursor: pointer; user-select: none; }
-.legend .row.off { opacity: 0.4; text-decoration: line-through; }
-.legend .row.off .swatch { filter: grayscale(1); }
+.legend .row[data-type]:hover { text-decoration: underline; }
 .legend .fhint { font-size: 0.7rem; color: var(--mid); margin: 2px 0 6px; }
 .legend .swatch { width: 13px; height: 13px; border-radius: 3px; flex: none; border: 1px solid rgba(0,0,0,0.25); }
 .legend .swatch.office { border-radius: 50%; }

@@ -30,6 +30,31 @@ const OFFICE_TYPES = {
   other:                ["Other office", "#b0b4b8"],
 };
 
+// Short, factual descriptions shown when a legend type/heading is clicked.
+const TYPE_INFO = {
+  ministerial_department: "A department led by a government minister and accountable to Parliament. Ministerial departments set policy and direct the agencies and arm's-length bodies beneath them (e.g. the Treasury, the Home Office).",
+  non_ministerial_department: "A department led by senior officials or a board rather than a minister — usually to keep a regulatory or quasi-judicial function at arm's length from day-to-day politics (e.g. HMRC, Ofgem, the Competition and Markets Authority).",
+  executive_agency: "A unit run at arm's length inside a department to deliver a specific operational service, with its own chief executive but no separate legal identity (e.g. DVLA, HM Prison and Probation Service).",
+  division_directorate: "An internal division, directorate or sub-organisation of a department — part of the machinery rather than a separate body.",
+  executive_ndpb: "An executive non-departmental public body: an arm's-length body carrying out executive, administrative or regulatory functions on a department's behalf, but not part of it (e.g. the Environment Agency).",
+  advisory_ndpb: "An advisory non-departmental public body: an expert committee that advises ministers, usually without executive powers (e.g. the Committee on Toxicity, SAGE).",
+  tribunal: "A body exercising a judicial or quasi-judicial function, resolving disputes between citizens and the state or between parties, outside the ordinary courts (e.g. the First-tier Tribunal chambers).",
+  public_corporation: "A trading body owned by government that operates commercially with a degree of independence (e.g. Channel Four, the Bank of England group).",
+  royal_charter_body: "A body incorporated by Royal Charter, giving it independence from government; often with historic, professional or ceremonial functions. Populated from a separate Privy Council source (not the GOV.UK register).",
+  other_body: "Bodies that don't fall into the main classifications — statutory commissioners, cross-cutting units, and bodies with mixed functions. The catch-all pending finer classification.",
+  prime_minister: "The head of government, who chairs the Cabinet and advises the Crown on the appointment of all ministers. The most senior office in the executive.",
+  cabinet_minister: "A minister who sits in the Cabinet — usually a Secretary of State heading a department. Cabinet ministers are collectively responsible for government policy.",
+  junior_minister: "A minister below Cabinet rank (Minister of State or Parliamentary Under-Secretary) supporting a Secretary of State with a specific brief.",
+  independent_official: "A statutory office-holder independent of ministers — commissioners, inspectors, ombudsmen, and the heads of the non-ministerial departments — who exercise their functions in their own right.",
+  civil_servant: "A senior civil servant. Here: departmental permanent secretaries, the most senior official in each department and its principal accounting officer.",
+  other: "Office roles that don't fall into the standard tiers — ceremonial offices, law officers, and special envoys.",
+};
+const GROUP_INFO = {
+  Officials: "The people who run the state: the Prime Minister, cabinet and junior ministers, and the senior officials (permanent secretaries and independent office-holders) who exercise its functions.",
+  Departments: "The core machinery of central government: ministerial and non-ministerial departments, their executive agencies and internal divisions.",
+  "Public bodies": "Arm's-length bodies: executive and advisory NDPBs, tribunals, public corporations, chartered bodies and the wider 'other' tail.",
+};
+
 // Seven rings, centre → rim (higher value = nearer the centre in a concentric layout):
 //   7 PM · 6 cabinet · 5 junior/under-secretaries · 4 independent officials ·
 //   3 ministerial + non-ministerial departments · 2 agencies + divisions · 1 public bodies.
@@ -137,7 +162,6 @@ function makeLayout(name) {
 let cy;
 let searchIndex = [];
 let GENERATED = "";
-const hiddenTypes = new Set();     // body_type / office_type values currently filtered out
 const GROUP_TYPES = {
   Officials: ["prime_minister", "cabinet_minister", "junior_minister", "independent_official", "civil_servant", "other"],
   Departments: ["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate"],
@@ -428,41 +452,53 @@ function officeHtml(d) {
       Office type is a heuristic tier; PM→cabinet→junior links are derived by convention.</p>`;
 }
 
-/* ---------- legend = category / type filters ---------- */
+/* ---------- legend = clickable index (lists the type in the details panel) ---------- */
 function buildLegend() {
-  const group = (title, keys, map, cls) =>
+  const group = (title, keys, map, cls, kind) =>
     `<h3 data-group="${title}">${title}</h3>` + keys.map((k) => {
       const [label, color] = map[k];
-      return `<div class="row" data-type="${k}"><span class="swatch ${cls}" style="background:${color}"></span>${esc(label)}</div>`;
+      return `<div class="row" data-type="${k}" data-kind="${kind}"><span class="swatch ${cls}" style="background:${color}"></span>${esc(label)}</div>`;
     }).join("");
   $("#legend").innerHTML =
-    `<p class="fhint">Click a type — or a heading — to show/hide it.</p>` +
-    group("Officials", ["prime_minister", "cabinet_minister", "junior_minister", "independent_official", "civil_servant", "other"], OFFICE_TYPES, "office") +
-    group("Departments", ["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate"], BODY_TYPES, "dept") +
-    group("Public bodies", ["executive_ndpb", "advisory_ndpb", "tribunal", "public_corporation", "royal_charter_body", "other_body"], BODY_TYPES, "pub") +
+    `<p class="fhint">Click a type — or a heading — to list every entry of that kind.</p>` +
+    group("Officials", ["prime_minister", "cabinet_minister", "junior_minister", "independent_official", "civil_servant", "other"], OFFICE_TYPES, "office", "office") +
+    group("Departments", ["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate"], BODY_TYPES, "dept", "body") +
+    group("Public bodies", ["executive_ndpb", "advisory_ndpb", "tribunal", "public_corporation", "royal_charter_body", "other_body"], BODY_TYPES, "pub", "body") +
     `<h3>Links</h3>` +
     `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #d3d6d8;height:0;border-radius:0"></span>sponsors</div>` +
     `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #8a1a12;height:0;border-radius:0"></span>leads (PM → cabinet → junior) <span class="flag" style="margin-left:4px">derived</span></div>`;
   $("#legend").querySelectorAll(".row[data-type]").forEach((row) =>
-    row.addEventListener("click", () => toggleType(row.getAttribute("data-type"), row)));
+    row.addEventListener("click", () => renderTypeList(row.getAttribute("data-kind"), row.getAttribute("data-type"))));
   $("#legend").querySelectorAll("h3[data-group]").forEach((h) =>
-    h.addEventListener("click", () => toggleGroup(h.getAttribute("data-group"), h)));
+    h.addEventListener("click", () => renderGroupList(h.getAttribute("data-group"))));
 }
-function toggleType(type, row) {
-  hiddenTypes.has(type) ? hiddenTypes.delete(type) : hiddenTypes.add(type);
-  row.classList.toggle("off", hiddenTypes.has(type));
-  applyFilters();
+
+function renderTypeList(kind, type) {
+  const label = ((kind === "office" ? OFFICE_TYPES : BODY_TYPES)[type] || [type])[0];
+  const members = cy.nodes().filter((n) => n.data("kind") === kind &&
+    (kind === "office" ? n.data("office_type") : n.data("body_type")) === type);
+  showList(label, TYPE_INFO[type] || "", members);
 }
-function toggleGroup(name, h) {
+function renderGroupList(name) {
   const types = GROUP_TYPES[name] || [];
-  const hideAll = types.some((t) => !hiddenTypes.has(t));   // if any visible, hide the group
-  types.forEach((t) => hideAll ? hiddenTypes.add(t) : hiddenTypes.delete(t));
-  h.classList.toggle("group-off", hideAll);
-  $("#legend").querySelectorAll(".row[data-type]").forEach((row) => {
-    const t = row.getAttribute("data-type");
-    if (types.includes(t)) row.classList.toggle("off", hiddenTypes.has(t));
-  });
-  applyFilters();
+  const kind = name === "Officials" ? "office" : "body";
+  const members = cy.nodes().filter((n) => n.data("kind") === kind &&
+    types.includes(kind === "office" ? n.data("office_type") : n.data("body_type")));
+  showList(name, GROUP_INFO[name] || "", members);
+}
+function showList(title, desc, members) {
+  const sorted = members.sort((a, b) => a.data("label").localeCompare(b.data("label")));
+  const items = sorted.map((n) =>
+    `<li><button class="linkish" data-goto="${esc(n.id())}">${esc(n.data("label"))}</button>` +
+    (n.data("holder") ? ` — ${esc(n.data("holder"))}` : "") + "</li>").join("");
+  const el = $("#detail-body");
+  el.innerHTML = `<p class="kicker">Category</p><h2>${esc(title)}</h2>` +
+    (desc ? `<p>${esc(desc)}</p>` : "") +
+    `<h3>${sorted.length} ${sorted.length === 1 ? "entry" : "entries"}</h3><ul class="type-list">${items}</ul>`;
+  el.hidden = false;
+  $("#detail-empty").hidden = true;
+  el.querySelectorAll("[data-goto]").forEach((b) =>
+    b.addEventListener("click", () => selectNode(b.getAttribute("data-goto"))));
 }
 
 /* ---------- dark mode ---------- */
@@ -544,10 +580,6 @@ function wireControls() {
 
 function applyFilters() {
   const showForming = $("#toggle-forming").checked;
-  cy.batch(() => cy.nodes().forEach((n) => {
-    const d = n.data();
-    const type = d.kind === "office" ? d.office_type : d.body_type;
-    const hide = hiddenTypes.has(type) || (d.forming && !showForming);
-    n.style("display", hide ? "none" : "element");
-  }));
+  cy.batch(() => cy.nodes().forEach((n) =>
+    n.style("display", (n.data("forming") && !showForming) ? "none" : "element")));
 }
