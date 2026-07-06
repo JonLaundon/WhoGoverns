@@ -501,25 +501,33 @@ function searchMatches(q) {
 function wireControls() {
   const input = $("#search-input");
   const results = $("#search-results");
+  // Selecting always tidies up: pick the node, close the dropdown, drop focus so it
+  // can't linger open over the panel (the search-Enter glitch).
+  const doSelect = (id) => { results.innerHTML = ""; input.blur(); selectNode(id); };
 
   input.addEventListener("input", () => {
     const q = input.value.trim().toLowerCase();
     results.innerHTML = "";
     if (q.length < 2) return;
-    const matches = searchMatches(q);
-    results.innerHTML = matches.map((m, i) =>
-      `<li role="option" data-id="${esc(m.id)}" ${i === 0 ? 'aria-selected="true"' : ""}>` +
-      `${esc(m.label)}<div class="r-sub">${esc(m.sub)}</div></li>`).join("");
-    results.querySelectorAll("li").forEach((li) =>
-      li.addEventListener("click", () => selectNode(li.getAttribute("data-id"))));
+    searchMatches(q).forEach((m, i) => {
+      const li = document.createElement("li");
+      li.setAttribute("role", "option");
+      if (i === 0) li.setAttribute("aria-selected", "true");
+      li.innerHTML = `${esc(m.label)}<div class="r-sub">${esc(m.sub)}</div>`;
+      li.addEventListener("click", () => doSelect(m.id));
+      results.appendChild(li);
+    });
   });
   input.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") { results.innerHTML = ""; input.blur(); return; }
     if (e.key !== "Enter") return;
     const q = input.value.trim().toLowerCase();      // recompute now — never a stale list
     if (q.length < 2) return;
     const m = searchMatches(q);
-    if (m.length) { e.preventDefault(); selectNode(m[0].id); }
+    if (m.length) { e.preventDefault(); doSelect(m[0].id); }
   });
+  // Close the dropdown when focus leaves the search (click elsewhere).
+  input.addEventListener("blur", () => setTimeout(() => { results.innerHTML = ""; }, 150));
 
   $("#toggle-forming").addEventListener("change", applyFilters);
   document.querySelectorAll("input[name='layout']").forEach((r) =>
