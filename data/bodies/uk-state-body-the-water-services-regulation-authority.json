@@ -14,15 +14,23 @@
   },
   "founding_source_ids": [],
   "framework_document_source_ids": [],
+  "function_source_ids": [
+    "source-official-dataset-list-of-uk-regulators"
+  ],
+  "functions": [
+    "regulation"
+  ],
   "govuk_organisation_slug": "the-water-services-regulation-authority",
   "jurisdiction": [
     "UK"
   ],
   "last_reviewed": null,
-  "name": "The Water Services Regulation Authority ",
+  "name": "The Water Services Regulation Authority",
   "needs_classification_review": false,
-  "notes": null,
-  "other_names": [],
+  "notes": "Common brand name 'Ofwat' added to other_names, sourced to the DBT List of UK regulators (which pairs the two).",
+  "other_names": [
+    "Ofwat"
+  ],
   "parent_body_id": null,
   "record_status": "extracted",
   "sponsor_department_id": "uk-state-body-department-for-environment-food-rural-affairs",

@@ -55,6 +55,15 @@ const GROUP_INFO = {
   "Public bodies": "Arm's-length bodies: executive and advisory NDPBs, tribunals, public corporations, chartered bodies and the wider 'other' tail.",
 };
 
+// The FUNCTIONAL axis, orthogonal to body_type — a grouping (chiefly "regulator") that
+// cross-cuts the constitutional forms. Sourced to the DBT List of UK regulators.
+const FUNCTION_TYPES = {
+  regulation: ["Regulators", "#d4a017"],
+};
+const FUNCTION_INFO = {
+  regulation: "Bodies that set, license, supervise or enforce rules on a sector or profession. Regulation is a function, not a legal form: these bodies are non-ministerial departments, executive NDPBs, public corporations and 'other' bodies alike — which is why they can't be a single body_type. Tagged from the Department for Business and Trade's List of UK regulators. (Professional and statutory self-regulators outside the GOV.UK register, and devolved regulators, are not yet held.)",
+};
+
 // Seven rings, centre → rim (higher value = nearer the centre in a concentric layout):
 //   7 PM · 6 cabinet · 5 junior/under-secretaries · 4 independent officials ·
 //   3 ministerial + non-ministerial departments · 2 agencies + divisions · 1 public bodies.
@@ -243,6 +252,7 @@ function init(graph) {
       { selector: "node.hover-hl", style: { "label": "data(label)", "z-index": 90, "border-width": 2, "border-color": "#0b0c0c" } },
       { selector: "edge.hover-hl", style: { "line-color": "#0b0c0c", "opacity": 1, "width": 2, "z-index": 80, "target-arrow-color": "#0b0c0c" } },
       { selector: "node:selected", style: { "label": "data(label)", "border-width": 3, "border-color": "#0b0c0c", "z-index": 100, "font-size": 11, "font-weight": "bold" } },
+      { selector: "node.func-hl", style: { "border-width": 4, "border-color": "#d4a017", "z-index": 70 } },
     ],
     layout: { name: "preset" },   // real layout run below, once cy exists
   });
@@ -482,13 +492,26 @@ function buildLegend() {
     group("Officials", ["prime_minister", "cabinet_minister", "junior_minister", "independent_official", "civil_servant", "other"], OFFICE_TYPES, "office", "office") +
     group("Departments", ["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate"], BODY_TYPES, "dept", "body") +
     group("Public bodies", ["executive_ndpb", "advisory_ndpb", "tribunal", "public_corporation", "royal_charter_body", "other_body"], BODY_TYPES, "pub", "body") +
+    `<h3 data-group="Functions">Functions <span class="flag" style="font-weight:400">cross-cutting</span></h3>` +
+    Object.keys(FUNCTION_TYPES).map((k) => {
+      const [label, color] = FUNCTION_TYPES[k];
+      return `<div class="row" data-func="${k}"><span class="swatch pub" style="background:${color}"></span>${esc(label)}</div>`;
+    }).join("") +
     `<h3>Links</h3>` +
     `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #d3d6d8;height:0;border-radius:0"></span>sponsors</div>` +
     `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #8a1a12;height:0;border-radius:0"></span>leads (PM → cabinet → junior) <span class="flag" style="margin-left:4px">derived</span></div>`;
   $("#legend").querySelectorAll(".row[data-type]").forEach((row) =>
     row.addEventListener("click", () => renderTypeList(row.getAttribute("data-kind"), row.getAttribute("data-type"))));
+  $("#legend").querySelectorAll(".row[data-func]").forEach((row) =>
+    row.addEventListener("click", () => renderFuncList(row.getAttribute("data-func"))));
   $("#legend").querySelectorAll("h3[data-group]").forEach((h) =>
     h.addEventListener("click", () => renderGroupList(h.getAttribute("data-group"))));
+}
+
+function renderFuncList(func) {
+  const members = cy.nodes().filter((n) => n.data("kind") === "body" &&
+    (n.data("functions") || []).includes(func));
+  showList((FUNCTION_TYPES[func] || [func])[0], FUNCTION_INFO[func] || "", members);
 }
 
 function renderTypeList(kind, type) {
@@ -498,6 +521,10 @@ function renderTypeList(kind, type) {
   showList(label, TYPE_INFO[type] || "", members);
 }
 function renderGroupList(name) {
+  if (name === "Functions") {
+    const members = cy.nodes().filter((n) => n.data("kind") === "body" && (n.data("functions") || []).length);
+    return showList("Functions", "Bodies carrying a functional tag (a cross-cutting role, orthogonal to legal form). Currently: regulators, from the DBT List of UK regulators.", members);
+  }
   const types = GROUP_TYPES[name] || [];
   const kind = name === "Officials" ? "office" : "body";
   const members = cy.nodes().filter((n) => n.data("kind") === kind &&
@@ -586,6 +613,7 @@ function wireControls() {
   input.addEventListener("blur", () => setTimeout(() => { results.innerHTML = ""; }, 150));
 
   $("#toggle-forming").addEventListener("change", applyFilters);
+  $("#toggle-regulators").addEventListener("change", applyRegulatorHighlight);
   document.querySelectorAll("input[name='layout']").forEach((r) =>
     r.addEventListener("change", (e) => { clearFocus(); runLayout(e.target.value); }));
 
@@ -601,4 +629,14 @@ function applyFilters() {
   const showForming = $("#toggle-forming").checked;
   cy.batch(() => cy.nodes().forEach((n) =>
     n.style("display", (n.data("forming") && !showForming) ? "none" : "element")));
+}
+
+// Gold halo on every regulator, wherever it sits in the rings — the cross-cutting view
+// the body_type axis can't give (regulators span four legal forms).
+function applyRegulatorHighlight() {
+  const on = $("#toggle-regulators").checked;
+  cy.batch(() => {
+    cy.nodes().removeClass("func-hl");
+    if (on) cy.nodes().filter((n) => (n.data("functions") || []).includes("regulation")).addClass("func-hl");
+  });
 }

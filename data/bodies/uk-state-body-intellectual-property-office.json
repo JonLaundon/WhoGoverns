@@ -13,6 +13,12 @@
   },
   "founding_source_ids": [],
   "framework_document_source_ids": [],
+  "function_source_ids": [
+    "source-official-dataset-list-of-uk-regulators"
+  ],
+  "functions": [
+    "regulation"
+  ],
   "govuk_organisation_slug": "intellectual-property-office",
   "jurisdiction": [
     "UK"

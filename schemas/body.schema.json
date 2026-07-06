@@ -29,6 +29,8 @@
     "framework_document_source_ids": { "type": "array", "items": { "type": "string" } },
     "annual_report_source_ids": { "type": "array", "items": { "type": "string" } },
     "classification_source_ids": { "type": "array", "items": { "type": "string" } },
+    "functions": { "type": "array", "items": { "type": "string", "enum": ["regulation", "inspection", "advisory", "funding", "research", "cultural_heritage", "ombudsman_redress", "tribunal_justice", "operational_delivery", "standards_accreditation"] } },
+    "function_source_ids": { "type": "array", "items": { "type": "string" } },
     "notes": { "type": ["string", "null"] },
     "needs_classification_review": { "type": "boolean" },
     "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] },

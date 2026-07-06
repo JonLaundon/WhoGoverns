@@ -1,6 +1,6 @@
 {
   "annex_a_version": "0.4",
-  "generated": "2026-07-06T22:06:06",
+  "generated": "2026-07-06T22:54:46",
   "graph": {
     "edges": 883,
     "nodes": 798
@@ -12,7 +12,7 @@
     "offices": 159,
     "person_roles": 159,
     "relationships": 639,
-    "sources": 3
+    "sources": 4
   },
   "spiral": 1,
   "working_name": "The State Machine"

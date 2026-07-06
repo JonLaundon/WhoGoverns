@@ -62,6 +62,7 @@ def build_graph(bodies, relationships, offices, person_roles):
             "body_type": b["body_type"],
             "status": b["status"],
             "needs_review": b.get("needs_classification_review", False),
+            "functions": b.get("functions", []),
             "sponsor_department_id": b.get("sponsor_department_id"),
             "parent_body_id": b.get("parent_body_id"),
             "govuk_slug": b.get("govuk_organisation_slug"),

@@ -4,7 +4,7 @@
     "offices": 159,
     "person_roles": 159,
     "relationships": 639,
-    "sources": 3
+    "sources": 4
   },
   "edges": [
     {
@@ -7181,11 +7181,12 @@
       }
     }
   ],
-  "generated": "2026-07-06T22:06:06",
+  "generated": "2026-07-06T22:54:46",
   "nodes": [
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "academy-for-social-justice",
         "id": "uk-state-body-academy-for-social-justice",
         "kind": "body",
@@ -7202,6 +7203,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "acas",
         "id": "uk-state-body-acas",
         "kind": "body",
@@ -7216,6 +7218,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "accelerated-capability-environment",
         "id": "uk-state-body-accelerated-capability-environment",
         "kind": "body",
@@ -7230,6 +7233,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "active-travel-england",
         "id": "uk-state-body-active-travel-england",
         "kind": "body",
@@ -7244,6 +7248,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "administration-of-radioactive-substances-advisory-committee",
         "id": "uk-state-body-administration-of-radioactive-substances-advisory-committee",
         "kind": "body",
@@ -7258,6 +7263,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "administrative-court",
         "id": "uk-state-body-administrative-court",
         "kind": "body",
@@ -7272,6 +7278,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "admiralty-court",
         "id": "uk-state-body-admiralty-court",
         "kind": "body",
@@ -7286,6 +7293,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "advanced-research-and-invention-agency",
         "id": "uk-state-body-advanced-research-and-invention-agency",
         "kind": "body",
@@ -7300,6 +7308,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "advisory-committee-for-social-science",
         "id": "uk-state-body-advisory-committee-for-social-science",
         "kind": "body",
@@ -7317,6 +7326,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "advisory-committee-on-animal-feedingstuffs",
         "id": "uk-state-body-advisory-committee-on-animal-feedingstuffs",
         "kind": "body",
@@ -7331,14 +7341,13 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "advisory-committee-on-business-appointments",
         "id": "uk-state-body-advisory-committee-on-business-appointments",
         "kind": "body",
         "label": "Advisory Committee on Business Appointments",
         "needs_review": false,
-        "other_names": [
-          "ACOBA"
-        ],
+        "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-cabinet-office",
         "status": "active"
@@ -7347,6 +7356,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "advisory-committee-on-clinical-impact-awards",
         "id": "uk-state-body-advisory-committee-on-clinical-impact-awards",
         "kind": "body",
@@ -7364,6 +7374,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "advisory-committee-on-conscientious-objectors",
         "id": "uk-state-body-advisory-committee-on-conscientious-objectors",
         "kind": "body",
@@ -7378,6 +7389,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "advisory-committee-on-novel-foods-and-processes",
         "id": "uk-state-body-advisory-committee-on-novel-foods-and-processes",
         "kind": "body",
@@ -7392,6 +7404,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "advisory-committee-on-releases-to-the-environment",
         "id": "uk-state-body-advisory-committee-on-releases-to-the-environment",
         "kind": "body",
@@ -7406,6 +7419,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "advisory-committee-on-the-microbiological-safety-of-food",
         "id": "uk-state-body-advisory-committee-on-the-microbiological-safety-of-food",
         "kind": "body",
@@ -7420,6 +7434,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "advisory-committees-on-justices-of-the-peace",
         "id": "uk-state-body-advisory-committees-on-justices-of-the-peace",
         "kind": "body",
@@ -7434,6 +7449,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "advisory-council-on-the-misuse-of-drugs",
         "id": "uk-state-body-advisory-council-on-the-misuse-of-drugs",
         "kind": "body",
@@ -7448,6 +7464,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "advisory-group-on-military-medicine",
         "id": "uk-state-body-advisory-group-on-military-medicine",
         "kind": "body",
@@ -7462,6 +7479,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "agri-food-and-biosciences-institute",
         "id": "uk-state-body-agri-food-and-biosciences-institute",
         "kind": "body",
@@ -7476,6 +7494,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "agriculture-and-horticulture-development-board",
         "id": "uk-state-body-agriculture-and-horticulture-development-board",
         "kind": "body",
@@ -7490,6 +7509,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "ai-security-institute",
         "id": "uk-state-body-ai-security-institute",
         "kind": "body",
@@ -7507,6 +7527,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "air-accidents-investigation-branch",
         "id": "uk-state-body-air-accidents-investigation-branch",
         "kind": "body",
@@ -7521,6 +7542,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "animal-and-plant-health-agency",
         "id": "uk-state-body-animal-and-plant-health-agency",
         "kind": "body",
@@ -7540,6 +7564,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "animals-in-science-committee",
         "id": "uk-state-body-animals-in-science-committee",
         "kind": "body",
@@ -7554,6 +7579,9 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "architects-registration-board",
         "id": "uk-state-body-architects-registration-board",
         "kind": "body",
@@ -7568,6 +7596,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "armed-forces-covenant-fund-trust",
         "id": "uk-state-body-armed-forces-covenant-fund-trust",
         "kind": "body",
@@ -7582,6 +7611,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "armed-forces-pay-review-body",
         "id": "uk-state-body-armed-forces-pay-review-body",
         "kind": "body",
@@ -7596,6 +7626,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "arts-and-humanities-research-council",
         "id": "uk-state-body-arts-and-humanities-research-council",
         "kind": "body",
@@ -7610,6 +7641,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "arts-council-england",
         "id": "uk-state-body-arts-council-england",
         "kind": "body",
@@ -7624,6 +7656,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "arts-council-of-northern-ireland",
         "id": "uk-state-body-arts-council-of-northern-ireland",
         "kind": "body",
@@ -7638,6 +7671,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "arts-council-of-wales",
         "id": "uk-state-body-arts-council-of-wales",
         "kind": "body",
@@ -7652,6 +7686,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "attorney-generals-office",
         "id": "uk-state-body-attorney-generals-office",
         "kind": "body",
@@ -7666,6 +7701,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "awe-nuclear-security-technologies",
         "id": "uk-state-body-awe-nuclear-security-technologies",
         "kind": "body",
@@ -7683,6 +7719,9 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "bank-of-england",
         "id": "uk-state-body-bank-of-england",
         "kind": "body",
@@ -7697,6 +7736,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "bbc-world-service",
         "id": "uk-state-body-bbc-world-service",
         "kind": "body",
@@ -7711,6 +7751,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "bbc",
         "id": "uk-state-body-bbc",
         "kind": "body",
@@ -7725,6 +7766,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "biometrics-and-surveillance-camera-commissioner",
         "id": "uk-state-body-biometrics-and-surveillance-camera-commissioner",
         "kind": "body",
@@ -7739,6 +7781,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "biotechnology-biological-sciences-research-council",
         "id": "uk-state-body-biotechnology-biological-sciences-research-council",
         "kind": "body",
@@ -7753,6 +7796,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "board-of-trustees-of-the-royal-botanic-gardens-kew",
         "id": "uk-state-body-board-of-trustees-of-the-royal-botanic-gardens-kew",
         "kind": "body",
@@ -7767,6 +7811,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "bona-vacantia",
         "id": "uk-state-body-bona-vacantia",
         "kind": "body",
@@ -7781,6 +7826,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "border-force",
         "id": "uk-state-body-border-force",
         "kind": "body",
@@ -7795,6 +7841,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "border-security-command",
         "id": "uk-state-body-border-security-command",
         "kind": "body",
@@ -7809,6 +7856,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "boundary-commission-for-england",
         "id": "uk-state-body-boundary-commission-for-england",
         "kind": "body",
@@ -7823,6 +7871,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "boundary-commission-for-northern-ireland",
         "id": "uk-state-body-boundary-commission-for-northern-ireland",
         "kind": "body",
@@ -7837,6 +7886,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "boundary-commission-for-scotland",
         "id": "uk-state-body-boundary-commission-for-scotland",
         "kind": "body",
@@ -7851,6 +7901,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "boundary-commission-for-wales",
         "id": "uk-state-body-boundary-commission-for-wales",
         "kind": "body",
@@ -7865,6 +7916,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "british-business-bank",
         "id": "uk-state-body-british-business-bank",
         "kind": "body",
@@ -7879,6 +7931,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "british-cattle-movement-service",
         "id": "uk-state-body-british-cattle-movement-service",
         "kind": "body",
@@ -7893,6 +7946,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "british-council",
         "id": "uk-state-body-british-council",
         "kind": "body",
@@ -7907,6 +7961,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "british-film-institute",
         "id": "uk-state-body-british-film-institute",
         "kind": "body",
@@ -7921,6 +7976,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "british-hallmarking-council",
         "id": "uk-state-body-british-hallmarking-council",
         "kind": "body",
@@ -7935,6 +7993,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "british-library",
         "id": "uk-state-body-british-library",
         "kind": "body",
@@ -7949,6 +8008,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "british-museum",
         "id": "uk-state-body-british-museum",
         "kind": "body",
@@ -7963,6 +8023,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "british-pharmacopoeia",
         "id": "uk-state-body-british-pharmacopoeia",
         "kind": "body",
@@ -7977,6 +8038,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "british-technology-investments-ltd",
         "id": "uk-state-body-british-technology-investments-ltd",
         "kind": "body",
@@ -7991,6 +8053,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "british-transport-police-authority",
         "id": "uk-state-body-british-transport-police-authority",
         "kind": "body",
@@ -8005,6 +8068,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "british-wool",
         "id": "uk-state-body-british-wool",
         "kind": "body",
@@ -8019,6 +8083,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "broads-authority",
         "id": "uk-state-body-broads-authority",
         "kind": "body",
@@ -8033,6 +8098,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "building-control-independent-panel",
         "id": "uk-state-body-building-control-independent-panel",
         "kind": "body",
@@ -8047,6 +8113,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "building-digital-uk",
         "id": "uk-state-body-building-digital-uk",
         "kind": "body",
@@ -8061,6 +8128,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "building-safety-regulator",
         "id": "uk-state-body-building-safety-regulator",
         "kind": "body",
@@ -8075,6 +8145,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "cabinet-office-board",
         "id": "uk-state-body-cabinet-office-board",
         "kind": "body",
@@ -8089,6 +8160,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "cabinet-office",
         "id": "uk-state-body-cabinet-office",
         "kind": "body",
@@ -8103,6 +8175,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "cambridge-growth-company",
         "id": "uk-state-body-cambridge-growth-company",
         "kind": "body",
@@ -8117,6 +8190,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "care-quality-commission",
         "id": "uk-state-body-care-quality-commission",
         "kind": "body",
@@ -8131,6 +8207,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "careers-wales",
         "id": "uk-state-body-careers-wales",
         "kind": "body",
@@ -8145,6 +8222,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "central-advisory-committee-on-compensation",
         "id": "uk-state-body-central-advisory-committee-on-compensation",
         "kind": "body",
@@ -8162,6 +8240,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "central-arbitration-committee",
         "id": "uk-state-body-central-arbitration-committee",
         "kind": "body",
@@ -8176,6 +8255,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "centre-for-connected-and-autonomous-vehicles",
         "id": "uk-state-body-centre-for-connected-and-autonomous-vehicles",
         "kind": "body",
@@ -8190,6 +8270,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "centre-for-environment-fisheries-and-aquaculture-science",
         "id": "uk-state-body-centre-for-environment-fisheries-and-aquaculture-science",
         "kind": "body",
@@ -8204,6 +8287,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "certification-officer",
         "id": "uk-state-body-certification-officer",
         "kind": "body",
@@ -8218,6 +8302,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "chancery-division-of-the-high-court",
         "id": "uk-state-body-chancery-division-of-the-high-court",
         "kind": "body",
@@ -8232,6 +8317,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "channel-4",
         "id": "uk-state-body-channel-4",
         "kind": "body",
@@ -8246,6 +8332,7 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [],
         "govuk_slug": "charity-commission",
         "id": "uk-state-body-charity-commission",
         "kind": "body",
@@ -8260,6 +8347,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "chevening-foundation",
         "id": "uk-state-body-chevening-foundation",
         "kind": "body",
@@ -8274,6 +8362,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "child-safeguarding-practice-review-panel",
         "id": "uk-state-body-child-safeguarding-practice-review-panel",
         "kind": "body",
@@ -8288,6 +8377,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "children-and-family-court-advisory-and-support-service",
         "id": "uk-state-body-children-and-family-court-advisory-and-support-service",
         "kind": "body",
@@ -8302,6 +8392,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "churches-conservation-trust",
         "id": "uk-state-body-churches-conservation-trust",
         "kind": "body",
@@ -8316,6 +8407,9 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "civil-aviation-authority",
         "id": "uk-state-body-civil-aviation-authority",
         "kind": "body",
@@ -8330,6 +8424,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "civil-justice-council",
         "id": "uk-state-body-civil-justice-council",
         "kind": "body",
@@ -8344,6 +8439,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-nuclear-constabulary",
         "id": "uk-state-body-civil-nuclear-constabulary",
         "kind": "body",
@@ -8358,6 +8454,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "civil-nuclear-police-authority",
         "id": "uk-state-body-civil-nuclear-police-authority",
         "kind": "body",
@@ -8372,6 +8469,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "civil-procedure-rules-committee",
         "id": "uk-state-body-civil-procedure-rules-committee",
         "kind": "body",
@@ -8386,6 +8484,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "civil-service-commission",
         "id": "uk-state-body-civil-service-commission",
         "kind": "body",
@@ -8400,6 +8501,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-corporate-finance-profession-cfp",
         "id": "uk-state-body-civil-service-corporate-finance-profession-cfp",
         "kind": "body",
@@ -8414,6 +8516,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-fast-stream",
         "id": "uk-state-body-civil-service-fast-stream",
         "kind": "body",
@@ -8428,6 +8531,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-government-communication-service",
         "id": "uk-state-body-civil-service-government-communication-service",
         "kind": "body",
@@ -8442,6 +8546,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-government-economic-service",
         "id": "uk-state-body-civil-service-government-economic-service",
         "kind": "body",
@@ -8456,6 +8561,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-government-knowledge-information-management-profession",
         "id": "uk-state-body-civil-service-government-knowledge-information-management-profession",
         "kind": "body",
@@ -8470,6 +8576,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-government-legal-profession",
         "id": "uk-state-body-civil-service-government-legal-profession",
         "kind": "body",
@@ -8487,6 +8594,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-government-occupational-psychology-profession",
         "id": "uk-state-body-civil-service-government-occupational-psychology-profession",
         "kind": "body",
@@ -8501,6 +8609,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-government-operational-research-service",
         "id": "uk-state-body-civil-service-government-operational-research-service",
         "kind": "body",
@@ -8515,6 +8624,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-government-planning-inspectors",
         "id": "uk-state-body-civil-service-government-planning-inspectors",
         "kind": "body",
@@ -8529,6 +8639,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-government-science-engineering",
         "id": "uk-state-body-civil-service-government-science-engineering",
         "kind": "body",
@@ -8543,6 +8654,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-government-social-research-profession",
         "id": "uk-state-body-civil-service-government-social-research-profession",
         "kind": "body",
@@ -8557,6 +8669,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-government-statistical-service",
         "id": "uk-state-body-civil-service-government-statistical-service",
         "kind": "body",
@@ -8571,6 +8684,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-government-tax-profession",
         "id": "uk-state-body-civil-service-government-tax-profession",
         "kind": "body",
@@ -8585,6 +8699,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-government-veterinary-services",
         "id": "uk-state-body-civil-service-government-veterinary-services",
         "kind": "body",
@@ -8599,6 +8714,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-group",
         "id": "uk-state-body-civil-service-group",
         "kind": "body",
@@ -8613,6 +8729,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-intelligence-analysis-profession",
         "id": "uk-state-body-civil-service-intelligence-analysis-profession",
         "kind": "body",
@@ -8627,6 +8744,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-internal-audit-profession",
         "id": "uk-state-body-civil-service-internal-audit-profession",
         "kind": "body",
@@ -8641,6 +8759,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-medical-profession",
         "id": "uk-state-body-civil-service-medical-profession",
         "kind": "body",
@@ -8655,6 +8774,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-operational-delivery-profession",
         "id": "uk-state-body-civil-service-operational-delivery-profession",
         "kind": "body",
@@ -8669,6 +8789,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-policy-profession",
         "id": "uk-state-body-civil-service-policy-profession",
         "kind": "body",
@@ -8683,6 +8804,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "civil-service-the-government-planning-profession",
         "id": "uk-state-body-civil-service-the-government-planning-profession",
         "kind": "body",
@@ -8697,6 +8819,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "civil-service",
         "id": "uk-state-body-civil-service",
         "kind": "body",
@@ -8711,6 +8834,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "college-of-policing",
         "id": "uk-state-body-college-of-policing",
         "kind": "body",
@@ -8725,6 +8849,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "commercial-circuit-court",
         "id": "uk-state-body-commercial-circuit-court",
         "kind": "body",
@@ -8739,6 +8864,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "commercial-court",
         "id": "uk-state-body-commercial-court",
         "kind": "body",
@@ -8753,6 +8879,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "commission-for-countering-extremism",
         "id": "uk-state-body-commission-for-countering-extremism",
         "kind": "body",
@@ -8767,6 +8894,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "commission-on-human-medicines",
         "id": "uk-state-body-commission-on-human-medicines",
         "kind": "body",
@@ -8781,6 +8909,9 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "commissioner-for-public-appointments",
         "id": "uk-state-body-commissioner-for-public-appointments",
         "kind": "body",
@@ -8795,6 +8926,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "committee-on-climate-change",
         "id": "uk-state-body-committee-on-climate-change",
         "kind": "body",
@@ -8809,6 +8941,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "committee-on-fuel-poverty",
         "id": "uk-state-body-committee-on-fuel-poverty",
         "kind": "body",
@@ -8826,6 +8959,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "committee-on-mutagenicity-of-chemicals-in-food-consumer-products-and-the-environment",
         "id": "uk-state-body-committee-on-mutagenicity-of-chemicals-in-food-consumer-products-and-the-environment",
         "kind": "body",
@@ -8840,6 +8974,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "committee-on-radioactive-waste-management",
         "id": "uk-state-body-committee-on-radioactive-waste-management",
         "kind": "body",
@@ -8854,6 +8989,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "committee-on-toxicity-of-chemicals-in-food-consumer-products-and-the-environment",
         "id": "uk-state-body-committee-on-toxicity-of-chemicals-in-food-consumer-products-and-the-environment",
         "kind": "body",
@@ -8868,6 +9004,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "commonwealth-scholarship-commission-in-the-uk",
         "id": "uk-state-body-commonwealth-scholarship-commission-in-the-uk",
         "kind": "body",
@@ -8882,6 +9019,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "companies-house",
         "id": "uk-state-body-companies-house",
         "kind": "body",
@@ -8896,6 +9036,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "companies-list",
         "id": "uk-state-body-companies-list",
         "kind": "body",
@@ -8910,6 +9051,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "company-names-tribunal",
         "id": "uk-state-body-company-names-tribunal",
         "kind": "body",
@@ -8924,6 +9066,9 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "competition-and-markets-authority",
         "id": "uk-state-body-competition-and-markets-authority",
         "kind": "body",
@@ -8938,6 +9083,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "competition-appeal-tribunal",
         "id": "uk-state-body-competition-appeal-tribunal",
         "kind": "body",
@@ -8952,6 +9100,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "competition-service",
         "id": "uk-state-body-competition-service",
         "kind": "body",
@@ -8966,6 +9115,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "construction-industry-training-board",
         "id": "uk-state-body-construction-industry-training-board",
         "kind": "body",
@@ -8980,6 +9130,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "consumer-council-for-water",
         "id": "uk-state-body-consumer-council-for-water",
         "kind": "body",
@@ -8994,6 +9145,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "copyright-tribunal",
         "id": "uk-state-body-copyright-tribunal",
         "kind": "body",
@@ -9008,6 +9160,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "corporate-officers-of-the-house-of-commons",
         "id": "uk-state-body-corporate-officers-of-the-house-of-commons",
         "kind": "body",
@@ -9022,6 +9175,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "corporate-officers-of-the-house-of-lords",
         "id": "uk-state-body-corporate-officers-of-the-house-of-lords",
         "kind": "body",
@@ -9036,6 +9190,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "council-for-science-and-technology",
         "id": "uk-state-body-council-for-science-and-technology",
         "kind": "body",
@@ -9050,6 +9205,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "court-of-appeal-civil-division",
         "id": "uk-state-body-court-of-appeal-civil-division",
         "kind": "body",
@@ -9064,6 +9220,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "court-of-appeal-criminal-division",
         "id": "uk-state-body-court-of-appeal-criminal-division",
         "kind": "body",
@@ -9078,6 +9235,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "court-of-protection",
         "id": "uk-state-body-court-of-protection",
         "kind": "body",
@@ -9092,6 +9250,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "covent-garden-market-authority",
         "id": "uk-state-body-covent-garden-market-authority",
         "kind": "body",
@@ -9106,6 +9265,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "criminal-cases-review-commission",
         "id": "uk-state-body-criminal-cases-review-commission",
         "kind": "body",
@@ -9120,6 +9280,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "criminal-injuries-compensation-authority",
         "id": "uk-state-body-criminal-injuries-compensation-authority",
         "kind": "body",
@@ -9134,6 +9295,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "criminal-procedure-rule-committee",
         "id": "uk-state-body-criminal-procedure-rule-committee",
         "kind": "body",
@@ -9148,6 +9310,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "crossrail-international",
         "id": "uk-state-body-crossrail-international",
         "kind": "body",
@@ -9162,6 +9325,7 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [],
         "govuk_slug": "crown-prosecution-service",
         "id": "uk-state-body-crown-prosecution-service",
         "kind": "body",
@@ -9176,6 +9340,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "cyber-and-specialist-operations-command",
         "id": "uk-state-body-cyber-and-specialist-operations-command",
         "kind": "body",
@@ -9192,6 +9357,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "dartmoor-national-park-authority",
         "id": "uk-state-body-dartmoor-national-park-authority",
         "kind": "body",
@@ -9206,6 +9372,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "defence-academy",
         "id": "uk-state-body-defence-academy",
         "kind": "body",
@@ -9220,6 +9387,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "defence-and-security-media-advisory-committee",
         "id": "uk-state-body-defence-and-security-media-advisory-committee",
         "kind": "body",
@@ -9237,6 +9405,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "defence-equipment-and-support",
         "id": "uk-state-body-defence-equipment-and-support",
         "kind": "body",
@@ -9251,6 +9420,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "defence-infrastructure-organisation",
         "id": "uk-state-body-defence-infrastructure-organisation",
         "kind": "body",
@@ -9265,6 +9435,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "defence-nuclear-enterprise",
         "id": "uk-state-body-defence-nuclear-enterprise",
         "kind": "body",
@@ -9279,6 +9450,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "defence-nuclear-organisation",
         "id": "uk-state-body-defence-nuclear-organisation",
         "kind": "body",
@@ -9293,6 +9465,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "defence-nuclear-safety-committee",
         "id": "uk-state-body-defence-nuclear-safety-committee",
         "kind": "body",
@@ -9307,6 +9480,9 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "defence-safety-authority",
         "id": "uk-state-body-defence-safety-authority",
         "kind": "body",
@@ -9321,6 +9497,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "defence-science-and-technology-laboratory",
         "id": "uk-state-body-defence-science-and-technology-laboratory",
         "kind": "body",
@@ -9335,6 +9512,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "defence-sixth-form-college",
         "id": "uk-state-body-defence-sixth-form-college",
         "kind": "body",
@@ -9349,6 +9527,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "department-for-business-and-trade",
         "id": "uk-state-body-department-for-business-and-trade",
         "kind": "body",
@@ -9366,6 +9545,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "department-for-communities-northern-ireland",
         "id": "uk-state-body-department-for-communities-northern-ireland",
         "kind": "body",
@@ -9382,6 +9562,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "department-for-culture-media-and-sport",
         "id": "uk-state-body-department-for-culture-media-and-sport",
         "kind": "body",
@@ -9396,6 +9577,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "department-for-education",
         "id": "uk-state-body-department-for-education",
         "kind": "body",
@@ -9412,6 +9594,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "department-for-energy-security-and-net-zero",
         "id": "uk-state-body-department-for-energy-security-and-net-zero",
         "kind": "body",
@@ -9426,6 +9609,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "department-for-environment-food-rural-affairs",
         "id": "uk-state-body-department-for-environment-food-rural-affairs",
         "kind": "body",
@@ -9440,6 +9624,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "department-for-infrastructure-northern-ireland",
         "id": "uk-state-body-department-for-infrastructure-northern-ireland",
         "kind": "body",
@@ -9456,6 +9641,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "department-for-science-innovation-and-technology",
         "id": "uk-state-body-department-for-science-innovation-and-technology",
         "kind": "body",
@@ -9470,6 +9656,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "department-for-the-economy-northern-ireland",
         "id": "uk-state-body-department-for-the-economy-northern-ireland",
         "kind": "body",
@@ -9486,6 +9673,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "department-for-transport",
         "id": "uk-state-body-department-for-transport",
         "kind": "body",
@@ -9500,6 +9688,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "department-for-work-pensions",
         "id": "uk-state-body-department-for-work-pensions",
         "kind": "body",
@@ -9516,6 +9705,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "department-of-agriculture-environment-and-rural-affairs-northern-ireland",
         "id": "uk-state-body-department-of-agriculture-environment-and-rural-affairs-northern-ireland",
         "kind": "body",
@@ -9530,6 +9720,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "department-of-education",
         "id": "uk-state-body-department-of-education",
         "kind": "body",
@@ -9544,6 +9735,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "department-of-finance-northern-ireland",
         "id": "uk-state-body-department-of-finance-northern-ireland",
         "kind": "body",
@@ -9558,6 +9750,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "department-of-health-and-social-care",
         "id": "uk-state-body-department-of-health-and-social-care",
         "kind": "body",
@@ -9572,6 +9765,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "department-of-health-northern-ireland",
         "id": "uk-state-body-department-of-health-northern-ireland",
         "kind": "body",
@@ -9586,6 +9780,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "department-of-justice-northern-ireland",
         "id": "uk-state-body-department-of-justice-northern-ireland",
         "kind": "body",
@@ -9600,6 +9795,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "dft-operator-limited",
         "id": "uk-state-body-dft-operator-limited",
         "kind": "body",
@@ -9617,6 +9813,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "disability-unit",
         "id": "uk-state-body-disability-unit",
         "kind": "body",
@@ -9634,6 +9831,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "disabled-persons-transport-advisory-committee",
         "id": "uk-state-body-disabled-persons-transport-advisory-committee",
         "kind": "body",
@@ -9648,6 +9846,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "disclosure-and-barring-service",
         "id": "uk-state-body-disclosure-and-barring-service",
         "kind": "body",
@@ -9662,6 +9863,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "district-valuer-services-dvs",
         "id": "uk-state-body-district-valuer-services-dvs",
         "kind": "body",
@@ -9676,6 +9878,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "driver-and-vehicle-licensing-agency",
         "id": "uk-state-body-driver-and-vehicle-licensing-agency",
         "kind": "body",
@@ -9690,6 +9895,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "driver-and-vehicle-standards-agency",
         "id": "uk-state-body-driver-and-vehicle-standards-agency",
         "kind": "body",
@@ -9709,6 +9917,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "east-west-railway-company",
         "id": "uk-state-body-east-west-railway-company",
         "kind": "body",
@@ -9723,6 +9932,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "ebbsfleet-development-corporation",
         "id": "uk-state-body-ebbsfleet-development-corporation",
         "kind": "body",
@@ -9737,6 +9947,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "economic-and-social-research-council",
         "id": "uk-state-body-economic-and-social-research-council",
         "kind": "body",
@@ -9751,6 +9962,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "electricity-settlements-company",
         "id": "uk-state-body-electricity-settlements-company",
         "kind": "body",
@@ -9765,6 +9977,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "employment-appeal-tribunal",
         "id": "uk-state-body-employment-appeal-tribunal",
         "kind": "body",
@@ -9779,6 +9992,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "employment-tribunal",
         "id": "uk-state-body-employment-tribunal",
         "kind": "body",
@@ -9793,6 +10007,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "engineering-and-physical-sciences-research-council",
         "id": "uk-state-body-engineering-and-physical-sciences-research-council",
         "kind": "body",
@@ -9807,6 +10022,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "engineering-construction-industry-training-board",
         "id": "uk-state-body-engineering-construction-industry-training-board",
         "kind": "body",
@@ -9821,6 +10037,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "english-institute-of-sport",
         "id": "uk-state-body-english-institute-of-sport",
         "kind": "body",
@@ -9835,6 +10052,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "environment-agency",
         "id": "uk-state-body-environment-agency",
         "kind": "body",
@@ -9849,6 +10069,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "equality-and-human-rights-commission",
         "id": "uk-state-body-equality-and-human-rights-commission",
         "kind": "body",
@@ -9863,6 +10086,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "estyn",
         "id": "uk-state-body-estyn",
         "kind": "body",
@@ -9877,6 +10101,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "ethics-and-integrity-commission",
         "id": "uk-state-body-ethics-and-integrity-commission",
         "kind": "body",
@@ -9894,6 +10119,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "evaluation-task-force",
         "id": "uk-state-body-evaluation-task-force",
         "kind": "body",
@@ -9908,6 +10134,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "exmoor-national-park-authority",
         "id": "uk-state-body-exmoor-national-park-authority",
         "kind": "body",
@@ -9922,6 +10149,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "export-control-joint-unit",
         "id": "uk-state-body-export-control-joint-unit",
         "kind": "body",
@@ -9936,6 +10164,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "export-guarantees-advisory-council",
         "id": "uk-state-body-export-guarantees-advisory-council",
         "kind": "body",
@@ -9950,6 +10179,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "fair-work-agency",
         "id": "uk-state-body-fair-work-agency",
         "kind": "body",
@@ -9969,6 +10201,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "family-division-of-the-high-court",
         "id": "uk-state-body-family-division-of-the-high-court",
         "kind": "body",
@@ -9983,6 +10216,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "family-justice-council",
         "id": "uk-state-body-family-justice-council",
         "kind": "body",
@@ -9997,6 +10231,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "family-procedure-rule-committee",
         "id": "uk-state-body-family-procedure-rule-committee",
         "kind": "body",
@@ -10011,6 +10246,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "fcdo-services",
         "id": "uk-state-body-fcdo-services",
         "kind": "body",
@@ -10027,6 +10263,9 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "financial-conduct-authority",
         "id": "uk-state-body-financial-conduct-authority",
         "kind": "body",
@@ -10041,6 +10280,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "financial-remedies-court",
         "id": "uk-state-body-financial-remedies-court",
         "kind": "body",
@@ -10055,6 +10295,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "financial-reporting-council",
         "id": "uk-state-body-financial-reporting-council",
         "kind": "body",
@@ -10069,6 +10312,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "fire-service-college",
         "id": "uk-state-body-fire-service-college",
         "kind": "body",
@@ -10083,6 +10327,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "first-tier-tribunal-asylum-support",
         "id": "uk-state-body-first-tier-tribunal-asylum-support",
         "kind": "body",
@@ -10097,6 +10342,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "first-tier-tribunal-care-standards",
         "id": "uk-state-body-first-tier-tribunal-care-standards",
         "kind": "body",
@@ -10111,6 +10357,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "first-tier-tribunal-criminal-injuries-compensation",
         "id": "uk-state-body-first-tier-tribunal-criminal-injuries-compensation",
         "kind": "body",
@@ -10125,6 +10372,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "first-tier-tribunal-general-regulatory-chamber",
         "id": "uk-state-body-first-tier-tribunal-general-regulatory-chamber",
         "kind": "body",
@@ -10139,6 +10387,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "first-tier-tribunal-immigration-and-asylum",
         "id": "uk-state-body-first-tier-tribunal-immigration-and-asylum",
         "kind": "body",
@@ -10153,6 +10402,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "first-tier-tribunal-mental-health",
         "id": "uk-state-body-first-tier-tribunal-mental-health",
         "kind": "body",
@@ -10167,6 +10417,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "first-tier-tribunal-property-chamber",
         "id": "uk-state-body-first-tier-tribunal-property-chamber",
         "kind": "body",
@@ -10181,6 +10432,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "first-tier-tribunal-social-security-and-child-support",
         "id": "uk-state-body-first-tier-tribunal-social-security-and-child-support",
         "kind": "body",
@@ -10195,6 +10447,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "first-tier-tribunal-special-educational-needs-and-disability",
         "id": "uk-state-body-first-tier-tribunal-special-educational-needs-and-disability",
         "kind": "body",
@@ -10209,6 +10462,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "first-tier-tribunal-tax",
         "id": "uk-state-body-first-tier-tribunal-tax",
         "kind": "body",
@@ -10223,6 +10477,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "first-tier-tribunal-war-pensions-and-armed-forces-compensation",
         "id": "uk-state-body-first-tier-tribunal-war-pensions-and-armed-forces-compensation",
         "kind": "body",
@@ -10237,6 +10492,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "fleet-air-arm-museum",
         "id": "uk-state-body-fleet-air-arm-museum",
         "kind": "body",
@@ -10251,6 +10507,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "flood-and-coastal-erosion-risk-management-research-and-development-programme",
         "id": "uk-state-body-flood-and-coastal-erosion-risk-management-research-and-development-programme",
         "kind": "body",
@@ -10265,6 +10522,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "flood-forecasting-centre",
         "id": "uk-state-body-flood-forecasting-centre",
         "kind": "body",
@@ -10279,6 +10537,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "flood-re",
         "id": "uk-state-body-flood-re",
         "kind": "body",
@@ -10293,6 +10552,9 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "food-standards-agency",
         "id": "uk-state-body-food-standards-agency",
         "kind": "body",
@@ -10307,6 +10569,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "foreign-commonwealth-development-office",
         "id": "uk-state-body-foreign-commonwealth-development-office",
         "kind": "body",
@@ -10326,6 +10589,9 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "forensic-science-regulator",
         "id": "uk-state-body-forensic-science-regulator",
         "kind": "body",
@@ -10340,6 +10606,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "forest-enterprise-england",
         "id": "uk-state-body-forest-enterprise-england",
         "kind": "body",
@@ -10354,6 +10621,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "forest-research",
         "id": "uk-state-body-forest-research",
         "kind": "body",
@@ -10368,6 +10636,9 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "forestry-commission",
         "id": "uk-state-body-forestry-commission",
         "kind": "body",
@@ -10382,6 +10653,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "further-education-commissioner",
         "id": "uk-state-body-further-education-commissioner",
         "kind": "body",
@@ -10396,6 +10668,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "gambling-commission",
         "id": "uk-state-body-gambling-commission",
         "kind": "body",
@@ -10410,6 +10685,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "gangmasters-licensing-appeals",
         "id": "uk-state-body-gangmasters-licensing-appeals",
         "kind": "body",
@@ -10424,6 +10700,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "geffrye-museum",
         "id": "uk-state-body-geffrye-museum",
         "kind": "body",
@@ -10438,6 +10715,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "gov-facility-services-limited",
         "id": "uk-state-body-gov-facility-services-limited",
         "kind": "body",
@@ -10452,6 +10730,7 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [],
         "govuk_slug": "government-actuarys-department",
         "id": "uk-state-body-government-actuarys-department",
         "kind": "body",
@@ -10466,6 +10745,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-analysis-function",
         "id": "uk-state-body-government-analysis-function",
         "kind": "body",
@@ -10480,6 +10760,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-chemist",
         "id": "uk-state-body-government-chemist",
         "kind": "body",
@@ -10494,6 +10775,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "government-commercial-agency",
         "id": "uk-state-body-government-commercial-agency",
         "kind": "body",
@@ -10511,6 +10793,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-commercial-function",
         "id": "uk-state-body-government-commercial-function",
         "kind": "body",
@@ -10527,6 +10810,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "government-communications-headquarters",
         "id": "uk-state-body-government-communications-headquarters",
         "kind": "body",
@@ -10541,6 +10825,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-cyber-profession",
         "id": "uk-state-body-government-cyber-profession",
         "kind": "body",
@@ -10555,6 +10840,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-data-quality-hub",
         "id": "uk-state-body-government-data-quality-hub",
         "kind": "body",
@@ -10569,6 +10855,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "government-debt-management-function",
         "id": "uk-state-body-government-debt-management-function",
         "kind": "body",
@@ -10583,6 +10870,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-digital-service",
         "id": "uk-state-body-government-digital-service",
         "kind": "body",
@@ -10597,6 +10885,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "government-estates-management",
         "id": "uk-state-body-government-estates-management",
         "kind": "body",
@@ -10611,6 +10900,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-finance-function",
         "id": "uk-state-body-government-finance-function",
         "kind": "body",
@@ -10627,6 +10917,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-geography-profession",
         "id": "uk-state-body-government-geography-profession",
         "kind": "body",
@@ -10641,6 +10932,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "government-internal-audit-agency",
         "id": "uk-state-body-government-internal-audit-agency",
         "kind": "body",
@@ -10655,6 +10947,7 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [],
         "govuk_slug": "government-legal-department",
         "id": "uk-state-body-government-legal-department",
         "kind": "body",
@@ -10672,6 +10965,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "government-office-for-science",
         "id": "uk-state-body-government-office-for-science",
         "kind": "body",
@@ -10686,6 +10980,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-office-for-technology-transfer",
         "id": "uk-state-body-government-office-for-technology-transfer",
         "kind": "body",
@@ -10700,6 +10995,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-partnerships-international",
         "id": "uk-state-body-government-partnerships-international",
         "kind": "body",
@@ -10714,6 +11010,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "government-people-function",
         "id": "uk-state-body-government-people-function",
         "kind": "body",
@@ -10730,6 +11027,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-people-group",
         "id": "uk-state-body-government-people-group",
         "kind": "body",
@@ -10747,6 +11045,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-project-delivery",
         "id": "uk-state-body-government-project-delivery",
         "kind": "body",
@@ -10763,6 +11062,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "government-property-agency",
         "id": "uk-state-body-government-property-agency",
         "kind": "body",
@@ -10777,6 +11077,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-property-function",
         "id": "uk-state-body-government-property-function",
         "kind": "body",
@@ -10793,6 +11094,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-recruitment-service",
         "id": "uk-state-body-government-recruitment-service",
         "kind": "body",
@@ -10809,6 +11111,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-security-profession",
         "id": "uk-state-body-government-security-profession",
         "kind": "body",
@@ -10823,6 +11126,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "government-skills",
         "id": "uk-state-body-government-skills",
         "kind": "body",
@@ -10840,6 +11144,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "great-britain-china-centre",
         "id": "uk-state-body-great-britain-china-centre",
         "kind": "body",
@@ -10854,6 +11159,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "great-british-energy-nuclear",
         "id": "uk-state-body-great-british-energy-nuclear",
         "kind": "body",
@@ -10871,6 +11177,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "great-british-energy",
         "id": "uk-state-body-great-british-energy",
         "kind": "body",
@@ -10885,6 +11192,9 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "groceries-code-adjudicator",
         "id": "uk-state-body-groceries-code-adjudicator",
         "kind": "body",
@@ -10899,6 +11209,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "health-and-safety-executive",
         "id": "uk-state-body-health-and-safety-executive",
         "kind": "body",
@@ -10913,6 +11226,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "health-equity-in-health-protection-initiative",
         "id": "uk-state-body-health-equity-in-health-protection-initiative",
         "kind": "body",
@@ -10927,6 +11241,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "health-research-authority",
         "id": "uk-state-body-health-research-authority",
         "kind": "body",
@@ -10941,6 +11258,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "health-services-safety-investigations-body",
         "id": "uk-state-body-health-services-safety-investigations-body",
         "kind": "body",
@@ -10955,6 +11273,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "high-speed-two-limited",
         "id": "uk-state-body-high-speed-two-limited",
         "kind": "body",
@@ -10969,6 +11288,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "higher-education-statistical-agency",
         "id": "uk-state-body-higher-education-statistical-agency",
         "kind": "body",
@@ -10983,6 +11303,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "historic-england",
         "id": "uk-state-body-historic-england",
         "kind": "body",
@@ -11000,6 +11323,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "historic-royal-palaces",
         "id": "uk-state-body-historic-royal-palaces",
         "kind": "body",
@@ -11014,6 +11338,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "hm-courts-and-tribunals-service",
         "id": "uk-state-body-hm-courts-and-tribunals-service",
         "kind": "body",
@@ -11028,6 +11353,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "hm-crown-prosecution-service-inspectorate",
         "id": "uk-state-body-hm-crown-prosecution-service-inspectorate",
         "kind": "body",
@@ -11042,6 +11368,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "hm-government-communications-centre",
         "id": "uk-state-body-hm-government-communications-centre",
         "kind": "body",
@@ -11056,6 +11383,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "hm-inspectorate-of-constabulary-and-fire-rescue-services",
         "id": "uk-state-body-hm-inspectorate-of-constabulary-and-fire-rescue-services",
         "kind": "body",
@@ -11073,6 +11401,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "hm-inspectorate-of-prisons",
         "id": "uk-state-body-hm-inspectorate-of-prisons",
         "kind": "body",
@@ -11087,6 +11416,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "hm-inspectorate-of-probation",
         "id": "uk-state-body-hm-inspectorate-of-probation",
         "kind": "body",
@@ -11101,6 +11431,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "hm-nautical-almanac-office",
         "id": "uk-state-body-hm-nautical-almanac-office",
         "kind": "body",
@@ -11115,6 +11446,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "hm-passport-office",
         "id": "uk-state-body-hm-passport-office",
         "kind": "body",
@@ -11131,6 +11463,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "hm-prison-and-probation-service",
         "id": "uk-state-body-hm-prison-and-probation-service",
         "kind": "body",
@@ -11148,6 +11481,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "hm-prison-service",
         "id": "uk-state-body-hm-prison-service",
         "kind": "body",
@@ -11162,6 +11496,7 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [],
         "govuk_slug": "hm-revenue-customs",
         "id": "uk-state-body-hm-revenue-customs",
         "kind": "body",
@@ -11176,6 +11511,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "hm-treasury",
         "id": "uk-state-body-hm-treasury",
         "kind": "body",
@@ -11190,6 +11526,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "home-office",
         "id": "uk-state-body-home-office",
         "kind": "body",
@@ -11204,6 +11541,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "homes-england",
         "id": "uk-state-body-homes-england",
         "kind": "body",
@@ -11218,6 +11556,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "horniman-museum",
         "id": "uk-state-body-horniman-museum",
         "kind": "body",
@@ -11232,6 +11571,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "horserace-betting-levy-board",
         "id": "uk-state-body-horserace-betting-levy-board",
         "kind": "body",
@@ -11246,6 +11586,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "house-of-lords-appointments-commission",
         "id": "uk-state-body-house-of-lords-appointments-commission",
         "kind": "body",
@@ -11260,6 +11601,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "housing-ombudsman",
         "id": "uk-state-body-housing-ombudsman",
         "kind": "body",
@@ -11274,6 +11616,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "hsc-business-services-organisation-northern-ireland",
         "id": "uk-state-body-hsc-business-services-organisation-northern-ireland",
         "kind": "body",
@@ -11288,6 +11631,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "human-fertilisation-and-embryology-authority",
         "id": "uk-state-body-human-fertilisation-and-embryology-authority",
         "kind": "body",
@@ -11302,6 +11648,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "human-tissue-authority",
         "id": "uk-state-body-human-tissue-authority",
         "kind": "body",
@@ -11316,6 +11665,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "immigration-advice-authority",
         "id": "uk-state-body-immigration-advice-authority",
         "kind": "body",
@@ -11333,6 +11685,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "immigration-enforcement",
         "id": "uk-state-body-immigration-enforcement",
         "kind": "body",
@@ -11347,6 +11700,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "imperial-war-museum",
         "id": "uk-state-body-imperial-war-museum",
         "kind": "body",
@@ -11361,6 +11715,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "independent-adviser-on-ministers-interests",
         "id": "uk-state-body-independent-adviser-on-ministers-interests",
         "kind": "body",
@@ -11375,6 +11730,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "independent-advisory-panel-on-deaths-in-custody",
         "id": "uk-state-body-independent-advisory-panel-on-deaths-in-custody",
         "kind": "body",
@@ -11389,6 +11745,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "independent-agricultural-appeals-panel",
         "id": "uk-state-body-independent-agricultural-appeals-panel",
         "kind": "body",
@@ -11403,6 +11760,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "independent-anti-slavery-commissioner",
         "id": "uk-state-body-independent-anti-slavery-commissioner",
         "kind": "body",
@@ -11417,6 +11775,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "independent-case-examiner",
         "id": "uk-state-body-independent-case-examiner",
         "kind": "body",
@@ -11431,6 +11790,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "independent-chief-inspector-of-borders-and-immigration",
         "id": "uk-state-body-independent-chief-inspector-of-borders-and-immigration",
         "kind": "body",
@@ -11445,6 +11805,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "independent-commission-for-aid-impact",
         "id": "uk-state-body-independent-commission-for-aid-impact",
         "kind": "body",
@@ -11459,6 +11820,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "independent-complaints-reviewer",
         "id": "uk-state-body-independent-complaints-reviewer",
         "kind": "body",
@@ -11473,6 +11835,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "independent-family-returns-panel",
         "id": "uk-state-body-independent-family-returns-panel",
         "kind": "body",
@@ -11487,6 +11850,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "independent-football-regulator",
         "id": "uk-state-body-independent-football-regulator",
         "kind": "body",
@@ -11501,6 +11867,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "independent-medical-expert-group",
         "id": "uk-state-body-independent-medical-expert-group",
         "kind": "body",
@@ -11515,6 +11882,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "independent-monitoring-authority-for-the-citizens-rights-agreements",
         "id": "uk-state-body-independent-monitoring-authority-for-the-citizens-rights-agreements",
         "kind": "body",
@@ -11529,6 +11897,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "independent-monitoring-boards-of-prisons-immigration-removal-centres-and-short-term-holding-rooms",
         "id": "uk-state-body-independent-monitoring-boards-of-prisons-immigration-removal-centres-and-short-term-holding-rooms",
         "kind": "body",
@@ -11543,6 +11912,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "independent-office-for-police-conduct",
         "id": "uk-state-body-independent-office-for-police-conduct",
         "kind": "body",
@@ -11560,6 +11932,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "independent-parliamentary-standards-authority",
         "id": "uk-state-body-independent-parliamentary-standards-authority",
         "kind": "body",
@@ -11574,6 +11949,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "independent-reconfiguration-panel",
         "id": "uk-state-body-independent-reconfiguration-panel",
         "kind": "body",
@@ -11588,6 +11964,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "independent-review-mechanism",
         "id": "uk-state-body-independent-review-mechanism",
         "kind": "body",
@@ -11602,6 +11979,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "independent-reviewer-of-terrorism-legislation",
         "id": "uk-state-body-independent-reviewer-of-terrorism-legislation",
         "kind": "body",
@@ -11616,6 +11994,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "independent-water-commission",
         "id": "uk-state-body-independent-water-commission",
         "kind": "body",
@@ -11630,6 +12009,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "industrial-development-advisory-board",
         "id": "uk-state-body-industrial-development-advisory-board",
         "kind": "body",
@@ -11644,6 +12024,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "industrial-injuries-advisory-council",
         "id": "uk-state-body-industrial-injuries-advisory-council",
         "kind": "body",
@@ -11658,6 +12039,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "industrial-strategy-advisory-council",
         "id": "uk-state-body-industrial-strategy-advisory-council",
         "kind": "body",
@@ -11672,6 +12054,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "infected-blood-compensation-authority",
         "id": "uk-state-body-infected-blood-compensation-authority",
         "kind": "body",
@@ -11686,6 +12069,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "information-commissioner-s-office",
         "id": "uk-state-body-information-commissioner-s-office",
         "kind": "body",
@@ -11700,6 +12086,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "innovate-uk",
         "id": "uk-state-body-innovate-uk",
         "kind": "body",
@@ -11716,6 +12103,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "insolvency-list",
         "id": "uk-state-body-insolvency-list",
         "kind": "body",
@@ -11730,6 +12118,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "insolvency-rules-committee",
         "id": "uk-state-body-insolvency-rules-committee",
         "kind": "body",
@@ -11744,6 +12133,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "insolvency-service",
         "id": "uk-state-body-insolvency-service",
         "kind": "body",
@@ -11758,6 +12150,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "intellectual-property-enterprise-court",
         "id": "uk-state-body-intellectual-property-enterprise-court",
         "kind": "body",
@@ -11772,6 +12165,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "intellectual-property-office",
         "id": "uk-state-body-intellectual-property-office",
         "kind": "body",
@@ -11786,6 +12182,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "invest-northern-ireland",
         "id": "uk-state-body-invest-northern-ireland",
         "kind": "body",
@@ -11800,6 +12197,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "investigatory-powers-commissioners-office",
         "id": "uk-state-body-investigatory-powers-commissioners-office",
         "kind": "body",
@@ -11821,6 +12219,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "investigatory-powers-tribunal",
         "id": "uk-state-body-investigatory-powers-tribunal",
         "kind": "body",
@@ -11835,6 +12234,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "iraq-inquiry",
         "id": "uk-state-body-iraq-inquiry",
         "kind": "body",
@@ -11849,6 +12249,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "jhub-defence-innovation",
         "id": "uk-state-body-jhub-defence-innovation",
         "kind": "body",
@@ -11863,6 +12264,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "joint-nature-conservation-committee",
         "id": "uk-state-body-joint-nature-conservation-committee",
         "kind": "body",
@@ -11877,6 +12279,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "judicial-appointments-and-conduct-ombudsman",
         "id": "uk-state-body-judicial-appointments-and-conduct-ombudsman",
         "kind": "body",
@@ -11891,6 +12294,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "judicial-appointments-commission",
         "id": "uk-state-body-judicial-appointments-commission",
         "kind": "body",
@@ -11905,6 +12309,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "judicial-office",
         "id": "uk-state-body-judicial-office",
         "kind": "body",
@@ -11919,6 +12324,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "kings-bench-division-of-the-high-court",
         "id": "uk-state-body-kings-bench-division-of-the-high-court",
         "kind": "body",
@@ -11933,6 +12339,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "kings-harbour-master",
         "id": "uk-state-body-kings-harbour-master",
         "kind": "body",
@@ -11947,6 +12354,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "labour-market-evidence-group",
         "id": "uk-state-body-labour-market-evidence-group",
         "kind": "body",
@@ -11961,6 +12369,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "labour-relations-agency",
         "id": "uk-state-body-labour-relations-agency",
         "kind": "body",
@@ -11975,6 +12384,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "lake-district-national-park-authority",
         "id": "uk-state-body-lake-district-national-park-authority",
         "kind": "body",
@@ -11989,6 +12399,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "land-registration-rule-committee",
         "id": "uk-state-body-land-registration-rule-committee",
         "kind": "body",
@@ -12003,6 +12414,9 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "land-registry",
         "id": "uk-state-body-land-registry",
         "kind": "body",
@@ -12017,6 +12431,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "law-commission",
         "id": "uk-state-body-law-commission",
         "kind": "body",
@@ -12031,6 +12446,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "leadership-college-for-government",
         "id": "uk-state-body-leadership-college-for-government",
         "kind": "body",
@@ -12048,6 +12464,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "leasehold-advisory-service",
         "id": "uk-state-body-leasehold-advisory-service",
         "kind": "body",
@@ -12062,6 +12479,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "legal-aid-agency",
         "id": "uk-state-body-legal-aid-agency",
         "kind": "body",
@@ -12076,6 +12494,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "legal-services-agency-northern-ireland",
         "id": "uk-state-body-legal-services-agency-northern-ireland",
         "kind": "body",
@@ -12090,6 +12509,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "legal-services-board",
         "id": "uk-state-body-legal-services-board",
         "kind": "body",
@@ -12104,6 +12526,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "lgbt-veterans-independent-review",
         "id": "uk-state-body-lgbt-veterans-independent-review",
         "kind": "body",
@@ -12118,6 +12541,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "life-sciences-organisation",
         "id": "uk-state-body-life-sciences-organisation",
         "kind": "body",
@@ -12135,6 +12559,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "livestock-and-meat-commission-for-northern-ireland",
         "id": "uk-state-body-livestock-and-meat-commission-for-northern-ireland",
         "kind": "body",
@@ -12149,6 +12574,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "local-audit-office",
         "id": "uk-state-body-local-audit-office",
         "kind": "body",
@@ -12163,6 +12589,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "local-government-ombudsman",
         "id": "uk-state-body-local-government-ombudsman",
         "kind": "body",
@@ -12177,6 +12604,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "located",
         "id": "uk-state-body-located",
         "kind": "body",
@@ -12191,6 +12619,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "low-carbon-contracts-company",
         "id": "uk-state-body-low-carbon-contracts-company",
         "kind": "body",
@@ -12205,6 +12634,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "low-pay-commission",
         "id": "uk-state-body-low-pay-commission",
         "kind": "body",
@@ -12219,6 +12649,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "marine-accident-investigation-branch",
         "id": "uk-state-body-marine-accident-investigation-branch",
         "kind": "body",
@@ -12233,6 +12664,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "marine-management-organisation",
         "id": "uk-state-body-marine-management-organisation",
         "kind": "body",
@@ -12247,6 +12681,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "maritime-and-coastguard-agency",
         "id": "uk-state-body-maritime-and-coastguard-agency",
         "kind": "body",
@@ -12261,6 +12698,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "marshall-aid-commemoration-commission",
         "id": "uk-state-body-marshall-aid-commemoration-commission",
         "kind": "body",
@@ -12275,6 +12713,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "medical-research-council",
         "id": "uk-state-body-medical-research-council",
         "kind": "body",
@@ -12289,6 +12728,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "medicines-and-healthcare-products-regulatory-agency",
         "id": "uk-state-body-medicines-and-healthcare-products-regulatory-agency",
         "kind": "body",
@@ -12303,6 +12745,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "met-office",
         "id": "uk-state-body-met-office",
         "kind": "body",
@@ -12317,6 +12760,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "migration-advisory-committee",
         "id": "uk-state-body-migration-advisory-committee",
         "kind": "body",
@@ -12331,6 +12775,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "military-aviation-authority",
         "id": "uk-state-body-military-aviation-authority",
         "kind": "body",
@@ -12345,6 +12790,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "military-engineering-experimental-establishment",
         "id": "uk-state-body-military-engineering-experimental-establishment",
         "kind": "body",
@@ -12359,6 +12805,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "mining-remediation-authority",
         "id": "uk-state-body-mining-remediation-authority",
         "kind": "body",
@@ -12375,6 +12824,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "ministry-of-defence",
         "id": "uk-state-body-ministry-of-defence",
         "kind": "body",
@@ -12389,6 +12839,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "ministry-of-housing-communities-local-government",
         "id": "uk-state-body-ministry-of-housing-communities-local-government",
         "kind": "body",
@@ -12406,6 +12857,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "ministry-of-justice",
         "id": "uk-state-body-ministry-of-justice",
         "kind": "body",
@@ -12422,6 +12874,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "modernisation-and-reform",
         "id": "uk-state-body-modernisation-and-reform",
         "kind": "body",
@@ -12439,6 +12892,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "national-army-museum",
         "id": "uk-state-body-national-army-museum",
         "kind": "body",
@@ -12453,6 +12907,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "national-counter-terrorism-security-office",
         "id": "uk-state-body-national-counter-terrorism-security-office",
         "kind": "body",
@@ -12467,6 +12922,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "national-crime-agency-remuneration-review-body",
         "id": "uk-state-body-national-crime-agency-remuneration-review-body",
         "kind": "body",
@@ -12481,6 +12937,7 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [],
         "govuk_slug": "national-crime-agency",
         "id": "uk-state-body-national-crime-agency",
         "kind": "body",
@@ -12495,6 +12952,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "national-cyber-force",
         "id": "uk-state-body-national-cyber-force",
         "kind": "body",
@@ -12509,6 +12967,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "national-cyber-security-centre",
         "id": "uk-state-body-national-cyber-security-centre",
         "kind": "body",
@@ -12523,6 +12982,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "national-data-guardian",
         "id": "uk-state-body-national-data-guardian",
         "kind": "body",
@@ -12537,6 +12997,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "national-employment-savings-trust",
         "id": "uk-state-body-national-employment-savings-trust",
         "kind": "body",
@@ -12551,6 +13012,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "national-energy-system-operator",
         "id": "uk-state-body-national-energy-system-operator",
         "kind": "body",
@@ -12565,6 +13027,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "national-forest-company",
         "id": "uk-state-body-national-forest-company",
         "kind": "body",
@@ -12579,6 +13042,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "national-gallery",
         "id": "uk-state-body-national-gallery",
         "kind": "body",
@@ -12593,6 +13057,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "national-guardians-office",
         "id": "uk-state-body-national-guardians-office",
         "kind": "body",
@@ -12607,6 +13072,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "national-heritage-memorial-fund",
         "id": "uk-state-body-national-heritage-memorial-fund",
         "kind": "body",
@@ -12621,6 +13087,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "national-highways",
         "id": "uk-state-body-national-highways",
         "kind": "body",
@@ -12637,6 +13104,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "national-housing-bank",
         "id": "uk-state-body-national-housing-bank",
         "kind": "body",
@@ -12651,6 +13119,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "national-infrastructure-and-service-transformation-authority",
         "id": "uk-state-body-national-infrastructure-and-service-transformation-authority",
         "kind": "body",
@@ -12669,6 +13138,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "national-institute-for-clinical-excellence",
         "id": "uk-state-body-national-institute-for-clinical-excellence",
         "kind": "body",
@@ -12683,6 +13155,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "national-lottery-heritage-fund",
         "id": "uk-state-body-national-lottery-heritage-fund",
         "kind": "body",
@@ -12700,6 +13173,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "national-museums-liverpool",
         "id": "uk-state-body-national-museums-liverpool",
         "kind": "body",
@@ -12714,6 +13188,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "national-physical-laboratory",
         "id": "uk-state-body-national-physical-laboratory",
         "kind": "body",
@@ -12728,6 +13203,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "national-portrait-gallery",
         "id": "uk-state-body-national-portrait-gallery",
         "kind": "body",
@@ -12742,6 +13218,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "national-protective-security-authority",
         "id": "uk-state-body-national-protective-security-authority",
         "kind": "body",
@@ -12759,6 +13236,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "national-security",
         "id": "uk-state-body-national-security",
         "kind": "body",
@@ -12773,6 +13251,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "national-space-operations-centre",
         "id": "uk-state-body-national-space-operations-centre",
         "kind": "body",
@@ -12787,6 +13266,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "national-wealth-fund",
         "id": "uk-state-body-national-wealth-fund",
         "kind": "body",
@@ -12801,6 +13281,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "natural-england",
         "id": "uk-state-body-natural-england",
         "kind": "body",
@@ -12815,6 +13298,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "natural-environment-research-council",
         "id": "uk-state-body-natural-environment-research-council",
         "kind": "body",
@@ -12829,6 +13313,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "natural-history-museum",
         "id": "uk-state-body-natural-history-museum",
         "kind": "body",
@@ -12843,6 +13328,9 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "natural-resources-wales",
         "id": "uk-state-body-natural-resources-wales",
         "kind": "body",
@@ -12857,6 +13345,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "network-rail",
         "id": "uk-state-body-network-rail",
         "kind": "body",
@@ -12871,6 +13360,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "new-forest-national-park-authority",
         "id": "uk-state-body-new-forest-national-park-authority",
         "kind": "body",
@@ -12885,6 +13375,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "nhs-blood-and-transplant",
         "id": "uk-state-body-nhs-blood-and-transplant",
         "kind": "body",
@@ -12899,6 +13390,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "nhs-business-services-authority",
         "id": "uk-state-body-nhs-business-services-authority",
         "kind": "body",
@@ -12913,6 +13405,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "nhs-counter-fraud-authority",
         "id": "uk-state-body-nhs-counter-fraud-authority",
         "kind": "body",
@@ -12929,6 +13422,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "nhs-england",
         "id": "uk-state-body-nhs-england",
         "kind": "body",
@@ -12943,6 +13437,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "nhs-pay-review-body",
         "id": "uk-state-body-nhs-pay-review-body",
         "kind": "body",
@@ -12957,6 +13452,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "nhs-resolution",
         "id": "uk-state-body-nhs-resolution",
         "kind": "body",
@@ -12974,6 +13470,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "nhs-wales-informatics-service",
         "id": "uk-state-body-nhs-wales-informatics-service",
         "kind": "body",
@@ -12988,6 +13485,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "north-sea-transition-authority",
         "id": "uk-state-body-north-sea-transition-authority",
         "kind": "body",
@@ -13005,6 +13505,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "north-york-moors-national-park",
         "id": "uk-state-body-north-york-moors-national-park",
         "kind": "body",
@@ -13019,6 +13520,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "northern-ireland-cancer-registry",
         "id": "uk-state-body-northern-ireland-cancer-registry",
         "kind": "body",
@@ -13033,6 +13535,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "northern-ireland-council-for-the-curriculum-examinations-and-assessment",
         "id": "uk-state-body-northern-ireland-council-for-the-curriculum-examinations-and-assessment",
         "kind": "body",
@@ -13047,6 +13550,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "northern-ireland-court-service",
         "id": "uk-state-body-northern-ireland-court-service",
         "kind": "body",
@@ -13061,6 +13565,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "northern-ireland-executive",
         "id": "uk-state-body-northern-ireland-executive",
         "kind": "body",
@@ -13075,6 +13580,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "northern-ireland-housing-executive",
         "id": "uk-state-body-northern-ireland-housing-executive",
         "kind": "body",
@@ -13089,6 +13595,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "northern-ireland-human-rights-commission",
         "id": "uk-state-body-northern-ireland-human-rights-commission",
         "kind": "body",
@@ -13103,6 +13612,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "northern-ireland-office",
         "id": "uk-state-body-northern-ireland-office",
         "kind": "body",
@@ -13117,6 +13627,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "northern-ireland-policing-board",
         "id": "uk-state-body-northern-ireland-policing-board",
         "kind": "body",
@@ -13131,6 +13642,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "northern-ireland-prison-service",
         "id": "uk-state-body-northern-ireland-prison-service",
         "kind": "body",
@@ -13145,6 +13657,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "northern-ireland-statistics-and-research-agency",
         "id": "uk-state-body-northern-ireland-statistics-and-research-agency",
         "kind": "body",
@@ -13159,6 +13672,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "northern-lighthouse-board",
         "id": "uk-state-body-northern-lighthouse-board",
         "kind": "body",
@@ -13173,6 +13687,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "northumberland-national-park-authority",
         "id": "uk-state-body-northumberland-national-park-authority",
         "kind": "body",
@@ -13187,6 +13702,7 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [],
         "govuk_slug": "ns-i",
         "id": "uk-state-body-ns-i",
         "kind": "body",
@@ -13201,6 +13717,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "nuclear-decommissioning-authority",
         "id": "uk-state-body-nuclear-decommissioning-authority",
         "kind": "body",
@@ -13215,6 +13732,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "nuclear-liabilities-financing-assurance-board",
         "id": "uk-state-body-nuclear-liabilities-financing-assurance-board",
         "kind": "body",
@@ -13229,6 +13747,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "nuclear-research-advisory-committee",
         "id": "uk-state-body-nuclear-research-advisory-committee",
         "kind": "body",
@@ -13246,6 +13765,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "nuclear-restoration-services",
         "id": "uk-state-body-nuclear-restoration-services",
         "kind": "body",
@@ -13263,6 +13783,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "nuclear-waste-services",
         "id": "uk-state-body-nuclear-waste-services",
         "kind": "body",
@@ -13277,6 +13798,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "oak-national-academy",
         "id": "uk-state-body-oak-national-academy",
         "kind": "body",
@@ -13291,6 +13813,9 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "ofcom",
         "id": "uk-state-body-ofcom",
         "kind": "body",
@@ -13307,6 +13832,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "office-for-budget-responsibility",
         "id": "uk-state-body-office-for-budget-responsibility",
         "kind": "body",
@@ -13321,6 +13847,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-for-digital-identities-and-attributes",
         "id": "uk-state-body-office-for-digital-identities-and-attributes",
         "kind": "body",
@@ -13335,6 +13862,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "office-for-environmental-protection",
         "id": "uk-state-body-office-for-environmental-protection",
         "kind": "body",
@@ -13349,6 +13877,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "office-for-equality-and-opportunity",
         "id": "uk-state-body-office-for-equality-and-opportunity",
         "kind": "body",
@@ -13365,6 +13894,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-for-health-improvement-and-disparities",
         "id": "uk-state-body-office-for-health-improvement-and-disparities",
         "kind": "body",
@@ -13379,6 +13909,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-for-investment-financial-services",
         "id": "uk-state-body-office-for-investment-financial-services",
         "kind": "body",
@@ -13393,6 +13924,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-for-investment",
         "id": "uk-state-body-office-for-investment",
         "kind": "body",
@@ -13407,6 +13939,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-for-life-sciences",
         "id": "uk-state-body-office-for-life-sciences",
         "kind": "body",
@@ -13421,6 +13954,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "office-for-national-statistics",
         "id": "uk-state-body-office-for-national-statistics",
         "kind": "body",
@@ -13435,6 +13969,9 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "office-for-nuclear-regulation",
         "id": "uk-state-body-office-for-nuclear-regulation",
         "kind": "body",
@@ -13449,6 +13986,9 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "office-for-product-safety-and-standards",
         "id": "uk-state-body-office-for-product-safety-and-standards",
         "kind": "body",
@@ -13465,6 +14005,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-for-responsible-business-conduct",
         "id": "uk-state-body-office-for-responsible-business-conduct",
         "kind": "body",
@@ -13482,6 +14023,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "office-for-students",
         "id": "uk-state-body-office-for-students",
         "kind": "body",
@@ -13499,6 +14043,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-for-the-independent-examiner-of-complaints",
         "id": "uk-state-body-office-for-the-independent-examiner-of-complaints",
         "kind": "body",
@@ -13513,6 +14058,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-for-the-internal-market",
         "id": "uk-state-body-office-for-the-internal-market",
         "kind": "body",
@@ -13527,6 +14073,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-for-the-pay-review-bodies",
         "id": "uk-state-body-office-for-the-pay-review-bodies",
         "kind": "body",
@@ -13544,6 +14091,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-for-veterans-affairs",
         "id": "uk-state-body-office-for-veterans-affairs",
         "kind": "body",
@@ -13558,6 +14106,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-for-zero-emission-vehicles",
         "id": "uk-state-body-office-for-zero-emission-vehicles",
         "kind": "body",
@@ -13575,6 +14124,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-of-financial-sanctions-implementation",
         "id": "uk-state-body-office-of-financial-sanctions-implementation",
         "kind": "body",
@@ -13589,6 +14139,9 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "office-of-rail-and-road",
         "id": "uk-state-body-office-of-rail-and-road",
         "kind": "body",
@@ -13606,6 +14159,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "office-of-the-advocate-general-for-scotland",
         "id": "uk-state-body-office-of-the-advocate-general-for-scotland",
         "kind": "body",
@@ -13620,6 +14174,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "office-of-the-chief-electoral-officer-for-northern-ireland",
         "id": "uk-state-body-office-of-the-chief-electoral-officer-for-northern-ireland",
         "kind": "body",
@@ -13634,6 +14189,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "office-of-the-children-s-commissioner",
         "id": "uk-state-body-office-of-the-children-s-commissioner",
         "kind": "body",
@@ -13648,6 +14204,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "office-of-the-independent-prevent-commissioner",
         "id": "uk-state-body-office-of-the-independent-prevent-commissioner",
         "kind": "body",
@@ -13662,6 +14219,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "office-of-the-leader-of-the-house-of-lords",
         "id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
         "kind": "body",
@@ -13676,6 +14234,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-of-the-parliamentary-counsel",
         "id": "uk-state-body-office-of-the-parliamentary-counsel",
         "kind": "body",
@@ -13690,6 +14249,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "office-of-the-police-ombudsman-for-northern-ireland",
         "id": "uk-state-body-office-of-the-police-ombudsman-for-northern-ireland",
         "kind": "body",
@@ -13704,6 +14264,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "office-of-the-public-guardian",
         "id": "uk-state-body-office-of-the-public-guardian",
         "kind": "body",
@@ -13718,6 +14279,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "office-of-the-registrar-of-consultant-lobbyists",
         "id": "uk-state-body-office-of-the-registrar-of-consultant-lobbyists",
         "kind": "body",
@@ -13732,6 +14294,9 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "office-of-the-regulator-of-community-interest-companies",
         "id": "uk-state-body-office-of-the-regulator-of-community-interest-companies",
         "kind": "body",
@@ -13746,6 +14311,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "office-of-the-schools-adjudicator",
         "id": "uk-state-body-office-of-the-schools-adjudicator",
         "kind": "body",
@@ -13760,6 +14326,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "office-of-the-windrush-commissioner",
         "id": "uk-state-body-office-of-the-windrush-commissioner",
         "kind": "body",
@@ -13774,6 +14341,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "office-of-trade-sanctions-implementation",
         "id": "uk-state-body-office-of-trade-sanctions-implementation",
         "kind": "body",
@@ -13788,6 +14356,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "official-solicitor-and-public-trustee",
         "id": "uk-state-body-official-solicitor-and-public-trustee",
         "kind": "body",
@@ -13802,6 +14371,9 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "offshore-petroleum-regulator-for-environment-and-decommissioning",
         "id": "uk-state-body-offshore-petroleum-regulator-for-environment-and-decommissioning",
         "kind": "body",
@@ -13816,14 +14388,15 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "ofgem",
         "id": "uk-state-body-ofgem",
         "kind": "body",
         "label": "Ofgem",
         "needs_review": false,
-        "other_names": [
-          "Office of Gas and Electricity Markets"
-        ],
+        "other_names": [],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-department-for-energy-security-and-net-zero",
         "status": "active"
@@ -13832,6 +14405,9 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "ofqual",
         "id": "uk-state-body-ofqual",
         "kind": "body",
@@ -13846,6 +14422,9 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "ofsted",
         "id": "uk-state-body-ofsted",
         "kind": "body",
@@ -13860,6 +14439,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "oil-and-pipelines-agency",
         "id": "uk-state-body-oil-and-pipelines-agency",
         "kind": "body",
@@ -13874,6 +14454,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "online-procedure-rule-committee",
         "id": "uk-state-body-online-procedure-rule-committee",
         "kind": "body",
@@ -13888,6 +14469,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "open-innovation-team",
         "id": "uk-state-body-open-innovation-team",
         "kind": "body",
@@ -13902,6 +14484,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "open-public-services",
         "id": "uk-state-body-open-public-services",
         "kind": "body",
@@ -13916,6 +14499,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "ordnance-survey",
         "id": "uk-state-body-ordnance-survey",
         "kind": "body",
@@ -13930,6 +14514,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "packuk",
         "id": "uk-state-body-packuk",
         "kind": "body",
@@ -13944,6 +14529,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "parades-commission-for-northern-ireland",
         "id": "uk-state-body-parades-commission-for-northern-ireland",
         "kind": "body",
@@ -13958,6 +14546,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "parliamentary-contributory-pension-fund",
         "id": "uk-state-body-parliamentary-contributory-pension-fund",
         "kind": "body",
@@ -13972,6 +14561,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "parole-board",
         "id": "uk-state-body-parole-board",
         "kind": "body",
@@ -13986,6 +14576,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "patents-court",
         "id": "uk-state-body-patents-court",
         "kind": "body",
@@ -14000,6 +14591,9 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "payment-systems-regulator",
         "id": "uk-state-body-payment-systems-regulator",
         "kind": "body",
@@ -14014,6 +14608,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "peak-district-national-park",
         "id": "uk-state-body-peak-district-national-park",
         "kind": "body",
@@ -14028,6 +14623,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "pension-protection-fund-ombudsman",
         "id": "uk-state-body-pension-protection-fund-ombudsman",
         "kind": "body",
@@ -14042,6 +14638,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "pension-protection-fund",
         "id": "uk-state-body-pension-protection-fund",
         "kind": "body",
@@ -14056,6 +14653,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "pensions-ombudsman",
         "id": "uk-state-body-pensions-ombudsman",
         "kind": "body",
@@ -14070,6 +14668,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "planning-court",
         "id": "uk-state-body-planning-court",
         "kind": "body",
@@ -14084,6 +14683,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "planning-inspectorate",
         "id": "uk-state-body-planning-inspectorate",
         "kind": "body",
@@ -14098,6 +14698,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "plant-varieties-and-seeds-tribunal",
         "id": "uk-state-body-plant-varieties-and-seeds-tribunal",
         "kind": "body",
@@ -14112,6 +14713,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "platform4",
         "id": "uk-state-body-platform4",
         "kind": "body",
@@ -14129,6 +14731,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "police-advisory-board-for-england-and-wales",
         "id": "uk-state-body-police-advisory-board-for-england-and-wales",
         "kind": "body",
@@ -14143,6 +14746,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "police-discipline-appeals-tribunal",
         "id": "uk-state-body-police-discipline-appeals-tribunal",
         "kind": "body",
@@ -14157,6 +14761,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "police-remuneration-review-body",
         "id": "uk-state-body-police-remuneration-review-body",
         "kind": "body",
@@ -14171,6 +14776,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "police-service-of-northern-ireland",
         "id": "uk-state-body-police-service-of-northern-ireland",
         "kind": "body",
@@ -14185,6 +14791,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "policy-lab",
         "id": "uk-state-body-policy-lab",
         "kind": "body",
@@ -14199,6 +14806,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "porton-biopharma-limited",
         "id": "uk-state-body-porton-biopharma-limited",
         "kind": "body",
@@ -14213,6 +14821,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "post-office",
         "id": "uk-state-body-post-office",
         "kind": "body",
@@ -14227,6 +14836,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "preventing-sexual-violence-in-conflict-initiative",
         "id": "uk-state-body-preventing-sexual-violence-in-conflict-initiative",
         "kind": "body",
@@ -14241,6 +14851,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "prime-ministers-office-10-downing-street",
         "id": "uk-state-body-prime-ministers-office-10-downing-street",
         "kind": "body",
@@ -14255,6 +14866,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "prison-services-pay-review-body",
         "id": "uk-state-body-prison-services-pay-review-body",
         "kind": "body",
@@ -14269,6 +14881,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "prisons-and-probation-ombudsman",
         "id": "uk-state-body-prisons-and-probation-ombudsman",
         "kind": "body",
@@ -14283,6 +14896,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "privy-council-office",
         "id": "uk-state-body-privy-council-office",
         "kind": "body",
@@ -14297,6 +14911,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "probation-board-for-northern-ireland",
         "id": "uk-state-body-probation-board-for-northern-ireland",
         "kind": "body",
@@ -14311,6 +14926,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "probation-service",
         "id": "uk-state-body-probation-service",
         "kind": "body",
@@ -14325,6 +14941,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "professional-standards-authority-for-health-and-social-care",
         "id": "uk-state-body-professional-standards-authority-for-health-and-social-care",
         "kind": "body",
@@ -14339,6 +14956,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "public-health-agency-northern-ireland",
         "id": "uk-state-body-public-health-agency-northern-ireland",
         "kind": "body",
@@ -14353,6 +14971,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "public-health-wales",
         "id": "uk-state-body-public-health-wales",
         "kind": "body",
@@ -14367,6 +14986,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "public-prosecution-service-for-northern-ireland",
         "id": "uk-state-body-public-prosecution-service-for-northern-ireland",
         "kind": "body",
@@ -14381,6 +15001,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "public-sector-fraud-authority",
         "id": "uk-state-body-public-sector-fraud-authority",
         "kind": "body",
@@ -14395,6 +15016,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "public-services-ombudsman-for-wales",
         "id": "uk-state-body-public-services-ombudsman-for-wales",
         "kind": "body",
@@ -14409,6 +15031,9 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "pubs-code-adjudicator",
         "id": "uk-state-body-pubs-code-adjudicator",
         "kind": "body",
@@ -14423,6 +15048,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "queen-elizabeth-ii-conference-centre",
         "id": "uk-state-body-queen-elizabeth-ii-conference-centre",
         "kind": "body",
@@ -14437,6 +15063,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "race-equality-unit",
         "id": "uk-state-body-race-equality-unit",
         "kind": "body",
@@ -14453,6 +15080,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "rail-accident-investigation-branch",
         "id": "uk-state-body-rail-accident-investigation-branch",
         "kind": "body",
@@ -14467,6 +15095,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "rail-safety-and-standards-board",
         "id": "uk-state-body-rail-safety-and-standards-board",
         "kind": "body",
@@ -14481,6 +15110,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "reclaim-fund-ltd",
         "id": "uk-state-body-reclaim-fund-ltd",
         "kind": "body",
@@ -14495,6 +15125,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "regional-department-for-education-dfe-directors",
         "id": "uk-state-body-regional-department-for-education-dfe-directors",
         "kind": "body",
@@ -14511,6 +15142,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "regulator-of-social-housing",
         "id": "uk-state-body-regulator-of-social-housing",
         "kind": "body",
@@ -14525,6 +15159,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "regulatory-innovation-office",
         "id": "uk-state-body-regulatory-innovation-office",
         "kind": "body",
@@ -14539,6 +15174,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "regulatory-policy-committee",
         "id": "uk-state-body-regulatory-policy-committee",
         "kind": "body",
@@ -14553,6 +15189,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "remploy-pension-scheme-trustees-ltd",
         "id": "uk-state-body-remploy-pension-scheme-trustees-ltd",
         "kind": "body",
@@ -14567,6 +15204,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "research-collaboration-advice-team",
         "id": "uk-state-body-research-collaboration-advice-team",
         "kind": "body",
@@ -14581,6 +15219,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "research-england",
         "id": "uk-state-body-research-england",
         "kind": "body",
@@ -14595,6 +15234,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "reserve-forces-and-cadets-associations",
         "id": "uk-state-body-reserve-forces-and-cadets-associations",
         "kind": "body",
@@ -14609,6 +15249,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "reserve-forces-appeal-tribunal",
         "id": "uk-state-body-reserve-forces-appeal-tribunal",
         "kind": "body",
@@ -14623,6 +15264,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "review-body-on-doctors-and-dentists-remuneration",
         "id": "uk-state-body-review-body-on-doctors-and-dentists-remuneration",
         "kind": "body",
@@ -14637,6 +15279,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "review-body-on-senior-salaries",
         "id": "uk-state-body-review-body-on-senior-salaries",
         "kind": "body",
@@ -14651,6 +15294,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "royal-air-force-museum",
         "id": "uk-state-body-royal-air-force-museum",
         "kind": "body",
@@ -14665,6 +15309,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "royal-armouries-museum",
         "id": "uk-state-body-royal-armouries-museum",
         "kind": "body",
@@ -14679,6 +15324,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "royal-marines-museum",
         "id": "uk-state-body-royal-marines-museum",
         "kind": "body",
@@ -14693,6 +15339,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "royal-mint-advisory-committee",
         "id": "uk-state-body-royal-mint-advisory-committee",
         "kind": "body",
@@ -14707,6 +15354,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "royal-mint",
         "id": "uk-state-body-royal-mint",
         "kind": "body",
@@ -14721,6 +15369,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "royal-museums-greenwich",
         "id": "uk-state-body-royal-museums-greenwich",
         "kind": "body",
@@ -14735,6 +15384,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "royal-naval-museum",
         "id": "uk-state-body-royal-naval-museum",
         "kind": "body",
@@ -14749,6 +15399,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "royal-navy-submarine-museum",
         "id": "uk-state-body-royal-navy-submarine-museum",
         "kind": "body",
@@ -14763,6 +15414,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "royal-parks",
         "id": "uk-state-body-royal-parks",
         "kind": "body",
@@ -14777,6 +15429,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "rural-payments-agency",
         "id": "uk-state-body-rural-payments-agency",
         "kind": "body",
@@ -14791,6 +15446,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "s4c",
         "id": "uk-state-body-s4c",
         "kind": "body",
@@ -14805,6 +15461,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "salix-finance-ltd",
         "id": "uk-state-body-salix-finance-ltd",
         "kind": "body",
@@ -14819,6 +15476,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "school-teachers-review-body",
         "id": "uk-state-body-school-teachers-review-body",
         "kind": "body",
@@ -14833,6 +15491,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "science-advisory-committees",
         "id": "uk-state-body-science-advisory-committees",
         "kind": "body",
@@ -14850,6 +15509,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "science-advisory-council",
         "id": "uk-state-body-science-advisory-council",
         "kind": "body",
@@ -14864,6 +15524,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "science-and-technology-ethics-advisory-committee",
         "id": "uk-state-body-science-and-technology-ethics-advisory-committee",
         "kind": "body",
@@ -14880,6 +15541,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "science-and-technology-facilities-council",
         "id": "uk-state-body-science-and-technology-facilities-council",
         "kind": "body",
@@ -14894,6 +15556,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "science-council",
         "id": "uk-state-body-science-council",
         "kind": "body",
@@ -14908,6 +15571,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "science-museum-group",
         "id": "uk-state-body-science-museum-group",
         "kind": "body",
@@ -14922,6 +15586,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "scientific-advisory-group-for-emergencies",
         "id": "uk-state-body-scientific-advisory-group-for-emergencies",
         "kind": "body",
@@ -14936,6 +15601,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "scotland-office",
         "id": "uk-state-body-scotland-office",
         "kind": "body",
@@ -14952,6 +15618,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "seafish",
         "id": "uk-state-body-seafish",
         "kind": "body",
@@ -14966,6 +15633,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "secret-intelligence-service",
         "id": "uk-state-body-secret-intelligence-service",
         "kind": "body",
@@ -14980,6 +15648,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "security-industry-authority",
         "id": "uk-state-body-security-industry-authority",
         "kind": "body",
@@ -14994,6 +15665,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "security-vetting-appeals-panel",
         "id": "uk-state-body-security-vetting-appeals-panel",
         "kind": "body",
@@ -15008,6 +15680,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "sellafield-ltd",
         "id": "uk-state-body-sellafield-ltd",
         "kind": "body",
@@ -15022,6 +15695,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "senior-courts-costs-office",
         "id": "uk-state-body-senior-courts-costs-office",
         "kind": "body",
@@ -15036,6 +15710,7 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [],
         "govuk_slug": "serious-fraud-office",
         "id": "uk-state-body-serious-fraud-office",
         "kind": "body",
@@ -15050,6 +15725,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "service-complaints-ombudsman",
         "id": "uk-state-body-service-complaints-ombudsman",
         "kind": "body",
@@ -15067,6 +15743,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "service-prosecuting-authority",
         "id": "uk-state-body-service-prosecuting-authority",
         "kind": "body",
@@ -15081,6 +15758,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "sheffield-forgemasters-international-ltd",
         "id": "uk-state-body-sheffield-forgemasters-international-ltd",
         "kind": "body",
@@ -15095,6 +15773,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "single-financial-guidance-body",
         "id": "uk-state-body-single-financial-guidance-body",
         "kind": "body",
@@ -15112,6 +15791,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "single-source-regulations-office",
         "id": "uk-state-body-single-source-regulations-office",
         "kind": "body",
@@ -15129,6 +15809,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "sir-john-soane-s-museum",
         "id": "uk-state-body-sir-john-soane-s-museum",
         "kind": "body",
@@ -15143,6 +15824,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "skills-england",
         "id": "uk-state-body-skills-england",
         "kind": "body",
@@ -15157,6 +15839,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "small-business-commissioner",
         "id": "uk-state-body-small-business-commissioner",
         "kind": "body",
@@ -15171,6 +15854,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "social-mobility-commission",
         "id": "uk-state-body-social-mobility-commission",
         "kind": "body",
@@ -15188,6 +15872,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "social-security-advisory-committee",
         "id": "uk-state-body-social-security-advisory-committee",
         "kind": "body",
@@ -15202,6 +15887,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "social-work-england",
         "id": "uk-state-body-social-work-england",
         "kind": "body",
@@ -15216,6 +15904,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "south-downs-national-park-authority",
         "id": "uk-state-body-south-downs-national-park-authority",
         "kind": "body",
@@ -15230,6 +15919,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "sport-england",
         "id": "uk-state-body-sport-england",
         "kind": "body",
@@ -15244,6 +15934,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "sports-council-for-northern-ireland",
         "id": "uk-state-body-sports-council-for-northern-ireland",
         "kind": "body",
@@ -15258,6 +15949,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "sports-council-for-wales",
         "id": "uk-state-body-sports-council-for-wales",
         "kind": "body",
@@ -15272,6 +15964,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "sports-grounds-safety-authority",
         "id": "uk-state-body-sports-grounds-safety-authority",
         "kind": "body",
@@ -15286,6 +15981,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "standards-and-testing-agency",
         "id": "uk-state-body-standards-and-testing-agency",
         "kind": "body",
@@ -15303,6 +15999,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "student-loans-company",
         "id": "uk-state-body-student-loans-company",
         "kind": "body",
@@ -15317,6 +16014,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "submarine-delivery-agency",
         "id": "uk-state-body-submarine-delivery-agency",
         "kind": "body",
@@ -15331,6 +16029,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "subsidy-advice-unit",
         "id": "uk-state-body-subsidy-advice-unit",
         "kind": "body",
@@ -15345,6 +16044,7 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [],
         "govuk_slug": "supreme-court-of-the-united-kingdom",
         "id": "uk-state-body-supreme-court-of-the-united-kingdom",
         "kind": "body",
@@ -15359,6 +16059,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "tate",
         "id": "uk-state-body-tate",
         "kind": "body",
@@ -15373,6 +16074,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "teaching-regulation-agency",
         "id": "uk-state-body-teaching-regulation-agency",
         "kind": "body",
@@ -15387,6 +16091,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "technical-advisory-board",
         "id": "uk-state-body-technical-advisory-board",
         "kind": "body",
@@ -15401,6 +16106,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "technology-and-construction-court",
         "id": "uk-state-body-technology-and-construction-court",
         "kind": "body",
@@ -15415,6 +16121,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-adjudicator-s-office",
         "id": "uk-state-body-the-adjudicator-s-office",
         "kind": "body",
@@ -15429,6 +16136,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "the-advisory-council-on-national-records-and-archives",
         "id": "uk-state-body-the-advisory-council-on-national-records-and-archives",
         "kind": "body",
@@ -15443,6 +16151,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-business-and-property-courts",
         "id": "uk-state-body-the-business-and-property-courts",
         "kind": "body",
@@ -15457,6 +16166,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-business-list",
         "id": "uk-state-body-the-business-list",
         "kind": "body",
@@ -15471,6 +16181,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "the-centre-for-climate-health-security",
         "id": "uk-state-body-the-centre-for-climate-health-security",
         "kind": "body",
@@ -15485,6 +16196,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-competition-list",
         "id": "uk-state-body-the-competition-list",
         "kind": "body",
@@ -15499,6 +16211,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-crown-estate",
         "id": "uk-state-body-the-crown-estate",
         "kind": "body",
@@ -15513,6 +16226,9 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "the-electoral-commission",
         "id": "uk-state-body-the-electoral-commission",
         "kind": "body",
@@ -15527,6 +16243,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-executive-office-northern-ireland",
         "id": "uk-state-body-the-executive-office-northern-ireland",
         "kind": "body",
@@ -15541,6 +16258,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-financial-list",
         "id": "uk-state-body-the-financial-list",
         "kind": "body",
@@ -15555,6 +16273,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "the-independent-commission-for-reconciliation-and-information-recovery",
         "id": "uk-state-body-the-independent-commission-for-reconciliation-and-information-recovery",
         "kind": "body",
@@ -15569,6 +16288,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-infected-blood-memorial-committee",
         "id": "uk-state-body-the-infected-blood-memorial-committee",
         "kind": "body",
@@ -15583,6 +16303,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-intellectual-property-list",
         "id": "uk-state-body-the-intellectual-property-list",
         "kind": "body",
@@ -15597,6 +16318,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-legal-ombudsman",
         "id": "uk-state-body-the-legal-ombudsman",
         "kind": "body",
@@ -15611,6 +16333,7 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [],
         "govuk_slug": "the-national-archives",
         "id": "uk-state-body-the-national-archives",
         "kind": "body",
@@ -15625,6 +16348,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "the-national-lottery-community-fund",
         "id": "uk-state-body-the-national-lottery-community-fund",
         "kind": "body",
@@ -15642,6 +16366,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-national-shipbuilding-office",
         "id": "uk-state-body-the-national-shipbuilding-office",
         "kind": "body",
@@ -15656,6 +16381,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "the-office-of-the-leader-of-the-house-of-commons",
         "id": "uk-state-body-the-office-of-the-leader-of-the-house-of-commons",
         "kind": "body",
@@ -15670,6 +16396,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-parliamentary-and-health-service-ombudsman",
         "id": "uk-state-body-the-parliamentary-and-health-service-ombudsman",
         "kind": "body",
@@ -15684,6 +16411,9 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "the-pensions-regulator",
         "id": "uk-state-body-the-pensions-regulator",
         "kind": "body",
@@ -15698,6 +16428,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-property-trusts-and-probate-list",
         "id": "uk-state-body-the-property-trusts-and-probate-list",
         "kind": "body",
@@ -15712,6 +16443,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "the-queen-elizabeth-memorial-committee",
         "id": "uk-state-body-the-queen-elizabeth-memorial-committee",
         "kind": "body",
@@ -15726,6 +16458,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-revenue-list",
         "id": "uk-state-body-the-revenue-list",
         "kind": "body",
@@ -15740,6 +16473,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "the-reviewing-committee-on-the-export-of-works-of-art-and-objects-of-cultural-interest",
         "id": "uk-state-body-the-reviewing-committee-on-the-export-of-works-of-art-and-objects-of-cultural-interest",
         "kind": "body",
@@ -15754,6 +16488,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-scottish-government",
         "id": "uk-state-body-the-scottish-government",
         "kind": "body",
@@ -15768,6 +16503,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "the-security-service-mi5",
         "id": "uk-state-body-the-security-service-mi5",
         "kind": "body",
@@ -15782,6 +16518,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "the-sentencing-council-for-england-and-wales",
         "id": "uk-state-body-the-sentencing-council-for-england-and-wales",
         "kind": "body",
@@ -15796,6 +16533,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "the-theatres-trust",
         "id": "uk-state-body-the-theatres-trust",
         "kind": "body",
@@ -15810,12 +16548,17 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "the-water-services-regulation-authority",
         "id": "uk-state-body-the-water-services-regulation-authority",
         "kind": "body",
-        "label": "The Water Services Regulation Authority ",
+        "label": "The Water Services Regulation Authority",
         "needs_review": false,
-        "other_names": [],
+        "other_names": [
+          "Ofwat"
+        ],
         "parent_body_id": null,
         "sponsor_department_id": "uk-state-body-department-for-environment-food-rural-affairs",
         "status": "active"
@@ -15824,6 +16567,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "trade-and-agriculture-commission",
         "id": "uk-state-body-trade-and-agriculture-commission",
         "kind": "body",
@@ -15838,6 +16582,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "trade-remedies-authority",
         "id": "uk-state-body-trade-remedies-authority",
         "kind": "body",
@@ -15855,6 +16600,9 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "traffic-commissioners",
         "id": "uk-state-body-traffic-commissioners",
         "kind": "body",
@@ -15869,6 +16617,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "transport-focus",
         "id": "uk-state-body-transport-focus",
         "kind": "body",
@@ -15886,6 +16635,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "treasure-valuation-committee",
         "id": "uk-state-body-treasure-valuation-committee",
         "kind": "body",
@@ -15900,6 +16650,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "tribunal-procedure-committee",
         "id": "uk-state-body-tribunal-procedure-committee",
         "kind": "body",
@@ -15914,6 +16665,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "trinity-house",
         "id": "uk-state-body-trinity-house",
         "kind": "body",
@@ -15928,6 +16680,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "uk-anti-doping",
         "id": "uk-state-body-uk-anti-doping",
         "kind": "body",
@@ -15942,6 +16695,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "uk-asset-resolution-limited",
         "id": "uk-state-body-uk-asset-resolution-limited",
         "kind": "body",
@@ -15956,6 +16710,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "uk-atomic-energy-authority",
         "id": "uk-state-body-uk-atomic-energy-authority",
         "kind": "body",
@@ -15970,6 +16725,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "uk-commission-on-covid-commemoration",
         "id": "uk-state-body-uk-commission-on-covid-commemoration",
         "kind": "body",
@@ -15984,6 +16740,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "uk-council-for-internet-safety",
         "id": "uk-state-body-uk-council-for-internet-safety",
         "kind": "body",
@@ -15998,6 +16755,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "uk-debt-management-office",
         "id": "uk-state-body-uk-debt-management-office",
         "kind": "body",
@@ -16012,6 +16770,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "uk-defence-and-security-exports",
         "id": "uk-state-body-uk-defence-and-security-exports",
         "kind": "body",
@@ -16029,6 +16788,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "uk-defence-innovation",
         "id": "uk-state-body-uk-defence-innovation",
         "kind": "body",
@@ -16043,6 +16803,7 @@
     {
       "data": {
         "body_type": "ministerial_department",
+        "functions": [],
         "govuk_slug": "uk-export-finance",
         "id": "uk-state-body-uk-export-finance",
         "kind": "body",
@@ -16057,6 +16818,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "uk-fusion-energy",
         "id": "uk-state-body-uk-fusion-energy",
         "kind": "body",
@@ -16074,6 +16836,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "uk-government-investments",
         "id": "uk-state-body-uk-government-investments",
         "kind": "body",
@@ -16091,6 +16854,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "uk-health-security-agency",
         "id": "uk-state-body-uk-health-security-agency",
         "kind": "body",
@@ -16105,6 +16869,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "uk-holocaust-memorial-foundation",
         "id": "uk-state-body-uk-holocaust-memorial-foundation",
         "kind": "body",
@@ -16119,6 +16884,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "uk-hydrographic-office",
         "id": "uk-state-body-uk-hydrographic-office",
         "kind": "body",
@@ -16133,6 +16899,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "uk-infrastructure-bank",
         "id": "uk-state-body-uk-infrastructure-bank",
         "kind": "body",
@@ -16147,6 +16914,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "uk-integrated-security-fund",
         "id": "uk-state-body-uk-integrated-security-fund",
         "kind": "body",
@@ -16164,6 +16932,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "uk-national-authority-for-counter-eavesdropping",
         "id": "uk-state-body-uk-national-authority-for-counter-eavesdropping",
         "kind": "body",
@@ -16178,6 +16947,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "uk-national-screening-committee",
         "id": "uk-state-body-uk-national-screening-committee",
         "kind": "body",
@@ -16192,6 +16962,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "uk-research-and-innovation",
         "id": "uk-state-body-uk-research-and-innovation",
         "kind": "body",
@@ -16206,6 +16977,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "uk-resilience-academy",
         "id": "uk-state-body-uk-resilience-academy",
         "kind": "body",
@@ -16220,6 +16992,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "uk-shared-business-services-ltd",
         "id": "uk-state-body-uk-shared-business-services-ltd",
         "kind": "body",
@@ -16234,6 +17007,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "uk-space-agency",
         "id": "uk-state-body-uk-space-agency",
         "kind": "body",
@@ -16248,6 +17022,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "uk-sport",
         "id": "uk-state-body-uk-sport",
         "kind": "body",
@@ -16262,6 +17037,7 @@
     {
       "data": {
         "body_type": "non_ministerial_department",
+        "functions": [],
         "govuk_slug": "uk-statistics-authority",
         "id": "uk-state-body-uk-statistics-authority",
         "kind": "body",
@@ -16276,6 +17052,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "uk-visas-and-immigration",
         "id": "uk-state-body-uk-visas-and-immigration",
         "kind": "body",
@@ -16293,6 +17070,7 @@
     {
       "data": {
         "body_type": "public_corporation",
+        "functions": [],
         "govuk_slug": "united-kingdom-national-nuclear-laboratory",
         "id": "uk-state-body-united-kingdom-national-nuclear-laboratory",
         "kind": "body",
@@ -16310,6 +17088,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "united-kingdom-reserve-forces-association",
         "id": "uk-state-body-united-kingdom-reserve-forces-association",
         "kind": "body",
@@ -16324,6 +17103,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "united-kingdom-security-vetting",
         "id": "uk-state-body-united-kingdom-security-vetting",
         "kind": "body",
@@ -16338,6 +17118,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "upper-tribunal-administrative-appeals-chamber",
         "id": "uk-state-body-upper-tribunal-administrative-appeals-chamber",
         "kind": "body",
@@ -16352,6 +17133,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "upper-tribunal-immigration-and-asylum-chamber",
         "id": "uk-state-body-upper-tribunal-immigration-and-asylum-chamber",
         "kind": "body",
@@ -16366,6 +17148,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "upper-tribunal-lands-chamber",
         "id": "uk-state-body-upper-tribunal-lands-chamber",
         "kind": "body",
@@ -16380,6 +17163,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "upper-tribunal-tax-and-chancery-chamber",
         "id": "uk-state-body-upper-tribunal-tax-and-chancery-chamber",
         "kind": "body",
@@ -16394,6 +17178,7 @@
     {
       "data": {
         "body_type": "tribunal",
+        "functions": [],
         "govuk_slug": "valuation-tribunal-for-england",
         "id": "uk-state-body-valuation-tribunal-for-england",
         "kind": "body",
@@ -16408,6 +17193,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "valuation-tribunal-service-for-england-valuation-tribunal-service",
         "id": "uk-state-body-valuation-tribunal-service-for-england-valuation-tribunal-service",
         "kind": "body",
@@ -16422,6 +17208,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "vehicle-certification-agency",
         "id": "uk-state-body-vehicle-certification-agency",
         "kind": "body",
@@ -16436,6 +17225,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "veterans-advisory-and-pensions-committees-x13",
         "id": "uk-state-body-veterans-advisory-and-pensions-committees-x13",
         "kind": "body",
@@ -16450,6 +17240,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "veterans-uk",
         "id": "uk-state-body-veterans-uk",
         "kind": "body",
@@ -16464,6 +17255,9 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [
+          "regulation"
+        ],
         "govuk_slug": "veterinary-medicines-directorate",
         "id": "uk-state-body-veterinary-medicines-directorate",
         "kind": "body",
@@ -16478,6 +17272,7 @@
     {
       "data": {
         "body_type": "advisory_ndpb",
+        "functions": [],
         "govuk_slug": "veterinary-products-committee",
         "id": "uk-state-body-veterinary-products-committee",
         "kind": "body",
@@ -16492,6 +17287,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "victims-commissioner",
         "id": "uk-state-body-victims-commissioner",
         "kind": "body",
@@ -16506,6 +17302,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "victoria-and-albert-museum",
         "id": "uk-state-body-victoria-and-albert-museum",
         "kind": "body",
@@ -16520,6 +17317,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "visitbritain",
         "id": "uk-state-body-visitbritain",
         "kind": "body",
@@ -16534,6 +17332,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "visitengland",
         "id": "uk-state-body-visitengland",
         "kind": "body",
@@ -16548,6 +17347,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "wales-audit-office",
         "id": "uk-state-body-wales-audit-office",
         "kind": "body",
@@ -16562,6 +17362,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "wallace-collection",
         "id": "uk-state-body-wallace-collection",
         "kind": "body",
@@ -16576,6 +17377,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "welsh-government",
         "id": "uk-state-body-welsh-government",
         "kind": "body",
@@ -16590,6 +17392,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "welsh-language-commissioner",
         "id": "uk-state-body-welsh-language-commissioner",
         "kind": "body",
@@ -16604,6 +17407,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "westminster-foundation-for-democracy",
         "id": "uk-state-body-westminster-foundation-for-democracy",
         "kind": "body",
@@ -16618,6 +17422,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "wilton-park",
         "id": "uk-state-body-wilton-park",
         "kind": "body",
@@ -16632,6 +17437,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "windrush-commemoration-committee",
         "id": "uk-state-body-windrush-commemoration-committee",
         "kind": "body",
@@ -16646,6 +17452,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "women-and-equalities-unit",
         "id": "uk-state-body-women-and-equalities-unit",
         "kind": "body",
@@ -16663,6 +17470,7 @@
     {
       "data": {
         "body_type": "other_body",
+        "functions": [],
         "govuk_slug": "yorkshire-dales-national-park-authority",
         "id": "uk-state-body-yorkshire-dales-national-park-authority",
         "kind": "body",
@@ -16677,6 +17485,7 @@
     {
       "data": {
         "body_type": "division_directorate",
+        "functions": [],
         "govuk_slug": "youth-custody-service",
         "id": "uk-state-body-youth-custody-service",
         "kind": "body",
@@ -16691,6 +17500,7 @@
     {
       "data": {
         "body_type": "executive_agency",
+        "functions": [],
         "govuk_slug": "youth-justice-agency-of-northern-ireland",
         "id": "uk-state-body-youth-justice-agency-of-northern-ireland",
         "kind": "body",
@@ -16705,6 +17515,7 @@
     {
       "data": {
         "body_type": "executive_ndpb",
+        "functions": [],
         "govuk_slug": "youth-justice-board-for-england-and-wales",
         "id": "uk-state-body-youth-justice-board-for-england-and-wales",
         "kind": "body",
