@@ -1,0 +1,29 @@
+{
+  "annual_report_source_ids": [],
+  "body_id": "uk-state-body-hm-courts-and-tribunals-service",
+  "body_type": "executive_agency",
+  "classification_source_ids": [
+    "source-official-dataset-govuk-organisations-api"
+  ],
+  "external_ids": {
+    "charity_number": null,
+    "company_number": null,
+    "govuk_analytics_identifier": "EA73",
+    "govuk_content_id": "6f757605-ab8f-4b62-84e4-99f79cf085c2"
+  },
+  "founding_source_ids": [],
+  "framework_document_source_ids": [],
+  "govuk_organisation_slug": "hm-courts-and-tribunals-service",
+  "jurisdiction": [
+    "UK"
+  ],
+  "last_reviewed": null,
+  "name": "HM Courts & Tribunals Service",
+  "needs_classification_review": false,
+  "notes": null,
+  "other_names": [],
+  "parent_body_id": null,
+  "record_status": "extracted",
+  "sponsor_department_id": null,
+  "status": "active"
+}

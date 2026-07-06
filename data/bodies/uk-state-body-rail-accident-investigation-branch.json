@@ -1,0 +1,29 @@
+{
+  "annual_report_source_ids": [],
+  "body_id": "uk-state-body-rail-accident-investigation-branch",
+  "body_type": "other_body",
+  "classification_source_ids": [
+    "source-official-dataset-govuk-organisations-api"
+  ],
+  "external_ids": {
+    "charity_number": null,
+    "company_number": null,
+    "govuk_analytics_identifier": "OT249",
+    "govuk_content_id": "013872d8-8bbb-4e80-9b79-45c7c5cf9177"
+  },
+  "founding_source_ids": [],
+  "framework_document_source_ids": [],
+  "govuk_organisation_slug": "rail-accident-investigation-branch",
+  "jurisdiction": [
+    "UK"
+  ],
+  "last_reviewed": null,
+  "name": "Rail Accident Investigation Branch",
+  "needs_classification_review": true,
+  "notes": null,
+  "other_names": [],
+  "parent_body_id": null,
+  "record_status": "extracted",
+  "sponsor_department_id": null,
+  "status": "active"
+}

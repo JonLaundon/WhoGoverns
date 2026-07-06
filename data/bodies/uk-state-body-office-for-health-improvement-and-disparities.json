@@ -1,0 +1,29 @@
+{
+  "annual_report_source_ids": [],
+  "body_id": "uk-state-body-office-for-health-improvement-and-disparities",
+  "body_type": "division_directorate",
+  "classification_source_ids": [
+    "source-official-dataset-govuk-organisations-api"
+  ],
+  "external_ids": {
+    "charity_number": null,
+    "company_number": null,
+    "govuk_analytics_identifier": "OT1341",
+    "govuk_content_id": "e85f9a3f-451d-4a3e-9b63-17b13149269f"
+  },
+  "founding_source_ids": [],
+  "framework_document_source_ids": [],
+  "govuk_organisation_slug": "office-for-health-improvement-and-disparities",
+  "jurisdiction": [
+    "UK"
+  ],
+  "last_reviewed": null,
+  "name": "Office for Health Improvement and Disparities",
+  "needs_classification_review": true,
+  "notes": null,
+  "other_names": [],
+  "parent_body_id": null,
+  "record_status": "extracted",
+  "sponsor_department_id": null,
+  "status": "active"
+}

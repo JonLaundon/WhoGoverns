@@ -1,0 +1,29 @@
+{
+  "annual_report_source_ids": [],
+  "body_id": "uk-state-body-churches-conservation-trust",
+  "body_type": "other_body",
+  "classification_source_ids": [
+    "source-official-dataset-govuk-organisations-api"
+  ],
+  "external_ids": {
+    "charity_number": null,
+    "company_number": null,
+    "govuk_analytics_identifier": "OT1290",
+    "govuk_content_id": "0bbde75d-f8ff-4f7a-b94e-5005505db4f5"
+  },
+  "founding_source_ids": [],
+  "framework_document_source_ids": [],
+  "govuk_organisation_slug": "churches-conservation-trust",
+  "jurisdiction": [
+    "UK"
+  ],
+  "last_reviewed": null,
+  "name": "Churches Conservation Trust",
+  "needs_classification_review": true,
+  "notes": null,
+  "other_names": [],
+  "parent_body_id": null,
+  "record_status": "extracted",
+  "sponsor_department_id": null,
+  "status": "active"
+}

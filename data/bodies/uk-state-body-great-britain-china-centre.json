@@ -1,0 +1,29 @@
+{
+  "annual_report_source_ids": [],
+  "body_id": "uk-state-body-great-britain-china-centre",
+  "body_type": "executive_ndpb",
+  "classification_source_ids": [
+    "source-official-dataset-govuk-organisations-api"
+  ],
+  "external_ids": {
+    "charity_number": null,
+    "company_number": null,
+    "govuk_analytics_identifier": "PB426",
+    "govuk_content_id": "e6f0d3e8-33c5-4639-a093-19b76a8714a1"
+  },
+  "founding_source_ids": [],
+  "framework_document_source_ids": [],
+  "govuk_organisation_slug": "great-britain-china-centre",
+  "jurisdiction": [
+    "UK"
+  ],
+  "last_reviewed": null,
+  "name": "Great Britain-China Centre",
+  "needs_classification_review": false,
+  "notes": null,
+  "other_names": [],
+  "parent_body_id": null,
+  "record_status": "extracted",
+  "sponsor_department_id": null,
+  "status": "active"
+}

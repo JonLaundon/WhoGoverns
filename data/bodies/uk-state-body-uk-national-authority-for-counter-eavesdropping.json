@@ -1,0 +1,29 @@
+{
+  "annual_report_source_ids": [],
+  "body_id": "uk-state-body-uk-national-authority-for-counter-eavesdropping",
+  "body_type": "division_directorate",
+  "classification_source_ids": [
+    "source-official-dataset-govuk-organisations-api"
+  ],
+  "external_ids": {
+    "charity_number": null,
+    "company_number": null,
+    "govuk_analytics_identifier": "OT1330",
+    "govuk_content_id": "f8028bf4-9ea1-4436-b558-9e5b71300f71"
+  },
+  "founding_source_ids": [],
+  "framework_document_source_ids": [],
+  "govuk_organisation_slug": "uk-national-authority-for-counter-eavesdropping",
+  "jurisdiction": [
+    "UK"
+  ],
+  "last_reviewed": null,
+  "name": "UK National Authority for Counter-Eavesdropping",
+  "needs_classification_review": true,
+  "notes": "In formation (govuk_status: joining); render dashed.",
+  "other_names": [],
+  "parent_body_id": null,
+  "record_status": "extracted",
+  "sponsor_department_id": null,
+  "status": "forming"
+}
