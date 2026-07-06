@@ -96,6 +96,7 @@ function init(graph) {
         "target-arrow-color": "#c7cacb", "target-arrow-shape": "triangle", "arrow-scale": 0.55,
       }},
       { selector: "edge[kind = 'office_of']", style: { "line-color": "#e3b7be", "line-style": "dashed", "target-arrow-shape": "none" } },
+      { selector: "edge[kind = 'leads']", style: { "line-color": "#0b0c0c", "width": 1.3, "opacity": 0.6, "target-arrow-color": "#0b0c0c", "target-arrow-shape": "triangle", "arrow-scale": 0.6 } },
       { selector: ".faded", style: { "opacity": 0.12, "text-opacity": 0 } },
       { selector: "node.hl", style: { "label": "data(label)", "z-index": 99, "border-width": 2, "border-color": "#0b0c0c" } },
       { selector: "node:selected", style: { "label": "data(label)", "border-width": 3, "border-color": "#0b0c0c", "z-index": 100, "font-size": 11, "font-weight": "bold" } },
@@ -208,6 +209,10 @@ function buildLegend() {
   const rows = (title, map, cls) => `<h3>${title}</h3>` + Object.values(map).map(([label, color]) =>
     `<div class="row"><span class="swatch ${cls}" style="background:${color}"></span>${esc(label)}</div>`).join("");
   $("#legend").innerHTML = rows("Bodies", BODY_TYPES, "") + rows("Offices", OFFICE_TYPES, "office") +
+    `<h3>Links</h3>` +
+    `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #c7cacb;height:0;border-radius:0"></span>sponsors (body → body)</div>` +
+    `<div class="row"><span class="swatch" style="background:none;border-top:2px dashed #e3b7be;height:0;border-radius:0"></span>office at body</div>` +
+    `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #0b0c0c;height:0;border-radius:0"></span>leads: PM → cabinet → junior <span class="flag" style="margin-left:4px">derived</span></div>` +
     `<h3>Marks</h3><div class="row"><span class="swatch" style="background:#fff;border:2px dashed #0b0c0c"></span>dashed = in formation</div>`;
 }
 

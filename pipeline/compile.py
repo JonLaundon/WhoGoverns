@@ -92,6 +92,28 @@ def build_graph(bodies, relationships, offices, person_roles):
             "target": r["to_body_id"],
             "kind": r["relationship_type"],
         }})
+
+    # Derived governance edges (by convention — NOT raw data, so they live only here,
+    # flagged derived:true): the Prime Minister leads the cabinet; within a department
+    # its cabinet minister(s) lead its junior ministers. This is what makes the map read
+    # as an org chart (PM -> cabinet -> junior) rather than each office floating by its body.
+    pm = next((o for o in offices if o.get("office_type") == "prime_minister"), None)
+    by_body = {}
+    for o in offices:
+        by_body.setdefault(o["body_id"], []).append(o)
+    if pm:
+        for c in (o for o in offices if o.get("office_type") == "cabinet_minister"):
+            edges.append({"data": {"id": "leads-{}-{}".format(pm["office_id"], c["office_id"]),
+                                   "source": pm["office_id"], "target": c["office_id"],
+                                   "kind": "leads", "derived": True}})
+    for offs in by_body.values():
+        cabs = [o for o in offs if o.get("office_type") == "cabinet_minister"]
+        juns = [o for o in offs if o.get("office_type") == "junior_minister"]
+        for j in juns:
+            for c in cabs:
+                edges.append({"data": {"id": "leads-{}-{}".format(c["office_id"], j["office_id"]),
+                                       "source": c["office_id"], "target": j["office_id"],
+                                       "kind": "leads", "derived": True}})
     return {"nodes": nodes, "edges": edges}
 
 
