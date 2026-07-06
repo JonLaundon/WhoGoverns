@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WhoGoverns — a map of the UK state</title>
+  <meta name="description" content="An open, machine-readable map of the UK state: bodies, ministers and the sponsor relationships between them, built from official primary sources.">
+  <!-- Cytoscape.js, pinned. The only third-party runtime dependency. -->
+  <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="masthead">
+      <span class="wordmark">WhoGoverns</span>
+      <span class="tagline">an open map of the UK state</span>
+    </div>
+    <p class="disclaimer" role="note">Not affiliated with, or endorsed by, HM Government. Built from public, official primary sources.</p>
+  </header>
+
+  <div class="layout">
+    <aside class="controls" aria-label="Search and filters">
+      <div class="search">
+        <label for="search-input">Search bodies, ministers &amp; former names</label>
+        <input id="search-input" type="search" autocomplete="off" placeholder="e.g. Ofgem, Atomic Weapons, Chancellor…" aria-describedby="search-help">
+        <p id="search-help" class="help">Type to find a body, a minister, or a former name. Enter selects the first result.</p>
+        <ul id="search-results" class="search-results" role="listbox" aria-label="Search results"></ul>
+      </div>
+
+      <fieldset class="filters">
+        <legend>Show</legend>
+        <label><input type="checkbox" id="toggle-offices" checked> Ministers &amp; offices</label>
+        <label><input type="checkbox" id="toggle-forming" checked> Bodies in formation</label>
+      </fieldset>
+
+      <div class="legend" id="legend" aria-label="Legend"></div>
+
+      <p class="counts" id="counts" aria-live="polite"></p>
+    </aside>
+
+    <main class="stage" aria-label="State graph">
+      <div id="cy" role="img" aria-label="Graph of UK state bodies and ministers. Use the search and the details panel for an accessible view."></div>
+      <p class="hint" id="hint">Click a node for details. Scroll to zoom, drag to pan.</p>
+    </main>
+
+    <section class="detail" id="detail" aria-live="polite" aria-label="Selected entity details">
+      <div class="detail-empty" id="detail-empty">
+        <h2>Select anything</h2>
+        <p>Click a node in the map, or use search, to see what it is, who sponsors it, who runs it — and the source for every claim.</p>
+      </div>
+      <div class="detail-body" id="detail-body" hidden></div>
+    </section>
+  </div>
+
+  <footer class="site-footer">
+    <p>Data compiled from the <a href="https://www.gov.uk/api/organisations" rel="noopener">GOV.UK Organisations API</a> and the GOV.UK content API, under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/" rel="noopener">Open Government Licence v3.0</a>. Every record cites its source. WhoGoverns is an independent, non-partisan project.</p>
+    <p id="generated" class="generated"></p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
