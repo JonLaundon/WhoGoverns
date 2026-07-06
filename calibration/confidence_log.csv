@@ -1,1 +1,30 @@
 predicted_confidence,verification_outcome,record_id,reviewer,date,notes
+0.97,confirmed,uk-state-body-advisory-committee-on-business-appointments,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-advisory-committee-on-clinical-impact-awards,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-advisory-committee-on-conscientious-objectors,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.75,confirmed,uk-state-body-accelerated-capability-environment,build-agent (re-derivation),2026-07-06,format->body_type via map; flagged for finer pass
+0.75,confirmed,uk-state-body-ai-security-institute,build-agent (re-derivation),2026-07-06,format->body_type via map; flagged for finer pass
+0.75,confirmed,uk-state-body-arts-and-humanities-research-council,build-agent (re-derivation),2026-07-06,format->body_type via map; flagged for finer pass
+0.97,confirmed,uk-state-body-active-travel-england,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-animal-and-plant-health-agency,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-centre-for-environment-fisheries-and-aquaculture-science,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-acas,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-advanced-research-and-invention-agency,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-agri-food-and-biosciences-institute,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-attorney-generals-office,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-cabinet-office,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-department-for-business-and-trade,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-charity-commission,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-competition-and-markets-authority,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-crown-prosecution-service,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.75,confirmed,uk-state-body-academy-for-social-justice,build-agent (re-derivation),2026-07-06,format->body_type via map; flagged for finer pass
+0.75,confirmed,uk-state-body-administration-of-radioactive-substances-advisory-committee,build-agent (re-derivation),2026-07-06,format->body_type via map; flagged for finer pass
+0.75,confirmed,uk-state-body-administrative-court,build-agent (re-derivation),2026-07-06,format->body_type via map; flagged for finer pass
+0.97,confirmed,uk-state-body-architects-registration-board,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-bbc,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-channel-4,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-central-arbitration-committee,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-competition-appeal-tribunal,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.97,confirmed,uk-state-body-copyright-tribunal,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
+0.9,confirmed,office-chancellor-of-the-exchequer,build-agent (content API),2026-07-06,current holder from role_appointments; office_type heuristic
+0.9,confirmed,office-prime-minister,build-agent (content API),2026-07-06,current holder from role_appointments; office_type heuristic
