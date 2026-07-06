@@ -137,7 +137,18 @@ function makeLayout(name) {
 let cy;
 let searchIndex = [];
 let GENERATED = "";
+let currentLayout = "rings";
+let basePos = {};        // unrotated node positions of the current layout
+let selectedId = null;
 const $ = (sel) => document.querySelector(sel);
+
+function runLayout(name) {
+  currentLayout = name;
+  cy.layout(makeLayout(name)).run();
+  basePos = {};
+  cy.nodes().forEach((n) => { basePos[n.id()] = { x: n.position("x"), y: n.position("y") }; });
+  cy.fit(undefined, 40);
+}
 
 fetch("../compiled/graph.json")
   .then((r) => { if (!r.ok) throw new Error("graph.json not found (serve from repo root)"); return r.json(); })
@@ -190,7 +201,8 @@ function init(graph) {
       { selector: "edge[kind = 'office_of']", style: { "line-color": "#e3b7be", "line-style": "dashed", "target-arrow-shape": "none" } },
       { selector: "edge[kind = 'leads']", style: { "line-color": "#8a1a12", "width": 1, "opacity": 0.45, "target-arrow-color": "#8a1a12", "target-arrow-shape": "triangle", "arrow-scale": 0.5 } },
       { selector: ".faded", style: { "opacity": 0.08, "text-opacity": 0 } },
-      { selector: "node.hl", style: { "label": "data(label)", "z-index": 99, "border-width": 2, "border-color": "#0b0c0c" } },
+      { selector: "node.thread-lbl", style: { "label": "data(label)", "z-index": 95, "border-width": 2, "border-color": "#0b0c0c" } },
+      { selector: "edge.thread-edge", style: { "line-color": "#0b0c0c", "opacity": 1, "width": 2.5, "z-index": 85, "target-arrow-color": "#0b0c0c", "line-style": "solid" } },
       { selector: "node.hover-hl", style: { "label": "data(label)", "z-index": 90, "border-width": 2, "border-color": "#0b0c0c" } },
       { selector: "edge.hover-hl", style: { "line-color": "#0b0c0c", "opacity": 1, "width": 2, "z-index": 80, "target-arrow-color": "#0b0c0c" } },
       { selector: "node:selected", style: { "label": "data(label)", "border-width": 3, "border-color": "#0b0c0c", "z-index": 100, "font-size": 11, "font-weight": "bold" } },
@@ -204,8 +216,7 @@ function init(graph) {
   cy.on("mouseout", "node", () => unhover());
   cy.on("mousemove", "node", (e) => positionTooltip(e));
 
-  cy.layout(makeLayout("rings")).run();
-  cy.fit(undefined, 30);
+  runLayout("rings");
   buildLegend();
   wireControls();
   $("#counts").textContent =
@@ -216,9 +227,8 @@ function init(graph) {
 
 /* ---------- hover: title tooltip + link highlight ---------- */
 function hoverNode(node, evt) {
-  cy.elements("edge").addClass("faded");
-  const nbh = node.closedNeighborhood();
-  nbh.removeClass("faded").addClass("hover-hl");
+  cy.elements().addClass("faded");
+  node.closedNeighborhood().removeClass("faded").addClass("hover-hl");
   const d = node.data();
   const n = node.connectedEdges().length;
   $("#tooltip").innerHTML =
@@ -234,29 +244,74 @@ function positionTooltip(evt) {
 }
 function unhover() {
   cy.elements().removeClass("hover-hl");
-  cy.elements("edge").removeClass("faded");
   $("#tooltip").style.display = "none";
-  // restore selection focus, if any
-  const sel = cy.$("node:selected");
-  if (sel.nonempty()) { cy.elements().addClass("faded"); sel.closedNeighborhood().removeClass("faded"); }
+  if (selectedId) applySelectionHighlight(cy.getElementById(selectedId));
+  else cy.elements().removeClass("faded");
 }
 
-/* ---------- click: focus + details ---------- */
+/* ---------- click: golden thread + rotation + details ---------- */
+
+// The full "golden thread" up to the Prime Minister: a node, then repeatedly its
+// incomers (sponsor department, then that department's minister, then the cabinet
+// minister, then the PM), with the connecting edges.
+function upwardThread(node) {
+  let acc = node;
+  let frontier = node;
+  for (let i = 0; i < 15; i++) {
+    const inc = frontier.incomers();
+    const fresh = inc.nodes().difference(acc);
+    acc = acc.union(inc);
+    if (fresh.empty()) break;
+    frontier = fresh;
+  }
+  return acc;
+}
+
+function applySelectionHighlight(node) {
+  const up = upwardThread(node);                 // node → minister → cabinet → PM
+  const keep = up.union(node.outgoers()).union(node); // + one hop down (its bodies/juniors)
+  cy.elements().addClass("faded").removeClass("thread-lbl thread-edge");
+  keep.removeClass("faded");
+  up.nodes().addClass("thread-lbl");             // label ONLY the thread (avoids overlap)
+  node.addClass("thread-lbl");
+  up.edges().addClass("thread-edge");            // draw the thread solid black
+}
+
+// Rotate the whole ring layout so the selected node's spoke swings to the top,
+// making its golden thread read as a straight radial line (the MoG behaviour).
+function rotateToTop(node) {
+  const b = basePos[node.id()];
+  if (!b || (b.x === 0 && b.y === 0)) { cy.animate({ center: { eles: node } }, { duration: 250 }); return; }
+  const delta = (-Math.PI / 2) - Math.atan2(b.y, b.x);
+  const cos = Math.cos(delta), sin = Math.sin(delta);
+  cy.batch(() => cy.nodes().forEach((n) => {
+    const p = basePos[n.id()];
+    if (p) n.position({ x: p.x * cos - p.y * sin, y: p.x * sin + p.y * cos });
+  }));
+  cy.animate({ fit: { padding: 40 } }, { duration: 300 });
+}
+
+function restoreBasePositions() {
+  cy.batch(() => cy.nodes().forEach((n) => { const b = basePos[n.id()]; if (b) n.position({ x: b.x, y: b.y }); }));
+}
+
 function selectNode(id) {
   const node = cy.getElementById(id);
   if (node.empty()) return;
-  cy.elements().removeClass("hl").addClass("faded");
-  const nbh = node.closedNeighborhood();
-  nbh.removeClass("faded");
-  nbh.nodes().addClass("hl");
+  selectedId = id;
+  applySelectionHighlight(node);
   cy.$(":selected").unselect();
   node.select();
-  cy.animate({ center: { eles: node }, zoom: Math.max(cy.zoom(), 1.1) }, { duration: 250 });
   renderDetail(node.data());
+  if (currentLayout === "rings") rotateToTop(node);
+  else cy.animate({ center: { eles: node }, zoom: Math.max(cy.zoom(), 1.0) }, { duration: 250 });
 }
+
 function clearFocus() {
-  cy.elements().removeClass("faded hl hover-hl");
+  selectedId = null;
+  cy.elements().removeClass("faded hover-hl thread-lbl thread-edge");
   cy.$(":selected").unselect();
+  if (currentLayout === "rings") { restoreBasePositions(); cy.animate({ fit: { padding: 40 } }, { duration: 300 }); }
   $("#detail-body").hidden = true;
   $("#detail-empty").hidden = false;
 }
@@ -362,7 +417,7 @@ function wireControls() {
   $("#toggle-offices").addEventListener("change", applyFilters);
   $("#toggle-forming").addEventListener("change", applyFilters);
   document.querySelectorAll("input[name='layout']").forEach((r) =>
-    r.addEventListener("change", (e) => { cy.layout(makeLayout(e.target.value)).run(); cy.fit(undefined, 30); }));
+    r.addEventListener("change", (e) => { clearFocus(); runLayout(e.target.value); }));
 }
 
 function applyFilters() {
