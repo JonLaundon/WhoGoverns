@@ -1,0 +1,18 @@
+{
+  "body_id": "uk-state-body-defence-equipment-and-support",
+  "citation": {
+    "as_at": "2025-03-31",
+    "dataset": "source-official-dataset-civil-service-statistics-2025",
+    "table": "CSS_2025"
+  },
+  "grade": "scs",
+  "metric": "headcount",
+  "notes": null,
+  "period": "2025",
+  "profession": null,
+  "record_status": "extracted",
+  "source_id": "source-official-dataset-civil-service-statistics-2025",
+  "staff_group": "senior_civil_service",
+  "staffing_record_id": "staffing-defence-equipment-and-support-2025-headcount-grade-scs",
+  "value": 105
+}

@@ -31,6 +31,7 @@ Budget/staffing bolt-on (Annex A13.2), run after the bodies exist:
 | Script | Reads | Writes | Network |
 |---|---|---|---|
 | `ingest_budget.py` | HMT OSCAR outturn xlsx (cached) + `data/bodies/` | `data/budgets/` — net/gross DEL/AME + by-programme, matched bodies | no |
+| `ingest_staffing.py` | Civil Service Statistics ODS (cached) + `data/bodies/` | `data/staffing/` — total + by-grade + by-profession, headcount/FTE | no |
 
 After any step, validate from the repo root:
 

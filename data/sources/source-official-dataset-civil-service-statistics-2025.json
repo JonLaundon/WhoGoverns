@@ -1,0 +1,13 @@
+{
+  "accessed_date": "2026-07-07",
+  "legal_status": "current",
+  "licence": "Open Government Licence v3.0",
+  "notes": "Cabinet Office Civil Service Statistics 2025 (accredited official statistics), position as at 31 March 2025. Rank-1 staffing source (Annex A3.4). Statistical tables ODS: Table 20/21 = responsibility level (grade) by organisation (headcount/FTE); Table 8/8A = profession by organisation (headcount/FTE). Figures rounded to the nearest 5; '[c]' = suppressed (headcount 1-4) and stored as no record. Departmental 'Overall' rows are the group total INCLUDING agencies (which are also held as separate bodies) — department group records carry a double-count disclaimer. Raw ODS cached under data/sources/raw/civil-service-statistics/.",
+  "publication_date": "2025-10-29",
+  "publisher": "Cabinet Office",
+  "source_id": "source-official-dataset-civil-service-statistics-2025",
+  "source_type": "official_dataset",
+  "title": "Civil Service Statistics: 2025",
+  "url": "https://www.gov.uk/government/statistics/civil-service-statistics-2025",
+  "version_date": "2025-10-29"
+}

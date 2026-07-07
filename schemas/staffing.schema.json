@@ -12,6 +12,8 @@
     "metric": { "type": "string", "enum": ["headcount", "fte"] },
     "value": { "type": "number" },
     "staff_group": { "type": "string", "enum": ["all", "civil_service", "senior_civil_service", "contractor", "other"] },
+    "grade": { "type": ["string", "null"], "enum": ["scs", "grade_6_7", "seo_heo", "eo", "aa_ao", "unreported", null] },
+    "profession": { "type": ["string", "null"] },
     "source_id": { "type": ["string", "null"] },
     "citation": { "type": "object" },
     "notes": { "type": ["string", "null"] },

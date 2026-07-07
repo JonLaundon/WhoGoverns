@@ -1,0 +1,18 @@
+{
+  "body_id": "uk-state-body-department-for-education",
+  "citation": {
+    "as_at": "2025-03-31",
+    "dataset": "source-official-dataset-civil-service-statistics-2025",
+    "table": "CSS_2025"
+  },
+  "grade": null,
+  "metric": "headcount",
+  "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+  "period": "2025",
+  "profession": null,
+  "record_status": "extracted",
+  "source_id": "source-official-dataset-civil-service-statistics-2025",
+  "staff_group": "civil_service",
+  "staffing_record_id": "staffing-department-for-education-2025-headcount-total",
+  "value": 8185
+}
