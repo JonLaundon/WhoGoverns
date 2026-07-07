@@ -423,6 +423,12 @@ function renderDetail(d) {
   $("#detail-empty").hidden = true;
   el.querySelectorAll("[data-goto]").forEach((b) =>
     b.addEventListener("click", () => selectNode(b.getAttribute("data-goto"))));
+  el.querySelectorAll(".tab").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      const k = btn.getAttribute("data-tab");
+      el.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b === btn));
+      el.querySelectorAll(".tabpanel").forEach((p) => { p.hidden = p.getAttribute("data-panel") !== k; });
+    }));
 }
 function nodeLabel(id) { const n = cy.getElementById(id); return n.empty() ? id : n.data("label"); }
 function gotoBtn(id) {
@@ -450,9 +456,7 @@ function bodyHtml(d) {
   const sponsorHtml = deptSponsors.nonempty()
     ? deptSponsors.map((s) => `<button class="linkish" data-goto="${esc(s.id())}">${esc(s.data("label"))}</button>`).join(", ")
     : (d.sponsor_department_id ? gotoBtn(d.sponsor_department_id) : "—");
-  return `
-    <p class="kicker">${esc(type)}${flag}</p>
-    <h2>${esc(d.label)}</h2>
+  const infoPanel = `
     <dl>
       <dt>Status</dt><dd>${esc(d.status)}${d.forming ? " (in formation)" : ""}</dd>
       <dt>Sponsor${deptSponsors.length > 1 ? "s" : ""}</dt><dd>${sponsorHtml}</dd>
@@ -463,6 +467,68 @@ function bodyHtml(d) {
     ${aliases}
     <h3>Source</h3>
     ${sourceHtml(d.source_ids)}`;
+
+  // Tabs — MoG-style. Budget / Civil service appear only where we hold the data.
+  const tabs = [["info", "Info"], ["powers", "Powers"]];
+  if (d.budget) tabs.push(["budget", `Budget <span class="tab-sub">${esc(d.budget.fy)}</span>`]);
+  if (d.staffing) tabs.push(["civil", "Civil service"]);
+  const tabBar = `<div class="tabs" role="tablist">` + tabs.map(([k, label], i) =>
+    `<button class="tab${i === 0 ? " active" : ""}" role="tab" data-tab="${k}">${label}</button>`).join("") + `</div>`;
+  const panel = (k, html) => `<div class="tabpanel" data-panel="${k}"${k === "info" ? "" : " hidden"}>${html}</div>`;
+  const powers = `<p class="src">Statutory powers, duties and veto points arrive in <strong>Spiral 2</strong> — extracted from legislation and cited to the section of the Act.</p>`;
+
+  return `
+    <p class="kicker">${esc(type)}${flag}</p>
+    <h2>${esc(d.label)}</h2>
+    ${tabBar}
+    ${panel("info", infoPanel)}
+    ${panel("powers", powers)}
+    ${d.budget ? panel("budget", budgetTabHtml(d.budget)) : ""}
+    ${d.staffing ? panel("civil", staffingTabHtml(d.staffing)) : ""}`;
+}
+
+function fmtGBP(n) {
+  if (n == null) return "—";
+  const a = Math.abs(n);
+  if (a >= 1e9) return "£" + (n / 1e9).toFixed(1) + "bn";
+  if (a >= 1e6) return "£" + Math.round(n / 1e6) + "m";
+  if (a >= 1e3) return "£" + Math.round(n / 1e3) + "k";
+  return "£" + n;
+}
+function fmtNum(n) { return n == null ? "—" : n.toLocaleString("en-GB"); }
+
+const GRADE_LABEL = { scs: "Senior Civil Service", grade_6_7: "Grade 6 / 7", seo_heo: "SEO / HEO",
+  eo: "Executive Officer", aa_ao: "AA / AO", unreported: "Unreported" };
+
+function budgetTabHtml(b) {
+  const h = b.headline || {};
+  const row = (label, net, gross) => (net == null && gross == null) ? "" :
+    `<dt>${label}</dt><dd>${fmtGBP(net)}${gross != null && gross !== net ? ` <span class="muted">(gross ${fmtGBP(gross)})</span>` : ""}</dd>`;
+  const progs = (b.programmes || []).length
+    ? `<h3>By programme (resource DEL)</h3><ul>${b.programmes.map((p) =>
+        `<li>${esc(p.name)} — <strong>${fmtGBP(p.net)}</strong></li>`).join("")}</ul>` : "";
+  return `<p class="src">HM Treasury OSCAR outturn, ${esc(b.fy)} (net of income unless gross shown).</p>
+    <dl>
+      ${row("Resource DEL", h.resource_del_net, h.resource_del_gross)}
+      ${row("Capital DEL", h.capital_del_net, h.capital_del_gross)}
+      ${row("Resource AME", h.resource_ame_net, h.resource_ame_gross)}
+      ${row("Capital AME", h.capital_ame_net, h.capital_ame_gross)}
+      ${row("Total managed expenditure", h.total_managed_expenditure_net, null)}
+    </dl>${progs}`;
+}
+
+function staffingTabHtml(s) {
+  const grades = (s.grades || []).length
+    ? `<h3>By grade</h3><dl>${s.grades.map((g) =>
+        `<dt>${esc(GRADE_LABEL[g.grade] || g.grade)}</dt><dd>${fmtNum(g.headcount)}${g.fte != null ? ` <span class="muted">(${fmtNum(g.fte)} FTE)</span>` : ""}</dd>`).join("")}</dl>` : "";
+  const profs = (s.professions || []).length
+    ? `<h3>By profession (top ${Math.min(8, s.professions.length)})</h3><ul>${s.professions.slice(0, 8).map((p) =>
+        `<li>${esc(p.name)} — <strong>${fmtNum(p.headcount)}</strong></li>`).join("")}</ul>` : "";
+  return `<p class="src">Civil Service Statistics, headcount as at 31 March ${esc(s.period)}.${s.disclaimer ? " " + esc(s.disclaimer) : ""}</p>
+    <dl>
+      <dt>Headcount</dt><dd>${fmtNum(s.headcount_total)}</dd>
+      ${s.fte_total != null ? `<dt>Full-time equivalent</dt><dd>${fmtNum(s.fte_total)}</dd>` : ""}
+    </dl>${grades}${profs}`;
 }
 
 // Cite the record's ACTUAL sources (resolved via the graph's source index), not a fixed

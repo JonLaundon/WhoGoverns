@@ -126,6 +126,16 @@ a:focus, input:focus, button:focus { outline: 3px solid var(--focus); outline-of
 .detail-body .linkish { background: none; border: none; color: var(--link); padding: 0; cursor: pointer;
   font: inherit; text-decoration: underline; text-align: left; }
 .detail-body .src { font-size: 0.78rem; color: var(--mid); }
+.detail-body .muted { color: var(--mid); font-weight: 400; }
+
+/* Entity tabs (MoG-style) */
+.detail-body .tabs { display: flex; flex-wrap: wrap; gap: 2px; border-bottom: 1px solid var(--line); margin: 10px 0 12px; }
+.detail-body .tab { font: inherit; font-size: 0.82rem; padding: 5px 10px; cursor: pointer;
+  background: none; border: none; border-bottom: 2px solid transparent; color: var(--mid); }
+.detail-body .tab:hover { color: var(--ink); }
+.detail-body .tab.active { color: var(--ink); font-weight: 700; border-bottom-color: var(--ink); }
+.detail-body .tab .tab-sub { font-weight: 400; font-size: 0.72rem; color: var(--mid); }
+.detail-body .tabpanel[hidden] { display: none; }
 .detail-body .flag { display: inline-block; font-size: 0.72rem; background: #fff7bf; border: 1px solid #ffdd00;
   padding: 1px 6px; border-radius: 3px; }
 

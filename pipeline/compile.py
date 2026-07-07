@@ -44,6 +44,50 @@ def write_json(path, obj):
         fh.write("\n")
 
 
+def load_records_by_body(folder):
+    """Bulk datasets are one array-file per body; flatten to body_id -> [records]."""
+    by_body = {}
+    for p in glob.glob(os.path.join(DATA, folder, "*.json")):
+        data = load(p)
+        for rec in (data if isinstance(data, list) else [data]):
+            by_body.setdefault(rec["body_id"], []).append(rec)
+    return by_body
+
+
+def summarise_budget(recs):
+    head, progs = {}, []
+    for r in recs:
+        if r.get("programme"):
+            if r["budget_type"] == "resource_del" and r.get("basis") == "net":
+                progs.append({"name": r["programme"], "net": r["amount"]})
+        else:
+            head["{}_{}".format(r["budget_type"], r.get("basis", "net"))] = r["amount"]
+    progs.sort(key=lambda x: -x["net"])
+    return {"fy": recs[0]["financial_year"], "headline": head, "programmes": progs}
+
+
+def summarise_staffing(recs):
+    total_hc = total_fte = disclaimer = None
+    grades, profs = {}, []
+    for r in recs:
+        if r.get("notes"):
+            disclaimer = r["notes"]
+        if r["grade"] is None and r["profession"] is None:
+            if r["metric"] == "headcount":
+                total_hc = r["value"]
+            else:
+                total_fte = r["value"]
+        elif r["grade"]:
+            grades.setdefault(r["grade"], {})[r["metric"]] = r["value"]
+        elif r["profession"] and r["metric"] == "headcount":
+            profs.append({"name": r["profession"], "headcount": r["value"]})
+    profs.sort(key=lambda x: -x["headcount"])
+    order = ["scs", "grade_6_7", "seo_heo", "eo", "aa_ao", "unreported"]
+    glist = [dict(grade=g, **grades[g]) for g in order if g in grades]
+    return {"period": recs[0]["period"], "headcount_total": total_hc, "fte_total": total_fte,
+            "grades": glist, "professions": profs, "disclaimer": disclaimer}
+
+
 def build_graph(bodies, relationships, offices, person_roles):
     """Office-centred graph: bodies and offices are nodes; sponsor edges join bodies,
     host edges join each office to the body it sits in. The current holder is an
@@ -202,10 +246,22 @@ def main():
     person_roles = load_dir("person-roles")
     sources = load_dir("sources")
 
+    budgets_by_body = load_records_by_body("budgets")
+    staffing_by_body = load_records_by_body("staffing")
     counts = {"bodies": len(bodies), "relationships": len(relationships),
-              "offices": len(offices), "person_roles": len(person_roles), "sources": len(sources)}
+              "offices": len(offices), "person_roles": len(person_roles), "sources": len(sources),
+              "budget_records": sum(len(v) for v in budgets_by_body.values()),
+              "staffing_records": sum(len(v) for v in staffing_by_body.values())}
 
     graph = build_graph(bodies, relationships, offices, person_roles)
+    # Attach each body's budget/staffing summary to its node (ST5 entity tabs).
+    for n in graph["nodes"]:
+        if n["data"].get("kind") == "body":
+            bid = n["data"]["id"]
+            if bid in budgets_by_body:
+                n["data"]["budget"] = summarise_budget(budgets_by_body[bid])
+            if bid in staffing_by_body:
+                n["data"]["staffing"] = summarise_staffing(staffing_by_body[bid])
     generated = datetime.datetime.now().isoformat(timespec="seconds")
     # Source lookup so the map can cite each record's ACTUAL source(s), not a fixed blurb.
     source_index = {s["source_id"]: {"title": s.get("title"), "url": s.get("url"),
