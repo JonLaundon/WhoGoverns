@@ -25,7 +25,7 @@ Official / primary sources only. Commit nothing until official information is su
 - Every legal record carries `provision_key` (shared per provision) and `derived_from_record_id` (null on the canonical record). Two canonical records may not share a `provision_key`.
 
 ## Active schemas (Spiral 1)
-Body, Source, Office, PersonRole, Relationship are populated in Spiral 1 (full structural graph). Budget, Staffing exist but are a deferred bolt-on. Power/Duty/Veto are DRAFT (Spiral 2) — do not populate.
+Body, Source, Office, PersonRole, Relationship are populated in Spiral 1 (full structural graph). **Budget is now populated** (Spiral 1 bolt-on): HMT OSCAR 2024-25 outturn → net/gross resource/capital DEL + AME + TME + by-programme (COFOG), 132 major bodies, `ingest_budget.py`; amounts GBP, cited to the OSCAR SourceRecord; `programme`/`basis` fields added to the schema. Staffing is next (Civil Service Statistics). Power/Duty/Veto are DRAFT (Spiral 2) — do not populate. Budget/staffing match OSCAR/CSS organisation names by EXACT normalised name, or safe containment (body + legal-form suffix); never fuzzy/overlap (mis-maps — see refine_classification).
 
 ## Body taxonomy (v0.2) and officials
 `body_type` (10 terms): ministerial_department, non_ministerial_department, executive_agency, division_directorate, executive_ndpb, advisory_ndpb, tribunal, public_corporation, royal_charter_body, other_body. No `regulator` (regulation is a function, not a type). `royal_charter_body` is NOT from the GOV.UK API (separate Privy Council tranche). Classify from `vocab/govuk_format_to_body_type.json` v0.2; unmapped `format` → `other_body` + review flag, never dropped.

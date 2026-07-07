@@ -1,0 +1,19 @@
+{
+  "amount": 300611000,
+  "basis": "net",
+  "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+  "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-resource_del-net-4-of-which-enterprise-and-economic-development",
+  "budget_type": "resource_del",
+  "cash_or_real_terms": "cash",
+  "citation": {
+    "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+    "financial_year": "2024-25",
+    "table": "BUD_24-25"
+  },
+  "currency": "GBP",
+  "financial_year": "2024-25",
+  "notes": null,
+  "programme": "4. of which: enterprise and economic development",
+  "record_status": "extracted",
+  "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+}

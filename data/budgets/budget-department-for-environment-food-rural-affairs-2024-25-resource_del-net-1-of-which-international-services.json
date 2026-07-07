@@ -1,0 +1,19 @@
+{
+  "amount": 138312000,
+  "basis": "net",
+  "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+  "budget_record_id": "budget-department-for-environment-food-rural-affairs-2024-25-resource_del-net-1-of-which-international-services",
+  "budget_type": "resource_del",
+  "cash_or_real_terms": "cash",
+  "citation": {
+    "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+    "financial_year": "2024-25",
+    "table": "BUD_24-25"
+  },
+  "currency": "GBP",
+  "financial_year": "2024-25",
+  "notes": null,
+  "programme": "1. of which: international services",
+  "record_status": "extracted",
+  "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+}

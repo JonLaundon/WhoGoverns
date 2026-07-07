@@ -1,0 +1,19 @@
+{
+  "amount": 106102000,
+  "basis": "net",
+  "body_id": "uk-state-body-the-pensions-regulator",
+  "budget_record_id": "budget-the-pensions-regulator-2024-25-resource_del-net-10-social-protection",
+  "budget_type": "resource_del",
+  "cash_or_real_terms": "cash",
+  "citation": {
+    "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+    "financial_year": "2024-25",
+    "table": "BUD_24-25"
+  },
+  "currency": "GBP",
+  "financial_year": "2024-25",
+  "notes": null,
+  "programme": "10. Social protection",
+  "record_status": "extracted",
+  "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+}

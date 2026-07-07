@@ -1,0 +1,19 @@
+{
+  "amount": -3827070000,
+  "basis": "net",
+  "body_id": "uk-state-body-department-for-education",
+  "budget_record_id": "budget-department-for-education-2024-25-resource_ame-net",
+  "budget_type": "resource_ame",
+  "cash_or_real_terms": "cash",
+  "citation": {
+    "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+    "financial_year": "2024-25",
+    "table": "BUD_24-25"
+  },
+  "currency": "GBP",
+  "financial_year": "2024-25",
+  "notes": null,
+  "programme": null,
+  "record_status": "extracted",
+  "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+}

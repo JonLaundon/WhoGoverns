@@ -1,0 +1,19 @@
+{
+  "amount": 171000,
+  "basis": "net",
+  "body_id": "uk-state-body-office-for-environmental-protection",
+  "budget_record_id": "budget-office-for-environmental-protection-2024-25-capital_del-net",
+  "budget_type": "capital_del",
+  "cash_or_real_terms": "cash",
+  "citation": {
+    "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+    "financial_year": "2024-25",
+    "table": "BUD_24-25"
+  },
+  "currency": "GBP",
+  "financial_year": "2024-25",
+  "notes": null,
+  "programme": null,
+  "record_status": "extracted",
+  "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+}

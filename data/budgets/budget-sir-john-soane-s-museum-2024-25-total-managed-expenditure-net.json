@@ -1,0 +1,19 @@
+{
+  "amount": 1186000,
+  "basis": "net",
+  "body_id": "uk-state-body-sir-john-soane-s-museum",
+  "budget_record_id": "budget-sir-john-soane-s-museum-2024-25-total-managed-expenditure-net",
+  "budget_type": "total_managed_expenditure",
+  "cash_or_real_terms": "cash",
+  "citation": {
+    "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+    "financial_year": "2024-25",
+    "table": "BUD_24-25"
+  },
+  "currency": "GBP",
+  "financial_year": "2024-25",
+  "notes": "Sum of resource/capital DEL and AME (net).",
+  "programme": null,
+  "record_status": "extracted",
+  "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+}

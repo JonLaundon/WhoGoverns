@@ -1,0 +1,19 @@
+{
+  "amount": 11705020000,
+  "basis": "net",
+  "body_id": "uk-state-body-ministry-of-justice",
+  "budget_record_id": "budget-ministry-of-justice-2024-25-resource_del-net-3-public-order-and-safety",
+  "budget_type": "resource_del",
+  "cash_or_real_terms": "cash",
+  "citation": {
+    "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+    "financial_year": "2024-25",
+    "table": "BUD_24-25"
+  },
+  "currency": "GBP",
+  "financial_year": "2024-25",
+  "notes": null,
+  "programme": "3. Public order and safety",
+  "record_status": "extracted",
+  "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+}

@@ -26,6 +26,12 @@ Spiral 1.5 added two more, also before `compile`:
 | `refine_functions.py` | DBT List of UK regulators (cached ODS) + `data/bodies/` | `functions:["regulation"]` + `function_source_ids` on matched bodies | no |
 | `ingest_offregister.py` | curated table (in-script) | 22 off-register `data/bodies/` (5 royal_charter_body + 17 statutory-regulator other_body) + charter/DBT SourceRecords | no |
 
+Budget/staffing bolt-on (Annex A13.2), run after the bodies exist:
+
+| Script | Reads | Writes | Network |
+|---|---|---|---|
+| `ingest_budget.py` | HMT OSCAR outturn xlsx (cached) + `data/bodies/` | `data/budgets/` — net/gross DEL/AME + by-programme, matched bodies | no |
+
 After any step, validate from the repo root:
 
     py -3 validate.py

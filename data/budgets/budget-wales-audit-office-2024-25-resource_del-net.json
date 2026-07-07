@@ -1,0 +1,19 @@
+{
+  "amount": 9149000,
+  "basis": "net",
+  "body_id": "uk-state-body-wales-audit-office",
+  "budget_record_id": "budget-wales-audit-office-2024-25-resource_del-net",
+  "budget_type": "resource_del",
+  "cash_or_real_terms": "cash",
+  "citation": {
+    "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+    "financial_year": "2024-25",
+    "table": "BUD_24-25"
+  },
+  "currency": "GBP",
+  "financial_year": "2024-25",
+  "notes": null,
+  "programme": null,
+  "record_status": "extracted",
+  "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+}
