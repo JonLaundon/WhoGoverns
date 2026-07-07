@@ -133,6 +133,44 @@
     "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
   },
   {
+    "amount": 3789000,
+    "basis": "net",
+    "body_id": "uk-state-body-the-electoral-commission",
+    "budget_record_id": "budget-the-electoral-commission-2024-25-income-net-other-income",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Other Income",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 3789000,
+    "basis": "net",
+    "body_id": "uk-state-body-the-electoral-commission",
+    "budget_record_id": "budget-the-electoral-commission-2024-25-income-net",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
     "amount": 43187000,
     "basis": "net",
     "body_id": "uk-state-body-the-electoral-commission",

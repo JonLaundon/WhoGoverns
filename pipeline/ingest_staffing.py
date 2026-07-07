@@ -110,9 +110,11 @@ def main():
             exact.setdefault(norm(n), d["body_id"])
 
     def match(org):
-        cand = org[:-len(" Overall")] if org.endswith(" Overall") else org
-        if "(excl. agencies)" in org:
-            return None
+        # Clean the org label to the body name (strip " Overall" / " (excl. agencies)"),
+        # then exact or safe-containment match. Scope is decided by the caller.
+        cand = org.replace(" (excl. agencies)", "")
+        if cand.endswith(" Overall"):
+            cand = cand[:-len(" Overall")]
         bid = exact.get(norm(cand))
         if bid:
             return bid
@@ -125,23 +127,26 @@ def main():
     g_hc = parse_table(tables, "table_20"); g_fte = parse_table(tables, "table_21")
     p_hc = parse_table(tables, "table_8");  p_fte = parse_table(tables, "table_8A")
 
-    # which parents have agencies (component + overall both present) -> group disclaimer
-    parents_with_agencies = set()
     orgs = g_hc[1]
-    by_parent = {}
+    # Group CSS org rows by the body they match. A department reports BOTH an "X Overall"
+    # (group total, incl agencies) and a non-Overall core row — named either
+    # "X (excl. agencies)" or just "X" — so classify body-centrically: a body with both an
+    # Overall and a non-Overall row gets group+core; every other body gets one set (scope
+    # None). (First row wins per slot.)
+    by_bid = {}
     for org, (parent, _) in orgs.items():
-        by_parent.setdefault(parent, []).append(org)
-    for parent, os_ in by_parent.items():
-        if any(o.endswith(" Overall") for o in os_) and any("(excl. agencies)" not in o and not o.endswith(" Overall") for o in os_):
-            parents_with_agencies.add(parent)
+        bid = match(org)
+        if not bid:
+            continue
+        slot = "overall" if org.endswith(" Overall") else "other"
+        by_bid.setdefault(bid, {}).setdefault(slot, org)
 
-    # one org row per body (first wins), remember if it is a group total
-    body_org = {}
-    for org, (parent, _) in orgs.items():
-        b = match(org)
-        if b and b not in body_org:
-            is_group = org.endswith(" Overall") and parent in parents_with_agencies
-            body_org[b] = (org, is_group)
+    body_scopes = {}
+    for bid, slots in by_bid.items():
+        if "overall" in slots and "other" in slots:
+            body_scopes[bid] = {"group": slots["overall"], "core": slots["other"]}
+        else:
+            body_scopes[bid] = {None: slots.get("overall") or slots["other"]}
 
     DISCLAIMER = ("Departmental GROUP total (includes agencies, which are also held as "
                   "separate bodies) — do not sum a department with its agencies.")
@@ -156,48 +161,54 @@ def main():
         return col_index(header, "Total headcount") or col_index(header, "Total full-time")
 
     written = []
-    for bid, (org, is_group) in body_org.items():
+    for bid, scopes in body_scopes.items():
         body_slug = bid[len("uk-state-body-"):]
-        note = DISCLAIMER if is_group else None
         recs = []
+        for scope, org in scopes.items():
+            note = DISCLAIMER if scope == "group" else None
 
-        def add(metric, value, grade=None, profession=None, staff_group="civil_service"):
-            if not value:   # skip suppressed ([c] -> None) and zero (absence in that grade/profession)
-                return
-            key = "total" if (grade is None and profession is None) else \
-                  ("grade-" + grade if grade else "profession-" + slug(profession))
-            recs.append({
-                "staffing_record_id": "staffing-{}-{}-{}-{}".format(body_slug, PERIOD, metric, key),
-                "body_id": bid, "period": PERIOD, "metric": metric, "value": value,
-                "staff_group": staff_group, "grade": grade, "profession": profession,
-                "source_id": SOURCE_ID,
-                "citation": {"dataset": SOURCE_ID, "table": "CSS_2025", "as_at": "2025-03-31"},
-                "notes": note, "record_status": "extracted",
-            })
+            # scope/note bound as defaults so the closure captures this iteration's values.
+            def add(metric, value, grade=None, profession=None, staff_group="civil_service",
+                    _scope=scope, _note=note):
+                if not value:   # skip suppressed ([c] -> None) and zero (absent in that grade/profession)
+                    return
+                key = "total" if (grade is None and profession is None) else \
+                      ("grade-" + grade if grade else "profession-" + slug(profession))
+                rid = "staffing-{}-{}-{}-{}".format(body_slug, PERIOD, metric, key)
+                if _scope:
+                    rid += "-" + _scope
+                recs.append({
+                    "staffing_record_id": rid,
+                    "body_id": bid, "period": PERIOD, "metric": metric, "value": value,
+                    "staff_group": staff_group, "grade": grade, "profession": profession,
+                    "scope": _scope, "source_id": SOURCE_ID,
+                    "citation": {"dataset": SOURCE_ID, "table": "CSS_2025", "as_at": "2025-03-31"},
+                    "notes": _note, "record_status": "extracted",
+                })
 
-        for metric, (header, data) in (("headcount", g_hc), ("fte", g_fte)):
-            row = data.get(org)
-            if not row:
-                continue
-            vals = row[1]
-            ti = total_index(header)
-            if ti is not None and ti < len(vals):
-                add(metric, num(vals[ti]))
-            for label, gslug in GRADE:
-                ci = col_index(header, label)
-                if ci is not None and ci < len(vals):
-                    add(metric, num(vals[ci]), grade=gslug,
-                        staff_group="senior_civil_service" if gslug == "scs" else "civil_service")
+            for metric, (header, data) in (("headcount", g_hc), ("fte", g_fte)):
+                row = data.get(org)
+                if not row:
+                    continue
+                vals = row[1]
+                ti = total_index(header)
+                if ti is not None and ti < len(vals):
+                    add(metric, num(vals[ti]))
+                for label, gslug in GRADE:
+                    ci = col_index(header, label)
+                    if ci is not None and ci < len(vals):
+                        add(metric, num(vals[ci]), grade=gslug,
+                            staff_group="senior_civil_service" if gslug == "scs" else "civil_service")
 
-        for metric, (header, data) in (("headcount", p_hc), ("fte", p_fte)):
-            row = data.get(org)
-            if not row:
-                continue
-            vals = row[1]
-            for i, h in enumerate(header):
-                m = re.search(r"in the (.+?) profession", h)
-                if m and i < len(vals):
-                    add(metric, num(vals[i]), profession=m.group(1))
+            for metric, (header, data) in (("headcount", p_hc), ("fte", p_fte)):
+                row = data.get(org)
+                if not row:
+                    continue
+                vals = row[1]
+                for i, h in enumerate(header):
+                    m = re.search(r"in the (.+?) profession", h)
+                    if m and i < len(vals):
+                        add(metric, num(vals[i]), profession=m.group(1))
 
         # One file per body: an array of that body's staffing records (consolidated; bulk
         # derived data, not hand-curated per-record).
@@ -206,9 +217,9 @@ def main():
         written.extend(recs)
 
     print("--- ingest_staffing summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
-    print("bodies with staffing records: {}".format(len(body_org)))
-    print("group-total (disclaimer) bodies: {}".format(sum(1 for _, g in body_org.values() if g)))
-    print("staffing records written:     {}".format(len(written)))
+    print("bodies with staffing records:   {}".format(len(body_scopes)))
+    print("departments with group+core:    {}".format(sum(1 for sc in body_scopes.values() if "core" in sc)))
+    print("staffing records written:       {}".format(len(written)))
 
 
 if __name__ == "__main__":

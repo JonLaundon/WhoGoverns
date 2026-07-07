@@ -1,6 +1,6 @@
 {
   "annex_a_version": "0.4",
-  "generated": "2026-07-07T22:07:01",
+  "generated": "2026-07-07T23:22:27",
   "graph": {
     "edges": 883,
     "nodes": 820
@@ -9,12 +9,12 @@
   "project": "WhoGoverns",
   "record_counts": {
     "bodies": 685,
-    "budget_records": 993,
+    "budget_records": 1433,
     "offices": 159,
     "person_roles": 159,
     "relationships": 639,
     "sources": 7,
-    "staffing_records": 2618
+    "staffing_records": 3884
   },
   "spiral": 1,
   "working_name": "The State Machine"

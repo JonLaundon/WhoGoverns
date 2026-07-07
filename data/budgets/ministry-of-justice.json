@@ -171,6 +171,139 @@
     "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
   },
   {
+    "amount": 10744000,
+    "basis": "net",
+    "body_id": "uk-state-body-ministry-of-justice",
+    "budget_record_id": "budget-ministry-of-justice-2024-25-income-net-assets",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Assets",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 1904747000,
+    "basis": "net",
+    "body_id": "uk-state-body-ministry-of-justice",
+    "budget_record_id": "budget-ministry-of-justice-2024-25-income-net",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 2505000,
+    "basis": "net",
+    "body_id": "uk-state-body-ministry-of-justice",
+    "budget_record_id": "budget-ministry-of-justice-2024-25-income-net-other-grants",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Other Grants",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 64306000,
+    "basis": "net",
+    "body_id": "uk-state-body-ministry-of-justice",
+    "budget_record_id": "budget-ministry-of-justice-2024-25-income-net-other-income",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Other Income",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 1752229000,
+    "basis": "net",
+    "body_id": "uk-state-body-ministry-of-justice",
+    "budget_record_id": "budget-ministry-of-justice-2024-25-income-net-goods-and-services",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Goods And Services",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 74948000,
+    "basis": "net",
+    "body_id": "uk-state-body-ministry-of-justice",
+    "budget_record_id": "budget-ministry-of-justice-2024-25-income-net-taxation",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Taxation",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 15000,
+    "basis": "net",
+    "body_id": "uk-state-body-ministry-of-justice",
+    "budget_record_id": "budget-ministry-of-justice-2024-25-income-net-interest-and-dividends",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Interest And Dividends",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
     "amount": 13974721000,
     "basis": "net",
     "body_id": "uk-state-body-ministry-of-justice",

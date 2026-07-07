@@ -12,9 +12,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-total",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-total-group",
     "value": 57500
   },
   {
@@ -30,9 +31,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-scs",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-scs-group",
     "value": 560
   },
   {
@@ -48,9 +50,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-grade_6_7",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-grade_6_7-group",
     "value": 9130
   },
   {
@@ -66,9 +69,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-seo_heo",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-seo_heo-group",
     "value": 23675
   },
   {
@@ -84,9 +88,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-eo",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-eo-group",
     "value": 23675
   },
   {
@@ -102,9 +107,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-aa_ao",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-aa_ao-group",
     "value": 14455
   },
   {
@@ -120,9 +126,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-unreported",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-unreported-group",
     "value": 1425
   },
   {
@@ -138,9 +145,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-scs",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-scs-group",
     "value": 545
   },
   {
@@ -156,9 +164,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-grade_6_7",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-grade_6_7-group",
     "value": 8750
   },
   {
@@ -174,9 +183,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-seo_heo",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-seo_heo-group",
     "value": 22940
   },
   {
@@ -192,9 +202,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-eo",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-eo-group",
     "value": 22940
   },
   {
@@ -210,9 +221,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-aa_ao",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-aa_ao-group",
     "value": 13840
   },
   {
@@ -228,9 +240,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-unreported",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-unreported-group",
     "value": 1415
   },
   {
@@ -246,9 +259,10 @@
     "period": "2025",
     "profession": "Clinical",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-clinical",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-clinical-group",
     "value": 1665
   },
   {
@@ -264,9 +278,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-commercial",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-commercial-group",
     "value": 2170
   },
   {
@@ -282,9 +297,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-communications",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-communications-group",
     "value": 905
   },
   {
@@ -300,9 +316,10 @@
     "period": "2025",
     "profession": "Corporate Finance",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-corporate-finance",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-corporate-finance-group",
     "value": 5
   },
   {
@@ -318,9 +335,10 @@
     "period": "2025",
     "profession": "Counter Fraud",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-counter-fraud",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-counter-fraud-group",
     "value": 25
   },
   {
@@ -336,9 +354,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-digital-and-data",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-digital-and-data-group",
     "value": 3030
   },
   {
@@ -354,9 +373,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-finance",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-finance-group",
     "value": 2375
   },
   {
@@ -372,9 +392,10 @@
     "period": "2025",
     "profession": "Geography",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-geography",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-geography-group",
     "value": 500
   },
   {
@@ -390,9 +411,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-human-resources",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-human-resources-group",
     "value": 1390
   },
   {
@@ -408,9 +430,10 @@
     "period": "2025",
     "profession": "Intelligence Analysis",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-intelligence-analysis",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-intelligence-analysis-group",
     "value": 1230
   },
   {
@@ -426,9 +449,10 @@
     "period": "2025",
     "profession": "Internal Audit",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-internal-audit",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-internal-audit-group",
     "value": 10
   },
   {
@@ -444,9 +468,10 @@
     "period": "2025",
     "profession": "Knowledge and Information Management",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-knowledge-and-information-management",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-knowledge-and-information-management-group",
     "value": 860
   },
   {
@@ -462,9 +487,10 @@
     "period": "2025",
     "profession": "Legal",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-legal",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-legal-group",
     "value": 50
   },
   {
@@ -480,9 +506,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-operational-delivery",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-operational-delivery-group",
     "value": 14245
   },
   {
@@ -498,9 +525,10 @@
     "period": "2025",
     "profession": "Operational Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-operational-research",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-operational-research-group",
     "value": 55
   },
   {
@@ -516,9 +544,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-policy",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-policy-group",
     "value": 1595
   },
   {
@@ -534,9 +563,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-project-delivery",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-project-delivery-group",
     "value": 5920
   },
   {
@@ -552,9 +582,10 @@
     "period": "2025",
     "profession": "Property",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-property",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-property-group",
     "value": 2795
   },
   {
@@ -570,9 +601,10 @@
     "period": "2025",
     "profession": "Science and Engineering",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-science-and-engineering",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-science-and-engineering-group",
     "value": 7310
   },
   {
@@ -588,9 +620,10 @@
     "period": "2025",
     "profession": "Security",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-security",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-security-group",
     "value": 6320
   },
   {
@@ -606,9 +639,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-social-research",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-social-research-group",
     "value": 15
   },
   {
@@ -624,9 +658,10 @@
     "period": "2025",
     "profession": "Statistics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-statistics",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-statistics-group",
     "value": 270
   },
   {
@@ -642,9 +677,10 @@
     "period": "2025",
     "profession": "Clinical",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-clinical",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-clinical-group",
     "value": 1465
   },
   {
@@ -660,9 +696,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-commercial",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-commercial-group",
     "value": 2080
   },
   {
@@ -678,9 +715,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-communications",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-communications-group",
     "value": 860
   },
   {
@@ -696,9 +734,10 @@
     "period": "2025",
     "profession": "Corporate Finance",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-corporate-finance",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-corporate-finance-group",
     "value": 5
   },
   {
@@ -714,9 +753,10 @@
     "period": "2025",
     "profession": "Counter Fraud",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-counter-fraud",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-counter-fraud-group",
     "value": 20
   },
   {
@@ -732,9 +772,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-digital-and-data",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-digital-and-data-group",
     "value": 2960
   },
   {
@@ -750,9 +791,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-finance",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-finance-group",
     "value": 2285
   },
   {
@@ -768,9 +810,10 @@
     "period": "2025",
     "profession": "Geography",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-geography",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-geography-group",
     "value": 475
   },
   {
@@ -786,9 +829,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-human-resources",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-human-resources-group",
     "value": 1320
   },
   {
@@ -804,9 +848,10 @@
     "period": "2025",
     "profession": "Intelligence Analysis",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-intelligence-analysis",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-intelligence-analysis-group",
     "value": 1170
   },
   {
@@ -822,9 +867,10 @@
     "period": "2025",
     "profession": "Internal Audit",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-internal-audit",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-internal-audit-group",
     "value": 10
   },
   {
@@ -840,9 +886,10 @@
     "period": "2025",
     "profession": "Knowledge and Information Management",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-knowledge-and-information-management",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-knowledge-and-information-management-group",
     "value": 830
   },
   {
@@ -858,9 +905,10 @@
     "period": "2025",
     "profession": "Legal",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-legal",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-legal-group",
     "value": 50
   },
   {
@@ -876,9 +924,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-operational-delivery",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-operational-delivery-group",
     "value": 13710
   },
   {
@@ -894,9 +943,10 @@
     "period": "2025",
     "profession": "Operational Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-operational-research",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-operational-research-group",
     "value": 55
   },
   {
@@ -912,9 +962,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-policy",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-policy-group",
     "value": 1560
   },
   {
@@ -930,9 +981,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-project-delivery",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-project-delivery-group",
     "value": 5735
   },
   {
@@ -948,9 +1000,10 @@
     "period": "2025",
     "profession": "Property",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-property",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-property-group",
     "value": 2725
   },
   {
@@ -966,9 +1019,10 @@
     "period": "2025",
     "profession": "Science and Engineering",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-science-and-engineering",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-science-and-engineering-group",
     "value": 7090
   },
   {
@@ -984,9 +1038,10 @@
     "period": "2025",
     "profession": "Security",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-security",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-security-group",
     "value": 6190
   },
   {
@@ -1002,9 +1057,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-social-research",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-social-research-group",
     "value": 15
   },
   {
@@ -1020,9 +1076,979 @@
     "period": "2025",
     "profession": "Statistics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-statistics",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-statistics-group",
+    "value": 260
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-total-core",
+    "value": 36375
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-scs-core",
+    "value": 405
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-grade_6_7-core",
+    "value": 3940
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-seo_heo-core",
+    "value": 12960
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-eo-core",
+    "value": 12960
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-aa_ao-core",
+    "value": 12570
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "unreported",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-grade-unreported-core",
+    "value": 25
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-scs-core",
+    "value": 395
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-grade_6_7-core",
+    "value": 3800
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-seo_heo-core",
+    "value": 12595
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-eo-core",
+    "value": 12595
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-aa_ao-core",
+    "value": 12040
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "unreported",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-grade-unreported-core",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Clinical",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-clinical-core",
+    "value": 1665
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-commercial-core",
+    "value": 955
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-communications-core",
+    "value": 540
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Counter Fraud",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-counter-fraud-core",
+    "value": 25
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-digital-and-data-core",
+    "value": 2125
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-finance-core",
+    "value": 1705
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-human-resources-core",
+    "value": 1085
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Intelligence Analysis",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-intelligence-analysis-core",
+    "value": 800
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-knowledge-and-information-management-core",
+    "value": 755
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Legal",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-legal-core",
+    "value": 40
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-operational-delivery-core",
+    "value": 9820
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-operational-research-core",
+    "value": 55
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-policy-core",
+    "value": 1575
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-project-delivery-core",
+    "value": 2785
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-property-core",
+    "value": 2685
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-science-and-engineering-core",
+    "value": 1320
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Security",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-security-core",
+    "value": 6110
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-social-research-core",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Statistics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-headcount-profession-statistics-core",
+    "value": 270
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Clinical",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-clinical-core",
+    "value": 1465
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-commercial-core",
+    "value": 915
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-communications-core",
+    "value": 525
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Counter Fraud",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-counter-fraud-core",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-digital-and-data-core",
+    "value": 2075
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-finance-core",
+    "value": 1650
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-human-resources-core",
+    "value": 1035
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Intelligence Analysis",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-intelligence-analysis-core",
+    "value": 775
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-knowledge-and-information-management-core",
+    "value": 735
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Legal",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-legal-core",
+    "value": 40
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-operational-delivery-core",
+    "value": 9410
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-operational-research-core",
+    "value": 55
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-policy-core",
+    "value": 1540
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-project-delivery-core",
+    "value": 2730
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-property-core",
+    "value": 2620
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-science-and-engineering-core",
+    "value": 1295
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Security",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-security-core",
+    "value": 5985
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-social-research-core",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Statistics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-ministry-of-defence-2025-fte-profession-statistics-core",
     "value": 260
   }
 ]

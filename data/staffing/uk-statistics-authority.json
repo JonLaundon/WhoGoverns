@@ -8,13 +8,831 @@
     },
     "grade": null,
     "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-total-group",
+    "value": 5630
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-scs-group",
+    "value": 90
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-grade_6_7-group",
+    "value": 1180
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-seo_heo-group",
+    "value": 2390
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-eo-group",
+    "value": 2390
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-aa_ao-group",
+    "value": 1245
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-scs-group",
+    "value": 90
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-grade_6_7-group",
+    "value": 1130
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-seo_heo-group",
+    "value": 2290
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-eo-group",
+    "value": 2290
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-aa_ao-group",
+    "value": 870
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-commercial-group",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-communications-group",
+    "value": 85
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-digital-and-data-group",
+    "value": 955
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-economics-group",
+    "value": 150
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-finance-group",
+    "value": 60
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Geography",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-geography-group",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-human-resources-group",
+    "value": 150
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-knowledge-and-information-management-group",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-operational-delivery-group",
+    "value": 2540
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Research",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-operational-research-group",
+    "value": 30
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-policy-group",
+    "value": 70
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-project-delivery-group",
+    "value": 260
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-property-group",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Security",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-security-group",
+    "value": 65
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-social-research-group",
+    "value": 560
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Statistics",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-statistics-group",
+    "value": 635
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-commercial-group",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-communications-group",
+    "value": 80
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-digital-and-data-group",
+    "value": 920
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-economics-group",
+    "value": 150
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-finance-group",
+    "value": 55
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Geography",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-geography-group",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-human-resources-group",
+    "value": 135
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-knowledge-and-information-management-group",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-operational-delivery-group",
+    "value": 2100
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Research",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-operational-research-group",
+    "value": 30
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-policy-group",
+    "value": 70
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-project-delivery-group",
+    "value": 245
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-property-group",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Security",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-security-group",
+    "value": 65
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-social-research-group",
+    "value": 530
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Statistics",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-statistics-group",
+    "value": 600
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
     "notes": null,
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-total",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-total-core",
     "value": 5630
   },
   {
@@ -30,9 +848,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-scs",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-scs-core",
     "value": 90
   },
   {
@@ -48,9 +867,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-grade_6_7",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-grade_6_7-core",
     "value": 1180
   },
   {
@@ -66,9 +886,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-seo_heo",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-seo_heo-core",
     "value": 2390
   },
   {
@@ -84,9 +905,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-eo",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-eo-core",
     "value": 2390
   },
   {
@@ -102,9 +924,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-aa_ao",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-grade-aa_ao-core",
     "value": 1245
   },
   {
@@ -120,9 +943,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-scs",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-scs-core",
     "value": 90
   },
   {
@@ -138,9 +962,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-grade_6_7",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-grade_6_7-core",
     "value": 1130
   },
   {
@@ -156,9 +981,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-seo_heo",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-seo_heo-core",
     "value": 2290
   },
   {
@@ -174,9 +1000,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-eo",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-eo-core",
     "value": 2290
   },
   {
@@ -192,9 +1019,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-aa_ao",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-grade-aa_ao-core",
     "value": 870
   },
   {
@@ -210,9 +1038,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-commercial",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-commercial-core",
     "value": 20
   },
   {
@@ -228,9 +1057,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-communications",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-communications-core",
     "value": 85
   },
   {
@@ -246,9 +1076,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-digital-and-data",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-digital-and-data-core",
     "value": 955
   },
   {
@@ -264,9 +1095,10 @@
     "period": "2025",
     "profession": "Economics",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-economics",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-economics-core",
     "value": 150
   },
   {
@@ -282,9 +1114,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-finance",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-finance-core",
     "value": 60
   },
   {
@@ -300,9 +1133,10 @@
     "period": "2025",
     "profession": "Geography",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-geography",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-geography-core",
     "value": 15
   },
   {
@@ -318,9 +1152,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-human-resources",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-human-resources-core",
     "value": 150
   },
   {
@@ -336,9 +1171,10 @@
     "period": "2025",
     "profession": "Knowledge and Information Management",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-knowledge-and-information-management",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-knowledge-and-information-management-core",
     "value": 20
   },
   {
@@ -354,9 +1190,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-operational-delivery",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-operational-delivery-core",
     "value": 2540
   },
   {
@@ -372,9 +1209,10 @@
     "period": "2025",
     "profession": "Operational Research",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-operational-research",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-operational-research-core",
     "value": 30
   },
   {
@@ -390,9 +1228,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-policy",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-policy-core",
     "value": 70
   },
   {
@@ -408,9 +1247,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-project-delivery",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-project-delivery-core",
     "value": 260
   },
   {
@@ -426,9 +1266,10 @@
     "period": "2025",
     "profession": "Property",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-property",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-property-core",
     "value": 15
   },
   {
@@ -444,9 +1285,10 @@
     "period": "2025",
     "profession": "Security",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-security",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-security-core",
     "value": 65
   },
   {
@@ -462,9 +1304,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-social-research",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-social-research-core",
     "value": 560
   },
   {
@@ -480,9 +1323,10 @@
     "period": "2025",
     "profession": "Statistics",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-statistics",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-headcount-profession-statistics-core",
     "value": 635
   },
   {
@@ -498,9 +1342,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-commercial",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-commercial-core",
     "value": 20
   },
   {
@@ -516,9 +1361,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-communications",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-communications-core",
     "value": 80
   },
   {
@@ -534,9 +1380,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-digital-and-data",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-digital-and-data-core",
     "value": 920
   },
   {
@@ -552,9 +1399,10 @@
     "period": "2025",
     "profession": "Economics",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-economics",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-economics-core",
     "value": 150
   },
   {
@@ -570,9 +1418,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-finance",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-finance-core",
     "value": 55
   },
   {
@@ -588,9 +1437,10 @@
     "period": "2025",
     "profession": "Geography",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-geography",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-geography-core",
     "value": 15
   },
   {
@@ -606,9 +1456,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-human-resources",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-human-resources-core",
     "value": 135
   },
   {
@@ -624,9 +1475,10 @@
     "period": "2025",
     "profession": "Knowledge and Information Management",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-knowledge-and-information-management",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-knowledge-and-information-management-core",
     "value": 20
   },
   {
@@ -642,9 +1494,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-operational-delivery",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-operational-delivery-core",
     "value": 2100
   },
   {
@@ -660,9 +1513,10 @@
     "period": "2025",
     "profession": "Operational Research",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-operational-research",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-operational-research-core",
     "value": 30
   },
   {
@@ -678,9 +1532,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-policy",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-policy-core",
     "value": 70
   },
   {
@@ -696,9 +1551,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-project-delivery",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-project-delivery-core",
     "value": 245
   },
   {
@@ -714,9 +1570,10 @@
     "period": "2025",
     "profession": "Property",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-property",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-property-core",
     "value": 15
   },
   {
@@ -732,9 +1589,10 @@
     "period": "2025",
     "profession": "Security",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-security",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-security-core",
     "value": 65
   },
   {
@@ -750,9 +1608,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-social-research",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-social-research-core",
     "value": 530
   },
   {
@@ -768,9 +1627,10 @@
     "period": "2025",
     "profession": "Statistics",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-statistics",
+    "staffing_record_id": "staffing-uk-statistics-authority-2025-fte-profession-statistics-core",
     "value": 600
   }
 ]

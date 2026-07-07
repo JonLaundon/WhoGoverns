@@ -12,9 +12,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-total",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-total-group",
     "value": 11115
   },
   {
@@ -30,9 +31,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-scs",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-scs-group",
     "value": 700
   },
   {
@@ -48,9 +50,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-grade_6_7",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-grade_6_7-group",
     "value": 4105
   },
   {
@@ -66,9 +69,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-seo_heo",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-seo_heo-group",
     "value": 4480
   },
   {
@@ -84,9 +88,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-eo",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-eo-group",
     "value": 4480
   },
   {
@@ -102,9 +107,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-aa_ao",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-aa_ao-group",
     "value": 600
   },
   {
@@ -120,9 +126,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-scs",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-scs-group",
     "value": 655
   },
   {
@@ -138,9 +145,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-grade_6_7",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-grade_6_7-group",
     "value": 3955
   },
   {
@@ -156,9 +164,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-seo_heo",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-seo_heo-group",
     "value": 4335
   },
   {
@@ -174,9 +183,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-eo",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-eo-group",
     "value": 4335
   },
   {
@@ -192,9 +202,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-aa_ao",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-aa_ao-group",
     "value": 540
   },
   {
@@ -210,9 +221,10 @@
     "period": "2025",
     "profession": "Clinical",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-clinical",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-clinical-group",
     "value": 505
   },
   {
@@ -228,9 +240,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-commercial",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-commercial-group",
     "value": 185
   },
   {
@@ -246,9 +259,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-communications",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-communications-group",
     "value": 245
   },
   {
@@ -264,9 +278,10 @@
     "period": "2025",
     "profession": "Corporate Finance",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-corporate-finance",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-corporate-finance-group",
     "value": 20
   },
   {
@@ -282,9 +297,10 @@
     "period": "2025",
     "profession": "Counter Fraud",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-counter-fraud",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-counter-fraud-group",
     "value": 10
   },
   {
@@ -300,9 +316,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-digital-and-data",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-digital-and-data-group",
     "value": 560
   },
   {
@@ -318,9 +335,10 @@
     "period": "2025",
     "profession": "Economics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-economics",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-economics-group",
     "value": 125
   },
   {
@@ -336,9 +354,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-finance",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-finance-group",
     "value": 340
   },
   {
@@ -354,9 +373,10 @@
     "period": "2025",
     "profession": "Geography",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-geography",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-geography-group",
     "value": 10
   },
   {
@@ -372,9 +392,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-human-resources",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-human-resources-group",
     "value": 300
   },
   {
@@ -390,9 +411,10 @@
     "period": "2025",
     "profession": "Intelligence Analysis",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-intelligence-analysis",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-intelligence-analysis-group",
     "value": 20
   },
   {
@@ -408,9 +430,10 @@
     "period": "2025",
     "profession": "Internal Audit",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-internal-audit",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-internal-audit-group",
     "value": 50
   },
   {
@@ -426,9 +449,10 @@
     "period": "2025",
     "profession": "Knowledge and Information Management",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-knowledge-and-information-management",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-knowledge-and-information-management-group",
     "value": 120
   },
   {
@@ -444,9 +468,10 @@
     "period": "2025",
     "profession": "Legal",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-legal",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-legal-group",
     "value": 40
   },
   {
@@ -462,9 +487,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-operational-delivery",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-operational-delivery-group",
     "value": 1895
   },
   {
@@ -480,9 +506,10 @@
     "period": "2025",
     "profession": "Operational Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-operational-research",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-operational-research-group",
     "value": 105
   },
   {
@@ -498,9 +525,10 @@
     "period": "2025",
     "profession": "Planning",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-planning",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-planning-group",
     "value": 20
   },
   {
@@ -516,9 +544,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-policy",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-policy-group",
     "value": 690
   },
   {
@@ -534,9 +563,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-project-delivery",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-project-delivery-group",
     "value": 285
   },
   {
@@ -552,9 +582,10 @@
     "period": "2025",
     "profession": "Property",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-property",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-property-group",
     "value": 90
   },
   {
@@ -570,9 +601,10 @@
     "period": "2025",
     "profession": "Science and Engineering",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-science-and-engineering",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-science-and-engineering-group",
     "value": 3160
   },
   {
@@ -588,9 +620,10 @@
     "period": "2025",
     "profession": "Security",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-security",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-security-group",
     "value": 30
   },
   {
@@ -606,9 +639,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-social-research",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-social-research-group",
     "value": 75
   },
   {
@@ -624,9 +658,10 @@
     "period": "2025",
     "profession": "Statistics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-statistics",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-statistics-group",
     "value": 210
   },
   {
@@ -642,9 +677,10 @@
     "period": "2025",
     "profession": "Clinical",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-clinical",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-clinical-group",
     "value": 470
   },
   {
@@ -660,9 +696,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-commercial",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-commercial-group",
     "value": 185
   },
   {
@@ -678,9 +715,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-communications",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-communications-group",
     "value": 235
   },
   {
@@ -696,9 +734,10 @@
     "period": "2025",
     "profession": "Corporate Finance",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-corporate-finance",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-corporate-finance-group",
     "value": 20
   },
   {
@@ -714,9 +753,10 @@
     "period": "2025",
     "profession": "Counter Fraud",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-counter-fraud",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-counter-fraud-group",
     "value": 10
   },
   {
@@ -732,9 +772,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-digital-and-data",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-digital-and-data-group",
     "value": 555
   },
   {
@@ -750,9 +791,10 @@
     "period": "2025",
     "profession": "Economics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-economics",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-economics-group",
     "value": 120
   },
   {
@@ -768,9 +810,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-finance",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-finance-group",
     "value": 335
   },
   {
@@ -786,9 +829,10 @@
     "period": "2025",
     "profession": "Geography",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-geography",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-geography-group",
     "value": 10
   },
   {
@@ -804,9 +848,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-human-resources",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-human-resources-group",
     "value": 290
   },
   {
@@ -822,9 +867,10 @@
     "period": "2025",
     "profession": "Intelligence Analysis",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-intelligence-analysis",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-intelligence-analysis-group",
     "value": 20
   },
   {
@@ -840,9 +886,10 @@
     "period": "2025",
     "profession": "Internal Audit",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-internal-audit",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-internal-audit-group",
     "value": 45
   },
   {
@@ -858,9 +905,10 @@
     "period": "2025",
     "profession": "Knowledge and Information Management",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-knowledge-and-information-management",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-knowledge-and-information-management-group",
     "value": 115
   },
   {
@@ -876,9 +924,10 @@
     "period": "2025",
     "profession": "Legal",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-legal",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-legal-group",
     "value": 40
   },
   {
@@ -894,9 +943,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-operational-delivery",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-operational-delivery-group",
     "value": 1785
   },
   {
@@ -912,9 +962,10 @@
     "period": "2025",
     "profession": "Operational Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-operational-research",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-operational-research-group",
     "value": 100
   },
   {
@@ -930,9 +981,10 @@
     "period": "2025",
     "profession": "Planning",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-planning",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-planning-group",
     "value": 20
   },
   {
@@ -948,9 +1000,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-policy",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-policy-group",
     "value": 665
   },
   {
@@ -966,9 +1019,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-project-delivery",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-project-delivery-group",
     "value": 280
   },
   {
@@ -984,9 +1038,10 @@
     "period": "2025",
     "profession": "Property",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-property",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-property-group",
     "value": 90
   },
   {
@@ -1002,9 +1057,10 @@
     "period": "2025",
     "profession": "Science and Engineering",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-science-and-engineering",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-science-and-engineering-group",
     "value": 3020
   },
   {
@@ -1020,9 +1076,10 @@
     "period": "2025",
     "profession": "Security",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-security",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-security-group",
     "value": 30
   },
   {
@@ -1038,9 +1095,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-social-research",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-social-research-group",
     "value": 75
   },
   {
@@ -1056,9 +1114,903 @@
     "period": "2025",
     "profession": "Statistics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-statistics",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-statistics-group",
     "value": 200
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-total-core",
+    "value": 3695
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-scs-core",
+    "value": 235
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-grade_6_7-core",
+    "value": 1675
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-seo_heo-core",
+    "value": 1455
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-eo-core",
+    "value": 1455
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-grade-aa_ao-core",
+    "value": 30
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-scs-core",
+    "value": 230
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-grade_6_7-core",
+    "value": 1615
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-seo_heo-core",
+    "value": 1415
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-eo-core",
+    "value": 1415
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-grade-aa_ao-core",
+    "value": 30
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Clinical",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-clinical-core",
+    "value": 210
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-commercial-core",
+    "value": 45
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-communications-core",
+    "value": 40
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Counter Fraud",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-counter-fraud-core",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-digital-and-data-core",
+    "value": 85
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-economics-core",
+    "value": 100
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-finance-core",
+    "value": 125
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-human-resources-core",
+    "value": 85
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-knowledge-and-information-management-core",
+    "value": 25
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-operational-delivery-core",
+    "value": 65
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-operational-research-core",
+    "value": 45
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-policy-core",
+    "value": 515
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-project-delivery-core",
+    "value": 90
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-property-core",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-science-and-engineering-core",
+    "value": 50
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Security",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-security-core",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-social-research-core",
+    "value": 55
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Statistics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-headcount-profession-statistics-core",
+    "value": 145
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Clinical",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-clinical-core",
+    "value": 200
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-commercial-core",
+    "value": 45
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-communications-core",
+    "value": 35
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Counter Fraud",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-counter-fraud-core",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-digital-and-data-core",
+    "value": 85
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-economics-core",
+    "value": 100
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-finance-core",
+    "value": 120
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-human-resources-core",
+    "value": 85
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-knowledge-and-information-management-core",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-operational-delivery-core",
+    "value": 60
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-operational-research-core",
+    "value": 45
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-policy-core",
+    "value": 495
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-project-delivery-core",
+    "value": 85
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-property-core",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-science-and-engineering-core",
+    "value": 50
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Security",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-security-core",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-social-research-core",
+    "value": 55
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Statistics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-of-health-and-social-care-2025-fte-profession-statistics-core",
+    "value": 140
   }
 ]

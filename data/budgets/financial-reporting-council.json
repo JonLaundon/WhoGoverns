@@ -38,6 +38,44 @@
     "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
   },
   {
+    "amount": 1226000,
+    "basis": "net",
+    "body_id": "uk-state-body-financial-reporting-council",
+    "budget_record_id": "budget-financial-reporting-council-2024-25-income-net-assets",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Assets",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 71045000,
+    "basis": "net",
+    "body_id": "uk-state-body-financial-reporting-council",
+    "budget_record_id": "budget-financial-reporting-council-2024-25-income-net",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
     "amount": -1083000,
     "basis": "net",
     "body_id": "uk-state-body-financial-reporting-council",
@@ -53,6 +91,25 @@
     "financial_year": "2024-25",
     "notes": null,
     "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 230000,
+    "basis": "net",
+    "body_id": "uk-state-body-financial-reporting-council",
+    "budget_record_id": "budget-financial-reporting-council-2024-25-income-net-other-income",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Other Income",
     "record_status": "extracted",
     "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
   },
@@ -167,6 +224,44 @@
     "financial_year": "2024-25",
     "notes": null,
     "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 41097000,
+    "basis": "net",
+    "body_id": "uk-state-body-financial-reporting-council",
+    "budget_record_id": "budget-financial-reporting-council-2024-25-income-net-goods-and-services",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Goods And Services",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 28492000,
+    "basis": "net",
+    "body_id": "uk-state-body-financial-reporting-council",
+    "budget_record_id": "budget-financial-reporting-council-2024-25-income-net-taxation",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Taxation",
     "record_status": "extracted",
     "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
   },

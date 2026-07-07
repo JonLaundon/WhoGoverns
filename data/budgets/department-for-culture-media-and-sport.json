@@ -171,6 +171,139 @@
     "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
   },
   {
+    "amount": 22435000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "budget_record_id": "budget-department-for-culture-media-and-sport-2024-25-income-net-repayments",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Repayments",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 236737000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "budget_record_id": "budget-department-for-culture-media-and-sport-2024-25-income-net",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 3372000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "budget_record_id": "budget-department-for-culture-media-and-sport-2024-25-income-net-other-income",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Other Income",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 132254000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "budget_record_id": "budget-department-for-culture-media-and-sport-2024-25-income-net-other-grants",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Other Grants",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 434000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "budget_record_id": "budget-department-for-culture-media-and-sport-2024-25-income-net-assets",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Assets",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 77662000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "budget_record_id": "budget-department-for-culture-media-and-sport-2024-25-income-net-goods-and-services",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Goods And Services",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 580000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "budget_record_id": "budget-department-for-culture-media-and-sport-2024-25-income-net-interest-and-dividends",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Interest And Dividends",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
     "amount": 377270000,
     "basis": "net",
     "body_id": "uk-state-body-department-for-culture-media-and-sport",

@@ -209,6 +209,158 @@
     "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
   },
   {
+    "amount": 254900000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-education",
+    "budget_record_id": "budget-department-for-education-2024-25-income-net-assets",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Assets",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 20590922000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-education",
+    "budget_record_id": "budget-department-for-education-2024-25-income-net",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 4954113000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-education",
+    "budget_record_id": "budget-department-for-education-2024-25-income-net-repayments",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Repayments",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 116382000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-education",
+    "budget_record_id": "budget-department-for-education-2024-25-income-net-other-grants",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Other Grants",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 141081000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-education",
+    "budget_record_id": "budget-department-for-education-2024-25-income-net-other-income",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Other Income",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 15079761000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-education",
+    "budget_record_id": "budget-department-for-education-2024-25-income-net-interest-and-dividends",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Interest And Dividends",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 44717000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-education",
+    "budget_record_id": "budget-department-for-education-2024-25-income-net-goods-and-services",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Goods And Services",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 32000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-education",
+    "budget_record_id": "budget-department-for-education-2024-25-income-net-eu-grants",
+    "budget_type": "income",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Eu Grants",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
     "amount": 132857137000,
     "basis": "net",
     "body_id": "uk-state-body-department-for-education",

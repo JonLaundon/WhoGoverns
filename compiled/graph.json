@@ -1,12 +1,12 @@
 {
   "counts": {
     "bodies": 685,
-    "budget_records": 993,
+    "budget_records": 1433,
     "offices": 159,
     "person_roles": 159,
     "relationships": 639,
     "sources": 7,
-    "staffing_records": 2618
+    "staffing_records": 3884
   },
   "edges": [
     {
@@ -7183,7 +7183,7 @@
       }
     }
   ],
-  "generated": "2026-07-07T22:07:01",
+  "generated": "2026-07-07T23:22:27",
   "nodes": [
     {
       "data": {
@@ -7213,12 +7213,23 @@
           "headline": {
             "capital_del_gross": 4802000,
             "capital_del_net": 4798000,
+            "income_net": 5541000,
             "resource_ame_gross": -129000,
             "resource_ame_net": -129000,
             "resource_del_gross": 64300000,
             "resource_del_net": 58763000,
             "total_managed_expenditure_net": 63432000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 5537000
+            },
+            {
+              "name": "Assets",
+              "value": 4000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: employment policies",
@@ -7240,6 +7251,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-business-and-trade",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -7348,6 +7360,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-transport",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -7469,6 +7482,7 @@
             "resource_del_net": -43000,
             "total_managed_expenditure_net": 30718000
           },
+          "income": [],
           "programmes": [
             {
               "name": "4. of which: science and technology",
@@ -7731,10 +7745,21 @@
           "headline": {
             "capital_ame_gross": 1209000,
             "capital_ame_net": 1209000,
+            "income_net": 52083000,
             "resource_ame_gross": 52437000,
             "resource_ame_net": 354000,
             "total_managed_expenditure_net": 1563000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 49458000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 2625000
+            }
+          ],
           "programmes": []
         },
         "functions": [],
@@ -7817,6 +7842,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-environment-food-rural-affairs",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -8076,6 +8102,25 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "Crown Prosecution Service",
+              "value": 7595
+            },
+            {
+              "name": "Government Legal Department",
+              "value": 3160
+            },
+            {
+              "name": "Serious Fraud Office",
+              "value": 520
+            },
+            {
+              "name": "HM Crown Prosecution Service Inspectorate",
+              "value": 25
+            }
+          ],
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -8438,12 +8483,27 @@
           "headline": {
             "capital_del_gross": 1233845000,
             "capital_del_net": 623303000,
+            "income_net": 736398000,
             "resource_ame_gross": -68400000,
             "resource_ame_net": -68400000,
             "resource_del_gross": 181074000,
             "resource_del_net": 55218000,
             "total_managed_expenditure_net": 610121000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 639824000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 92036000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 4538000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -8511,12 +8571,27 @@
           "headline": {
             "capital_del_gross": 7237000,
             "capital_del_net": 7237000,
+            "income_net": 32896000,
             "resource_ame_gross": 5245000,
             "resource_ame_net": 5245000,
             "resource_del_gross": 70793000,
             "resource_del_net": 37897000,
             "total_managed_expenditure_net": 50379000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 18920000
+            },
+            {
+              "name": "Donations",
+              "value": 13311000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 665000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -8572,12 +8647,43 @@
             "capital_ame_net": 8000,
             "capital_del_gross": 40403000,
             "capital_del_net": -73602000,
+            "income_net": 137987000,
             "resource_ame_gross": 5839000,
             "resource_ame_net": 5839000,
             "resource_del_gross": 100145000,
             "resource_del_net": 76163000,
             "total_managed_expenditure_net": 8408000
           },
+          "income": [
+            {
+              "name": "Assets",
+              "value": 112065000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 9475000
+            },
+            {
+              "name": "Other Grants",
+              "value": 6574000
+            },
+            {
+              "name": "Other Income",
+              "value": 3614000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 3446000
+            },
+            {
+              "name": "Donations",
+              "value": 2744000
+            },
+            {
+              "name": "Eu Grants",
+              "value": 69000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -8609,12 +8715,35 @@
           "headline": {
             "capital_del_gross": 981824000,
             "capital_del_net": 53091000,
+            "income_net": 977685000,
             "resource_ame_gross": 98000,
             "resource_ame_net": 98000,
             "resource_del_gross": 98403000,
             "resource_del_net": 49451000,
             "total_managed_expenditure_net": 102640000
           },
+          "income": [
+            {
+              "name": "Other Grants",
+              "value": 917881000
+            },
+            {
+              "name": "Other Income",
+              "value": 29341000
+            },
+            {
+              "name": "Donations",
+              "value": 25661000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 4769000
+            },
+            {
+              "name": "Assets",
+              "value": 33000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -8683,12 +8812,19 @@
           "headline": {
             "capital_del_gross": 60633000,
             "capital_del_net": 60633000,
+            "income_net": 393134000,
             "resource_ame_gross": 16367000,
             "resource_ame_net": 16367000,
             "resource_del_gross": 403977000,
             "resource_del_net": 10843000,
             "total_managed_expenditure_net": 87843000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 393134000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -8783,6 +8919,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-science-innovation-and-technology",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -8902,10 +9039,37 @@
           "headline": {
             "capital_del_gross": 454714000,
             "capital_del_net": 268576000,
+            "income_net": 1456451000,
             "resource_del_gross": 2045750000,
             "resource_del_net": 775437000,
             "total_managed_expenditure_net": 1044013000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 575540000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 568792000
+            },
+            {
+              "name": "Assets",
+              "value": 181221000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 124824000
+            },
+            {
+              "name": "Other Grants",
+              "value": 4917000
+            },
+            {
+              "name": "Taxation",
+              "value": 1157000
+            }
+          ],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -8930,6 +9094,126 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "UK Statistics Authority",
+              "value": 5630
+            },
+            {
+              "name": "Government Commercial Agency",
+              "value": 715
+            },
+            {
+              "name": "Government Property Agency",
+              "value": 390
+            },
+            {
+              "name": "National Infrastructure and Service Transformation Authority",
+              "value": 50
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 515,
+                "grade": "scs",
+                "headcount": 530
+              },
+              {
+                "fte": 2685,
+                "grade": "grade_6_7",
+                "headcount": 2745
+              },
+              {
+                "fte": 2450,
+                "grade": "seo_heo",
+                "headcount": 2510
+              },
+              {
+                "fte": 2450,
+                "grade": "eo",
+                "headcount": 2510
+              },
+              {
+                "fte": 330,
+                "grade": "aa_ao",
+                "headcount": 355
+              }
+            ],
+            "headcount_total": 6890,
+            "professions": [
+              {
+                "headcount": 1250,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 980,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 625,
+                "name": "Security"
+              },
+              {
+                "headcount": 565,
+                "name": "Policy"
+              },
+              {
+                "headcount": 445,
+                "name": "Finance"
+              },
+              {
+                "headcount": 400,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 270,
+                "name": "Communications"
+              },
+              {
+                "headcount": 200,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 110,
+                "name": "Legal"
+              },
+              {
+                "headcount": 105,
+                "name": "Intelligence Analysis"
+              },
+              {
+                "headcount": 60,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 50,
+                "name": "Counter Fraud"
+              },
+              {
+                "headcount": 20,
+                "name": "Economics"
+              },
+              {
+                "headcount": 20,
+                "name": "Planning"
+              },
+              {
+                "headcount": 20,
+                "name": "Property"
+              },
+              {
+                "headcount": 5,
+                "name": "Science and Engineering"
+              },
+              {
+                "headcount": 5,
+                "name": "Statistics"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -9073,12 +9357,19 @@
           "headline": {
             "capital_del_gross": 7027000,
             "capital_del_net": 7027000,
+            "income_net": 174734000,
             "resource_ame_gross": 1121000,
             "resource_ame_net": 1121000,
             "resource_del_gross": 291041000,
             "resource_del_net": 116307000,
             "total_managed_expenditure_net": 124455000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 174734000
+            }
+          ],
           "programmes": [
             {
               "name": "7. Health",
@@ -9201,6 +9492,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-environment-food-rural-affairs",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -9328,10 +9620,17 @@
           "headline": {
             "capital_del_gross": 4450000,
             "capital_del_net": 4450000,
+            "income_net": 2322000,
             "resource_del_gross": 34469000,
             "resource_del_net": 32147000,
             "total_managed_expenditure_net": 36597000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 2322000
+            }
+          ],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -9357,6 +9656,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-culture-media-and-sport",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -9499,10 +9799,21 @@
           "fy": "2024-25",
           "headline": {
             "capital_del_net": -3000,
+            "income_net": 9006000,
             "resource_del_gross": 11974000,
             "resource_del_net": 2971000,
             "total_managed_expenditure_net": 2968000
           },
+          "income": [
+            {
+              "name": "Donations",
+              "value": 8103000
+            },
+            {
+              "name": "Other Income",
+              "value": 903000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -10074,12 +10385,27 @@
             "capital_ame_net": -87000,
             "capital_del_gross": 13338000,
             "capital_del_net": -504000,
+            "income_net": 61631000,
             "resource_ame_gross": 190000,
             "resource_ame_net": 190000,
             "resource_del_gross": 104726000,
             "resource_del_net": 56937000,
             "total_managed_expenditure_net": 56536000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 31492000
+            },
+            {
+              "name": "Other Grants",
+              "value": 16297000
+            },
+            {
+              "name": "Assets",
+              "value": 13842000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -10207,6 +10533,7 @@
             "resource_del_net": 7511000,
             "total_managed_expenditure_net": 7511000
           },
+          "income": [],
           "programmes": [
             {
               "name": "5. Environment protection",
@@ -10317,6 +10644,7 @@
             "resource_del_net": 28131000,
             "total_managed_expenditure_net": 28131000
           },
+          "income": [],
           "programmes": [
             {
               "name": "1. of which: international services",
@@ -10350,6 +10678,7 @@
             "resource_del_net": 59330000,
             "total_managed_expenditure_net": 59330000
           },
+          "income": [],
           "programmes": [
             {
               "name": "2. Defence",
@@ -10395,6 +10724,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-business-and-trade",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -10534,12 +10864,19 @@
             "capital_ame_net": 274000,
             "capital_del_gross": 6501000,
             "capital_del_net": 6501000,
+            "income_net": 2753000,
             "resource_ame_gross": -15739000,
             "resource_ame_net": -15739000,
             "resource_del_gross": 140725000,
             "resource_del_net": 137972000,
             "total_managed_expenditure_net": 129008000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 2753000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -10564,6 +10901,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-business-and-trade",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -10679,12 +11017,19 @@
           "headline": {
             "capital_del_gross": 101000,
             "capital_del_net": 101000,
+            "income_net": 2000,
             "resource_ame_gross": 7000,
             "resource_ame_net": 7000,
             "resource_del_gross": 6993000,
             "resource_del_net": 6991000,
             "total_managed_expenditure_net": 7099000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 2000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -10716,10 +11061,29 @@
           "headline": {
             "capital_ame_gross": 6318000,
             "capital_ame_net": 6224000,
+            "income_net": 297591000,
             "resource_ame_gross": 300925000,
             "resource_ame_net": 3428000,
             "total_managed_expenditure_net": 9652000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 232320000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 59272000
+            },
+            {
+              "name": "Other Income",
+              "value": 5905000
+            },
+            {
+              "name": "Assets",
+              "value": 94000
+            }
+          ],
           "programmes": []
         },
         "functions": [],
@@ -10748,6 +11112,7 @@
             "resource_del_net": 7375000,
             "total_managed_expenditure_net": 7375000
           },
+          "income": [],
           "programmes": [
             {
               "name": "6. Housing and community amenities",
@@ -10952,6 +11317,7 @@
             "capital_ame_net": 5318000,
             "total_managed_expenditure_net": 5318000
           },
+          "income": [],
           "programmes": []
         },
         "functions": [],
@@ -10977,12 +11343,23 @@
           "headline": {
             "capital_del_gross": 431000,
             "capital_del_net": 426000,
+            "income_net": 11000,
             "resource_ame_gross": -86000,
             "resource_ame_net": -86000,
             "resource_del_gross": 9279000,
             "resource_del_net": 9273000,
             "total_managed_expenditure_net": 9613000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 6000
+            },
+            {
+              "name": "Assets",
+              "value": 5000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -11023,6 +11400,7 @@
         ],
         "sponsor_department_id": "uk-state-body-ministry-of-justice",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -11106,12 +11484,27 @@
             "capital_ame_net": 960000,
             "capital_del_gross": 53781000,
             "capital_del_net": 53781000,
+            "income_net": 51762000,
             "resource_ame_gross": 1708000,
             "resource_ame_net": 1708000,
             "resource_del_gross": 876783000,
             "resource_del_net": 825021000,
             "total_managed_expenditure_net": 881470000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 26810000
+            },
+            {
+              "name": "Other Grants",
+              "value": 23058000
+            },
+            {
+              "name": "Other Income",
+              "value": 1894000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -11133,6 +11526,7 @@
         ],
         "sponsor_department_id": "uk-state-body-attorney-generals-office",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -11316,6 +11710,7 @@
         ],
         "sponsor_department_id": "uk-state-body-ministry-of-defence",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -11499,6 +11894,7 @@
         ],
         "sponsor_department_id": "uk-state-body-ministry-of-defence",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -11619,18 +12015,71 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "British Business Bank",
+              "value": 610121000
+            },
+            {
+              "name": "Competition and Markets Authority",
+              "value": 129008000
+            },
+            {
+              "name": "Advisory, Conciliation and Arbitration Service",
+              "value": 63432000
+            },
+            {
+              "name": "Competition Service",
+              "value": 7099000
+            },
+            {
+              "name": "Financial Reporting Council",
+              "value": 3967000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_ame_gross": -105760000,
             "capital_ame_net": -288061000,
             "capital_del_gross": 583328000,
             "capital_del_net": 492484000,
+            "income_net": 750322000,
             "resource_ame_gross": 436326000,
             "resource_ame_net": 281993000,
             "resource_del_gross": 1819924000,
             "resource_del_net": 1497080000,
             "total_managed_expenditure_net": 1983496000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 426560000
+            },
+            {
+              "name": "Other Grants",
+              "value": 113301000
+            },
+            {
+              "name": "Other Income",
+              "value": 102588000
+            },
+            {
+              "name": "Repayments",
+              "value": 76000000
+            },
+            {
+              "name": "Taxation",
+              "value": 19642000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 11967000
+            },
+            {
+              "name": "Assets",
+              "value": 264000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -11670,6 +12119,126 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "Companies House",
+              "value": 1865
+            },
+            {
+              "name": "The Insolvency Service",
+              "value": 1855
+            },
+            {
+              "name": "Competition and Markets Authority",
+              "value": 1140
+            },
+            {
+              "name": "Advisory, Conciliation and Arbitration Service",
+              "value": 1060
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 310,
+                "grade": "scs",
+                "headcount": 320
+              },
+              {
+                "fte": 2435,
+                "grade": "grade_6_7",
+                "headcount": 2480
+              },
+              {
+                "fte": 2645,
+                "grade": "seo_heo",
+                "headcount": 2685
+              },
+              {
+                "fte": 2645,
+                "grade": "eo",
+                "headcount": 2685
+              },
+              {
+                "fte": 50,
+                "grade": "aa_ao",
+                "headcount": 50
+              }
+            ],
+            "headcount_total": 5935,
+            "professions": [
+              {
+                "headcount": 3465,
+                "name": "Policy"
+              },
+              {
+                "headcount": 735,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 325,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 220,
+                "name": "Economics"
+              },
+              {
+                "headcount": 175,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 175,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 145,
+                "name": "Finance"
+              },
+              {
+                "headcount": 125,
+                "name": "Communications"
+              },
+              {
+                "headcount": 65,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 60,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 50,
+                "name": "Security"
+              },
+              {
+                "headcount": 40,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 30,
+                "name": "Planning"
+              },
+              {
+                "headcount": 25,
+                "name": "Science and Engineering"
+              },
+              {
+                "headcount": 20,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 5,
+                "name": "Operational Research"
+              },
+              {
+                "headcount": 5,
+                "name": "Property"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -11811,16 +12380,129 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "The National Lottery Community Fund",
+              "value": 693793000
+            },
+            {
+              "name": "Sport England",
+              "value": 208902000
+            },
+            {
+              "name": "Natural History Museum",
+              "value": 122675000
+            },
+            {
+              "name": "British Museum",
+              "value": 102640000
+            },
+            {
+              "name": "Historic England",
+              "value": 91188000
+            },
+            {
+              "name": "S4C",
+              "value": 90023000
+            },
+            {
+              "name": "Victoria and Albert Museum",
+              "value": 67461000
+            },
+            {
+              "name": "The National Archives",
+              "value": 53970000
+            },
+            {
+              "name": "National Gallery",
+              "value": 53060000
+            },
+            {
+              "name": "British Film Institute",
+              "value": 50379000
+            },
+            {
+              "name": "The Charity Commission",
+              "value": 36597000
+            },
+            {
+              "name": "National Museums Liverpool",
+              "value": 36028000
+            },
+            {
+              "name": "Imperial War Museum",
+              "value": 34986000
+            },
+            {
+              "name": "Gambling Commission",
+              "value": 32770000
+            },
+            {
+              "name": "National Heritage Memorial Fund",
+              "value": 20799000
+            },
+            {
+              "name": "British Library",
+              "value": 8408000
+            },
+            {
+              "name": "National Portrait Gallery",
+              "value": 8208000
+            },
+            {
+              "name": "Churches Conservation Trust",
+              "value": 2968000
+            },
+            {
+              "name": "Wallace Collection",
+              "value": 2725000
+            },
+            {
+              "name": "Sir John Soane's Museum",
+              "value": 1186000
+            },
+            {
+              "name": "Horserace Betting Levy Board",
+              "value": -12892000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_del_gross": 202122000,
             "capital_del_net": 146746000,
+            "income_net": 236737000,
             "resource_ame_gross": -600000,
             "resource_ame_net": -600000,
             "resource_del_gross": 412485000,
             "resource_del_net": 231124000,
             "total_managed_expenditure_net": 377270000
           },
+          "income": [
+            {
+              "name": "Other Grants",
+              "value": 132254000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 77662000
+            },
+            {
+              "name": "Repayments",
+              "value": 22435000
+            },
+            {
+              "name": "Other Income",
+              "value": 3372000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 580000
+            },
+            {
+              "name": "Assets",
+              "value": 434000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -11849,6 +12531,17 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "The National Archives",
+              "value": 645
+            },
+            {
+              "name": "The Charity Commission",
+              "value": 455
+            }
+          ],
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -11945,18 +12638,71 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "Office for Students",
+              "value": 1590532000
+            },
+            {
+              "name": "Student Loans Company",
+              "value": 310295000
+            },
+            {
+              "name": "Oak National Academy",
+              "value": 26709000
+            },
+            {
+              "name": "Social Work England",
+              "value": 14828000
+            },
+            {
+              "name": "LocatED",
+              "value": 8564000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_ame_gross": 35727782000,
             "capital_ame_net": 30897850000,
             "capital_del_gross": 5881270000,
             "capital_del_net": 5437287000,
+            "income_net": 20590922000,
             "resource_ame_gross": 11237292000,
             "resource_ame_net": -3827070000,
             "resource_del_gross": 100601715000,
             "resource_del_net": 100349070000,
             "total_managed_expenditure_net": 132857137000
           },
+          "income": [
+            {
+              "name": "Interest And Dividends",
+              "value": 15079761000
+            },
+            {
+              "name": "Repayments",
+              "value": 4954113000
+            },
+            {
+              "name": "Assets",
+              "value": 254900000
+            },
+            {
+              "name": "Other Income",
+              "value": 141081000
+            },
+            {
+              "name": "Other Grants",
+              "value": 116382000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 44717000
+            },
+            {
+              "name": "Eu Grants",
+              "value": 32000
+            }
+          ],
           "programmes": [
             {
               "name": "9. Education",
@@ -11987,6 +12733,118 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "Standards and Testing Agency",
+              "value": 140
+            },
+            {
+              "name": "Teaching Regulation Agency",
+              "value": 100
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 235,
+                "grade": "scs",
+                "headcount": 245
+              },
+              {
+                "fte": 2800,
+                "grade": "grade_6_7",
+                "headcount": 2910
+              },
+              {
+                "fte": 3225,
+                "grade": "seo_heo",
+                "headcount": 3355
+              },
+              {
+                "fte": 3225,
+                "grade": "eo",
+                "headcount": 3355
+              },
+              {
+                "fte": 65,
+                "grade": "aa_ao",
+                "headcount": 70
+              }
+            ],
+            "headcount_total": 7215,
+            "professions": [
+              {
+                "headcount": 1880,
+                "name": "Policy"
+              },
+              {
+                "headcount": 1685,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 960,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 775,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 350,
+                "name": "Finance"
+              },
+              {
+                "headcount": 240,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 205,
+                "name": "Communications"
+              },
+              {
+                "headcount": 165,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 145,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 140,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 105,
+                "name": "Economics"
+              },
+              {
+                "headcount": 100,
+                "name": "Operational Research"
+              },
+              {
+                "headcount": 100,
+                "name": "Property"
+              },
+              {
+                "headcount": 50,
+                "name": "Legal"
+              },
+              {
+                "headcount": 35,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 15,
+                "name": "Science and Engineering"
+              },
+              {
+                "headcount": 15,
+                "name": "Security"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -12100,16 +12958,73 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "Nuclear Decommissioning Authority",
+              "value": 9695388000
+            },
+            {
+              "name": "Low Carbon Contracts Company",
+              "value": 2507329000
+            },
+            {
+              "name": "Mining Remediation Authority",
+              "value": 192913000
+            },
+            {
+              "name": "Committee on Climate Change",
+              "value": 7511000
+            },
+            {
+              "name": "North Sea Transition Authority",
+              "value": 6785000
+            },
+            {
+              "name": "Electricity Settlements Company",
+              "value": -3582000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_del_gross": 2963325000,
             "capital_del_net": 53932000,
+            "income_net": 4173606000,
             "resource_ame_gross": 1007665000,
             "resource_ame_net": 969130000,
             "resource_del_gross": 1083215000,
             "resource_del_net": -142463000,
             "total_managed_expenditure_net": 880599000
           },
+          "income": [
+            {
+              "name": "Repayments",
+              "value": 2906909000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 1201612000
+            },
+            {
+              "name": "Other Income",
+              "value": 33645000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 29432000
+            },
+            {
+              "name": "Other Grants",
+              "value": 1935000
+            },
+            {
+              "name": "Assets",
+              "value": 74000
+            },
+            {
+              "name": "Donations",
+              "value": 1000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -12146,6 +13061,7 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -12243,18 +13159,95 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "Environment Agency",
+              "value": 1983870000
+            },
+            {
+              "name": "Natural England",
+              "value": 272463000
+            },
+            {
+              "name": "Marine Management Organisation",
+              "value": 42796000
+            },
+            {
+              "name": "Joint Nature Conservation Committee",
+              "value": 25122000
+            },
+            {
+              "name": "Office for Environmental Protection",
+              "value": 10653000
+            },
+            {
+              "name": "Consumer Council for Water",
+              "value": 7375000
+            },
+            {
+              "name": "National Forest Company",
+              "value": 6527000
+            },
+            {
+              "name": "Covent Garden Market Authority",
+              "value": 5318000
+            },
+            {
+              "name": "Agriculture and Horticulture Development Board",
+              "value": 1563000
+            },
+            {
+              "name": "The Water Services Regulation Authority",
+              "value": -1705000
+            },
+            {
+              "name": "Flood Re",
+              "value": -45155000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_ame_gross": 1052000,
             "capital_ame_net": 1052000,
             "capital_del_gross": 1254846000,
             "capital_del_net": 1219998000,
+            "income_net": 308861000,
             "resource_ame_gross": -1185326000,
             "resource_ame_net": -1185326000,
             "resource_del_gross": 4492299000,
             "resource_del_net": 4218286000,
             "total_managed_expenditure_net": 4254010000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 260254000
+            },
+            {
+              "name": "Other Income",
+              "value": 37614000
+            },
+            {
+              "name": "Other Grants",
+              "value": 7329000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 2749000
+            },
+            {
+              "name": "Assets",
+              "value": 1848000
+            },
+            {
+              "name": "Taxation",
+              "value": 803000
+            },
+            {
+              "name": "Eu Grants",
+              "value": 130000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: agriculture, fisheries and forestry",
@@ -12283,6 +13276,155 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "Animal and Plant Health Agency",
+              "value": 3370
+            },
+            {
+              "name": "Rural Payments Agency",
+              "value": 2895
+            },
+            {
+              "name": "Centre for Environment, Fisheries and Aquaculture Science",
+              "value": 655
+            },
+            {
+              "name": "The Water Services Regulation Authority",
+              "value": 410
+            },
+            {
+              "name": "Veterinary Medicines Directorate",
+              "value": 190
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 205,
+                "grade": "scs",
+                "headcount": 215
+              },
+              {
+                "fte": 2610,
+                "grade": "grade_6_7",
+                "headcount": 2710
+              },
+              {
+                "fte": 3275,
+                "grade": "seo_heo",
+                "headcount": 3390
+              },
+              {
+                "fte": 3275,
+                "grade": "eo",
+                "headcount": 3390
+              },
+              {
+                "fte": 80,
+                "grade": "aa_ao",
+                "headcount": 85
+              },
+              {
+                "fte": 10,
+                "grade": "unreported",
+                "headcount": 10
+              }
+            ],
+            "headcount_total": 6840,
+            "professions": [
+              {
+                "headcount": 2705,
+                "name": "Policy"
+              },
+              {
+                "headcount": 915,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 435,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 430,
+                "name": "Finance"
+              },
+              {
+                "headcount": 320,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 300,
+                "name": "Communications"
+              },
+              {
+                "headcount": 285,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 255,
+                "name": "Science and Engineering"
+              },
+              {
+                "headcount": 215,
+                "name": "Economics"
+              },
+              {
+                "headcount": 185,
+                "name": "Property"
+              },
+              {
+                "headcount": 170,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 110,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 75,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 60,
+                "name": "Corporate Finance"
+              },
+              {
+                "headcount": 60,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 60,
+                "name": "Security"
+              },
+              {
+                "headcount": 35,
+                "name": "Operational Research"
+              },
+              {
+                "headcount": 35,
+                "name": "Planning"
+              },
+              {
+                "headcount": 30,
+                "name": "Counter Fraud"
+              },
+              {
+                "headcount": 25,
+                "name": "Veterinarian"
+              },
+              {
+                "headcount": 15,
+                "name": "Geography"
+              },
+              {
+                "headcount": 10,
+                "name": "Risk Management"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -12449,18 +13591,59 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "UK Research and Innovation",
+              "value": 9987450000
+            },
+            {
+              "name": "Advanced Research and Invention Agency",
+              "value": 30718000
+            },
+            {
+              "name": "Ofcom",
+              "value": -1251000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_ame_gross": -2000,
             "capital_ame_net": -2000,
             "capital_del_gross": 3318895000,
             "capital_del_net": 3206269000,
+            "income_net": 212151000,
             "resource_ame_gross": 249765000,
             "resource_ame_net": 249352000,
             "resource_del_gross": 667766000,
             "resource_del_net": 568654000,
             "total_managed_expenditure_net": 4024273000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 62737000
+            },
+            {
+              "name": "Other Grants",
+              "value": 49769000
+            },
+            {
+              "name": "Repayments",
+              "value": 39776000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 32262000
+            },
+            {
+              "name": "Other Income",
+              "value": 26860000
+            },
+            {
+              "name": "Assets",
+              "value": 747000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -12501,6 +13684,114 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "Met Office",
+              "value": 2480
+            },
+            {
+              "name": "Intellectual Property Office",
+              "value": 1755
+            },
+            {
+              "name": "UK Space Agency",
+              "value": 325
+            },
+            {
+              "name": "Building Digital UK",
+              "value": 260
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 130,
+                "grade": "scs",
+                "headcount": 140
+              },
+              {
+                "fte": 1115,
+                "grade": "grade_6_7",
+                "headcount": 1135
+              },
+              {
+                "fte": 925,
+                "grade": "seo_heo",
+                "headcount": 940
+              },
+              {
+                "fte": 925,
+                "grade": "eo",
+                "headcount": 940
+              },
+              {
+                "fte": 10,
+                "grade": "aa_ao",
+                "headcount": 10
+              }
+            ],
+            "headcount_total": 2320,
+            "professions": [
+              {
+                "headcount": 1010,
+                "name": "Policy"
+              },
+              {
+                "headcount": 240,
+                "name": "Science and Engineering"
+              },
+              {
+                "headcount": 230,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 190,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 130,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 95,
+                "name": "Communications"
+              },
+              {
+                "headcount": 85,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 80,
+                "name": "Economics"
+              },
+              {
+                "headcount": 80,
+                "name": "Finance"
+              },
+              {
+                "headcount": 55,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 45,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 20,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 20,
+                "name": "Operational Research"
+              },
+              {
+                "headcount": 10,
+                "name": "Knowledge and Information Management"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -12638,18 +13929,79 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "Network Rail",
+              "value": 17877206000
+            },
+            {
+              "name": "National Highways",
+              "value": 7034697000
+            },
+            {
+              "name": "British Transport Police Authority",
+              "value": 87843000
+            },
+            {
+              "name": "Northern Lighthouse Board",
+              "value": 8269000
+            },
+            {
+              "name": "Transport Focus",
+              "value": 6507000
+            },
+            {
+              "name": "Office of Rail and Road",
+              "value": -1510000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_ame_gross": -171265000,
             "capital_ame_net": -182947000,
             "capital_del_gross": 4436526000,
             "capital_del_net": 4212558000,
+            "income_net": 2287235000,
             "resource_ame_gross": 280792000,
             "resource_ame_net": 210620000,
             "resource_del_gross": 6992604000,
             "resource_del_net": 5011191000,
             "total_managed_expenditure_net": 9251422000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 1241694000
+            },
+            {
+              "name": "Other Income",
+              "value": 555400000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 196733000
+            },
+            {
+              "name": "Repayments",
+              "value": 185682000
+            },
+            {
+              "name": "Eu Grants",
+              "value": 53417000
+            },
+            {
+              "name": "Other Grants",
+              "value": 51168000
+            },
+            {
+              "name": "Assets",
+              "value": 2709000
+            },
+            {
+              "name": "Taxation",
+              "value": 432000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: transport",
@@ -12690,6 +14042,138 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "Driver and Vehicle Licensing Agency",
+              "value": 6150
+            },
+            {
+              "name": "Driver and Vehicle Standards Agency",
+              "value": 4955
+            },
+            {
+              "name": "Maritime and Coastguard Agency",
+              "value": 1250
+            },
+            {
+              "name": "Office of Rail and Road",
+              "value": 365
+            },
+            {
+              "name": "Vehicle Certification Agency",
+              "value": 235
+            },
+            {
+              "name": "Active Travel England",
+              "value": 85
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 255,
+                "grade": "scs",
+                "headcount": 265
+              },
+              {
+                "fte": 1625,
+                "grade": "grade_6_7",
+                "headcount": 1670
+              },
+              {
+                "fte": 1475,
+                "grade": "seo_heo",
+                "headcount": 1510
+              },
+              {
+                "fte": 1475,
+                "grade": "eo",
+                "headcount": 1510
+              },
+              {
+                "fte": 115,
+                "grade": "aa_ao",
+                "headcount": 140
+              }
+            ],
+            "headcount_total": 3855,
+            "professions": [
+              {
+                "headcount": 1065,
+                "name": "Policy"
+              },
+              {
+                "headcount": 400,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 245,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 180,
+                "name": "Security"
+              },
+              {
+                "headcount": 175,
+                "name": "Economics"
+              },
+              {
+                "headcount": 115,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 105,
+                "name": "Science and Engineering"
+              },
+              {
+                "headcount": 95,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 95,
+                "name": "Finance"
+              },
+              {
+                "headcount": 90,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 85,
+                "name": "Communications"
+              },
+              {
+                "headcount": 65,
+                "name": "Planning"
+              },
+              {
+                "headcount": 55,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 30,
+                "name": "Operational Research"
+              },
+              {
+                "headcount": 25,
+                "name": "Property"
+              },
+              {
+                "headcount": 20,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 20,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 15,
+                "name": "Corporate Finance"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -12819,18 +14303,75 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "Health and Safety Executive",
+              "value": 188882000
+            },
+            {
+              "name": "The Pensions Regulator",
+              "value": 88159000
+            },
+            {
+              "name": "The Pensions Ombudsman",
+              "value": 12310000
+            },
+            {
+              "name": "Construction Industry Training Board",
+              "value": 9652000
+            },
+            {
+              "name": "Engineering Construction Industry Training Board",
+              "value": 2340000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_ame_gross": 563506000,
             "capital_ame_net": 240517000,
             "capital_del_gross": 576994000,
             "capital_del_net": 519392000,
+            "income_net": 1263829000,
             "resource_ame_gross": 287706499000,
             "resource_ame_net": 287701002000,
             "resource_del_gross": 9835406000,
             "resource_del_net": 8957665000,
             "total_managed_expenditure_net": 297418576000
           },
+          "income": [
+            {
+              "name": "Eu Grants",
+              "value": 537968000
+            },
+            {
+              "name": "Other Grants",
+              "value": 315633000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 176696000
+            },
+            {
+              "name": "Taxation",
+              "value": 113498000
+            },
+            {
+              "name": "Assets",
+              "value": 48746000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 42669000
+            },
+            {
+              "name": "Repayments",
+              "value": 17279000
+            },
+            {
+              "name": "Other Income",
+              "value": 11340000
+            }
+          ],
           "programmes": [
             {
               "name": "10. Social protection",
@@ -12869,6 +14410,130 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "Health and Safety Executive",
+              "value": 3085
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 310,
+                "grade": "scs",
+                "headcount": 320
+              },
+              {
+                "fte": 4640,
+                "grade": "grade_6_7",
+                "headcount": 4850
+              },
+              {
+                "fte": 14485,
+                "grade": "seo_heo",
+                "headcount": 15375
+              },
+              {
+                "fte": 14485,
+                "grade": "eo",
+                "headcount": 15375
+              },
+              {
+                "fte": 20365,
+                "grade": "aa_ao",
+                "headcount": 23690
+              }
+            ],
+            "headcount_total": 93805,
+            "professions": [
+              {
+                "headcount": 73175,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 6745,
+                "name": "Counter Fraud"
+              },
+              {
+                "headcount": 3935,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 1815,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 1345,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 1275,
+                "name": "Finance"
+              },
+              {
+                "headcount": 1120,
+                "name": "Policy"
+              },
+              {
+                "headcount": 460,
+                "name": "Security"
+              },
+              {
+                "headcount": 275,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 255,
+                "name": "Property"
+              },
+              {
+                "headcount": 225,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 220,
+                "name": "Economics"
+              },
+              {
+                "headcount": 195,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 160,
+                "name": "Operational Research"
+              },
+              {
+                "headcount": 140,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 135,
+                "name": "Communications"
+              },
+              {
+                "headcount": 50,
+                "name": "Clinical"
+              },
+              {
+                "headcount": 45,
+                "name": "Risk Management"
+              },
+              {
+                "headcount": 35,
+                "name": "Intelligence Analysis"
+              },
+              {
+                "headcount": 20,
+                "name": "Science and Engineering"
+              },
+              {
+                "headcount": 10,
+                "name": "Internal Audit"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -13064,6 +14729,122 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "UK Health Security Agency",
+              "value": 5935
+            },
+            {
+              "name": "Medicines and Healthcare products Regulatory Agency",
+              "value": 1480
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 230,
+                "grade": "scs",
+                "headcount": 235
+              },
+              {
+                "fte": 1615,
+                "grade": "grade_6_7",
+                "headcount": 1675
+              },
+              {
+                "fte": 1415,
+                "grade": "seo_heo",
+                "headcount": 1455
+              },
+              {
+                "fte": 1415,
+                "grade": "eo",
+                "headcount": 1455
+              },
+              {
+                "fte": 30,
+                "grade": "aa_ao",
+                "headcount": 30
+              }
+            ],
+            "headcount_total": 3695,
+            "professions": [
+              {
+                "headcount": 515,
+                "name": "Policy"
+              },
+              {
+                "headcount": 210,
+                "name": "Clinical"
+              },
+              {
+                "headcount": 145,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 125,
+                "name": "Finance"
+              },
+              {
+                "headcount": 100,
+                "name": "Economics"
+              },
+              {
+                "headcount": 90,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 85,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 85,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 65,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 55,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 50,
+                "name": "Science and Engineering"
+              },
+              {
+                "headcount": 45,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 45,
+                "name": "Operational Research"
+              },
+              {
+                "headcount": 40,
+                "name": "Communications"
+              },
+              {
+                "headcount": 25,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 10,
+                "name": "Property"
+              },
+              {
+                "headcount": 10,
+                "name": "Security"
+              },
+              {
+                "headcount": 5,
+                "name": "Counter Fraud"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -13301,12 +15082,23 @@
           "headline": {
             "capital_del_gross": 859000,
             "capital_del_net": 859000,
+            "income_net": 225898000,
             "resource_ame_gross": 13830000,
             "resource_ame_net": 13830000,
             "resource_del_gross": 219294000,
             "resource_del_net": -6604000,
             "total_managed_expenditure_net": 8085000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 225896000
+            },
+            {
+              "name": "Other Income",
+              "value": 2000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -13371,6 +15163,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-transport",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -13477,6 +15270,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-transport",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -13623,10 +15417,21 @@
         "budget": {
           "fy": "2024-25",
           "headline": {
+            "income_net": 1254394000,
             "resource_del_gross": 1250812000,
             "resource_del_net": -3582000,
             "total_managed_expenditure_net": -3582000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 1254383000
+            },
+            {
+              "name": "Other Income",
+              "value": 11000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -13711,10 +15516,29 @@
           "headline": {
             "capital_ame_gross": 85000,
             "capital_ame_net": 83000,
+            "income_net": 38772000,
             "resource_ame_gross": 41027000,
             "resource_ame_net": 2257000,
             "total_managed_expenditure_net": 2340000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 34793000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 2535000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 1442000
+            },
+            {
+              "name": "Assets",
+              "value": 2000
+            }
+          ],
           "programmes": []
         },
         "functions": [],
@@ -13759,12 +15583,23 @@
           "headline": {
             "capital_del_gross": 955869000,
             "capital_del_net": 915561000,
+            "income_net": 593570000,
             "resource_ame_gross": 3848000,
             "resource_ame_net": 3848000,
             "resource_del_gross": 1617723000,
             "resource_del_net": 1064461000,
             "total_managed_expenditure_net": 1983870000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 512762000
+            },
+            {
+              "name": "Other Grants",
+              "value": 80808000
+            }
+          ],
           "programmes": [
             {
               "name": "5. Environment protection",
@@ -13829,6 +15664,7 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -14094,6 +15930,7 @@
         ],
         "sponsor_department_id": "uk-state-body-foreign-commonwealth-development-office",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -14224,12 +16061,31 @@
             "capital_ame_net": 883000,
             "capital_del_gross": 5369000,
             "capital_del_net": 4143000,
+            "income_net": 71045000,
             "resource_ame_gross": 24000,
             "resource_ame_net": 24000,
             "resource_del_gross": 68736000,
             "resource_del_net": -1083000,
             "total_managed_expenditure_net": 3967000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 41097000
+            },
+            {
+              "name": "Taxation",
+              "value": 28492000
+            },
+            {
+              "name": "Assets",
+              "value": 1226000
+            },
+            {
+              "name": "Other Income",
+              "value": 230000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -14534,10 +16390,17 @@
           "headline": {
             "capital_ame_gross": 2248000,
             "capital_ame_net": 2248000,
+            "income_net": 147410000,
             "resource_ame_gross": 100007000,
             "resource_ame_net": -47403000,
             "total_managed_expenditure_net": -45155000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 147410000
+            }
+          ],
           "programmes": []
         },
         "functions": [],
@@ -14563,12 +16426,23 @@
           "headline": {
             "capital_del_gross": 10075000,
             "capital_del_net": 10075000,
+            "income_net": 43036000,
             "resource_ame_gross": 72000,
             "resource_ame_net": 72000,
             "resource_del_gross": 157626000,
             "resource_del_net": 114590000,
             "total_managed_expenditure_net": 124737000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 42895000
+            },
+            {
+              "name": "Other Income",
+              "value": 141000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: agriculture, fisheries and forestry",
@@ -14593,6 +16467,7 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -14702,18 +16577,63 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "Commonwealth Scholarship Commission in the UK",
+              "value": 28131000
+            },
+            {
+              "name": "Westminster Foundation for Democracy",
+              "value": 8500000
+            },
+            {
+              "name": "Marshall Aid Commemoration Commission",
+              "value": 4100000
+            },
+            {
+              "name": "Independent Commission for Aid Impact",
+              "value": 2412000
+            },
+            {
+              "name": "Great Britain-China Centre",
+              "value": 350000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_ame_gross": 902663000,
             "capital_ame_net": 902663000,
             "capital_del_gross": 2707690000,
             "capital_del_net": 2650978000,
+            "income_net": 359796000,
             "resource_ame_gross": 389128000,
             "resource_ame_net": 349280000,
             "resource_del_gross": 8826203000,
             "resource_del_net": 8562967000,
             "total_managed_expenditure_net": 12465888000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 152252000
+            },
+            {
+              "name": "Other Income",
+              "value": 138071000
+            },
+            {
+              "name": "Repayments",
+              "value": 46680000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 12761000
+            },
+            {
+              "name": "Assets",
+              "value": 10032000
+            }
+          ],
           "programmes": [
             {
               "name": "1. of which: international services",
@@ -14739,6 +16659,118 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "FCDO Services ",
+              "value": 1195
+            },
+            {
+              "name": "Wilton Park",
+              "value": 90
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 560,
+                "grade": "scs",
+                "headcount": 565
+              },
+              {
+                "fte": 3290,
+                "grade": "grade_6_7",
+                "headcount": 3365
+              },
+              {
+                "fte": 3130,
+                "grade": "seo_heo",
+                "headcount": 3160
+              },
+              {
+                "fte": 3130,
+                "grade": "eo",
+                "headcount": 3160
+              },
+              {
+                "fte": 345,
+                "grade": "aa_ao",
+                "headcount": 360
+              }
+            ],
+            "headcount_total": 8150,
+            "professions": [
+              {
+                "headcount": 2445,
+                "name": "Policy"
+              },
+              {
+                "headcount": 1060,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 1050,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 695,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 580,
+                "name": "Security"
+              },
+              {
+                "headcount": 245,
+                "name": "Finance"
+              },
+              {
+                "headcount": 240,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 220,
+                "name": "Economics"
+              },
+              {
+                "headcount": 155,
+                "name": "Communications"
+              },
+              {
+                "headcount": 125,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 90,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 65,
+                "name": "Risk Management"
+              },
+              {
+                "headcount": 60,
+                "name": "Corporate Finance"
+              },
+              {
+                "headcount": 60,
+                "name": "Internal Audit"
+              },
+              {
+                "headcount": 55,
+                "name": "Legal"
+              },
+              {
+                "headcount": 45,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 15,
+                "name": "Property"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -14954,12 +16986,23 @@
           "headline": {
             "capital_del_gross": 536000,
             "capital_del_net": 536000,
+            "income_net": 28326000,
             "resource_ame_gross": -86000,
             "resource_ame_net": -86000,
             "resource_del_gross": 60646000,
             "resource_del_net": 32320000,
             "total_managed_expenditure_net": 32770000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 27882000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 444000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -15183,12 +17226,19 @@
             "capital_ame_net": -22000,
             "capital_del_gross": 312000,
             "capital_del_net": 312000,
+            "income_net": 26094000,
             "resource_ame_gross": -3000,
             "resource_ame_net": -3000,
             "resource_del_gross": 25404000,
             "resource_del_net": -690000,
             "total_managed_expenditure_net": -403000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 26094000
+            }
+          ],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -15210,6 +17260,7 @@
         ],
         "sponsor_department_id": "uk-state-body-hm-treasury",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -15313,6 +17364,7 @@
         ],
         "sponsor_department_id": "uk-state-body-cabinet-office",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -15569,6 +17621,7 @@
         ],
         "sponsor_department_id": "uk-state-body-hm-treasury",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -15645,6 +17698,7 @@
         ],
         "sponsor_department_id": "uk-state-body-attorney-generals-office",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -15858,6 +17912,7 @@
         ],
         "sponsor_department_id": "uk-state-body-cabinet-office",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -16003,6 +18058,7 @@
             "resource_del_net": 350000,
             "total_managed_expenditure_net": 350000
           },
+          "income": [],
           "programmes": [
             {
               "name": "1. of which: international services",
@@ -16094,12 +18150,19 @@
           "headline": {
             "capital_del_gross": 464000,
             "capital_del_net": 464000,
+            "income_net": 43642000,
             "resource_ame_gross": 304000,
             "resource_ame_net": 304000,
             "resource_del_gross": 39560000,
             "resource_del_net": -4082000,
             "total_managed_expenditure_net": -3314000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 43642000
+            }
+          ],
           "programmes": [
             {
               "name": "7. Health",
@@ -16136,12 +18199,31 @@
             "capital_ame_net": 183000,
             "capital_del_gross": 10328000,
             "capital_del_net": 9034000,
+            "income_net": 126115000,
             "resource_ame_gross": 55000,
             "resource_ame_net": 55000,
             "resource_del_gross": 303696000,
             "resource_del_net": 179610000,
             "total_managed_expenditure_net": 188882000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 102100000
+            },
+            {
+              "name": "Other Income",
+              "value": 21986000
+            },
+            {
+              "name": "Other Grants",
+              "value": 1804000
+            },
+            {
+              "name": "Assets",
+              "value": 225000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: employment policies",
@@ -16170,6 +18252,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-work-pensions",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -16289,10 +18372,21 @@
           "headline": {
             "capital_del_gross": 4411000,
             "capital_del_net": 4410000,
+            "income_net": 406000,
             "resource_del_gross": 18790000,
             "resource_del_net": 18385000,
             "total_managed_expenditure_net": 22795000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 405000
+            },
+            {
+              "name": "Assets",
+              "value": 1000
+            }
+          ],
           "programmes": [
             {
               "name": "7. Health",
@@ -16325,10 +18419,17 @@
         "budget": {
           "fy": "2024-25",
           "headline": {
+            "income_net": 102000,
             "resource_del_gross": 5719000,
             "resource_del_net": 5617000,
             "total_managed_expenditure_net": 5617000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 102000
+            }
+          ],
           "programmes": [
             {
               "name": "7. Health",
@@ -16397,12 +18498,35 @@
           "headline": {
             "capital_del_gross": 18549000,
             "capital_del_net": 18226000,
+            "income_net": 14890000,
             "resource_ame_gross": 1947000,
             "resource_ame_net": 1947000,
             "resource_del_gross": 85582000,
             "resource_del_net": 71015000,
             "total_managed_expenditure_net": 91188000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 11367000
+            },
+            {
+              "name": "Other Grants",
+              "value": 2430000
+            },
+            {
+              "name": "Other Income",
+              "value": 727000
+            },
+            {
+              "name": "Eu Grants",
+              "value": 304000
+            },
+            {
+              "name": "Donations",
+              "value": 62000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -16465,6 +18589,7 @@
         ],
         "sponsor_department_id": "uk-state-body-ministry-of-justice",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -16566,6 +18691,7 @@
         ],
         "sponsor_department_id": "uk-state-body-attorney-generals-office",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -16724,6 +18850,7 @@
         ],
         "sponsor_department_id": "uk-state-body-ministry-of-justice",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -16822,12 +18949,27 @@
             "capital_ame_net": 2000,
             "capital_del_gross": 750944000,
             "capital_del_net": 728071000,
+            "income_net": 507267000,
             "resource_ame_gross": 27780216000,
             "resource_ame_net": 27775259000,
             "resource_del_gross": 6312455000,
             "resource_del_net": 5833018000,
             "total_managed_expenditure_net": 34336350000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 473737000
+            },
+            {
+              "name": "Assets",
+              "value": 22873000
+            },
+            {
+              "name": "Other Income",
+              "value": 10657000
+            }
+          ],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -16861,6 +19003,120 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 505,
+                "grade": "scs",
+                "headcount": 520
+              },
+              {
+                "fte": 8825,
+                "grade": "grade_6_7",
+                "headcount": 9270
+              },
+              {
+                "fte": 23140,
+                "grade": "seo_heo",
+                "headcount": 24330
+              },
+              {
+                "fte": 23140,
+                "grade": "eo",
+                "headcount": 24330
+              },
+              {
+                "fte": 15600,
+                "grade": "aa_ao",
+                "headcount": 17700
+              }
+            ],
+            "headcount_total": 66945,
+            "professions": [
+              {
+                "headcount": 31175,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 15425,
+                "name": "Tax"
+              },
+              {
+                "headcount": 3165,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 3120,
+                "name": "Counter Fraud"
+              },
+              {
+                "headcount": 3035,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 1350,
+                "name": "Policy"
+              },
+              {
+                "headcount": 1115,
+                "name": "Finance"
+              },
+              {
+                "headcount": 905,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 480,
+                "name": "Legal"
+              },
+              {
+                "headcount": 355,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 275,
+                "name": "Security"
+              },
+              {
+                "headcount": 245,
+                "name": "Property"
+              },
+              {
+                "headcount": 230,
+                "name": "Communications"
+              },
+              {
+                "headcount": 210,
+                "name": "Intelligence Analysis"
+              },
+              {
+                "headcount": 190,
+                "name": "Operational Research"
+              },
+              {
+                "headcount": 180,
+                "name": "Economics"
+              },
+              {
+                "headcount": 135,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 50,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 45,
+                "name": "Internal Audit"
+              },
+              {
+                "headcount": 45,
+                "name": "Knowledge and Information Management"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -16982,18 +19238,63 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "National Wealth Fund",
+              "value": 1260448000
+            },
+            {
+              "name": "Reclaim Fund Ltd",
+              "value": 122032000
+            },
+            {
+              "name": "Office for Budget Responsibility",
+              "value": 5129000
+            },
+            {
+              "name": "The Crown Estate",
+              "value": 2357000
+            },
+            {
+              "name": "Government Actuary's Department",
+              "value": -403000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_ame_gross": 36440649000,
             "capital_ame_net": 28033933000,
             "capital_del_gross": 765372000,
             "capital_del_net": 765302000,
+            "income_net": 8672008000,
             "resource_ame_gross": 34992237000,
             "resource_ame_net": 34815406000,
             "resource_del_gross": 340935000,
             "resource_del_net": 252544000,
             "total_managed_expenditure_net": 63867185000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 8443124000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 152252000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 76562000
+            },
+            {
+              "name": "Repayments",
+              "value": 67000
+            },
+            {
+              "name": "Assets",
+              "value": 3000
+            }
+          ],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -17018,6 +19319,102 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "Government Internal Audit Agency",
+              "value": 485
+            },
+            {
+              "name": "Government Actuary's Department",
+              "value": 220
+            },
+            {
+              "name": "UK Debt Management Office",
+              "value": 120
+            },
+            {
+              "name": "National Infrastructure and Service Transformation Authority",
+              "value": 50
+            },
+            {
+              "name": "Office for Budget Responsibility",
+              "value": 50
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 135,
+                "grade": "scs",
+                "headcount": 140
+              },
+              {
+                "fte": 890,
+                "grade": "grade_6_7",
+                "headcount": 910
+              },
+              {
+                "fte": 715,
+                "grade": "seo_heo",
+                "headcount": 725
+              },
+              {
+                "fte": 715,
+                "grade": "eo",
+                "headcount": 725
+              },
+              {
+                "fte": 30,
+                "grade": "aa_ao",
+                "headcount": 30
+              }
+            ],
+            "headcount_total": 2015,
+            "professions": [
+              {
+                "headcount": 1405,
+                "name": "Policy"
+              },
+              {
+                "headcount": 175,
+                "name": "Economics"
+              },
+              {
+                "headcount": 125,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 105,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 85,
+                "name": "Finance"
+              },
+              {
+                "headcount": 50,
+                "name": "Communications"
+              },
+              {
+                "headcount": 25,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 20,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 20,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 15,
+                "name": "Statistics"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -17119,18 +19516,67 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "Independent Office for Police Conduct",
+              "value": 75115000
+            },
+            {
+              "name": "College of Policing",
+              "value": 56536000
+            },
+            {
+              "name": "Disclosure and Barring Service",
+              "value": 8085000
+            },
+            {
+              "name": "Immigration Advice Authority",
+              "value": 6702000
+            },
+            {
+              "name": "Security Industry Authority",
+              "value": 4607000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_ame_gross": 21135000,
             "capital_ame_net": 21135000,
             "capital_del_gross": 1855910000,
             "capital_del_net": 1587090000,
+            "income_net": 7254595000,
             "resource_ame_gross": 2410018000,
             "resource_ame_net": 2410018000,
             "resource_del_gross": 24996645000,
             "resource_del_net": 18010870000,
             "total_managed_expenditure_net": 22029113000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 5943038000
+            },
+            {
+              "name": "Taxation",
+              "value": 992053000
+            },
+            {
+              "name": "Other Grants",
+              "value": 140436000
+            },
+            {
+              "name": "Assets",
+              "value": 126418000
+            },
+            {
+              "name": "Other Income",
+              "value": 51957000
+            },
+            {
+              "name": "Eu Grants",
+              "value": 693000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -17151,6 +19597,7 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -17273,12 +19720,39 @@
           "headline": {
             "capital_del_gross": 4265075000,
             "capital_del_net": 3713207000,
+            "income_net": 810000000,
             "resource_ame_gross": -216337000,
             "resource_ame_net": -216337000,
             "resource_del_gross": 108391000,
             "resource_del_net": -149741000,
             "total_managed_expenditure_net": 3347129000
           },
+          "income": [
+            {
+              "name": "Repayments",
+              "value": 319746000
+            },
+            {
+              "name": "Other Income",
+              "value": 250559000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 121508000
+            },
+            {
+              "name": "Other Grants",
+              "value": 63560000
+            },
+            {
+              "name": "Assets",
+              "value": 54396000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 231000
+            }
+          ],
           "programmes": [
             {
               "name": "6. Housing and community amenities",
@@ -17337,10 +19811,29 @@
           "headline": {
             "capital_ame_gross": 1033000,
             "capital_ame_net": 983000,
+            "income_net": 113056000,
             "resource_ame_gross": 99131000,
             "resource_ame_net": -13875000,
             "total_managed_expenditure_net": -12892000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 109401000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 3588000
+            },
+            {
+              "name": "Repayments",
+              "value": 50000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 17000
+            }
+          ],
           "programmes": []
         },
         "functions": [],
@@ -17386,12 +19879,19 @@
           "headline": {
             "capital_del_gross": 314000,
             "capital_del_net": 314000,
+            "income_net": 35853000,
             "resource_ame_gross": -6591000,
             "resource_ame_net": -6591000,
             "resource_del_gross": 38025000,
             "resource_del_net": 2172000,
             "total_managed_expenditure_net": -4105000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 35853000
+            }
+          ],
           "programmes": [
             {
               "name": "6. Housing and community amenities",
@@ -17441,12 +19941,19 @@
           "headline": {
             "capital_del_gross": 58000,
             "capital_del_net": 58000,
+            "income_net": 4901000,
             "resource_ame_gross": -251000,
             "resource_ame_net": -251000,
             "resource_del_gross": 7176000,
             "resource_del_net": 2275000,
             "total_managed_expenditure_net": 2082000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 4901000
+            }
+          ],
           "programmes": [
             {
               "name": "7. Health",
@@ -17481,12 +19988,23 @@
           "headline": {
             "capital_del_gross": 227000,
             "capital_del_net": 224000,
+            "income_net": 2570000,
             "resource_ame_gross": -30000,
             "resource_ame_net": -30000,
             "resource_del_gross": 5662000,
             "resource_del_net": 3095000,
             "total_managed_expenditure_net": 3289000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 2567000
+            },
+            {
+              "name": "Assets",
+              "value": 3000
+            }
+          ],
           "programmes": [
             {
               "name": "7. Health",
@@ -17521,12 +20039,23 @@
           "headline": {
             "capital_del_gross": -322000,
             "capital_del_net": -350000,
+            "income_net": 50000,
             "resource_ame_gross": -236000,
             "resource_ame_net": -236000,
             "resource_del_gross": 7310000,
             "resource_del_net": 7288000,
             "total_managed_expenditure_net": 6702000
           },
+          "income": [
+            {
+              "name": "Assets",
+              "value": 28000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 22000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -17582,12 +20111,39 @@
           "headline": {
             "capital_del_gross": 16586000,
             "capital_del_net": 5665000,
+            "income_net": 43314000,
             "resource_ame_gross": 5618000,
             "resource_ame_net": 5618000,
             "resource_del_gross": 56096000,
             "resource_del_net": 23703000,
             "total_managed_expenditure_net": 34986000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 19404000
+            },
+            {
+              "name": "Other Grants",
+              "value": 10853000
+            },
+            {
+              "name": "Donations",
+              "value": 8722000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 2832000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 1435000
+            },
+            {
+              "name": "Assets",
+              "value": 68000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -17731,6 +20287,7 @@
             "resource_del_net": 2412000,
             "total_managed_expenditure_net": 2412000
           },
+          "income": [],
           "programmes": [
             {
               "name": "1. of which: international services",
@@ -17842,6 +20399,7 @@
             "resource_del_net": 5235000,
             "total_managed_expenditure_net": 5366000
           },
+          "income": [],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -17891,12 +20449,23 @@
           "headline": {
             "capital_del_gross": 1735000,
             "capital_del_net": 1735000,
+            "income_net": 388000,
             "resource_ame_gross": 118000,
             "resource_ame_net": 118000,
             "resource_del_gross": 73650000,
             "resource_del_net": 73262000,
             "total_managed_expenditure_net": 75115000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 296000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 92000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -17940,6 +20509,7 @@
             "resource_del_net": 307283000,
             "total_managed_expenditure_net": 313001000
           },
+          "income": [],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -18105,6 +20675,7 @@
             "resource_ame_net": 14700000000,
             "total_managed_expenditure_net": 14761000000
           },
+          "income": [],
           "programmes": []
         },
         "functions": [],
@@ -18220,6 +20791,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-business-and-trade",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -18346,6 +20918,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-science-innovation-and-technology",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -18567,10 +21140,17 @@
           "headline": {
             "capital_del_gross": 8471000,
             "capital_del_net": 8471000,
+            "income_net": 1092000,
             "resource_del_gross": 17743000,
             "resource_del_net": 16651000,
             "total_managed_expenditure_net": 25122000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 1092000
+            }
+          ],
           "programmes": [
             {
               "name": "5. Environment protection",
@@ -18618,12 +21198,19 @@
         "budget": {
           "fy": "2024-25",
           "headline": {
+            "income_net": 27000,
             "resource_ame_gross": -10000,
             "resource_ame_net": -10000,
             "resource_del_gross": 9686000,
             "resource_del_net": 9659000,
             "total_managed_expenditure_net": 9649000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 27000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -18787,6 +21374,7 @@
             "resource_del_net": 439802000,
             "total_managed_expenditure_net": 468017000
           },
+          "income": [],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -18811,6 +21399,7 @@
         ],
         "sponsor_department_id": "uk-state-body-ministry-of-housing-communities-local-government",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -18956,10 +21545,17 @@
           "headline": {
             "capital_del_gross": 22000,
             "capital_del_net": 22000,
+            "income_net": 51000,
             "resource_del_gross": 1940000,
             "resource_del_net": 1889000,
             "total_managed_expenditure_net": 1911000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 51000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -19000,6 +21596,7 @@
         ],
         "sponsor_department_id": "uk-state-body-ministry-of-justice",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -19091,10 +21688,17 @@
           "headline": {
             "capital_del_gross": 31000,
             "capital_del_net": 31000,
+            "income_net": 5219000,
             "resource_del_gross": 5218000,
             "resource_del_net": -1000,
             "total_managed_expenditure_net": 30000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 5219000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -19226,6 +21830,7 @@
             "resource_del_net": 2149000,
             "total_managed_expenditure_net": 8564000
           },
+          "income": [],
           "programmes": [
             {
               "name": "9. Education",
@@ -19256,12 +21861,23 @@
           "headline": {
             "capital_del_gross": 6119000,
             "capital_del_net": 6119000,
+            "income_net": 2225974000,
             "resource_ame_gross": 4696616000,
             "resource_ame_net": 2498541000,
             "resource_del_gross": 30568000,
             "resource_del_net": 2669000,
             "total_managed_expenditure_net": 2507329000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 2216582000
+            },
+            {
+              "name": "Other Income",
+              "value": 9392000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -19329,10 +21945,17 @@
           "headline": {
             "capital_del_gross": 2524000,
             "capital_del_net": 2524000,
+            "income_net": 5201000,
             "resource_del_gross": 45473000,
             "resource_del_net": 40272000,
             "total_managed_expenditure_net": 42796000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 5201000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: agriculture, fisheries and forestry",
@@ -19379,6 +22002,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-transport",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -19466,6 +22090,7 @@
             "resource_del_net": 4100000,
             "total_managed_expenditure_net": 4100000
           },
+          "income": [],
           "programmes": [
             {
               "name": "1. of which: international services",
@@ -19549,6 +22174,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-of-health-and-social-care",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -19663,6 +22289,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-science-innovation-and-technology",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -19815,12 +22442,31 @@
           "headline": {
             "capital_del_gross": 19049000,
             "capital_del_net": 18941000,
+            "income_net": 20819000,
             "resource_ame_gross": 112871000,
             "resource_ame_net": 112871000,
             "resource_del_gross": 81812000,
             "resource_del_net": 61101000,
             "total_managed_expenditure_net": 192913000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 20322000
+            },
+            {
+              "name": "Other Income",
+              "value": 387000
+            },
+            {
+              "name": "Assets",
+              "value": 108000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 2000
+            }
+          ],
           "programmes": [
             {
               "name": "5. Environment protection",
@@ -19853,18 +22499,67 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "Royal Air Force Museum",
+              "value": 10977000
+            },
+            {
+              "name": "National Army Museum",
+              "value": 7611000
+            },
+            {
+              "name": "Single Source Regulations Office",
+              "value": 6559000
+            },
+            {
+              "name": "National Museum of the Royal Navy",
+              "value": 4639000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_ame_gross": 3899000,
             "capital_ame_net": 3899000,
             "capital_del_gross": 21211073000,
             "capital_del_net": 21077676000,
+            "income_net": 1804283000,
             "resource_ame_gross": 6494688000,
             "resource_ame_net": 6494683000,
             "resource_del_gross": 45536808000,
             "resource_del_net": 43865927000,
             "total_managed_expenditure_net": 71442185000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 1155693000
+            },
+            {
+              "name": "Other Income",
+              "value": 464804000
+            },
+            {
+              "name": "Assets",
+              "value": 321541000
+            },
+            {
+              "name": "Repayments",
+              "value": 188144000
+            },
+            {
+              "name": "Taxation",
+              "value": 26020000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 21237000
+            },
+            {
+              "name": "Eu Grants",
+              "value": 3132000
+            }
+          ],
           "programmes": [
             {
               "name": "2. Defence",
@@ -19889,6 +22584,139 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "Defence Equipment and Support",
+              "value": 10950
+            },
+            {
+              "name": "Defence Science and Technology Laboratory",
+              "value": 5085
+            },
+            {
+              "name": "Submarine Delivery Agency",
+              "value": 2480
+            },
+            {
+              "name": "UK Hydrographic Office",
+              "value": 975
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 395,
+                "grade": "scs",
+                "headcount": 405
+              },
+              {
+                "fte": 3800,
+                "grade": "grade_6_7",
+                "headcount": 3940
+              },
+              {
+                "fte": 12595,
+                "grade": "seo_heo",
+                "headcount": 12960
+              },
+              {
+                "fte": 12595,
+                "grade": "eo",
+                "headcount": 12960
+              },
+              {
+                "fte": 12040,
+                "grade": "aa_ao",
+                "headcount": 12570
+              },
+              {
+                "fte": 20,
+                "grade": "unreported",
+                "headcount": 25
+              }
+            ],
+            "headcount_total": 36375,
+            "professions": [
+              {
+                "headcount": 9820,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 6110,
+                "name": "Security"
+              },
+              {
+                "headcount": 2785,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 2685,
+                "name": "Property"
+              },
+              {
+                "headcount": 2125,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 1705,
+                "name": "Finance"
+              },
+              {
+                "headcount": 1665,
+                "name": "Clinical"
+              },
+              {
+                "headcount": 1575,
+                "name": "Policy"
+              },
+              {
+                "headcount": 1320,
+                "name": "Science and Engineering"
+              },
+              {
+                "headcount": 1085,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 955,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 800,
+                "name": "Intelligence Analysis"
+              },
+              {
+                "headcount": 755,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 540,
+                "name": "Communications"
+              },
+              {
+                "headcount": 270,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 55,
+                "name": "Operational Research"
+              },
+              {
+                "headcount": 40,
+                "name": "Legal"
+              },
+              {
+                "headcount": 25,
+                "name": "Counter Fraud"
+              },
+              {
+                "headcount": 15,
+                "name": "Social Research"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -20038,6 +22866,118 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "HM Land Registry",
+              "value": 6865
+            },
+            {
+              "name": "Planning Inspectorate",
+              "value": 995
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 175,
+                "grade": "scs",
+                "headcount": 180
+              },
+              {
+                "fte": 1800,
+                "grade": "grade_6_7",
+                "headcount": 1850
+              },
+              {
+                "fte": 1515,
+                "grade": "seo_heo",
+                "headcount": 1560
+              },
+              {
+                "fte": 1515,
+                "grade": "eo",
+                "headcount": 1560
+              },
+              {
+                "fte": 45,
+                "grade": "aa_ao",
+                "headcount": 45
+              }
+            ],
+            "headcount_total": 3900,
+            "professions": [
+              {
+                "headcount": 2045,
+                "name": "Policy"
+              },
+              {
+                "headcount": 385,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 295,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 250,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 135,
+                "name": "Finance"
+              },
+              {
+                "headcount": 125,
+                "name": "Planning"
+              },
+              {
+                "headcount": 120,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 110,
+                "name": "Communications"
+              },
+              {
+                "headcount": 100,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 80,
+                "name": "Economics"
+              },
+              {
+                "headcount": 60,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 45,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 35,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 15,
+                "name": "Operational Research"
+              },
+              {
+                "headcount": 15,
+                "name": "Security"
+              },
+              {
+                "headcount": 10,
+                "name": "Property"
+              },
+              {
+                "headcount": 5,
+                "name": "Counter Fraud"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -20155,18 +23095,67 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "Youth Justice Board for England and Wales",
+              "value": 105000000
+            },
+            {
+              "name": "Judicial Appointments Commission",
+              "value": 9649000
+            },
+            {
+              "name": "Criminal Cases Review Commission",
+              "value": 9613000
+            },
+            {
+              "name": "Independent Monitoring Authority for the Citizens’ Rights Agreements",
+              "value": 5366000
+            },
+            {
+              "name": "Legal Services Board",
+              "value": 30000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_ame_gross": 13350000,
             "capital_ame_net": 13350000,
             "capital_del_gross": 1550286000,
             "capital_del_net": 1537898000,
+            "income_net": 1904747000,
             "resource_ame_gross": 718453000,
             "resource_ame_net": 718453000,
             "resource_del_gross": 13597379000,
             "resource_del_net": 11705020000,
             "total_managed_expenditure_net": 13974721000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 1752229000
+            },
+            {
+              "name": "Taxation",
+              "value": 74948000
+            },
+            {
+              "name": "Other Income",
+              "value": 64306000
+            },
+            {
+              "name": "Assets",
+              "value": 10744000
+            },
+            {
+              "name": "Other Grants",
+              "value": 2505000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 15000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -20189,6 +23178,131 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "by_org": [
+            {
+              "name": "HM Prison and Probation Service",
+              "value": 68690
+            },
+            {
+              "name": "HM Courts & Tribunals Service",
+              "value": 15860
+            },
+            {
+              "name": "Office of the Public Guardian",
+              "value": 1810
+            },
+            {
+              "name": "Legal Aid Agency",
+              "value": 1315
+            },
+            {
+              "name": "Criminal Injuries Compensation Authority",
+              "value": 325
+            }
+          ],
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 175,
+                "grade": "scs",
+                "headcount": 180
+              },
+              {
+                "fte": 2620,
+                "grade": "grade_6_7",
+                "headcount": 2680
+              },
+              {
+                "fte": 4100,
+                "grade": "seo_heo",
+                "headcount": 4210
+              },
+              {
+                "fte": 4100,
+                "grade": "eo",
+                "headcount": 4210
+              },
+              {
+                "fte": 320,
+                "grade": "aa_ao",
+                "headcount": 335
+              },
+              {
+                "fte": 30,
+                "grade": "unreported",
+                "headcount": 30
+              }
+            ],
+            "headcount_total": 8210,
+            "professions": [
+              {
+                "headcount": 1805,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 1190,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 1075,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 1030,
+                "name": "Policy"
+              },
+              {
+                "headcount": 650,
+                "name": "Finance"
+              },
+              {
+                "headcount": 440,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 345,
+                "name": "Property"
+              },
+              {
+                "headcount": 285,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 220,
+                "name": "Communications"
+              },
+              {
+                "headcount": 150,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 150,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 125,
+                "name": "Security"
+              },
+              {
+                "headcount": 115,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 80,
+                "name": "Operational Research"
+              },
+              {
+                "headcount": 75,
+                "name": "Legal"
+              },
+              {
+                "headcount": 65,
+                "name": "Economics"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -20330,6 +23444,7 @@
             "resource_del_net": 7611000,
             "total_managed_expenditure_net": 7611000
           },
+          "income": [],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -20398,12 +23513,27 @@
           "headline": {
             "capital_del_gross": 199372000,
             "capital_del_net": 125611000,
+            "income_net": 239502000,
             "resource_ame_gross": 31106000,
             "resource_ame_net": 31106000,
             "resource_del_gross": 864736000,
             "resource_del_net": 698995000,
             "total_managed_expenditure_net": 855712000
           },
+          "income": [
+            {
+              "name": "Other Grants",
+              "value": 208725000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 23102000
+            },
+            {
+              "name": "Taxation",
+              "value": 7675000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -20425,6 +23555,7 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -20612,10 +23743,21 @@
           "headline": {
             "capital_del_gross": 3157000,
             "capital_del_net": 3157000,
+            "income_net": 3331000,
             "resource_del_gross": 6701000,
             "resource_del_net": 3370000,
             "total_managed_expenditure_net": 6527000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 3255000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 76000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: agriculture, fisheries and forestry",
@@ -20646,12 +23788,31 @@
           "headline": {
             "capital_del_gross": 54517000,
             "capital_del_net": 21845000,
+            "income_net": 61558000,
             "resource_ame_gross": 25000,
             "resource_ame_net": 25000,
             "resource_del_gross": 60076000,
             "resource_del_net": 31190000,
             "total_managed_expenditure_net": 53060000
           },
+          "income": [
+            {
+              "name": "Other Grants",
+              "value": 32672000
+            },
+            {
+              "name": "Donations",
+              "value": 14160000
+            },
+            {
+              "name": "Other Income",
+              "value": 13555000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 1171000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -20701,10 +23862,21 @@
           "headline": {
             "capital_del_gross": 17579000,
             "capital_del_net": 14820000,
+            "income_net": 4242000,
             "resource_del_gross": 7462000,
             "resource_del_net": 5979000,
             "total_managed_expenditure_net": 20799000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 2763000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 1479000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -20738,12 +23910,23 @@
             "capital_ame_net": 85167000,
             "capital_del_gross": 3668251000,
             "capital_del_net": 3664380000,
+            "income_net": 43817000,
             "resource_ame_gross": 198000,
             "resource_ame_net": 198000,
             "resource_del_gross": 3324898000,
             "resource_del_net": 3284952000,
             "total_managed_expenditure_net": 7034697000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 39946000
+            },
+            {
+              "name": "Assets",
+              "value": 3871000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: transport",
@@ -20808,6 +23991,7 @@
         ],
         "sponsor_department_id": "uk-state-body-cabinet-office",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -20851,12 +24035,23 @@
           "headline": {
             "capital_del_gross": 487000,
             "capital_del_net": 280000,
+            "income_net": 19544000,
             "resource_ame_gross": -699000,
             "resource_ame_net": -699000,
             "resource_del_gross": 84062000,
             "resource_del_net": 64725000,
             "total_managed_expenditure_net": 64306000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 19337000
+            },
+            {
+              "name": "Assets",
+              "value": 207000
+            }
+          ],
           "programmes": [
             {
               "name": "7. Health",
@@ -20912,12 +24107,31 @@
           "headline": {
             "capital_del_gross": 7111000,
             "capital_del_net": 3545000,
+            "income_net": 6495000,
             "resource_ame_gross": -189000,
             "resource_ame_net": -189000,
             "resource_del_gross": 35601000,
             "resource_del_net": 32672000,
             "total_managed_expenditure_net": 36028000
           },
+          "income": [
+            {
+              "name": "Assets",
+              "value": 2363000
+            },
+            {
+              "name": "Other Income",
+              "value": 1941000
+            },
+            {
+              "name": "Other Grants",
+              "value": 1203000
+            },
+            {
+              "name": "Donations",
+              "value": 988000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -20966,12 +24180,39 @@
           "headline": {
             "capital_del_gross": 2954000,
             "capital_del_net": -3257000,
+            "income_net": 22513000,
             "resource_ame_gross": 634000,
             "resource_ame_net": 634000,
             "resource_del_gross": 27133000,
             "resource_del_net": 10831000,
             "total_managed_expenditure_net": 8208000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 9203000
+            },
+            {
+              "name": "Other Grants",
+              "value": 5572000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 3451000
+            },
+            {
+              "name": "Donations",
+              "value": 3366000
+            },
+            {
+              "name": "Assets",
+              "value": 711000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 210000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -21066,6 +24307,7 @@
             "resource_del_net": 59152000,
             "total_managed_expenditure_net": 1260448000
           },
+          "income": [],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -21096,12 +24338,19 @@
           "headline": {
             "capital_del_gross": 94801000,
             "capital_del_net": 94801000,
+            "income_net": 31619000,
             "resource_ame_gross": -4000,
             "resource_ame_net": -4000,
             "resource_del_gross": 209285000,
             "resource_del_net": 177666000,
             "total_managed_expenditure_net": 272463000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 31619000
+            }
+          ],
           "programmes": [
             {
               "name": "5. Environment protection",
@@ -21154,12 +24403,39 @@
           "headline": {
             "capital_del_gross": 80019000,
             "capital_del_net": 66627000,
+            "income_net": 47355000,
             "resource_ame_gross": -130000,
             "resource_ame_net": -130000,
             "resource_del_gross": 90141000,
             "resource_del_net": 56178000,
             "total_managed_expenditure_net": 122675000
           },
+          "income": [
+            {
+              "name": "Donations",
+              "value": 16650000
+            },
+            {
+              "name": "Other Income",
+              "value": 10708000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 9822000
+            },
+            {
+              "name": "Other Grants",
+              "value": 8557000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 1458000
+            },
+            {
+              "name": "Assets",
+              "value": 160000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -21212,12 +24488,27 @@
           "headline": {
             "capital_del_gross": 6336831000,
             "capital_del_net": 5735200000,
+            "income_net": 5115249000,
             "resource_ame_gross": 1910630000,
             "resource_ame_net": 1910630000,
             "resource_del_gross": 14744994000,
             "resource_del_net": 10231376000,
             "total_managed_expenditure_net": 17877206000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 3388157000
+            },
+            {
+              "name": "Other Grants",
+              "value": 1066764000
+            },
+            {
+              "name": "Other Income",
+              "value": 660328000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: transport",
@@ -21400,12 +24691,27 @@
           "headline": {
             "capital_del_gross": 2410000,
             "capital_del_net": 2410000,
+            "income_net": 41088000,
             "resource_ame_gross": 1230000,
             "resource_ame_net": 1230000,
             "resource_del_gross": 44233000,
             "resource_del_net": 3145000,
             "total_managed_expenditure_net": 6785000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 37030000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 2914000
+            },
+            {
+              "name": "Other Income",
+              "value": 1144000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -21517,12 +24823,51 @@
             "capital_ame_net": 814691000,
             "capital_del_gross": 2189609000,
             "capital_del_net": 2002403000,
+            "income_net": 4092610000,
             "resource_ame_gross": 16211677000,
             "resource_ame_net": 13886153000,
             "resource_del_gross": 17551236000,
             "resource_del_net": 16194639000,
             "total_managed_expenditure_net": 32897886000
           },
+          "income": [
+            {
+              "name": "Pensions",
+              "value": 2051637000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 1242864000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 292502000
+            },
+            {
+              "name": "Repayments",
+              "value": 239520000
+            },
+            {
+              "name": "Other Grants",
+              "value": 165708000
+            },
+            {
+              "name": "Other Income",
+              "value": 41220000
+            },
+            {
+              "name": "Eu Grants",
+              "value": 37347000
+            },
+            {
+              "name": "Assets",
+              "value": 16100000
+            },
+            {
+              "name": "Taxation",
+              "value": 5712000
+            }
+          ],
           "programmes": [
             {
               "name": "7. Health",
@@ -21597,8 +24942,15 @@
           "headline": {
             "capital_ame_gross": 28899000,
             "capital_ame_net": 14411000,
+            "income_net": 14488000,
             "total_managed_expenditure_net": 14411000
           },
+          "income": [
+            {
+              "name": "Assets",
+              "value": 14488000
+            }
+          ],
           "programmes": []
         },
         "functions": [],
@@ -21642,14 +24994,27 @@
       "data": {
         "body_type": "ministerial_department",
         "budget": {
+          "by_body": [
+            {
+              "name": "The Independent Commission for Reconciliation and Information Recovery",
+              "value": 22430000
+            }
+          ],
           "fy": "2024-25",
           "headline": {
             "capital_del_gross": 747000,
             "capital_del_net": 747000,
+            "income_net": 6775000,
             "resource_del_gross": 49740000,
             "resource_del_net": 42965000,
             "total_managed_expenditure_net": 43712000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 6775000
+            }
+          ],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -21670,6 +25035,7 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -21793,12 +25159,23 @@
           "headline": {
             "capital_del_gross": 26627000,
             "capital_del_net": 48000,
+            "income_net": 50827000,
             "resource_ame_gross": -310000,
             "resource_ame_net": -310000,
             "resource_del_gross": 32779000,
             "resource_del_net": 8531000,
             "total_managed_expenditure_net": 8269000
           },
+          "income": [
+            {
+              "name": "Other Grants",
+              "value": 26579000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 24248000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: transport",
@@ -21867,12 +25244,23 @@
           "headline": {
             "capital_del_gross": 2637432000,
             "capital_del_net": 2637432000,
+            "income_net": 369000,
             "resource_ame_gross": 5573594000,
             "resource_ame_net": 5573594000,
             "resource_del_gross": 1483993000,
             "resource_del_net": 1484362000,
             "total_managed_expenditure_net": 9695388000
           },
+          "income": [
+            {
+              "name": "Interest And Dividends",
+              "value": 876000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 507000
+            }
+          ],
           "programmes": [
             {
               "name": "5. Environment protection",
@@ -21983,12 +25371,23 @@
           "headline": {
             "capital_del_gross": 7711000,
             "capital_del_net": 7672000,
+            "income_net": 108891000,
             "resource_ame_gross": 5453000,
             "resource_ame_net": 5453000,
             "resource_del_gross": 127881000,
             "resource_del_net": 19029000,
             "total_managed_expenditure_net": 32154000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 108852000
+            },
+            {
+              "name": "Assets",
+              "value": 39000
+            }
+          ],
           "programmes": [
             {
               "name": "7. Health",
@@ -22023,10 +25422,17 @@
           "headline": {
             "capital_del_gross": 14400000,
             "capital_del_net": 14392000,
+            "income_net": 8000,
             "resource_del_gross": 12317000,
             "resource_del_net": 12317000,
             "total_managed_expenditure_net": 26709000
           },
+          "income": [
+            {
+              "name": "Assets",
+              "value": 8000
+            }
+          ],
           "programmes": [
             {
               "name": "9. Education",
@@ -22058,12 +25464,39 @@
           "headline": {
             "capital_del_gross": 4212000,
             "capital_del_net": 730000,
+            "income_net": 214465000,
             "resource_ame_gross": 264000,
             "resource_ame_net": 264000,
             "resource_del_gross": 208738000,
             "resource_del_net": -2245000,
             "total_managed_expenditure_net": -1251000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 142537000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 41513000
+            },
+            {
+              "name": "Taxation",
+              "value": 25829000
+            },
+            {
+              "name": "Assets",
+              "value": 3482000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 842000
+            },
+            {
+              "name": "Other Grants",
+              "value": 262000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -22101,6 +25534,7 @@
             "resource_del_net": 5129000,
             "total_managed_expenditure_net": 5129000
           },
+          "income": [],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -22122,6 +25556,7 @@
         ],
         "sponsor_department_id": "uk-state-body-hm-treasury",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -22183,6 +25618,7 @@
             "resource_del_net": 10482000,
             "total_managed_expenditure_net": 10653000
           },
+          "income": [],
           "programmes": [
             {
               "name": "5. Environment protection",
@@ -22391,10 +25827,29 @@
             "capital_ame_net": 408000,
             "capital_del_gross": 165096000,
             "capital_del_net": 164777000,
+            "income_net": 33549000,
             "resource_del_gross": 1458577000,
             "resource_del_net": 1425347000,
             "total_managed_expenditure_net": 1590532000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 32333000
+            },
+            {
+              "name": "Other Grants",
+              "value": 847000
+            },
+            {
+              "name": "Repayments",
+              "value": 319000
+            },
+            {
+              "name": "Other Income",
+              "value": 50000
+            }
+          ],
           "programmes": [
             {
               "name": "9. Education",
@@ -22546,10 +26001,21 @@
           "headline": {
             "capital_del_gross": 230000,
             "capital_del_net": 230000,
+            "income_net": 41845000,
             "resource_del_gross": 40105000,
             "resource_del_net": -1740000,
             "total_managed_expenditure_net": -1510000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 38032000
+            },
+            {
+              "name": "Other Income",
+              "value": 3813000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: transport",
@@ -22577,6 +26043,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-transport",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -22662,10 +26129,17 @@
           "headline": {
             "capital_del_gross": 44000,
             "capital_del_net": 44000,
+            "income_net": 3513000,
             "resource_del_gross": 17368000,
             "resource_del_net": 13855000,
             "total_managed_expenditure_net": 13899000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 3513000
+            }
+          ],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -22813,6 +26287,7 @@
         ],
         "sponsor_department_id": "uk-state-body-ministry-of-justice",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -23348,12 +26823,19 @@
           "headline": {
             "capital_del_gross": 58000,
             "capital_del_net": 58000,
+            "income_net": 10000,
             "resource_ame_gross": -121000,
             "resource_ame_net": -121000,
             "resource_del_gross": 12383000,
             "resource_del_net": 12373000,
             "total_managed_expenditure_net": 12310000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 10000
+            }
+          ],
           "programmes": [
             {
               "name": "10. Social protection",
@@ -23403,12 +26885,27 @@
           "headline": {
             "capital_del_gross": 10795000,
             "capital_del_net": 10725000,
+            "income_net": 22392000,
             "resource_ame_gross": 426000,
             "resource_ame_net": 426000,
             "resource_del_gross": 78659000,
             "resource_del_net": 56337000,
             "total_managed_expenditure_net": 67488000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 21408000
+            },
+            {
+              "name": "Other Income",
+              "value": 914000
+            },
+            {
+              "name": "Assets",
+              "value": 70000
+            }
+          ],
           "programmes": [
             {
               "name": "6. Housing and community amenities",
@@ -23430,6 +26927,7 @@
         ],
         "sponsor_department_id": "uk-state-body-ministry-of-housing-communities-local-government",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -23813,12 +27311,23 @@
           "headline": {
             "capital_del_gross": 30000,
             "capital_del_net": 29000,
+            "income_net": 6071000,
             "resource_ame_gross": 28000,
             "resource_ame_net": 28000,
             "resource_del_gross": 6089000,
             "resource_del_net": 19000,
             "total_managed_expenditure_net": 76000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 6070000
+            },
+            {
+              "name": "Assets",
+              "value": 1000
+            }
+          ],
           "programmes": [
             {
               "name": "7. Health",
@@ -24039,6 +27548,7 @@
             "resource_ame_net": -14072000,
             "total_managed_expenditure_net": 122032000
           },
+          "income": [],
           "programmes": []
         },
         "functions": [],
@@ -24085,12 +27595,23 @@
           "headline": {
             "capital_del_gross": 138000,
             "capital_del_net": 138000,
+            "income_net": 27208000,
             "resource_ame_gross": -236000,
             "resource_ame_net": -236000,
             "resource_del_gross": 30345000,
             "resource_del_net": 3137000,
             "total_managed_expenditure_net": 3039000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 27045000
+            },
+            {
+              "name": "Other Income",
+              "value": 163000
+            }
+          ],
           "programmes": [
             {
               "name": "6. Housing and community amenities",
@@ -24313,6 +27834,7 @@
             "resource_del_net": 10977000,
             "total_managed_expenditure_net": 10977000
           },
+          "income": [],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -24464,6 +27986,7 @@
             "resource_del_net": 3992000,
             "total_managed_expenditure_net": 4639000
           },
+          "income": [],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -24564,6 +28087,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-environment-food-rural-affairs",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -24645,10 +28169,21 @@
           "headline": {
             "capital_ame_gross": 264000,
             "capital_ame_net": 264000,
+            "income_net": 1070000,
             "resource_ame_gross": 90829000,
             "resource_ame_net": 89759000,
             "total_managed_expenditure_net": 90023000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 904000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 166000
+            }
+          ],
           "programmes": []
         },
         "functions": [],
@@ -24855,7 +28390,8 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
-          "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+          "core": null,
+          "disclaimer": null,
           "fte_total": null,
           "grades": [
             {
@@ -24953,12 +28489,19 @@
           "headline": {
             "capital_del_gross": 3615000,
             "capital_del_net": 3615000,
+            "income_net": 37595000,
             "resource_ame_gross": 1048000,
             "resource_ame_net": 1048000,
             "resource_del_gross": 37539000,
             "resource_del_net": -56000,
             "total_managed_expenditure_net": 4607000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 37595000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -25048,10 +28591,17 @@
           "headline": {
             "capital_del_gross": 2400000,
             "capital_del_net": 2400000,
+            "income_net": 712000,
             "resource_del_gross": 83419000,
             "resource_del_net": 82707000,
             "total_managed_expenditure_net": 85107000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 712000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -25073,6 +28623,7 @@
         ],
         "sponsor_department_id": "uk-state-body-attorney-generals-office",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -25245,6 +28796,7 @@
             "resource_del_net": 6353000,
             "total_managed_expenditure_net": 6559000
           },
+          "income": [],
           "programmes": [
             {
               "name": "2. Defence",
@@ -25279,10 +28831,21 @@
           "headline": {
             "capital_del_gross": 364000,
             "capital_del_net": 364000,
+            "income_net": 2726000,
             "resource_del_gross": 3548000,
             "resource_del_net": 822000,
             "total_managed_expenditure_net": 1186000
           },
+          "income": [
+            {
+              "name": "Donations",
+              "value": 1813000
+            },
+            {
+              "name": "Other Income",
+              "value": 913000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -25392,10 +28955,17 @@
           "headline": {
             "capital_del_gross": 2408000,
             "capital_del_net": 2408000,
+            "income_net": 10171000,
             "resource_del_gross": 22591000,
             "resource_del_net": 12420000,
             "total_managed_expenditure_net": 14828000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 10171000
+            }
+          ],
           "programmes": [
             {
               "name": "10. Social protection",
@@ -25470,12 +29040,31 @@
           "headline": {
             "capital_del_gross": 122752000,
             "capital_del_net": 122755000,
+            "income_net": 2159000,
             "resource_ame_gross": 1048000,
             "resource_ame_net": 1048000,
             "resource_del_gross": 87261000,
             "resource_del_net": 85099000,
             "total_managed_expenditure_net": 208902000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 1447000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 544000
+            },
+            {
+              "name": "Other Grants",
+              "value": 171000
+            },
+            {
+              "name": "Assets",
+              "value": 3000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -25577,6 +29166,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-education",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -25630,12 +29220,27 @@
             "capital_ame_net": 2069000,
             "capital_del_gross": 20891000,
             "capital_del_net": 15856000,
+            "income_net": 7485000,
             "resource_ame_gross": 2617000,
             "resource_ame_net": 2617000,
             "resource_del_gross": 292203000,
             "resource_del_net": 289753000,
             "total_managed_expenditure_net": 310295000
           },
+          "income": [
+            {
+              "name": "Assets",
+              "value": 5035000
+            },
+            {
+              "name": "Other Income",
+              "value": 1308000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 1142000
+            }
+          ],
           "programmes": [
             {
               "name": "9. Education",
@@ -25676,6 +29281,7 @@
         ],
         "sponsor_department_id": "uk-state-body-ministry-of-defence",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -25788,10 +29394,17 @@
           "headline": {
             "capital_del_gross": 2097000,
             "capital_del_net": 2097000,
+            "income_net": 8885000,
             "resource_del_gross": 15404000,
             "resource_del_net": 6519000,
             "total_managed_expenditure_net": 8616000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 8885000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",
@@ -25853,6 +29466,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-education",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -26049,6 +29663,7 @@
             "resource_ame_net": 2357000,
             "total_managed_expenditure_net": 2357000
           },
+          "income": [],
           "programmes": []
         },
         "functions": [],
@@ -26076,10 +29691,17 @@
             "capital_ame_net": 1254000,
             "capital_del_gross": 3880000,
             "capital_del_net": 3880000,
+            "income_net": 3789000,
             "resource_del_gross": 41842000,
             "resource_del_net": 38053000,
             "total_managed_expenditure_net": 43187000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 3789000
+            }
+          ],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -26153,6 +29775,7 @@
             "resource_del_net": 10835000,
             "total_managed_expenditure_net": 22430000
           },
+          "income": [],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -26237,10 +29860,29 @@
           "headline": {
             "capital_del_gross": 7139000,
             "capital_del_net": 6994000,
+            "income_net": 21088000,
             "resource_del_gross": 67919000,
             "resource_del_net": 46976000,
             "total_managed_expenditure_net": 53970000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 14254000
+            },
+            {
+              "name": "Other Income",
+              "value": 4679000
+            },
+            {
+              "name": "Other Grants",
+              "value": 2054000
+            },
+            {
+              "name": "Donations",
+              "value": 101000
+            }
+          ],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -26262,6 +29904,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-culture-media-and-sport",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -26347,10 +29990,21 @@
           "headline": {
             "capital_ame_gross": 128000,
             "capital_ame_net": 128000,
+            "income_net": 162702000,
             "resource_ame_gross": 856367000,
             "resource_ame_net": 693665000,
             "total_managed_expenditure_net": 693793000
           },
+          "income": [
+            {
+              "name": "Other Income",
+              "value": 162218000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 484000
+            }
+          ],
           "programmes": []
         },
         "functions": [],
@@ -26434,10 +30088,21 @@
           "headline": {
             "capital_del_gross": -17913000,
             "capital_del_net": -17943000,
+            "income_net": 664000,
             "resource_del_gross": 106736000,
             "resource_del_net": 106102000,
             "total_managed_expenditure_net": 88159000
           },
+          "income": [
+            {
+              "name": "Interest And Dividends",
+              "value": 634000
+            },
+            {
+              "name": "Assets",
+              "value": 30000
+            }
+          ],
           "programmes": [
             {
               "name": "10. Social protection",
@@ -26547,12 +30212,51 @@
             "capital_ame_net": 2198513000,
             "capital_del_gross": 5839556000,
             "capital_del_net": 5839556000,
+            "income_net": 11154374000,
             "resource_ame_gross": 37842561000,
             "resource_ame_net": 27379478000,
             "resource_del_gross": 25722446000,
             "resource_del_net": 25722446000,
             "total_managed_expenditure_net": 61139993000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 5753278000
+            },
+            {
+              "name": "Pensions",
+              "value": 3924617000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 571712000
+            },
+            {
+              "name": "Repayments",
+              "value": 561733000
+            },
+            {
+              "name": "Eu Grants",
+              "value": 238356000
+            },
+            {
+              "name": "Assets",
+              "value": 81090000
+            },
+            {
+              "name": "Other Grants",
+              "value": 17762000
+            },
+            {
+              "name": "Other Income",
+              "value": 4702000
+            },
+            {
+              "name": "Taxation",
+              "value": 1124000
+            }
+          ],
           "programmes": [
             {
               "name": "Unallocated",
@@ -26573,6 +30277,112 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 260,
+                "grade": "scs",
+                "headcount": 270
+              },
+              {
+                "fte": 2780,
+                "grade": "grade_6_7",
+                "headcount": 2895
+              },
+              {
+                "fte": 4140,
+                "grade": "seo_heo",
+                "headcount": 4310
+              },
+              {
+                "fte": 4140,
+                "grade": "eo",
+                "headcount": 4310
+              },
+              {
+                "fte": 675,
+                "grade": "aa_ao",
+                "headcount": 705
+              }
+            ],
+            "headcount_total": 9295,
+            "professions": [
+              {
+                "headcount": 3340,
+                "name": "Policy"
+              },
+              {
+                "headcount": 2015,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 865,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 405,
+                "name": "Science and Engineering"
+              },
+              {
+                "headcount": 315,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 305,
+                "name": "Finance"
+              },
+              {
+                "headcount": 275,
+                "name": "Legal"
+              },
+              {
+                "headcount": 250,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 200,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 195,
+                "name": "Communications"
+              },
+              {
+                "headcount": 150,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 95,
+                "name": "Economics"
+              },
+              {
+                "headcount": 50,
+                "name": "Security"
+              },
+              {
+                "headcount": 35,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 30,
+                "name": "Internal Audit"
+              },
+              {
+                "headcount": 25,
+                "name": "Operational Research"
+              },
+              {
+                "headcount": 5,
+                "name": "Counter Fraud"
+              },
+              {
+                "headcount": 5,
+                "name": "Veterinarian"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -26758,10 +30568,21 @@
           "headline": {
             "capital_del_gross": 378000,
             "capital_del_net": 378000,
+            "income_net": 63955000,
             "resource_del_gross": 61872000,
             "resource_del_net": -2083000,
             "total_managed_expenditure_net": -1705000
           },
+          "income": [
+            {
+              "name": "Taxation",
+              "value": 63875000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 80000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: enterprise and economic development",
@@ -26788,6 +30609,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-environment-food-rural-affairs",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -26932,10 +30754,17 @@
         "budget": {
           "fy": "2024-25",
           "headline": {
+            "income_net": 1634000,
             "resource_del_gross": 8141000,
             "resource_del_net": 6507000,
             "total_managed_expenditure_net": 6507000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 1634000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: transport",
@@ -27128,6 +30957,7 @@
         ],
         "sponsor_department_id": "uk-state-body-hm-treasury",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -27242,6 +31072,7 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -27377,6 +31208,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-of-health-and-social-care",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -27537,6 +31369,7 @@
         ],
         "sponsor_department_id": "uk-state-body-ministry-of-defence",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -27715,12 +31548,39 @@
             "capital_ame_net": -107613000,
             "capital_del_gross": 10658156000,
             "capital_del_net": 9740104000,
+            "income_net": 1025121000,
             "resource_ame_gross": 126361000,
             "resource_ame_net": 125400000,
             "resource_del_gross": 239712000,
             "resource_del_net": 229559000,
             "total_managed_expenditure_net": 9987450000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 753823000
+            },
+            {
+              "name": "Other Grants",
+              "value": 144749000
+            },
+            {
+              "name": "Other Income",
+              "value": 110354000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 11114000
+            },
+            {
+              "name": "Eu Grants",
+              "value": 4476000
+            },
+            {
+              "name": "Assets",
+              "value": 605000
+            }
+          ],
           "programmes": [
             {
               "name": "4. of which: science and technology",
@@ -27814,6 +31674,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-science-innovation-and-technology",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -27926,6 +31787,7 @@
         ],
         "sponsor_department_id": "uk-state-body-cabinet-office",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -28235,6 +32097,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-transport",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -28344,6 +32207,7 @@
         ],
         "sponsor_department_id": "uk-state-body-department-for-environment-food-rural-affairs",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -28445,12 +32309,39 @@
           "headline": {
             "capital_del_gross": 42809000,
             "capital_del_net": 4005000,
+            "income_net": 80837000,
             "resource_ame_gross": 7534000,
             "resource_ame_net": 7534000,
             "resource_del_gross": 97955000,
             "resource_del_net": 55922000,
             "total_managed_expenditure_net": 67461000
           },
+          "income": [
+            {
+              "name": "Other Grants",
+              "value": 40027000
+            },
+            {
+              "name": "Other Income",
+              "value": 23027000
+            },
+            {
+              "name": "Donations",
+              "value": 10352000
+            },
+            {
+              "name": "Interest And Dividends",
+              "value": 6632000
+            },
+            {
+              "name": "Assets",
+              "value": 796000
+            },
+            {
+              "name": "Goods And Services",
+              "value": 3000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -28518,10 +32409,17 @@
           "headline": {
             "capital_del_gross": 310000,
             "capital_del_net": 310000,
+            "income_net": 17476000,
             "resource_del_gross": 26625000,
             "resource_del_net": 9149000,
             "total_managed_expenditure_net": 9459000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 17476000
+            }
+          ],
           "programmes": [
             {
               "name": "1. of which: public and common services",
@@ -28552,10 +32450,21 @@
           "headline": {
             "capital_del_gross": 777000,
             "capital_del_net": 550000,
+            "income_net": 5073000,
             "resource_del_gross": 7021000,
             "resource_del_net": 2175000,
             "total_managed_expenditure_net": 2725000
           },
+          "income": [
+            {
+              "name": "Donations",
+              "value": 2968000
+            },
+            {
+              "name": "Other Income",
+              "value": 2105000
+            }
+          ],
           "programmes": [
             {
               "name": "8. Recreation, culture and religion",
@@ -28595,6 +32504,116 @@
         ],
         "sponsor_department_id": null,
         "staffing": {
+          "core": {
+            "disclaimer": null,
+            "fte_total": null,
+            "grades": [
+              {
+                "fte": 185,
+                "grade": "scs",
+                "headcount": 195
+              },
+              {
+                "fte": 1195,
+                "grade": "grade_6_7",
+                "headcount": 1255
+              },
+              {
+                "fte": 2680,
+                "grade": "seo_heo",
+                "headcount": 2825
+              },
+              {
+                "fte": 2680,
+                "grade": "eo",
+                "headcount": 2825
+              },
+              {
+                "fte": 615,
+                "grade": "aa_ao",
+                "headcount": 675
+              }
+            ],
+            "headcount_total": 5885,
+            "professions": [
+              {
+                "headcount": 1615,
+                "name": "Policy"
+              },
+              {
+                "headcount": 1490,
+                "name": "Operational Delivery"
+              },
+              {
+                "headcount": 315,
+                "name": "Finance"
+              },
+              {
+                "headcount": 245,
+                "name": "Digital and Data"
+              },
+              {
+                "headcount": 205,
+                "name": "Legal"
+              },
+              {
+                "headcount": 190,
+                "name": "Human Resources"
+              },
+              {
+                "headcount": 180,
+                "name": "Clinical"
+              },
+              {
+                "headcount": 165,
+                "name": "Communications"
+              },
+              {
+                "headcount": 115,
+                "name": "Planning"
+              },
+              {
+                "headcount": 105,
+                "name": "Social Research"
+              },
+              {
+                "headcount": 100,
+                "name": "Knowledge and Information Management"
+              },
+              {
+                "headcount": 100,
+                "name": "Science and Engineering"
+              },
+              {
+                "headcount": 100,
+                "name": "Statistics"
+              },
+              {
+                "headcount": 95,
+                "name": "Project Delivery"
+              },
+              {
+                "headcount": 70,
+                "name": "Commercial"
+              },
+              {
+                "headcount": 65,
+                "name": "Property"
+              },
+              {
+                "headcount": 50,
+                "name": "Economics"
+              },
+              {
+                "headcount": 20,
+                "name": "Internal Audit"
+              },
+              {
+                "headcount": 5,
+                "name": "Veterinarian"
+              }
+            ]
+          },
           "disclaimer": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
           "fte_total": null,
           "grades": [
@@ -28740,6 +32759,7 @@
             "resource_del_net": 8500000,
             "total_managed_expenditure_net": 8500000
           },
+          "income": [],
           "programmes": [
             {
               "name": "1. of which: international services",
@@ -28780,6 +32800,7 @@
         ],
         "sponsor_department_id": "uk-state-body-foreign-commonwealth-development-office",
         "staffing": {
+          "core": null,
           "disclaimer": null,
           "fte_total": null,
           "grades": [
@@ -28937,10 +32958,21 @@
           "headline": {
             "capital_del_gross": 1073000,
             "capital_del_net": 1073000,
+            "income_net": 100000,
             "resource_del_gross": 104027000,
             "resource_del_net": 103927000,
             "total_managed_expenditure_net": 105000000
           },
+          "income": [
+            {
+              "name": "Goods And Services",
+              "value": 90000
+            },
+            {
+              "name": "Other Income",
+              "value": 10000
+            }
+          ],
           "programmes": [
             {
               "name": "3. Public order and safety",

@@ -123,8 +123,13 @@ def aggregate():
         matched_orgs.add(r[iO])
         amt = (r[iAmt] or 0) * 1000.0
         agg[bid][(bt, "net", None)] += amt
-        if r[iInc] == "GROSS":
+        inc = r[iInc]
+        if inc == "GROSS":
             agg[bid][(bt, "gross", None)] += amt
+        elif inc and inc != "n/a":
+            # Income row (Assets, Goods and services, Other income, etc.) — negative amount.
+            agg[bid][("income", "net", inc.title())] += amt   # income by category
+            agg[bid][("income", "net", None)] += amt          # total income
         if bt == "resource_del" and r[iFun]:
             agg[bid][("resource_del", "net", r[iFun])] += amt
     return agg, matched_orgs, unmatched_orgs
@@ -140,12 +145,15 @@ def main():
     written = 0
     for bid, cells in agg.items():
         body_slug = bid[len("uk-state-body-"):]
-        # total managed expenditure (net) = sum of the four headline net boundaries
-        tme = sum(v for (bt, basis, prog), v in cells.items() if basis == "net" and prog is None)
+        # total managed expenditure (net) = sum of the four headline net boundaries (NOT income).
+        tme = sum(v for (bt, basis, prog), v in cells.items()
+                  if basis == "net" and prog is None
+                  and bt in ("resource_del", "capital_del", "resource_ame", "capital_ame"))
         records = []
         for (bt, basis, prog), amount in cells.items():
             if round(amount) == 0:
                 continue
+            amount = abs(amount) if bt == "income" else amount   # income rows are negative
             rid = "budget-{}-{}-{}-{}".format(body_slug, fy_slug, bt, basis)
             if prog:
                 rid += "-" + slug(prog)

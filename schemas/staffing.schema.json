@@ -14,6 +14,7 @@
     "staff_group": { "type": "string", "enum": ["all", "civil_service", "senior_civil_service", "contractor", "other"] },
     "grade": { "type": ["string", "null"], "enum": ["scs", "grade_6_7", "seo_heo", "eo", "aa_ao", "unreported", null] },
     "profession": { "type": ["string", "null"] },
+    "scope": { "type": ["string", "null"], "enum": ["group", "core", null] },
     "source_id": { "type": ["string", "null"] },
     "citation": { "type": "object" },
     "notes": { "type": ["string", "null"] },

@@ -429,9 +429,13 @@ function renderDetail(d) {
       el.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b === btn));
       el.querySelectorAll(".tabpanel").forEach((p) => { p.hidden = p.getAttribute("data-panel") !== k; });
     }));
-  // Data-viz sub-toggles (By type / By programme, By grade / By profession) — scoped to
-  // the toggle's own group so budget and staffing toggles don't collide.
-  el.querySelectorAll(".viz-toggle button").forEach((btn) =>
+  wireViz(el, d);
+}
+
+// Data-viz sub-toggles + the whole-group/core scope toggle. The scope toggle re-renders the
+// civil panel at the chosen scope (re-pointing the grade/profession donuts) and re-wires it.
+function wireViz(root, d) {
+  root.querySelectorAll(".viz-toggle button").forEach((btn) =>
     btn.addEventListener("click", () => {
       const bar = btn.parentElement, k = btn.getAttribute("data-view");
       bar.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === btn));
@@ -440,6 +444,12 @@ function renderDetail(d) {
         sib.hidden = sib.getAttribute("data-view") !== k;
         sib = sib.nextElementSibling;
       }
+    }));
+  root.querySelectorAll(".scope-toggle button").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      const panel = btn.closest(".tabpanel");
+      panel.innerHTML = staffingTabHtml(d.staffing, btn.getAttribute("data-scope"));
+      wireViz(panel, d);
     }));
 }
 function nodeLabel(id) { const n = cy.getElementById(id); return n.empty() ? id : n.data("label"); }
@@ -591,8 +601,13 @@ function budgetTabHtml(b) {
   ].filter((s) => s.value > 0);
   const tme = h.total_managed_expenditure_net;
   const byProg = topN((b.programmes || []).map((p) => ({ label: p.name.replace(/^\d+\.\s*/, ""), value: p.net })), 8);
+  const byBody = topN((b.by_body || []).map((x) => ({ label: x.name, value: x.value })), 8);
+  const byIncome = topN((b.income || []).map((x) => ({ label: x.name, value: x.value })), 8);
+  const bodyTotal = byBody.reduce((s, x) => s + x.value, 0);
   const views = [{ key: "type", label: "By type", html: donutBlock(byType, fmtGBP, fmtGBP(tme), "net TME") }];
   if (byProg.length) views.push({ key: "programme", label: "By programme", html: donutBlock(byProg, fmtGBP, fmtGBP(h.resource_del_net), "resource DEL") });
+  if (byBody.length) views.push({ key: "body", label: "By body", html: donutBlock(byBody, fmtGBP, fmtGBP(bodyTotal), "sponsored bodies") });
+  if (byIncome.length) views.push({ key: "income", label: "Income", html: donutBlock(byIncome, fmtGBP, fmtGBP(h.income_net), "income") });
   return `<p class="src">HM Treasury OSCAR outturn, ${esc(b.fy)} (net of income unless gross shown).</p>
     <dl>
       ${row("Resource DEL", h.resource_del_net, h.resource_del_gross)}
@@ -603,18 +618,27 @@ function budgetTabHtml(b) {
     </dl>${vizToggle(views)}`;
 }
 
-function staffingTabHtml(s) {
-  const total = s.headcount_total;
-  const byGrade = (s.grades || []).map((g) => ({ label: GRADE_LABEL[g.grade] || g.grade, value: g.headcount || 0 })).filter((x) => x.value > 0);
-  const byProf = topN((s.professions || []).map((p) => ({ label: p.name, value: p.headcount })), 8);
+function staffingTabHtml(s, scope) {
+  scope = scope || "group";
+  const src = (scope === "core" && s.core) ? s.core : s;   // grade/profession donuts re-point
+  const total = src.headcount_total;
+  const byGrade = (src.grades || []).map((g) => ({ label: GRADE_LABEL[g.grade] || g.grade, value: g.headcount || 0 })).filter((x) => x.value > 0);
+  const byProf = topN((src.professions || []).map((p) => ({ label: p.name, value: p.headcount })), 8);
+  const byOrg = topN((s.by_org || []).map((x) => ({ label: x.name, value: x.value })), 8);   // a group concept
   const views = [];
   if (byGrade.length) views.push({ key: "grade", label: "By grade", html: donutBlock(byGrade, fmtNum, fmtNum(total), "headcount") });
+  if (byOrg.length && scope === "group") views.push({ key: "org", label: "By organisation", html: donutBlock(byOrg, fmtNum, fmtNum(byOrg.reduce((a, x) => a + x.value, 0)), "agencies") });
   if (byProf.length) views.push({ key: "prof", label: "By profession", html: donutBlock(byProf, fmtNum, fmtNum(total), "headcount") });
-  return `<p class="src">Civil Service Statistics, headcount as at 31 March ${esc(s.period)}.${s.disclaimer ? " " + esc(s.disclaimer) : ""}</p>
+  // Whole-group / core toggle only where a department has a core (excl. agencies) figure.
+  const scopeToggle = s.core
+    ? `<div class="scope-toggle"><button class="${scope === "group" ? "active" : ""}" data-scope="group">Whole group</button>`
+      + `<button class="${scope === "core" ? "active" : ""}" data-scope="core">Core department</button></div>`
+    : "";
+  return `<p class="src">Civil Service Statistics, headcount as at 31 March ${esc(s.period)}.${(scope === "group" && s.disclaimer) ? " " + esc(s.disclaimer) : ""}</p>
     <dl>
-      <dt>Headcount</dt><dd>${fmtNum(s.headcount_total)}</dd>
-      ${s.fte_total != null ? `<dt>Full-time equivalent</dt><dd>${fmtNum(s.fte_total)}</dd>` : ""}
-    </dl>${vizToggle(views)}`;
+      <dt>Headcount</dt><dd>${fmtNum(total)}</dd>
+      ${src.fte_total != null ? `<dt>Full-time equivalent</dt><dd>${fmtNum(src.fte_total)}</dd>` : ""}
+    </dl>${scopeToggle}${vizToggle(views)}`;
 }
 
 // Cite the record's ACTUAL sources (resolved via the graph's source index), not a fixed

@@ -8,13 +8,945 @@
     },
     "grade": null,
     "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-total-group",
+    "value": 50655
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-grade-scs-group",
+    "value": 370
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-grade-grade_6_7-group",
+    "value": 5095
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-grade-seo_heo-group",
+    "value": 13940
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-grade-eo-group",
+    "value": 13940
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-grade-aa_ao-group",
+    "value": 9950
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "unreported",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-grade-unreported-group",
+    "value": 140
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-grade-scs-group",
+    "value": 365
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-grade-grade_6_7-group",
+    "value": 4985
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-grade-seo_heo-group",
+    "value": 13510
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-grade-eo-group",
+    "value": 13510
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-grade-aa_ao-group",
+    "value": 9070
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "unreported",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-grade-unreported-group",
+    "value": 140
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-commercial-group",
+    "value": 165
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-communications-group",
+    "value": 180
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Counter Fraud",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-counter-fraud-group",
+    "value": 205
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-digital-and-data-group",
+    "value": 2325
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-economics-group",
+    "value": 180
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-finance-group",
+    "value": 360
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-human-resources-group",
+    "value": 730
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Intelligence Analysis",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-intelligence-analysis-group",
+    "value": 1490
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-knowledge-and-information-management-group",
+    "value": 105
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-operational-delivery-group",
+    "value": 37360
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Research",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-operational-research-group",
+    "value": 120
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-policy-group",
+    "value": 2660
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-project-delivery-group",
+    "value": 2080
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-property-group",
+    "value": 85
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-science-and-engineering-group",
+    "value": 115
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Security",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-security-group",
+    "value": 365
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-social-research-group",
+    "value": 205
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Statistics",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-statistics-group",
+    "value": 140
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-commercial-group",
+    "value": 160
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-communications-group",
+    "value": 175
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Counter Fraud",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-counter-fraud-group",
+    "value": 190
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-digital-and-data-group",
+    "value": 2290
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-economics-group",
+    "value": 180
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-finance-group",
+    "value": 345
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-human-resources-group",
+    "value": 700
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Intelligence Analysis",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-intelligence-analysis-group",
+    "value": 1415
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-knowledge-and-information-management-group",
+    "value": 100
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-operational-delivery-group",
+    "value": 35260
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Research",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-operational-research-group",
+    "value": 115
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-policy-group",
+    "value": 2610
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-project-delivery-group",
+    "value": 2035
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-property-group",
+    "value": 80
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-science-and-engineering-group",
+    "value": 105
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Security",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-security-group",
+    "value": 350
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-social-research-group",
+    "value": 200
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Statistics",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-statistics-group",
+    "value": 140
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
     "notes": null,
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-total",
+    "staffing_record_id": "staffing-home-office-2025-headcount-total-core",
     "value": 50655
   },
   {
@@ -30,9 +962,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-grade-scs",
+    "staffing_record_id": "staffing-home-office-2025-headcount-grade-scs-core",
     "value": 370
   },
   {
@@ -48,9 +981,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-grade-grade_6_7",
+    "staffing_record_id": "staffing-home-office-2025-headcount-grade-grade_6_7-core",
     "value": 5095
   },
   {
@@ -66,9 +1000,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-grade-seo_heo",
+    "staffing_record_id": "staffing-home-office-2025-headcount-grade-seo_heo-core",
     "value": 13940
   },
   {
@@ -84,9 +1019,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-grade-eo",
+    "staffing_record_id": "staffing-home-office-2025-headcount-grade-eo-core",
     "value": 13940
   },
   {
@@ -102,9 +1038,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-grade-aa_ao",
+    "staffing_record_id": "staffing-home-office-2025-headcount-grade-aa_ao-core",
     "value": 9950
   },
   {
@@ -120,9 +1057,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-grade-unreported",
+    "staffing_record_id": "staffing-home-office-2025-headcount-grade-unreported-core",
     "value": 140
   },
   {
@@ -138,9 +1076,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-grade-scs",
+    "staffing_record_id": "staffing-home-office-2025-fte-grade-scs-core",
     "value": 365
   },
   {
@@ -156,9 +1095,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-grade-grade_6_7",
+    "staffing_record_id": "staffing-home-office-2025-fte-grade-grade_6_7-core",
     "value": 4985
   },
   {
@@ -174,9 +1114,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-grade-seo_heo",
+    "staffing_record_id": "staffing-home-office-2025-fte-grade-seo_heo-core",
     "value": 13510
   },
   {
@@ -192,9 +1133,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-grade-eo",
+    "staffing_record_id": "staffing-home-office-2025-fte-grade-eo-core",
     "value": 13510
   },
   {
@@ -210,9 +1152,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-grade-aa_ao",
+    "staffing_record_id": "staffing-home-office-2025-fte-grade-aa_ao-core",
     "value": 9070
   },
   {
@@ -228,9 +1171,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-grade-unreported",
+    "staffing_record_id": "staffing-home-office-2025-fte-grade-unreported-core",
     "value": 140
   },
   {
@@ -246,9 +1190,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-commercial",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-commercial-core",
     "value": 165
   },
   {
@@ -264,9 +1209,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-communications",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-communications-core",
     "value": 180
   },
   {
@@ -282,9 +1228,10 @@
     "period": "2025",
     "profession": "Counter Fraud",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-counter-fraud",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-counter-fraud-core",
     "value": 205
   },
   {
@@ -300,9 +1247,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-digital-and-data",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-digital-and-data-core",
     "value": 2325
   },
   {
@@ -318,9 +1266,10 @@
     "period": "2025",
     "profession": "Economics",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-economics",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-economics-core",
     "value": 180
   },
   {
@@ -336,9 +1285,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-finance",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-finance-core",
     "value": 360
   },
   {
@@ -354,9 +1304,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-human-resources",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-human-resources-core",
     "value": 730
   },
   {
@@ -372,9 +1323,10 @@
     "period": "2025",
     "profession": "Intelligence Analysis",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-intelligence-analysis",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-intelligence-analysis-core",
     "value": 1490
   },
   {
@@ -390,9 +1342,10 @@
     "period": "2025",
     "profession": "Knowledge and Information Management",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-knowledge-and-information-management",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-knowledge-and-information-management-core",
     "value": 105
   },
   {
@@ -408,9 +1361,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-operational-delivery",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-operational-delivery-core",
     "value": 37360
   },
   {
@@ -426,9 +1380,10 @@
     "period": "2025",
     "profession": "Operational Research",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-operational-research",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-operational-research-core",
     "value": 120
   },
   {
@@ -444,9 +1399,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-policy",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-policy-core",
     "value": 2660
   },
   {
@@ -462,9 +1418,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-project-delivery",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-project-delivery-core",
     "value": 2080
   },
   {
@@ -480,9 +1437,10 @@
     "period": "2025",
     "profession": "Property",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-property",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-property-core",
     "value": 85
   },
   {
@@ -498,9 +1456,10 @@
     "period": "2025",
     "profession": "Science and Engineering",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-science-and-engineering",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-science-and-engineering-core",
     "value": 115
   },
   {
@@ -516,9 +1475,10 @@
     "period": "2025",
     "profession": "Security",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-security",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-security-core",
     "value": 365
   },
   {
@@ -534,9 +1494,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-social-research",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-social-research-core",
     "value": 205
   },
   {
@@ -552,9 +1513,10 @@
     "period": "2025",
     "profession": "Statistics",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-headcount-profession-statistics",
+    "staffing_record_id": "staffing-home-office-2025-headcount-profession-statistics-core",
     "value": 140
   },
   {
@@ -570,9 +1532,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-commercial",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-commercial-core",
     "value": 160
   },
   {
@@ -588,9 +1551,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-communications",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-communications-core",
     "value": 175
   },
   {
@@ -606,9 +1570,10 @@
     "period": "2025",
     "profession": "Counter Fraud",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-counter-fraud",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-counter-fraud-core",
     "value": 190
   },
   {
@@ -624,9 +1589,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-digital-and-data",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-digital-and-data-core",
     "value": 2290
   },
   {
@@ -642,9 +1608,10 @@
     "period": "2025",
     "profession": "Economics",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-economics",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-economics-core",
     "value": 180
   },
   {
@@ -660,9 +1627,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-finance",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-finance-core",
     "value": 345
   },
   {
@@ -678,9 +1646,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-human-resources",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-human-resources-core",
     "value": 700
   },
   {
@@ -696,9 +1665,10 @@
     "period": "2025",
     "profession": "Intelligence Analysis",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-intelligence-analysis",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-intelligence-analysis-core",
     "value": 1415
   },
   {
@@ -714,9 +1684,10 @@
     "period": "2025",
     "profession": "Knowledge and Information Management",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-knowledge-and-information-management",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-knowledge-and-information-management-core",
     "value": 100
   },
   {
@@ -732,9 +1703,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-operational-delivery",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-operational-delivery-core",
     "value": 35260
   },
   {
@@ -750,9 +1722,10 @@
     "period": "2025",
     "profession": "Operational Research",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-operational-research",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-operational-research-core",
     "value": 115
   },
   {
@@ -768,9 +1741,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-policy",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-policy-core",
     "value": 2610
   },
   {
@@ -786,9 +1760,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-project-delivery",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-project-delivery-core",
     "value": 2035
   },
   {
@@ -804,9 +1779,10 @@
     "period": "2025",
     "profession": "Property",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-property",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-property-core",
     "value": 80
   },
   {
@@ -822,9 +1798,10 @@
     "period": "2025",
     "profession": "Science and Engineering",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-science-and-engineering",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-science-and-engineering-core",
     "value": 105
   },
   {
@@ -840,9 +1817,10 @@
     "period": "2025",
     "profession": "Security",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-security",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-security-core",
     "value": 350
   },
   {
@@ -858,9 +1836,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-social-research",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-social-research-core",
     "value": 200
   },
   {
@@ -876,9 +1855,10 @@
     "period": "2025",
     "profession": "Statistics",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-home-office-2025-fte-profession-statistics",
+    "staffing_record_id": "staffing-home-office-2025-fte-profession-statistics-core",
     "value": 140
   }
 ]

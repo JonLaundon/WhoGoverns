@@ -55,18 +55,21 @@ def load_records_by_body(folder):
 
 
 def summarise_budget(recs):
-    head, progs = {}, []
+    head, progs, income = {}, [], []
     for r in recs:
-        if r.get("programme"):
+        if r["budget_type"] == "income" and r.get("programme"):
+            income.append({"name": r["programme"], "value": r["amount"]})
+        elif r.get("programme"):
             if r["budget_type"] == "resource_del" and r.get("basis") == "net":
                 progs.append({"name": r["programme"], "net": r["amount"]})
         else:
             head["{}_{}".format(r["budget_type"], r.get("basis", "net"))] = r["amount"]
     progs.sort(key=lambda x: -x["net"])
-    return {"fy": recs[0]["financial_year"], "headline": head, "programmes": progs}
+    income.sort(key=lambda x: -x["value"])
+    return {"fy": recs[0]["financial_year"], "headline": head, "programmes": progs, "income": income}
 
 
-def summarise_staffing(recs):
+def _summ_staffing_set(recs):
     total_hc = total_fte = disclaimer = None
     grades, profs = {}, []
     for r in recs:
@@ -84,8 +87,25 @@ def summarise_staffing(recs):
     profs.sort(key=lambda x: -x["headcount"])
     order = ["scs", "grade_6_7", "seo_heo", "eo", "aa_ao", "unreported"]
     glist = [dict(grade=g, **grades[g]) for g in order if g in grades]
-    return {"period": recs[0]["period"], "headcount_total": total_hc, "fte_total": total_fte,
+    return {"headcount_total": total_hc, "fte_total": total_fte,
             "grades": glist, "professions": profs, "disclaimer": disclaimer}
+
+
+def summarise_staffing(recs):
+    # Top-level fields are the GROUP/primary figure (backward-compatible); `core` holds the
+    # department's excl-agencies figure for the whole-group/core toggle (null for others).
+    group = [r for r in recs if r.get("scope") in (None, "group")]
+    core = [r for r in recs if r.get("scope") == "core"]
+    g = _summ_staffing_set(group)
+    c = _summ_staffing_set(core) if core else None
+    # Where core == group the body has no real agencies (identical "Overall" and plain rows):
+    # collapse to a single figure — no whole-group/core toggle, no double-count disclaimer.
+    if c and c.get("headcount_total") == g.get("headcount_total"):
+        c, g["disclaimer"] = None, None
+    out = {"period": recs[0]["period"]}
+    out.update(g)
+    out["core"] = c
+    return out
 
 
 def build_graph(bodies, relationships, offices, person_roles):
@@ -262,6 +282,34 @@ def main():
                 n["data"]["budget"] = summarise_budget(budgets_by_body[bid])
             if bid in staffing_by_body:
                 n["data"]["staffing"] = summarise_staffing(staffing_by_body[bid])
+
+    # Department "by body" (budget) / "by organisation" (staffing): the children it sponsors,
+    # from the sponsor edges. Second pass so children's summaries already exist.
+    DEPT = ("ministerial_department", "non_ministerial_department")
+    node_by_id = {n["data"]["id"]: n for n in graph["nodes"]}
+    children = {}
+    for e in graph["edges"]:
+        if e["data"].get("kind") == "sponsors":
+            children.setdefault(e["data"]["source"], []).append(e["data"]["target"])
+    for n in graph["nodes"]:
+        if n["data"].get("body_type") not in DEPT:
+            continue
+        by_body, by_org = [], []
+        for c in children.get(n["data"]["id"], []):
+            cn = node_by_id.get(c)
+            if not cn:
+                continue
+            label = cn["data"].get("label")
+            cb = cn["data"].get("budget")
+            if cb and cb["headline"].get("total_managed_expenditure_net"):
+                by_body.append({"name": label, "value": cb["headline"]["total_managed_expenditure_net"]})
+            cs = cn["data"].get("staffing")
+            if cs and cs.get("headcount_total"):
+                by_org.append({"name": label, "value": cs["headcount_total"]})
+        if by_body and n["data"].get("budget"):
+            n["data"]["budget"]["by_body"] = sorted(by_body, key=lambda x: -x["value"])
+        if by_org and n["data"].get("staffing"):
+            n["data"]["staffing"]["by_org"] = sorted(by_org, key=lambda x: -x["value"])
     generated = datetime.datetime.now().isoformat(timespec="seconds")
     # Source lookup so the map can cite each record's ACTUAL source(s), not a fixed blurb.
     source_index = {s["source_id"]: {"title": s.get("title"), "url": s.get("url"),

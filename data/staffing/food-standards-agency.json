@@ -8,13 +8,869 @@
     },
     "grade": null,
     "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-total-group",
+    "value": 1580
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-scs-group",
+    "value": 30
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-grade_6_7-group",
+    "value": 310
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-seo_heo-group",
+    "value": 855
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-eo-group",
+    "value": 855
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-aa_ao-group",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-scs-group",
+    "value": 30
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-grade_6_7-group",
+    "value": 305
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-seo_heo-group",
+    "value": 830
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-eo-group",
+    "value": 830
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-aa_ao-group",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-commercial-group",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-communications-group",
+    "value": 45
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Corporate Finance",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-corporate-finance-group",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Counter Fraud",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-counter-fraud-group",
+    "value": 55
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-digital-and-data-group",
+    "value": 55
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-economics-group",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-finance-group",
+    "value": 40
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-human-resources-group",
+    "value": 35
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Intelligence Analysis",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-intelligence-analysis-group",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Internal Audit",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-internal-audit-group",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Legal",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-legal-group",
+    "value": 30
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-operational-delivery-group",
+    "value": 635
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-policy-group",
+    "value": 350
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-project-delivery-group",
+    "value": 40
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-science-and-engineering-group",
+    "value": 140
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-social-research-group",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Veterinarian",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-veterinarian-group",
+    "value": 70
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-commercial-group",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-communications-group",
+    "value": 45
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Corporate Finance",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-corporate-finance-group",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Counter Fraud",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-counter-fraud-group",
+    "value": 55
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-digital-and-data-group",
+    "value": 55
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-economics-group",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-finance-group",
+    "value": 40
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-human-resources-group",
+    "value": 35
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Intelligence Analysis",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-intelligence-analysis-group",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Internal Audit",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-internal-audit-group",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Legal",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-legal-group",
+    "value": 30
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-operational-delivery-group",
+    "value": 605
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-policy-group",
+    "value": 340
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-project-delivery-group",
+    "value": 40
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-science-and-engineering-group",
+    "value": 140
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-social-research-group",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Veterinarian",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-veterinarian-group",
+    "value": 70
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
     "notes": null,
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-total",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-total-core",
     "value": 1580
   },
   {
@@ -30,9 +886,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-scs",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-scs-core",
     "value": 30
   },
   {
@@ -48,9 +905,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-grade_6_7",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-grade_6_7-core",
     "value": 310
   },
   {
@@ -66,9 +924,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-seo_heo",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-seo_heo-core",
     "value": 855
   },
   {
@@ -84,9 +943,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-eo",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-eo-core",
     "value": 855
   },
   {
@@ -102,9 +962,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-aa_ao",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-grade-aa_ao-core",
     "value": 5
   },
   {
@@ -120,9 +981,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-scs",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-scs-core",
     "value": 30
   },
   {
@@ -138,9 +1000,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-grade_6_7",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-grade_6_7-core",
     "value": 305
   },
   {
@@ -156,9 +1019,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-seo_heo",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-seo_heo-core",
     "value": 830
   },
   {
@@ -174,9 +1038,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-eo",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-eo-core",
     "value": 830
   },
   {
@@ -192,9 +1057,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-aa_ao",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-grade-aa_ao-core",
     "value": 5
   },
   {
@@ -210,9 +1076,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-commercial",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-commercial-core",
     "value": 15
   },
   {
@@ -228,9 +1095,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-communications",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-communications-core",
     "value": 45
   },
   {
@@ -246,9 +1114,10 @@
     "period": "2025",
     "profession": "Corporate Finance",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-corporate-finance",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-corporate-finance-core",
     "value": 5
   },
   {
@@ -264,9 +1133,10 @@
     "period": "2025",
     "profession": "Counter Fraud",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-counter-fraud",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-counter-fraud-core",
     "value": 55
   },
   {
@@ -282,9 +1152,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-digital-and-data",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-digital-and-data-core",
     "value": 55
   },
   {
@@ -300,9 +1171,10 @@
     "period": "2025",
     "profession": "Economics",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-economics",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-economics-core",
     "value": 15
   },
   {
@@ -318,9 +1190,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-finance",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-finance-core",
     "value": 40
   },
   {
@@ -336,9 +1209,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-human-resources",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-human-resources-core",
     "value": 35
   },
   {
@@ -354,9 +1228,10 @@
     "period": "2025",
     "profession": "Intelligence Analysis",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-intelligence-analysis",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-intelligence-analysis-core",
     "value": 20
   },
   {
@@ -372,9 +1247,10 @@
     "period": "2025",
     "profession": "Internal Audit",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-internal-audit",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-internal-audit-core",
     "value": 5
   },
   {
@@ -390,9 +1266,10 @@
     "period": "2025",
     "profession": "Legal",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-legal",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-legal-core",
     "value": 30
   },
   {
@@ -408,9 +1285,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-operational-delivery",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-operational-delivery-core",
     "value": 635
   },
   {
@@ -426,9 +1304,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-policy",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-policy-core",
     "value": 350
   },
   {
@@ -444,9 +1323,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-project-delivery",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-project-delivery-core",
     "value": 40
   },
   {
@@ -462,9 +1342,10 @@
     "period": "2025",
     "profession": "Science and Engineering",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-science-and-engineering",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-science-and-engineering-core",
     "value": 140
   },
   {
@@ -480,9 +1361,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-social-research",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-social-research-core",
     "value": 5
   },
   {
@@ -498,9 +1380,10 @@
     "period": "2025",
     "profession": "Veterinarian",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-veterinarian",
+    "staffing_record_id": "staffing-food-standards-agency-2025-headcount-profession-veterinarian-core",
     "value": 70
   },
   {
@@ -516,9 +1399,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-commercial",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-commercial-core",
     "value": 10
   },
   {
@@ -534,9 +1418,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-communications",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-communications-core",
     "value": 45
   },
   {
@@ -552,9 +1437,10 @@
     "period": "2025",
     "profession": "Corporate Finance",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-corporate-finance",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-corporate-finance-core",
     "value": 5
   },
   {
@@ -570,9 +1456,10 @@
     "period": "2025",
     "profession": "Counter Fraud",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-counter-fraud",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-counter-fraud-core",
     "value": 55
   },
   {
@@ -588,9 +1475,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-digital-and-data",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-digital-and-data-core",
     "value": 55
   },
   {
@@ -606,9 +1494,10 @@
     "period": "2025",
     "profession": "Economics",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-economics",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-economics-core",
     "value": 15
   },
   {
@@ -624,9 +1513,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-finance",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-finance-core",
     "value": 40
   },
   {
@@ -642,9 +1532,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-human-resources",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-human-resources-core",
     "value": 35
   },
   {
@@ -660,9 +1551,10 @@
     "period": "2025",
     "profession": "Intelligence Analysis",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-intelligence-analysis",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-intelligence-analysis-core",
     "value": 20
   },
   {
@@ -678,9 +1570,10 @@
     "period": "2025",
     "profession": "Internal Audit",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-internal-audit",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-internal-audit-core",
     "value": 5
   },
   {
@@ -696,9 +1589,10 @@
     "period": "2025",
     "profession": "Legal",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-legal",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-legal-core",
     "value": 30
   },
   {
@@ -714,9 +1608,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-operational-delivery",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-operational-delivery-core",
     "value": 605
   },
   {
@@ -732,9 +1627,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-policy",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-policy-core",
     "value": 340
   },
   {
@@ -750,9 +1646,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-project-delivery",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-project-delivery-core",
     "value": 40
   },
   {
@@ -768,9 +1665,10 @@
     "period": "2025",
     "profession": "Science and Engineering",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-science-and-engineering",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-science-and-engineering-core",
     "value": 140
   },
   {
@@ -786,9 +1684,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-social-research",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-social-research-core",
     "value": 5
   },
   {
@@ -804,9 +1703,10 @@
     "period": "2025",
     "profession": "Veterinarian",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-veterinarian",
+    "staffing_record_id": "staffing-food-standards-agency-2025-fte-profession-veterinarian-core",
     "value": 70
   }
 ]

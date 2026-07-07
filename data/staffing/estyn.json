@@ -8,13 +8,318 @@
     },
     "grade": null,
     "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-headcount-total-group",
+    "value": 140
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-headcount-grade-grade_6_7-group",
+    "value": 85
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-headcount-grade-seo_heo-group",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-headcount-grade-eo-group",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-headcount-grade-aa_ao-group",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-fte-grade-grade_6_7-group",
+    "value": 80
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-fte-grade-seo_heo-group",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-fte-grade-eo-group",
+    "value": 15
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-fte-grade-aa_ao-group",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-headcount-profession-communications-group",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Inspector of Education and Training",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-headcount-profession-inspector-of-education-and-training-group",
+    "value": 80
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-headcount-profession-operational-delivery-group",
+    "value": 30
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-headcount-profession-project-delivery-group",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-fte-profession-communications-group",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Inspector of Education and Training",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-fte-profession-inspector-of-education-and-training-group",
+    "value": 75
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "group",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-estyn-2025-fte-profession-operational-delivery-group",
+    "value": 30
+  },
+  {
+    "body_id": "uk-state-body-estyn",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
     "notes": null,
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-headcount-total",
+    "staffing_record_id": "staffing-estyn-2025-headcount-total-core",
     "value": 140
   },
   {
@@ -30,9 +335,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-headcount-grade-grade_6_7",
+    "staffing_record_id": "staffing-estyn-2025-headcount-grade-grade_6_7-core",
     "value": 85
   },
   {
@@ -48,9 +354,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-headcount-grade-seo_heo",
+    "staffing_record_id": "staffing-estyn-2025-headcount-grade-seo_heo-core",
     "value": 15
   },
   {
@@ -66,9 +373,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-headcount-grade-eo",
+    "staffing_record_id": "staffing-estyn-2025-headcount-grade-eo-core",
     "value": 15
   },
   {
@@ -84,9 +392,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-headcount-grade-aa_ao",
+    "staffing_record_id": "staffing-estyn-2025-headcount-grade-aa_ao-core",
     "value": 10
   },
   {
@@ -102,9 +411,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-fte-grade-grade_6_7",
+    "staffing_record_id": "staffing-estyn-2025-fte-grade-grade_6_7-core",
     "value": 80
   },
   {
@@ -120,9 +430,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-fte-grade-seo_heo",
+    "staffing_record_id": "staffing-estyn-2025-fte-grade-seo_heo-core",
     "value": 15
   },
   {
@@ -138,9 +449,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-fte-grade-eo",
+    "staffing_record_id": "staffing-estyn-2025-fte-grade-eo-core",
     "value": 15
   },
   {
@@ -156,9 +468,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-fte-grade-aa_ao",
+    "staffing_record_id": "staffing-estyn-2025-fte-grade-aa_ao-core",
     "value": 10
   },
   {
@@ -174,9 +487,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-headcount-profession-communications",
+    "staffing_record_id": "staffing-estyn-2025-headcount-profession-communications-core",
     "value": 5
   },
   {
@@ -192,9 +506,10 @@
     "period": "2025",
     "profession": "Inspector of Education and Training",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-headcount-profession-inspector-of-education-and-training",
+    "staffing_record_id": "staffing-estyn-2025-headcount-profession-inspector-of-education-and-training-core",
     "value": 80
   },
   {
@@ -210,9 +525,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-headcount-profession-operational-delivery",
+    "staffing_record_id": "staffing-estyn-2025-headcount-profession-operational-delivery-core",
     "value": 30
   },
   {
@@ -228,9 +544,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-headcount-profession-project-delivery",
+    "staffing_record_id": "staffing-estyn-2025-headcount-profession-project-delivery-core",
     "value": 5
   },
   {
@@ -246,9 +563,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-fte-profession-communications",
+    "staffing_record_id": "staffing-estyn-2025-fte-profession-communications-core",
     "value": 5
   },
   {
@@ -264,9 +582,10 @@
     "period": "2025",
     "profession": "Inspector of Education and Training",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-fte-profession-inspector-of-education-and-training",
+    "staffing_record_id": "staffing-estyn-2025-fte-profession-inspector-of-education-and-training-core",
     "value": 75
   },
   {
@@ -282,9 +601,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "core",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-estyn-2025-fte-profession-operational-delivery",
+    "staffing_record_id": "staffing-estyn-2025-fte-profession-operational-delivery-core",
     "value": 30
   }
 ]

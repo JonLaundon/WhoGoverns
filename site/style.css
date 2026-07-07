@@ -157,6 +157,11 @@ a:focus, input:focus, button:focus { outline: 3px solid var(--focus); outline-of
   background: var(--panel); border: 1px solid var(--line); border-radius: 999px; color: var(--mid); }
 .viz-toggle button.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 .viz-view[hidden] { display: none; }
+/* Whole-group / core scope toggle — a heavier segmented control above the sub-toggle */
+.scope-toggle { display: flex; gap: 0; margin: 10px 0 2px; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; width: fit-content; }
+.scope-toggle button { font: inherit; font-size: 0.78rem; padding: 4px 12px; cursor: pointer; background: var(--bg); border: none; color: var(--mid); }
+.scope-toggle button + button { border-left: 1px solid var(--line); }
+.scope-toggle button.active { background: var(--ink); color: var(--bg); }
 .donut-wrap { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 4px 0 2px; }
 .donut { flex: none; }
 .donut .donut-total { font-family: var(--font-body); font-weight: 700; fill: var(--ink); }

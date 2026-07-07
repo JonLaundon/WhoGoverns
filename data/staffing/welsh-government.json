@@ -12,9 +12,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-total",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-total-group",
     "value": 5990
   },
   {
@@ -30,9 +31,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-scs",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-scs-group",
     "value": 200
   },
   {
@@ -48,9 +50,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-grade_6_7",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-grade_6_7-group",
     "value": 1280
   },
   {
@@ -66,9 +69,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-seo_heo",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-seo_heo-group",
     "value": 2870
   },
   {
@@ -84,9 +88,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-eo",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-eo-group",
     "value": 2870
   },
   {
@@ -102,9 +107,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-aa_ao",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-aa_ao-group",
     "value": 685
   },
   {
@@ -120,9 +126,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-scs",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-scs-group",
     "value": 190
   },
   {
@@ -138,9 +145,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-grade_6_7",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-grade_6_7-group",
     "value": 1220
   },
   {
@@ -156,9 +164,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-seo_heo",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-seo_heo-group",
     "value": 2720
   },
   {
@@ -174,9 +183,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-eo",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-eo-group",
     "value": 2720
   },
   {
@@ -192,9 +202,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-aa_ao",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-aa_ao-group",
     "value": 625
   },
   {
@@ -210,9 +221,10 @@
     "period": "2025",
     "profession": "Clinical",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-clinical",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-clinical-group",
     "value": 180
   },
   {
@@ -228,9 +240,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-commercial",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-commercial-group",
     "value": 70
   },
   {
@@ -246,9 +259,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-communications",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-communications-group",
     "value": 170
   },
   {
@@ -264,9 +278,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-digital-and-data",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-digital-and-data-group",
     "value": 265
   },
   {
@@ -282,9 +297,10 @@
     "period": "2025",
     "profession": "Economics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-economics",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-economics-group",
     "value": 50
   },
   {
@@ -300,9 +316,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-finance",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-finance-group",
     "value": 325
   },
   {
@@ -318,9 +335,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-human-resources",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-human-resources-group",
     "value": 195
   },
   {
@@ -336,9 +354,10 @@
     "period": "2025",
     "profession": "Internal Audit",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-internal-audit",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-internal-audit-group",
     "value": 20
   },
   {
@@ -354,9 +373,10 @@
     "period": "2025",
     "profession": "Knowledge and Information Management",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-knowledge-and-information-management",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-knowledge-and-information-management-group",
     "value": 100
   },
   {
@@ -372,9 +392,10 @@
     "period": "2025",
     "profession": "Legal",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-legal",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-legal-group",
     "value": 210
   },
   {
@@ -390,9 +411,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-operational-delivery",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-operational-delivery-group",
     "value": 1515
   },
   {
@@ -408,9 +430,10 @@
     "period": "2025",
     "profession": "Planning",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-planning",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-planning-group",
     "value": 115
   },
   {
@@ -426,9 +449,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-policy",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-policy-group",
     "value": 1620
   },
   {
@@ -444,9 +468,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-project-delivery",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-project-delivery-group",
     "value": 95
   },
   {
@@ -462,9 +487,10 @@
     "period": "2025",
     "profession": "Property",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-property",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-property-group",
     "value": 65
   },
   {
@@ -480,9 +506,10 @@
     "period": "2025",
     "profession": "Science and Engineering",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-science-and-engineering",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-science-and-engineering-group",
     "value": 100
   },
   {
@@ -498,9 +525,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-social-research",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-social-research-group",
     "value": 105
   },
   {
@@ -516,9 +544,10 @@
     "period": "2025",
     "profession": "Statistics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-statistics",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-statistics-group",
     "value": 100
   },
   {
@@ -534,9 +563,10 @@
     "period": "2025",
     "profession": "Tax",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-tax",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-tax-group",
     "value": 10
   },
   {
@@ -552,9 +582,10 @@
     "period": "2025",
     "profession": "Veterinarian",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-veterinarian",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-veterinarian-group",
     "value": 5
   },
   {
@@ -570,9 +601,10 @@
     "period": "2025",
     "profession": "Clinical",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-clinical",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-clinical-group",
     "value": 170
   },
   {
@@ -588,9 +620,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-commercial",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-commercial-group",
     "value": 65
   },
   {
@@ -606,9 +639,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-communications",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-communications-group",
     "value": 160
   },
   {
@@ -624,9 +658,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-digital-and-data",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-digital-and-data-group",
     "value": 260
   },
   {
@@ -642,9 +677,10 @@
     "period": "2025",
     "profession": "Economics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-economics",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-economics-group",
     "value": 50
   },
   {
@@ -660,9 +696,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-finance",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-finance-group",
     "value": 310
   },
   {
@@ -678,9 +715,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-human-resources",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-human-resources-group",
     "value": 180
   },
   {
@@ -696,9 +734,10 @@
     "period": "2025",
     "profession": "Internal Audit",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-internal-audit",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-internal-audit-group",
     "value": 20
   },
   {
@@ -714,9 +753,10 @@
     "period": "2025",
     "profession": "Knowledge and Information Management",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-knowledge-and-information-management",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-knowledge-and-information-management-group",
     "value": 95
   },
   {
@@ -732,9 +772,10 @@
     "period": "2025",
     "profession": "Legal",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-legal",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-legal-group",
     "value": 195
   },
   {
@@ -750,9 +791,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-operational-delivery",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-operational-delivery-group",
     "value": 1410
   },
   {
@@ -768,9 +810,10 @@
     "period": "2025",
     "profession": "Planning",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-planning",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-planning-group",
     "value": 110
   },
   {
@@ -786,9 +829,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-policy",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-policy-group",
     "value": 1545
   },
   {
@@ -804,9 +848,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-project-delivery",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-project-delivery-group",
     "value": 85
   },
   {
@@ -822,9 +867,10 @@
     "period": "2025",
     "profession": "Property",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-property",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-property-group",
     "value": 60
   },
   {
@@ -840,9 +886,10 @@
     "period": "2025",
     "profession": "Science and Engineering",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-science-and-engineering",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-science-and-engineering-group",
     "value": 95
   },
   {
@@ -858,9 +905,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-social-research",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-social-research-group",
     "value": 100
   },
   {
@@ -876,9 +924,10 @@
     "period": "2025",
     "profession": "Statistics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-statistics",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-statistics-group",
     "value": 95
   },
   {
@@ -894,9 +943,10 @@
     "period": "2025",
     "profession": "Tax",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-tax",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-tax-group",
     "value": 5
   },
   {
@@ -912,9 +962,941 @@
     "period": "2025",
     "profession": "Veterinarian",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-veterinarian",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-veterinarian-group",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-total-core",
+    "value": 5885
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-scs-core",
+    "value": 195
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-grade_6_7-core",
+    "value": 1255
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-seo_heo-core",
+    "value": 2825
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-eo-core",
+    "value": 2825
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-grade-aa_ao-core",
+    "value": 675
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-scs-core",
+    "value": 185
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-grade_6_7-core",
+    "value": 1195
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-seo_heo-core",
+    "value": 2680
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-eo-core",
+    "value": 2680
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-grade-aa_ao-core",
+    "value": 615
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Clinical",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-clinical-core",
+    "value": 180
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-commercial-core",
+    "value": 70
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-communications-core",
+    "value": 165
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-digital-and-data-core",
+    "value": 245
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-economics-core",
+    "value": 50
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-finance-core",
+    "value": 315
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-human-resources-core",
+    "value": 190
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Internal Audit",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-internal-audit-core",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-knowledge-and-information-management-core",
+    "value": 100
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Legal",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-legal-core",
+    "value": 205
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-operational-delivery-core",
+    "value": 1490
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Planning",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-planning-core",
+    "value": 115
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-policy-core",
+    "value": 1615
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-project-delivery-core",
+    "value": 95
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-property-core",
+    "value": 65
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-science-and-engineering-core",
+    "value": 100
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-social-research-core",
+    "value": 105
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Statistics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-statistics-core",
+    "value": 100
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Veterinarian",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-headcount-profession-veterinarian-core",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Clinical",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-clinical-core",
+    "value": 170
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-commercial-core",
+    "value": 65
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-communications-core",
+    "value": 160
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-digital-and-data-core",
+    "value": 235
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-economics-core",
+    "value": 50
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-finance-core",
+    "value": 300
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-human-resources-core",
+    "value": 175
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Internal Audit",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-internal-audit-core",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-knowledge-and-information-management-core",
+    "value": 95
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Legal",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-legal-core",
+    "value": 190
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-operational-delivery-core",
+    "value": 1385
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Planning",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-planning-core",
+    "value": 110
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-policy-core",
+    "value": 1540
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-project-delivery-core",
+    "value": 85
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-property-core",
+    "value": 60
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-science-and-engineering-core",
+    "value": 95
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-social-research-core",
+    "value": 100
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Statistics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-statistics-core",
+    "value": 95
+  },
+  {
+    "body_id": "uk-state-body-welsh-government",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Veterinarian",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-welsh-government-2025-fte-profession-veterinarian-core",
     "value": 5
   }
 ]

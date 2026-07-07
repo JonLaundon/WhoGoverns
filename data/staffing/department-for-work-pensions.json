@@ -12,9 +12,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-total",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-total-group",
     "value": 96890
   },
   {
@@ -30,9 +31,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-scs",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-scs-group",
     "value": 360
   },
   {
@@ -48,9 +50,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-grade_6_7",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-grade_6_7-group",
     "value": 5490
   },
   {
@@ -66,9 +69,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-seo_heo",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-seo_heo-group",
     "value": 16980
   },
   {
@@ -84,9 +88,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-eo",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-eo-group",
     "value": 16980
   },
   {
@@ -102,9 +107,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-aa_ao",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-aa_ao-group",
     "value": 23960
   },
   {
@@ -120,9 +126,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "senior_civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-scs",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-scs-group",
     "value": 350
   },
   {
@@ -138,9 +145,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-grade_6_7",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-grade_6_7-group",
     "value": 5260
   },
   {
@@ -156,9 +164,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-seo_heo",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-seo_heo-group",
     "value": 16015
   },
   {
@@ -174,9 +183,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-eo",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-eo-group",
     "value": 16015
   },
   {
@@ -192,9 +202,10 @@
     "period": "2025",
     "profession": null,
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-aa_ao",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-aa_ao-group",
     "value": 20610
   },
   {
@@ -210,9 +221,10 @@
     "period": "2025",
     "profession": "Clinical",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-clinical",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-clinical-group",
     "value": 50
   },
   {
@@ -228,9 +240,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-commercial",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-commercial-group",
     "value": 305
   },
   {
@@ -246,9 +259,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-communications",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-communications-group",
     "value": 185
   },
   {
@@ -264,9 +278,10 @@
     "period": "2025",
     "profession": "Counter Fraud",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-counter-fraud",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-counter-fraud-group",
     "value": 6745
   },
   {
@@ -282,9 +297,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-digital-and-data",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-digital-and-data-group",
     "value": 4050
   },
   {
@@ -300,9 +316,10 @@
     "period": "2025",
     "profession": "Economics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-economics",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-economics-group",
     "value": 230
   },
   {
@@ -318,9 +335,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-finance",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-finance-group",
     "value": 1305
   },
   {
@@ -336,9 +354,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-human-resources",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-human-resources-group",
     "value": 1880
   },
   {
@@ -354,9 +373,10 @@
     "period": "2025",
     "profession": "Intelligence Analysis",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-intelligence-analysis",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-intelligence-analysis-group",
     "value": 35
   },
   {
@@ -372,9 +392,10 @@
     "period": "2025",
     "profession": "Internal Audit",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-internal-audit",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-internal-audit-group",
     "value": 10
   },
   {
@@ -390,9 +411,10 @@
     "period": "2025",
     "profession": "Knowledge and Information Management",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-knowledge-and-information-management",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-knowledge-and-information-management-group",
     "value": 165
   },
   {
@@ -408,9 +430,10 @@
     "period": "2025",
     "profession": "Legal",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-legal",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-legal-group",
     "value": 50
   },
   {
@@ -426,9 +449,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-operational-delivery",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-operational-delivery-group",
     "value": 75180
   },
   {
@@ -444,9 +468,10 @@
     "period": "2025",
     "profession": "Operational Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-operational-research",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-operational-research-group",
     "value": 160
   },
   {
@@ -462,9 +487,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-policy",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-policy-group",
     "value": 1235
   },
   {
@@ -480,9 +506,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-project-delivery",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-project-delivery-group",
     "value": 1370
   },
   {
@@ -498,9 +525,10 @@
     "period": "2025",
     "profession": "Property",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-property",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-property-group",
     "value": 270
   },
   {
@@ -516,9 +544,10 @@
     "period": "2025",
     "profession": "Risk Management",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-risk-management",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-risk-management-group",
     "value": 45
   },
   {
@@ -534,9 +563,10 @@
     "period": "2025",
     "profession": "Science and Engineering",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-science-and-engineering",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-science-and-engineering-group",
     "value": 545
   },
   {
@@ -552,9 +582,10 @@
     "period": "2025",
     "profession": "Security",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-security",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-security-group",
     "value": 465
   },
   {
@@ -570,9 +601,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-social-research",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-social-research-group",
     "value": 195
   },
   {
@@ -588,9 +620,10 @@
     "period": "2025",
     "profession": "Statistics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-statistics",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-statistics-group",
     "value": 245
   },
   {
@@ -606,9 +639,10 @@
     "period": "2025",
     "profession": "Clinical",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-clinical",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-clinical-group",
     "value": 45
   },
   {
@@ -624,9 +658,10 @@
     "period": "2025",
     "profession": "Commercial",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-commercial",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-commercial-group",
     "value": 290
   },
   {
@@ -642,9 +677,10 @@
     "period": "2025",
     "profession": "Communications",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-communications",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-communications-group",
     "value": 175
   },
   {
@@ -660,9 +696,10 @@
     "period": "2025",
     "profession": "Counter Fraud",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-counter-fraud",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-counter-fraud-group",
     "value": 6070
   },
   {
@@ -678,9 +715,10 @@
     "period": "2025",
     "profession": "Digital and Data",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-digital-and-data",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-digital-and-data-group",
     "value": 3900
   },
   {
@@ -696,9 +734,10 @@
     "period": "2025",
     "profession": "Economics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-economics",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-economics-group",
     "value": 225
   },
   {
@@ -714,9 +753,10 @@
     "period": "2025",
     "profession": "Finance",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-finance",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-finance-group",
     "value": 1200
   },
   {
@@ -732,9 +772,10 @@
     "period": "2025",
     "profession": "Human Resources",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-human-resources",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-human-resources-group",
     "value": 1750
   },
   {
@@ -750,9 +791,10 @@
     "period": "2025",
     "profession": "Intelligence Analysis",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-intelligence-analysis",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-intelligence-analysis-group",
     "value": 35
   },
   {
@@ -768,9 +810,10 @@
     "period": "2025",
     "profession": "Internal Audit",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-internal-audit",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-internal-audit-group",
     "value": 10
   },
   {
@@ -786,9 +829,10 @@
     "period": "2025",
     "profession": "Knowledge and Information Management",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-knowledge-and-information-management",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-knowledge-and-information-management-group",
     "value": 155
   },
   {
@@ -804,9 +848,10 @@
     "period": "2025",
     "profession": "Legal",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-legal",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-legal-group",
     "value": 45
   },
   {
@@ -822,9 +867,10 @@
     "period": "2025",
     "profession": "Operational Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-operational-delivery",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-operational-delivery-group",
     "value": 67195
   },
   {
@@ -840,9 +886,10 @@
     "period": "2025",
     "profession": "Operational Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-operational-research",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-operational-research-group",
     "value": 150
   },
   {
@@ -858,9 +905,10 @@
     "period": "2025",
     "profession": "Policy",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-policy",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-policy-group",
     "value": 1170
   },
   {
@@ -876,9 +924,10 @@
     "period": "2025",
     "profession": "Project Delivery",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-project-delivery",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-project-delivery-group",
     "value": 1265
   },
   {
@@ -894,9 +943,10 @@
     "period": "2025",
     "profession": "Property",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-property",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-property-group",
     "value": 260
   },
   {
@@ -912,9 +962,10 @@
     "period": "2025",
     "profession": "Risk Management",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-risk-management",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-risk-management-group",
     "value": 45
   },
   {
@@ -930,9 +981,10 @@
     "period": "2025",
     "profession": "Science and Engineering",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-science-and-engineering",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-science-and-engineering-group",
     "value": 515
   },
   {
@@ -948,9 +1000,10 @@
     "period": "2025",
     "profession": "Security",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-security",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-security-group",
     "value": 435
   },
   {
@@ -966,9 +1019,10 @@
     "period": "2025",
     "profession": "Social Research",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-social-research",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-social-research-group",
     "value": 185
   },
   {
@@ -984,9 +1038,1017 @@
     "period": "2025",
     "profession": "Statistics",
     "record_status": "extracted",
+    "scope": "group",
     "source_id": "source-official-dataset-civil-service-statistics-2025",
     "staff_group": "civil_service",
-    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-statistics",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-statistics-group",
     "value": 225
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-total-core",
+    "value": 93805
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-scs-core",
+    "value": 320
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-grade_6_7-core",
+    "value": 4850
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-seo_heo-core",
+    "value": 15375
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-eo-core",
+    "value": 15375
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-grade-aa_ao-core",
+    "value": 23690
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-scs-core",
+    "value": 310
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-grade_6_7-core",
+    "value": 4640
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-seo_heo-core",
+    "value": 14485
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-eo-core",
+    "value": 14485
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-grade-aa_ao-core",
+    "value": 20365
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Clinical",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-clinical-core",
+    "value": 50
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-commercial-core",
+    "value": 275
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-communications-core",
+    "value": 135
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Counter Fraud",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-counter-fraud-core",
+    "value": 6745
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-digital-and-data-core",
+    "value": 3935
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-economics-core",
+    "value": 220
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-finance-core",
+    "value": 1275
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-human-resources-core",
+    "value": 1815
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Intelligence Analysis",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-intelligence-analysis-core",
+    "value": 35
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Internal Audit",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-internal-audit-core",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-knowledge-and-information-management-core",
+    "value": 140
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-operational-delivery-core",
+    "value": 73175
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-operational-research-core",
+    "value": 160
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-policy-core",
+    "value": 1120
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-project-delivery-core",
+    "value": 1345
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-property-core",
+    "value": 255
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Risk Management",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-risk-management-core",
+    "value": 45
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-science-and-engineering-core",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Security",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-security-core",
+    "value": 460
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-social-research-core",
+    "value": 195
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Statistics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-headcount-profession-statistics-core",
+    "value": 225
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Clinical",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-clinical-core",
+    "value": 45
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-commercial-core",
+    "value": 260
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-communications-core",
+    "value": 125
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Counter Fraud",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-counter-fraud-core",
+    "value": 6070
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-digital-and-data-core",
+    "value": 3790
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-economics-core",
+    "value": 215
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-finance-core",
+    "value": 1170
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-human-resources-core",
+    "value": 1690
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Intelligence Analysis",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-intelligence-analysis-core",
+    "value": 35
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Internal Audit",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-internal-audit-core",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-knowledge-and-information-management-core",
+    "value": 130
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-operational-delivery-core",
+    "value": 65285
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-operational-research-core",
+    "value": 150
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-policy-core",
+    "value": 1060
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-project-delivery-core",
+    "value": 1245
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-property-core",
+    "value": 245
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Risk Management",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-risk-management-core",
+    "value": 45
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-science-and-engineering-core",
+    "value": 20
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Security",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-security-core",
+    "value": 430
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-social-research-core",
+    "value": 185
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Statistics",
+    "record_status": "extracted",
+    "scope": "core",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-department-for-work-pensions-2025-fte-profession-statistics-core",
+    "value": 210
   }
 ]
