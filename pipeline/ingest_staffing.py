@@ -199,10 +199,11 @@ def main():
                 if m and i < len(vals):
                     add(metric, num(vals[i]), profession=m.group(1))
 
-        for rec in recs:
-            if not args.dry_run:
-                write_json(os.path.join(STAFFING, rec["staffing_record_id"] + ".json"), rec)
-            written.append(rec)
+        # One file per body: an array of that body's staffing records (consolidated; bulk
+        # derived data, not hand-curated per-record).
+        if recs and not args.dry_run:
+            write_json(os.path.join(STAFFING, body_slug + ".json"), recs)
+        written.extend(recs)
 
     print("--- ingest_staffing summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
     print("bodies with staffing records: {}".format(len(body_org)))

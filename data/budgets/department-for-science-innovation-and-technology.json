@@ -1,0 +1,287 @@
+[
+  {
+    "amount": -2000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-capital_ame-net",
+    "budget_type": "capital_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": -2000,
+    "basis": "gross",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-capital_ame-gross",
+    "budget_type": "capital_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 3206269000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-capital_del-net",
+    "budget_type": "capital_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 3318895000,
+    "basis": "gross",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-capital_del-gross",
+    "budget_type": "capital_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 249352000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-resource_ame-net",
+    "budget_type": "resource_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 249765000,
+    "basis": "gross",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-resource_ame-gross",
+    "budget_type": "resource_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 568654000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-resource_del-net",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 667766000,
+    "basis": "gross",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-resource_del-gross",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 198678000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-resource_del-net-1-of-which-public-and-common-services",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "1. of which: public and common services",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 300611000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-resource_del-net-4-of-which-enterprise-and-economic-development",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "4. of which: enterprise and economic development",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 21327000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-resource_del-net-8-recreation-culture-and-religion",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "8. Recreation, culture and religion",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 47918000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-resource_del-net-4-of-which-science-and-technology",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "4. of which: science and technology",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 117000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-resource_del-net-4-of-which-employment-policies",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "4. of which: employment policies",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 3000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-resource_del-net-9-education",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "9. Education",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 4024273000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "budget_record_id": "budget-department-for-science-innovation-and-technology-2024-25-total-managed-expenditure-net",
+    "budget_type": "total_managed_expenditure",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": "Sum of resource/capital DEL and AME (net).",
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  }
+]

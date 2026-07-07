@@ -1,0 +1,236 @@
+[
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-headcount-total",
+    "value": 100
+  },
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-headcount-grade-grade_6_7",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-headcount-grade-seo_heo",
+    "value": 45
+  },
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-headcount-grade-eo",
+    "value": 45
+  },
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-headcount-grade-aa_ao",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-fte-grade-grade_6_7",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-fte-grade-seo_heo",
+    "value": 40
+  },
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-fte-grade-eo",
+    "value": 40
+  },
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-fte-grade-aa_ao",
+    "value": 10
+  },
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-headcount-profession-finance",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-headcount-profession-operational-delivery",
+    "value": 80
+  },
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-fte-profession-finance",
+    "value": 5
+  },
+  {
+    "body_id": "uk-state-body-teaching-regulation-agency",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": null,
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-teaching-regulation-agency-2025-fte-profession-operational-delivery",
+    "value": 75
+  }
+]

@@ -1,0 +1,192 @@
+[
+  {
+    "amount": 2198513000,
+    "basis": "net",
+    "body_id": "uk-state-body-the-scottish-government",
+    "budget_record_id": "budget-the-scottish-government-2024-25-capital_ame-net",
+    "budget_type": "capital_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 2889804000,
+    "basis": "gross",
+    "body_id": "uk-state-body-the-scottish-government",
+    "budget_record_id": "budget-the-scottish-government-2024-25-capital_ame-gross",
+    "budget_type": "capital_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 5839556000,
+    "basis": "net",
+    "body_id": "uk-state-body-the-scottish-government",
+    "budget_record_id": "budget-the-scottish-government-2024-25-capital_del-net",
+    "budget_type": "capital_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 5839556000,
+    "basis": "gross",
+    "body_id": "uk-state-body-the-scottish-government",
+    "budget_record_id": "budget-the-scottish-government-2024-25-capital_del-gross",
+    "budget_type": "capital_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 27379478000,
+    "basis": "net",
+    "body_id": "uk-state-body-the-scottish-government",
+    "budget_record_id": "budget-the-scottish-government-2024-25-resource_ame-net",
+    "budget_type": "resource_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 37842561000,
+    "basis": "gross",
+    "body_id": "uk-state-body-the-scottish-government",
+    "budget_record_id": "budget-the-scottish-government-2024-25-resource_ame-gross",
+    "budget_type": "resource_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 25722446000,
+    "basis": "net",
+    "body_id": "uk-state-body-the-scottish-government",
+    "budget_record_id": "budget-the-scottish-government-2024-25-resource_del-net",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 25722446000,
+    "basis": "gross",
+    "body_id": "uk-state-body-the-scottish-government",
+    "budget_record_id": "budget-the-scottish-government-2024-25-resource_del-gross",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 25722446000,
+    "basis": "net",
+    "body_id": "uk-state-body-the-scottish-government",
+    "budget_record_id": "budget-the-scottish-government-2024-25-resource_del-net-unallocated",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "Unallocated",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 61139993000,
+    "basis": "net",
+    "body_id": "uk-state-body-the-scottish-government",
+    "budget_record_id": "budget-the-scottish-government-2024-25-total-managed-expenditure-net",
+    "budget_type": "total_managed_expenditure",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": "Sum of resource/capital DEL and AME (net).",
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  }
+]

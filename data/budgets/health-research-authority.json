@@ -1,0 +1,116 @@
+[
+  {
+    "amount": 4410000,
+    "basis": "net",
+    "body_id": "uk-state-body-health-research-authority",
+    "budget_record_id": "budget-health-research-authority-2024-25-capital_del-net",
+    "budget_type": "capital_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 4411000,
+    "basis": "gross",
+    "body_id": "uk-state-body-health-research-authority",
+    "budget_record_id": "budget-health-research-authority-2024-25-capital_del-gross",
+    "budget_type": "capital_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 18385000,
+    "basis": "net",
+    "body_id": "uk-state-body-health-research-authority",
+    "budget_record_id": "budget-health-research-authority-2024-25-resource_del-net",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 18790000,
+    "basis": "gross",
+    "body_id": "uk-state-body-health-research-authority",
+    "budget_record_id": "budget-health-research-authority-2024-25-resource_del-gross",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 18385000,
+    "basis": "net",
+    "body_id": "uk-state-body-health-research-authority",
+    "budget_record_id": "budget-health-research-authority-2024-25-resource_del-net-7-health",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "7. Health",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 22795000,
+    "basis": "net",
+    "body_id": "uk-state-body-health-research-authority",
+    "budget_record_id": "budget-health-research-authority-2024-25-total-managed-expenditure-net",
+    "budget_type": "total_managed_expenditure",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": "Sum of resource/capital DEL and AME (net).",
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  }
+]

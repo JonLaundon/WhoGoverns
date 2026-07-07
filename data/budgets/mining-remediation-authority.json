@@ -1,0 +1,154 @@
+[
+  {
+    "amount": 18941000,
+    "basis": "net",
+    "body_id": "uk-state-body-mining-remediation-authority",
+    "budget_record_id": "budget-mining-remediation-authority-2024-25-capital_del-net",
+    "budget_type": "capital_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 19049000,
+    "basis": "gross",
+    "body_id": "uk-state-body-mining-remediation-authority",
+    "budget_record_id": "budget-mining-remediation-authority-2024-25-capital_del-gross",
+    "budget_type": "capital_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 61101000,
+    "basis": "net",
+    "body_id": "uk-state-body-mining-remediation-authority",
+    "budget_record_id": "budget-mining-remediation-authority-2024-25-resource_del-net",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 81812000,
+    "basis": "gross",
+    "body_id": "uk-state-body-mining-remediation-authority",
+    "budget_record_id": "budget-mining-remediation-authority-2024-25-resource_del-gross",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 61101000,
+    "basis": "net",
+    "body_id": "uk-state-body-mining-remediation-authority",
+    "budget_record_id": "budget-mining-remediation-authority-2024-25-resource_del-net-5-environment-protection",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "5. Environment protection",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 112871000,
+    "basis": "net",
+    "body_id": "uk-state-body-mining-remediation-authority",
+    "budget_record_id": "budget-mining-remediation-authority-2024-25-resource_ame-net",
+    "budget_type": "resource_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 112871000,
+    "basis": "gross",
+    "body_id": "uk-state-body-mining-remediation-authority",
+    "budget_record_id": "budget-mining-remediation-authority-2024-25-resource_ame-gross",
+    "budget_type": "resource_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 192913000,
+    "basis": "net",
+    "body_id": "uk-state-body-mining-remediation-authority",
+    "budget_record_id": "budget-mining-remediation-authority-2024-25-total-managed-expenditure-net",
+    "budget_type": "total_managed_expenditure",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": "Sum of resource/capital DEL and AME (net).",
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  }
+]

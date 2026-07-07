@@ -1,0 +1,287 @@
+[
+  {
+    "amount": -182947000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-capital_ame-net",
+    "budget_type": "capital_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": -171265000,
+    "basis": "gross",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-capital_ame-gross",
+    "budget_type": "capital_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 4212558000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-capital_del-net",
+    "budget_type": "capital_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 4436526000,
+    "basis": "gross",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-capital_del-gross",
+    "budget_type": "capital_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 210620000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-resource_ame-net",
+    "budget_type": "resource_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 280792000,
+    "basis": "gross",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-resource_ame-gross",
+    "budget_type": "resource_ame",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 5011191000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-resource_del-net",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 6992604000,
+    "basis": "gross",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-resource_del-gross",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 4659376000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-resource_del-net-4-of-which-transport",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "4. of which: transport",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 9169000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-resource_del-net-10-social-protection",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "10. Social protection",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 16119000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-resource_del-net-4-of-which-science-and-technology",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "4. of which: science and technology",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 2859000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-resource_del-net-4-of-which-enterprise-and-economic-development",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "4. of which: enterprise and economic development",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 1360000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-resource_del-net-5-environment-protection",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "5. Environment protection",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 322308000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-resource_del-net-n-a",
+    "budget_type": "resource_del",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": null,
+    "programme": "n/a",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  },
+  {
+    "amount": 9251422000,
+    "basis": "net",
+    "body_id": "uk-state-body-department-for-transport",
+    "budget_record_id": "budget-department-for-transport-2024-25-total-managed-expenditure-net",
+    "budget_type": "total_managed_expenditure",
+    "cash_or_real_terms": "cash",
+    "citation": {
+      "dataset": "source-official-dataset-hmt-oscar-outturn-2024-25",
+      "financial_year": "2024-25",
+      "table": "BUD_24-25"
+    },
+    "currency": "GBP",
+    "financial_year": "2024-25",
+    "notes": "Sum of resource/capital DEL and AME (net).",
+    "programme": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25"
+  }
+]

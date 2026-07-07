@@ -48,47 +48,53 @@ def main():
         if not os.path.exists(schema_path):
             continue
         validator = Draft202012Validator(load(schema_path))
+        # Bulk derived datasets (budget/staffing) are stored one FILE PER BODY: a JSON
+        # array of records. The hand-curated structural records stay one file per record.
+        array_folder = folder in ("budgets", "staffing")
         for path in sorted(glob.glob(os.path.join(REPO, "data", folder, "*.json"))):
-            records += 1
-            rec = load(path)
+            data = load(path)
             rel = os.path.relpath(path, REPO)
-            errs = sorted(validator.iter_errors(rec), key=lambda e: list(e.path))
-            if errs:
-                errors += len(errs)
-                print("FAIL " + rel)
-                for e in errs:
-                    loc = "/".join(str(x) for x in e.path) or "(root)"
-                    print("   - {}: {}".format(loc, e.message))
-            else:
-                print("ok   " + rel)
-            # referential warnings
-            if folder == "bodies":
-                for field in ("sponsor_department_id", "parent_body_id"):
-                    ref = rec.get(field)
-                    if ref and ref not in body_ids:
-                        warnings += 1
-                        print("   ! warn {} -> {} not yet among body records (expected until more bodies land)".format(field, ref))
-                for field in ("classification_source_ids", "founding_source_ids", "framework_document_source_ids", "annual_report_source_ids"):
-                    for ref in rec.get(field, []):
-                        if ref not in source_ids:
+            items = data if isinstance(data, list) else [data]
+            file_ok = True
+            for rec in items:
+                records += 1
+                errs = sorted(validator.iter_errors(rec), key=lambda e: list(e.path))
+                if errs:
+                    errors += len(errs); file_ok = False
+                    print("FAIL " + rel)
+                    for e in errs:
+                        loc = "/".join(str(x) for x in e.path) or "(root)"
+                        print("   - {}: {}".format(loc, e.message))
+                # referential warnings (per record)
+                if folder == "bodies":
+                    for field in ("sponsor_department_id", "parent_body_id"):
+                        ref = rec.get(field)
+                        if ref and ref not in body_ids:
                             warnings += 1
-                            print("   ! warn {} -> {} not among source records".format(field, ref))
-            if folder == "relationships":
-                for field in ("from_body_id", "to_body_id"):
-                    ref = rec.get(field)
+                            print("   ! warn {} -> {} not yet among body records (expected until more bodies land)".format(field, ref))
+                    for field in ("classification_source_ids", "founding_source_ids", "framework_document_source_ids", "annual_report_source_ids"):
+                        for ref in rec.get(field, []):
+                            if ref not in source_ids:
+                                warnings += 1
+                                print("   ! warn {} -> {} not among source records".format(field, ref))
+                if folder == "relationships":
+                    for field in ("from_body_id", "to_body_id"):
+                        ref = rec.get(field)
+                        if ref and ref not in body_ids:
+                            warnings += 1
+                            print("   ! warn {} -> {} not among body records".format(field, ref))
+                if folder in ("offices", "person-roles", "budgets", "staffing"):
+                    ref = rec.get("body_id")
                     if ref and ref not in body_ids:
                         warnings += 1
-                        print("   ! warn {} -> {} not among body records".format(field, ref))
-            if folder in ("offices", "person-roles"):
-                ref = rec.get("body_id")
-                if ref and ref not in body_ids:
-                    warnings += 1
-                    print("   ! warn body_id -> {} not among body records".format(ref))
-            if folder == "person-roles":
-                ref = rec.get("office_id")
-                if ref and ref not in office_ids:
-                    warnings += 1
-                    print("   ! warn office_id -> {} not among office records".format(ref))
+                        print("   ! warn body_id -> {} not among body records".format(ref))
+                if folder == "person-roles":
+                    ref = rec.get("office_id")
+                    if ref and ref not in office_ids:
+                        warnings += 1
+                        print("   ! warn office_id -> {} not among office records".format(ref))
+            if file_ok:
+                print("ok   " + rel + ("  ({} records)".format(len(items)) if array_folder else ""))
 
     # provision_key duplicate check (canonical records only) — none in Spiral 1
     seen = {}

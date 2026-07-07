@@ -1,0 +1,848 @@
+[
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-total",
+    "value": 9435
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-grade-scs",
+    "value": 575
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-grade-grade_6_7",
+    "value": 3620
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-grade-seo_heo",
+    "value": 3710
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-grade-eo",
+    "value": 3710
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-grade-aa_ao",
+    "value": 505
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "scs",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "senior_civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-grade-scs",
+    "value": 575
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "grade_6_7",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-grade-grade_6_7",
+    "value": 3525
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "seo_heo",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-grade-seo_heo",
+    "value": 3665
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "eo",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-grade-eo",
+    "value": 3665
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": "aa_ao",
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": null,
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-grade-aa_ao",
+    "value": 490
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-commercial",
+    "value": 220
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-communications",
+    "value": 180
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Corporate Finance",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-corporate-finance",
+    "value": 60
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-digital-and-data",
+    "value": 370
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-economics",
+    "value": 220
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-finance",
+    "value": 300
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-human-resources",
+    "value": 745
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Internal Audit",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-internal-audit",
+    "value": 85
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-knowledge-and-information-management",
+    "value": 175
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Legal",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-legal",
+    "value": 55
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-operational-delivery",
+    "value": 1050
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-policy",
+    "value": 2460
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-project-delivery",
+    "value": 1175
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-property",
+    "value": 230
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Risk Management",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-risk-management",
+    "value": 65
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-science-and-engineering",
+    "value": 35
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Security",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-security",
+    "value": 985
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "headcount",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-headcount-profession-social-research",
+    "value": 45
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Commercial",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-commercial",
+    "value": 215
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Communications",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-communications",
+    "value": 175
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Corporate Finance",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-corporate-finance",
+    "value": 60
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Digital and Data",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-digital-and-data",
+    "value": 365
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Economics",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-economics",
+    "value": 220
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Finance",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-finance",
+    "value": 295
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Human Resources",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-human-resources",
+    "value": 725
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Internal Audit",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-internal-audit",
+    "value": 85
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Knowledge and Information Management",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-knowledge-and-information-management",
+    "value": 150
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Legal",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-legal",
+    "value": 50
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Operational Delivery",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-operational-delivery",
+    "value": 1030
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Policy",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-policy",
+    "value": 2435
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Project Delivery",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-project-delivery",
+    "value": 1145
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Property",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-property",
+    "value": 230
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Risk Management",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-risk-management",
+    "value": 60
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Science and Engineering",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-science-and-engineering",
+    "value": 35
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Security",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-security",
+    "value": 970
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "citation": {
+      "as_at": "2025-03-31",
+      "dataset": "source-official-dataset-civil-service-statistics-2025",
+      "table": "CSS_2025"
+    },
+    "grade": null,
+    "metric": "fte",
+    "notes": "Departmental GROUP total (includes agencies, which are also held as separate bodies) — do not sum a department with its agencies.",
+    "period": "2025",
+    "profession": "Social Research",
+    "record_status": "extracted",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "staff_group": "civil_service",
+    "staffing_record_id": "staffing-foreign-commonwealth-development-office-2025-fte-profession-social-research",
+    "value": 45
+  }
+]

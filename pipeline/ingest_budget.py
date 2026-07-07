@@ -173,10 +173,11 @@ def main():
                 "citation": {"dataset": SOURCE_ID, "table": "BUD_24-25", "financial_year": FY},
                 "notes": "Sum of resource/capital DEL and AME (net).", "record_status": "extracted",
             })
-        for rec in records:
-            if not args.dry_run:
-                write_json(os.path.join(BUDGETS, rec["budget_record_id"] + ".json"), rec)
-            written += 1
+        # One file per body: an array of that body's budget records (consolidated to keep
+        # the file count manageable — bulk derived data, not hand-curated per-record).
+        if records and not args.dry_run:
+            write_json(os.path.join(BUDGETS, body_slug + ".json"), records)
+        written += len(records)
 
     print("--- ingest_budget summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
     print("bodies with budget records:   {}".format(len(agg)))
