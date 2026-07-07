@@ -136,6 +136,8 @@ a:focus, input:focus, button:focus { outline: 3px solid var(--focus); outline-of
 .detail-body .tab.active { color: var(--ink); font-weight: 700; border-bottom-color: var(--ink); }
 .detail-body .tab .tab-sub { font-weight: 400; font-size: 0.72rem; color: var(--mid); }
 .detail-body .tabpanel[hidden] { display: none; }
+.detail-body .rel-list { max-height: 220px; overflow-y: auto; margin: 6px 0; padding-left: 18px; }
+.detail-body .rel-list li { font-size: 0.85rem; margin: 1px 0; }
 .detail-body .flag { display: inline-block; font-size: 0.72rem; background: #fff7bf; border: 1px solid #ffdd00;
   padding: 1px 6px; border-radius: 3px; }
 

@@ -443,7 +443,7 @@ function bodyHtml(d) {
   const ministers = cy.nodes().filter((n) => n.data("kind") === "office" && n.data("body_id") === d.id);
   let mins = "";
   if (ministers.length) {
-    mins = "<h3>Ministers &amp; offices</h3><ul>" + ministers.map((o) =>
+    mins = "<h3>Led by</h3><ul>" + ministers.map((o) =>
       `<li><button class="linkish" data-goto="${esc(o.id())}">${esc(o.data("label"))}</button>` +
       (o.data("holder") ? ` — ${esc(o.data("holder"))}` : "") + "</li>").join("") + "</ul>";
   }
@@ -456,13 +456,23 @@ function bodyHtml(d) {
   const sponsorHtml = deptSponsors.nonempty()
     ? deptSponsors.map((s) => `<button class="linkish" data-goto="${esc(s.id())}">${esc(s.data("label"))}</button>`).join(", ")
     : (d.sponsor_department_id ? gotoBtn(d.sponsor_department_id) : "—");
+  // Downward relationships (MoG-style) — the bodies this one sponsors/parents, from the
+  // sourced sponsor edges. A department "Sponsors" its ALBs; a body is "Parent of" children.
+  const node = cy.getElementById(d.id);
+  const down = node.outgoers("edge[kind = 'sponsors']").targets().sort((a, b) => a.data("label").localeCompare(b.data("label")));
+  const isDept = ["ministerial_department", "non_ministerial_department"].includes(d.body_type);
+  const relDown = down.nonempty()
+    ? `<h3>${isDept ? "Sponsors" : "Parent of"} <span class="muted">(${down.length})</span></h3>`
+      + `<ul class="rel-list">` + down.map((n) => `<li><button class="linkish" data-goto="${esc(n.id())}">${esc(n.data("label"))}</button></li>`).join("") + `</ul>`
+    : "";
   const infoPanel = `
     <dl>
       <dt>Status</dt><dd>${esc(d.status)}${d.forming ? " (in formation)" : ""}</dd>
-      <dt>Sponsor${deptSponsors.length > 1 ? "s" : ""}</dt><dd>${sponsorHtml}</dd>
-      ${d.parent_body_id ? `<dt>Parent</dt><dd>${gotoBtn(d.parent_body_id)}</dd>` : ""}
+      <dt>Sponsored by</dt><dd>${sponsorHtml}</dd>
+      ${d.parent_body_id ? `<dt>Child of</dt><dd>${gotoBtn(d.parent_body_id)}</dd>` : ""}
       <dt>On GOV.UK</dt><dd>${govuk ? `<a href="${esc(govuk)}" rel="noopener" target="_blank">gov.uk page ↗</a>` : "—"}</dd>
     </dl>
+    ${relDown}
     ${mins}
     ${aliases}
     <h3>Source</h3>
