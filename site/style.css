@@ -32,6 +32,18 @@
   /* Fonts (colours unchanged) — mirrors \setmainfont{Georgia} + \titlefont{Beautique Display}. */
   --font-body: Georgia, "Times New Roman", Times, serif;
   --font-display: "Beautique Display", Georgia, "Times New Roman", serif;
+
+  /* Data-viz categorical palette (validated reference set, dataviz skill) — light steps.
+     Used ONLY for chart segments; the map/entity colours above are unchanged. */
+  --series-1: #2a78d6; --series-2: #1baf7a; --series-3: #eda100; --series-4: #008300;
+  --series-5: #4a3aa7; --series-6: #e34948; --series-7: #e87ba4; --series-8: #eb6834;
+  --series-other: #898781;
+}
+/* Dark steps — same hues stepped for the dark surface (validated as a set). */
+body.dark {
+  --series-1: #3987e5; --series-2: #199e70; --series-3: #c98500; --series-4: #008300;
+  --series-5: #9085e9; --series-6: #e66767; --series-7: #d55181; --series-8: #d95926;
+  --series-other: #898781;
 }
 
 * { box-sizing: border-box; }
@@ -138,6 +150,23 @@ a:focus, input:focus, button:focus { outline: 3px solid var(--focus); outline-of
 .detail-body .tabpanel[hidden] { display: none; }
 .detail-body .rel-list { max-height: 220px; overflow-y: auto; margin: 6px 0; padding-left: 18px; }
 .detail-body .rel-list li { font-size: 0.85rem; margin: 1px 0; }
+
+/* Data-viz: sub-toggle (By Type / By Programme etc.) + hollow donut + legend */
+.viz-toggle { display: flex; flex-wrap: wrap; gap: 4px; margin: 10px 0 6px; }
+.viz-toggle button { font: inherit; font-size: 0.78rem; padding: 3px 9px; cursor: pointer;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 999px; color: var(--mid); }
+.viz-toggle button.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.viz-view[hidden] { display: none; }
+.donut-wrap { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin: 4px 0 2px; }
+.donut { flex: none; }
+.donut .donut-total { font-family: var(--font-body); font-weight: 700; fill: var(--ink); }
+.donut .donut-cap { fill: var(--mid); }
+.donut-legend { list-style: none; margin: 0; padding: 0; flex: 1 1 auto; min-width: 150px; }
+.donut-legend li { display: flex; align-items: baseline; gap: 6px; font-size: 0.78rem; margin: 2px 0; }
+.donut-legend .dot { width: 9px; height: 9px; border-radius: 2px; flex: none; align-self: center; }
+.donut-legend .lbl { flex: 1 1 auto; }
+.donut-legend .val { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.donut-legend .pct { color: var(--mid); }
 .detail-body .flag { display: inline-block; font-size: 0.72rem; background: #fff7bf; border: 1px solid #ffdd00;
   padding: 1px 6px; border-radius: 3px; }
 

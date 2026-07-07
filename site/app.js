@@ -429,6 +429,18 @@ function renderDetail(d) {
       el.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b === btn));
       el.querySelectorAll(".tabpanel").forEach((p) => { p.hidden = p.getAttribute("data-panel") !== k; });
     }));
+  // Data-viz sub-toggles (By type / By programme, By grade / By profession) — scoped to
+  // the toggle's own group so budget and staffing toggles don't collide.
+  el.querySelectorAll(".viz-toggle button").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      const bar = btn.parentElement, k = btn.getAttribute("data-view");
+      bar.querySelectorAll("button").forEach((b) => b.classList.toggle("active", b === btn));
+      let sib = bar.nextElementSibling;
+      while (sib && sib.classList.contains("viz-view")) {
+        sib.hidden = sib.getAttribute("data-view") !== k;
+        sib = sib.nextElementSibling;
+      }
+    }));
 }
 function nodeLabel(id) { const n = cy.getElementById(id); return n.empty() ? id : n.data("label"); }
 function gotoBtn(id) {
@@ -507,6 +519,62 @@ function fmtGBP(n) {
 }
 function fmtNum(n) { return n == null ? "—" : n.toLocaleString("en-GB"); }
 
+// ---- Data-viz: hollow donut + legend (dataviz skill: validated categorical palette,
+// colour carries identity, figures + % in the legend, native per-segment tooltip). ----
+const SERIES = ["var(--series-1)", "var(--series-2)", "var(--series-3)", "var(--series-4)",
+  "var(--series-5)", "var(--series-6)", "var(--series-7)", "var(--series-8)"];
+
+// Keep the top n by value; fold the remainder into a muted "Other" so a categorical
+// hue is never cycled (skill non-negotiable).
+function topN(items, n) {
+  const sorted = items.filter((x) => x.value > 0).sort((a, b) => b.value - a.value);
+  if (sorted.length <= n) return sorted;
+  const rest = sorted.slice(n).reduce((s, x) => s + x.value, 0);
+  const head = sorted.slice(0, n);
+  if (rest > 0) head.push({ label: "Other", value: rest, other: true });
+  return head;
+}
+function colourise(segs) {
+  return segs.map((s, i) => ({ ...s, color: s.other ? "var(--series-other)" : SERIES[i % SERIES.length] }));
+}
+
+function donutSVG(segments, centerMain, centerCap) {
+  const total = segments.reduce((s, x) => s + x.value, 0) || 1;
+  const r = 52, cx = 70, cy = 70, sw = 22, C = 2 * Math.PI * r, gap = 2;
+  let offset = 0;
+  const rings = segments.map((s) => {
+    const frac = s.value / total;
+    const len = Math.max(1, frac * C - gap);
+    const seg = `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${s.color}" stroke-width="${sw}"`
+      + ` stroke-dasharray="${len.toFixed(2)} ${(C - len).toFixed(2)}" stroke-dashoffset="${(-offset).toFixed(2)}"`
+      + ` transform="rotate(-90 ${cx} ${cy})"><title>${esc(s.label)} — ${(frac * 100).toFixed(0)}%</title></circle>`;
+    offset += frac * C;
+    return seg;
+  }).join("");
+  const main = centerMain ? `<text x="${cx}" y="${cy - 1}" text-anchor="middle" dominant-baseline="middle" class="donut-total" font-size="15">${esc(centerMain)}</text>` : "";
+  const cap = centerCap ? `<text x="${cx}" y="${cy + 15}" text-anchor="middle" class="donut-cap" font-size="8.5">${esc(centerCap)}</text>` : "";
+  return `<svg class="donut" viewBox="0 0 140 140" width="128" height="128" role="img" aria-label="donut chart">${rings}${main}${cap}</svg>`;
+}
+
+// segments: [{label, value}] (colours assigned here). fmt formats the absolute figure.
+function donutBlock(segments, fmt, centerMain, centerCap) {
+  const segs = colourise(segments);
+  const total = segs.reduce((s, x) => s + x.value, 0) || 1;
+  const legend = `<ul class="donut-legend">` + segs.map((s) =>
+    `<li><span class="dot" style="background:${s.color}"></span><span class="lbl">${esc(s.label)}</span>`
+    + `<span class="val">${fmt(s.value)} <span class="pct">${(s.value / total * 100).toFixed(0)}%</span></span></li>`).join("")
+    + `</ul>`;
+  return `<div class="donut-wrap">${donutSVG(segs, centerMain, centerCap)}${legend}</div>`;
+}
+
+// A titled toggle over several donut "views" (By type / By programme, etc.).
+function vizToggle(views) {
+  const bar = `<div class="viz-toggle">` + views.map((v, i) =>
+    `<button class="${i === 0 ? "active" : ""}" data-view="${v.key}">${esc(v.label)}</button>`).join("") + `</div>`;
+  const panels = views.map((v, i) => `<div class="viz-view" data-view="${v.key}"${i === 0 ? "" : " hidden"}>${v.html}</div>`).join("");
+  return bar + panels;
+}
+
 const GRADE_LABEL = { scs: "Senior Civil Service", grade_6_7: "Grade 6 / 7", seo_heo: "SEO / HEO",
   eo: "Executive Officer", aa_ao: "AA / AO", unreported: "Unreported" };
 
@@ -514,9 +582,17 @@ function budgetTabHtml(b) {
   const h = b.headline || {};
   const row = (label, net, gross) => (net == null && gross == null) ? "" :
     `<dt>${label}</dt><dd>${fmtGBP(net)}${gross != null && gross !== net ? ` <span class="muted">(gross ${fmtGBP(gross)})</span>` : ""}</dd>`;
-  const progs = (b.programmes || []).length
-    ? `<h3>By programme (resource DEL)</h3><ul>${b.programmes.map((p) =>
-        `<li>${esc(p.name)} — <strong>${fmtGBP(p.net)}</strong></li>`).join("")}</ul>` : "";
+  // By-type donut: the four budgeting boundaries (net), centre = TME.
+  const byType = [
+    { label: "Resource DEL", value: h.resource_del_net || 0 },
+    { label: "Capital DEL", value: h.capital_del_net || 0 },
+    { label: "Resource AME", value: h.resource_ame_net || 0 },
+    { label: "Capital AME", value: h.capital_ame_net || 0 },
+  ].filter((s) => s.value > 0);
+  const tme = h.total_managed_expenditure_net;
+  const byProg = topN((b.programmes || []).map((p) => ({ label: p.name.replace(/^\d+\.\s*/, ""), value: p.net })), 8);
+  const views = [{ key: "type", label: "By type", html: donutBlock(byType, fmtGBP, fmtGBP(tme), "net TME") }];
+  if (byProg.length) views.push({ key: "programme", label: "By programme", html: donutBlock(byProg, fmtGBP, fmtGBP(h.resource_del_net), "resource DEL") });
   return `<p class="src">HM Treasury OSCAR outturn, ${esc(b.fy)} (net of income unless gross shown).</p>
     <dl>
       ${row("Resource DEL", h.resource_del_net, h.resource_del_gross)}
@@ -524,21 +600,21 @@ function budgetTabHtml(b) {
       ${row("Resource AME", h.resource_ame_net, h.resource_ame_gross)}
       ${row("Capital AME", h.capital_ame_net, h.capital_ame_gross)}
       ${row("Total managed expenditure", h.total_managed_expenditure_net, null)}
-    </dl>${progs}`;
+    </dl>${vizToggle(views)}`;
 }
 
 function staffingTabHtml(s) {
-  const grades = (s.grades || []).length
-    ? `<h3>By grade</h3><dl>${s.grades.map((g) =>
-        `<dt>${esc(GRADE_LABEL[g.grade] || g.grade)}</dt><dd>${fmtNum(g.headcount)}${g.fte != null ? ` <span class="muted">(${fmtNum(g.fte)} FTE)</span>` : ""}</dd>`).join("")}</dl>` : "";
-  const profs = (s.professions || []).length
-    ? `<h3>By profession (top ${Math.min(8, s.professions.length)})</h3><ul>${s.professions.slice(0, 8).map((p) =>
-        `<li>${esc(p.name)} — <strong>${fmtNum(p.headcount)}</strong></li>`).join("")}</ul>` : "";
+  const total = s.headcount_total;
+  const byGrade = (s.grades || []).map((g) => ({ label: GRADE_LABEL[g.grade] || g.grade, value: g.headcount || 0 })).filter((x) => x.value > 0);
+  const byProf = topN((s.professions || []).map((p) => ({ label: p.name, value: p.headcount })), 8);
+  const views = [];
+  if (byGrade.length) views.push({ key: "grade", label: "By grade", html: donutBlock(byGrade, fmtNum, fmtNum(total), "headcount") });
+  if (byProf.length) views.push({ key: "prof", label: "By profession", html: donutBlock(byProf, fmtNum, fmtNum(total), "headcount") });
   return `<p class="src">Civil Service Statistics, headcount as at 31 March ${esc(s.period)}.${s.disclaimer ? " " + esc(s.disclaimer) : ""}</p>
     <dl>
       <dt>Headcount</dt><dd>${fmtNum(s.headcount_total)}</dd>
       ${s.fte_total != null ? `<dt>Full-time equivalent</dt><dd>${fmtNum(s.fte_total)}</dd>` : ""}
-    </dl>${grades}${profs}`;
+    </dl>${vizToggle(views)}`;
 }
 
 // Cite the record's ACTUAL sources (resolved via the graph's source index), not a fixed
