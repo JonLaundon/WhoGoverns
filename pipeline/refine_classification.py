@@ -22,18 +22,17 @@ Needs openpyxl (see requirements.txt) to read the source spreadsheet.
 """
 import argparse
 import datetime
-import glob
-import json
 import os
 import re
 
 import openpyxl
 
+import store
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(REPO, "data")
 XLSX = os.path.join(DATA, "sources", "raw", "cabinet-office-public-bodies",
                     "public-bodies-directory-2023-24.xlsx")
-CO_SOURCE = os.path.join(DATA, "sources", "source-official-dataset-cabinet-office-public-bodies.json")
 CO_SOURCE_ID = "source-official-dataset-cabinet-office-public-bodies"
 API_SOURCE_ID = "source-official-dataset-govuk-organisations-api"
 TODAY = datetime.date.today().isoformat()
@@ -51,18 +50,6 @@ def norm(s):
     return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", str(s).lower())).strip()
 
 
-def load(path):
-    with open(path, encoding="utf-8") as fh:
-        return json.load(fh)
-
-
-def write_json(path, obj):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, indent=2, ensure_ascii=False, sort_keys=True)
-        fh.write("\n")
-
-
 def load_co_index():
     wb = openpyxl.load_workbook(XLSX, read_only=True, data_only=True)
     ws = wb["Data"]; ws.reset_dimensions()
@@ -77,8 +64,8 @@ def load_co_index():
     return index
 
 
-def write_co_source():
-    write_json(CO_SOURCE, {
+def co_source_record():
+    return {
         "source_id": CO_SOURCE_ID,
         "title": "Cabinet Office Public Bodies Directory 2023/24",
         "source_type": "official_dataset",
@@ -93,7 +80,7 @@ def write_co_source():
                  "(Executive/Advisory/Tribunal/Crown NDPB, Executive Agency, "
                  "Non-Ministerial Department). Rank-2 classification source (Annex A3.2). "
                  "Raw xlsx cached under data/sources/raw/cabinet-office-public-bodies/.",
-    })
+    }
 
 
 def main():
@@ -102,11 +89,10 @@ def main():
     args = ap.parse_args()
 
     co = load_co_index()
-    body_paths = sorted(glob.glob(os.path.join(DATA, "bodies", "*.json")))
+    bodies = store.load_map("bodies")
 
     co_changes, adv_changes, co_confirmed, cleared = [], [], 0, 0
-    for path in body_paths:
-        b = load(path)
+    for b in bodies.values():
         changed = False
         keys = [norm(b["name"])] + [norm(a) for a in b.get("other_names", [])]
         co_hit = next((co[k] for k in keys if k in co), None)
@@ -136,13 +122,11 @@ def main():
                 cleared += 1
                 changed = True
 
-        if changed and not args.dry_run:
-            write_json(path, b)
-
     if not args.dry_run:
-        write_co_source()
+        store.save("bodies", list(bodies.values()))
+        store.upsert("sources", [co_source_record()])
 
-    still_flagged = sum(1 for p in body_paths if load(p).get("needs_classification_review")) if not args.dry_run \
+    still_flagged = sum(1 for b in bodies.values() if b.get("needs_classification_review")) if not args.dry_run \
         else "(dry-run)"
 
     print("--- refine_classification summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))

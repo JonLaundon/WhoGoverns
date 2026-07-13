@@ -1,0 +1,93 @@
+[
+  {
+    "accessed_date": "2026-07-06",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Directory of arm's-length bodies with authoritative classification (Executive/Advisory/Tribunal/Crown NDPB, Executive Agency, Non-Ministerial Department). Rank-2 classification source (Annex A3.2). Raw xlsx cached under data/sources/raw/cabinet-office-public-bodies/.",
+    "publication_date": null,
+    "publisher": "Cabinet Office",
+    "source_id": "source-official-dataset-cabinet-office-public-bodies",
+    "source_type": "official_dataset",
+    "title": "Cabinet Office Public Bodies Directory 2023/24",
+    "url": "https://www.gov.uk/government/publications/public-bodies-2024",
+    "version_date": "2025-05-29"
+  },
+  {
+    "accessed_date": "2026-07-07",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Cabinet Office Civil Service Statistics 2025 (accredited official statistics), position as at 31 March 2025. Rank-1 staffing source (Annex A3.4). Statistical tables ODS: Table 20/21 = responsibility level (grade) by organisation (headcount/FTE); Table 8/8A = profession by organisation (headcount/FTE). Figures rounded to the nearest 5; '[c]' = suppressed (headcount 1-4) and stored as no record. Departmental 'Overall' rows are the group total INCLUDING agencies (which are also held as separate bodies) — department group records carry a double-count disclaimer. Raw ODS cached under data/sources/raw/civil-service-statistics/.",
+    "publication_date": "2025-10-29",
+    "publisher": "Cabinet Office",
+    "source_id": "source-official-dataset-civil-service-statistics-2025",
+    "source_type": "official_dataset",
+    "title": "Civil Service Statistics: 2025",
+    "url": "https://www.gov.uk/government/statistics/civil-service-statistics-2025",
+    "version_date": "2025-10-29"
+  },
+  {
+    "accessed_date": "2026-07-06",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Per-organisation content items; links.ordered_ministers -> role_appointments used for current ministers. Raw responses cached under data/sources/raw/govuk-content-ministers/ by ingest_ministers.py. This access: 24 organisations.",
+    "publication_date": null,
+    "publisher": "Government Digital Service (GOV.UK)",
+    "source_id": "source-official-dataset-govuk-content-api",
+    "source_type": "official_dataset",
+    "title": "GOV.UK Content API — organisation ministers",
+    "url": "https://www.gov.uk/api/content/government/organisations",
+    "version_date": "2026-07-06"
+  },
+  {
+    "accessed_date": "2026-07-05",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Machine-readable register of public organisations. Fields used: format, parent/child_organisations, govuk_status, content_id, analytics_identifier. Raw pages cached under data/sources/raw/govuk-organisations-api/ by ingest_organisations.py. This access: 63 pages, 1255 organisations.",
+    "publication_date": null,
+    "publisher": "Government Digital Service (GOV.UK)",
+    "source_id": "source-official-dataset-govuk-organisations-api",
+    "source_type": "official_dataset",
+    "title": "GOV.UK Organisations API",
+    "url": "https://www.gov.uk/api/organisations",
+    "version_date": "2026-07-05"
+  },
+  {
+    "accessed_date": "2026-07-07",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "HM Treasury OSCAR II annual outturn release (November 2025), raw database extract for financial year 2024-25 (file BUD_24-25.xlsx). Rank-1 budget source (Annex A3.3). Amounts are in GBP thousands. Records aggregate rows to organisation x budgeting boundary (DEL/AME) x resource/capital x COFOG function; net = sum of all rows, gross = rows flagged INCOME_CATEGORY='GROSS'. IN-YEAR RETURN and FINAL OUTTURN rows partition the year and are both summed (filtering to one breaks the totals). Raw xlsx cached under data/sources/raw/oscar/.",
+    "publication_date": "2025-11-01",
+    "publisher": "HM Treasury",
+    "source_id": "source-official-dataset-hmt-oscar-outturn-2024-25",
+    "source_type": "official_dataset",
+    "title": "OSCAR Annual Data: 2024-25 (Outturn)",
+    "url": "https://www.gov.uk/government/publications/oscar-annual-release-november-2025",
+    "version_date": "2025-11-01"
+  },
+  {
+    "accessed_date": "2026-07-06",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "The Department for Business and Trade's published list of UK regulatory organisations (UK & England, plus Northern Ireland, Scotland and Wales sheets). Anchors the functions=['regulation'] tag in the Spiral 1.5 bolt-on: a body is tagged 'regulation' iff it appears on this list (exact normalised name/alias match, no fuzzy matching). Guidance-tier official source; the functional axis is orthogonal to body_type and does not alter constitutional classification. Raw ODS cached under data/sources/raw/list-of-uk-regulators/. In Spiral 2 the tag becomes derivable from the statutory regulatory powers a body holds.",
+    "publication_date": null,
+    "publisher": "Department for Business and Trade",
+    "source_id": "source-official-dataset-list-of-uk-regulators",
+    "source_type": "official_dataset",
+    "title": "List of UK regulators",
+    "url": "https://www.gov.uk/government/publications/list-of-uk-regulators",
+    "version_date": "2026-03-31"
+  },
+  {
+    "accessed_date": "2026-07-06",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "The Privy Council Office's official record of Royal Charters granted by the Sovereign since 1155. Existence/classification source for chartered bodies that sit OUTSIDE the GOV.UK Organisations API (the org register excludes self-governing chartered bodies). Analogous to the GOV.UK Organisations API for the departmental family: it establishes the body and its chartered form; the specific charter provision is a Spiral 2 citation. Charter years for the bodies added in the Spiral 1.5 off-register tranche were cross-checked against each body's own published charter page.",
+    "publication_date": null,
+    "publisher": "Privy Council Office",
+    "source_id": "source-official-dataset-privy-council-charters",
+    "source_type": "official_dataset",
+    "title": "Record of Charters Granted (Privy Council)",
+    "url": "https://privycouncil.independent.gov.uk/charters-granted/",
+    "version_date": null
+  }
+]

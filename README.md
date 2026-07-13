@@ -22,7 +22,7 @@ Then, every session, from the repo root:
 ## Layout
 - `schemas/` — JSON Schemas. Body, Source, Office, PersonRole, Relationship, Budget, Staffing are **active** for Spiral 1. Power/Duty/Veto are **draft** (Spiral 2).
 - `vocab/` — controlled vocabularies + the GOV.UK `format` → `body_type` map.
-- `data/` — one JSON file per record.
+- `data/` — one JSON array file per type (`bodies.json`, `relationships.json`, `offices.json`, `person-roles.json`, `sources.json`, `budgets.json`, `staffing.json`), accessed via `pipeline/store.py`. Raw API caches live under `data/sources/raw/` (gitignored). (Consolidated from one-file-per-record 2026-07-13 — see `issues/schema-decisions.md`.)
 - `compiled/` — build artefacts (git-tracked or ignored per decision #6).
 - `site/` — the static map face (Spiral 1 build task).
 - `docs/` — governing docs, data dictionary, review template.

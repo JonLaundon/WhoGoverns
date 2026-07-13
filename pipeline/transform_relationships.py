@@ -28,10 +28,10 @@ import json
 import os
 import sys
 
+import store
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root (this file lives in pipeline/)
 RAW_GLOB = os.path.join(REPO, "data", "sources", "raw", "govuk-organisations-api", "page-*.json")
-BODIES_DIR = os.path.join(REPO, "data", "bodies")
-RELS_DIR = os.path.join(REPO, "data", "relationships")
 SOURCE_ID = "source-official-dataset-govuk-organisations-api"
 SOURCE_URL = "https://www.gov.uk/api/organisations"
 
@@ -43,12 +43,6 @@ DEPARTMENT_TYPES = {"ministerial_department", "non_ministerial_department"}
 def load(path):
     with open(path, encoding="utf-8") as fh:
         return json.load(fh)
-
-
-def write_json(path, obj):
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, indent=2, ensure_ascii=False, sort_keys=True)
-        fh.write("\n")
 
 
 def slug_of(ref):
@@ -80,10 +74,9 @@ def main():
     args = parser.parse_args()
 
     # Bodies we hold: id -> record (for body_type lookup and field fill).
-    body_paths = {os.path.basename(p)[:-5]: p for p in glob.glob(os.path.join(BODIES_DIR, "*.json"))}
-    if not body_paths:
+    bodies = store.load_map("bodies")
+    if not bodies:
         sys.exit("No Body records found. Run transform_bodies.py first.")
-    bodies = {bid: load(p) for bid, p in body_paths.items()}
     valid = set(bodies)
 
     # Raw records keyed by our body_id, for their parent/child lists.
@@ -147,12 +140,9 @@ def main():
 
     # ---- write ----
     if not args.dry_run:
-        os.makedirs(RELS_DIR, exist_ok=True)
-        for frm, to in sorted(edges):
-            rel = relationship_record(frm, to)
-            write_json(os.path.join(RELS_DIR, rel["relationship_id"] + ".json"), rel)
-        for bid in updated_bodies:
-            write_json(body_paths[bid], bodies[bid])
+        rels = [relationship_record(frm, to) for frm, to in sorted(edges)]
+        store.save("relationships", rels)
+        store.save("bodies", list(bodies.values()))
 
     # ---- report ----
     roots = sorted(b for b in valid if b not in parents_of)

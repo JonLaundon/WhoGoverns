@@ -18,12 +18,12 @@ are also held as separate bodies). No overlap/fuzzy matching.
     py -3 pipeline/ingest_staffing.py [--dry-run]
 """
 import argparse
-import glob
-import json
 import os
 import re
 import xml.etree.ElementTree as ET
 import zipfile
+
+import store
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(REPO, "data")
@@ -66,12 +66,6 @@ def num(x):
         return None
 
 
-def write_json(path, obj):
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, indent=2, ensure_ascii=False, sort_keys=True)
-        fh.write("\n")
-
-
 def cell_text(c):
     return " ".join(t.text or "" for t in c.iter(P)).strip()
 
@@ -103,8 +97,7 @@ def main():
 
     # body lookup
     exact, body_toks = {}, {}
-    for f in glob.glob(os.path.join(DATA, "bodies", "*.json")):
-        d = json.load(open(f, encoding="utf-8"))
+    for d in store.load("bodies"):
         body_toks[d["body_id"]] = toks(d["name"])
         for n in [d["name"]] + d.get("other_names", []):
             exact.setdefault(norm(n), d["body_id"])
@@ -210,12 +203,10 @@ def main():
                     if m and i < len(vals):
                         add(metric, num(vals[i]), profession=m.group(1))
 
-        # One file per body: an array of that body's staffing records (consolidated; bulk
-        # derived data, not hand-curated per-record).
-        if recs and not args.dry_run:
-            write_json(os.path.join(STAFFING, body_slug + ".json"), recs)
         written.extend(recs)
 
+    if not args.dry_run:
+        store.save("staffing", written)
     print("--- ingest_staffing summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
     print("bodies with staffing records:   {}".format(len(body_scopes)))
     print("departments with group+core:    {}".format(sum(1 for sc in body_scopes.values() if "core" in sc)))

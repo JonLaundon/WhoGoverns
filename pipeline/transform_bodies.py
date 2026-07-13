@@ -27,9 +27,10 @@ import json
 import os
 import sys
 
+import store
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root (this file lives in pipeline/)
 RAW_GLOB = os.path.join(REPO, "data", "sources", "raw", "govuk-organisations-api", "page-*.json")
-BODIES_DIR = os.path.join(REPO, "data", "bodies")
 FORMAT_MAP_PATH = os.path.join(REPO, "vocab", "govuk_format_to_body_type.json")
 SOURCE_ID = "source-official-dataset-govuk-organisations-api"
 
@@ -43,12 +44,6 @@ STATUS_MAP = {"live": "active", "exempt": "active",
 def load(path):
     with open(path, encoding="utf-8") as fh:
         return json.load(fh)
-
-
-def write_json(path, obj):
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, indent=2, ensure_ascii=False, sort_keys=True)
-        fh.write("\n")
 
 
 def load_raw_records():
@@ -116,14 +111,13 @@ def main():
     flag_formats = set(fmt_doc.get("flag_for_review", []))
 
     records = load_raw_records()
+    existing = store.load_map("bodies")
 
     written, reconciled, forming, skipped_status = [], [], [], 0
     reconcile_mismatch, missing_slug, collisions = [], [], []
     seen_ids = {}
     type_counts = {}
     flagged_count = 0
-
-    os.makedirs(BODIES_DIR, exist_ok=True)
 
     for rec in records:
         govuk_status = rec.get("details", {}).get("govuk_status")
@@ -151,19 +145,20 @@ def main():
         if needs_review:
             flagged_count += 1
 
-        path = os.path.join(BODIES_DIR, body_id + ".json")
-        if os.path.exists(path):
+        if body_id in existing:
             # Never overwrite a curated/seed record. Reconcile classification.
-            existing = load(path)
-            if existing.get("body_type") != body_type:
+            existing_body = existing[body_id]
+            if existing_body.get("body_type") != body_type:
                 reconcile_mismatch.append(
-                    (body_id, existing.get("body_type"), body_type))
+                    (body_id, existing_body.get("body_type"), body_type))
             reconciled.append(body_id)
             continue
 
-        if not args.dry_run:
-            write_json(path, body)
+        existing[body_id] = body
         written.append(body_id)
+
+    if not args.dry_run:
+        store.save("bodies", list(existing.values()))
 
     # ---- report ----
     print("--- transform_bodies summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))

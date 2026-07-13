@@ -14,17 +14,16 @@ Reads the cached CO xlsx; writes Body + Relationship records. Needs openpyxl.
     py -3 pipeline/refine_sponsors.py [--dry-run]
 """
 import argparse
-import glob
-import json
 import os
 import re
 
 import openpyxl
 
+import store
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(REPO, "data")
 XLSX = os.path.join(DATA, "sources", "raw", "cabinet-office-public-bodies", "public-bodies-directory-2023-24.xlsx")
-RELS_DIR = os.path.join(DATA, "relationships")
 CO_SOURCE_ID = "source-official-dataset-cabinet-office-public-bodies"
 SOURCE_URL = "https://www.gov.uk/government/publications/public-bodies-2024"
 DEPT_STOP = {"and", "the", "of", "for"}
@@ -36,18 +35,6 @@ def norm(s):
 
 def normdept(s):
     return " ".join(t for t in norm(s).split() if t not in DEPT_STOP)
-
-
-def load(path):
-    with open(path, encoding="utf-8") as fh:
-        return json.load(fh)
-
-
-def write_json(path, obj):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, indent=2, ensure_ascii=False, sort_keys=True)
-        fh.write("\n")
 
 
 def rel_record(dept_id, body_id):
@@ -75,12 +62,11 @@ def main():
         if nm:
             co_sponsor[norm(nm)] = r[H["overall_parent_department"]]
 
-    body_paths = {os.path.basename(p)[:-5]: p for p in glob.glob(os.path.join(DATA, "bodies", "*.json"))}
-    bodies = {bid: load(p) for bid, p in body_paths.items()}
+    bodies = store.load_map("bodies")
     dept_index = {normdept(b["name"]): bid for bid, b in bodies.items()
                   if b["body_type"] in ("ministerial_department", "non_ministerial_department")}
 
-    existing_rels = {os.path.basename(p)[:-5] for p in glob.glob(os.path.join(RELS_DIR, "*.json"))}
+    rels = store.load_map("relationships")
     filled, confirmed, discrepancies, unresolved_dept = [], 0, [], set()
 
     for bid, b in bodies.items():
@@ -105,12 +91,14 @@ def main():
             b["sponsor_department_id"] = co_dept_id
             filled.append((b["name"], co_dept_id))
             rel = rel_record(co_dept_id, bid)
-            if rel["relationship_id"] not in existing_rels and not args.dry_run:
-                write_json(os.path.join(RELS_DIR, rel["relationship_id"] + ".json"), rel)
-            if not args.dry_run:
-                write_json(body_paths[bid], b)
+            if rel["relationship_id"] not in rels:
+                rels[rel["relationship_id"]] = rel
         elif current and current != co_dept_id:
             discrepancies.append((b["name"], current, co_dept_id))
+
+    if filled and not args.dry_run:
+        store.save("bodies", list(bodies.values()))
+        store.save("relationships", list(rels.values()))
 
     print("--- refine_sponsors summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
     print("sponsors FILLED (were root):     {}".format(len(filled)))

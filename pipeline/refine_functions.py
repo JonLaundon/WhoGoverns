@@ -23,19 +23,18 @@ Body records (functions/function_source_ids only) on change.
     py -3 pipeline/refine_functions.py [--dry-run]
 """
 import argparse
-import glob
-import json
 import os
 import re
 import xml.etree.ElementTree as ET
 import zipfile
+
+import store
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(REPO, "data")
 ODS = os.path.join(DATA, "sources", "raw", "list-of-uk-regulators",
                    "list-of-uk-regulatory-organisations.ods")
 SOURCE_ID = "source-official-dataset-list-of-uk-regulators"
-BODIES = os.path.join(DATA, "bodies")
 
 T = "{urn:oasis:names:tc:opendocument:xmlns:table:1.0}"
 P = "{urn:oasis:names:tc:opendocument:xmlns:text:1.0}p"
@@ -78,28 +77,15 @@ def read_regulator_names():
     return names
 
 
-def load(path):
-    with open(path, encoding="utf-8") as fh:
-        return json.load(fh)
-
-
-def write_json(path, obj):
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, indent=2, ensure_ascii=False, sort_keys=True)
-        fh.write("\n")
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
     # body lookup: normalised name / alias -> body_id  (first wins, deterministic)
-    paths = sorted(glob.glob(os.path.join(BODIES, "*.json")))
     lut, bodies = {}, {}
-    for p in paths:
-        d = load(p)
-        bodies[d["body_id"]] = (p, d)
+    for d in store.load("bodies"):
+        bodies[d["body_id"]] = d
         for n in [d["name"]] + d.get("other_names", []):
             lut.setdefault(norm(n), d["body_id"])
 
@@ -114,7 +100,7 @@ def main():
 
     changed = []
     for bid in matched:
-        _, d = bodies[bid]
+        d = bodies[bid]
         funcs = set(d.get("functions", []))
         srcs = set(d.get("function_source_ids", []))
         if "regulation" in funcs and SOURCE_ID in srcs:
@@ -125,10 +111,8 @@ def main():
         d["function_source_ids"] = sorted(srcs)
         changed.append(bid)
 
-    if not args.dry_run:
-        for bid in changed:
-            p, d = bodies[bid]
-            write_json(p, d)
+    if changed and not args.dry_run:
+        store.save("bodies", list(bodies.values()))
 
     print("--- refine_functions summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
     print("regulator-list entries read:      {}".format(len(names)))

@@ -20,7 +20,6 @@ Boring by design: stdlib only, one job, polite HTTP (UA, timeout, retry, pause).
 """
 import argparse
 import datetime
-import glob
 import json
 import os
 import re
@@ -28,12 +27,10 @@ import time
 import urllib.error
 import urllib.request
 
+import store
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root (this file lives in pipeline/)
-BODIES_DIR = os.path.join(REPO, "data", "bodies")
-OFFICES_DIR = os.path.join(REPO, "data", "offices")
-PERSONROLES_DIR = os.path.join(REPO, "data", "person-roles")
 RAW_DIR = os.path.join(REPO, "data", "sources", "raw", "govuk-content-ministers")
-SOURCE_RECORD = os.path.join(REPO, "data", "sources", "source-official-dataset-govuk-content-api.json")
 SOURCE_ID = "source-official-dataset-govuk-content-api"
 CONTENT_API = "https://www.gov.uk/api/content/government/organisations/"
 USER_AGENT = "WhoGoverns/0.1 (open UK-state dataset; contact jonnylaundon@gmail.com)"
@@ -110,8 +107,8 @@ def office_type_for(title):
     return "other"
 
 
-def refresh_source_record(accessed_date, n_orgs):
-    write_json(SOURCE_RECORD, {
+def source_record(accessed_date, n_orgs):
+    return {
         "source_id": SOURCE_ID,
         "title": "GOV.UK Content API — organisation ministers",
         "source_type": "official_dataset",
@@ -126,13 +123,12 @@ def refresh_source_record(accessed_date, n_orgs):
                   "role_appointments used for current ministers. Raw responses cached "
                   "under data/sources/raw/govuk-content-ministers/ by ingest_ministers.py. "
                   "This access: {} organisations.".format(n_orgs)),
-    })
+    }
 
 
 def target_slugs():
     depts = set()
-    for p in glob.glob(os.path.join(BODIES_DIR, "*.json")):
-        b = load(p)
+    for b in store.load("bodies"):
         if b["body_type"] == "ministerial_department":
             depts.add(b["govuk_organisation_slug"])
     # EXTRA_SLUGS (the PM's Office) go first so cross-org roles like Prime Minister
@@ -149,7 +145,7 @@ def main():
     parser.add_argument("--timeout", type=float, default=30.0, help="per-request timeout (default 30)")
     args = parser.parse_args()
 
-    body_ids = {os.path.basename(p)[:-5] for p in glob.glob(os.path.join(BODIES_DIR, "*.json"))}
+    body_ids = {b["body_id"] for b in store.load("bodies")}
     slugs = target_slugs()
     accessed_date = datetime.date.today().isoformat()
 
@@ -225,11 +221,9 @@ def main():
             time.sleep(args.sleep)
 
     if not args.dry_run:
-        for oid, rec in offices.items():
-            write_json(os.path.join(OFFICES_DIR, oid + ".json"), rec)
-        for pid, rec in person_roles.items():
-            write_json(os.path.join(PERSONROLES_DIR, pid + ".json"), rec)
-        refresh_source_record(accessed_date, len(slugs))
+        store.upsert("offices", list(offices.values()))
+        store.upsert("person-roles", list(person_roles.values()))
+        store.upsert("sources", [source_record(accessed_date, len(slugs))])
 
     # ---- report ----
     print("\n--- ingest_ministers summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))

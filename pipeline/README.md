@@ -1,5 +1,9 @@
 # pipeline/
 
+`store.py` is the shared data-access layer: each data type is one `data/<type>.json` array
+file, read/written via `store.load / load_map / save / upsert`. Every script below goes
+through it (raw API caches under `data/sources/raw/` stay individual files, gitignored).
+
 The build scripts, in run order. Each is stdlib-only, one job, runnable standalone
 from a clean checkout, and idempotent. Run from the repo root with `py -3 pipeline/<script>.py`
 (on this Windows host the launcher is `py -3`; see `issues/build-environment.md`).

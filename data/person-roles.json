@@ -1,0 +1,2387 @@
+[
+  {
+    "body_id": "uk-state-body-ministry-of-justice",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-assistant-whip-house-of-commons-6",
+    "person_name": "Jake Richards MP",
+    "person_role_id": "personrole-assistant-whip-house-of-commons-6-jake-richards",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-attorney-generals-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-attorney-general",
+    "person_name": "The Rt Hon Lord Hermer KC",
+    "person_role_id": "personrole-attorney-general-hermer",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-chancellor-of-the-duchy-of-lancaster",
+    "person_name": "The Rt Hon Darren Jones MP",
+    "person_role_id": "personrole-chancellor-of-the-duchy-of-lancaster-darren-jones",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-hm-treasury",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-chancellor-of-the-exchequer",
+    "person_name": "The Rt Hon Rachel Reeves MP",
+    "person_role_id": "personrole-chancellor-of-the-exchequer-rachel-reeves",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-hm-treasury",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-chief-secretary-to-the-treasury",
+    "person_name": "Lucy Rigby KC MP",
+    "person_role_id": "personrole-chief-secretary-to-the-treasury-lucy-rigby",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-05-14"
+  },
+  {
+    "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-deputy-leader-of-the-house-of-lords-2",
+    "person_name": "Lord Collins of Highbury",
+    "person_role_id": "personrole-deputy-leader-of-the-house-of-lords-2-collins-of-highbury",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-09"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-justice",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-deputy-prime-minister-4",
+    "person_name": "The Rt Hon David Lammy MP",
+    "person_role_id": "personrole-deputy-prime-minister-4-david-lammy",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-hm-treasury",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-economic-secretary-to-the-treasury-3",
+    "person_name": "Rachel Blake MP",
+    "person_role_id": "personrole-economic-secretary-to-the-treasury-3-rachel-blake",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-05-14"
+  },
+  {
+    "body_id": "uk-state-body-hm-treasury",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-exchequer-secretary-to-the-treasury",
+    "person_name": "Daniel Tomlinson MP",
+    "person_role_id": "personrole-exchequer-secretary-to-the-treasury-daniel-tomlinson",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-01"
+  },
+  {
+    "body_id": "uk-state-body-hm-treasury",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-financial-secretary-to-the-treasury",
+    "person_name": "Lord Livermore",
+    "person_role_id": "personrole-financial-secretary-to-the-treasury-livermore",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-08"
+  },
+  {
+    "body_id": "uk-state-body-prime-ministers-office-10-downing-street",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-first-lord-of-the-treasury",
+    "person_name": "The Rt Hon Sir Keir Starmer KCB KC MP",
+    "person_role_id": "personrole-first-lord-of-the-treasury-keir-starmer",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-government-spokesperson-for-equalities-2",
+    "person_name": "Lord Collins of Highbury",
+    "person_role_id": "personrole-government-spokesperson-for-equalities-2-collins-of-highbury",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-10-08"
+  },
+  {
+    "body_id": "uk-state-body-competition-and-markets-authority",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-competition-and-markets-authority",
+    "person_name": "Sarah Cardell",
+    "person_role_id": "personrole-head-competition-and-markets-authority-sarah-cardell",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-crown-prosecution-service",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-crown-prosecution-service",
+    "person_name": "Stephen Parkinson",
+    "person_role_id": "personrole-head-crown-prosecution-service-stephen-parkinson",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-food-standards-agency",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-food-standards-agency",
+    "person_name": "Emily Miles",
+    "person_role_id": "personrole-head-food-standards-agency-emily-miles",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-forestry-commission",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-forestry-commission",
+    "person_name": "Richard Stanford",
+    "person_role_id": "personrole-head-forestry-commission-richard-stanford",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-government-actuarys-department",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-government-actuarys-department",
+    "person_name": "Fiona Dunsire",
+    "person_role_id": "personrole-head-government-actuarys-department-fiona-dunsire",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-government-legal-department",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-government-legal-department",
+    "person_name": "Susanna McGibbon",
+    "person_role_id": "personrole-head-government-legal-department-susanna-mcgibbon",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-hm-revenue-customs",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-hm-revenue-customs",
+    "person_name": "Jim Harra",
+    "person_role_id": "personrole-head-hm-revenue-customs-jim-harra",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-land-registry",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-land-registry",
+    "person_name": "Simon Hayes",
+    "person_role_id": "personrole-head-land-registry-simon-hayes",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-national-crime-agency",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-national-crime-agency",
+    "person_name": "Graeme Biggar",
+    "person_role_id": "personrole-head-national-crime-agency-graeme-biggar",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-ns-i",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-ns-i",
+    "person_name": "Dax Harkins",
+    "person_role_id": "personrole-head-ns-i-dax-harkins",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-office-of-rail-and-road",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-office-of-rail-and-road",
+    "person_name": "John Larkinson",
+    "person_role_id": "personrole-head-office-of-rail-and-road-john-larkinson",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-ofqual",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-ofqual",
+    "person_name": "Sir Ian Bauckham",
+    "person_role_id": "personrole-head-ofqual-ian-bauckham",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-ofsted",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-ofsted",
+    "person_name": "Sir Martyn Oliver",
+    "person_role_id": "personrole-head-ofsted-martyn-oliver",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-serious-fraud-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-serious-fraud-office",
+    "person_name": "Nick Ephgrave QPM",
+    "person_role_id": "personrole-head-serious-fraud-office-nick-ephgrave",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-the-national-archives",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-the-national-archives",
+    "person_name": "Dr Jeff James",
+    "person_role_id": "personrole-head-the-national-archives-jeff-james",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-the-water-services-regulation-authority",
+    "person_name": "David Black",
+    "person_role_id": "personrole-head-the-water-services-regulation-authority-david-black",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-uk-statistics-authority",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-head-uk-statistics-authority",
+    "person_name": "Professor Sir Ian Diamond",
+    "person_role_id": "personrole-head-uk-statistics-authority-ian-diamond",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-cabinet-office-public-bodies"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-office-of-the-advocate-general-for-scotland",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-hm-advocate-general-for-scotland",
+    "person_name": "Baroness Smith of Cluny KC",
+    "person_role_id": "personrole-hm-advocate-general-for-scotland-smith-of-cluny",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-08-29"
+  },
+  {
+    "body_id": "uk-state-body-department-for-transport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-junior-lord-of-the-treasury-government-whip-9",
+    "person_name": "Lilian Greenwood MP",
+    "person_role_id": "personrole-junior-lord-of-the-treasury-government-whip-9-lilian-greenwood",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-16"
+  },
+  {
+    "body_id": "uk-state-body-the-office-of-the-leader-of-the-house-of-commons",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-leader-of-the-house-of-commons",
+    "person_name": "The Rt Hon Sir Alan Campbell MP",
+    "person_role_id": "personrole-leader-of-the-house-of-commons-alan-campbell",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-leader-of-the-house-of-lords",
+    "person_name": "The Rt Hon Baroness Smith of Basildon",
+    "person_role_id": "personrole-leader-of-the-house-of-lords-smith-of-basildon",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-the-office-of-the-leader-of-the-house-of-commons",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-lord-president-of-the-council",
+    "person_name": "The Rt Hon Sir Alan Campbell MP",
+    "person_role_id": "personrole-lord-president-of-the-council-alan-campbell",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-lord-privy-seal",
+    "person_name": "The Rt Hon Baroness Smith of Basildon",
+    "person_role_id": "personrole-lord-privy-seal-smith-of-basildon",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-for-intergovernmental-relations",
+    "person_name": "The Rt Hon Darren Jones MP",
+    "person_role_id": "personrole-minister-for-intergovernmental-relations-darren-jones",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-prime-ministers-office-10-downing-street",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-for-the-civil-service",
+    "person_name": "The Rt Hon Sir Keir Starmer KCB KC MP",
+    "person_role_id": "personrole-minister-for-the-civil-service-keir-starmer",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-for-the-constitution-and-european-union-relations",
+    "person_name": "The Rt Hon Nick Thomas–Symonds MP",
+    "person_role_id": "personrole-minister-for-the-constitution-and-european-union-relations-nick-thomas-symonds",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-08"
+  },
+  {
+    "body_id": "uk-state-body-prime-ministers-office-10-downing-street",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-for-the-union",
+    "person_name": "The Rt Hon Sir Keir Starmer KCB KC MP",
+    "person_role_id": "personrole-minister-for-the-union-keir-starmer",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-department-for-education",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-for-women-and-equalities-3",
+    "person_name": "The Rt Hon Bridget Phillipson MP",
+    "person_role_id": "personrole-minister-for-women-and-equalities-3-bridget-phillipson",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-08"
+  },
+  {
+    "body_id": "uk-state-body-department-for-education",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-for-women-and-equalities-4",
+    "person_name": "The Rt Hon Baroness Smith of Malvern",
+    "person_role_id": "personrole-minister-for-women-and-equalities-4-smith-of-malvern",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-03-04"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-174",
+    "person_name": "Dame Angela Eagle DBE MP",
+    "person_role_id": "personrole-minister-of-state-174-angela-eagle-dbe",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-06-12"
+  },
+  {
+    "body_id": "uk-state-body-department-for-education",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-175",
+    "person_name": "The Rt Hon Baroness Smith of Malvern",
+    "person_role_id": "personrole-minister-of-state-175-smith-of-malvern",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-06"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-176",
+    "person_name": "Matthew Pennycook MP",
+    "person_role_id": "personrole-minister-of-state-176-matthew-pennycook",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-06"
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-178",
+    "person_name": "Stephen Doughty MP",
+    "person_role_id": "personrole-minister-of-state-178-stephen-doughty",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-08"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-justice",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-180",
+    "person_name": "Sarah Sackman KC MP",
+    "person_role_id": "personrole-minister-of-state-180-sarah-sackman",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-12-02"
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-182",
+    "person_name": "Stephen Kinnock MP",
+    "person_role_id": "personrole-minister-of-state-182-stephen-kinnock",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-08"
+  },
+  {
+    "body_id": "uk-state-body-department-for-education",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-187",
+    "person_name": "Georgia Gould OBE MP",
+    "person_role_id": "personrole-minister-of-state-187-georgia-gould",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-188",
+    "person_name": "Karin Smyth MP",
+    "person_role_id": "personrole-minister-of-state-188-karin-smyth",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-08"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-190",
+    "person_name": "Lord Coaker",
+    "person_role_id": "personrole-minister-of-state-190-coaker",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-08"
+  },
+  {
+    "body_id": "uk-state-body-department-for-transport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-191",
+    "person_name": "Lord Hendy of Richmond Hill CBE",
+    "person_role_id": "personrole-minister-of-state-191-hendy-of-richmond-hill",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-08"
+  },
+  {
+    "body_id": "uk-state-body-department-for-education",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-192",
+    "person_name": "The Rt Hon Sir Stephen Timms MP",
+    "person_role_id": "personrole-minister-of-state-192-stephen-timms",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-08"
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-195",
+    "person_name": "The Rt Hon Lord Hanson of Flint",
+    "person_role_id": "personrole-minister-of-state-195-hanson-of-flint",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-09"
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-196",
+    "person_name": "Baroness Sherlock OBE",
+    "person_role_id": "personrole-minister-of-state-196-sherlock",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-12-17"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-197",
+    "person_name": "The Rt Hon Darren Jones MP",
+    "person_role_id": "personrole-minister-of-state-197-darren-jones",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-01"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-198",
+    "person_name": "Dame Angela Eagle DBE MP",
+    "person_role_id": "personrole-minister-of-state-198-angela-eagle-dbe",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-06-12"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-201",
+    "person_name": "Alison McGovern MP",
+    "person_role_id": "personrole-minister-of-state-201-alison-mcgovern",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-203",
+    "person_name": "The Rt Hon Dame Diana Johnson DBE MP",
+    "person_role_id": "personrole-minister-of-state-203-diana-johnson-dbe",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-204",
+    "person_name": "Sarah Jones MP",
+    "person_role_id": "personrole-minister-of-state-204-sarah-jones",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-205",
+    "person_name": "Alex Norris MP",
+    "person_role_id": "personrole-minister-of-state-205-alex-norris",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-department-for-business-and-trade",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-206",
+    "person_name": "Sir Chris Bryant MP",
+    "person_role_id": "personrole-minister-of-state-206-chris-bryant",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-207",
+    "person_name": "Luke Pollard MP",
+    "person_role_id": "personrole-minister-of-state-207-luke-pollard",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-210",
+    "person_name": "The Rt Hon Ian Murray MP",
+    "person_role_id": "personrole-minister-of-state-210-ian-murray",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-213",
+    "person_name": "Stephen Morgan MP",
+    "person_role_id": "personrole-minister-of-state-213-stephen-morgan",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-06-12"
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-international-development-latin-america-and-caribbean",
+    "person_name": "The Rt Hon Baroness Chapman of Darlington",
+    "person_role_id": "personrole-minister-of-state-international-development-latin-america-and-caribbean-chapman-of-darlington",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-02-28"
+  },
+  {
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-minister-for-digital-government-and-data",
+    "person_name": "The Rt Hon Ian Murray MP",
+    "person_role_id": "personrole-minister-of-state-minister-for-digital-government-and-data-ian-murray",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-minister-for-energy-2",
+    "person_name": "Michael Shanks MP",
+    "person_role_id": "personrole-minister-of-state-minister-for-energy-2-michael-shanks",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-minister-for-energy-security-and-net-zero",
+    "person_name": "Lord Whitehead CBE",
+    "person_role_id": "personrole-minister-of-state-minister-for-energy-security-and-net-zero-whitehead",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-11-11"
+  },
+  {
+    "body_id": "uk-state-body-department-for-business-and-trade",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-minister-for-investment-2",
+    "person_name": "Lord Stockwood",
+    "person_role_id": "personrole-minister-of-state-minister-for-investment-2-stockwood",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-justice",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-minister-for-prisons",
+    "person_name": "Lord Timpson OBE",
+    "person_role_id": "personrole-minister-of-state-minister-for-prisons-timpson",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-minister-for-science-innovation-research-and-nuclear",
+    "person_name": "Lord Vallance",
+    "person_role_id": "personrole-minister-of-state-minister-for-science-innovation-research-and-nuclear-vallance",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-minister-without-portfolio-3",
+    "person_name": "The Rt Hon Anna Turley MP",
+    "person_role_id": "personrole-minister-of-state-minister-without-portfolio-3-anna-turley",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-secretary-13",
+    "person_name": "Torsten Bell MP",
+    "person_role_id": "personrole-parliamentary-secretary-13-torsten-bell",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-01-14"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-secretary-14",
+    "person_name": "Chris Ward MP",
+    "person_role_id": "personrole-parliamentary-secretary-14-chris-ward",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-secretary-15",
+    "person_name": "Satvir Kaur MP",
+    "person_role_id": "personrole-parliamentary-secretary-15-satvir-kaur",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-secretary-16",
+    "person_name": "James Frith MP",
+    "person_role_id": "personrole-parliamentary-secretary-16-james-frith",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-03-03"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-secretary-17",
+    "person_name": "Baroness Anderson of Stoke-on-Trent",
+    "person_role_id": "personrole-parliamentary-secretary-17-anderson-of-stoke-on-trent",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-03-03"
+  },
+  {
+    "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-secretary-18",
+    "person_name": "Lord Collins of Highbury",
+    "person_role_id": "personrole-parliamentary-secretary-18-collins-of-highbury",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-06-12"
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-205",
+    "person_name": "Torsten Bell MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-205-torsten-bell",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-01-14"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-245",
+    "person_name": "Louise Sandher-Jones MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-245-louise-sandher-jones",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-06-12"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-justice",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-246",
+    "person_name": "Catherine Atkinson MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-246-catherine-atkinson",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-05-12"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-250",
+    "person_name": "Baroness Taylor of Stevenage",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-250-taylor-of-stevenage",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-09"
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-255",
+    "person_name": "Baroness Merron",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-255-merron",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-09"
+  },
+  {
+    "body_id": "uk-state-body-department-for-education",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-256",
+    "person_name": "Olivia Bailey MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-256-olivia-bailey",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-department-for-education",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-257",
+    "person_name": "Josh MacAlister OBE MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-257-josh-macalister",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-260",
+    "person_name": "Andrew Western MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-260-andrew-western",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-09"
+  },
+  {
+    "body_id": "uk-state-body-department-for-transport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-266",
+    "person_name": "Simon Lightwood MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-266-simon-lightwood",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-09"
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-270",
+    "person_name": "Emma Hardy MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-270-emma-hardy",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-09"
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-272",
+    "person_name": "Baroness Hayman of Ullock",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-272-hayman-of-ullock",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-09"
+  },
+  {
+    "body_id": "uk-state-body-scotland-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-273",
+    "person_name": "Kirsty McNeill MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-273-kirsty-mcneill",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-09"
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-276",
+    "person_name": "Hamish Falconer MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-276-hamish-falconer",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-18"
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-278",
+    "person_name": "Mary Creagh CBE MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-278-mary-creagh",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-18"
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-282",
+    "person_name": "Mike Tapp MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-282-mike-tapp",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-department-for-education",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-283",
+    "person_name": "Seema Malhotra MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-283-seema-malhotra",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-justice",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-284",
+    "person_name": "Baroness Levitt KC",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-284-levitt",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-287",
+    "person_name": "Calvin Bailey MBE MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-287-calvin-bailey",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-06-12"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-289",
+    "person_name": "Samantha Dixon MBE MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-289-samantha-dixon",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-290",
+    "person_name": "Chris Elmore MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-290-chris-elmore",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-department-for-business-and-trade",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-292",
+    "person_name": "Blair McDougall MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-292-blair-mcdougall",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-department-for-education",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-293",
+    "person_name": "Olivia Bailey MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-293-olivia-bailey",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-department-for-business-and-trade",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-294",
+    "person_name": "Kate Dearden MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-294-kate-dearden",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-296",
+    "person_name": "James Frith MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-296-james-frith",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-03-03"
+  },
+  {
+    "body_id": "uk-state-body-northern-ireland-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-297",
+    "person_name": "Matthew Patrick MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-297-matthew-patrick",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-department-for-transport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-300",
+    "person_name": "Keir Mather MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-300-keir-mather",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-justice",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-301",
+    "person_name": "Jake Richards MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-301-jake-richards",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-302",
+    "person_name": "Baroness Lloyd of Effra CBE",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-302-lloyd-of-effra",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-11"
+  },
+  {
+    "body_id": "uk-state-body-department-for-transport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-304",
+    "person_name": "Lilian Greenwood MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-304-lilian-greenwood",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-16"
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-306",
+    "person_name": "Sharon Hodgson MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-306-sharon-hodgson",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-03-03"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-307",
+    "person_name": "Nesil Caliskan MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-307-nesil-caliskan",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-05-12"
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-308",
+    "person_name": "Natalie Fleet MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-308-natalie-fleet",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-05-12"
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-310",
+    "person_name": "Preet Kaur Gill MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-310-preet-kaur-gill",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-05-12"
+  },
+  {
+    "body_id": "uk-state-body-department-for-business-and-trade",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-312",
+    "person_name": "Lord Leong CBE",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-312-leong",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-06-12"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-313",
+    "person_name": "Lord Lemos CMG CBE",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-313-lemos-cmg",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-06-12"
+  },
+  {
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-minister-for-ai-and-online-safety",
+    "person_name": "Kanishka Narayan MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-minister-for-ai-and-online-safety-kanishka-narayan",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-minister-for-climate",
+    "person_name": "Katie White OBE MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-minister-for-climate-katie-white",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-minister-for-energy-consumers",
+    "person_name": "Martin McCluskey MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-minister-for-energy-consumers-martin-mccluskey",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-07"
+  },
+  {
+    "body_id": "uk-state-body-department-for-education",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-minister-for-equalities-3",
+    "person_name": "Seema Malhotra MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-minister-for-equalities-3-seema-malhotra",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-10-08"
+  },
+  {
+    "body_id": "uk-state-body-department-for-business-and-trade",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-minister-for-industry",
+    "person_name": "Chris McDonald MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-minister-for-industry-chris-mcdonald",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-11"
+  },
+  {
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-minister-for-museums-heritage-and-gambling-and-lords-minister",
+    "person_name": "Baroness Twycross",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-minister-for-museums-heritage-and-gambling-and-lords-minister-twycross",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-11"
+  },
+  {
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-parliamentary-under-secretary-of-state-minister-for-sport-tourism-civil-society-and-youth",
+    "person_name": "Stephanie Peacock MP",
+    "person_role_id": "personrole-parliamentary-under-secretary-of-state-minister-for-sport-tourism-civil-society-and-youth-stephanie-peacock",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-11"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-paymaster-general",
+    "person_name": "The Rt Hon Nick Thomas–Symonds MP",
+    "person_role_id": "personrole-paymaster-general-nick-thomas-symonds",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-08"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-cabinet-office",
+    "person_name": "Dame Antonia Romeo DCB",
+    "person_role_id": "personrole-permsec-cabinet-office-antonia-romeo-dcb",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-department-for-business-and-trade",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-department-for-business-and-trade",
+    "person_name": "Amanda Brooks CBE",
+    "person_role_id": "personrole-permsec-department-for-business-and-trade-amanda-brooks",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-department-for-culture-media-and-sport",
+    "person_name": "Susannah Storey",
+    "person_role_id": "personrole-permsec-department-for-culture-media-and-sport-susannah-storey",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-department-for-education",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-department-for-education",
+    "person_name": "Susan Acland-Hood",
+    "person_role_id": "personrole-permsec-department-for-education-susan-acland-hood",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-department-for-energy-security-and-net-zero",
+    "person_name": "Jonathan Brearley",
+    "person_role_id": "personrole-permsec-department-for-energy-security-and-net-zero-jonathan-brearley",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-department-for-environment-food-rural-affairs",
+    "person_name": "Paul Kissack",
+    "person_role_id": "personrole-permsec-department-for-environment-food-rural-affairs-paul-kissack",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-department-for-science-innovation-and-technology",
+    "person_name": "Emran Mian",
+    "person_role_id": "personrole-permsec-department-for-science-innovation-and-technology-emran-mian",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-department-for-transport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-department-for-transport",
+    "person_name": "Jo Shanmugalingam CB",
+    "person_role_id": "personrole-permsec-department-for-transport-jo-shanmugalingam",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-department-for-work-pensions",
+    "person_name": "Sir Peter Schofield KCB",
+    "person_role_id": "personrole-permsec-department-for-work-pensions-peter-schofield",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-department-of-health-and-social-care",
+    "person_name": "Samantha Jones",
+    "person_role_id": "personrole-permsec-department-of-health-and-social-care-samantha-jones",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-foreign-commonwealth-development-office",
+    "person_name": "Nick Dyer",
+    "person_role_id": "personrole-permsec-foreign-commonwealth-development-office-nick-dyer",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-hm-treasury",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-hm-treasury",
+    "person_name": "James Bowler CB",
+    "person_role_id": "personrole-permsec-hm-treasury-james-bowler",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-home-office",
+    "person_name": "Gareth Davies CB",
+    "person_role_id": "personrole-permsec-home-office-gareth-davies",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-ministry-of-defence",
+    "person_name": "Jeremy Pocklington CB",
+    "person_role_id": "personrole-permsec-ministry-of-defence-jeremy-pocklington",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-ministry-of-housing-communities-local-government",
+    "person_name": "Dame Sarah Healey DCB CVO",
+    "person_role_id": "personrole-permsec-ministry-of-housing-communities-local-government-sarah-healey-dcb-cvo",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-justice",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-ministry-of-justice",
+    "person_name": "Dr Jo Farrar CB OBE",
+    "person_role_id": "personrole-permsec-ministry-of-justice-jo-farrar",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-northern-ireland-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-permanent-secretary-northern-ireland-office",
+    "person_name": "Ms Julie Harrison",
+    "person_role_id": "personrole-permsec-northern-ireland-office-ms-julie-harrison",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": null
+  },
+  {
+    "body_id": "uk-state-body-department-for-business-and-trade",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-president-of-the-board-of-trade",
+    "person_name": "The Rt Hon Peter Kyle MP",
+    "person_role_id": "personrole-president-of-the-board-of-trade-peter-kyle",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-prime-ministers-office-10-downing-street",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-prime-minister",
+    "person_name": "The Rt Hon Sir Keir Starmer KCB KC MP",
+    "person_role_id": "personrole-prime-minister-keir-starmer",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-department-for-business-and-trade",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-2",
+    "person_name": "The Rt Hon Peter Kyle MP",
+    "person_role_id": "personrole-secretary-of-state-2-peter-kyle",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state",
+    "person_name": "The Rt Hon Ed Miliband MP",
+    "person_role_id": "personrole-secretary-of-state-ed-miliband",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-culture-media-and-sport-3",
+    "person_name": "The Rt Hon Lisa Nandy MP",
+    "person_role_id": "personrole-secretary-of-state-for-culture-media-and-sport-3-lisa-nandy",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-defence",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-defence",
+    "person_name": "Dan Jarvis MBE MP",
+    "person_role_id": "personrole-secretary-of-state-for-defence-dan-jarvis",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-06-11"
+  },
+  {
+    "body_id": "uk-state-body-department-for-education",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-education",
+    "person_name": "The Rt Hon Bridget Phillipson MP",
+    "person_role_id": "personrole-secretary-of-state-for-education-bridget-phillipson",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "person_name": "The Rt Hon Emma Reynolds MP",
+    "person_role_id": "personrole-secretary-of-state-for-environment-food-and-rural-affairs-emma-reynolds",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-foreign-commonwealth-and-development-affairs",
+    "person_name": "The Rt Hon Yvette Cooper MP",
+    "person_role_id": "personrole-secretary-of-state-for-foreign-commonwealth-and-development-affairs-yvette-cooper",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-health-and-social-care",
+    "person_name": "The Rt Hon James Murray MP",
+    "person_role_id": "personrole-secretary-of-state-for-health-and-social-care-james-murray",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-05-14"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-housing-communities-local-government",
+    "person_name": "The Rt Hon Steve Reed OBE MP",
+    "person_role_id": "personrole-secretary-of-state-for-housing-communities-local-government-steve-reed",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-ministry-of-justice",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-justice",
+    "person_name": "The Rt Hon David Lammy MP",
+    "person_role_id": "personrole-secretary-of-state-for-justice-david-lammy",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-northern-ireland-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-northern-ireland",
+    "person_name": "The Rt Hon Hilary Benn MP",
+    "person_role_id": "personrole-secretary-of-state-for-northern-ireland-hilary-benn",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-07-05"
+  },
+  {
+    "body_id": "uk-state-body-department-for-science-innovation-and-technology",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-science-innovation-and-technology",
+    "person_name": "The Rt Hon Liz Kendall MP",
+    "person_role_id": "personrole-secretary-of-state-for-science-innovation-and-technology-liz-kendall",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-scotland-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-scotland",
+    "person_name": "The Rt Hon Douglas Alexander MP",
+    "person_role_id": "personrole-secretary-of-state-for-scotland-douglas-alexander",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-home-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-the-home-department",
+    "person_name": "The Rt Hon Shabana Mahmood MP",
+    "person_role_id": "personrole-secretary-of-state-for-the-home-department-shabana-mahmood",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-department-for-transport",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-transport",
+    "person_name": "The Rt Hon Heidi Alexander MP",
+    "person_role_id": "personrole-secretary-of-state-for-transport-heidi-alexander",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2024-11-29"
+  },
+  {
+    "body_id": "uk-state-body-department-for-work-pensions",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-work-and-pensions",
+    "person_name": "The Rt Hon Pat McFadden MP",
+    "person_role_id": "personrole-secretary-of-state-for-work-and-pensions-pat-mcfadden",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-05"
+  },
+  {
+    "body_id": "uk-state-body-attorney-generals-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-solicitor-general",
+    "person_name": "The Rt Hon Ellie Reeves KC MP",
+    "person_role_id": "personrole-solicitor-general-ellie-reeves",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2025-09-06"
+  },
+  {
+    "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-uk-special-envoy-for-lgbt-rights",
+    "person_name": "Lord Collins of Highbury",
+    "person_role_id": "personrole-uk-special-envoy-for-lgbt-rights-collins-of-highbury",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-06-29"
+  },
+  {
+    "body_id": "uk-state-body-foreign-commonwealth-development-office",
+    "end_date": null,
+    "is_current": true,
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-uk-special-envoy-on-preventing-sexual-violence-in-conflict",
+    "person_name": "Chris Elmore MP",
+    "person_role_id": "personrole-uk-special-envoy-on-preventing-sexual-violence-in-conflict-chris-elmore",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "start_date": "2026-06-19"
+  }
+]

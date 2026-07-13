@@ -14,10 +14,11 @@ generated timestamp. Re-runnable.
 Boring by design: stdlib only (json, sqlite3), one job.
 """
 import datetime
-import glob
 import json
 import os
 import sqlite3
+
+import store
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root (this file lives in pipeline/)
 DATA = os.path.join(REPO, "data")
@@ -29,12 +30,7 @@ ANNEX_A_VERSION = "0.4"
 
 
 def load_dir(name):
-    return [load(p) for p in sorted(glob.glob(os.path.join(DATA, name, "*.json")))]
-
-
-def load(path):
-    with open(path, encoding="utf-8") as fh:
-        return json.load(fh)
+    return store.load(name)
 
 
 def write_json(path, obj):
@@ -44,13 +40,11 @@ def write_json(path, obj):
         fh.write("\n")
 
 
-def load_records_by_body(folder):
-    """Bulk datasets are one array-file per body; flatten to body_id -> [records]."""
+def load_records_by_body(t):
+    """Group a bulk dataset's flat array into body_id -> [records]."""
     by_body = {}
-    for p in glob.glob(os.path.join(DATA, folder, "*.json")):
-        data = load(p)
-        for rec in (data if isinstance(data, list) else [data]):
-            by_body.setdefault(rec["body_id"], []).append(rec)
+    for rec in store.load(t):
+        by_body.setdefault(rec["body_id"], []).append(rec)
     return by_body
 
 

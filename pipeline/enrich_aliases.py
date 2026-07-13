@@ -30,9 +30,10 @@ import json
 import os
 import sys
 
+import store
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # repo root (this file lives in pipeline/)
 RAW_GLOB = os.path.join(REPO, "data", "sources", "raw", "govuk-organisations-api", "page-*.json")
-BODIES_DIR = os.path.join(REPO, "data", "bodies")
 
 ALIAS_CLOSED_STATUS = {"changed_name", "replaced"}
 
@@ -42,22 +43,15 @@ def load(path):
         return json.load(fh)
 
 
-def write_json(path, obj):
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, indent=2, ensure_ascii=False, sort_keys=True)
-        fh.write("\n")
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--dry-run", action="store_true", help="report only; write nothing")
     args = parser.parse_args()
 
-    body_paths = {os.path.basename(p)[:-5]: p for p in glob.glob(os.path.join(BODIES_DIR, "*.json"))}
-    if not body_paths:
+    bodies = store.load_map("bodies")
+    if not bodies:
         sys.exit("No Body records found. Run transform_bodies.py first.")
-    bodies = {bid: load(p) for bid, p in body_paths.items()}
 
     pages = sorted(glob.glob(RAW_GLOB))
     if not pages:
@@ -104,8 +98,9 @@ def main():
         rec["other_names"] = existing + new
         alias_added += len(new)
         updated.append((succ_id, new))
-        if not args.dry_run:
-            write_json(body_paths[succ_id], rec)
+
+    if updated and not args.dry_run:
+        store.save("bodies", list(bodies.values()))
 
     print("--- enrich_aliases summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
     print("successors gaining aliases:  {}".format(len(updated)))

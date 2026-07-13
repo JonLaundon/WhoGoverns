@@ -25,11 +25,11 @@ Create-if-absent, like transform_bodies — never overwrites an existing record.
     py -3 pipeline/ingest_offregister.py [--dry-run]
 """
 import argparse
-import json
 import os
 
+import store
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BODIES = os.path.join(REPO, "data", "bodies")
 PRIVY = "source-official-dataset-privy-council-charters"
 DBT = "source-official-dataset-list-of-uk-regulators"
 
@@ -91,12 +91,6 @@ def base(slug, name, aliases):
     }
 
 
-def write_json(path, obj):
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, indent=2, ensure_ascii=False, sort_keys=True)
-        fh.write("\n")
-
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
@@ -131,14 +125,16 @@ def main():
                       "Spiral 2 citation.")
         records.append(r)
 
+    existing = store.load_map("bodies")
     written, skipped = [], []
     for r in records:
-        path = os.path.join(BODIES, r["body_id"] + ".json")
-        if os.path.exists(path):
+        if r["body_id"] in existing:
             skipped.append(r["body_id"]); continue
-        if not args.dry_run:
-            write_json(path, r)
+        existing[r["body_id"]] = r
         written.append(r["body_id"])
+
+    if written and not args.dry_run:
+        store.save("bodies", list(existing.values()))
 
     print("--- ingest_offregister summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
     print("chartered (royal_charter_body):   {}".format(len(CHARTERED)))

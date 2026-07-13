@@ -1,14 +1,17 @@
 #!/usr/bin/env python3
 """Validate WhoGoverns data records against their JSON Schemas.
 
-Boring by design: one job, stdlib + jsonschema. Run from the repo root:
-    python3 validate.py
+Boring by design: one job, stdlib + jsonschema. Reads the consolidated array files via
+pipeline/store.py (each data type is one data/<type>.json list). Run from the repo root:
+    py -3 validate.py
 Exit code 0 if no schema errors, 1 otherwise.
 """
 import json
 import os
 import sys
-import glob
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "pipeline"))
+import store  # noqa: E402
 
 try:
     from jsonschema import Draft202012Validator
@@ -17,8 +20,8 @@ except ImportError:
 
 REPO = os.path.dirname(os.path.abspath(__file__))
 
-# data subfolder -> active schema file
-FOLDER_SCHEMA = {
+# data type -> active schema file
+TYPE_SCHEMA = {
     "bodies": "body.schema.json",
     "sources": "source.schema.json",
     "offices": "office.schema.json",
@@ -29,85 +32,73 @@ FOLDER_SCHEMA = {
 }
 
 
-def load(path):
+def load_json(path):
     with open(path, encoding="utf-8") as fh:
         return json.load(fh)
 
 
 def main():
-    errors = 0
-    warnings = 0
-    records = 0
+    errors = warnings = records = 0
+    body_ids = {r["body_id"] for r in store.load("bodies")}
+    source_ids = {r["source_id"] for r in store.load("sources")}
+    office_ids = {r["office_id"] for r in store.load("offices")}
 
-    body_ids = {load(p).get("body_id") for p in glob.glob(os.path.join(REPO, "data/bodies/*.json"))}
-    source_ids = {load(p).get("source_id") for p in glob.glob(os.path.join(REPO, "data/sources/*.json"))}
-    office_ids = {load(p).get("office_id") for p in glob.glob(os.path.join(REPO, "data/offices/*.json"))}
-
-    for folder, schema_file in FOLDER_SCHEMA.items():
+    for t, schema_file in TYPE_SCHEMA.items():
         schema_path = os.path.join(REPO, "schemas", schema_file)
         if not os.path.exists(schema_path):
             continue
-        validator = Draft202012Validator(load(schema_path))
-        # Bulk derived datasets (budget/staffing) are stored one FILE PER BODY: a JSON
-        # array of records. The hand-curated structural records stay one file per record.
-        array_folder = folder in ("budgets", "staffing")
-        for path in sorted(glob.glob(os.path.join(REPO, "data", folder, "*.json"))):
-            data = load(path)
-            rel = os.path.relpath(path, REPO)
-            items = data if isinstance(data, list) else [data]
-            file_ok = True
-            for rec in items:
-                records += 1
-                errs = sorted(validator.iter_errors(rec), key=lambda e: list(e.path))
-                if errs:
-                    errors += len(errs); file_ok = False
-                    print("FAIL " + rel)
-                    for e in errs:
-                        loc = "/".join(str(x) for x in e.path) or "(root)"
-                        print("   - {}: {}".format(loc, e.message))
-                # referential warnings (per record)
-                if folder == "bodies":
-                    for field in ("sponsor_department_id", "parent_body_id"):
-                        ref = rec.get(field)
-                        if ref and ref not in body_ids:
-                            warnings += 1
-                            print("   ! warn {} -> {} not yet among body records (expected until more bodies land)".format(field, ref))
-                    for field in ("classification_source_ids", "founding_source_ids", "framework_document_source_ids", "annual_report_source_ids"):
-                        for ref in rec.get(field, []):
-                            if ref not in source_ids:
-                                warnings += 1
-                                print("   ! warn {} -> {} not among source records".format(field, ref))
-                if folder == "relationships":
-                    for field in ("from_body_id", "to_body_id"):
-                        ref = rec.get(field)
-                        if ref and ref not in body_ids:
-                            warnings += 1
-                            print("   ! warn {} -> {} not among body records".format(field, ref))
-                if folder in ("offices", "person-roles", "budgets", "staffing"):
-                    ref = rec.get("body_id")
+        validator = Draft202012Validator(load_json(schema_path))
+        recs = store.load(t)
+        bad = 0
+        for rec in recs:
+            records += 1
+            for e in sorted(validator.iter_errors(rec), key=lambda e: list(e.path)):
+                errors += 1
+                bad += 1
+                loc = "/".join(str(x) for x in e.path) or "(root)"
+                print("FAIL {} [{}]: {}".format(t, loc, e.message))
+            # referential warnings (per record)
+            if t == "bodies":
+                for field in ("sponsor_department_id", "parent_body_id"):
+                    ref = rec.get(field)
                     if ref and ref not in body_ids:
                         warnings += 1
-                        print("   ! warn body_id -> {} not among body records".format(ref))
-                if folder == "person-roles":
-                    ref = rec.get("office_id")
-                    if ref and ref not in office_ids:
+                        print("   ! warn {}.{} -> {} not among bodies".format(t, field, ref))
+                for field in ("classification_source_ids", "founding_source_ids",
+                              "framework_document_source_ids", "annual_report_source_ids", "function_source_ids"):
+                    for ref in rec.get(field, []):
+                        if ref not in source_ids:
+                            warnings += 1
+                            print("   ! warn {}.{} -> {} not among sources".format(t, field, ref))
+            elif t == "relationships":
+                for field in ("from_body_id", "to_body_id"):
+                    ref = rec.get(field)
+                    if ref and ref not in body_ids:
                         warnings += 1
-                        print("   ! warn office_id -> {} not among office records".format(ref))
-            if file_ok:
-                print("ok   " + rel + ("  ({} records)".format(len(items)) if array_folder else ""))
+                        print("   ! warn relationships.{} -> {} not among bodies".format(field, ref))
+            elif t in ("offices", "person-roles", "budgets", "staffing"):
+                ref = rec.get("body_id")
+                if ref and ref not in body_ids:
+                    warnings += 1
+                    print("   ! warn {}.body_id -> {} not among bodies".format(t, ref))
+            if t == "person-roles":
+                ref = rec.get("office_id")
+                if ref and ref not in office_ids:
+                    warnings += 1
+                    print("   ! warn person-roles.office_id -> {} not among offices".format(ref))
+        print("ok   {}.json  ({} records{})".format(t, len(recs), ", " + str(bad) + " FAIL" if bad else ""))
 
-    # provision_key duplicate check (canonical records only) — none in Spiral 1
+    # provision_key duplicate check on canonical Power/Duty/Veto records (none in Spiral 1)
     seen = {}
-    for folder in ("powers", "duties", "vetoes"):
-        for path in glob.glob(os.path.join(REPO, "data", folder, "*.json")):
-            rec = load(path)
+    for t in ("powers", "duties", "vetoes"):
+        for rec in store.load(t) if t in store.PK else []:
             pk = rec.get("provision_key")
             if pk and rec.get("derived_from_record_id") is None:
                 if pk in seen:
                     errors += 1
-                    print("FAIL duplicate canonical provision_key '{}' in {} and {}".format(pk, os.path.relpath(path, REPO), seen[pk]))
+                    print("FAIL duplicate canonical provision_key '{}'".format(pk))
                 else:
-                    seen[pk] = os.path.relpath(path, REPO)
+                    seen[pk] = True
 
     print("\n---")
     print("records checked: {}  schema errors: {}  warnings: {}".format(records, errors, warnings))

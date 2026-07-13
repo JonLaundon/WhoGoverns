@@ -23,12 +23,12 @@ Needs openpyxl.
 """
 import argparse
 import collections
-import glob
-import json
 import os
 import re
 
 import openpyxl
+
+import store
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(REPO, "data")
@@ -54,17 +54,6 @@ def slug(s):
     return re.sub(r"-+", "-", re.sub(r"[^a-z0-9]+", "-", str(s).lower())).strip("-")
 
 
-def write_json(path, obj):
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, indent=2, ensure_ascii=False, sort_keys=True)
-        fh.write("\n")
-
-
-def load(path):
-    with open(path, encoding="utf-8") as fh:
-        return json.load(fh)
-
-
 # Legal-form words that may pad an OSCAR accounting-entity name vs the body name.
 # Containment modulo these is NOT fuzzy matching — it is the body name plus a corporate
 # suffix (e.g. "British Business Bank plc" -> "British Business Bank"). Overlap matching
@@ -80,8 +69,7 @@ def toks(s):
 def body_lookup():
     """Return (exact_lut, body_toks). exact_lut: normalised name/alias -> body_id."""
     exact, body_toks = {}, {}
-    for f in glob.glob(os.path.join(DATA, "bodies", "*.json")):
-        d = load(f)
+    for d in store.load("bodies"):
         body_toks[d["body_id"]] = toks(d["name"])
         for n in [d["name"]] + d.get("other_names", []):
             exact.setdefault(norm(n), d["body_id"])
@@ -142,7 +130,7 @@ def main():
 
     agg, matched_orgs, unmatched = aggregate()
     fy_slug = FY  # 2024-25 already dash-formatted
-    written = 0
+    all_records = []
     for bid, cells in agg.items():
         body_slug = bid[len("uk-state-body-"):]
         # total managed expenditure (net) = sum of the four headline net boundaries (NOT income).
@@ -181,15 +169,13 @@ def main():
                 "citation": {"dataset": SOURCE_ID, "table": "BUD_24-25", "financial_year": FY},
                 "notes": "Sum of resource/capital DEL and AME (net).", "record_status": "extracted",
             })
-        # One file per body: an array of that body's budget records (consolidated to keep
-        # the file count manageable — bulk derived data, not hand-curated per-record).
-        if records and not args.dry_run:
-            write_json(os.path.join(BUDGETS, body_slug + ".json"), records)
-        written += len(records)
+        all_records.extend(records)
 
+    if not args.dry_run:
+        store.save("budgets", all_records)
     print("--- ingest_budget summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
     print("bodies with budget records:   {}".format(len(agg)))
-    print("budget records written:       {}".format(written))
+    print("budget records written:       {}".format(len(all_records)))
     print("OSCAR orgs matched:           {}".format(len(matched_orgs)))
     print("OSCAR orgs UNMATCHED:         {}  (candidates for a reviewed alias pass)".format(len(unmatched)))
 

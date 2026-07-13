@@ -963,6 +963,14 @@
     },
     {
       "data": {
+        "id": "hostedge-office-secretary-of-state",
+        "kind": "office_of",
+        "source": "office-secretary-of-state",
+        "target": "uk-state-body-department-for-energy-security-and-net-zero"
+      }
+    },
+    {
+      "data": {
         "id": "hostedge-office-secretary-of-state-2",
         "kind": "office_of",
         "source": "office-secretary-of-state-2",
@@ -1075,14 +1083,6 @@
     },
     {
       "data": {
-        "id": "hostedge-office-secretary-of-state",
-        "kind": "office_of",
-        "source": "office-secretary-of-state",
-        "target": "uk-state-body-department-for-energy-security-and-net-zero"
-      }
-    },
-    {
-      "data": {
         "id": "hostedge-office-solicitor-general",
         "kind": "office_of",
         "source": "office-solicitor-general",
@@ -1139,6 +1139,14 @@
     },
     {
       "data": {
+        "id": "rel-cabinet-office-sponsors-civil-service",
+        "kind": "sponsors",
+        "source": "uk-state-body-cabinet-office",
+        "target": "uk-state-body-civil-service"
+      }
+    },
+    {
+      "data": {
         "id": "rel-cabinet-office-sponsors-civil-service-commission",
         "kind": "sponsors",
         "source": "uk-state-body-cabinet-office",
@@ -1159,14 +1167,6 @@
         "kind": "sponsors",
         "source": "uk-state-body-cabinet-office",
         "target": "uk-state-body-civil-service-group"
-      }
-    },
-    {
-      "data": {
-        "id": "rel-cabinet-office-sponsors-civil-service",
-        "kind": "sponsors",
-        "source": "uk-state-body-cabinet-office",
-        "target": "uk-state-body-civil-service"
       }
     },
     {
@@ -2539,18 +2539,18 @@
     },
     {
       "data": {
-        "id": "rel-department-for-energy-security-and-net-zero-sponsors-great-british-energy-nuclear",
-        "kind": "sponsors",
-        "source": "uk-state-body-department-for-energy-security-and-net-zero",
-        "target": "uk-state-body-great-british-energy-nuclear"
-      }
-    },
-    {
-      "data": {
         "id": "rel-department-for-energy-security-and-net-zero-sponsors-great-british-energy",
         "kind": "sponsors",
         "source": "uk-state-body-department-for-energy-security-and-net-zero",
         "target": "uk-state-body-great-british-energy"
+      }
+    },
+    {
+      "data": {
+        "id": "rel-department-for-energy-security-and-net-zero-sponsors-great-british-energy-nuclear",
+        "kind": "sponsors",
+        "source": "uk-state-body-department-for-energy-security-and-net-zero",
+        "target": "uk-state-body-great-british-energy-nuclear"
       }
     },
     {
@@ -3395,18 +3395,18 @@
     },
     {
       "data": {
-        "id": "rel-department-for-work-pensions-sponsors-pension-protection-fund-ombudsman",
-        "kind": "sponsors",
-        "source": "uk-state-body-department-for-work-pensions",
-        "target": "uk-state-body-pension-protection-fund-ombudsman"
-      }
-    },
-    {
-      "data": {
         "id": "rel-department-for-work-pensions-sponsors-pension-protection-fund",
         "kind": "sponsors",
         "source": "uk-state-body-department-for-work-pensions",
         "target": "uk-state-body-pension-protection-fund"
+      }
+    },
+    {
+      "data": {
+        "id": "rel-department-for-work-pensions-sponsors-pension-protection-fund-ombudsman",
+        "kind": "sponsors",
+        "source": "uk-state-body-department-for-work-pensions",
+        "target": "uk-state-body-pension-protection-fund-ombudsman"
       }
     },
     {
@@ -4539,18 +4539,18 @@
     },
     {
       "data": {
-        "id": "rel-hm-treasury-sponsors-royal-mint-advisory-committee",
-        "kind": "sponsors",
-        "source": "uk-state-body-hm-treasury",
-        "target": "uk-state-body-royal-mint-advisory-committee"
-      }
-    },
-    {
-      "data": {
         "id": "rel-hm-treasury-sponsors-royal-mint",
         "kind": "sponsors",
         "source": "uk-state-body-hm-treasury",
         "target": "uk-state-body-royal-mint"
+      }
+    },
+    {
+      "data": {
+        "id": "rel-hm-treasury-sponsors-royal-mint-advisory-committee",
+        "kind": "sponsors",
+        "source": "uk-state-body-hm-treasury",
+        "target": "uk-state-body-royal-mint-advisory-committee"
       }
     },
     {
@@ -6276,6 +6276,15 @@
     {
       "data": {
         "derived": true,
+        "id": "leads-office-prime-minister-office-secretary-of-state",
+        "kind": "leads",
+        "source": "office-prime-minister",
+        "target": "office-secretary-of-state"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
         "id": "leads-office-prime-minister-office-secretary-of-state-2",
         "kind": "leads",
         "source": "office-prime-minister",
@@ -6397,15 +6406,6 @@
         "kind": "leads",
         "source": "office-prime-minister",
         "target": "office-secretary-of-state-for-work-and-pensions"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-prime-minister-office-secretary-of-state",
-        "kind": "leads",
-        "source": "office-prime-minister",
-        "target": "office-secretary-of-state"
       }
     },
     {
@@ -7183,7 +7183,7 @@
       }
     }
   ],
-  "generated": "2026-07-07T23:22:27",
+  "generated": "2026-07-13T21:34:27",
   "nodes": [
     {
       "data": {
@@ -8236,24 +8236,6 @@
     },
     {
       "data": {
-        "body_type": "other_body",
-        "functions": [],
-        "govuk_slug": "bbc-world-service",
-        "id": "uk-state-body-bbc-world-service",
-        "kind": "body",
-        "label": "BBC World Service",
-        "needs_review": true,
-        "other_names": [],
-        "parent_body_id": null,
-        "source_ids": [
-          "source-official-dataset-govuk-organisations-api"
-        ],
-        "sponsor_department_id": null,
-        "status": "active"
-      }
-    },
-    {
-      "data": {
         "body_type": "public_corporation",
         "functions": [],
         "govuk_slug": "bbc",
@@ -8267,6 +8249,24 @@
           "source-official-dataset-govuk-organisations-api"
         ],
         "sponsor_department_id": "uk-state-body-department-for-culture-media-and-sport",
+        "status": "active"
+      }
+    },
+    {
+      "data": {
+        "body_type": "other_body",
+        "functions": [],
+        "govuk_slug": "bbc-world-service",
+        "id": "uk-state-body-bbc-world-service",
+        "kind": "body",
+        "label": "BBC World Service",
+        "needs_review": true,
+        "other_names": [],
+        "parent_body_id": null,
+        "source_ids": [
+          "source-official-dataset-govuk-organisations-api"
+        ],
+        "sponsor_department_id": null,
         "status": "active"
       }
     },
@@ -9015,24 +9015,6 @@
     },
     {
       "data": {
-        "body_type": "division_directorate",
-        "functions": [],
-        "govuk_slug": "cabinet-office-board",
-        "id": "uk-state-body-cabinet-office-board",
-        "kind": "body",
-        "label": "Cabinet Office Board",
-        "needs_review": true,
-        "other_names": [],
-        "parent_body_id": null,
-        "source_ids": [
-          "source-official-dataset-govuk-organisations-api"
-        ],
-        "sponsor_department_id": "uk-state-body-cabinet-office",
-        "status": "active"
-      }
-    },
-    {
-      "data": {
         "body_type": "ministerial_department",
         "budget": {
           "fy": "2024-25",
@@ -9328,6 +9310,24 @@
             }
           ]
         },
+        "status": "active"
+      }
+    },
+    {
+      "data": {
+        "body_type": "division_directorate",
+        "functions": [],
+        "govuk_slug": "cabinet-office-board",
+        "id": "uk-state-body-cabinet-office-board",
+        "kind": "body",
+        "label": "Cabinet Office Board",
+        "needs_review": true,
+        "other_names": [],
+        "parent_body_id": null,
+        "source_ids": [
+          "source-official-dataset-govuk-organisations-api"
+        ],
+        "sponsor_department_id": "uk-state-body-cabinet-office",
         "status": "active"
       }
     },
@@ -9956,6 +9956,24 @@
     },
     {
       "data": {
+        "body_type": "other_body",
+        "functions": [],
+        "govuk_slug": "civil-service",
+        "id": "uk-state-body-civil-service",
+        "kind": "body",
+        "label": "Civil Service",
+        "needs_review": true,
+        "other_names": [],
+        "parent_body_id": null,
+        "source_ids": [
+          "source-official-dataset-govuk-organisations-api"
+        ],
+        "sponsor_department_id": "uk-state-body-cabinet-office",
+        "status": "active"
+      }
+    },
+    {
+      "data": {
         "body_type": "executive_ndpb",
         "functions": [
           "regulation"
@@ -10354,24 +10372,6 @@
           "source-official-dataset-govuk-organisations-api"
         ],
         "sponsor_department_id": null,
-        "status": "active"
-      }
-    },
-    {
-      "data": {
-        "body_type": "other_body",
-        "functions": [],
-        "govuk_slug": "civil-service",
-        "id": "uk-state-body-civil-service",
-        "kind": "body",
-        "label": "Civil Service",
-        "needs_review": true,
-        "other_names": [],
-        "parent_body_id": null,
-        "source_ids": [
-          "source-official-dataset-govuk-organisations-api"
-        ],
-        "sponsor_department_id": "uk-state-body-cabinet-office",
         "status": "active"
       }
     },
@@ -18084,6 +18084,24 @@
     },
     {
       "data": {
+        "body_type": "other_body",
+        "functions": [],
+        "govuk_slug": "great-british-energy",
+        "id": "uk-state-body-great-british-energy",
+        "kind": "body",
+        "label": "Great British Energy",
+        "needs_review": true,
+        "other_names": [],
+        "parent_body_id": null,
+        "source_ids": [
+          "source-official-dataset-govuk-organisations-api"
+        ],
+        "sponsor_department_id": "uk-state-body-department-for-energy-security-and-net-zero",
+        "status": "active"
+      }
+    },
+    {
+      "data": {
         "body_type": "executive_ndpb",
         "functions": [],
         "govuk_slug": "great-british-energy-nuclear",
@@ -18095,24 +18113,6 @@
           "Great British Nuclear",
           "GBN"
         ],
-        "parent_body_id": null,
-        "source_ids": [
-          "source-official-dataset-govuk-organisations-api"
-        ],
-        "sponsor_department_id": "uk-state-body-department-for-energy-security-and-net-zero",
-        "status": "active"
-      }
-    },
-    {
-      "data": {
-        "body_type": "other_body",
-        "functions": [],
-        "govuk_slug": "great-british-energy",
-        "id": "uk-state-body-great-british-energy",
-        "kind": "body",
-        "label": "Great British Energy",
-        "needs_review": true,
-        "other_names": [],
         "parent_body_id": null,
         "source_ids": [
           "source-official-dataset-govuk-organisations-api"
@@ -23488,25 +23488,6 @@
     },
     {
       "data": {
-        "body_type": "advisory_ndpb",
-        "functions": [],
-        "govuk_slug": "national-crime-agency-remuneration-review-body",
-        "id": "uk-state-body-national-crime-agency-remuneration-review-body",
-        "kind": "body",
-        "label": "National Crime Agency Remuneration Review Body ",
-        "needs_review": false,
-        "other_names": [],
-        "parent_body_id": null,
-        "source_ids": [
-          "source-official-dataset-cabinet-office-public-bodies",
-          "source-official-dataset-govuk-organisations-api"
-        ],
-        "sponsor_department_id": "uk-state-body-home-office",
-        "status": "active"
-      }
-    },
-    {
-      "data": {
         "body_type": "non_ministerial_department",
         "budget": {
           "fy": "2024-25",
@@ -23642,6 +23623,25 @@
             }
           ]
         },
+        "status": "active"
+      }
+    },
+    {
+      "data": {
+        "body_type": "advisory_ndpb",
+        "functions": [],
+        "govuk_slug": "national-crime-agency-remuneration-review-body",
+        "id": "uk-state-body-national-crime-agency-remuneration-review-body",
+        "kind": "body",
+        "label": "National Crime Agency Remuneration Review Body ",
+        "needs_review": false,
+        "other_names": [],
+        "parent_body_id": null,
+        "source_ids": [
+          "source-official-dataset-cabinet-office-public-bodies",
+          "source-official-dataset-govuk-organisations-api"
+        ],
+        "sponsor_department_id": "uk-state-body-home-office",
         "status": "active"
       }
     },
@@ -25684,24 +25684,6 @@
       "data": {
         "body_type": "division_directorate",
         "functions": [],
-        "govuk_slug": "office-for-investment-financial-services",
-        "id": "uk-state-body-office-for-investment-financial-services",
-        "kind": "body",
-        "label": "Office for Investment: Financial Services",
-        "needs_review": true,
-        "other_names": [],
-        "parent_body_id": "uk-state-body-office-for-investment",
-        "source_ids": [
-          "source-official-dataset-govuk-organisations-api"
-        ],
-        "sponsor_department_id": null,
-        "status": "active"
-      }
-    },
-    {
-      "data": {
-        "body_type": "division_directorate",
-        "functions": [],
         "govuk_slug": "office-for-investment",
         "id": "uk-state-body-office-for-investment",
         "kind": "body",
@@ -25713,6 +25695,24 @@
           "source-official-dataset-govuk-organisations-api"
         ],
         "sponsor_department_id": "uk-state-body-department-for-business-and-trade",
+        "status": "active"
+      }
+    },
+    {
+      "data": {
+        "body_type": "division_directorate",
+        "functions": [],
+        "govuk_slug": "office-for-investment-financial-services",
+        "id": "uk-state-body-office-for-investment-financial-services",
+        "kind": "body",
+        "label": "Office for Investment: Financial Services",
+        "needs_review": true,
+        "other_names": [],
+        "parent_body_id": "uk-state-body-office-for-investment",
+        "source_ids": [
+          "source-official-dataset-govuk-organisations-api"
+        ],
+        "sponsor_department_id": null,
         "status": "active"
       }
     },
@@ -26781,12 +26781,12 @@
     },
     {
       "data": {
-        "body_type": "tribunal",
+        "body_type": "public_corporation",
         "functions": [],
-        "govuk_slug": "pension-protection-fund-ombudsman",
-        "id": "uk-state-body-pension-protection-fund-ombudsman",
+        "govuk_slug": "pension-protection-fund",
+        "id": "uk-state-body-pension-protection-fund",
         "kind": "body",
-        "label": "The Pension Protection Fund Ombudsman",
+        "label": "Pension Protection Fund",
         "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
@@ -26799,12 +26799,12 @@
     },
     {
       "data": {
-        "body_type": "public_corporation",
+        "body_type": "tribunal",
         "functions": [],
-        "govuk_slug": "pension-protection-fund",
-        "id": "uk-state-body-pension-protection-fund",
+        "govuk_slug": "pension-protection-fund-ombudsman",
+        "id": "uk-state-body-pension-protection-fund-ombudsman",
         "kind": "body",
-        "label": "Pension Protection Fund",
+        "label": "The Pension Protection Fund Ombudsman",
         "needs_review": false,
         "other_names": [],
         "parent_body_id": null,
@@ -27920,6 +27920,24 @@
     },
     {
       "data": {
+        "body_type": "other_body",
+        "functions": [],
+        "govuk_slug": "royal-mint",
+        "id": "uk-state-body-royal-mint",
+        "kind": "body",
+        "label": "Royal Mint",
+        "needs_review": true,
+        "other_names": [],
+        "parent_body_id": null,
+        "source_ids": [
+          "source-official-dataset-govuk-organisations-api"
+        ],
+        "sponsor_department_id": "uk-state-body-hm-treasury",
+        "status": "active"
+      }
+    },
+    {
+      "data": {
         "body_type": "advisory_ndpb",
         "functions": [],
         "govuk_slug": "royal-mint-advisory-committee",
@@ -27931,24 +27949,6 @@
         "parent_body_id": null,
         "source_ids": [
           "source-official-dataset-cabinet-office-public-bodies",
-          "source-official-dataset-govuk-organisations-api"
-        ],
-        "sponsor_department_id": "uk-state-body-hm-treasury",
-        "status": "active"
-      }
-    },
-    {
-      "data": {
-        "body_type": "other_body",
-        "functions": [],
-        "govuk_slug": "royal-mint",
-        "id": "uk-state-body-royal-mint",
-        "kind": "body",
-        "label": "Royal Mint",
-        "needs_review": true,
-        "other_names": [],
-        "parent_body_id": null,
-        "source_ids": [
           "source-official-dataset-govuk-organisations-api"
         ],
         "sponsor_department_id": "uk-state-body-hm-treasury",
@@ -33299,7 +33299,7 @@
         "holder_since": null,
         "id": "office-head-the-water-services-regulation-authority",
         "kind": "office",
-        "label": "Head of The Water Services Regulation Authority ",
+        "label": "Head of The Water Services Regulation Authority",
         "office_type": "independent_official"
       }
     },
@@ -34465,6 +34465,18 @@
     },
     {
       "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
+        "holder": "The Rt Hon Ed Miliband MP",
+        "holder_since": "2024-07-05",
+        "id": "office-secretary-of-state",
+        "kind": "office",
+        "label": "Secretary of State for Energy Security and Net Zero",
+        "office_type": "cabinet_minister"
+      }
+    },
+    {
+      "data": {
         "also_holds": [
           "President of the Board of Trade"
         ],
@@ -34632,18 +34644,6 @@
         "id": "office-secretary-of-state-for-work-and-pensions",
         "kind": "office",
         "label": "Secretary of State for Work and Pensions",
-        "office_type": "cabinet_minister"
-      }
-    },
-    {
-      "data": {
-        "also_holds": [],
-        "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
-        "holder": "The Rt Hon Ed Miliband MP",
-        "holder_since": "2024-07-05",
-        "id": "office-secretary-of-state",
-        "kind": "office",
-        "label": "Secretary of State for Energy Security and Net Zero",
         "office_type": "cabinet_minister"
       }
     },

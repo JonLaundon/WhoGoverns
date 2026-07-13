@@ -16,19 +16,18 @@ No network — reads two caches already on disk:
 Boring by design: stdlib + openpyxl (for the xlsx). Idempotent.
 """
 import argparse
-import glob
 import json
 import os
 import re
 
 import openpyxl
 
+import store
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(REPO, "data")
 XLSX = os.path.join(DATA, "sources", "raw", "cabinet-office-public-bodies", "public-bodies-directory-2023-24.xlsx")
 CONTENT_CACHE = os.path.join(DATA, "sources", "raw", "govuk-content-ministers")
-OFFICES_DIR = os.path.join(DATA, "offices")
-PERSONROLES_DIR = os.path.join(DATA, "person-roles")
 CO_SOURCE_ID = "source-official-dataset-cabinet-office-public-bodies"
 CONTENT_SOURCE_ID = "source-official-dataset-govuk-content-api"
 
@@ -36,13 +35,6 @@ CONTENT_SOURCE_ID = "source-official-dataset-govuk-content-api"
 def load(path):
     with open(path, encoding="utf-8") as fh:
         return json.load(fh)
-
-
-def write_json(path, obj):
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-    with open(path, "w", encoding="utf-8") as fh:
-        json.dump(obj, fh, indent=2, ensure_ascii=False, sort_keys=True)
-        fh.write("\n")
 
 
 def norm(s):
@@ -89,7 +81,7 @@ def main():
     ap.add_argument("--dry-run", action="store_true", help="report only; write nothing")
     args = ap.parse_args()
 
-    bodies = [load(p) for p in glob.glob(os.path.join(DATA, "bodies", "*.json"))]
+    bodies = store.load("bodies")
     nmd = {norm(b["name"]): b for b in bodies if b["body_type"] == "non_ministerial_department"}
     md = {b["govuk_organisation_slug"]: b for b in bodies if b["body_type"] == "ministerial_department"}
 
@@ -149,10 +141,8 @@ def main():
         })
 
     if not args.dry_run:
-        for o in offices:
-            write_json(os.path.join(OFFICES_DIR, o["office_id"] + ".json"), o)
-        for pr in person_roles:
-            write_json(os.path.join(PERSONROLES_DIR, pr["person_role_id"] + ".json"), pr)
+        store.upsert("offices", offices)
+        store.upsert("person-roles", person_roles)
 
     print("--- ingest_officials summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
     print("independent officials (non-min dept heads): {}".format(sum(1 for o in offices if o["office_type"] == "independent_official")))
