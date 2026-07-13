@@ -58,6 +58,21 @@ mirrors the proven precedents: **structure first, function second.**
   a SQLite/`graph.json` compile step, Git for history. Follows presentation patterns set by
   machineryofgovernment.uk and CivLab's SF Government Graph — patterns only; no data or code copied.
 
+## Host it yourself — it's a static site, no build
+
+The map is plain HTML/JS that reads one precompiled file (`compiled/graph.json`), both committed
+to this repo. Any static host that serves the repository root will run it — the root `index.html`
+forwards to the map. **Nothing to build or configure.**
+
+- **GitHub Pages (one click):** repo **Settings → Pages → Source: `main`, folder `/ (root)`**. Your
+  map is then live at `https://<user-or-org>.github.io/WhoGoverns/`.
+- **Vercel / Netlify:** "Add New → Project → Import" this repo. **Build command: none; output
+  directory: `.` (the repo root).** Deploy. (A `vercel.json` is included so Vercel serves the root as-is.)
+- **Locally:** `py -3 -m http.server` from the repo root, then open `http://localhost:8000/`.
+
+To refresh the data, re-run the pipeline (below) and commit the updated `data/*.json` +
+`compiled/graph.json`; the host redeploys automatically.
+
 ## Build & run
 
 Runtime needs only `jsonschema` + `openpyxl` (`pip install -r requirements.txt`). From the repo root:
