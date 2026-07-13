@@ -1,47 +1,78 @@
-# WhoGoverns — data repository
+# WhoGoverns
 
-Open, machine-readable model of the UK state. Working name "The State Machine"; published as **WhoGoverns**. Not affiliated with HM Government.
+**An open, machine-readable model of the UK state** — every department, agency and
+arm's-length body, its budget, staffing, and (the layer that exists nowhere today) its
+statutory powers, duties and veto points, cited down to the section of the Act.
 
-Built to Annex A (backend baseline) of the governing plan. Boring by design: JSON records, JSON Schema validation, plain-Python scripts, SQLite compile, Git history.
+No existing dataset can answer the question at the centre of this project:
 
-## What runs, in what order
-Build scripts live in `pipeline/` (run order and details in `pipeline/README.md`). Run from the repo root with `py -3 pipeline/<script>.py`:
-1. `pipeline/ingest_organisations.py` → raw cache + Organisations SourceRecord
-2. `pipeline/transform_bodies.py` → `data/bodies/` (classified)
-3. `pipeline/transform_relationships.py` → `data/relationships/` + body sponsor/parent
-4. `pipeline/enrich_aliases.py` → old-name aliases on live successors
-5. `pipeline/ingest_ministers.py` → `data/offices/`, `data/person-roles/` + content SourceRecord
-6. `pipeline/compile.py` → `compiled/graph.json`, `compiled/state_machine.sqlite`, `manifest.json`
+> **"Who can legally block this policy, and under what authority?"**
 
-Then, every session, from the repo root:
-- `py -3 validate.py` — validate every record in `data/` against its schema; checks IDs, source links, referential integrity, provision_key duplicates.
-- `py -3 -m ruff check .` — lint/style (config in `pyproject.toml`; PEP 8 + pyflakes + isort + bugbear).
-- `py -3 -m pytest -q` — unit tests (`tests/`): store round-trips, the no-fuzzy matching rule, and the budget/staffing summaries.
+The answer sits in prose across hundreds of statutes, statutory instruments and framework
+documents. Large-language-model extraction now makes converting that prose into structured,
+queryable data tractable — so WhoGoverns builds it, from primary sources, and publishes it open.
 
-Dev tools (`ruff`, `pytest`) are in `pyproject.toml` `[dependency-groups].dev`; the runtime needs only `requirements.txt` (`jsonschema`, `openpyxl`).
+> **Independent and non-partisan.** WhoGoverns is built entirely from public, official primary
+> sources and published under a non-partisan framing. It is not affiliated with, or endorsed by,
+> HM Government. A model of the state is only useful if its veto flags are trusted as neutral, so
+> the data and its documentation carry no party framing.
 
-## Setup
-`pip install -r requirements.txt --break-system-packages`
+---
 
-## Layout
-- `schemas/` — JSON Schemas. Body, Source, Office, PersonRole, Relationship, Budget, Staffing are **active** for Spiral 1. Power/Duty/Veto are **draft** (Spiral 2).
-- `vocab/` — controlled vocabularies + the GOV.UK `format` → `body_type` map.
-- `data/` — one JSON array file per type (`bodies.json`, `relationships.json`, `offices.json`, `person-roles.json`, `sources.json`, `budgets.json`, `staffing.json`), accessed via `pipeline/store.py`. Raw API caches live under `data/sources/raw/` (gitignored). (Consolidated from one-file-per-record 2026-07-13 — see `issues/schema-decisions.md`.)
-- `compiled/` — build artefacts (git-tracked or ignored per decision #6).
-- `site/` — the static map face (Spiral 1 build task).
-- `docs/` — governing docs, data dictionary, review template.
-- `calibration/` — confidence calibration log (mandatory from day one, A9.3).
-- `issues/` — schema decisions, source gaps, uncertain records.
+## What you can do with it
 
-## Scope (Spiral 1, v0.2 structure-first)
-Every live UK public body (all types) from the GOV.UK Organisations API, classified, with sponsor/parent relationships and ministers on departments, rendered as a Cytoscape map. Budgets and staffing are a deferred bolt-on; powers/vetoes are Spiral 2. See `workpacks/spiral-1/`.
+The structural layer ships first; the powers register is what makes the questions below answerable.
 
-## Version control note (important)
-Git is **not** run inside the Cowork sandbox: the OneDrive-synced mount corrupts git's internal files (null-byte placeholders that cannot be deleted). Initialise git and commit from **your own machine** (Windows, where OneDrive + git coexist normally) or from **Claude Code**. Suggested first commit once you open the folder locally:
-```
-cd whogoverns
-git init -b main
-git add -A
-git commit -m "Pre-Spiral 1 setup: schemas, vocab, AGENT.md, validation, three seed records"
-```
-A leftover `.git_corrupt_*` folder from the sandbox's failed init can be deleted in Explorer — it is not a valid repo.
+| Use case | What it answers |
+|---|---|
+| **Policy stress-testing** | Trace a proposal's path through the state and enumerate the statutory vetoes, consultation duties and judicial-review exposure that stand between decision and delivery — each with a citation. |
+| **Veto-density index** | Count and weight the veto points between a ministerial decision and its delivery, per policy area — a publishable "levers of the state" metric. |
+| **Day-one government packs** | For any office: what powers does this Secretary of State actually hold; what needs primary legislation; what can be done by direction tomorrow. |
+| **Machinery-of-government modelling** | Model a merger, abolition or cull of arm's-length bodies as a graph operation — which functions, duties and budgets move, and which duties have nowhere to land. |
+| **Form-follows-function review** | A function inventory from the powers register: orphaned, duplicated and misfit functions surfaced against a published taxonomy. |
+| **AI substrate (MCP)** | Expose the model as a queryable tool so AI assistants ground answers about the British state in cited data rather than recall. |
+| **Civic transparency** | A navigable map of who exists, who sponsors whom, budgets and staffing — one click to the primary source for every claim. |
+
+## How it's built — spiral by spiral
+
+Development runs in complete cycles ("spirals"), each ending in a working product. The order
+mirrors the proven precedents: **structure first, function second.**
+
+| Spiral | Delivers | Status |
+|---|---|---|
+| **1 · Structure** | Every live UK public body classified, with sponsor/parent relationships, ministers and senior officials, budgets and staffing — an interactive map with per-entity pages, every figure cited. | **Built** |
+| **2 · Powers register** | Statutory powers, duties and veto points extracted from legislation and cited to the section of the Act; bound to the office or body that holds them. | Next |
+| **3 · Query product** | The full delivery-chain / veto / duty-conflict query layer, plus the first analytical publications. | Planned |
+| **4 · AI substrate & launch** | A Model Context Protocol server over the query layer; public launch. | Planned |
+| **5 · Expansion** | Live monitoring, council duties, devolvability screens, the shadow-state funding map, and more. | Menu |
+
+## Method and sources
+
+- **Primary sources only.** Nothing is published on a third-party compilation where a primary
+  source exists. Powers cite consolidated legislation (legislation.gov.uk); bodies come from the
+  GOV.UK Organisations API and Cabinet Office data; budgets from HM Treasury OSCAR outturn;
+  staffing from Civil Service Statistics.
+- **Citation or it doesn't exist.** Every legally meaningful record points to a specific provision;
+  nothing publishes without verification.
+- **Boring by design.** JSON records validated against JSON Schema, plain-Python build scripts,
+  a SQLite/`graph.json` compile step, Git for history. Follows presentation patterns set by
+  machineryofgovernment.uk and CivLab's SF Government Graph — patterns only; no data or code copied.
+
+## Build & run
+
+Runtime needs only `jsonschema` + `openpyxl` (`pip install -r requirements.txt`). From the repo root:
+
+- `py -3 pipeline/compile.py` — build `compiled/graph.json` + `state_machine.sqlite` + `manifest.json` from `data/`.
+- `py -3 validate.py` — schema-validate every record; check IDs, source links, referential integrity.
+- `py -3 -m ruff check .` and `py -3 -m pytest -q` — lint and unit tests (dev tools in `pyproject.toml`).
+- Serve the map: `py -3 -m http.server` from the repo root, then open `/site/`.
+
+Data lives in `data/` as one JSON array per type (`bodies`, `relationships`, `offices`,
+`person-roles`, `sources`, `budgets`, `staffing`), read/written through `pipeline/store.py`.
+Pipeline run-order and details in `pipeline/README.md`; schema decisions in `issues/`.
+
+## Licence & status
+
+Open data under the Open Government Licence v3.0 for the underlying official sources; the compiled
+dataset's own licence is finalised at first public launch. Records are machine-extracted and
+carry a `record_status` — those marked `extracted` await human verification.
