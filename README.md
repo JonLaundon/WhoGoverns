@@ -64,8 +64,10 @@ The map is plain HTML/JS that reads one precompiled file (`compiled/graph.json`)
 to this repo. Any static host that serves the repository root will run it — the root `index.html`
 forwards to the map. **Nothing to build or configure.**
 
-- **GitHub Pages (one click):** repo **Settings → Pages → Source: `main`, folder `/ (root)`**. Your
-  map is then live at `https://<user-or-org>.github.io/WhoGoverns/`.
+- **GitHub Pages:** repo **Settings** (top of the repo) → **Pages** (left menu) → under **"Source"**
+  pick **"Deploy from a branch"** → in **"Branch"** choose **`main`** and **`/ (root)`** → **Save**.
+  Wait ~1 minute, refresh, and the banner shows *"Your site is live at …"* — that link is your map.
+  (A `.nojekyll` marker tells Pages to serve the files as-is, no build.)
 - **Vercel / Netlify:** "Add New → Project → Import" this repo. **Build command: none; output
   directory: `.` (the repo root).** Deploy. (A `vercel.json` is included so Vercel serves the root as-is.)
 - **Locally:** `py -3 -m http.server` from the repo root, then open `http://localhost:8000/`.
