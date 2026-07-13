@@ -64,10 +64,17 @@ The map is plain HTML/JS that reads one precompiled file (`compiled/graph.json`)
 to this repo. Any static host that serves the repository root will run it — the root `index.html`
 forwards to the map. **Nothing to build or configure.**
 
-- **GitHub Pages:** repo **Settings** (top of the repo) → **Pages** (left menu) → under **"Source"**
-  pick **"Deploy from a branch"** → in **"Branch"** choose **`main`** and **`/ (root)`** → **Save**.
-  Wait ~1 minute, refresh, and the banner shows *"Your site is live at …"* — that link is your map.
-  (A `.nojekyll` marker tells Pages to serve the files as-is, no build.)
+- **GitHub Pages (free — recommended, no coding):**
+  1. In your repo, click **Settings** (top) → **Pages** (left menu).
+  2. Under **"Source"**, choose **"GitHub Actions"** (there is no Save button — selecting it is enough).
+  3. Click the **Actions** tab (top of the repo) → **"Deploy to GitHub Pages"** in the left list →
+     the **"Run workflow"** button on the right → **Run workflow**. Wait for the green tick ✓ (~1–2 min).
+  4. Back in **Settings → Pages**, the banner shows *"Your site is live at https://&lt;you&gt;.github.io/WhoGoverns/"* — that link is your map.
+
+  If the link ever shows this README or the `docs` folder instead of the map, that's an old cached
+  version — hard-refresh with **Ctrl+Shift+R**, or open it in a private/incognito window.
+  *(The deploy is handled by `.github/workflows/deploy-pages.yml`; nothing to configure. Avoid the
+  "Deploy from a branch" option — its Save button is finicky and its `docs` folder serves the wrong thing.)*
 - **Vercel / Netlify:** "Add New → Project → Import" this repo. **Build command: none; output
   directory: `.` (the repo root).** Deploy. (A `vercel.json` is included so Vercel serves the root as-is.)
 - **Locally:** `py -3 -m http.server` from the repo root, then open `http://localhost:8000/`.
