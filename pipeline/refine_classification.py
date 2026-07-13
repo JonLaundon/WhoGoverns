@@ -53,7 +53,7 @@ def norm(s):
 def load_co_index():
     wb = openpyxl.load_workbook(XLSX, read_only=True, data_only=True)
     ws = wb["Data"]; ws.reset_dimensions()
-    rows = [r for r in ws.iter_rows(values_only=True)]
+    rows = list(ws.iter_rows(values_only=True))
     hdr = 6
     H = {str(c): j for j, c in enumerate(rows[hdr]) if c}
     index = {}
@@ -93,7 +93,6 @@ def main():
 
     co_changes, adv_changes, co_confirmed, cleared = [], [], 0, 0
     for b in bodies.values():
-        changed = False
         keys = [norm(b["name"])] + [norm(a) for a in b.get("other_names", [])]
         co_hit = next((co[k] for k in keys if k in co), None)
 
@@ -101,16 +100,13 @@ def main():
             if co_hit != b["body_type"]:
                 co_changes.append((b["name"], b["body_type"], co_hit))
                 b["body_type"] = co_hit
-                changed = True
             else:
                 co_confirmed += 1
             if CO_SOURCE_ID not in b.get("classification_source_ids", []):
                 b.setdefault("classification_source_ids", []).append(CO_SOURCE_ID)
-                changed = True
             if b.get("needs_classification_review"):
                 b["needs_classification_review"] = False
                 cleared += 1
-                changed = True
         elif b.get("needs_classification_review"):
             name_l = b["name"].lower()
             if any(p in name_l for p in ADVISORY_PHRASES) and b["body_type"] != "advisory_ndpb":
@@ -120,7 +116,6 @@ def main():
                 b["notes"] = ((b.get("notes") or "") +
                               " Classified advisory_ndpb from official name (CO directory: no exact match).").strip()
                 cleared += 1
-                changed = True
 
     if not args.dry_run:
         store.save("bodies", list(bodies.values()))
@@ -130,17 +125,17 @@ def main():
         else "(dry-run)"
 
     print("--- refine_classification summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
-    print("CO exact matches confirmed (no change): {}".format(co_confirmed))
-    print("CO reclassifications:                   {}".format(len(co_changes)))
+    print(f"CO exact matches confirmed (no change): {co_confirmed}")
+    print(f"CO reclassifications:                   {len(co_changes)}")
     for name, old, new in co_changes:
-        print("   {:42} {} -> {}".format(name[:42], old, new))
-    print("advisory name-phrase reclassifications: {}".format(len(adv_changes)))
+        print(f"   {name[:42]:42} {old} -> {new}")
+    print(f"advisory name-phrase reclassifications: {len(adv_changes)}")
     for name, old in adv_changes[:30]:
-        print("   {:50} {} -> advisory_ndpb".format(name[:50], old))
+        print(f"   {name[:50]:50} {old} -> advisory_ndpb")
     if len(adv_changes) > 30:
-        print("   ... and {} more".format(len(adv_changes) - 30))
-    print("review flags cleared:                   {}".format(cleared))
-    print("bodies still flagged:                   {}".format(still_flagged))
+        print(f"   ... and {len(adv_changes) - 30} more")
+    print(f"review flags cleared:                   {cleared}")
+    print(f"bodies still flagged:                   {still_flagged}")
 
 
 if __name__ == "__main__":

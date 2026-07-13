@@ -1,0 +1,32 @@
+# WhoGoverns — project + tooling config. Boring by design (Annex A2.7): the runtime needs
+# only jsonschema + openpyxl (requirements.txt); ruff + pytest are dev-only quality tools.
+[project]
+name = "whogoverns"
+version = "0.1.0"
+description = "An open, machine-readable model of the UK state."
+requires-python = ">=3.11"
+dependencies = ["jsonschema>=4.0", "openpyxl>=3.0"]
+
+[dependency-groups]
+dev = ["ruff>=0.6", "pytest>=8.0"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py311"
+
+[tool.ruff.lint]
+# pycodestyle (E/W), pyflakes (F), isort (I), pep8-naming (N), pyupgrade (UP),
+# flake8-bugbear (B), comprehensions (C4), simplify (SIM).
+select = ["E", "W", "F", "I", "N", "UP", "B", "C4", "SIM"]
+ignore = [
+  "E501",    # line length is handled by the formatter; long data/comment lines are fine
+  "SIM108",  # ternary-vs-if is a readability judgement, left to the author
+  "E702",    # `a = x; a.method()` — deliberate compact idiom for tightly-coupled statements
+  "N806",    # short conventional locals (H = header-index map, etc.) read fine here
+]
+
+[tool.ruff.lint.isort]
+known-local-folder = ["store", "text"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

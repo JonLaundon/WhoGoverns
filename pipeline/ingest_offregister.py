@@ -101,10 +101,10 @@ def main():
         r = base(slug, name, aliases)
         r["body_type"] = "royal_charter_body"
         r["classification_source_ids"] = [PRIVY]
-        r["notes"] = ("Incorporated by Royal Charter ({}); off-register (not on the GOV.UK "
+        r["notes"] = (f"Incorporated by Royal Charter ({year}); off-register (not on the GOV.UK "
                       "Organisations API). Existence/classification sourced to the Privy "
                       "Council record of charters granted; charter provision is a Spiral 2 "
-                      "citation.".format(year))
+                      "citation.")
         if regs:
             r["functions"] = ["regulation"]
             r["function_source_ids"] = [DBT]
@@ -137,9 +137,9 @@ def main():
         store.save("bodies", list(existing.values()))
 
     print("--- ingest_offregister summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
-    print("chartered (royal_charter_body):   {}".format(len(CHARTERED)))
-    print("statutory regulators (other_body): {}".format(len(STATUTORY_REGULATORS)))
-    print("records written (new):            {}".format(len(written)))
+    print(f"chartered (royal_charter_body):   {len(CHARTERED)}")
+    print(f"statutory regulators (other_body): {len(STATUTORY_REGULATORS)}")
+    print(f"records written (new):            {len(written)}")
     print("skipped (already present):        {}  {}".format(len(skipped), skipped or ""))
 
 

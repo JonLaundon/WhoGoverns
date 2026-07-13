@@ -87,7 +87,7 @@ def main():
 
     # CO directory: accounting officer per non-ministerial department
     wb = openpyxl.load_workbook(XLSX, read_only=True, data_only=True)
-    ws = wb["Data"]; ws.reset_dimensions(); rows = [r for r in ws.iter_rows(values_only=True)]; hdr = 6
+    ws = wb["Data"]; ws.reset_dimensions(); rows = list(ws.iter_rows(values_only=True)); hdr = 6
     H = {str(c): j for j, c in enumerate(rows[hdr]) if c}
     co_ao = {}
     for r in rows[hdr + 1:]:
@@ -147,15 +147,15 @@ def main():
     print("--- ingest_officials summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
     print("independent officials (non-min dept heads): {}".format(sum(1 for o in offices if o["office_type"] == "independent_official")))
     print("civil servants (dept permanent secretaries): {}".format(sum(1 for o in offices if o["office_type"] == "civil_servant")))
-    print("total Office + PersonRole records:          {} + {}".format(len(offices), len(person_roles)))
+    print(f"total Office + PersonRole records:          {len(offices)} + {len(person_roles)}")
     if flagged:
-        print("\nnames flagged for review (messy CO free-text): {}".format(len(flagged)))
+        print(f"\nnames flagged for review (messy CO free-text): {len(flagged)}")
         for name, raw in flagged:
-            print("   {:38} <- {}".format(name[:38], str(raw)[:60]))
+            print(f"   {name[:38]:38} <- {str(raw)[:60]}")
     if missing:
-        print("\nno official found (skipped): {}".format(len(missing)))
+        print(f"\nno official found (skipped): {len(missing)}")
         for kind, name in missing:
-            print("   [{}] {}".format(kind, name))
+            print(f"   [{kind}] {name}")
 
 
 if __name__ == "__main__":

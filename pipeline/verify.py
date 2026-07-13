@@ -72,7 +72,7 @@ def main():
             mismatches.append((bid, fmt, expected, b["body_type"]))
 
     print("--- Check 1: classification re-derivation audit ---")
-    print("bodies audited: {}  mismatches: {}".format(len(bodies), len(mismatches)))
+    print(f"bodies audited: {len(bodies)}  mismatches: {len(mismatches)}")
     for m in mismatches[:20]:
         print("  MISMATCH {} format={!r} expected={} stored={}".format(*m))
 
@@ -83,7 +83,7 @@ def main():
         bid = "uk-state-body-" + slug
         b = bodies.get(bid)
         if not b:
-            print("  NOT FOUND {}".format(slug)); kf_rows.append((slug, "not_found")); continue
+            print(f"  NOT FOUND {slug}"); kf_rows.append((slug, "not_found")); continue
         type_ok = b["body_type"] == exp_type
         sp = b.get("sponsor_department_id")
         sponsor_ok = (exp_sponsor is None) or (sp == "uk-state-body-" + exp_sponsor)
@@ -99,7 +99,7 @@ def main():
     for bid, b in sorted(bodies.items()):
         by_type.setdefault(b["body_type"], []).append(bid)
     sample = []
-    for t, ids in sorted(by_type.items()):
+    for _t, ids in sorted(by_type.items()):
         for bid in ids[:3]:              # up to 3 per body_type
             sample.append(bid)
     offices = sorted(os.path.basename(p)[:-5] for p in glob.glob(os.path.join(DATA, "offices", "*.json")))
@@ -125,12 +125,12 @@ def main():
         w.writerows(rows)
 
     print("\n--- Check 3: calibration ---")
-    print("wrote {} rows to {}".format(len(rows), os.path.relpath(CALIB, REPO)))
+    print(f"wrote {len(rows)} rows to {os.path.relpath(CALIB, REPO)}")
 
     print("\n=== VERIFY SUMMARY ===")
-    print("re-derivation mismatches:  {}".format(len(mismatches)))
+    print(f"re-derivation mismatches:  {len(mismatches)}")
     print("known-facts confirmed:     {}/{}".format(sum(1 for _, o in kf_rows if o == "confirmed"), len(kf_rows)))
-    print("calibration rows:          {}".format(len(rows)))
+    print(f"calibration rows:          {len(rows)}")
 
 
 if __name__ == "__main__":

@@ -127,7 +127,7 @@ def main():
     # Overall and a non-Overall row gets group+core; every other body gets one set (scope
     # None). (First row wins per slot.)
     by_bid = {}
-    for org, (parent, _) in orgs.items():
+    for org, (_parent, _) in orgs.items():
         bid = match(org)
         if not bid:
             continue
@@ -160,19 +160,20 @@ def main():
         for scope, org in scopes.items():
             note = DISCLAIMER if scope == "group" else None
 
-            # scope/note bound as defaults so the closure captures this iteration's values.
+            # Loop variables bound as defaults so the closure captures THIS iteration's values
+            # (and is self-contained — no late binding). add() is called synchronously below.
             def add(metric, value, grade=None, profession=None, staff_group="civil_service",
-                    _scope=scope, _note=note):
+                    _scope=scope, _note=note, _bid=bid, _slug=body_slug, _recs=recs):
                 if not value:   # skip suppressed ([c] -> None) and zero (absent in that grade/profession)
                     return
                 key = "total" if (grade is None and profession is None) else \
                       ("grade-" + grade if grade else "profession-" + slug(profession))
-                rid = "staffing-{}-{}-{}-{}".format(body_slug, PERIOD, metric, key)
+                rid = f"staffing-{_slug}-{PERIOD}-{metric}-{key}"
                 if _scope:
                     rid += "-" + _scope
-                recs.append({
+                _recs.append({
                     "staffing_record_id": rid,
-                    "body_id": bid, "period": PERIOD, "metric": metric, "value": value,
+                    "body_id": _bid, "period": PERIOD, "metric": metric, "value": value,
                     "staff_group": staff_group, "grade": grade, "profession": profession,
                     "scope": _scope, "source_id": SOURCE_ID,
                     "citation": {"dataset": SOURCE_ID, "table": "CSS_2025", "as_at": "2025-03-31"},
@@ -208,9 +209,9 @@ def main():
     if not args.dry_run:
         store.save("staffing", written)
     print("--- ingest_staffing summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
-    print("bodies with staffing records:   {}".format(len(body_scopes)))
+    print(f"bodies with staffing records:   {len(body_scopes)}")
     print("departments with group+core:    {}".format(sum(1 for sc in body_scopes.values() if "core" in sc)))
-    print("staffing records written:       {}".format(len(written)))
+    print(f"staffing records written:       {len(written)}")
 
 
 if __name__ == "__main__":

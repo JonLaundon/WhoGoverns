@@ -142,7 +142,7 @@ def main():
             if round(amount) == 0:
                 continue
             amount = abs(amount) if bt == "income" else amount   # income rows are negative
-            rid = "budget-{}-{}-{}-{}".format(body_slug, fy_slug, bt, basis)
+            rid = f"budget-{body_slug}-{fy_slug}-{bt}-{basis}"
             if prog:
                 rid += "-" + slug(prog)
             records.append({
@@ -162,7 +162,7 @@ def main():
             })
         if round(tme) != 0:
             records.append({
-                "budget_record_id": "budget-{}-{}-total-managed-expenditure-net".format(body_slug, fy_slug),
+                "budget_record_id": f"budget-{body_slug}-{fy_slug}-total-managed-expenditure-net",
                 "body_id": bid, "financial_year": FY, "budget_type": "total_managed_expenditure",
                 "basis": "net", "programme": None, "amount": round(tme), "currency": "GBP",
                 "cash_or_real_terms": "cash", "source_id": SOURCE_ID,
@@ -174,10 +174,10 @@ def main():
     if not args.dry_run:
         store.save("budgets", all_records)
     print("--- ingest_budget summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
-    print("bodies with budget records:   {}".format(len(agg)))
-    print("budget records written:       {}".format(len(all_records)))
-    print("OSCAR orgs matched:           {}".format(len(matched_orgs)))
-    print("OSCAR orgs UNMATCHED:         {}  (candidates for a reviewed alias pass)".format(len(unmatched)))
+    print(f"bodies with budget records:   {len(agg)}")
+    print(f"budget records written:       {len(all_records)}")
+    print(f"OSCAR orgs matched:           {len(matched_orgs)}")
+    print(f"OSCAR orgs UNMATCHED:         {len(unmatched)}  (candidates for a reviewed alias pass)")
 
 
 if __name__ == "__main__":

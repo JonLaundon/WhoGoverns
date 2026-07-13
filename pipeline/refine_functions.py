@@ -115,13 +115,13 @@ def main():
         store.save("bodies", list(bodies.values()))
 
     print("--- refine_functions summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
-    print("regulator-list entries read:      {}".format(len(names)))
-    print("distinct bodies matched:          {}".format(len(matched)))
-    print("bodies newly tagged 'regulation': {}".format(len(changed)))
-    print("off-register (not in graph):      {}".format(len(unmatched)))
+    print(f"regulator-list entries read:      {len(names)}")
+    print(f"distinct bodies matched:          {len(matched)}")
+    print(f"bodies newly tagged 'regulation': {len(changed)}")
+    print(f"off-register (not in graph):      {len(unmatched)}")
     print("\nOff-register regulators (Part B / devolved candidates), first 60:")
     for n in sorted(set(unmatched))[:60]:
-        print("   - {}".format(n))
+        print(f"   - {n}")
 
 
 if __name__ == "__main__":

@@ -15,6 +15,10 @@ Build scripts live in `pipeline/` (run order and details in `pipeline/README.md`
 
 Then, every session, from the repo root:
 - `py -3 validate.py` — validate every record in `data/` against its schema; checks IDs, source links, referential integrity, provision_key duplicates.
+- `py -3 -m ruff check .` — lint/style (config in `pyproject.toml`; PEP 8 + pyflakes + isort + bugbear).
+- `py -3 -m pytest -q` — unit tests (`tests/`): store round-trips, the no-fuzzy matching rule, and the budget/staffing summaries.
+
+Dev tools (`ruff`, `pytest`) are in `pyproject.toml` `[dependency-groups].dev`; the runtime needs only `requirements.txt` (`jsonschema`, `openpyxl`).
 
 ## Setup
 `pip install -r requirements.txt --break-system-packages`

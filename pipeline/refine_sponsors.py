@@ -40,7 +40,7 @@ def normdept(s):
 def rel_record(dept_id, body_id):
     fs, ts = dept_id[len("uk-state-body-"):], body_id[len("uk-state-body-"):]
     return {
-        "relationship_id": "rel-{}-sponsors-{}".format(fs, ts),
+        "relationship_id": f"rel-{fs}-sponsors-{ts}",
         "from_body_id": dept_id, "to_body_id": body_id, "relationship_type": "sponsors",
         "source_id": CO_SOURCE_ID, "citation": {"provision": None, "url": SOURCE_URL},
         "start_date": None, "end_date": None, "legal_status": "current", "record_status": "extracted",
@@ -54,7 +54,7 @@ def main():
 
     # CO: alb name -> parent department name
     wb = openpyxl.load_workbook(XLSX, read_only=True, data_only=True)
-    ws = wb["Data"]; ws.reset_dimensions(); rows = [r for r in ws.iter_rows(values_only=True)]; hdr = 6
+    ws = wb["Data"]; ws.reset_dimensions(); rows = list(ws.iter_rows(values_only=True)); hdr = 6
     H = {str(c): j for j, c in enumerate(rows[hdr]) if c}
     co_sponsor = {}
     for r in rows[hdr + 1:]:
@@ -101,15 +101,15 @@ def main():
         store.save("relationships", list(rels.values()))
 
     print("--- refine_sponsors summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
-    print("sponsors FILLED (were root):     {}".format(len(filled)))
+    print(f"sponsors FILLED (were root):     {len(filled)}")
     for name, dept in filled[:30]:
         print("   {:44} -> {}".format(name[:44], dept[len('uk-state-body-'):]))
-    print("sponsors CONFIRMED (CO == GOV.UK): {}".format(confirmed))
-    print("DISCREPANCIES (CO != GOV.UK; not overridden, logged): {}".format(len(discrepancies)))
+    print(f"sponsors CONFIRMED (CO == GOV.UK): {confirmed}")
+    print(f"DISCREPANCIES (CO != GOV.UK; not overridden, logged): {len(discrepancies)}")
     for name, ours, co in discrepancies[:30]:
         print("   {:40} GOV.UK={} CO={}".format(name[:40], ours[len('uk-state-body-'):], co[len('uk-state-body-'):]))
     if unresolved_dept:
-        print("CO parent departments we could not resolve to a body: {}".format(sorted(unresolved_dept)))
+        print(f"CO parent departments we could not resolve to a body: {sorted(unresolved_dept)}")
 
 
 if __name__ == "__main__":

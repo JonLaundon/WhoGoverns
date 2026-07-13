@@ -45,11 +45,9 @@ def fetch(url, timeout, retries=3):
         except (urllib.error.URLError, TimeoutError) as err:
             last_err = err
             wait = attempt * 2
-            print("  ! fetch failed (attempt {}/{}): {} — retrying in {}s".format(
-                attempt, retries, err, wait))
+            print(f"  ! fetch failed (attempt {attempt}/{retries}): {err} — retrying in {wait}s")
             time.sleep(wait)
-    raise SystemExit("Gave up fetching {} after {} attempts: {}".format(
-        url, retries, last_err))
+    raise SystemExit(f"Gave up fetching {url} after {retries} attempts: {last_err}")
 
 
 def absolute(next_url):
@@ -90,7 +88,7 @@ def refresh_source_record(accessed_date, pages, total_orgs):
             "format, parent/child_organisations, govuk_status, content_id, "
             "analytics_identifier. Raw pages cached under "
             "data/sources/raw/govuk-organisations-api/ by ingest_organisations.py. "
-            "This access: {} pages, {} organisations.".format(pages, total_orgs)
+            f"This access: {pages} pages, {total_orgs} organisations."
         ),
     }
     write_json(SOURCE_RECORD, record)
@@ -120,10 +118,10 @@ def main():
     reported_pages = None
     saved_files = []
 
-    print("Ingesting {} -> {}".format(args.base_url, os.path.relpath(RAW_DIR, REPO)))
+    print(f"Ingesting {args.base_url} -> {os.path.relpath(RAW_DIR, REPO)}")
     while url:
         page_num += 1
-        print("  page {}: {}".format(page_num, url))
+        print(f"  page {page_num}: {url}")
         data = fetch(url, timeout=args.timeout)
 
         results = data.get("results", [])
@@ -132,12 +130,12 @@ def main():
             reported_total = data.get("total")
             reported_pages = data.get("pages")
 
-        page_path = os.path.join(RAW_DIR, "page-{:03d}.json".format(page_num))
+        page_path = os.path.join(RAW_DIR, f"page-{page_num:03d}.json")
         write_json(page_path, data)
         saved_files.append(os.path.basename(page_path))
 
         if args.max_pages and page_num >= args.max_pages:
-            print("  (stopping early: --max-pages {})".format(args.max_pages))
+            print(f"  (stopping early: --max-pages {args.max_pages})")
             break
 
         url = absolute(data.get("next_page_url"))
@@ -157,20 +155,20 @@ def main():
     }
     write_json(os.path.join(RAW_DIR, "_ingest_meta.json"), meta)
 
-    record = refresh_source_record(accessed_date, page_num, total_orgs_seen)
+    refresh_source_record(accessed_date, page_num, total_orgs_seen)
 
     print("\n--- ingest summary ---")
-    print("pages fetched:        {}".format(page_num))
-    print("pages reported (API): {}".format(reported_pages))
-    print("orgs fetched:         {}".format(total_orgs_seen))
-    print("orgs reported (API):  {}".format(reported_total))
-    print("raw cache:            {}".format(os.path.relpath(RAW_DIR, REPO)))
-    print("source record:        {}".format(os.path.relpath(SOURCE_RECORD, REPO)))
+    print(f"pages fetched:        {page_num}")
+    print(f"pages reported (API): {reported_pages}")
+    print(f"orgs fetched:         {total_orgs_seen}")
+    print(f"orgs reported (API):  {reported_total}")
+    print(f"raw cache:            {os.path.relpath(RAW_DIR, REPO)}")
+    print(f"source record:        {os.path.relpath(SOURCE_RECORD, REPO)}")
     if meta["partial"]:
         print("NOTE: partial pull (--max-pages). Re-run without --max-pages for the full set.")
     if reported_total is not None and not meta["partial"] and total_orgs_seen != reported_total:
-        print("WARN: fetched {} orgs but API reported {}. Investigate before "
-              "transforming.".format(total_orgs_seen, reported_total))
+        print(f"WARN: fetched {total_orgs_seen} orgs but API reported {reported_total}. Investigate before "
+              "transforming.")
 
 
 if __name__ == "__main__":

@@ -54,7 +54,7 @@ def relationship_record(from_id, to_id):
     from_slug = from_id[len("uk-state-body-"):]
     to_slug = to_id[len("uk-state-body-"):]
     return {
-        "relationship_id": "rel-{}-sponsors-{}".format(from_slug, to_slug),
+        "relationship_id": f"rel-{from_slug}-sponsors-{to_slug}",
         "from_body_id": from_id,
         "to_body_id": to_id,
         "relationship_type": "sponsors",
@@ -147,28 +147,28 @@ def main():
     # ---- report ----
     roots = sorted(b for b in valid if b not in parents_of)
     print("--- transform_relationships summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
-    print("bodies held:                 {}".format(len(valid)))
-    print("edges (sponsors):            {}".format(len(edges)))
-    print("relationship records:        {}".format(len(edges)))
-    print("body fields filled:          {}".format(len(updated_bodies)))
-    print("root bodies (no parent):     {}".format(len(roots)))
-    print("edges skipped (endpoint not held): {}".format(len(skipped_endpoint)))
+    print(f"bodies held:                 {len(valid)}")
+    print(f"edges (sponsors):            {len(edges)}")
+    print(f"relationship records:        {len(edges)}")
+    print(f"body fields filled:          {len(updated_bodies)}")
+    print(f"root bodies (no parent):     {len(roots)}")
+    print(f"edges skipped (endpoint not held): {len(skipped_endpoint)}")
     for frm, to in sorted(set(skipped_endpoint))[:12]:
-        print("    - {} -> {}".format(frm, to))
+        print(f"    - {frm} -> {to}")
     if len(set(skipped_endpoint)) > 12:
-        print("    ... and {} more".format(len(set(skipped_endpoint)) - 12))
+        print(f"    ... and {len(set(skipped_endpoint)) - 12} more")
     if multi_sponsor:
-        print("\nbodies with >1 department parent (first used as sponsor; all edges kept): {}".format(len(multi_sponsor)))
+        print(f"\nbodies with >1 department parent (first used as sponsor; all edges kept): {len(multi_sponsor)}")
         for cid, ps in multi_sponsor[:10]:
             print("    - {}: {}".format(cid, ", ".join(ps)))
     if multi_parent:
-        print("\nbodies with >1 non-department parent (first used as parent_body): {}".format(len(multi_parent)))
+        print(f"\nbodies with >1 non-department parent (first used as parent_body): {len(multi_parent)}")
         for cid, ps in multi_parent[:10]:
             print("    - {}: {}".format(cid, ", ".join(ps)))
     if field_mismatch:
         print("\n!! BODY FIELD MISMATCH (computed != existing; NOT overwritten) — investigate:")
         for cid, field, old, new in field_mismatch:
-            print("   {} {} existing={} computed={}".format(cid, field, old, new))
+            print(f"   {cid} {field} existing={old} computed={new}")
         sys.exit(1)
 
 

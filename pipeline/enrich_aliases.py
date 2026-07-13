@@ -103,10 +103,10 @@ def main():
         store.save("bodies", list(bodies.values()))
 
     print("--- enrich_aliases summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
-    print("successors gaining aliases:  {}".format(len(updated)))
-    print("alias strings added:         {}".format(alias_added))
-    print("skipped (split -> many successors):     {}".format(len(skipped_multi)))
-    print("skipped (successor not held/live):      {}".format(len(skipped_no_held_successor)))
+    print(f"successors gaining aliases:  {len(updated)}")
+    print(f"alias strings added:         {alias_added}")
+    print(f"skipped (split -> many successors):     {len(skipped_multi)}")
+    print(f"skipped (successor not held/live):      {len(skipped_no_held_successor)}")
     print("\nexamples:")
     for succ_id, new in sorted(updated)[:20]:
         print("  {} += {}".format(succ_id[len("uk-state-body-"):], new))

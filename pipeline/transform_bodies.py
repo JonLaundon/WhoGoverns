@@ -71,7 +71,7 @@ def build_body(rec, body_type, needs_review, status, govuk_status):
     # (joining vs transitioning) survives; the map dashes any status=forming node.
     notes = None
     if status == "forming":
-        notes = "In formation (govuk_status: {}); render dashed.".format(govuk_status)
+        notes = f"In formation (govuk_status: {govuk_status}); render dashed."
     return {
         "body_id": "uk-state-body-" + slug,
         "name": rec.get("title"),
@@ -162,31 +162,31 @@ def main():
 
     # ---- report ----
     print("--- transform_bodies summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
-    print("raw orgs read:            {}".format(len(records)))
-    print("in-scope total:           {}".format(len(written) + len(reconciled)))
-    print("  records written (new):  {}".format(len(written)))
+    print(f"raw orgs read:            {len(records)}")
+    print(f"in-scope total:           {len(written) + len(reconciled)}")
+    print(f"  records written (new):  {len(written)}")
     print("  reconciled (existing):  {}  {}".format(len(reconciled), reconciled or ""))
-    print("  of which forming (in formation, status=forming, dashed): {}".format(len(forming)))
+    print(f"  of which forming (in formation, status=forming, dashed): {len(forming)}")
     for title, st in forming:
-        print("    - [{}] {}".format(st, title))
-    print("skipped (closed/superseded/other status):    {}".format(skipped_status))
+        print(f"    - [{st}] {title}")
+    print(f"skipped (closed/superseded/other status):    {skipped_status}")
     print("\nbody_type distribution (in-scope):")
     for bt in sorted(type_counts, key=lambda k: -type_counts[k]):
-        print("  {:5} {}".format(type_counts[bt], bt))
-    print("\nneeds_classification_review=true (coarse/unmapped formats): {}".format(flagged_count))
+        print(f"  {type_counts[bt]:5} {bt}")
+    print(f"\nneeds_classification_review=true (coarse/unmapped formats): {flagged_count}")
 
     if reconcile_mismatch:
         print("\n!! RECONCILE MISMATCH (existing body_type != computed) — investigate:")
         for bid, old, new in reconcile_mismatch:
-            print("   {} existing={} computed={}".format(bid, old, new))
+            print(f"   {bid} existing={old} computed={new}")
     if missing_slug:
         print("\n!! MISSING SLUG (skipped) — investigate:")
         for t in missing_slug:
-            print("   {}".format(t))
+            print(f"   {t}")
     if collisions:
         print("\n!! BODY_ID COLLISION (skipped 2nd) — investigate:")
         for bid, first, second in collisions:
-            print("   {}: {!r} vs {!r}".format(bid, first, second))
+            print(f"   {bid}: {first!r} vs {second!r}")
 
     # Non-zero exit on structural problems so a bad run is visible.
     if reconcile_mismatch or collisions:

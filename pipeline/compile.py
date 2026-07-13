@@ -328,13 +328,13 @@ def main():
 
     print("--- compile summary ---")
     for k, v in counts.items():
-        print("  {:14} {}".format(k, v))
+        print(f"  {k:14} {v}")
     print("  graph nodes:   {}".format(len(graph["nodes"])))
     print("  graph edges:   {}".format(len(graph["edges"])))
     print("wrote:")
-    print("  {}".format(os.path.relpath(GRAPH_JSON, REPO)))
-    print("  {}".format(os.path.relpath(SQLITE, REPO)))
-    print("  {}".format(os.path.relpath(MANIFEST, REPO)))
+    print(f"  {os.path.relpath(GRAPH_JSON, REPO)}")
+    print(f"  {os.path.relpath(SQLITE, REPO)}")
+    print(f"  {os.path.relpath(MANIFEST, REPO)}")
 
 
 if __name__ == "__main__":

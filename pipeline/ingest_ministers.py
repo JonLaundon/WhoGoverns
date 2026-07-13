@@ -76,9 +76,9 @@ def fetch(url, timeout, retries=3):
         except (urllib.error.URLError, TimeoutError) as err:
             last = err
         wait = attempt * 2
-        print("  ! fetch failed ({}/{}) {}: {} — retry in {}s".format(attempt, retries, url, last, wait))
+        print(f"  ! fetch failed ({attempt}/{retries}) {url}: {last} — retry in {wait}s")
         time.sleep(wait)
-    raise SystemExit("Gave up fetching {}: {}".format(url, last))
+    raise SystemExit(f"Gave up fetching {url}: {last}")
 
 
 def slugify(text):
@@ -122,7 +122,7 @@ def source_record(accessed_date, n_orgs):
         "notes": ("Per-organisation content items; links.ordered_ministers -> "
                   "role_appointments used for current ministers. Raw responses cached "
                   "under data/sources/raw/govuk-content-ministers/ by ingest_ministers.py. "
-                  "This access: {} organisations.".format(n_orgs)),
+                  f"This access: {n_orgs} organisations."),
     }
 
 
@@ -154,7 +154,7 @@ def main():
     type_counts, other_titles = {}, []
     no_ministers, missing_body = [], []
 
-    print("Ingesting ministers for {} organisations".format(len(slugs)))
+    print(f"Ingesting ministers for {len(slugs)} organisations")
     for slug in slugs:
         body_id = "uk-state-body-" + slug
         if body_id not in body_ids:
@@ -203,7 +203,7 @@ def main():
                         other_titles.append(rtitle)
 
                 started = (ra.get("details", {}).get("started_on") or "")[:10] or None
-                pr_id = "personrole-{}-{}".format(rslug, person_slug(pname))
+                pr_id = f"personrole-{rslug}-{person_slug(pname)}"
                 person_roles[pr_id] = {
                     "person_role_id": pr_id,
                     "person_name": pname,
@@ -227,20 +227,20 @@ def main():
 
     # ---- report ----
     print("\n--- ingest_ministers summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
-    print("organisations fetched:  {}".format(len(slugs) - len(missing_body)))
-    print("offices (roles):        {}".format(len(offices)))
-    print("person-roles (current): {}".format(len(person_roles)))
+    print(f"organisations fetched:  {len(slugs) - len(missing_body)}")
+    print(f"offices (roles):        {len(offices)}")
+    print(f"person-roles (current): {len(person_roles)}")
     print("office_type distribution:")
     for k in sorted(type_counts, key=lambda x: -type_counts[x]):
-        print("  {:4} {}".format(type_counts[k], k))
+        print(f"  {type_counts[k]:4} {k}")
     if other_titles:
-        print("\noffice_type=other (review these titles): {}".format(len(other_titles)))
+        print(f"\noffice_type=other (review these titles): {len(other_titles)}")
         for t in sorted(set(other_titles)):
-            print("    - {}".format(t))
+            print(f"    - {t}")
     if no_ministers:
-        print("\norgs with no current ministers: {}  {}".format(len(no_ministers), no_ministers))
+        print(f"\norgs with no current ministers: {len(no_ministers)}  {no_ministers}")
     if missing_body:
-        print("\n!! target slug with no Body record (skipped): {}".format(missing_body))
+        print(f"\n!! target slug with no Body record (skipped): {missing_body}")
 
 
 if __name__ == "__main__":

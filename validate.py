@@ -56,36 +56,36 @@ def main():
                 errors += 1
                 bad += 1
                 loc = "/".join(str(x) for x in e.path) or "(root)"
-                print("FAIL {} [{}]: {}".format(t, loc, e.message))
+                print(f"FAIL {t} [{loc}]: {e.message}")
             # referential warnings (per record)
             if t == "bodies":
                 for field in ("sponsor_department_id", "parent_body_id"):
                     ref = rec.get(field)
                     if ref and ref not in body_ids:
                         warnings += 1
-                        print("   ! warn {}.{} -> {} not among bodies".format(t, field, ref))
+                        print(f"   ! warn {t}.{field} -> {ref} not among bodies")
                 for field in ("classification_source_ids", "founding_source_ids",
                               "framework_document_source_ids", "annual_report_source_ids", "function_source_ids"):
                     for ref in rec.get(field, []):
                         if ref not in source_ids:
                             warnings += 1
-                            print("   ! warn {}.{} -> {} not among sources".format(t, field, ref))
+                            print(f"   ! warn {t}.{field} -> {ref} not among sources")
             elif t == "relationships":
                 for field in ("from_body_id", "to_body_id"):
                     ref = rec.get(field)
                     if ref and ref not in body_ids:
                         warnings += 1
-                        print("   ! warn relationships.{} -> {} not among bodies".format(field, ref))
+                        print(f"   ! warn relationships.{field} -> {ref} not among bodies")
             elif t in ("offices", "person-roles", "budgets", "staffing"):
                 ref = rec.get("body_id")
                 if ref and ref not in body_ids:
                     warnings += 1
-                    print("   ! warn {}.body_id -> {} not among bodies".format(t, ref))
+                    print(f"   ! warn {t}.body_id -> {ref} not among bodies")
             if t == "person-roles":
                 ref = rec.get("office_id")
                 if ref and ref not in office_ids:
                     warnings += 1
-                    print("   ! warn person-roles.office_id -> {} not among offices".format(ref))
+                    print(f"   ! warn person-roles.office_id -> {ref} not among offices")
         print("ok   {}.json  ({} records{})".format(t, len(recs), ", " + str(bad) + " FAIL" if bad else ""))
 
     # provision_key duplicate check on canonical Power/Duty/Veto records (none in Spiral 1)
@@ -96,12 +96,12 @@ def main():
             if pk and rec.get("derived_from_record_id") is None:
                 if pk in seen:
                     errors += 1
-                    print("FAIL duplicate canonical provision_key '{}'".format(pk))
+                    print(f"FAIL duplicate canonical provision_key '{pk}'")
                 else:
                     seen[pk] = True
 
     print("\n---")
-    print("records checked: {}  schema errors: {}  warnings: {}".format(records, errors, warnings))
+    print(f"records checked: {records}  schema errors: {errors}  warnings: {warnings}")
     sys.exit(1 if errors else 0)
 
 
