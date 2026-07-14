@@ -28,6 +28,9 @@ SQLITE = os.path.join(COMPILED, "state_machine.sqlite")
 MANIFEST = os.path.join(REPO, "manifest.json")
 ANNEX_A_VERSION = "0.4"
 
+# A department parent is a body's sponsor; any other parent is its parent_body.
+DEPARTMENT_TYPES = {"ministerial_department", "non_ministerial_department"}
+
 
 def load_dir(name):
     return store.load(name)
@@ -60,7 +63,9 @@ def summarise_budget(recs):
             head["{}_{}".format(r["budget_type"], r.get("basis", "net"))] = r["amount"]
     progs.sort(key=lambda x: -x["net"])
     income.sort(key=lambda x: -x["value"])
-    return {"fy": recs[0]["financial_year"], "headline": head, "programmes": progs, "income": income}
+    src = sorted({r["source_id"] for r in recs if r.get("source_id")})
+    return {"fy": recs[0]["financial_year"], "headline": head, "programmes": progs,
+            "income": income, "source_ids": src}
 
 
 def _summ_staffing_set(recs):
@@ -99,6 +104,7 @@ def summarise_staffing(recs):
     out = {"period": recs[0]["period"]}
     out.update(g)
     out["core"] = c
+    out["source_ids"] = sorted({r["source_id"] for r in recs if r.get("source_id")})
     return out
 
 
@@ -111,10 +117,29 @@ def build_graph(bodies, relationships, offices, person_roles):
         if pr.get("is_current"):
             holders.setdefault(pr["office_id"], []).append((pr["person_name"], pr.get("start_date")))
 
+    # Sponsor/parent derived from the canonical relationship edges (#8): the relationships
+    # are the single source of truth, so the map, details panel and radial layout can never
+    # disagree with them the way a separately-stored body field could. A department parent is
+    # the sponsor; any other parent is the parent_body. The single scalar keeps the
+    # deterministic first-alphabetical choice (for the tree layout, which needs one parent);
+    # the full lists are exposed too, so joint sponsorship is never truncated.
+    btype = {b["body_id"]: b["body_type"] for b in bodies}
+    dept_parents, other_parents = {}, {}
+    for r in relationships:
+        if r.get("relationship_type") != "sponsors":
+            continue
+        child, parent = r["to_body_id"], r["from_body_id"]
+        bucket = dept_parents if btype.get(parent) in DEPARTMENT_TYPES else other_parents
+        bucket.setdefault(child, set()).add(parent)
+    dept_of = {c: sorted(ps) for c, ps in dept_parents.items()}
+    parent_of = {c: sorted(ps) for c, ps in other_parents.items()}
+
     nodes, edges = [], []
     for b in bodies:
+        bid = b["body_id"]
+        depts, parents = dept_of.get(bid, []), parent_of.get(bid, [])
         nodes.append({"data": {
-            "id": b["body_id"],
+            "id": bid,
             "label": b["name"],
             "kind": "body",
             "body_type": b["body_type"],
@@ -123,8 +148,10 @@ def build_graph(bodies, relationships, offices, person_roles):
             "functions": b.get("functions", []),
             "source_ids": sorted(set(b.get("classification_source_ids", [])
                                      + b.get("function_source_ids", []))),
-            "sponsor_department_id": b.get("sponsor_department_id"),
-            "parent_body_id": b.get("parent_body_id"),
+            "sponsor_department_id": depts[0] if depts else None,
+            "parent_body_id": parents[0] if parents else None,
+            "sponsor_department_ids": depts,
+            "parent_body_ids": parents,
             "govuk_slug": b.get("govuk_organisation_slug"),
             "other_names": b.get("other_names", []),
         }})
@@ -171,6 +198,7 @@ def build_graph(bodies, relationships, offices, person_roles):
             "source": r["from_body_id"],
             "target": r["to_body_id"],
             "kind": r["relationship_type"],
+            "source_id": r.get("source_id"),  # #6: keep the provenance of the sponsor claim
         }})
 
     # Derived governance edges (by convention — NOT raw data, so they live only here,

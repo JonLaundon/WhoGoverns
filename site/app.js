@@ -481,6 +481,9 @@ function bodyHtml(d) {
   // Downward relationships (MoG-style) — the bodies this one sponsors/parents, from the
   // sourced sponsor edges. A department "Sponsors" its ALBs; a body is "Parent of" children.
   const node = cy.getElementById(d.id);
+  // Provenance of the sponsor relationships (#6): the source record behind each incoming
+  // sponsor edge, so a sponsor claim is followable to its source like every other figure.
+  const sponsorSrcIds = node.incomers("edge[kind = 'sponsors']").map((e) => e.data("source_id")).filter(Boolean);
   const down = node.outgoers("edge[kind = 'sponsors']").targets().sort((a, b) => a.data("label").localeCompare(b.data("label")));
   const isDept = ["ministerial_department", "non_ministerial_department"].includes(d.body_type);
   const relDown = down.nonempty()
@@ -498,7 +501,8 @@ function bodyHtml(d) {
     ${mins}
     ${aliases}
     <h3>Source</h3>
-    ${sourceHtml(d.source_ids)}`;
+    ${sourceHtml(d.source_ids)}
+    ${sponsorSrcIds.length ? `<p class="src">Sponsor relationships cited to:</p>${sourceLinks(sponsorSrcIds)}` : ""}`;
 
   // Tabs — MoG-style. Budget / Civil service appear only where we hold the data.
   const tabs = [["info", "Info"], ["powers", "Powers"]];
@@ -615,7 +619,7 @@ function budgetTabHtml(b) {
       ${row("Resource AME", h.resource_ame_net, h.resource_ame_gross)}
       ${row("Capital AME", h.capital_ame_net, h.capital_ame_gross)}
       ${row("Total managed expenditure", h.total_managed_expenditure_net, null)}
-    </dl>${vizToggle(views)}`;
+    </dl>${vizToggle(views)}${sourceLinks(b.source_ids)}`;
 }
 
 function staffingTabHtml(s, scope) {
@@ -638,7 +642,7 @@ function staffingTabHtml(s, scope) {
     <dl>
       <dt>Headcount</dt><dd>${fmtNum(total)}</dd>
       ${src.fte_total != null ? `<dt>Full-time equivalent</dt><dd>${fmtNum(src.fte_total)}</dd>` : ""}
-    </dl>${scopeToggle}${vizToggle(views)}`;
+    </dl>${scopeToggle}${vizToggle(views)}${sourceLinks(s.source_ids)}`;
 }
 
 // Cite the record's ACTUAL sources (resolved via the graph's source index), not a fixed
@@ -652,6 +656,16 @@ function sourceHtml(ids) {
     : `<li>${esc(s.title || "")}</li>`).join("");
   return `<p class="src">Existence and classification cited to:</p><ul class="src-list">${li}</ul>` +
     `<p class="src">Under the Open Government Licence v3.0 unless the source states otherwise.</p>`;
+}
+
+// A bare list of source links (resolved via the graph's source index), for citing a
+// specific claim — a budget figure, staffing total or sponsor edge — back to its record.
+function sourceLinks(ids) {
+  const items = [...new Set(ids || [])].map((id) => SOURCES[id]).filter(Boolean);
+  if (!items.length) return "";
+  return `<ul class="src-list">` + items.map((s) => s.url
+    ? `<li><a href="${esc(s.url)}" rel="noopener" target="_blank">${esc(s.title || s.url)} ↗</a></li>`
+    : `<li>${esc(s.title || "")}</li>`).join("") + `</ul>`;
 }
 
 function officeHtml(d) {
