@@ -1,1 +1,151 @@
-[]
+[
+  {
+    "beneficiary_or_object": "Compliance with appointment/licence conditions and statutory requirements.",
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.18(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/18"
+    },
+    "duty_id": "duty-ofwat-wia1991-s18",
+    "duty_label": "Make an enforcement order to secure compliance",
+    "duty_type": "enforcement",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-14-wia1991-water-calibration",
+      "requires_review": true
+    },
+    "failure_consequence": "judicial_review_risk",
+    "holder_type": "body",
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": "s.18 also names the Secretary of State as an alternative enforcement authority — modelled on Ofwat.",
+    "office_id": null,
+    "provision_key": "water-industry-act-1991-s18",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Where satisfied that a company/licensee is contravening (or is likely to contravene) a condition or an enforceable requirement for which it is the enforcement authority, Ofwat must by a final enforcement order make such provision as is requisite to secure compliance (subject to ss.19-20).",
+    "trigger": "On being satisfied of a contravention or likely contravention.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "beneficiary_or_object": "Consumers; the water/sewerage sector.",
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.2",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/2"
+    },
+    "duty_id": "duty-ofwat-wia1991-s2",
+    "duty_label": "General duties in regulating the water industry",
+    "duty_type": "other",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-14-wia1991-water-calibration",
+      "requires_review": true
+    },
+    "failure_consequence": "judicial_review_risk",
+    "holder_type": "body",
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": "s.2 is long and multi-limbed; captured as one general-duties record for the calibration slice — candidate for splitting per limb later.",
+    "office_id": null,
+    "provision_key": "water-industry-act-1991-s2",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "In exercising its functions Ofwat must act in the way best calculated to further the statutory objectives in s.2 — protecting consumers, securing that water/sewerage companies can (in particular through returns on capital) finance the proper carrying out of their functions, promoting economy and efficiency, and securing resilience.",
+    "trigger": "Whenever Ofwat exercises its functions under the Act.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "beneficiary_or_object": "The company/licensee facing the penalty.",
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.22A(4)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/22A"
+    },
+    "derived_from_record_id": "power-ofwat-wia1991-s22a",
+    "duty_id": "duty-ofwat-wia1991-s22a-notice",
+    "duty_label": "Give notice and consider representations before imposing a penalty",
+    "duty_type": "consultation",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-14-wia1991-water-calibration",
+      "requires_review": true
+    },
+    "failure_consequence": "invalid_decision",
+    "holder_type": "body",
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": "Procedural duty attached to the s.22A penalty power (same provision -> derived record, A2.5).",
+    "office_id": null,
+    "provision_key": "water-industry-act-1991-s22a",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Before imposing a penalty under s.22A, Ofwat must give notice of the proposed penalty (with reasons and the acts/omissions relied on), allow at least 21 days for representations or objections, and consider any duly made.",
+    "trigger": "Before imposing a s.22A penalty.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.24(1B)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24"
+    },
+    "duty_id": "duty-ofwat-wia1991-s24-consult",
+    "duty_label": "Consult the Welsh Ministers before a special-administration petition (Welsh licensee)",
+    "duty_type": "consultation",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-14-wia1991-water-calibration",
+      "requires_review": true
+    },
+    "failure_consequence": "judicial_review_risk",
+    "holder_type": "body",
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": "England/Wales split: WIA 1991 is E&W with Welsh Ministers' functions — a devolution touchpoint even within Tranche 0.",
+    "office_id": null,
+    "provision_key": "water-industry-act-1991-s24-1b",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Before presenting a s.24(1A) petition in relation to a qualifying water supply licensee whose licence gives it a supplementary authorisation, the Secretary of State or Ofwat must consult the Welsh Ministers.",
+    "trigger": "Before presenting a s.24(1A) petition re a Welsh-authorised licensee.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  }
+]

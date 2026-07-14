@@ -1,1 +1,213 @@
-[]
+[
+  {
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.13",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/13"
+    },
+    "conditions": [],
+    "constraints": [
+      "Modification is by AGREEMENT — the company (not a state body) must consent; contrast ss.14-16, modification by CMA reference."
+    ],
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-14-wia1991-water-calibration",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": null,
+    "office_id": null,
+    "power_id": "power-ofwat-wia1991-s13",
+    "power_label": "Modify licence/appointment conditions by agreement",
+    "power_type": "rulemaking",
+    "provision_key": "water-industry-act-1991-s13",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [
+      "power-ofwat-wia1991-s14"
+    ],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Ofwat may modify the conditions of a water/sewerage company's appointment where the company consents to the modification.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.14",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/14"
+    },
+    "constraints": [
+      "The CMA, not Ofwat, determines the reference — a cross-body check on unilateral modification."
+    ],
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-14-wia1991-water-calibration",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "CMA determination role noted; full CMA modelling is a later slice.",
+    "office_id": null,
+    "power_id": "power-ofwat-wia1991-s14",
+    "power_label": "Refer a licence-condition modification to the CMA",
+    "power_type": "rulemaking",
+    "provision_key": "water-industry-act-1991-s14",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-competition-and-markets-authority"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Ofwat may refer to the Competition and Markets Authority the question whether conditions of a company's appointment should be modified; the CMA then determines the reference.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.22A(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/22A"
+    },
+    "constraints": [
+      "Capped at 10% of turnover (s.22A(11)).",
+      "Ofwat must first consider whether to proceed under the Competition Act 1998 instead (s.22A(13)-(14)).",
+      "s.22A(2) also confers this on the Secretary of State / Welsh Ministers as enforcement authority — modelled here on the primary holder (Ofwat)."
+    ],
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-14-wia1991-water-calibration",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": null,
+    "office_id": null,
+    "power_id": "power-ofwat-wia1991-s22a",
+    "power_label": "Impose a financial penalty",
+    "power_type": "sanction",
+    "provision_key": "water-industry-act-1991-s22a",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Where satisfied a company/licensee has contravened a condition or a statutory requirement, or failed a performance standard, Ofwat may impose a financial penalty of such amount as is reasonable in all the circumstances. (The lever behind the record Thames Water penalty.)",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.24(1)(b)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24"
+    },
+    "conditions": [
+      {
+        "actor_body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+        "actor_holder_type": "office",
+        "actor_office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+        "condition_type": "approve",
+        "provision_key": "water-industry-act-1991-s24-1-b"
+      }
+    ],
+    "constraints": [
+      "Exercisable only with the Secretary of State's consent (materialises as the SoS veto, veto-sos-defra-wia1991-s24)."
+    ],
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-14-wia1991-water-calibration",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "conditional",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": null,
+    "office_id": null,
+    "power_id": "power-ofwat-wia1991-s24-1-b",
+    "power_label": "Petition for a special administration order (with SoS consent)",
+    "power_type": "other",
+    "provision_key": "water-industry-act-1991-s24-1-b",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [
+      "power-sos-defra-wia1991-s24-1-a"
+    ],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Ofwat may, WITH THE CONSENT of the Secretary of State, present a petition to the High Court for a special administration order against a water/sewerage company.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.24(1)(a)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24"
+    },
+    "constraints": [
+      "Grounds are limited to those in s.24(2).",
+      "The High Court, not the SoS, makes the order."
+    ],
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-14-wia1991-water-calibration",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "power_id": "power-sos-defra-wia1991-s24-1-a",
+    "power_label": "Petition for a special administration order",
+    "power_type": "other",
+    "provision_key": "water-industry-act-1991-s24-1-a",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [
+      "power-ofwat-wia1991-s24-1-b"
+    ],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "The Secretary of State may present a petition to the High Court for a special administration order against a water/sewerage company on the grounds in s.24(2) (e.g. serious breach of a principal duty, or inability to pay debts). The direct public-control lever short of statutory renationalisation.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  }
+]

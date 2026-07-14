@@ -1,1 +1,45 @@
-[]
+[
+  {
+    "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+    "blocks_holder_type": "body",
+    "blocks_office_id": null,
+    "blocks_provision_key": "water-industry-act-1991-s24-1-b",
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.24(1)(b)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24"
+    },
+    "decision_affected": "Ofwat's petition to the High Court for a special administration order against a water/sewerage company.",
+    "derived_from_record_id": "power-ofwat-wia1991-s24-1-b",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-14-wia1991-water-calibration",
+      "requires_review": true
+    },
+    "failure_consequence": "invalid_decision",
+    "holder_type": "office",
+    "legal_status": "current",
+    "modality": "veto",
+    "notes": "The 'who can block?' showcase: the SoS gates the regulator's own escalation route.",
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "overridable": "no",
+    "override_mechanism": null,
+    "provision_key": "water-industry-act-1991-s24-1-b",
+    "record_status": "extracted",
+    "source_id": "source-act-water-industry-act-1991",
+    "strength": "hard_stop",
+    "summary": "Ofwat cannot petition for a special administration order without the consent of the Secretary of State — a hard gate over the regulator's use of the special-administration lever.",
+    "trigger": "Before Ofwat may present a s.24(1)(b) petition.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    },
+    "veto_id": "veto-sos-defra-wia1991-s24",
+    "veto_label": "SoS consent required for an Ofwat special-administration petition",
+    "veto_type": "consent_required"
+  }
+]

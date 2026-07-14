@@ -1,1 +1,202 @@
-[]
+[
+  {
+    "citation": {
+      "content_hash": "1bc0723daa0dab55",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/13",
+      "version_date": "2026-07-14"
+    },
+    "commenced_by": null,
+    "heading": "Modification by agreement.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s13",
+    "provision_ref": "s.13",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "dad753b631068366",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/14",
+      "version_date": "2026-07-14"
+    },
+    "commenced_by": null,
+    "heading": "Modification references to CMA.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s14",
+    "provision_ref": "s.14",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "c0da8763de3c0ff9",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/18",
+      "version_date": "2026-07-14"
+    },
+    "commenced_by": null,
+    "heading": "Orders for securing compliance with certain provisions.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s18",
+    "provision_ref": "s.18",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "d8b2c9aad807dc12",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/2",
+      "version_date": "2026-07-14"
+    },
+    "commenced_by": null,
+    "heading": "General duties with respect to water industry.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s2",
+    "provision_ref": "s.2",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "852406947f5ea168",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/22A",
+      "version_date": "2026-07-14"
+    },
+    "commenced_by": null,
+    "heading": "Penalties",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s22a",
+    "provision_ref": "s.22A",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "4c407588abe3ac2c",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24",
+      "version_date": "2026-07-14"
+    },
+    "commenced_by": null,
+    "heading": "Special administration orders made on special petitions.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s24",
+    "provision_ref": "s.24",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24",
+      "version_date": "2026-07-14"
+    },
+    "commenced_by": null,
+    "heading": null,
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision for an independent operative record (see extract_wia1991_water).",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s24-1-a",
+    "provision_ref": "s.24(1)(a)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24",
+      "version_date": "2026-07-14"
+    },
+    "commenced_by": null,
+    "heading": null,
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision for an independent operative record (see extract_wia1991_water).",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s24-1-b",
+    "provision_ref": "s.24(1)(b)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24",
+      "version_date": "2026-07-14"
+    },
+    "commenced_by": null,
+    "heading": null,
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision for an independent operative record (see extract_wia1991_water).",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s24-1b",
+    "provision_ref": "s.24(1B)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "4f1306a11a9eb355",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/37",
+      "version_date": "2026-07-14"
+    },
+    "commenced_by": null,
+    "heading": "General duty to maintain water supply system etc.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s37",
+    "provision_ref": "s.37",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  }
+]
