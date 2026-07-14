@@ -10,3 +10,6 @@ data/sources/raw/
 # Compiled SQLite is a regenerable binary (pipeline/compile.py from data/).
 # graph.json and manifest.json ARE committed — they are the map/data contract.
 compiled/*.sqlite
+
+# Internal codebase-review working note — not for the public repo.
+Review of Codebase.txt
