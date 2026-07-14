@@ -157,8 +157,23 @@ def main():
         existing[body_id] = body
         written.append(body_id)
 
+    # Reconcile removals: an API-sourced body we already hold that the API no longer
+    # returns as live has closed / left the register. The live-state dataset drops it (and
+    # everything hanging off it) rather than leaving a stale 'active' node — the additive
+    # landmine. API-sourced = has a govuk_organisation_slug; the off-register tranche
+    # (slug None) and the hand-built seeds (record_status 'draft') are exempt. Reported
+    # loudly and recoverable from git history / the raw cache.
+    live_ids = set(seen_ids)
+    departed = sorted(bid for bid, b in existing.items()
+                      if b.get("govuk_organisation_slug")
+                      and b.get("record_status") != "draft"
+                      and bid not in live_ids)
+
     if not args.dry_run:
         store.save("bodies", list(existing.values()))
+        cascade = store.remove_records_for_bodies(departed) if departed else {}
+    else:
+        cascade = {}
 
     # ---- report ----
     print("--- transform_bodies summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
@@ -170,6 +185,14 @@ def main():
     for title, st in forming:
         print(f"    - [{st}] {title}")
     print(f"skipped (closed/superseded/other status):    {skipped_status}")
+    if departed:
+        print("\n!! DEPARTED (API-sourced, no longer live) — removed with dependents:")
+        for bid in departed:
+            print(f"   - {bid}")
+        if cascade:
+            print("   cascade removals: " + ", ".join(f"{k}={v}" for k, v in cascade.items()))
+    else:
+        print("departed (API bodies no longer live, removed):  0")
     print("\nbody_type distribution (in-scope):")
     for bt in sorted(type_counts, key=lambda k: -type_counts[k]):
         print(f"  {type_counts[bt]:5} {bt}")

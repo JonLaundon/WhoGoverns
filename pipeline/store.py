@@ -64,3 +64,64 @@ def upsert(t, records):
         m[r[PK[t]]] = r
     save(t, list(m.values()))
     return len(records)
+
+
+def upsert_current_holders(records, retire_date):
+    """Upsert person-role records while enforcing ONE current holder per office.
+
+    A plain upsert() is additive: because a person-role id embeds the person's name, a
+    reshuffle writes the successor under a NEW id and leaves the predecessor in place —
+    still is_current=true — so one office ends up with two 'current' holders. This instead
+    rebuilds the current-holder state: for every office named in `records`, any EXISTING
+    current holder not in the incoming set is retired (is_current -> False, end_date ->
+    retire_date if unset) rather than left standing. Offices absent from `records` are
+    untouched, so one ingest never retires another ingest's holders. Retiring (with an end
+    date) rather than deleting keeps the former holder as a deliberate historical record.
+    Returns (merged_count, retired_count).
+    """
+    t = "person-roles"
+    k = PK[t]
+    m = load_map(t)
+    incoming_ids = {r[k] for r in records}
+    offices_touched = {r["office_id"] for r in records}
+    retired = 0
+    for pr in m.values():
+        if (pr.get("is_current") and pr.get("office_id") in offices_touched
+                and pr[k] not in incoming_ids):
+            pr["is_current"] = False
+            if not pr.get("end_date"):
+                pr["end_date"] = retire_date
+            retired += 1
+    for r in records:
+        m[r[k]] = r
+    save(t, list(m.values()))
+    return len(records), retired
+
+
+def remove_records_for_bodies(body_ids):
+    """Remove a departed body and everything hanging off it, across every table.
+
+    The live-state dataset holds only current bodies, so when a body drops out of its
+    authoritative source (e.g. GOV.UK closes an organisation) it must not be left as a
+    stale 'active' node with orphaned offices, holders or budget records pointing at a
+    body that no longer exists. Drops records keyed by body_id (bodies, offices,
+    person-roles, budgets, staffing) and any relationship touching a removed body.
+    Returns {type: removed_count} for the tables actually changed.
+    """
+    ids = set(body_ids)
+    if not ids:
+        return {}
+    removed = {}
+    for t in ("bodies", "offices", "person-roles", "budgets", "staffing"):
+        recs = load(t)
+        kept = [r for r in recs if r.get("body_id") not in ids]
+        if len(kept) != len(recs):
+            save(t, kept)
+            removed[t] = len(recs) - len(kept)
+    rels = load("relationships")
+    kept = [r for r in rels
+            if r.get("from_body_id") not in ids and r.get("to_body_id") not in ids]
+    if len(kept) != len(rels):
+        save("relationships", kept)
+        removed["relationships"] = len(rels) - len(kept)
+    return removed

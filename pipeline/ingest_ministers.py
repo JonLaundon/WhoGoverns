@@ -220,9 +220,12 @@ def main():
         if args.sleep:
             time.sleep(args.sleep)
 
+    retired = 0
     if not args.dry_run:
         store.upsert("offices", list(offices.values()))
-        store.upsert("person-roles", list(person_roles.values()))
+        # Current holders are rebuilt, not accumulated: a replaced minister is retired
+        # rather than left as a second 'current' holder of the same office (see store).
+        _, retired = store.upsert_current_holders(list(person_roles.values()), accessed_date)
         store.upsert("sources", [source_record(accessed_date, len(slugs))])
 
     # ---- report ----
@@ -230,6 +233,7 @@ def main():
     print(f"organisations fetched:  {len(slugs) - len(missing_body)}")
     print(f"offices (roles):        {len(offices)}")
     print(f"person-roles (current): {len(person_roles)}")
+    print(f"prior holders retired:  {retired}")
     print("office_type distribution:")
     for k in sorted(type_counts, key=lambda x: -type_counts[x]):
         print(f"  {type_counts[k]:4} {k}")

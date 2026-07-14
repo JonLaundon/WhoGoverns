@@ -16,6 +16,7 @@ No network — reads two caches already on disk:
 Boring by design: stdlib + openpyxl (for the xlsx). Idempotent.
 """
 import argparse
+import datetime
 import json
 import os
 import re
@@ -140,11 +141,16 @@ def main():
             "notes": None, "record_status": "extracted", "last_reviewed": None,
         })
 
+    retired = 0
     if not args.dry_run:
         store.upsert("offices", offices)
-        store.upsert("person-roles", person_roles)
+        # One current holder per office: a replaced permanent secretary / head is retired,
+        # not left as a second current holder (see store.upsert_current_holders).
+        _, retired = store.upsert_current_holders(person_roles, datetime.date.today().isoformat())
 
     print("--- ingest_officials summary{} ---".format(" (DRY RUN)" if args.dry_run else ""))
+    if retired:
+        print(f"prior holders retired: {retired}")
     print("independent officials (non-min dept heads): {}".format(sum(1 for o in offices if o["office_type"] == "independent_official")))
     print("civil servants (dept permanent secretaries): {}".format(sum(1 for o in offices if o["office_type"] == "civil_servant")))
     print(f"total Office + PersonRole records:          {len(offices)} + {len(person_roles)}")

@@ -4,7 +4,9 @@
 Boring by design: one job, stdlib + jsonschema. Reads the consolidated array files via
 pipeline/store.py (each data type is one data/<type>.json list). Run from the repo root:
     py -3 validate.py
-Exit code 0 if no schema errors, 1 otherwise.
+Exit 1 on any schema error OR integrity failure (a missing data file/schema, a reference
+pointing nowhere, or a body sponsor field disagreeing with the canonical edges); else 0.
+The gate fails closed: a vanished file is a failure, not a silent pass.
 """
 import json
 import os
@@ -38,14 +40,40 @@ def load_json(path):
 
 
 def main():
-    errors = warnings = records = 0
+    # errors     = schema violations (a record breaks its contract)
+    # integrity  = a data file/schema is missing, or a reference points nowhere, or a
+    #              body's sponsor field disagrees with the canonical edges. These are real
+    #              defects, so they FAIL the build (exit 1) — the gate must not pass open.
+    # warnings   = advisory only.
+    errors = integrity = warnings = records = 0
     body_ids = {r["body_id"] for r in store.load("bodies")}
     source_ids = {r["source_id"] for r in store.load("sources")}
     office_ids = {r["office_id"] for r in store.load("offices")}
 
+    # Sponsor/parent truth from the canonical relationship edges, to check the body
+    # convenience fields against (#8: duplicated truth must not silently diverge).
+    btype = {r["body_id"]: r["body_type"] for r in store.load("bodies")}
+    DEPARTMENT_TYPES = {"ministerial_department", "non_ministerial_department"}
+    dept_parents, other_parents = {}, {}
+    for r in store.load("relationships"):
+        if r.get("relationship_type") != "sponsors":
+            continue
+        child, parent = r.get("to_body_id"), r.get("from_body_id")
+        bucket = dept_parents if btype.get(parent) in DEPARTMENT_TYPES else other_parents
+        bucket.setdefault(child, set()).add(parent)
+
     for t, schema_file in TYPE_SCHEMA.items():
         schema_path = os.path.join(REPO, "schemas", schema_file)
+        # Fail closed: a required data file or its schema going missing must not pass
+        # silently (the old code skipped a missing schema and load() returns [] for a
+        # missing array, so a vanished file would validate clean).
+        if not os.path.exists(store.path(t)):
+            integrity += 1
+            print(f"FAIL {t}: data file {t}.json is missing")
+            continue
         if not os.path.exists(schema_path):
+            integrity += 1
+            print(f"FAIL {t}: schema {schema_file} is missing")
             continue
         validator = Draft202012Validator(load_json(schema_path))
         recs = store.load(t)
@@ -57,35 +85,45 @@ def main():
                 bad += 1
                 loc = "/".join(str(x) for x in e.path) or "(root)"
                 print(f"FAIL {t} [{loc}]: {e.message}")
-            # referential warnings (per record)
+            # referential integrity (per record) — a reference pointing nowhere is a defect
             if t == "bodies":
-                for field in ("sponsor_department_id", "parent_body_id"):
-                    ref = rec.get(field)
-                    if ref and ref not in body_ids:
-                        warnings += 1
-                        print(f"   ! warn {t}.{field} -> {ref} not among bodies")
+                bid = rec["body_id"]
+                sp = rec.get("sponsor_department_id")
+                if sp and sp not in body_ids:
+                    integrity += 1
+                    print(f"FAIL {t}.sponsor_department_id -> {sp} not among bodies")
+                elif sp and sp not in dept_parents.get(bid, set()):
+                    integrity += 1
+                    print(f"FAIL {t}.sponsor_department_id {bid} -> {sp} has no matching 'sponsors' edge (#8 divergence)")
+                pb = rec.get("parent_body_id")
+                if pb and pb not in body_ids:
+                    integrity += 1
+                    print(f"FAIL {t}.parent_body_id -> {pb} not among bodies")
+                elif pb and pb not in other_parents.get(bid, set()):
+                    integrity += 1
+                    print(f"FAIL {t}.parent_body_id {bid} -> {pb} has no matching 'sponsors' edge (#8 divergence)")
                 for field in ("classification_source_ids", "founding_source_ids",
                               "framework_document_source_ids", "annual_report_source_ids", "function_source_ids"):
                     for ref in rec.get(field, []):
                         if ref not in source_ids:
-                            warnings += 1
-                            print(f"   ! warn {t}.{field} -> {ref} not among sources")
+                            integrity += 1
+                            print(f"FAIL {t}.{field} -> {ref} not among sources")
             elif t == "relationships":
                 for field in ("from_body_id", "to_body_id"):
                     ref = rec.get(field)
                     if ref and ref not in body_ids:
-                        warnings += 1
-                        print(f"   ! warn relationships.{field} -> {ref} not among bodies")
+                        integrity += 1
+                        print(f"FAIL relationships.{field} -> {ref} not among bodies")
             elif t in ("offices", "person-roles", "budgets", "staffing"):
                 ref = rec.get("body_id")
                 if ref and ref not in body_ids:
-                    warnings += 1
-                    print(f"   ! warn {t}.body_id -> {ref} not among bodies")
+                    integrity += 1
+                    print(f"FAIL {t}.body_id -> {ref} not among bodies")
             if t == "person-roles":
                 ref = rec.get("office_id")
                 if ref and ref not in office_ids:
-                    warnings += 1
-                    print(f"   ! warn person-roles.office_id -> {ref} not among offices")
+                    integrity += 1
+                    print(f"FAIL person-roles.office_id -> {ref} not among offices")
         print("ok   {}.json  ({} records{})".format(t, len(recs), ", " + str(bad) + " FAIL" if bad else ""))
 
     # provision_key duplicate check on canonical Power/Duty/Veto records (none in Spiral 1)
@@ -101,8 +139,9 @@ def main():
                     seen[pk] = True
 
     print("\n---")
-    print(f"records checked: {records}  schema errors: {errors}  warnings: {warnings}")
-    sys.exit(1 if errors else 0)
+    print(f"records checked: {records}  schema errors: {errors}  "
+          f"integrity failures: {integrity}  warnings: {warnings}")
+    sys.exit(1 if errors or integrity else 0)
 
 
 if __name__ == "__main__":
