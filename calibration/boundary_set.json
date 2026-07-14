@@ -1,0 +1,42 @@
+{
+  "boundary_set": "veto | duty | power | influence",
+  "version": "0.1",
+  "created": "2026-07-14",
+  "purpose": "The human-labelled anchor for the Spiral 2 extractor and the target for the schema-blind eval (schema-design §7). Each example is a statutory phrasing with the CORRECT classification and the reason — chosen to pin the hard boundaries, above all the two that generate false positives: 'must be consulted' is a consultation DUTY (not a veto), and 'have regard to' is INFLUENCE (not recorded at all). The eval runs a second, schema-blind LLM over `text` and compares its call to `label`; disagreements flag a record for human review. Real WIA 1991 examples are marked source=wia1991; the rest are canonical phrasings (general knowledge, discovery use only — not published data).",
+  "labels": {
+    "veto": "a genuine statutory BLOCK: the holder can stop/condition another actor's decision (consent/approval/concurrence/objection/call-in/licence-refusal/designation). Recorded as a Veto DERIVED from the underlying power.",
+    "duty": "a MUST placed on the actor; the actor may proceed once discharged (consult, report, publish, maintain, notify).",
+    "power": "a MAY the holder can exercise.",
+    "influence": "soft leverage with no binding legal effect (have regard, may advise, may make representations, guidance). NOT recorded as a legal record at all."
+  },
+  "examples": [
+    { "id": "bd-01", "text": "No order under this section shall be made without the consent of the Treasury.", "label": "veto", "sub": "consent_required", "holder": "the Treasury", "reason": "the order cannot be made if the Treasury withholds consent — a hard block." },
+    { "id": "bd-02", "text": "The Authority may not grant the application except with the approval of the Secretary of State.", "label": "veto", "sub": "approval_required", "holder": "Secretary of State", "reason": "approval is a precondition the SoS can refuse." },
+    { "id": "bd-03", "text": "The appointment shall be made only with the concurrence of the Lord Chancellor.", "label": "veto", "sub": "concurrence_required", "holder": "Lord Chancellor", "reason": "concurrence = a second actor's agreement is required; withholding it blocks." },
+    { "id": "bd-04", "text": "The Secretary of State may, within 21 days, direct that the decision shall not take effect.", "label": "veto", "sub": "call_in_power", "holder": "Secretary of State", "reason": "a call-in/suspension power that stops a decision taking effect." },
+    { "id": "bd-05", "text": "Ofwat may, with the consent of the Secretary of State, present a petition for a special administration order.", "label": "veto", "sub": "consent_required", "holder": "Secretary of State", "source": "wia1991", "reason": "the SoS gates Ofwat's petition; recorded as a veto derived from Ofwat's s.24(1)(b) power." },
+    { "id": "bd-06", "text": "A licence shall not be granted if the regulator notifies an objection within the period.", "label": "veto", "sub": "objection_power", "holder": "the regulator", "reason": "a statutory objection that defeats the grant." },
+
+    { "id": "bd-07", "text": "Before making the regulations the Secretary of State must consult such persons as appear to him to be affected.", "label": "duty", "sub": "consultation", "holder": "Secretary of State (the actor who must consult)", "reason": "a consultation duty on the SoS; the consultees CANNOT stop the regulations — not a veto." },
+    { "id": "bd-08", "text": "The code shall not be issued until the Committee has been consulted.", "label": "duty", "sub": "consultation", "holder": "the issuer (duty to consult the Committee)", "reason": "THE TRAP: 'must be consulted' reads like a gate but the issuer may proceed after consulting — a duty on the issuer, NOT a veto for the Committee." },
+    { "id": "bd-09", "text": "The Authority shall publish a report on the exercise of its functions each year.", "label": "duty", "sub": "publication", "holder": "the Authority", "reason": "a publication/reporting obligation." },
+    { "id": "bd-10", "text": "The registrar shall maintain and keep up to date a register of licences.", "label": "duty", "sub": "maintenance", "holder": "the registrar", "reason": "a maintenance duty." },
+    { "id": "bd-11", "text": "Before imposing a penalty the Authority shall give notice and consider any representations duly made.", "label": "duty", "sub": "consultation", "holder": "the Authority", "source": "wia1991", "reason": "procedural notice-and-representations duty attached to the s.22A penalty power (derived record)." },
+    { "id": "bd-12", "text": "The Secretary of State must prepare and lay before Parliament a strategy for...", "label": "duty", "sub": "reporting", "holder": "Secretary of State", "reason": "a prepare-and-lay duty; laying is not Parliamentary approval (contrast bd-24)." },
+
+    { "id": "bd-13", "text": "Where satisfied of a contravention the Authority may impose a penalty of such amount as is reasonable.", "label": "power", "sub": "sanction", "holder": "the Authority", "source": "wia1991", "reason": "a discretionary penalty power (s.22A)." },
+    { "id": "bd-14", "text": "The Secretary of State may by order make provision for...", "label": "power", "sub": "rulemaking", "holder": "Secretary of State", "reason": "a delegated order-making power." },
+    { "id": "bd-15", "text": "The Authority may give directions to a licence holder requiring it to...", "label": "power", "sub": "direction", "holder": "the Authority", "reason": "a direction power binding the licensee." },
+    { "id": "bd-16", "text": "The Secretary of State may appoint a person to carry out the review.", "label": "power", "sub": "appointment", "holder": "Secretary of State", "reason": "an appointment power." },
+    { "id": "bd-17", "text": "Ofwat may modify the conditions of a company's appointment if the company consents.", "label": "power", "sub": "rulemaking", "holder": "Ofwat", "source": "wia1991", "reason": "a modification power (s.13); the consenting party is the private company, not a state veto-holder." },
+
+    { "id": "bd-18", "text": "In exercising its functions the Authority shall have regard to any guidance issued by the Secretary of State.", "label": "influence", "holder": "Secretary of State (issuing guidance)", "reason": "'have regard to' binds nothing — guidance is influence, not a power or veto; do NOT record as a legal record." },
+    { "id": "bd-19", "text": "The Council may make representations to the Authority about any matter affecting consumers.", "label": "influence", "holder": "the Council", "reason": "representations carry no legal effect — influence." },
+    { "id": "bd-20", "text": "The committee may advise the Secretary of State on matters referred to it.", "label": "influence", "holder": "the committee", "reason": "advisory only; no binding effect." },
+    { "id": "bd-21", "text": "The regulator shall keep under review, and may bring to the Secretary of State's attention, any matter...", "label": "influence", "holder": "the regulator", "reason": "monitoring / bringing-to-attention is influence; 'keep under review' is not an operative duty owed to a person." },
+    { "id": "bd-22", "text": "The Secretary of State may issue guidance to which the Authority must have regard.", "label": "influence", "holder": "Secretary of State", "reason": "issuing guidance + a 'must have regard' is at most a weak procedural duty to consider; it is NOT a veto and confers no block — treat the guidance as influence. (If recorded at all, only the weak have-regard duty, never a veto.)" },
+
+    { "id": "bd-23", "text": "The Secretary of State shall consult, and obtain the consent of, the Welsh Ministers before making the order.", "label": "mixed", "components": ["duty:consultation (SoS must consult)", "veto:consent_required (Welsh Ministers can block)"], "reason": "a MIXED provision — one consultation duty on the SoS AND one consent veto held by the Welsh Ministers. Two records." },
+    { "id": "bd-24", "text": "The Secretary of State may not make the order unless a draft has been laid before, and approved by a resolution of, each House of Parliament.", "label": "mixed", "components": ["duty:reporting (lay the draft)", "veto:approval_required (affirmative resolution — Parliament can block)"], "reason": "affirmative procedure: laying is a duty; the required approving resolution is a Parliamentary veto over the order." }
+  ]
+}

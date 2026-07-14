@@ -16,11 +16,10 @@ The LLM extraction of Power/Duty/Veto records is a SEPARATE step that reads the 
 Boring by design: stdlib only, polite HTTP (UA, timeout, retry), idempotent via store.
 """
 import argparse
-import hashlib
 import datetime
+import hashlib
 import os
 import re
-import sys
 import time
 import urllib.error
 import urllib.request
@@ -128,11 +127,13 @@ def main():
         url = f"{base}/section/{sec}/data.xml"
         cache = os.path.join(cache_dir, f"section-{sec}.xml")
         if os.path.exists(cache):
-            xml = open(cache, encoding="utf-8").read()
+            with open(cache, encoding="utf-8") as fh:
+                xml = fh.read()
         else:
             xml = fetch(url)
             if not args.dry_run:
-                open(cache, "w", encoding="utf-8").write(xml)
+                with open(cache, "w", encoding="utf-8") as fh:
+                    fh.write(xml)
         heading, body = parse_section(xml, sec)
         if body is None:
             print(f"  ! section {sec}: not found in XML (skipped)")
