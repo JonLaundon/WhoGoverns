@@ -1,0 +1,1 @@
+{ "vocab": "instrument_type", "version": "0.1", "note": "Kind of legislative instrument (Annex A6.5b): an Act, or a class of statutory instrument. Active from Spiral 2.", "terms": ["act", "order", "regulations", "rules", "scheme", "measure", "other"] }

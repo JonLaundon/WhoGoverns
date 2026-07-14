@@ -1,7 +1,85 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "power.schema.json",
-  "title": "Power (DRAFT — inactive until Spiral 2)",
-  "$comment": "Placeholder. Full schema per Annex A6 lands when Spiral 2 begins. validate.py does not validate against draft schemas.",
-  "type": "object"
+  "title": "Power",
+  "$comment": "A statutory power a holder MAY exercise (Annex A6.3). Active from Spiral 2. modality is const 'power' so the record self-describes and cannot disagree with its type. A power whose exercise blocks another actor's decision ALSO yields a derived Veto record (see veto.schema).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["power_id", "holder_type", "body_id", "power_label", "power_type", "modality", "legal_effect", "summary", "source_id", "provision_key", "citation", "record_status"],
+  "properties": {
+    "power_id": { "type": "string", "pattern": "^power-[a-z0-9-]+$" },
+    "holder_type": { "type": "string", "enum": ["office", "body"] },
+    "office_id": { "type": ["string", "null"] },
+    "body_id": { "type": "string", "pattern": "^uk-state-body-[a-z0-9-]+$" },
+    "power_label": { "type": "string" },
+    "power_type": { "type": "string", "enum": ["direction", "designation", "consent", "approval", "licence", "enforcement", "inspection", "investigation", "rulemaking", "charging", "appointment", "funding", "information_request", "sanction", "appeal", "other"] },
+    "modality": { "const": "power" },
+    "legal_effect": { "type": "string", "enum": ["may", "must", "must_not", "may_not", "conditional"] },
+    "summary": { "type": "string" },
+    "source_id": { "type": "string" },
+    "provision_key": { "type": "string" },
+    "citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provision", "url"],
+      "properties": {
+        "provision": { "type": "string" },
+        "url": { "type": "string" },
+        "quote": { "type": ["string", "null"] }
+      }
+    },
+    "applies_to": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "policy_area": { "type": "array", "items": { "type": "string" } },
+        "sector": { "type": "array", "items": { "type": "string" } },
+        "geography": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["condition_type"],
+        "properties": {
+          "condition_type": { "type": "string", "enum": ["consult", "concur", "approve", "notify"] },
+          "actor_holder_type": { "type": ["string", "null"], "enum": ["office", "body", null] },
+          "actor_office_id": { "type": ["string", "null"] },
+          "actor_body_id": { "type": ["string", "null"] },
+          "provision_key": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "constraints": { "type": "array", "items": { "type": "string" } },
+    "related_body_ids": { "type": "array", "items": { "type": "string" } },
+    "related_power_ids": { "type": "array", "items": { "type": "string" } },
+    "derived_from_record_id": { "type": ["string", "null"], "$comment": "null/absent = canonical (A2.5); set when this power is a secondary characterisation of another record sharing its provision_key" },
+    "in_force_from": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "in_force_to": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "legal_status": { "type": "string", "enum": ["current", "repealed", "prospective", "historical", "unknown"] },
+    "extraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "extracted_by": { "type": "string", "enum": ["llm", "human"] },
+        "extraction_run_id": { "type": ["string", "null"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "requires_review": { "type": "boolean" }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "verification_status": { "type": "string", "enum": ["unverified", "machine_verified", "single_checked", "double_checked", "rejected"] },
+        "verified_by": { "type": ["string", "null"] },
+        "verified_date": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "verification_notes": { "type": ["string", "null"] }
+      }
+    },
+    "notes": { "type": ["string", "null"] },
+    "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] }
+  }
 }

@@ -1,0 +1,1 @@
+{ "vocab": "condition_type", "version": "0.1", "note": "A precondition on exercising a power (Annex A6.5b conditions[]): the holder must consult / obtain concurrence / obtain approval / notify another actor first. 'concur' and 'approve' preconditions also materialise as a Veto held by the other actor. Active from Spiral 2.", "terms": ["consult", "concur", "approve", "notify"] }

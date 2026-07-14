@@ -1,7 +1,62 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "duty.schema.json",
-  "title": "Duty (DRAFT — inactive until Spiral 2)",
-  "$comment": "Placeholder. Full schema per Annex A6 lands when Spiral 2 begins. validate.py does not validate against draft schemas.",
-  "type": "object"
+  "title": "Duty",
+  "$comment": "A statutory duty a holder MUST discharge (Annex A6.4). Active from Spiral 2. 'must be consulted' is a consultation duty here, NOT a veto (decision 2026-07-13). modality is const 'duty'.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["duty_id", "holder_type", "body_id", "duty_label", "duty_type", "modality", "mandatory", "summary", "source_id", "provision_key", "citation", "record_status"],
+  "properties": {
+    "duty_id": { "type": "string", "pattern": "^duty-[a-z0-9-]+$" },
+    "holder_type": { "type": "string", "enum": ["office", "body"] },
+    "office_id": { "type": ["string", "null"] },
+    "body_id": { "type": "string", "pattern": "^uk-state-body-[a-z0-9-]+$" },
+    "duty_label": { "type": "string" },
+    "duty_type": { "type": "string", "enum": ["consultation", "reporting", "publication", "enforcement", "maintenance", "provision", "review", "cooperation", "equality", "environmental", "financial", "other"] },
+    "modality": { "const": "duty" },
+    "mandatory": { "type": "boolean" },
+    "summary": { "type": "string" },
+    "source_id": { "type": "string" },
+    "provision_key": { "type": "string" },
+    "citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provision", "url"],
+      "properties": {
+        "provision": { "type": "string" },
+        "url": { "type": "string" },
+        "quote": { "type": ["string", "null"] }
+      }
+    },
+    "trigger": { "type": ["string", "null"] },
+    "beneficiary_or_object": { "type": ["string", "null"] },
+    "failure_consequence": { "type": "string", "enum": ["unknown", "judicial_review_risk", "invalid_decision", "sanction", "other"] },
+    "related_body_ids": { "type": "array", "items": { "type": "string" } },
+    "derived_from_record_id": { "type": ["string", "null"], "$comment": "null/absent = canonical (A2.5); set when this duty is a secondary characterisation of another record sharing its provision_key" },
+    "in_force_from": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "in_force_to": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+    "legal_status": { "type": "string", "enum": ["current", "repealed", "prospective", "historical", "unknown"] },
+    "extraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "extracted_by": { "type": "string", "enum": ["llm", "human"] },
+        "extraction_run_id": { "type": ["string", "null"] },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+        "requires_review": { "type": "boolean" }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "verification_status": { "type": "string", "enum": ["unverified", "machine_verified", "single_checked", "double_checked", "rejected"] },
+        "verified_by": { "type": ["string", "null"] },
+        "verified_date": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "verification_notes": { "type": ["string", "null"] }
+      }
+    },
+    "notes": { "type": ["string", "null"] },
+    "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] }
+  }
 }

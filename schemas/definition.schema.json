@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "definition.schema.json",
+  "title": "Definition",
+  "$comment": "A defined term — the 'variable/type' (Annex A6.5b). Scoped to an instrument or a provision. Active from Spiral 2.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["definition_id", "instrument_id", "term", "definition_text", "record_status"],
+  "properties": {
+    "definition_id": { "type": "string", "pattern": "^definition-[a-z0-9-]+$" },
+    "instrument_id": { "type": "string", "pattern": "^instrument-[a-z0-9-]+$" },
+    "term": { "type": "string" },
+    "definition_text": { "type": "string" },
+    "scope_provision_key": { "type": ["string", "null"], "$comment": "where defined; null = instrument-wide ('In this Act...')" },
+    "notes": { "type": ["string", "null"] },
+    "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] }
+  }
+}

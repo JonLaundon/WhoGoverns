@@ -24,6 +24,13 @@ PK = {
     "sources": "source_id",
     "budgets": "budget_record_id",
     "staffing": "staffing_record_id",
+    # Powers layer (Annex A6, active from Spiral 2).
+    "powers": "power_id",
+    "duties": "duty_id",
+    "vetoes": "veto_id",
+    "instruments": "instrument_id",
+    "provisions": "provision_key",
+    "definitions": "definition_id",
 }
 TYPES = list(PK)
 

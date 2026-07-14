@@ -1,0 +1,1 @@
+{ "vocab": "modality", "version": "0.1", "note": "The coarse legal character every operative record carries, and the single thing the extractor must get right: may (power) vs must (duty) vs block (veto). It MUST agree with the record type (a schema check: a Power record carries modality=power, etc.). Active from Spiral 2.", "terms": ["power", "duty", "veto"] }

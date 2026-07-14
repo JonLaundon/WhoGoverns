@@ -31,6 +31,13 @@ TYPE_SCHEMA = {
     "relationships": "relationship.schema.json",
     "budgets": "budget.schema.json",
     "staffing": "staffing.schema.json",
+    # Powers layer (Annex A6, active from Spiral 2).
+    "powers": "power.schema.json",
+    "duties": "duty.schema.json",
+    "vetoes": "veto.schema.json",
+    "instruments": "instrument.schema.json",
+    "provisions": "provision.schema.json",
+    "definitions": "definition.schema.json",
 }
 
 
@@ -49,6 +56,10 @@ def main():
     body_ids = {r["body_id"] for r in store.load("bodies")}
     source_ids = {r["source_id"] for r in store.load("sources")}
     office_ids = {r["office_id"] for r in store.load("offices")}
+    # Powers-layer FK sets (Annex A6, active from Spiral 2; empty until records land).
+    power_ids = {r["power_id"] for r in store.load("powers")}
+    provision_keys = {r["provision_key"] for r in store.load("provisions")}
+    instrument_ids = {r["instrument_id"] for r in store.load("instruments")}
 
     # Sponsor/parent truth from the canonical relationship edges, to check the body
     # convenience fields against (#8: duplicated truth must not silently diverge).
@@ -119,6 +130,30 @@ def main():
                 if ref and ref not in body_ids:
                     integrity += 1
                     print(f"FAIL {t}.body_id -> {ref} not among bodies")
+            elif t in ("powers", "duties", "vetoes"):
+                if rec.get("body_id") not in body_ids:
+                    integrity += 1
+                    print(f"FAIL {t}.body_id -> {rec.get('body_id')} not among bodies")
+                if rec.get("holder_type") == "office" and rec.get("office_id") not in office_ids:
+                    integrity += 1
+                    print(f"FAIL {t}.office_id -> {rec.get('office_id')} not among offices (holder_type=office)")
+                if rec.get("source_id") not in source_ids:
+                    integrity += 1
+                    print(f"FAIL {t}.source_id -> {rec.get('source_id')} not among sources")
+                if rec.get("provision_key") not in provision_keys:
+                    integrity += 1
+                    print(f"FAIL {t}.provision_key -> {rec.get('provision_key')} not among provisions")
+                if t == "vetoes" and rec.get("derived_from_record_id") not in power_ids:
+                    integrity += 1
+                    print(f"FAIL vetoes.derived_from_record_id -> {rec.get('derived_from_record_id')} not among powers")
+            elif t == "instruments":
+                if rec.get("source_id") not in source_ids:
+                    integrity += 1
+                    print(f"FAIL instruments.source_id -> {rec.get('source_id')} not among sources")
+            elif t in ("provisions", "definitions"):
+                if rec.get("instrument_id") not in instrument_ids:
+                    integrity += 1
+                    print(f"FAIL {t}.instrument_id -> {rec.get('instrument_id')} not among instruments")
             if t == "person-roles":
                 ref = rec.get("office_id")
                 if ref and ref not in office_ids:

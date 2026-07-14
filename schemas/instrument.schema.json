@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "instrument.schema.json",
+  "title": "Instrument",
+  "$comment": "An Act or SI as a structural node — the 'module' (Annex A6.5b). Distinct from the Source record (the citation/provenance object it points to). Active from Spiral 2.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["instrument_id", "title", "instrument_type", "status", "source_id", "record_status"],
+  "properties": {
+    "instrument_id": { "type": "string", "pattern": "^instrument-[a-z0-9-]+$" },
+    "title": { "type": "string" },
+    "instrument_type": { "type": "string", "enum": ["act", "order", "regulations", "rules", "scheme", "measure", "other"] },
+    "year": { "type": ["integer", "null"] },
+    "number": { "type": ["string", "null"] },
+    "legislation_url": { "type": ["string", "null"] },
+    "enacted_by": { "type": ["string", "null"] },
+    "made_under": { "type": ["string", "null"], "$comment": "enabling provision_key (SIs only) -> MADE_UNDER" },
+    "status": { "type": "string", "enum": ["in_force", "partially_in_force", "repealed", "prospective"] },
+    "source_id": { "type": "string" },
+    "notes": { "type": ["string", "null"] },
+    "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] }
+  }
+}
