@@ -1,7 +1,7 @@
 {
   "vocab": "functions",
-  "version": "0.1",
-  "note": "The FUNCTIONAL axis of a body, orthogonal to body_type (the structural/constitutional-form axis). A body carries zero or more functions; the same function cross-cuts several body_types (e.g. regulators are non_ministerial_department, executive_ndpb, public_corporation or other_body). Added in the Spiral 1.5 bolt-on so groupings the constitutional-form axis cannot express (chiefly 'regulator') are queryable and filterable on the map, WITHOUT reopening decision #12 (regulation is a function, not a body_type). Every populated tag is cited via function_source_ids (no tacit tagging). In Spiral 2 these tags become derivable from the powers/duties a body holds. Populated this pass: regulation (from an official list). Others are defined but not yet populated; fill in later sourced passes, never from memory.",
+  "version": "0.2",
+  "note": "The FUNCTIONAL axis of a body, orthogonal to body_type (the structural/constitutional-form axis). A body carries zero or more functions; the same function cross-cuts several body_types (e.g. regulators are non_ministerial_department, executive_ndpb, public_corporation or other_body). Added in the Spiral 1.5 bolt-on so groupings the constitutional-form axis cannot express (chiefly 'regulator') are queryable and filterable on the map, WITHOUT reopening decision #12 (regulation is a function, not a body_type). Every populated tag is cited via function_source_ids (no tacit tagging). In Spiral 2 these tags become derivable from the powers/duties a body holds. Populated this pass: regulation (from an official list). Others are defined but not yet populated; fill in later sourced passes, never from memory. v0.2 (2026-07-20): adds `judicial`, distinct from `tribunal_justice` because the project already treats courts as constitutionally distinct from tribunals (body_type decision, 2026-07-06). This is the axis a map colour or query should key on for the judicial layer - NOT power_type, which distinguishes asking a court from being one.",
   "terms": [
     "regulation",
     "inspection",
@@ -10,6 +10,7 @@
     "research",
     "cultural_heritage",
     "ombudsman_redress",
+    "judicial",
     "tribunal_justice",
     "operational_delivery",
     "standards_accreditation"
@@ -22,8 +23,9 @@
     "research": "Conducts or commissions research as its primary purpose (research council/institute).",
     "cultural_heritage": "Holds, curates or protects national collections, heritage or the arts (museums, libraries, galleries).",
     "ombudsman_redress": "Investigates complaints and provides redress against public bodies or a sector.",
-    "tribunal_justice": "Adjudicates disputes/appeals judicially (usually body_type tribunal).",
+    "tribunal_justice": "A statutory tribunal determining disputes outside the ordinary courts.",
     "operational_delivery": "Directly delivers a public service or operational function to the public.",
-    "standards_accreditation": "Sets technical standards, accredits or certifies (distinct from statutory regulation)."
+    "standards_accreditation": "Sets technical standards, accredits or certifies (distinct from statutory regulation).",
+    "judicial": "A court exercising judicial power: determining matters between parties, or between a party and the state, and making binding orders. Distinct from `tribunal_justice` (statutory tribunals), which the project holds separately because courts and tribunals are constitutionally distinct. Tag only from a founding or constituting statute, never from tacit knowledge."
   }
 }

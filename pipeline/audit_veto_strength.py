@@ -73,12 +73,15 @@ CORRECTIONS = {
                                "subsection (5) is satisfied', which is satisfied by notifying the "
                                "start date 'after the expiry of the period of 28 days'. Subsection "
                                "(6) then requires only that damage be minimised and the site restored.",
-         "notes": "Strength corrected hard_stop -> procedural_risk (audit 2026-07-20). FLAGGED FOR "
-                  "SPONSOR: because a public body may proceed 28 days after notice regardless of "
-                  "assent, this probably fails the strict veto test (AGENT.md) and should be "
-                  "re-typed as a notice Duty or withdrawn, leaving the canonical Power intact. "
-                  "Retained pending that decision rather than deleted unilaterally."},
-        "corrected", "hard_stop -> procedural_risk; flagged as probably not a veto at all"),
+         "notes": "Strength hard_stop -> procedural_risk (audit 2026-07-20). Under s.28H(4)-(6) a "
+                  "public body may proceed 28 days after notice regardless of assent, subject to "
+                  "minimising damage and restoring the site. SPONSOR RULING 2026-07-20: RETAIN as a "
+                  "Veto record at procedural_risk rather than re-typing it as a Duty or withdrawing "
+                  "it. The independent blind re-grading reached procedural_risk on the same "
+                  "reasoning, while noting advisory_only would also be defensible if the grading "
+                  "keyed purely on the assent decision's effect rather than the mandatory duties "
+                  "surrounding it."},
+        "corrected", "hard_stop -> procedural_risk; retained as a veto per sponsor ruling"),
 
     # NOT a strength error: a general authorisation is the SAME holder (the Secretary of State)
     # consenting in class rather than case by case. That is not an override, so the veto stands

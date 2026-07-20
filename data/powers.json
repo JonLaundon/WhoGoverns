@@ -17,12 +17,12 @@
     "legal_effect": "may",
     "legal_status": "current",
     "modality": "power",
-    "notes": "JUDICIAL GAP CLOSED (retrodiction): the s.24 petition records name 'the High Court' as the decision-maker; this extracts that step. Holder = Chancery Division (company/insolvency work). Modelled as a power (adjudication on the grounds), NOT a veto — the Court defers to SoS/Ofwat on the public interest (Court of Appeal, Thames Water).",
+    "notes": "JUDICIAL GAP CLOSED (retrodiction): the s.24 petition records name 'the High Court' as the decision-maker; this extracts that step. Holder = Chancery Division (company/insolvency work). Modelled as a power (adjudication on the grounds), NOT a veto — the Court defers to SoS/Ofwat on the public interest (Court of Appeal, Thames Water). power_type re-typed from \"other\" 2026-07-20 (vocab/power_type.json v0.3, sponsor decision).",
     "office_id": null,
     "power_basis": "statutory",
     "power_id": "power-chancery-court-wia1991-s24-1-order",
     "power_label": "Make a special administration order",
-    "power_type": "other",
+    "power_type": "adjudication",
     "provision_key": "water-industry-act-1991-s24-1-order",
     "record_status": "extracted",
     "related_body_ids": [
@@ -480,15 +480,17 @@
     "legal_effect": "conditional",
     "legal_status": "current",
     "modality": "power",
-    "notes": null,
+    "notes": "power_type re-typed from \"other\" 2026-07-20 (vocab/power_type.json v0.3, sponsor decision).",
     "office_id": null,
     "power_basis": "statutory",
     "power_id": "power-ofwat-wia1991-s24-1-b",
     "power_label": "Petition for a special administration order (with SoS consent)",
-    "power_type": "other",
+    "power_type": "application_to_court",
     "provision_key": "water-industry-act-1991-s24-1-b",
     "record_status": "extracted",
-    "related_body_ids": [],
+    "related_body_ids": [
+      "uk-state-body-chancery-division-of-the-high-court"
+    ],
     "related_power_ids": [
       "power-sos-defra-wia1991-s24-1-a"
     ],
@@ -640,15 +642,17 @@
     "legal_effect": "may",
     "legal_status": "current",
     "modality": "power",
-    "notes": null,
+    "notes": "power_type re-typed from \"other\" 2026-07-20 (vocab/power_type.json v0.3, sponsor decision).",
     "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
     "power_basis": "statutory",
     "power_id": "power-sos-defra-wia1991-s24-1-a",
     "power_label": "Petition for a special administration order",
-    "power_type": "other",
+    "power_type": "application_to_court",
     "provision_key": "water-industry-act-1991-s24-1-a",
     "record_status": "extracted",
-    "related_body_ids": [],
+    "related_body_ids": [
+      "uk-state-body-chancery-division-of-the-high-court"
+    ],
     "related_power_ids": [
       "power-ofwat-wia1991-s24-1-b"
     ],

@@ -4,36 +4,189 @@
   "title": "Body",
   "type": "object",
   "additionalProperties": false,
-  "required": ["body_id", "name", "status", "body_type", "jurisdiction", "record_status"],
+  "required": [
+    "body_id",
+    "name",
+    "status",
+    "body_type",
+    "jurisdiction",
+    "record_status"
+  ],
   "properties": {
-    "body_id": { "type": "string", "pattern": "^uk-state-body-[a-z0-9-]+$" },
-    "name": { "type": "string" },
-    "other_names": { "type": "array", "items": { "type": "string" } },
-    "status": { "type": "string", "enum": ["active", "forming", "closed", "merged", "superseded"] },
-    "body_type": { "type": "string", "enum": ["ministerial_department", "non_ministerial_department", "executive_agency", "division_directorate", "executive_ndpb", "advisory_ndpb", "tribunal", "public_corporation", "royal_charter_body", "other_body"] },
-    "jurisdiction": { "type": "array", "minItems": 1, "items": { "type": "string", "enum": ["UK", "England", "Scotland", "Wales", "Northern Ireland"] } },
-    "sponsor_department_id": { "type": ["string", "null"] },
-    "parent_body_id": { "type": ["string", "null"] },
-    "govuk_organisation_slug": { "type": ["string", "null"] },
+    "body_id": {
+      "type": "string",
+      "pattern": "^uk-state-body-[a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "other_names": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "active",
+        "forming",
+        "closed",
+        "merged",
+        "superseded"
+      ]
+    },
+    "body_type": {
+      "type": "string",
+      "enum": [
+        "ministerial_department",
+        "non_ministerial_department",
+        "executive_agency",
+        "division_directorate",
+        "executive_ndpb",
+        "advisory_ndpb",
+        "tribunal",
+        "public_corporation",
+        "royal_charter_body",
+        "other_body"
+      ]
+    },
+    "jurisdiction": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "enum": [
+          "UK",
+          "England",
+          "Scotland",
+          "Wales",
+          "Northern Ireland"
+        ]
+      }
+    },
+    "sponsor_department_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "parent_body_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "govuk_organisation_slug": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "external_ids": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "govuk_content_id": { "type": ["string", "null"] },
-        "govuk_analytics_identifier": { "type": ["string", "null"] },
-        "company_number": { "type": ["string", "null"] },
-        "charity_number": { "type": ["string", "null"] }
+        "govuk_content_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "govuk_analytics_identifier": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "company_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "charity_number": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
-    "founding_source_ids": { "type": "array", "items": { "type": "string" } },
-    "framework_document_source_ids": { "type": "array", "items": { "type": "string" } },
-    "annual_report_source_ids": { "type": "array", "items": { "type": "string" } },
-    "classification_source_ids": { "type": "array", "items": { "type": "string" } },
-    "functions": { "type": "array", "items": { "type": "string", "enum": ["regulation", "inspection", "advisory", "funding", "research", "cultural_heritage", "ombudsman_redress", "tribunal_justice", "operational_delivery", "standards_accreditation"] } },
-    "function_source_ids": { "type": "array", "items": { "type": "string" } },
-    "notes": { "type": ["string", "null"] },
-    "needs_classification_review": { "type": "boolean" },
-    "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] },
-    "last_reviewed": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+    "founding_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "framework_document_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "annual_report_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "classification_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "functions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "regulation",
+          "inspection",
+          "advisory",
+          "funding",
+          "research",
+          "cultural_heritage",
+          "ombudsman_redress",
+          "judicial",
+          "tribunal_justice",
+          "operational_delivery",
+          "standards_accreditation"
+        ]
+      }
+    },
+    "function_source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "needs_classification_review": {
+      "type": "boolean"
+    },
+    "record_status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "extracted",
+        "verified",
+        "published",
+        "deprecated"
+      ]
+    },
+    "last_reviewed": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    }
   }
 }
