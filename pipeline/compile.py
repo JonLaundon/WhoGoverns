@@ -300,6 +300,28 @@ def attach_operative(graph, powers, duties, vetoes, provisions, instruments, bod
             "source_id": dty.get("source_id"),
         }})
 
+    # Give every operative edge a BOW. Structural and operative edges frequently join the
+    # same pair of nodes (Defra sponsors Ofwat AND the Secretary of State blocks it three
+    # times over), and straight lines simply lie on top of each other — you cannot tell
+    # accountability from obstruction, or one veto from another. Each parallel edge gets its
+    # own curvature, alternating side and widening, so they fan out and stay countable.
+    def apply_bows(edges):
+        groups = {}
+        for e in edges:
+            d = e["data"]
+            if d["kind"] not in ("can_veto", "must_consult"):
+                continue
+            key = tuple(sorted((d["source"], d["target"]))) + (d["kind"],)
+            groups.setdefault(key, []).append(d)
+        for members in groups.values():
+            for i, d in enumerate(members):
+                step = 34 + 26 * (i // 2)          # 34, 34, 60, 60, 86, ...
+                d["bow"] = step if i % 2 == 0 else -step
+                # must_consult sits on the opposite side from a veto on the same pair, so an
+                # obligation is never mistaken for a block that happens to curve the same way.
+                if d["kind"] == "must_consult":
+                    d["bow"] = -d["bow"]
+
     # CAN_VETO edges: the blocking relation as a first-class traversable edge. These run
     # SIDEWAYS across the sponsor hierarchy (HM Treasury -> Defra), which is exactly why the
     # structural graph alone could never answer "who can block this?".
@@ -320,6 +342,8 @@ def attach_operative(graph, powers, duties, vetoes, provisions, instruments, bod
             "decision_affected": v.get("decision_affected"),
             "source_id": v.get("source_id"),
         }})
+
+    apply_bows(graph["edges"])
 
 
 def build_graph(bodies, relationships, offices, person_roles):

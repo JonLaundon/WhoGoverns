@@ -7828,6 +7828,7 @@
     },
     {
       "data": {
+        "bow": -34,
         "duty_id": "duty-ofwat-wia1991-s24-consult",
         "duty_type": "consultation",
         "id": "mustconsult-duty-ofwat-wia1991-s24-consult",
@@ -7841,6 +7842,7 @@
     {
       "data": {
         "blocker_kind": "regulatory",
+        "bow": 34,
         "decision_affected": "Whether Ofwat's proposed modifications to a water company's licence/appointment conditions (including price controls) take effect.",
         "id": "canveto-veto-cma-wia1991-s16a-veto",
         "kind": "can_veto",
@@ -7854,6 +7856,7 @@
     {
       "data": {
         "blocker_kind": "fiscal",
+        "bow": 34,
         "decision_affected": "Whether the Secretary of State may fund, indemnify or guarantee a water company in special administration — the fiscal viability of the SAR.",
         "id": "canveto-veto-hm-treasury-wia1991-s153",
         "kind": "can_veto",
@@ -7867,6 +7870,7 @@
     {
       "data": {
         "blocker_kind": "ministerial",
+        "bow": 34,
         "decision_affected": "Ofwat's petition to the High Court for a special administration order against a water/sewerage company.",
         "id": "canveto-veto-sos-defra-wia1991-s24",
         "kind": "can_veto",
@@ -7880,6 +7884,7 @@
     {
       "data": {
         "blocker_kind": "ministerial",
+        "bow": -34,
         "decision_affected": "Whether Ofwat may appoint a company as a water/sewerage undertaker.",
         "id": "canveto-veto-sos-defra-wia1991-s6-1-b",
         "kind": "can_veto",
@@ -7893,6 +7898,7 @@
     {
       "data": {
         "blocker_kind": "ministerial",
+        "bow": 60,
         "decision_affected": "Whether Ofwat may terminate or vary an undertaker's appointment.",
         "id": "canveto-veto-sos-defra-wia1991-s7-2-b",
         "kind": "can_veto",
@@ -7904,7 +7910,7 @@
       }
     }
   ],
-  "generated": "2026-07-20T23:02:26",
+  "generated": "2026-07-20T23:09:39",
   "nodes": [
     {
       "data": {

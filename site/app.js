@@ -291,7 +291,11 @@ function init(graph) {
       { selector: "edge[kind = 'can_veto']", style: {
         "line-color": "data(kindColor)", "target-arrow-color": "data(kindColor)",
         "target-arrow-shape": "tee", "arrow-scale": 1.1, "width": 2.2, "opacity": 0.85,
-        "curve-style": "bezier", "z-index": 60 } },
+        // Bowed, not straight: an operative link and a sponsor link often join the SAME pair
+        // of nodes, and straight lines lie on top of one another. The per-edge bow from
+        // compile.py fans parallel links apart so each stays visible and countable.
+        "curve-style": "unbundled-bezier", "control-point-distances": "data(bow)",
+        "control-point-weights": 0.5, "z-index": 60 } },
       { selector: "edge[kind = 'can_veto'][strength = 'strong_delay']", style: { "line-style": "dashed", "width": 1.8, "opacity": 0.7 } },
       { selector: "edge[kind = 'can_veto'][strength = 'procedural_risk']", style: { "line-style": "dotted", "width": 1.5, "opacity": 0.6 } },
       // MUST_CONSULT: a duty owed to another state actor. Deliberately NOT styled like a
@@ -300,7 +304,8 @@ function init(graph) {
       { selector: "edge[kind = 'must_consult']", style: {
         "line-color": "#3fa35b", "target-arrow-color": "#3fa35b", "line-style": "dashed",
         "target-arrow-shape": "triangle", "arrow-scale": 0.8, "width": 1.8, "opacity": 0.85,
-        "curve-style": "bezier", "z-index": 58 } },
+        "curve-style": "unbundled-bezier", "control-point-distances": "data(bow)",
+        "control-point-weights": 0.5, "z-index": 58 } },
       { selector: "edge[kind = 'must_consult'].thread-veto", style: {
         "line-color": "#3fa35b", "target-arrow-color": "#3fa35b", "width": 3, "opacity": 1, "z-index": 99 } },
       { selector: "edge.veto-hide", style: { "display": "none" } },
