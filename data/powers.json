@@ -1,5 +1,47 @@
 [
   {
+    "body_id": "uk-state-body-chancery-division-of-the-high-court",
+    "citation": {
+      "provision": "s.24(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24"
+    },
+    "constraints": [],
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wia1991-sar-gaps-fiscal-judicial",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "JUDICIAL GAP CLOSED (retrodiction): the s.24 petition records name 'the High Court' as the decision-maker; this extracts that step. Holder = Chancery Division (company/insolvency work). Modelled as a power (adjudication on the grounds), NOT a veto — the Court defers to SoS/Ofwat on the public interest (Court of Appeal, Thames Water).",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-chancery-court-wia1991-s24-1-order",
+    "power_label": "Make a special administration order",
+    "power_type": "other",
+    "provision_key": "water-industry-act-1991-s24-1-order",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-the-water-services-regulation-authority"
+    ],
+    "related_power_ids": [
+      "power-sos-defra-wia1991-s24-1-a",
+      "power-ofwat-wia1991-s24-1-b"
+    ],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "On a petition by the Secretary of State or Ofwat, if satisfied that one or more of the s.24(2) grounds is met (serious breach of a principal duty; inability to pay debts; etc.), the High Court may make a special administration order in relation to a water company (WIA 1991 s.24(1)). The Court is the adjudicator — it can refuse if the grounds are not met — but on the public-interest question it defers to the SoS and Ofwat as 'the guardians of the public interest'.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "body_id": "uk-state-body-competition-and-markets-authority",
     "citation": {
       "provision": "s.16A(1)",
@@ -530,6 +572,46 @@
     ],
     "source_id": "source-act-water-industry-act-1991",
     "summary": "Ofwat may, by notice, terminate an undertaker's appointment or vary its area, but only with the consent of, or under a general authorisation given by, the Secretary of State (s.7(2)(b)); subject to the same replacement/consent conditions as the SoS power.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.153(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/153"
+    },
+    "constraints": [],
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wia1991-sar-gaps-fiscal-judicial",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_effect": "conditional",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "FISCAL GAP CLOSED (retrodiction 2026-07-20): the Treasury-funding blocker the model could NOT self-surface — the s.24 records never point to it. Named by an external SAR study (Octus briefing; discovery only, re-sourced here to legislation.gov.uk per #24). Gated by Treasury consent, so a SAR's fiscal viability sits with HM Treasury.",
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "power_basis": "statutory",
+    "power_id": "power-sos-defra-wia1991-s153-funding",
+    "power_label": "Fund / indemnify / guarantee a company in special administration (Treasury consent)",
+    "power_type": "funding",
+    "provision_key": "water-industry-act-1991-s153",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-the-water-services-regulation-authority",
+      "uk-state-body-hm-treasury"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Where a special administration order is in force, the Secretary of State may, WITH THE CONSENT OF THE TREASURY, make grants or loans to the company, offer indemnities to the special administrator and others, and guarantee the company's borrowing (WIA 1991 s.153(1)-(2)). The quasi-nationalisation funding lever — the fiscal engine of a water SAR.",
     "verification": {
       "verification_notes": null,
       "verification_status": "unverified",

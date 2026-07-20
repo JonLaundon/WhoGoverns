@@ -47,6 +47,11 @@ HOLDER_ALIASES = {
     "ea": {"holder_type": "body", "body_id": "uk-state-body-environment-agency"},
     "ccw": {"holder_type": "body", "body_id": "uk-state-body-consumer-council-for-water"},
     "natural-england": {"holder_type": "body", "body_id": "uk-state-body-natural-england"},
+    # Cross-layer holders reached via the special-administration retrodiction (the fiscal and
+    # judicial gaps the body-first sweep missed).
+    "hm-treasury": {"holder_type": "body", "body_id": "uk-state-body-hm-treasury"},
+    "chancery-court": {"holder_type": "body",
+                       "body_id": "uk-state-body-chancery-division-of-the-high-court"},
 }
 
 # Markers that a provision AMENDS another Act rather than conferring directly.

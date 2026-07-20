@@ -13,6 +13,35 @@ writes to it (Annex A2.8).
 
 ---
 
+## Update — gaps closed (2026-07-20, after an external SAR briefing)
+
+The sponsor supplied a reputable external SAR study (Octus, *"Thames Water and the Shadow of
+Special Administration"*, 2025-07-18 — copyright, gitignored, used as a **discovery source only**
+per #24). It validated §1's trigger chain and named the provisions for the gaps, **re-sourced here
+to legislation.gov.uk**:
+
+- **Fiscal gap CLOSED (the silent one):** `power-sos-defra-wia1991-s153-funding` — the SoS may
+  fund / indemnify / guarantee a company in special administration **with Treasury consent**
+  (s.153), gating `veto-hm-treasury-wia1991-s153`. HM Treasury now sits in the model as the
+  fiscal blocker the water Acts could not self-surface.
+- **Judicial gap CLOSED:** `power-chancery-court-wia1991-s24-1-order` — the High Court (Chancery
+  Division) makes the SA order (s.24(1)); modelled as adjudication, not a veto (the Court defers
+  to SoS/Ofwat on the public interest — Court of Appeal, Thames Water).
+- **Adjacent-instrument gap REGISTERED:** the Insolvency Act 1986 (s.124A, public-interest
+  winding-up) and the Water (Special Measures) Act 2025 (s.14, SoS shortfall recovery) now exist
+  as instrument nodes reached via the s.24 breadcrumb.
+
+Follow-on items the briefing surfaced: the **special administrator** as an Office (#28
+vested-vs-delegated); **WSMA 2025 s.14** shortfall-recovery power (extraction); the SAR Rules 2024
+**Protected-Land SoS-consent** gate; and the **Companies Act 2006 Part 26A** restructuring plan as
+the ALTERNATIVE to a SAR (the Maynard Supreme Court appeal turns on SAR-vs-plan).
+
+**Method validated:** the fiscal blocker was invisible to both the body-first sweep and the
+in-model breadcrumbs — only the decision-first trace plus the external study revealed it. That is
+the retrodiction earning its place as the completeness gate.
+
+---
+
 ## 1. The delivery chain, as the model represents it
 
 **Trigger — who can petition, and who gates it**

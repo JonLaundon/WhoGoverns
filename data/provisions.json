@@ -1,6 +1,26 @@
 [
   {
     "citation": {
+      "content_hash": "b96003b88f8f3eb8",
+      "url": "https://www.legislation.gov.uk/ukpga/1986/45/section/124A",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Petition for winding up on grounds of public interest.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-insolvency-act-1986",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "insolvency-act-1986-s124a",
+    "provision_ref": "s.124A",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "c31ae207b17efe4f",
       "url": "https://www.legislation.gov.uk/ukpga/2014/21/section/22",
       "version_date": "2026-07-20"
@@ -75,6 +95,26 @@
     "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
     "provision_key": "water-industry-act-1991-s15",
     "provision_ref": "s.15",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "1b1b5cd724d77f22",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/153",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Government financial assistance where special administration orders made.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s153",
+    "provision_ref": "s.153",
     "record_status": "extracted",
     "references": [],
     "status": "in_force"
@@ -235,6 +275,26 @@
     "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
     "provision_key": "water-industry-act-1991-s24-1-b",
     "provision_ref": "s.24(1)(b)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": null,
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision for an independent operative record (see extract driver).",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s24-1-order",
+    "provision_ref": "s.24(1)",
     "record_status": "extracted",
     "references": [],
     "status": "in_force"
@@ -595,6 +655,26 @@
     "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
     "provision_key": "water-resources-act-1991-s79a",
     "provision_ref": "s.79A",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "b82746cf1b33b506",
+      "url": "https://www.legislation.gov.uk/ukpga/2025/5/section/14",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Modification by Secretary of State of water company’s appointment conditions etc to recover losses",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-special-measures-act-2025",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-special-measures-act-2025-s14",
+    "provision_ref": "s.14",
     "record_status": "extracted",
     "references": [],
     "status": "in_force"

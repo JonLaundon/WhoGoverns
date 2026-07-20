@@ -1,6 +1,20 @@
 [
   {
     "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-insolvency-act-1986",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/1986/45",
+    "made_under": null,
+    "notes": "Breadcrumb: the water SAR (WIA 1991 s.24, Sch 3) applies and modifies Insolvency Act 1986 machinery. s.124A = the SoS winding-up petition referenced by WIA s.24(2)(d).",
+    "number": "45",
+    "record_status": "extracted",
+    "source_id": "source-act-insolvency-act-1986",
+    "status": "in_force",
+    "title": "Insolvency Act 1986",
+    "year": 1986
+  },
+  {
+    "enacted_by": "Parliament",
     "instrument_id": "instrument-act-water-act-2014",
     "instrument_type": "act",
     "legislation_url": "https://www.legislation.gov.uk/ukpga/2014/21",
@@ -40,6 +54,20 @@
     "status": "in_force",
     "title": "Water Resources Act 1991",
     "year": 1991
+  },
+  {
+    "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-water-special-measures-act-2025",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/2025/5",
+    "made_under": null,
+    "notes": "Latest amendment to the water SAR: s.14 gives the SoS a shortfall-recovery power (modify licences to recover SAR costs not met by a sale/rescue). Registered via the retrodiction; full extraction is a follow-on.",
+    "number": "5",
+    "record_status": "extracted",
+    "source_id": "source-act-water-special-measures-act-2025",
+    "status": "in_force",
+    "title": "Water (Special Measures) Act 2025",
+    "year": 2025
   },
   {
     "enacted_by": "Parliament",

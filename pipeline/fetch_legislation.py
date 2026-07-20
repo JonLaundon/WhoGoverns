@@ -42,7 +42,7 @@ WIA_1991 = {
     "title": "Water Industry Act 1991",
     "leg_type": "ukpga", "year": 1991, "number": "56",
     "sections": ["2", "6", "7", "13", "14", "15", "16A", "18", "22A", "24", "27A", "27C",
-                 "37", "70", "86", "203"],
+                 "37", "70", "86", "153", "203"],
 }
 
 # Water Act 2014 (c.21). NOTE (decision #24 cross-check): the Act operates
@@ -94,7 +94,32 @@ WCA_1981 = {
     "sections": ["28E", "28H"],
 }
 
-ACTS = [WIA_1991, WATER_ACT_2014, WRA_1991, WCA_1981]
+# Breadcrumb instruments reached via the special-administration retrodiction. Registered as
+# provenance nodes (one principal section each); SAR-specific extraction is a follow-on.
+INSOLVENCY_1986 = {
+    "instrument_id": "instrument-act-insolvency-act-1986",
+    "source_id": "source-act-insolvency-act-1986",
+    "slug": "insolvency-act-1986",
+    "title": "Insolvency Act 1986",
+    "leg_type": "ukpga", "year": 1986, "number": "45",
+    "sections": ["124A"],
+    "instrument_note": "Breadcrumb: the water SAR (WIA 1991 s.24, Sch 3) applies and modifies "
+                       "Insolvency Act 1986 machinery. s.124A = the SoS winding-up petition "
+                       "referenced by WIA s.24(2)(d).",
+}
+WSMA_2025 = {
+    "instrument_id": "instrument-act-water-special-measures-act-2025",
+    "source_id": "source-act-water-special-measures-act-2025",
+    "slug": "water-special-measures-act-2025",
+    "title": "Water (Special Measures) Act 2025",
+    "leg_type": "ukpga", "year": 2025, "number": "5",
+    "sections": ["14"],
+    "instrument_note": "Latest amendment to the water SAR: s.14 gives the SoS a shortfall-recovery "
+                       "power (modify licences to recover SAR costs not met by a sale/rescue). "
+                       "Registered via the retrodiction; full extraction is a follow-on.",
+}
+
+ACTS = [WIA_1991, WATER_ACT_2014, WRA_1991, WCA_1981, INSOLVENCY_1986, WSMA_2025]
 
 
 def fetch(url, timeout=30, retries=3):

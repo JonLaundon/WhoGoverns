@@ -4,6 +4,19 @@
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",
     "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
+    "publication_date": "1986-01-01",
+    "publisher": "legislation.gov.uk (The National Archives)",
+    "source_id": "source-act-insolvency-act-1986",
+    "source_type": "act",
+    "title": "Insolvency Act 1986",
+    "url": "https://www.legislation.gov.uk/ukpga/1986/45",
+    "version_date": "2026-07-20"
+  },
+  {
+    "accessed_date": "2026-07-20",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
     "publication_date": "2014-01-01",
     "publisher": "legislation.gov.uk (The National Archives)",
     "source_id": "source-act-water-act-2014",
@@ -36,6 +49,19 @@
     "source_type": "act",
     "title": "Water Resources Act 1991",
     "url": "https://www.legislation.gov.uk/ukpga/1991/57",
+    "version_date": "2026-07-20"
+  },
+  {
+    "accessed_date": "2026-07-20",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
+    "publication_date": "2025-01-01",
+    "publisher": "legislation.gov.uk (The National Archives)",
+    "source_id": "source-act-water-special-measures-act-2025",
+    "source_type": "act",
+    "title": "Water (Special Measures) Act 2025",
+    "url": "https://www.legislation.gov.uk/ukpga/2025/5",
     "version_date": "2026-07-20"
   },
   {
