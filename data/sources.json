@@ -39,6 +39,19 @@
     "version_date": "2026-07-20"
   },
   {
+    "accessed_date": "2026-07-20",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
+    "publication_date": "1981-01-01",
+    "publisher": "legislation.gov.uk (The National Archives)",
+    "source_id": "source-act-wildlife-and-countryside-act-1981",
+    "source_type": "act",
+    "title": "Wildlife and Countryside Act 1981",
+    "url": "https://www.legislation.gov.uk/ukpga/1981/69",
+    "version_date": "2026-07-20"
+  },
+  {
     "accessed_date": "2026-07-06",
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",

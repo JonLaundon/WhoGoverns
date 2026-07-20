@@ -40,5 +40,19 @@
     "status": "in_force",
     "title": "Water Resources Act 1991",
     "year": 1991
+  },
+  {
+    "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-wildlife-and-countryside-act-1981",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/1981/69",
+    "made_under": null,
+    "notes": null,
+    "number": "69",
+    "record_status": "extracted",
+    "source_id": "source-act-wildlife-and-countryside-act-1981",
+    "status": "in_force",
+    "title": "Wildlife and Countryside Act 1981",
+    "year": 1981
   }
 ]

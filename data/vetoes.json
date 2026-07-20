@@ -38,6 +38,82 @@
     "veto_type": "licence_refusal"
   },
   {
+    "blocks_provision_key": null,
+    "body_id": "uk-state-body-natural-england",
+    "citation": {
+      "provision": "s.28E(3)(a)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1981/69/section/28E"
+    },
+    "decision_affected": "Whether an owner/occupier may carry out a potentially-damaging operation on SSSI land.",
+    "derived_from_record_id": "power-natural-england-wca1981-s28e-consent",
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wca1981-ne-sssi-gates",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_status": "current",
+    "modality": "veto",
+    "notes": null,
+    "office_id": null,
+    "overridable": "unknown",
+    "override_mechanism": null,
+    "provision_key": "wildlife-and-countryside-act-1981-s28e",
+    "record_status": "extracted",
+    "source_id": "source-act-wildlife-and-countryside-act-1981",
+    "strength": "hard_stop",
+    "summary": "An owner or occupier of SSSI land may not carry out a notified potentially-damaging operation unless Natural England has given written consent (WCA 1981 s.28E(1),(3)(a)), or the operation is under a management agreement/scheme. The general SSSI consent gate.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    },
+    "veto_id": "veto-natural-england-wca1981-s28e-consent",
+    "veto_label": "Withholding of SSSI consent to an owner/occupier's operations",
+    "veto_type": "consent_required"
+  },
+  {
+    "blocks_provision_key": null,
+    "body_id": "uk-state-body-natural-england",
+    "citation": {
+      "provision": "s.28H(3)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1981/69/section/28H"
+    },
+    "decision_affected": "Whether a public body (e.g. a water undertaker) may carry out operations likely to damage an SSSI — the gate on reservoirs / abstraction works affecting protected sites.",
+    "derived_from_record_id": "power-natural-england-wca1981-s28h-assent",
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wca1981-ne-sssi-gates",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_status": "current",
+    "modality": "veto",
+    "notes": null,
+    "office_id": null,
+    "overridable": "unknown",
+    "override_mechanism": null,
+    "provision_key": "wildlife-and-countryside-act-1981-s28h",
+    "record_status": "extracted",
+    "source_id": "source-act-wildlife-and-countryside-act-1981",
+    "strength": "hard_stop",
+    "summary": "A 'section 28G authority' (a public body, including a water or sewerage undertaker) must give Natural England notice before carrying out operations likely to damage an SSSI, even off-site (WCA 1981 s.28H(1)-(2)). Natural England may refuse assent, or assent with or without conditions (s.28H(3)); silence for 28 days is treated as a refusal. The gate on undertaker infrastructure — reservoirs, abstraction works — affecting protected sites.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    },
+    "veto_id": "veto-natural-england-wca1981-s28h-assent",
+    "veto_label": "Refusal of SSSI assent to a public body's operations",
+    "veto_type": "approval_required"
+  },
+  {
     "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
     "blocks_holder_type": "body",
     "blocks_office_id": null,

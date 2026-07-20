@@ -78,7 +78,22 @@ WRA_1991 = {
     "sections": ["24", "38", "25A", "79A"],
 }
 
-ACTS = [WIA_1991, WATER_ACT_2014, WRA_1991]
+# Wildlife and Countryside Act 1981 (c.69) — Natural England's SSSI consent regime, the classic
+# "left field" blocker on water infrastructure (reservoirs, abstraction affecting protected sites).
+# s.28E: owner/occupier needs NE consent for damaging operations. s.28H: a public body (a water
+# undertaker is a "section 28G authority") must get NE's assent before such operations. NOTE: for
+# European sites (SAC/SPA) the sharper gate is the Conservation of Habitats and Species Regs 2017
+# (assimilated EU law, a later SI) — flagged, not yet extracted.
+WCA_1981 = {
+    "instrument_id": "instrument-act-wildlife-and-countryside-act-1981",
+    "source_id": "source-act-wildlife-and-countryside-act-1981",
+    "slug": "wildlife-and-countryside-act-1981",
+    "title": "Wildlife and Countryside Act 1981",
+    "leg_type": "ukpga", "year": 1981, "number": "69",
+    "sections": ["28E", "28H"],
+}
+
+ACTS = [WIA_1991, WATER_ACT_2014, WRA_1991, WCA_1981]
 
 
 def fetch(url, timeout=30, retries=3):

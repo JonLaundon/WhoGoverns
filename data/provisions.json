@@ -458,5 +458,45 @@
     "record_status": "extracted",
     "references": [],
     "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "4ca4ccdd3d2993c7",
+      "url": "https://www.legislation.gov.uk/ukpga/1981/69/section/28E",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Duties in relation to sites of special scientific interest.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-wildlife-and-countryside-act-1981",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "wildlife-and-countryside-act-1981-s28e",
+    "provision_ref": "s.28E",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "14b7d23484ef1b7f",
+      "url": "https://www.legislation.gov.uk/ukpga/1981/69/section/28H",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Statutory undertakers, etc.: duty in relation to carrying out operations.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-wildlife-and-countryside-act-1981",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "wildlife-and-countryside-act-1981-s28h",
+    "provision_ref": "s.28H",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
   }
 ]
