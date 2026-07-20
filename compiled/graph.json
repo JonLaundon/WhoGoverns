@@ -7892,7 +7892,7 @@
       }
     }
   ],
-  "generated": "2026-07-20T22:17:17",
+  "generated": "2026-07-20T22:30:43",
   "nodes": [
     {
       "data": {
@@ -12254,6 +12254,8 @@
               "blocker_kind": "regulatory",
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
+              "blocks_party_outside_state": false,
+              "blocks_power_id": null,
               "citation": {
                 "provision": "s.16A(1)",
                 "quote": null,
@@ -12272,6 +12274,7 @@
               "outstanding_effects": true,
               "overridable": "no",
               "override_mechanism": null,
+              "projection_shape": "free_standing_block",
               "provision_key": "water-industry-act-1991-s16a",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
@@ -15076,6 +15079,8 @@
               "blocker_kind": "ministerial",
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
+              "blocks_party_outside_state": false,
+              "blocks_power_id": "power-ofwat-wia1991-s24-1-b",
               "citation": {
                 "provision": "s.24(1)(b)",
                 "quote": null,
@@ -15093,6 +15098,7 @@
               "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
               "overridable": "no",
               "override_mechanism": null,
+              "projection_shape": "embedded_consent",
               "provision_key": "water-industry-act-1991-s24-1-b",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
@@ -15105,6 +15111,8 @@
               "blocker_kind": "ministerial",
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
+              "blocks_party_outside_state": false,
+              "blocks_power_id": "power-ofwat-wia1991-s6-1-b",
               "citation": {
                 "provision": "s.6(1)(b)",
                 "quote": null,
@@ -15122,6 +15130,7 @@
               "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
               "overridable": "no",
               "override_mechanism": null,
+              "projection_shape": "embedded_consent",
               "provision_key": "water-industry-act-1991-s6-1-b",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
@@ -15134,6 +15143,8 @@
               "blocker_kind": "ministerial",
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
+              "blocks_party_outside_state": false,
+              "blocks_power_id": "power-ofwat-wia1991-s7-2-b",
               "citation": {
                 "provision": "s.7(2)(b)",
                 "quote": null,
@@ -15151,6 +15162,7 @@
               "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
               "overridable": "no",
               "override_mechanism": null,
+              "projection_shape": "embedded_consent",
               "provision_key": "water-industry-act-1991-s7-2-b",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
@@ -17749,6 +17761,8 @@
               "blocker_kind": "regulatory",
               "blocks_body_id": null,
               "blocks_office_id": null,
+              "blocks_party_outside_state": true,
+              "blocks_power_id": null,
               "citation": {
                 "provision": "s.38(2)",
                 "quote": null,
@@ -17766,6 +17780,7 @@
               "office_id": null,
               "overridable": "yes",
               "override_mechanism": "Appeal to the Secretary of State under Water Resources Act 1991 s.43(1): an applicant 'dissatisfied with the decision of the appropriate agency on the application' may by notice appeal.",
+              "projection_shape": "free_standing_block",
               "provision_key": "water-resources-act-1991-s38",
               "since": 1991,
               "source_id": "source-act-water-resources-act-1991",
@@ -21964,6 +21979,8 @@
               "blocker_kind": "fiscal",
               "blocks_body_id": "uk-state-body-department-for-environment-food-rural-affairs",
               "blocks_office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "blocks_party_outside_state": false,
+              "blocks_power_id": "power-sos-defra-wia1991-s153-funding",
               "citation": {
                 "provision": "s.153(1)",
                 "quote": null,
@@ -21981,6 +21998,7 @@
               "office_id": null,
               "overridable": "no",
               "override_mechanism": null,
+              "projection_shape": "embedded_consent",
               "provision_key": "water-industry-act-1991-s153",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
@@ -27701,6 +27719,8 @@
               "blocker_kind": "regulatory",
               "blocks_body_id": null,
               "blocks_office_id": null,
+              "blocks_party_outside_state": true,
+              "blocks_power_id": null,
               "citation": {
                 "provision": "s.28E(3)(a)",
                 "quote": null,
@@ -27718,6 +27738,7 @@
               "office_id": null,
               "overridable": "yes",
               "override_mechanism": "Appeal to the Secretary of State under Wildlife and Countryside Act 1981 s.28F(5): the Secretary of State may 'direct Natural England to give consent', or quash or vary its terms. If Natural England neither gives nor refuses consent within four months the applicant may treat it as refused and appeal. (The s.28E(3)(b)-(c) routes are Natural England's own instruments — same holder, so not overrides.)",
+              "projection_shape": "free_standing_block",
               "provision_key": "wildlife-and-countryside-act-1981-s28e",
               "since": 1981,
               "source_id": "source-act-wildlife-and-countryside-act-1981",
@@ -27730,6 +27751,8 @@
               "blocker_kind": "regulatory",
               "blocks_body_id": null,
               "blocks_office_id": null,
+              "blocks_party_outside_state": true,
+              "blocks_power_id": null,
               "citation": {
                 "provision": "s.28H(3)",
                 "quote": null,
@@ -27747,6 +27770,7 @@
               "office_id": null,
               "overridable": "yes",
               "override_mechanism": "Wildlife and Countryside Act 1981 s.28H(4)-(5): the public body 'shall not carry out the operations unless the condition set out in subsection (5) is satisfied', which is satisfied by notifying the start date 'after the expiry of the period of 28 days'. Subsection (6) then requires only that damage be minimised and the site restored.",
+              "projection_shape": "free_standing_block",
               "provision_key": "wildlife-and-countryside-act-1981-s28h",
               "since": 1981,
               "source_id": "source-act-wildlife-and-countryside-act-1981",
@@ -39689,6 +39713,8 @@
               "blocker_kind": "ministerial",
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
+              "blocks_party_outside_state": false,
+              "blocks_power_id": "power-ofwat-wia1991-s24-1-b",
               "citation": {
                 "provision": "s.24(1)(b)",
                 "quote": null,
@@ -39706,6 +39732,7 @@
               "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
               "overridable": "no",
               "override_mechanism": null,
+              "projection_shape": "embedded_consent",
               "provision_key": "water-industry-act-1991-s24-1-b",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
@@ -39718,6 +39745,8 @@
               "blocker_kind": "ministerial",
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
+              "blocks_party_outside_state": false,
+              "blocks_power_id": "power-ofwat-wia1991-s6-1-b",
               "citation": {
                 "provision": "s.6(1)(b)",
                 "quote": null,
@@ -39735,6 +39764,7 @@
               "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
               "overridable": "no",
               "override_mechanism": null,
+              "projection_shape": "embedded_consent",
               "provision_key": "water-industry-act-1991-s6-1-b",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
@@ -39747,6 +39777,8 @@
               "blocker_kind": "ministerial",
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
+              "blocks_party_outside_state": false,
+              "blocks_power_id": "power-ofwat-wia1991-s7-2-b",
               "citation": {
                 "provision": "s.7(2)(b)",
                 "quote": null,
@@ -39764,6 +39796,7 @@
               "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
               "overridable": "no",
               "override_mechanism": null,
+              "projection_shape": "embedded_consent",
               "provision_key": "water-industry-act-1991-s7-2-b",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",

@@ -3,6 +3,7 @@
     "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
     "blocks_holder_type": "body",
     "blocks_office_id": null,
+    "blocks_power_id": null,
     "blocks_provision_key": "water-industry-act-1991-s14",
     "body_id": "uk-state-body-competition-and-markets-authority",
     "citation": {
@@ -41,6 +42,7 @@
     "veto_type": "other"
   },
   {
+    "blocks_power_id": null,
     "blocks_provision_key": null,
     "body_id": "uk-state-body-environment-agency",
     "citation": {
@@ -82,6 +84,7 @@
     "blocks_body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "blocks_holder_type": "office",
     "blocks_office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "blocks_power_id": "power-sos-defra-wia1991-s153-funding",
     "blocks_provision_key": "water-industry-act-1991-s153",
     "body_id": "uk-state-body-hm-treasury",
     "citation": {
@@ -120,6 +123,7 @@
     "veto_type": "consent_required"
   },
   {
+    "blocks_power_id": null,
     "blocks_provision_key": null,
     "body_id": "uk-state-body-natural-england",
     "citation": {
@@ -158,6 +162,7 @@
     "veto_type": "consent_required"
   },
   {
+    "blocks_power_id": null,
     "blocks_provision_key": null,
     "body_id": "uk-state-body-natural-england",
     "citation": {
@@ -199,6 +204,7 @@
     "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
     "blocks_holder_type": "body",
     "blocks_office_id": null,
+    "blocks_power_id": "power-ofwat-wia1991-s24-1-b",
     "blocks_provision_key": "water-industry-act-1991-s24-1-b",
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {
@@ -241,6 +247,7 @@
   {
     "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
     "blocks_holder_type": "body",
+    "blocks_power_id": "power-ofwat-wia1991-s6-1-b",
     "blocks_provision_key": null,
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {
@@ -281,6 +288,7 @@
   {
     "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
     "blocks_holder_type": "body",
+    "blocks_power_id": "power-ofwat-wia1991-s7-2-b",
     "blocks_provision_key": null,
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {

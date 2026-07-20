@@ -122,3 +122,35 @@ def test_card_carries_citation_assurance_and_since_year():
     assert card["since"] == 1991                      # joined provision -> instrument
     assert card["decision_affected"]                  # the field a Power record cannot carry
     assert "verification_status" in card              # assurance on the face of the card
+
+
+# --- projection shape: two statutory shapes, derived not stored --------------------------
+
+def test_embedded_consent_shape():
+    """'A may, with the consent of B, do X' — canonical record is A's (the blocked) power,
+    so the veto holder and the parent power's holder DIFFER."""
+    v = {"office_id": "o-sos", "body_id": "b-sos", "derived_from_record_id": "power-lic"}
+    assert compile_mod.projection_shape(v, BY_ID) == "embedded_consent"
+
+
+def test_free_standing_block_shape():
+    """'B may direct A not to...' — the provision confers B's OWN blocking power, so the
+    veto holder and the parent power's holder are the SAME. Not an inconsistency."""
+    v = {"body_id": "b-reg", "derived_from_record_id": "power-lic"}
+    assert compile_mod.projection_shape(v, BY_ID) == "free_standing_block"
+
+
+def test_shape_is_none_when_the_parent_power_is_absent():
+    assert compile_mod.projection_shape({"body_id": "b-reg", "derived_from_record_id": "nope"}, BY_ID) is None
+
+
+def test_card_flags_a_veto_the_map_cannot_draw():
+    """The sponsor ruling: the map models what the state does to itself, so a veto over a
+    private party draws no edge — but it must stay visible on the card, or the register
+    silently understates the veto field."""
+    g = _graph()
+    private = dict(VETO, veto_id="v-3", blocks_body_id=None, blocks_office_id=None)
+    compile_mod.attach_operative(g, [], [], [private], PROVISIONS, INSTRUMENTS, BODIES)
+    card = {n["data"]["id"]: n["data"] for n in g["nodes"]}["o-sos"]["operative"]["vetoes"][0]
+    assert card["blocks_party_outside_state"] is True
+    assert card["decision_affected"]          # the card still answers "can I do this?"

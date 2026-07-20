@@ -147,12 +147,44 @@ BLOCKS_FIX = {
 }
 
 
+# `blocks_power_id` (added 2026-07-20, sponsor decision): WHICH power this veto obstructs, as
+# distinct from `derived_from_record_id`, which is provenance — the canonical power at the
+# veto's own provision. Populated uniformly so no consumer has to special-case the two
+# statutory shapes. Populating it immediately paid for itself by separating two kinds of null.
+BLOCKS_POWER = {
+    # Embedded consent ("A may, with the consent of B, do X"): the gated power IS the parent.
+    "veto-hm-treasury-wia1991-s153": "power-sos-defra-wia1991-s153-funding",
+    "veto-sos-defra-wia1991-s24": "power-ofwat-wia1991-s24-1-b",
+    "veto-sos-defra-wia1991-s6-1-b": "power-ofwat-wia1991-s6-1-b",
+    "veto-sos-defra-wia1991-s7-2-b": "power-ofwat-wia1991-s7-2-b",
+    # Free-standing blocks. All four resolve to null, for two DIFFERENT reasons:
+    #
+    # COVERAGE GAP — the blocked party is modelled but the gated power is not. The CMA's
+    # s.16A direction bites on Ofwat's power to modify appointment conditions FOLLOWING a
+    # CMA reference (WIA 1991 s.16), which we have not extracted. It is emphatically NOT
+    # s.13 (modification by agreement, which involves no CMA at all) nor s.14 (the referral
+    # power, which is the step before). Left null and raised as an extraction work item
+    # rather than pointed at a near-miss.
+    "veto-cma-wia1991-s16a-veto": None,
+    # OUTSIDE THE MODELLED STATE — these block a private abstractor, a private owner/occupier,
+    # and an unnamed class of public bodies. There is no modelled power to name, and none
+    # should be invented. Per the sponsor ruling (2026-07-20) these are correctly absent from
+    # the map, which models what the STATE does to itself; they remain fully visible on the
+    # entity card and in the query layer, which is where "can I do this?" gets answered.
+    "veto-ea-wra1991-s38-abstraction-licence": None,
+    "veto-natural-england-wca1981-s28e-consent": None,
+    "veto-natural-england-wca1981-s28h-assent": None,
+}
+
+
 def main():
     vetoes = store.load("vetoes")
     for rec in vetoes:
         if rec["veto_id"] in BLOCKS_FIX and not rec.get("blocks_body_id"):
             rec["blocks_body_id"] = BLOCKS_FIX[rec["veto_id"]]
             rec["blocks_holder_type"] = "body"
+        if rec["veto_id"] in BLOCKS_POWER:
+            rec["blocks_power_id"] = BLOCKS_POWER[rec["veto_id"]]
     changed, rows = 0, []
     for rec in vetoes:
         vid = rec["veto_id"]

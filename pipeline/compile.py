@@ -124,13 +124,13 @@ def summarise_staffing(recs):
 # the nodes (so an entity card can render them) and the blocking relation on the edges (so
 # "who can block this?" is answerable by traversal rather than by re-reading statute).
 
-# Which of the three colour axes a veto belongs to. DERIVED ONLY from sourced fields —
-# never a hand-kept list of bodies, which would be an uncited taxonomy in the presentation
-# layer (A2.2/A2.8). Order matters: a funding consent held by a Minister is fiscal first.
 # English, not string concatenation: "duty" + "s" is not "duties".
 PLURAL = {"power": "powers", "duty": "duties", "veto": "vetoes"}
 
 
+# Which of the colour axes a veto belongs to. DERIVED ONLY from sourced fields — never a
+# hand-kept list of bodies, which would be an uncited taxonomy in the presentation layer
+# (A2.2/A2.8). Order matters: a funding consent held by a Minister is fiscal first.
 def blocker_kind(veto, power_by_id, body_by_id):
     src = power_by_id.get(veto.get("derived_from_record_id")) or {}
     ptype = src.get("power_type")
@@ -147,6 +147,22 @@ def blocker_kind(veto, power_by_id, body_by_id):
     if veto.get("holder_type") == "office":
         return "ministerial"
     return None
+
+
+# Which statutory shape a veto takes. DERIVED, never stored: it is computable from holder
+# identity, and storing a computable fact is the #8 divergence trap. Both shapes are correct
+# — they track how the drafter wrote the provision, not a modelling inconsistency.
+#   embedded_consent    "A may, WITH THE CONSENT OF B, do X" — one provision confers A's power
+#                       and embeds B's gate, so the canonical record is A's (the blocked) power.
+#   free_standing_block "B may direct A not to..." — the provision confers B's OWN blocking
+#                       power; A's power lives elsewhere, so the canonical record is B's.
+def projection_shape(veto, power_by_id):
+    parent = power_by_id.get(veto.get("derived_from_record_id"))
+    if not parent:
+        return None
+    same_holder = ((veto.get("office_id") or veto.get("body_id"))
+                   == (parent.get("office_id") or parent.get("body_id")))
+    return "free_standing_block" if same_holder else "embedded_consent"
 
 
 def _since(rec, provision_by_key, instrument_by_id):
@@ -192,7 +208,14 @@ def summarise_operative(rec, kind, ctx):
             "derived_from_record_id": rec.get("derived_from_record_id"),
             "blocks_body_id": rec.get("blocks_body_id"),
             "blocks_office_id": rec.get("blocks_office_id"),
+            "blocks_power_id": rec.get("blocks_power_id"),
             "blocker_kind": blocker_kind(rec, ctx["powers"], ctx["bodies"]),
+            "projection_shape": projection_shape(rec, ctx["powers"]),
+            # A veto over a private party or an unnamed class draws no edge — the map models
+            # what the state does to itself — so the CARD must carry it, or the register would
+            # silently understate the veto field. Flagged so the card can say so explicitly.
+            "blocks_party_outside_state": not (rec.get("blocks_body_id")
+                                               or rec.get("blocks_office_id")),
         })
     return out
 
@@ -411,7 +434,8 @@ def build_sqlite_operative(cur, powers, duties, vetoes, instruments, provisions)
         CREATE TABLE vetoes (veto_id TEXT PRIMARY KEY, veto_label TEXT, veto_type TEXT,
             strength TEXT, overridable TEXT, override_mechanism TEXT, holder_type TEXT,
             body_id TEXT, office_id TEXT, blocks_body_id TEXT, blocks_office_id TEXT,
-            decision_affected TEXT, derived_from_record_id TEXT, summary TEXT, source_id TEXT,
+            blocks_power_id TEXT, decision_affected TEXT, derived_from_record_id TEXT,
+            summary TEXT, source_id TEXT,
             provision_key TEXT, provision TEXT, url TEXT, verification_status TEXT,
             confidence REAL, record_status TEXT);
         CREATE TABLE instruments (instrument_id TEXT PRIMARY KEY, title TEXT,
@@ -422,6 +446,7 @@ def build_sqlite_operative(cur, powers, duties, vetoes, instruments, provisions)
             outstanding_effects INTEGER);
         CREATE INDEX idx_vetoes_blocks_body ON vetoes(blocks_body_id);
         CREATE INDEX idx_vetoes_blocks_office ON vetoes(blocks_office_id);
+        CREATE INDEX idx_vetoes_blocks_power ON vetoes(blocks_power_id);
         CREATE INDEX idx_powers_body ON powers(body_id);
     """)
     for p in powers:
@@ -443,11 +468,11 @@ def build_sqlite_operative(cur, powers, duties, vetoes, instruments, provisions)
             (d.get("extraction") or {}).get("confidence"), d.get("record_status")))
     for v in vetoes:
         c = v.get("citation") or {}
-        cur.execute("INSERT INTO vetoes VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
+        cur.execute("INSERT INTO vetoes VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
             v["veto_id"], v.get("veto_label"), v.get("veto_type"), v.get("strength"),
             v.get("overridable"), v.get("override_mechanism"), v.get("holder_type"),
             v.get("body_id"), v.get("office_id"), v.get("blocks_body_id"),
-            v.get("blocks_office_id"), v.get("decision_affected"),
+            v.get("blocks_office_id"), v.get("blocks_power_id"), v.get("decision_affected"),
             v.get("derived_from_record_id"), v.get("summary"), v.get("source_id"),
             v.get("provision_key"), c.get("provision"), c.get("url"),
             (v.get("verification") or {}).get("verification_status"),

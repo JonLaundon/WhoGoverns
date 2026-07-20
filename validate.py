@@ -224,16 +224,31 @@ def main():
         integrity += 1
         print("FAIL " + msg)
 
-    # A veto with no blocked party draws no CAN_VETO edge, so it is invisible to any
-    # "who can block this?" traversal. That is sometimes CORRECT — plenty of real vetoes
-    # block a private person or an unnamed class, not another modelled body — so this is a
-    # warning, not a failure. It exists so the gap is a conscious choice, not an oversight.
+    # Two distinct gaps, deliberately reported differently (sponsor ruling 2026-07-20).
+    #
+    # (a) No blocked PARTY. The veto blocks someone outside the modelled state — a private
+    #     person or an unnamed class. No CAN_VETO edge is drawn and that is CORRECT: the map
+    #     models what the state does to itself. The record still surfaces on the entity card
+    #     and in the query layer, which is where "can I do this?" is answered. Informational.
+    #
+    # (b) Blocked party IS modelled, but the power it is blocked from exercising is not.
+    #     That is a real COVERAGE GAP — the chain can only traverse body-to-body, not
+    #     power-to-power — and it is an extraction work item (cf. decision #27 breadcrumbs).
     for rec in store.load("vetoes"):
-        if not rec.get("blocks_body_id") and not rec.get("blocks_office_id"):
+        blocked_party = rec.get("blocks_body_id") or rec.get("blocks_office_id")
+        if not blocked_party:
             warnings += 1
-            print(f"WARN vetoes[{rec['veto_id']}]: no blocks_body_id/blocks_office_id — no "
-                  f"CAN_VETO edge. Confirm the blocked party is outside the modelled state "
-                  f"(decision_affected: {(rec.get('decision_affected') or '')[:60]}...)")
+            print(f"WARN vetoes[{rec['veto_id']}]: blocks a party outside the modelled state — "
+                  f"no CAN_VETO edge by design; carried on the card only "
+                  f"({(rec.get('decision_affected') or '')[:56]}...)")
+        elif not rec.get("blocks_power_id"):
+            warnings += 1
+            print(f"WARN vetoes[{rec['veto_id']}]: blocks {blocked_party} but names no "
+                  f"blocks_power_id — the gated power is not yet extracted (coverage gap)")
+        ref = rec.get("blocks_power_id")
+        if ref and ref not in power_ids:
+            integrity += 1
+            print(f"FAIL vetoes.blocks_power_id -> {ref} not among powers")
 
     # provision_key duplicate check on canonical Power/Duty/Veto records (none in Spiral 1)
     seen = {}

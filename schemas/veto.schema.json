@@ -5,63 +5,278 @@
   "$comment": "A genuine statutory BLOCK (Annex A6.5). Active from Spiral 2. A veto is a DERIVED projection of the underlying power (decision 2026-07-14): derived_from_record_id (the canonical Power) and decision_affected (what is blocked) are BOTH required — a veto is never a free-standing primitive. modality is const 'veto'. STRICT test: only a real block; 'must be consulted' is a Duty, soft influence is not recorded.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["veto_id", "holder_type", "body_id", "veto_label", "veto_type", "modality", "strength", "summary", "source_id", "provision_key", "citation", "derived_from_record_id", "decision_affected", "record_status"],
+  "required": [
+    "veto_id",
+    "holder_type",
+    "body_id",
+    "veto_label",
+    "veto_type",
+    "modality",
+    "strength",
+    "summary",
+    "source_id",
+    "provision_key",
+    "citation",
+    "derived_from_record_id",
+    "decision_affected",
+    "record_status"
+  ],
   "properties": {
-    "veto_id": { "type": "string", "pattern": "^veto-[a-z0-9-]+$" },
-    "holder_type": { "type": "string", "enum": ["office", "body"] },
-    "office_id": { "type": ["string", "null"] },
-    "body_id": { "type": "string", "pattern": "^uk-state-body-[a-z0-9-]+$" },
-    "veto_label": { "type": "string" },
-    "veto_type": { "type": "string", "enum": ["consent_required", "concurrence_required", "approval_required", "objection_power", "call_in_power", "licence_refusal", "designation_power", "environmental_assessment", "other"] },
-    "modality": { "const": "veto" },
-    "strength": { "type": "string", "enum": ["hard_stop", "strong_delay", "procedural_risk", "advisory_only"] },
-    "summary": { "type": "string" },
-    "source_id": { "type": "string" },
-    "provision_key": { "type": "string" },
+    "veto_id": {
+      "type": "string",
+      "pattern": "^veto-[a-z0-9-]+$"
+    },
+    "holder_type": {
+      "type": "string",
+      "enum": [
+        "office",
+        "body"
+      ]
+    },
+    "office_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "body_id": {
+      "type": "string",
+      "pattern": "^uk-state-body-[a-z0-9-]+$"
+    },
+    "veto_label": {
+      "type": "string"
+    },
+    "veto_type": {
+      "type": "string",
+      "enum": [
+        "consent_required",
+        "concurrence_required",
+        "approval_required",
+        "objection_power",
+        "call_in_power",
+        "licence_refusal",
+        "designation_power",
+        "environmental_assessment",
+        "other"
+      ]
+    },
+    "modality": {
+      "const": "veto"
+    },
+    "strength": {
+      "type": "string",
+      "enum": [
+        "hard_stop",
+        "strong_delay",
+        "procedural_risk",
+        "advisory_only"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "provision_key": {
+      "type": "string"
+    },
     "citation": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["provision", "url"],
+      "required": [
+        "provision",
+        "url"
+      ],
       "properties": {
-        "provision": { "type": "string" },
-        "url": { "type": "string" },
-        "quote": { "type": ["string", "null"] }
+        "provision": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "quote": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
-    "derived_from_record_id": { "type": "string", "pattern": "^power-[a-z0-9-]+$" },
-    "decision_affected": { "type": "string" },
-    "blocks_holder_type": { "type": ["string", "null"], "enum": ["office", "body", null] },
-    "blocks_office_id": { "type": ["string", "null"] },
-    "blocks_body_id": { "type": ["string", "null"] },
-    "blocks_provision_key": { "type": ["string", "null"] },
-    "trigger": { "type": ["string", "null"] },
-    "overridable": { "type": "string", "enum": ["yes", "no", "unknown"] },
-    "override_mechanism": { "type": ["string", "null"] },
-    "failure_consequence": { "type": "string", "enum": ["invalid_decision", "judicial_review_risk", "delay", "sanction", "unknown"] },
-    "in_force_from": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-    "in_force_to": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-    "legal_status": { "type": "string", "enum": ["current", "repealed", "prospective", "historical", "unknown"] },
+    "derived_from_record_id": {
+      "type": "string",
+      "pattern": "^power-[a-z0-9-]+$"
+    },
+    "decision_affected": {
+      "type": "string"
+    },
+    "blocks_holder_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "office",
+        "body",
+        null
+      ]
+    },
+    "blocks_office_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "blocks_body_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "blocks_provision_key": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "trigger": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "overridable": {
+      "type": "string",
+      "enum": [
+        "yes",
+        "no",
+        "unknown"
+      ]
+    },
+    "override_mechanism": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "failure_consequence": {
+      "type": "string",
+      "enum": [
+        "invalid_decision",
+        "judicial_review_risk",
+        "delay",
+        "sanction",
+        "unknown"
+      ]
+    },
+    "in_force_from": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "in_force_to": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "legal_status": {
+      "type": "string",
+      "enum": [
+        "current",
+        "repealed",
+        "prospective",
+        "historical",
+        "unknown"
+      ]
+    },
     "extraction": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "extracted_by": { "type": "string", "enum": ["llm", "human"] },
-        "extraction_run_id": { "type": ["string", "null"] },
-        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
-        "requires_review": { "type": "boolean" }
+        "extracted_by": {
+          "type": "string",
+          "enum": [
+            "llm",
+            "human"
+          ]
+        },
+        "extraction_run_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "requires_review": {
+          "type": "boolean"
+        }
       }
     },
     "verification": {
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "verification_status": { "type": "string", "enum": ["unverified", "machine_verified", "single_checked", "double_checked", "rejected"] },
-        "verified_by": { "type": ["string", "null"] },
-        "verified_date": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-        "verification_notes": { "type": ["string", "null"] }
+        "verification_status": {
+          "type": "string",
+          "enum": [
+            "unverified",
+            "machine_verified",
+            "single_checked",
+            "double_checked",
+            "rejected"
+          ]
+        },
+        "verified_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verified_date": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "verification_notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
-    "notes": { "type": ["string", "null"] },
-    "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] }
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "record_status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "extracted",
+        "verified",
+        "published",
+        "deprecated"
+      ]
+    },
+    "blocks_power_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The specific Power this veto obstructs, where that power is modelled. Populated UNIFORMLY regardless of statutory shape, so a consumer never has to special-case: in an embedded-consent provision ('A may, with the consent of B, do X') it equals derived_from_record_id; in a free-standing block ('B may direct A not to...') it points at A's power elsewhere. Null has two legitimate meanings, distinguishable via blocks_body_id: the blocked party is outside the modelled state (a private person or an unnamed class), or the blocked party IS modelled but its power has not been extracted yet — a coverage gap that validate.py warns on. Contrast derived_from_record_id, which is PROVENANCE (the canonical power at this veto's own provision), not the target."
+    }
   }
 }
