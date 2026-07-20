@@ -1,5 +1,46 @@
 [
   {
+    "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+    "blocks_holder_type": "body",
+    "blocks_office_id": null,
+    "blocks_provision_key": "water-industry-act-1991-s14",
+    "body_id": "uk-state-body-competition-and-markets-authority",
+    "citation": {
+      "provision": "s.16A(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/16A"
+    },
+    "decision_affected": "Whether Ofwat's proposed modifications to a water company's licence/appointment conditions (including price controls) take effect.",
+    "derived_from_record_id": "power-cma-wia1991-s16a-veto",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wia1991-cma-ccw",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_status": "current",
+    "modality": "veto",
+    "notes": null,
+    "office_id": null,
+    "overridable": "no",
+    "override_mechanism": null,
+    "provision_key": "water-industry-act-1991-s16a",
+    "record_status": "extracted",
+    "source_id": "source-act-water-industry-act-1991",
+    "strength": "hard_stop",
+    "summary": "Following its report on a modification reference, the CMA may (within four weeks) direct Ofwat not to make some or all of the proposed licence/appointment modifications, and Ofwat must comply (WIA 1991 s.16A(1)). The direction may only cover modifications that are not requisite to remedy the adverse effects identified in the report (s.16A(3)). The statute's own term is a 'power of veto'.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    },
+    "veto_id": "veto-cma-wia1991-s16a-veto",
+    "veto_label": "CMA veto of Ofwat's proposed licence modifications",
+    "veto_type": "other"
+  },
+  {
     "blocks_provision_key": null,
     "body_id": "uk-state-body-environment-agency",
     "citation": {

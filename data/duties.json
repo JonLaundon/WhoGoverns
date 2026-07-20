@@ -1,5 +1,41 @@
 [
   {
+    "body_id": "uk-state-body-consumer-council-for-water",
+    "citation": {
+      "provision": "s.27C(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/27C"
+    },
+    "duty_id": "duty-ccw-wia1991-s27c-consumer-interests",
+    "duty_label": "Represent consumer interests, with regard to vulnerable groups",
+    "duty_type": "other",
+    "extraction": {
+      "confidence": 0.8,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wia1991-cma-ccw",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": "INFLUENCE BOUNDARY: CCW's external leverage is INFLUENCE — it investigates complaints and makes representations to Ofwat and undertakers, but holds NO veto and no power to compel. Per the strict test its representation/consultation rights are influence, not recorded as vetoes. CCW is the consumer-voice node, deliberately veto-less — an honest outcome, not a gap.",
+    "office_id": null,
+    "provision_key": "water-industry-act-1991-s27c",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-the-water-services-regulation-authority"
+    ],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "In considering the interests of consumers, the Consumer Council for Water shall have regard in particular to the interests of the disabled or chronically sick, people of pensionable age, those on low incomes, rural residents, and household customers (WIA 1991 s.27C). CCW's role is to represent and safeguard water consumers' interests.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "beneficiary_or_object": "Compliance with appointment/licence conditions and statutory requirements.",
     "body_id": "uk-state-body-the-water-services-regulation-authority",
     "citation": {

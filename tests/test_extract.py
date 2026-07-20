@@ -92,6 +92,19 @@ def test_blocks_on_non_blocking_family_is_flagged():
     assert any("not a blocking family" in i for i in issues)
 
 
+def test_self_block_flag_bypasses_the_family_check():
+    # WIA s.16A shape: a bespoke statutory "power of veto" exercised by direction. self_block
+    # is the extractor's explicit assertion that the power IS the block despite its type.
+    unit = {**UNIT_POWER, "record_id": "power-cma-test-act-s16a", "subtype": "direction",
+            "provision_key": "test-act-s16a",
+            "blocks": {"self_block": True, "veto_type": "other", "strength": "hard_stop",
+                       "decision_affected": "Whether the modification takes effect."}}
+    bundle, issues = extract.build([unit], "run-test")
+    assert not issues                                # direction + self_block -> no false flag
+    assert len(bundle["vetoes"]) == 1
+    assert not extract.validate_bundle(bundle)
+
+
 def test_duplicate_record_id_flagged_not_written():
     _, issues = extract.build([UNIT_DUTY, dict(UNIT_DUTY)], "run-test")
     assert any("duplicate record_id" in i for i in issues)

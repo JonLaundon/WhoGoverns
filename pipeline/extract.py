@@ -178,6 +178,9 @@ def derive_veto(power, blocks, run_id):
         "citation": power["citation"],
         "derived_from_record_id": power["power_id"],
         "decision_affected": blocks["decision_affected"],
+        "blocks_holder_type": blocks.get("blocks_holder_type"),
+        "blocks_body_id": blocks.get("blocks_body_id"),
+        "blocks_office_id": blocks.get("blocks_office_id"),
         "blocks_provision_key": blocks.get("blocks_provision_key"),
         "overridable": blocks.get("overridable", "unknown"),
         "override_mechanism": blocks.get("override_mechanism"),
@@ -204,11 +207,14 @@ def build(units, run_id):
             bundle["powers"].append(p)
             if u.get("blocks"):
                 b = u["blocks"]
-                # A self-block must come from a blocking-family power; a consent-gate (a named
-                # `holder` gate-keeper) may sit on any power type, so only check the former.
-                if not b.get("holder") and u["subtype"] not in BLOCKING_POWER_TYPES:
+                # A self-block normally comes from a blocking-family power; a consent-gate (a named
+                # `holder` gate-keeper) may sit on any power type. `self_block: true` is an explicit
+                # extractor assertion that this power IS the block despite its type (e.g. a bespoke
+                # statutory "power of veto" exercised by direction — WIA s.16A, the CMA veto).
+                if (not b.get("holder") and not b.get("self_block")
+                        and u["subtype"] not in BLOCKING_POWER_TYPES):
                     issues.append(f"{rid}: self-block on power_type '{u['subtype']}' "
-                                  "is not a blocking family — check the classification")
+                                  "is not a blocking family — set blocks.self_block if intended")
                 bundle["vetoes"].append(derive_veto(p, b, run_id))
         elif u["kind"] == "duty":
             bundle["duties"].append(duty_record(u, run_id))

@@ -41,7 +41,8 @@ WIA_1991 = {
     "slug": "water-industry-act-1991",
     "title": "Water Industry Act 1991",
     "leg_type": "ukpga", "year": 1991, "number": "56",
-    "sections": ["2", "6", "7", "13", "14", "18", "22A", "24", "37", "70", "86", "203"],
+    "sections": ["2", "6", "7", "13", "14", "15", "16A", "18", "22A", "24", "27A", "27C",
+                 "37", "70", "86", "203"],
 }
 
 # Water Act 2014 (c.21). NOTE (decision #24 cross-check): the Act operates

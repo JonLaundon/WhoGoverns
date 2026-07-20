@@ -1,5 +1,46 @@
 [
   {
+    "body_id": "uk-state-body-competition-and-markets-authority",
+    "citation": {
+      "provision": "s.16A(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/16A"
+    },
+    "constraints": [],
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wia1991-cma-ccw",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "CROSS-BODY VETO: the CMA can override Ofwat's licence-modification (including price-control) decisions — the appellate check above Ofwat, reached via Ofwat's s.14 reference power. The statute names it a 'power of veto' (s.16A).",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-cma-wia1991-s16a-veto",
+    "power_label": "Veto Ofwat's licence modifications following a CMA report",
+    "power_type": "direction",
+    "provision_key": "water-industry-act-1991-s16a",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-the-water-services-regulation-authority"
+    ],
+    "related_power_ids": [
+      "power-ofwat-wia1991-s14"
+    ],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Following its report on a modification reference, the CMA may (within four weeks) direct Ofwat not to make some or all of the proposed licence/appointment modifications, and Ofwat must comply (WIA 1991 s.16A(1)). The direction may only cover modifications that are not requisite to remedy the adverse effects identified in the report (s.16A(3)). The statute's own term is a 'power of veto'.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "body_id": "uk-state-body-environment-agency",
     "citation": {
       "provision": "s.25A",

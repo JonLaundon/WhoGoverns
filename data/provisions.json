@@ -61,6 +61,46 @@
   },
   {
     "citation": {
+      "content_hash": "368157f57de198bf",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/15",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Reports on modification references.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s15",
+    "provision_ref": "s.15",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "d9cba05c3a3c148e",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/16A",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "CMA's power of veto following report",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s16a",
+    "provision_ref": "s.16A",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "c0da8763de3c0ff9",
       "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/18",
       "version_date": "2026-07-20"
@@ -215,6 +255,46 @@
     "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
     "provision_key": "water-industry-act-1991-s24-1b",
     "provision_ref": "s.24(1B)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "74a0eb1a96b373a4",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/27A",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Establishment of the Council and committees",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s27a",
+    "provision_ref": "s.27A",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "e1dba97bdfcc09ac",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/27C",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "The interests of consumers",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s27c",
+    "provision_ref": "s.27C",
     "record_status": "extracted",
     "references": [],
     "status": "in_force"
