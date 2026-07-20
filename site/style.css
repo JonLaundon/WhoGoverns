@@ -192,3 +192,102 @@ body.dark {
 body.dark #cy { background: radial-gradient(circle at 50% 45%, #232427 0%, #171819 100%); }
 body.dark .detail { background: var(--bg); }
 body.dark .hint { background: rgba(0,0,0,0.55); }
+
+/* ---------- Operative layer: powers / duties / veto point cards ---------- */
+/* Card anatomy follows the precedent (type pill, "Since YYYY", plain-English paragraph,
+   typed source citation). What it adds is ours: the may/must/blocks modality, the decision
+   actually blocked, and the assurance tier — shown, not buried. */
+
+.detail-body .caveat {
+  font-size: 0.78rem; line-height: 1.45; color: var(--mid);
+  background: var(--panel); border-left: 3px solid var(--line);
+  padding: 8px 10px; margin: 0 0 14px; border-radius: 0 3px 3px 0;
+}
+.detail-body .caveat strong { color: var(--ink); }
+
+.op-pills { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+.op-pill {
+  font: inherit; font-size: 0.76rem; cursor: pointer;
+  background: var(--bg); color: var(--mid);
+  border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px;
+}
+.op-pill:hover { border-color: var(--ink); color: var(--ink); }
+.op-pill.active { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.op-pill .pill-n { opacity: 0.7; font-variant-numeric: tabular-nums; }
+.tab-n {
+  font-size: 0.7rem; background: var(--line); color: var(--ink);
+  border-radius: 999px; padding: 0 5px; margin-left: 3px; vertical-align: middle;
+}
+
+.op-card {
+  border: 1px solid var(--line); border-left-width: 4px; border-radius: 3px;
+  padding: 10px 12px; margin: 0 0 10px; background: var(--bg);
+}
+.op-power { border-left-color: #4a90d9; }
+.op-duty  { border-left-color: #3fa35b; }
+.op-veto  { border-left-color: #c0392b; }
+
+.op-head { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-bottom: 5px; }
+.op-kind {
+  font-size: 0.66rem; letter-spacing: 0.06em; font-weight: 700;
+  padding: 2px 6px; border-radius: 3px; color: #fff;
+}
+.op-kind-power { background: #4a90d9; }
+.op-kind-duty  { background: #3fa35b; }
+.op-kind-veto  { background: #c0392b; }
+.op-type { font-size: 0.72rem; color: var(--mid); text-transform: lowercase; }
+.op-head .since { margin-left: auto; font-size: 0.72rem; color: var(--mid); white-space: nowrap; }
+
+.op-card h4 { font-family: var(--font-display); font-size: 0.98rem; margin: 0 0 5px; line-height: 1.25; }
+.op-summary { font-size: 0.85rem; line-height: 1.5; margin: 0 0 8px; }
+.op-card .blocks, .op-card .override, .op-card .constraints { font-size: 0.8rem; margin: 0 0 6px; line-height: 1.45; }
+.op-card .constraints-list { font-size: 0.8rem; margin: 0 0 8px; padding-left: 18px; }
+.op-card .note-outside { border-left: 2px solid var(--line); padding-left: 8px; margin: 6px 0; }
+.op-card .warn-line { color: #8a5a00; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 6px 0 0; }
+.badge {
+  display: inline-block; font-size: 0.7rem; line-height: 1.5;
+  padding: 1px 7px; border-radius: 999px;
+  border: 1px solid var(--line); color: var(--mid); background: var(--bg);
+  cursor: help;
+}
+.badge.mod { font-weight: 700; text-transform: lowercase; }
+.badge.mod-power { border-color: #4a90d9; color: #1f5c94; }
+.badge.mod-duty  { border-color: #3fa35b; color: #256b39; }
+.badge.mod-veto  { border-color: #c0392b; color: #a02a1e; }
+
+.badge.strength-hard_stop { background: #c0392b; border-color: #c0392b; color: #fff; }
+.badge.strength-strong_delay { background: #f2d9a0; border-color: #d9a441; color: #6b4a00; }
+.badge.strength-procedural_risk { background: var(--panel); }
+.badge.kind-regulatory  { border-color: #d4a017; color: #7a5c00; }
+.badge.kind-ministerial { border-color: #c0392b; color: #a02a1e; }
+.badge.kind-fiscal      { border-color: #0d7d74; color: #0a5d56; }
+.badge.kind-judicial    { border-color: #6b4fbb; color: #4c3690; }
+.badge.warn { background: #fff7bf; border-color: #ffdd00; color: #594d00; }
+
+/* Assurance. Deliberately quiet but always present — the precedent shows none at all. */
+.chips.assurance { margin-top: 8px; padding-top: 7px; border-top: 1px dotted var(--line); }
+.badge.assure-unverified { background: var(--panel); }
+.badge.assure-machine_verified { border-color: #3fa35b; color: #256b39; }
+.badge.assure-single_checked, .badge.assure-double_checked { background: #3fa35b; border-color: #3fa35b; color: #fff; }
+.badge.assure-conf { font-variant-numeric: tabular-nums; }
+
+.op-src { font-size: 0.76rem; margin: 8px 0 0; line-height: 1.45; }
+.op-src .src-kind {
+  font-size: 0.64rem; letter-spacing: 0.06em; font-weight: 700;
+  background: var(--panel); border: 1px solid var(--line);
+  padding: 1px 5px; border-radius: 2px; margin-right: 5px; color: var(--mid);
+}
+.legend .row.nohover { cursor: default; }
+
+body.dark .op-card { background: transparent; }
+body.dark .badge { background: transparent; }
+body.dark .op-card .warn-line { color: #e0b062; }
+body.dark .badge.strength-strong_delay { background: transparent; color: #e0b062; }
+body.dark .badge.kind-regulatory { color: #e6bf4a; }
+body.dark .badge.kind-fiscal { color: #4fbdb2; }
+body.dark .badge.kind-judicial { color: #a58ee0; }
+body.dark .badge.mod-power { color: #7fb4e8; }
+body.dark .badge.mod-duty { color: #6fc98a; }
+body.dark .badge.mod-veto, body.dark .badge.kind-ministerial { color: #e88b80; }

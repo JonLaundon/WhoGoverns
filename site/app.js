@@ -55,6 +55,35 @@ const GROUP_INFO = {
   "Public bodies": "Arm's-length bodies: executive and advisory NDPBs, tribunals, public corporations, chartered bodies and the wider 'other' tail.",
 };
 
+// ---- The operative layer (Spiral 2): powers, duties and veto points ----
+// Blocker kinds colour the CAN_VETO links. Every one of these is DERIVED in compile.py from
+// a sourced field (a body's `functions` tag, or the type of the power being gated) — never a
+// hand-kept list here, which would be an uncited taxonomy living in the presentation layer.
+// Gold and red deliberately echo the existing regulator/minister colours.
+const BLOCKER_KINDS = {
+  regulatory:  ["Regulatory", "#d4a017"],
+  ministerial: ["Ministerial", "#c0392b"],
+  fiscal:      ["Fiscal", "#0d7d74"],
+  judicial:    ["Judicial", "#6b4fbb"],
+};
+const BLOCKER_INFO = {
+  regulatory: "A regulator's consent, licence or direction stands between the decision and its delivery.",
+  ministerial: "A Minister's consent is required — the block is held by an elected officeholder, not an arm's-length body.",
+  fiscal: "The block is a money gate: a consent to funding, indemnity, guarantee or charging. These are the blockers least visible in the statute of the sector itself.",
+  judicial: "A court determines the matter. Note that a court adjudicates rather than vetoes — it decides, and may refuse.",
+};
+// How hard the veto bites, audited against the mandatory/directory doctrine (JOYS 6th ed
+// ss.2.57-2.60). Line style on the map encodes this; colour encodes the kind.
+const STRENGTHS = {
+  hard_stop:       ["Hard stop", "No lawful route around it — the decision cannot proceed without this holder."],
+  strong_delay:    ["Strong delay", "Can ultimately be got past, but only via a further legal process (usually an appeal) that costs substantial time."],
+  procedural_risk: ["Procedural risk", "Breach does not automatically invalidate the decision, but exposes it to judicial review."],
+  advisory_only:   ["Advisory only", "The holder's disagreement carries no legal consequence."],
+};
+const MODALITY = { power: ["may", "A discretion — the holder may act, and may lawfully decline."],
+                   duty: ["must", "An obligation — not acting is a breach."],
+                   veto: ["blocks", "The holder's decision determines whether ANOTHER actor may lawfully proceed."] };
+
 // The FUNCTIONAL axis, orthogonal to body_type — a grouping (chiefly "regulator") that
 // cross-cuts the constitutional forms. Sourced to the DBT List of UK regulators.
 const FUNCTION_TYPES = {
@@ -222,10 +251,18 @@ function init(graph) {
              : d.body_type === "non_ministerial_department" ? 20 : 13;
     }
     d.forming = d.status === "forming";
+    d.hasVeto = !!(d.operative && d.operative.counts && d.operative.counts.vetoes);
     const aliases = (d.other_names || []).join(" ");
     const alsoHolds = (d.also_holds || []).join(" ");
     searchIndex.push({ id: d.id, label: d.label, sub: subOf(d),
       text: (d.label + " " + aliases + " " + (d.holder || "") + " " + alsoHolds).toLowerCase() });
+  });
+
+  // Resolve each blocking link's colour once, here, from the kind compile.py derived.
+  graph.edges.forEach((e) => {
+    if (e.data.kind === "can_veto") {
+      e.data.kindColor = (BLOCKER_KINDS[e.data.blocker_kind] || ["", "#6b7280"])[1];
+    }
   });
 
   cy = cytoscape({
@@ -248,6 +285,16 @@ function init(graph) {
       }},
       { selector: "edge[kind = 'office_of']", style: { "line-color": "#e3b7be", "line-style": "dashed", "target-arrow-shape": "none" } },
       { selector: "edge[kind = 'leads']", style: { "line-color": "#8a1a12", "width": 1, "opacity": 0.45, "target-arrow-color": "#8a1a12", "target-arrow-shape": "triangle", "arrow-scale": 0.5 } },
+      // CAN_VETO links. Two independent encodings: COLOUR = the kind of blocker (derived from
+      // sourced fields in compile.py); LINE STYLE = how hard it bites, from the audited
+      // strength grading. Solid means there is no lawful way round it.
+      { selector: "edge[kind = 'can_veto']", style: {
+        "line-color": "data(kindColor)", "target-arrow-color": "data(kindColor)",
+        "target-arrow-shape": "tee", "arrow-scale": 1.1, "width": 2.2, "opacity": 0.85,
+        "curve-style": "bezier", "z-index": 60 } },
+      { selector: "edge[kind = 'can_veto'][strength = 'strong_delay']", style: { "line-style": "dashed", "width": 1.8, "opacity": 0.7 } },
+      { selector: "edge[kind = 'can_veto'][strength = 'procedural_risk']", style: { "line-style": "dotted", "width": 1.5, "opacity": 0.6 } },
+      { selector: "edge.veto-hide", style: { "display": "none" } },
       { selector: "edge.rot-hide", style: { "display": "none" } },
       { selector: ".faded", style: { "opacity": 0.08, "text-opacity": 0 } },
       { selector: "node.thread-lbl", style: { "label": "data(label)", "z-index": 95, "border-width": 2, "border-color": "#0b0c0c" } },
@@ -429,6 +476,15 @@ function renderDetail(d) {
       el.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b === btn));
       el.querySelectorAll(".tabpanel").forEach((p) => { p.hidden = p.getAttribute("data-panel") !== k; });
     }));
+  // Power / Duty / Veto filter pills.
+  el.querySelectorAll(".op-pill").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      const k = btn.getAttribute("data-op");
+      el.querySelectorAll(".op-pill").forEach((b) => b.classList.toggle("active", b === btn));
+      el.querySelectorAll(".op-wrap").forEach((w) => {
+        w.hidden = k !== "all" && w.getAttribute("data-op") !== k;
+      });
+    }));
   wireViz(el, d);
 }
 
@@ -505,13 +561,14 @@ function bodyHtml(d) {
     ${sponsorSrcIds.length ? `<p class="src">Sponsor relationships cited to:</p>${sourceLinks(sponsorSrcIds)}` : ""}`;
 
   // Tabs — MoG-style. Budget / Civil service appear only where we hold the data.
-  const tabs = [["info", "Info"], ["powers", "Powers"]];
+  const nOp = opCount(d);
+  const tabs = [["info", "Info"], ["powers", `Powers${nOp ? ` <span class="tab-n">${nOp}</span>` : ""}`]];
   if (d.budget) tabs.push(["budget", `Budget <span class="tab-sub">${esc(d.budget.fy)}</span>`]);
   if (d.staffing) tabs.push(["civil", "Civil service"]);
   const tabBar = `<div class="tabs" role="tablist">` + tabs.map(([k, label], i) =>
     `<button class="tab${i === 0 ? " active" : ""}" role="tab" data-tab="${k}">${label}</button>`).join("") + `</div>`;
   const panel = (k, html) => `<div class="tabpanel" data-panel="${k}"${k === "info" ? "" : " hidden"}>${html}</div>`;
-  const powers = `<p class="src">Statutory powers, duties and veto points arrive in <strong>Spiral 2</strong> — extracted from legislation and cited to the section of the Act.</p>`;
+  const powers = powersTabHtml(d);
 
   return `
     <p class="kicker">${esc(type)}${flag}</p>
@@ -645,6 +702,122 @@ function staffingTabHtml(s, scope) {
     </dl>${scopeToggle}${vizToggle(views)}${sourceLinks(s.source_ids)}`;
 }
 
+/* ---------- the operative layer: powers / duties / vetoes on an entity card ---------- */
+
+// Standing caveat at the head of every Powers tab. The register holds STATUTORY authority
+// only, and saying so plainly is the honest alternative to a card that looks empty for a
+// convention-heavy office (culture, sport) and leaves the reader to guess why.
+const POWERS_CAVEAT =
+  `<p class="caveat"><strong>Statutory powers only.</strong> This register records authority
+   conferred by legislation, cited to the provision. Powers resting on the <em>royal
+   prerogative</em> or on <em>convention</em> are not yet held and may be added later; where a
+   body's real remit rests on those, this tab will understate it. Statutory authority takes
+   precedence: where Parliament has legislated in a field, statute governs and displaces the
+   prerogative to that extent.</p>`;
+
+function badge(text, cls, title) {
+  return `<span class="badge ${cls || ""}"${title ? ` title="${esc(title)}"` : ""}>${esc(text)}</span>`;
+}
+
+// One record, MoG's card anatomy — type pill, "Since YYYY", short title, plain-English
+// paragraph, typed source badge — plus the three things a purely editorial product cannot
+// carry: the may/must/blocks modality, the decision actually blocked, and the assurance tier.
+function operativeCard(r) {
+  const mod = MODALITY[r.kind] || MODALITY.power;
+  const kindLabel = { power: "POWER", duty: "DUTY", veto: "VETO" }[r.kind];
+  const since = r.since ? `<span class="since">Since ${esc(r.since)}</span>` : "";
+  const typeLabel = (r.type || "").replace(/_/g, " ");
+
+  let extra = "";
+  if (r.kind === "veto") {
+    const s = STRENGTHS[r.strength] || [r.strength, ""];
+    const k = BLOCKER_KINDS[r.blocker_kind];
+    // The head of the CAN_VETO edge: whose decision is stopped. This single line is the
+    // register's whole thesis — a Power record structurally cannot carry it.
+    const blocked = r.blocks_party_outside_state
+      ? `<span class="muted">a party outside the state</span> — ${esc(r.decision_affected || "")}`
+      : `${gotoBtn(r.blocks_office_id || r.blocks_body_id)} — ${esc(r.decision_affected || "")}`;
+    extra += `<p class="blocks"><strong>Blocks:</strong> ${blocked}</p>`;
+    if (r.blocks_party_outside_state) {
+      extra += `<p class="src note-outside">Not drawn on the map: the map models what the state
+        does to itself. This block falls on a private party or an unnamed class — it is real,
+        cited, and answers "can I do this?", but there is no state body at the other end.</p>`;
+    }
+    extra += `<p class="chips">${badge(s[0], "strength-" + r.strength, s[1])}` +
+      (k ? badge(k[0], "kind-" + r.blocker_kind, BLOCKER_INFO[r.blocker_kind]) : "") +
+      (r.overridable === "yes" ? badge("overridable", "warn", r.override_mechanism || "") : "") +
+      `</p>`;
+    if (r.override_mechanism) {
+      extra += `<p class="override"><strong>Way around it:</strong> ${esc(r.override_mechanism)}</p>`;
+    }
+  }
+  if (r.kind === "power" && (r.constraints || []).length) {
+    extra += `<p class="constraints"><strong>Limits:</strong></p><ul class="constraints-list">` +
+      r.constraints.map((c) => `<li>${esc(c)}</li>`).join("") + `</ul>`;
+  }
+
+  // Assurance, on the face of the card rather than buried. Nothing here is human-checked yet.
+  const vs = r.verification_status || "unverified";
+  const vLabel = { unverified: "unverified", machine_verified: "machine-checked",
+                   single_checked: "checked", double_checked: "double-checked" }[vs] || vs;
+  const assurance = badge(vLabel, "assure-" + vs,
+    "How far this record has been verified. machine-checked = passed an independent blind " +
+    "re-grading; it has not yet been checked by a person.") +
+    (r.confidence != null ? badge("confidence " + r.confidence.toFixed(2), "assure-conf") : "");
+
+  const cite = r.citation || {};
+  const src = SOURCES[r.source_id] || {};
+  const citation = cite.url
+    ? `<a href="${esc(cite.url)}" rel="noopener" target="_blank">${esc(src.title || r.source_id || "")}${cite.provision ? ", " + esc(cite.provision) : ""} ↗</a>`
+    : esc((src.title || "") + (cite.provision ? ", " + cite.provision : ""));
+
+  return `<article class="op-card op-${r.kind}">
+    <div class="op-head">
+      <span class="op-kind op-kind-${r.kind}">${kindLabel}</span>
+      ${badge(mod[0], "mod mod-" + r.kind, mod[1])}
+      ${typeLabel ? `<span class="op-type">${esc(typeLabel)}</span>` : ""}
+      ${since}
+    </div>
+    <h4>${esc(r.label || "")}</h4>
+    <p class="op-summary">${esc(r.summary || "")}</p>
+    ${extra}
+    ${r.outstanding_effects ? `<p class="src warn-line">⚠ This provision has amendments not yet
+      applied to the consolidated text — the wording may lag the law in force.</p>` : ""}
+    <p class="op-src"><span class="src-kind">${esc((src.source_type || "act").toUpperCase())}</span> ${citation}</p>
+    <p class="chips assurance">${assurance}</p>
+  </article>`;
+}
+
+// The Powers tab. Filter pills follow the precedent's pattern, but over OUR three cited
+// primitives (Power / Duty / Veto) rather than its four — we decline Function and
+// Responsibility, which are the soft, un-citable descriptors.
+function powersTabHtml(d) {
+  const own = d.operative || {};
+  const via = d.office_operative || {};
+  const all = [].concat(own.powers || [], own.duties || [], own.vetoes || []);
+  const viaAll = [].concat(via.powers || [], via.duties || [], via.vetoes || []);
+  if (!all.length && !viaAll.length) {
+    return POWERS_CAVEAT + `<p class="src">No statutory powers, duties or veto points have been
+      extracted for this entity yet. Extraction runs domain by domain (water first), so an empty
+      tab means "not yet reached", not "holds no powers".</p>`;
+  }
+  const pills = [["all", "All", all.length], ["power", "Powers", (own.powers || []).length],
+                 ["duty", "Duties", (own.duties || []).length], ["veto", "Veto points", (own.vetoes || []).length]]
+    .filter(([k, , n]) => k === "all" || n)
+    .map(([k, label, n], i) => `<button class="op-pill${i === 0 ? " active" : ""}" data-op="${k}">${esc(label)} <span class="pill-n">${n}</span></button>`)
+    .join("");
+
+  const cards = all.map((r) => `<div class="op-wrap" data-op="${r.kind}">${operativeCard(r)}</div>`).join("");
+  const viaCards = viaAll.length
+    ? `<h3>Held by its ministers <span class="muted">(${viaAll.length})</span></h3>
+       <p class="src">Most statutory authority in a department vests in the <em>office</em> —
+       "the Secretary of State may…" — not in the department as a body. These are held by
+       officeholders hosted here.</p>`
+      + viaAll.map((r) => operativeCard(r)).join("")
+    : "";
+  return POWERS_CAVEAT + (all.length ? `<div class="op-pills">${pills}</div>${cards}` : "") + viaCards;
+}
+
 // Cite the record's ACTUAL sources (resolved via the graph's source index), not a fixed
 // blurb — off-register bodies come from the Privy Council register or the DBT regulators
 // list, not the GOV.UK API.
@@ -668,11 +841,18 @@ function sourceLinks(ids) {
     : `<li>${esc(s.title || "")}</li>`).join("") + `</ul>`;
 }
 
+function opCount(d) {
+  const c = (d.operative || {}).counts || {};
+  return (c.powers || 0) + (c.duties || 0) + (c.vetoes || 0);
+}
+
+// An office is a power-holding node in its own right — a corporation sole ("the Secretary of
+// State may…"), distinct from both the person and the department. Most statutory authority
+// vests here, so the office card carries the same Powers tab a body does.
 function officeHtml(d) {
   const type = (OFFICE_TYPES[d.office_type] || OFFICE_TYPES.other)[0];
-  return `
-    <p class="kicker">${esc(type)} · office</p>
-    <h2>${esc(d.label)}</h2>
+  const nOp = opCount(d);
+  const info = `
     <dl>
       <dt>Current holder</dt><dd>${esc(d.holder || "—")}</dd>
       ${d.holder_since ? `<dt>In post since</dt><dd>${esc(d.holder_since)}</dd>` : ""}
@@ -683,6 +863,15 @@ function officeHtml(d) {
     <p class="src">Appointment from the GOV.UK content API
       (<code>ordered_ministers → role_appointments</code>), Open Government Licence v3.0.
       Office type is a heuristic tier; PM→cabinet→junior links are derived by convention.</p>`;
+  const tabs = [["info", "Info"], ["powers", `Powers${nOp ? ` <span class="tab-n">${nOp}</span>` : ""}`]];
+  const tabBar = `<div class="tabs" role="tablist">` + tabs.map(([k, label], i) =>
+    `<button class="tab${i === 0 ? " active" : ""}" role="tab" data-tab="${k}">${label}</button>`).join("") + `</div>`;
+  return `
+    <p class="kicker">${esc(type)} · office</p>
+    <h2>${esc(d.label)}</h2>
+    ${tabBar}
+    <div class="tabpanel" data-panel="info">${info}</div>
+    <div class="tabpanel" data-panel="powers" hidden>${powersTabHtml(d)}</div>`;
 }
 
 /* ---------- legend = clickable index (lists the type in the details panel) ---------- */
@@ -702,15 +891,54 @@ function buildLegend() {
       const [label, color] = FUNCTION_TYPES[k];
       return `<div class="row" data-func="${k}"><span class="swatch pub" style="background:${color}"></span>${esc(label)}</div>`;
     }).join("") +
+    `<h3 data-group="Blocking">Blocking <span class="flag" style="font-weight:400">who can stop what</span></h3>` +
+    Object.keys(BLOCKER_KINDS).map((k) => {
+      const [label, color] = BLOCKER_KINDS[k];
+      return `<div class="row" data-blocker="${k}"><span class="swatch" style="background:none;border-top:3px solid ${color};height:0;border-radius:0"></span>${esc(label)}</div>`;
+    }).join("") +
+    `<div class="row nohover"><span class="swatch" style="background:none;border-top:2px dashed #6b7280;height:0;border-radius:0"></span>dashed = a way round it exists</div>` +
     `<h3>Links</h3>` +
-    `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #d3d6d8;height:0;border-radius:0"></span>sponsors</div>` +
-    `<div class="row"><span class="swatch" style="background:none;border-top:2px solid #8a1a12;height:0;border-radius:0"></span>leads (PM → cabinet → junior) <span class="flag" style="margin-left:4px">derived</span></div>`;
+    `<div class="row nohover"><span class="swatch" style="background:none;border-top:2px solid #d3d6d8;height:0;border-radius:0"></span>sponsors</div>` +
+    `<div class="row nohover"><span class="swatch" style="background:none;border-top:2px solid #8a1a12;height:0;border-radius:0"></span>leads (PM → cabinet → junior) <span class="flag" style="margin-left:4px">derived</span></div>`;
+  $("#legend").querySelectorAll(".row[data-blocker]").forEach((row) =>
+    row.addEventListener("click", () => renderBlockerList(row.getAttribute("data-blocker"))));
   $("#legend").querySelectorAll(".row[data-type]").forEach((row) =>
     row.addEventListener("click", () => renderTypeList(row.getAttribute("data-kind"), row.getAttribute("data-type"))));
   $("#legend").querySelectorAll(".row[data-func]").forEach((row) =>
     row.addEventListener("click", () => renderFuncList(row.getAttribute("data-func"))));
   $("#legend").querySelectorAll("h3[data-group]").forEach((h) =>
     h.addEventListener("click", () => renderGroupList(h.getAttribute("data-group"))));
+}
+
+// Every veto of a given kind, wherever it sits — the cross-cutting "who can block things"
+// view. Lists the veto points themselves, not just their holders, because the answer people
+// want is "what exactly can they stop, and under which section".
+function renderBlockerList(kind) {
+  const rows = [];
+  cy.nodes().forEach((n) => {
+    ((n.data("operative") || {}).vetoes || []).forEach((v) => {
+      if (v.blocker_kind === kind) rows.push({ node: n, v });
+    });
+  });
+  const [label] = BLOCKER_KINDS[kind] || [kind];
+  const items = rows.map(({ node, v }) => {
+    const s = (STRENGTHS[v.strength] || [v.strength])[0];
+    const target = v.blocks_party_outside_state
+      ? "<span class='muted'>a party outside the state</span>"
+      : gotoBtn(v.blocks_office_id || v.blocks_body_id);
+    return `<li><button class="linkish" data-goto="${esc(node.id())}">${esc(node.data("label"))}</button>
+      <span class="muted">blocks</span> ${target}
+      <div class="r-sub">${esc(v.label || "")} · ${esc((v.citation || {}).provision || "")} · ${esc(s)}</div></li>`;
+  }).join("");
+  const el = $("#detail-body");
+  el.innerHTML = `<p class="kicker">Blocking</p><h2>${esc(label)} veto points</h2>` +
+    `<p>${esc(BLOCKER_INFO[kind] || "")}</p>` +
+    `<h3>${rows.length} ${rows.length === 1 ? "veto point" : "veto points"}</h3>` +
+    `<ul class="type-list">${items}</ul>`;
+  el.hidden = false;
+  $("#detail-empty").hidden = true;
+  el.querySelectorAll("[data-goto]").forEach((b) =>
+    b.addEventListener("click", () => selectNode(b.getAttribute("data-goto"))));
 }
 
 function renderFuncList(func) {
@@ -819,6 +1047,7 @@ function wireControls() {
 
   $("#toggle-forming").addEventListener("change", applyFilters);
   $("#toggle-regulators").addEventListener("change", applyRegulatorHighlight);
+  $("#toggle-vetoes").addEventListener("change", applyVetoLinks);
   document.querySelectorAll("input[name='layout']").forEach((r) =>
     r.addEventListener("change", (e) => { clearFocus(); runLayout(e.target.value); }));
 
@@ -834,6 +1063,11 @@ function applyFilters() {
   const showForming = $("#toggle-forming").checked;
   cy.batch(() => cy.nodes().forEach((n) =>
     n.style("display", (n.data("forming") && !showForming) ? "none" : "element")));
+}
+
+function applyVetoLinks() {
+  const on = $("#toggle-vetoes").checked;
+  cy.batch(() => cy.edges("[kind = 'can_veto']").toggleClass("veto-hide", !on));
 }
 
 // Gold halo on every regulator, wherever it sits in the rings — the cross-cutting view
