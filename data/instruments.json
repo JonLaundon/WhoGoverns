@@ -26,5 +26,19 @@
     "status": "in_force",
     "title": "Water Industry Act 1991",
     "year": 1991
+  },
+  {
+    "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-water-resources-act-1991",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/1991/57",
+    "made_under": null,
+    "notes": null,
+    "number": "57",
+    "record_status": "extracted",
+    "source_id": "source-act-water-resources-act-1991",
+    "status": "in_force",
+    "title": "Water Resources Act 1991",
+    "year": 1991
   }
 ]

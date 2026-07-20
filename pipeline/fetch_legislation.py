@@ -64,7 +64,21 @@ WATER_ACT_2014 = {
                        "resilience objective (WIA 1991 s.2(2A)(e), s.2(2DA)).",
 }
 
-ACTS = [WIA_1991, WATER_ACT_2014]
+# Water Resources Act 1991 (c.57) — the Environment Agency's principal water statute (the twin
+# of WIA 1991 c.56). Brings the cross-body / tail blockers the renationalisation story misses:
+# abstraction licensing (s.24 restriction), enforcement notices (s.25A), drought orders/permits
+# (s.73, s.79A), water-quality objectives (s.83). Supersession wrinkle: discharge consents moved
+# largely to the Environmental Permitting (England and Wales) Regulations 2016 (a later SI).
+WRA_1991 = {
+    "instrument_id": "instrument-act-water-resources-act-1991",
+    "source_id": "source-act-water-resources-act-1991",
+    "slug": "water-resources-act-1991",
+    "title": "Water Resources Act 1991",
+    "leg_type": "ukpga", "year": 1991, "number": "57",
+    "sections": ["24", "38", "25A", "79A"],
+}
+
+ACTS = [WIA_1991, WATER_ACT_2014, WRA_1991]
 
 
 def fetch(url, timeout=30, retries=3):

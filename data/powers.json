@@ -1,5 +1,89 @@
 [
   {
+    "body_id": "uk-state-body-environment-agency",
+    "citation": {
+      "provision": "s.25A",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/25A"
+    },
+    "constraints": [
+      "Threshold: the breach must be causing or likely to cause significant damage to the environment (s.25A(2))."
+    ],
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wra1991-ea-abstraction-enforcement",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "CROSS-BODY OVERLAP with Ofwat's enforcement power (WIA 1991 s.18): both the EA and Ofwat can take enforcement action against the same water company on different statutory grounds (EA: environmental damage from abstraction; Ofwat: breach of appointment conditions/statutory requirements) — the overlapping-enforcement pattern the Over Ruled and Cunliffe reviews flag.",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-ea-wra1991-s25a-enforcement",
+    "power_label": "Serve an environmental enforcement notice (abstraction/impounding)",
+    "power_type": "enforcement",
+    "provision_key": "water-resources-act-1991-s25a",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-the-water-services-regulation-authority"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-resources-act-1991",
+    "summary": "Where it appears to the Environment Agency that a person is in breach of the abstraction/impounding restrictions (WRA 1991 ss.24-25) or a licence condition, and the breach is causing or likely to cause significant damage to the environment (s.25A(2)), the Agency may serve an enforcement notice requiring the person to cease the breach or comply, and to carry out remedial works (s.25A(3)).",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-environment-agency",
+    "citation": {
+      "provision": "s.38(2)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/38"
+    },
+    "constraints": [
+      "No abstraction is lawful without a licence (s.24) — the licence requirement is the source of the gate.",
+      "In determining an application the Agency shall have regard to all relevant circumstances, other inland-waters bodies' duties, and written representations (s.38(3)).",
+      "Drought orders/permits under Chapter III can override the abstraction restriction (s.24(1))."
+    ],
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wra1991-ea-abstraction-enforcement",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "CROSS-BODY TENSION: this EA abstraction gate caps the water supply that Ofwat's resilience duty (WIA 1991 s.2(2A)(e)) presses undertakers to secure — the Ofwat/EA conflict Cunliffe documented as regulators 'working against each other'. Discharge/pollution consents largely moved to the Environmental Permitting Regs 2016 (later SI).",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-ea-wra1991-s38-abstraction-licence",
+    "power_label": "Grant or refuse an abstraction licence",
+    "power_type": "licence",
+    "provision_key": "water-resources-act-1991-s38",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-the-water-services-regulation-authority"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-resources-act-1991",
+    "summary": "No person may abstract water from a source of supply except under a licence granted by the Environment Agency (WRA 1991 s.24). On an application the Agency may grant a licence on such terms as it considers appropriate, or — where it considers it necessary or expedient having regard to the Chapter — refuse to grant a licence (s.38(2)). The gate on all new or increased water abstraction, including by water undertakers.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "body_id": "uk-state-body-the-water-services-regulation-authority",
     "citation": {
       "provision": "s.13",

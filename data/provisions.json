@@ -378,5 +378,85 @@
     "record_status": "extracted",
     "references": [],
     "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "396e6d545c6fadd9",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/24",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Restrictions on abstraction.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-resources-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-resources-act-1991-s24",
+    "provision_ref": "s.24",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "25db51af0d4b18f7",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/25A",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Enforcement notices",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-resources-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-resources-act-1991-s25a",
+    "provision_ref": "s.25A",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "74192e3212b4ff0e",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/38",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "General consideration of applications.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-resources-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-resources-act-1991-s38",
+    "provision_ref": "s.38",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "9bea11e4c2da0720",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/79A",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Drought permits.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-resources-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-resources-act-1991-s79a",
+    "provision_ref": "s.79A",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
   }
 ]

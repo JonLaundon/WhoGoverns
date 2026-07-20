@@ -1,5 +1,43 @@
 [
   {
+    "blocks_provision_key": null,
+    "body_id": "uk-state-body-environment-agency",
+    "citation": {
+      "provision": "s.38(2)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/38"
+    },
+    "decision_affected": "Whether a person (including a water undertaker) may lawfully abstract water — the cap on new or increased supply.",
+    "derived_from_record_id": "power-ea-wra1991-s38-abstraction-licence",
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wra1991-ea-abstraction-enforcement",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_status": "current",
+    "modality": "veto",
+    "notes": null,
+    "office_id": null,
+    "overridable": "yes",
+    "override_mechanism": "A drought order/permit under WRA 1991 Chapter III (s.24(1)).",
+    "provision_key": "water-resources-act-1991-s38",
+    "record_status": "extracted",
+    "source_id": "source-act-water-resources-act-1991",
+    "strength": "hard_stop",
+    "summary": "No person may abstract water from a source of supply except under a licence granted by the Environment Agency (WRA 1991 s.24). On an application the Agency may grant a licence on such terms as it considers appropriate, or — where it considers it necessary or expedient having regard to the Chapter — refuse to grant a licence (s.38(2)). The gate on all new or increased water abstraction, including by water undertakers.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    },
+    "veto_id": "veto-ea-wra1991-s38-abstraction-licence",
+    "veto_label": "Refusal of an abstraction licence (cap on supply)",
+    "veto_type": "licence_refusal"
+  },
+  {
     "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
     "blocks_holder_type": "body",
     "blocks_office_id": null,
