@@ -44,6 +44,28 @@ WIA_1991 = {
     "sections": ["2", "13", "14", "18", "22A", "24", "37"],
 }
 
+# Water Act 2014 (c.21). NOTE (decision #24 cross-check): the Act operates
+# overwhelmingly by AMENDING WIA 1991 — the resilience duty (s.22 → WIA s.2/s.2DA),
+# strategic priorities (s.24 → WIA s.2A), the extended penalty time-limit (s.26 → WIA
+# s.22A), and most of the new licensing regime (inserted as WIA ss.17A+). Those powers
+# live in the consolidated WIA 1991 text and are extracted THERE, citing this Act as
+# amending provenance — NOT re-minted here. We fetch only the amending provisions we
+# reference as provenance (s.22, the resilience objective) so the node exists.
+WATER_ACT_2014 = {
+    "instrument_id": "instrument-act-water-act-2014",
+    "source_id": "source-act-water-act-2014",
+    "slug": "water-act-2014",
+    "title": "Water Act 2014",
+    "leg_type": "ukpga", "year": 2014, "number": "21",
+    "sections": ["22"],
+    "instrument_note": "Amending instrument: operates chiefly by amending the Water Industry "
+                       "Act 1991. Operative powers/duties are extracted from the consolidated WIA "
+                       "1991 text, citing this Act as amending provenance. s.22 inserts the "
+                       "resilience objective (WIA 1991 s.2(2A)(e), s.2(2DA)).",
+}
+
+ACTS = [WIA_1991, WATER_ACT_2014]
+
 
 def fetch(url, timeout=30, retries=3):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/xml"})
@@ -89,13 +111,9 @@ def parse_section(xml, want):
     return heading, body
 
 
-def main():
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--print", dest="show", default=None, help="also print a section's text, e.g. s13")
-    ap.add_argument("--dry-run", action="store_true")
-    args = ap.parse_args()
-
-    act = WIA_1991
+def build_act(act, dry_run):
+    """Fetch one Act's configured sections; emit its Source, Instrument and Provision
+    records (idempotent via store). Returns {section: (heading, text)} for --print."""
     accessed = datetime.date.today().isoformat()
     base = f"https://www.legislation.gov.uk/{act['leg_type']}/{act['year']}/{act['number']}"
     cache_dir = os.path.join(RAW, act["slug"])
@@ -119,7 +137,7 @@ def main():
         "instrument_id": act["instrument_id"], "title": act["title"], "instrument_type": "act",
         "year": act["year"], "number": act["number"], "legislation_url": base,
         "enacted_by": "Parliament", "made_under": None, "status": "in_force",
-        "source_id": act["source_id"], "notes": None, "record_status": "extracted",
+        "source_id": act["source_id"], "notes": act.get("instrument_note"), "record_status": "extracted",
     }
 
     provisions, texts = [], {}
@@ -131,7 +149,7 @@ def main():
                 xml = fh.read()
         else:
             xml = fetch(url)
-            if not args.dry_run:
+            if not dry_run:
                 with open(cache, "w", encoding="utf-8") as fh:
                     fh.write(xml)
         heading, body = parse_section(xml, sec)
@@ -152,7 +170,7 @@ def main():
             "notes": None, "record_status": "extracted",
         })
 
-    if not args.dry_run:
+    if not dry_run:
         store.upsert("sources", [source])
         store.upsert("instruments", [instrument])
         store.upsert("provisions", provisions)
@@ -162,10 +180,24 @@ def main():
     print(f"provision records: {len(provisions)}")
     for sec, (h, _) in texts.items():
         print(f"  s.{sec}: {h}")
+    return texts
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--print", dest="show", default=None, help="also print a section's text, e.g. s13")
+    ap.add_argument("--dry-run", action="store_true")
+    args = ap.parse_args()
+
+    texts_by_slug = {}
+    for act in ACTS:
+        texts_by_slug[act["slug"]] = build_act(act, args.dry_run)
+
     if args.show:
         s = args.show.lstrip("s")
-        if s in texts:
-            print(f"\n=== s.{s} — {texts[s][0]} ===\n{texts[s][1]}")
+        for slug, texts in texts_by_slug.items():
+            if s in texts:
+                print(f"\n=== {slug} s.{s} — {texts[s][0]} ===\n{texts[s][1]}")
 
 
 if __name__ == "__main__":

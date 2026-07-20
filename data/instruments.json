@@ -1,6 +1,20 @@
 [
   {
     "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-water-act-2014",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/2014/21",
+    "made_under": null,
+    "notes": "Amending instrument: operates chiefly by amending the Water Industry Act 1991. Operative powers/duties are extracted from the consolidated WIA 1991 text, citing this Act as amending provenance. s.22 inserts the resilience objective (WIA 1991 s.2(2A)(e), s.2(2DA)).",
+    "number": "21",
+    "record_status": "extracted",
+    "source_id": "source-act-water-act-2014",
+    "status": "in_force",
+    "title": "Water Act 2014",
+    "year": 2014
+  },
+  {
+    "enacted_by": "Parliament",
     "instrument_id": "instrument-act-water-industry-act-1991",
     "instrument_type": "act",
     "legislation_url": "https://www.legislation.gov.uk/ukpga/1991/56",
