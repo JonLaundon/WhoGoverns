@@ -84,6 +84,48 @@
     }
   },
   {
+    "body_id": "uk-state-body-environment-agency",
+    "citation": {
+      "provision": "s.79A(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/79A"
+    },
+    "constraints": [
+      "A lighter-touch alternative to a s.73 drought order (Agency-issued, not SoS-made).",
+      "Relaxes the s.24 abstraction restriction for the emergency."
+    ],
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wra1991-drought",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "Enabling emergency relief, NOT a gate — modelled as a power with no veto: refusal maintains the normal abstraction limit rather than blocking a distinct decision (veto-attribution discipline).",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-ea-wra1991-s79a-drought-permit",
+    "power_label": "Issue a drought permit",
+    "power_type": "licence",
+    "provision_key": "water-resources-act-1991-s79a",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-the-water-services-regulation-authority"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-resources-act-1991",
+    "summary": "If satisfied that an exceptional shortage of rain has caused or threatens a serious deficiency of supplies in an area, the Environment Agency may, on the application of a water undertaker supplying that area, issue a drought permit authorising the undertaker to take water from a source (relaxing normal abstraction limits for the emergency) (s.79A(1)-(2)).",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "body_id": "uk-state-body-natural-england",
     "citation": {
       "provision": "s.28E(3)(a)",
@@ -568,6 +610,91 @@
     "related_power_ids": [],
     "source_id": "source-act-water-industry-act-1991",
     "summary": "The Secretary of State may, by notice to a company holding an appointment, terminate the appointment or vary the area to which it relates (s.7(2)(a)). The direct lever for removing/replacing a private undertaker — central to any renationalisation route short of special administration (s.24).",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.70",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/70"
+    },
+    "constraints": [
+      "Proceedings for the s.70 offence may be instituted only by the Secretary of State or the DPP (s.70(3)).",
+      "Quality standards themselves are set by regulations under s.67."
+    ],
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wia1991-dwi-quality",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "DWI MODELLING (sponsor, 2026-07-20): the Drinking Water Inspectorate has no separate legal personality — s.86 inspectors act 'on [the Secretary of State's] behalf'. Its powers are held by the Defra office (SoS), tagged to the DWI / Chief Inspector function (a micro-department partition within Defra). The Chief Inspector is itself a statutory office (s.86(1A)) and could be promoted to an Office node if finer fidelity is wanted — the reference is already here.",
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "power_basis": "statutory",
+    "power_id": "power-sos-defra-wia1991-s70-dwi-quality-enforcement",
+    "power_label": "Enforce drinking water quality (via the Drinking Water Inspectorate)",
+    "power_type": "enforcement",
+    "provision_key": "water-industry-act-1991-s70",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-the-water-services-regulation-authority"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Supplying water unfit for human consumption is an offence by the water undertaker (WIA 1991 s.70). The Secretary of State enforces drinking-water quality and sufficiency standards (ss.67-70, 77-82); proceedings for the s.70 offence may be instituted only by the Secretary of State or the DPP (s.70(3)). These functions are exercised on the Secretary of State's behalf by appointed inspectors — the Drinking Water Inspectorate, led by the Chief Inspector of Drinking Water (s.86) — a unit within Defra, not a separate body.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.73(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/73"
+    },
+    "constraints": [
+      "Made on the application of the Environment Agency or a water undertaker (Chapter III).",
+      "Overrides normal abstraction restrictions (s.24(1)) for its duration."
+    ],
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wra1991-drought",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "BREADCRUMB: Chapter III drought orders override the s.24 abstraction restriction — the override_mechanism cited on the EA abstraction veto (veto-ea-wra1991-s38-abstraction-licence). Cross-actor: EA/undertaker applies, SoS makes the order.",
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "power_basis": "statutory",
+    "power_id": "power-sos-defra-wra1991-s73-drought-order",
+    "power_label": "Make an ordinary or emergency drought order",
+    "power_type": "other",
+    "provision_key": "water-resources-act-1991-s73",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-environment-agency",
+      "uk-state-body-the-water-services-regulation-authority"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-resources-act-1991",
+    "summary": "If satisfied that an exceptional shortage of rain has caused or threatens a serious deficiency of water supplies (or a serious threat to flora/fauna dependent on inland waters), the Secretary of State may make an ordinary drought order — or, where the deficiency is likely to impair economic or social well-being, an emergency drought order (s.73(1)-(2)) — authorising measures, including relaxing abstraction restrictions, to meet the deficiency.",
     "verification": {
       "verification_notes": null,
       "verification_status": "unverified",

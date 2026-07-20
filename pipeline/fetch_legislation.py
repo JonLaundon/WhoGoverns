@@ -41,7 +41,7 @@ WIA_1991 = {
     "slug": "water-industry-act-1991",
     "title": "Water Industry Act 1991",
     "leg_type": "ukpga", "year": 1991, "number": "56",
-    "sections": ["2", "6", "7", "13", "14", "18", "22A", "24", "37", "203"],
+    "sections": ["2", "6", "7", "13", "14", "18", "22A", "24", "37", "70", "86", "203"],
 }
 
 # Water Act 2014 (c.21). NOTE (decision #24 cross-check): the Act operates
@@ -75,7 +75,7 @@ WRA_1991 = {
     "slug": "water-resources-act-1991",
     "title": "Water Resources Act 1991",
     "leg_type": "ukpga", "year": 1991, "number": "57",
-    "sections": ["24", "38", "25A", "79A"],
+    "sections": ["24", "38", "25A", "73", "79A"],
 }
 
 # Wildlife and Countryside Act 1981 (c.69) — Natural England's SSSI consent regime, the classic

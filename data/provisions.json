@@ -381,6 +381,46 @@
   },
   {
     "citation": {
+      "content_hash": "8874aaea9a60323f",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/70",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Offence of supplying water unfit for human consumption.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s70",
+    "provision_ref": "s.70",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "2d31b63401e7054e",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/86",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Appointment and functions of inspectors",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s86",
+    "provision_ref": "s.86",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "396e6d545c6fadd9",
       "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/24",
       "version_date": "2026-07-20"
@@ -435,6 +475,26 @@
     "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
     "provision_key": "water-resources-act-1991-s38",
     "provision_ref": "s.38",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "8d5f0ef5ac95a308",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/73",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Power to make ordinary and emergency drought orders.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-resources-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-resources-act-1991-s73",
+    "provision_ref": "s.73",
     "record_status": "extracted",
     "references": [],
     "status": "in_force"
