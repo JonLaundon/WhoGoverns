@@ -39,6 +39,51 @@
     }
   },
   {
+    "beneficiary_or_object": "The public interest, as found by the CMA; the company whose appointment is modified.",
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.16(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/16"
+    },
+    "derived_from_record_id": null,
+    "duty_id": "duty-ofwat-wia1991-s16",
+    "duty_label": "Modify appointment conditions following an adverse CMA report",
+    "duty_type": "other",
+    "extraction": {
+      "confidence": 0.92,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wia1991-s16-breadcrumb",
+      "requires_review": true
+    },
+    "failure_consequence": "unknown",
+    "holder_type": "body",
+    "in_force_from": null,
+    "in_force_to": null,
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": "Procedural gates NOT separately extracted in this first pass (decision #11), and logged as breadcrumb stubs instead: s.16(3) requires notice with at least 28 days for representations or objections, which Ofwat must consider — a genuine consultation duty in its own right; s.16(4A)-(4B) require notice to the CMA with the representations received; s.16(4C) makes the modifications due only once four weeks elapse WITHOUT an s.16A(1)(a) direction — the statutory clock the veto operates through; s.16(5) bars modification of s.7(4)(c) provisions and of protected-land provisions stated to be unmodifiable.",
+    "office_id": null,
+    "owed_to_body_id": null,
+    "owed_to_holder_type": null,
+    "owed_to_office_id": null,
+    "provision_key": "water-industry-act-1991-s16",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-competition-and-markets-authority"
+    ],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Where a CMA report on a s.14 reference concludes that matters operate against the public interest, specifies the adverse effects, and specifies modifications that would remedy or prevent them, Ofwat SHALL make such modifications of the company's appointment conditions as appear to it requisite to remedy or prevent those effects (WIA 1991 s.16(1)). The obligation is mandatory; the discretion is in which modifications, not whether to act. This is the decision the CMA's s.16A direction blocks — not s.13 (modification by agreement) and not s.14 (the referral).",
+    "trigger": "A CMA report on a s.14 modification reference meeting all four limbs of s.16(1)(a)-(d).",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "beneficiary_or_object": "Compliance with appointment/licence conditions and statutory requirements.",
     "body_id": "uk-state-body-the-water-services-regulation-authority",
     "citation": {

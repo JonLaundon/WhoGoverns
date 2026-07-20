@@ -2,12 +2,12 @@
   "counts": {
     "bodies": 685,
     "budget_records": 1433,
-    "duties": 6,
+    "duties": 7,
     "instruments": 6,
     "offices": 159,
     "person_roles": 159,
     "powers": 20,
-    "provisions": 36,
+    "provisions": 37,
     "relationships": 639,
     "sources": 15,
     "staffing_records": 3884,
@@ -7910,7 +7910,7 @@
       }
     }
   ],
-  "generated": "2026-07-20T23:09:39",
+  "generated": "2026-07-20T23:23:42",
   "nodes": [
     {
       "data": {
@@ -10663,6 +10663,11 @@
             "vetoes": 0
           },
           "duties": [],
+          "functions_derived": {
+            "judicial": [
+              "power-chancery-court-wia1991-s24-1-order"
+            ]
+          },
           "powers": [
             {
               "basis": "statutory",
@@ -12258,7 +12263,6 @@
               "legal_status": "current",
               "notes": "CROSS-BODY VETO: the CMA can override Ofwat's licence-modification (including price-control) decisions — the appellate check above Ofwat, reached via Ofwat's s.14 reference power. The statute names it a 'power of veto' (s.16A).",
               "office_id": null,
-              "outstanding_effects": true,
               "provision_key": "water-industry-act-1991-s16a",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
@@ -12273,7 +12277,8 @@
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
               "blocks_party_outside_state": false,
-              "blocks_power_id": null,
+              "blocks_record_id": "duty-ofwat-wia1991-s16",
+              "blocks_record_type": "duty",
               "citation": {
                 "provision": "s.16A(1)",
                 "quote": null,
@@ -12287,9 +12292,8 @@
               "kind": "veto",
               "label": "CMA veto of Ofwat's proposed licence modifications",
               "legal_status": "current",
-              "notes": "Currency check 2026-07-20: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route. Newer licence regimes run differently - the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL (Ofwat may modify, subject to the company's right of appeal) rather than a prior CMA direction. So this record must not be read as the CMA generally gating Ofwat. Provision flagged outstanding_effects=true.",
+              "notes": "Currency check 2026-07-20: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route. Newer licence regimes run differently - the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL (Ofwat may modify, subject to the company's right of appeal) rather than a prior CMA direction. So this record must not be read as the CMA generally gating Ofwat. Provision flagged outstanding_effects=true. Target tied out 2026-07-20 (breadcrumb trawl): the CMA direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power. Target tied out 2026-07-20 (breadcrumb trawl): the CMA direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power.",
               "office_id": null,
-              "outstanding_effects": true,
               "overridable": "no",
               "override_mechanism": null,
               "projection_shape": "free_standing_block",
@@ -15108,7 +15112,8 @@
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
               "blocks_party_outside_state": false,
-              "blocks_power_id": "power-ofwat-wia1991-s24-1-b",
+              "blocks_record_id": "power-ofwat-wia1991-s24-1-b",
+              "blocks_record_type": "power",
               "citation": {
                 "provision": "s.24(1)(b)",
                 "quote": null,
@@ -15140,7 +15145,8 @@
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
               "blocks_party_outside_state": false,
-              "blocks_power_id": "power-ofwat-wia1991-s6-1-b",
+              "blocks_record_id": "power-ofwat-wia1991-s6-1-b",
+              "blocks_record_type": "power",
               "citation": {
                 "provision": "s.6(1)(b)",
                 "quote": null,
@@ -15172,7 +15178,8 @@
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
               "blocks_party_outside_state": false,
-              "blocks_power_id": "power-ofwat-wia1991-s7-2-b",
+              "blocks_record_id": "power-ofwat-wia1991-s7-2-b",
+              "blocks_record_type": "power",
               "citation": {
                 "provision": "s.7(2)(b)",
                 "quote": null,
@@ -17701,6 +17708,13 @@
             "vetoes": 1
           },
           "duties": [],
+          "functions_derived": {
+            "regulation": [
+              "power-ea-wra1991-s25a-enforcement",
+              "power-ea-wra1991-s38-abstraction-licence",
+              "power-ea-wra1991-s79a-drought-permit"
+            ]
+          },
           "powers": [
             {
               "basis": "statutory",
@@ -17790,7 +17804,8 @@
               "blocks_body_id": null,
               "blocks_office_id": null,
               "blocks_party_outside_state": true,
-              "blocks_power_id": null,
+              "blocks_record_id": null,
+              "blocks_record_type": null,
               "citation": {
                 "provision": "s.38(2)",
                 "quote": null,
@@ -22008,7 +22023,8 @@
               "blocks_body_id": "uk-state-body-department-for-environment-food-rural-affairs",
               "blocks_office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
               "blocks_party_outside_state": false,
-              "blocks_power_id": "power-sos-defra-wia1991-s153-funding",
+              "blocks_record_id": "power-sos-defra-wia1991-s153-funding",
+              "blocks_record_type": "power",
               "citation": {
                 "provision": "s.153(1)",
                 "quote": null,
@@ -27748,7 +27764,8 @@
               "blocks_body_id": null,
               "blocks_office_id": null,
               "blocks_party_outside_state": true,
-              "blocks_power_id": null,
+              "blocks_record_id": null,
+              "blocks_record_type": null,
               "citation": {
                 "provision": "s.28E(3)(a)",
                 "quote": null,
@@ -27780,7 +27797,8 @@
               "blocks_body_id": null,
               "blocks_office_id": null,
               "blocks_party_outside_state": true,
-              "blocks_power_id": null,
+              "blocks_record_id": null,
+              "blocks_record_type": null,
               "citation": {
                 "provision": "s.28H(3)",
                 "quote": null,
@@ -35020,11 +35038,38 @@
         "needs_review": false,
         "operative": {
           "counts": {
-            "duties": 4,
+            "duties": 5,
             "powers": 7,
             "vetoes": 0
           },
           "duties": [
+            {
+              "beneficiary_or_object": "The public interest, as found by the CMA; the company whose appointment is modified.",
+              "citation": {
+                "provision": "s.16(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/16"
+              },
+              "confidence": 0.92,
+              "holder_type": "body",
+              "id": "duty-ofwat-wia1991-s16",
+              "kind": "duty",
+              "label": "Modify appointment conditions following an adverse CMA report",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Procedural gates NOT separately extracted in this first pass (decision #11), and logged as breadcrumb stubs instead: s.16(3) requires notice with at least 28 days for representations or objections, which Ofwat must consider — a genuine consultation duty in its own right; s.16(4A)-(4B) require notice to the CMA with the representations received; s.16(4C) makes the modifications due only once four weeks elapse WITHOUT an s.16A(1)(a) direction — the statutory clock the veto operates through; s.16(5) bars modification of s.7(4)(c) provisions and of protected-land provisions stated to be unmodifiable.",
+              "office_id": null,
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "water-industry-act-1991-s16",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Where a CMA report on a s.14 reference concludes that matters operate against the public interest, specifies the adverse effects, and specifies modifications that would remedy or prevent them, Ofwat SHALL make such modifications of the company's appointment conditions as appear to it requisite to remedy or prevent those effects (WIA 1991 s.16(1)). The obligation is mandatory; the discretion is in which modifications, not whether to act. This is the decision the CMA's s.16A direction blocks — not s.13 (modification by agreement) and not s.14 (the referral).",
+              "trigger": "A CMA report on a s.14 modification reference meeting all four limbs of s.16(1)(a)-(d).",
+              "type": "other",
+              "verification_status": "unverified"
+            },
             {
               "beneficiary_or_object": "Compliance with appointment/licence conditions and statutory requirements.",
               "citation": {
@@ -35134,6 +35179,13 @@
               "verification_status": "unverified"
             }
           ],
+          "functions_derived": {
+            "regulation": [
+              "power-ofwat-wia1991-s13",
+              "power-ofwat-wia1991-s14",
+              "power-ofwat-wia1991-s22a"
+            ]
+          },
           "powers": [
             {
               "basis": "statutory",
@@ -39601,6 +39653,11 @@
               "verification_status": "unverified"
             }
           ],
+          "functions_derived": {
+            "funding": [
+              "power-sos-defra-wia1991-s153-funding"
+            ]
+          },
           "powers": [
             {
               "basis": "statutory",
@@ -39767,7 +39824,8 @@
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
               "blocks_party_outside_state": false,
-              "blocks_power_id": "power-ofwat-wia1991-s24-1-b",
+              "blocks_record_id": "power-ofwat-wia1991-s24-1-b",
+              "blocks_record_type": "power",
               "citation": {
                 "provision": "s.24(1)(b)",
                 "quote": null,
@@ -39799,7 +39857,8 @@
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
               "blocks_party_outside_state": false,
-              "blocks_power_id": "power-ofwat-wia1991-s6-1-b",
+              "blocks_record_id": "power-ofwat-wia1991-s6-1-b",
+              "blocks_record_type": "power",
               "citation": {
                 "provision": "s.6(1)(b)",
                 "quote": null,
@@ -39831,7 +39890,8 @@
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
               "blocks_office_id": null,
               "blocks_party_outside_state": false,
-              "blocks_power_id": "power-ofwat-wia1991-s7-2-b",
+              "blocks_record_id": "power-ofwat-wia1991-s7-2-b",
+              "blocks_record_type": "power",
               "citation": {
                 "provision": "s.7(2)(b)",
                 "quote": null,

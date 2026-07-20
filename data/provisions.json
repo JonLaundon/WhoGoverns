@@ -121,6 +121,26 @@
   },
   {
     "citation": {
+      "content_hash": "52ec29905cca0839",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/16",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Modification following report.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s16",
+    "provision_ref": "s.16",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "d9cba05c3a3c148e",
       "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/16A",
       "version_date": "2026-07-20"
@@ -131,8 +151,8 @@
     "instrument_id": "instrument-act-water-industry-act-1991",
     "made_under": null,
     "notes": null,
-    "outstanding_effects": true,
-    "outstanding_effects_note": "legislation.gov.uk shows 'There are changes that may be brought into force at a future date' for this section (checked 2026-07-20). Amended by the Water Act 2003 (OFT->CMA, in force 1.4.2006) and the Enterprise and Regulatory Reform Act 2013 (1.4.2014, omitting subsection (10)). First concrete instance of the outstanding-effects check that was logged as a Spiral 2 TODO.",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
     "provision_key": "water-industry-act-1991-s16a",
     "provision_ref": "s.16A",
     "record_status": "extracted",

@@ -114,6 +114,7 @@ def main():
     office_ids = {r["office_id"] for r in store.load("offices")}
     # Powers-layer FK sets (Annex A6, active from Spiral 2; empty until records land).
     power_ids = {r["power_id"] for r in store.load("powers")}
+    duty_ids = {r["duty_id"] for r in store.load("duties")}
     provision_keys = {r["provision_key"] for r in store.load("provisions")}
     instrument_ids = {r["instrument_id"] for r in store.load("instruments")}
 
@@ -241,14 +242,28 @@ def main():
             print(f"WARN vetoes[{rec['veto_id']}]: blocks a party outside the modelled state — "
                   f"no CAN_VETO edge by design; carried on the card only "
                   f"({(rec.get('decision_affected') or '')[:56]}...)")
-        elif not rec.get("blocks_power_id"):
+        elif not rec.get("blocks_record_id"):
             warnings += 1
             print(f"WARN vetoes[{rec['veto_id']}]: blocks {blocked_party} but names no "
-                  f"blocks_power_id — the gated power is not yet extracted (coverage gap)")
-        ref = rec.get("blocks_power_id")
-        if ref and ref not in power_ids:
+                  f"blocks_record_id — the gated power is not yet extracted (coverage gap)")
+        # Polymorphic: a veto can obstruct the exercise of a POWER or the discharge of a
+        # DUTY (WIA 1991 s.16A blocks the s.16 duty to modify). Check against the right set,
+        # and reject a type that disagrees with the id it points at.
+        ref, rtype = rec.get("blocks_record_id"), rec.get("blocks_record_type")
+        if ref:
+            pool = duty_ids if rtype == "duty" else power_ids
+            if ref not in pool:
+                integrity += 1
+                print(f"FAIL vetoes.blocks_record_id -> {ref} not among {rtype or 'power'}s")
+            expected = "duty" if ref.startswith("duty-") else "power"
+            if rtype and rtype != expected:
+                integrity += 1
+                print(f"FAIL vetoes[{rec['veto_id']}]: blocks_record_type '{rtype}' disagrees "
+                      f"with the id it points at ({ref})")
+        elif rtype:
             integrity += 1
-            print(f"FAIL vetoes.blocks_power_id -> {ref} not among powers")
+            print(f"FAIL vetoes[{rec['veto_id']}]: blocks_record_type '{rtype}' set with no "
+                  f"blocks_record_id")
 
     # provision_key duplicate check on canonical Power/Duty/Veto records (none in Spiral 1)
     seen = {}

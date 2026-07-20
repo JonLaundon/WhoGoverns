@@ -3,8 +3,9 @@
     "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
     "blocks_holder_type": "body",
     "blocks_office_id": null,
-    "blocks_power_id": null,
     "blocks_provision_key": "water-industry-act-1991-s14",
+    "blocks_record_id": "duty-ofwat-wia1991-s16",
+    "blocks_record_type": "duty",
     "body_id": "uk-state-body-competition-and-markets-authority",
     "citation": {
       "provision": "s.16A(1)",
@@ -22,7 +23,7 @@
     "holder_type": "body",
     "legal_status": "current",
     "modality": "veto",
-    "notes": "Currency check 2026-07-20: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route. Newer licence regimes run differently - the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL (Ofwat may modify, subject to the company's right of appeal) rather than a prior CMA direction. So this record must not be read as the CMA generally gating Ofwat. Provision flagged outstanding_effects=true.",
+    "notes": "Currency check 2026-07-20: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route. Newer licence regimes run differently - the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL (Ofwat may modify, subject to the company's right of appeal) rather than a prior CMA direction. So this record must not be read as the CMA generally gating Ofwat. Provision flagged outstanding_effects=true. Target tied out 2026-07-20 (breadcrumb trawl): the CMA direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power. Target tied out 2026-07-20 (breadcrumb trawl): the CMA direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power.",
     "office_id": null,
     "overridable": "no",
     "override_mechanism": null,
@@ -42,8 +43,9 @@
     "veto_type": "other"
   },
   {
-    "blocks_power_id": null,
     "blocks_provision_key": null,
+    "blocks_record_id": null,
+    "blocks_record_type": null,
     "body_id": "uk-state-body-environment-agency",
     "citation": {
       "provision": "s.38(2)",
@@ -84,8 +86,9 @@
     "blocks_body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "blocks_holder_type": "office",
     "blocks_office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
-    "blocks_power_id": "power-sos-defra-wia1991-s153-funding",
     "blocks_provision_key": "water-industry-act-1991-s153",
+    "blocks_record_id": "power-sos-defra-wia1991-s153-funding",
+    "blocks_record_type": "power",
     "body_id": "uk-state-body-hm-treasury",
     "citation": {
       "provision": "s.153(1)",
@@ -123,8 +126,9 @@
     "veto_type": "consent_required"
   },
   {
-    "blocks_power_id": null,
     "blocks_provision_key": null,
+    "blocks_record_id": null,
+    "blocks_record_type": null,
     "body_id": "uk-state-body-natural-england",
     "citation": {
       "provision": "s.28E(3)(a)",
@@ -162,8 +166,9 @@
     "veto_type": "consent_required"
   },
   {
-    "blocks_power_id": null,
     "blocks_provision_key": null,
+    "blocks_record_id": null,
+    "blocks_record_type": null,
     "body_id": "uk-state-body-natural-england",
     "citation": {
       "provision": "s.28H(3)",
@@ -204,8 +209,9 @@
     "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
     "blocks_holder_type": "body",
     "blocks_office_id": null,
-    "blocks_power_id": "power-ofwat-wia1991-s24-1-b",
     "blocks_provision_key": "water-industry-act-1991-s24-1-b",
+    "blocks_record_id": "power-ofwat-wia1991-s24-1-b",
+    "blocks_record_type": "power",
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {
       "provision": "s.24(1)(b)",
@@ -247,8 +253,9 @@
   {
     "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
     "blocks_holder_type": "body",
-    "blocks_power_id": "power-ofwat-wia1991-s6-1-b",
     "blocks_provision_key": null,
+    "blocks_record_id": "power-ofwat-wia1991-s6-1-b",
+    "blocks_record_type": "power",
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {
       "provision": "s.6(1)(b)",
@@ -288,8 +295,9 @@
   {
     "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
     "blocks_holder_type": "body",
-    "blocks_power_id": "power-ofwat-wia1991-s7-2-b",
     "blocks_provision_key": null,
+    "blocks_record_id": "power-ofwat-wia1991-s7-2-b",
+    "blocks_record_type": "power",
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {
       "provision": "s.7(2)(b)",

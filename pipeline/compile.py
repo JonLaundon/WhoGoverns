@@ -165,6 +165,42 @@ def projection_shape(veto, power_by_id):
     return "free_standing_block" if same_holder else "embedded_consent"
 
 
+# Functions DERIVED from the powers a body actually holds, rather than imported from an
+# external taxonomy. A body with licensing and enforcement powers IS a regulator — the plan
+# anticipated this ("in Spiral 2 it becomes derivable from the statutory powers"), and it
+# solves the sourcing problem the honest way: every derived tag traces to cited provisions,
+# so no uncited classification enters the register. Kept SEPARATE from the sourced
+# `functions` field on Body — this is a computed view, and analysis never writes into data
+# (A2.8). Only claims a function where the powers genuinely evidence it; silence is correct
+# where extraction has not reached a body.
+FUNCTION_RULES = {
+    "regulation": lambda t: bool(t & {"licence", "sanction"}) or bool(t & {"enforcement"} and t & {"rulemaking"}),
+    "judicial": lambda t: "adjudication" in t,
+    "funding": lambda t: "funding" in t,
+    "inspection": lambda t: "inspection" in t,
+}
+
+
+def derive_functions(powers):
+    """-> {function: [power_id, ...]} — the tag and the powers that evidence it."""
+    types = {p.get("power_type") for p in powers}
+    out = {}
+    for fn, rule in FUNCTION_RULES.items():
+        if not rule(types):
+            continue
+        out[fn] = sorted(p["power_id"] for p in powers
+                         if p.get("power_type") in EVIDENCE.get(fn, set()))
+    return out
+
+
+EVIDENCE = {
+    "regulation": {"licence", "sanction", "enforcement", "rulemaking"},
+    "judicial": {"adjudication"},
+    "funding": {"funding"},
+    "inspection": {"inspection"},
+}
+
+
 def _since(rec, provision_by_key, instrument_by_id):
     """The year the authority dates from, via provision -> instrument (the MoG 'Since YYYY')."""
     prov = provision_by_key.get(rec.get("provision_key")) or {}
@@ -219,7 +255,8 @@ def summarise_operative(rec, kind, ctx):
             "derived_from_record_id": rec.get("derived_from_record_id"),
             "blocks_body_id": rec.get("blocks_body_id"),
             "blocks_office_id": rec.get("blocks_office_id"),
-            "blocks_power_id": rec.get("blocks_power_id"),
+            "blocks_record_id": rec.get("blocks_record_id"),
+            "blocks_record_type": rec.get("blocks_record_type"),
             "blocker_kind": blocker_kind(rec, ctx["powers"], ctx["bodies"]),
             "projection_shape": projection_shape(rec, ctx["powers"]),
             # A veto over a private party or an unnamed class draws no edge — the map models
@@ -274,6 +311,12 @@ def attach_operative(graph, powers, duties, vetoes, provisions, instruments, bod
         for key in ("powers", "duties", "vetoes"):
             op.setdefault(key, []).sort(key=lambda c: (-(c.get("since") or 0), c["id"]))
         op["counts"] = {k: len(op[k]) for k in ("powers", "duties", "vetoes")}
+        # The functional read, computed from the powers on this node (plus any held by its
+        # offices), each tag carrying the power ids that evidence it.
+        held = list(op["powers"]) + list((n["data"].get("office_operative") or {}).get("powers", []))
+        derived = derive_functions([{"power_id": c["id"], "power_type": c.get("type")} for c in held])
+        if derived:
+            op["functions_derived"] = derived
         kinds = sorted({v["blocker_kind"] for v in op["vetoes"] if v.get("blocker_kind")})
         if kinds:
             op["blocker_kinds"] = kinds
@@ -492,7 +535,7 @@ def build_sqlite_operative(cur, powers, duties, vetoes, instruments, provisions)
         CREATE TABLE vetoes (veto_id TEXT PRIMARY KEY, veto_label TEXT, veto_type TEXT,
             strength TEXT, overridable TEXT, override_mechanism TEXT, holder_type TEXT,
             body_id TEXT, office_id TEXT, blocks_body_id TEXT, blocks_office_id TEXT,
-            blocks_power_id TEXT, decision_affected TEXT, derived_from_record_id TEXT,
+            blocks_record_id TEXT, blocks_record_type TEXT, decision_affected TEXT, derived_from_record_id TEXT,
             summary TEXT, source_id TEXT,
             provision_key TEXT, provision TEXT, url TEXT, verification_status TEXT,
             confidence REAL, record_status TEXT);
@@ -504,7 +547,7 @@ def build_sqlite_operative(cur, powers, duties, vetoes, instruments, provisions)
             outstanding_effects INTEGER);
         CREATE INDEX idx_vetoes_blocks_body ON vetoes(blocks_body_id);
         CREATE INDEX idx_vetoes_blocks_office ON vetoes(blocks_office_id);
-        CREATE INDEX idx_vetoes_blocks_power ON vetoes(blocks_power_id);
+        CREATE INDEX idx_vetoes_blocks_record ON vetoes(blocks_record_id);
         CREATE INDEX idx_powers_body ON powers(body_id);
         CREATE INDEX idx_duties_owed_to ON duties(owed_to_body_id);
     """)
@@ -529,11 +572,11 @@ def build_sqlite_operative(cur, powers, duties, vetoes, instruments, provisions)
             (d.get("extraction") or {}).get("confidence"), d.get("record_status")))
     for v in vetoes:
         c = v.get("citation") or {}
-        cur.execute("INSERT INTO vetoes VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
+        cur.execute("INSERT INTO vetoes VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
             v["veto_id"], v.get("veto_label"), v.get("veto_type"), v.get("strength"),
             v.get("overridable"), v.get("override_mechanism"), v.get("holder_type"),
             v.get("body_id"), v.get("office_id"), v.get("blocks_body_id"),
-            v.get("blocks_office_id"), v.get("blocks_power_id"), v.get("decision_affected"),
+            v.get("blocks_office_id"), v.get("blocks_record_id"), v.get("blocks_record_type"), v.get("decision_affected"),
             v.get("derived_from_record_id"), v.get("summary"), v.get("source_id"),
             v.get("provision_key"), c.get("provision"), c.get("url"),
             (v.get("verification") or {}).get("verification_status"),

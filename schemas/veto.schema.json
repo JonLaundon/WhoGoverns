@@ -271,12 +271,24 @@
         "deprecated"
       ]
     },
-    "blocks_power_id": {
+    "blocks_record_type": {
       "type": [
         "string",
         "null"
       ],
-      "description": "The specific Power this veto obstructs, where that power is modelled. Populated UNIFORMLY regardless of statutory shape, so a consumer never has to special-case: in an embedded-consent provision ('A may, with the consent of B, do X') it equals derived_from_record_id; in a free-standing block ('B may direct A not to...') it points at A's power elsewhere. Null has two legitimate meanings, distinguishable via blocks_body_id: the blocked party is outside the modelled state (a private person or an unnamed class), or the blocked party IS modelled but its power has not been extracted yet — a coverage gap that validate.py warns on. Contrast derived_from_record_id, which is PROVENANCE (the canonical power at this veto's own provision), not the target."
+      "enum": [
+        "power",
+        "duty",
+        null
+      ],
+      "description": "Whether the obstructed record is a Power or a Duty."
+    },
+    "blocks_record_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "The specific operative record this veto obstructs, where it is modelled. GENERALISED from the earlier `blocks_power_id` (2026-07-20) after the WIA s.16 breadcrumb trawl showed a veto can block the discharge of a DUTY, not only the exercise of a power: WIA 1991 s.16 says the Authority 'SHALL ... make such modifications', and s.16A lets the CMA direct it not to. Populated uniformly regardless of statutory shape — in an embedded-consent provision it equals derived_from_record_id; in a free-standing block it points at the obstructed record elsewhere. Null has two meanings, distinguishable via blocks_body_id: the blocked party is outside the modelled state, or the blocked party is modelled but its record is not yet extracted (a coverage gap validate.py warns on). Contrast derived_from_record_id, which is PROVENANCE, not the target."
     }
   }
 }

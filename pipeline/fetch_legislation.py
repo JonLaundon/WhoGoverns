@@ -41,8 +41,12 @@ WIA_1991 = {
     "slug": "water-industry-act-1991",
     "title": "Water Industry Act 1991",
     "leg_type": "ukpga", "year": 1991, "number": "56",
-    "sections": ["2", "6", "7", "13", "14", "15", "16A", "18", "22A", "24", "27A", "27C",
-                 "37", "70", "86", "153", "203"],
+    # s.16 added 2026-07-20 by breadcrumb trawl: s.16A was extracted (the CMA's power to
+    # direct Ofwat NOT to modify) without s.16, the obligation it bites on. A veto whose
+    # target is missing is only half a record — the chain could name the blocked BODY but
+    # not the blocked decision.
+    "sections": ["2", "6", "7", "13", "14", "15", "16", "16A", "18", "22A", "24", "27A",
+                 "27C", "37", "70", "86", "153", "203"],
 }
 
 # Water Act 2014 (c.21). NOTE (decision #24 cross-check): the Act operates
