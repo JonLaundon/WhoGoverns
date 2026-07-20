@@ -5,30 +5,149 @@
   "$comment": "A section/subsection/paragraph — the addressable 'function' a power/duty/veto attaches to (Annex A6.5b). provision_key is the primary key. Provision TEXT is NOT stored (decision 2026-07-13): the citation carries the legislation.gov.uk point-in-time url + version_date + a content_hash of the text extracted from (drift detection). outstanding_effects flags unapplied amendments (consolidation lag) — the 'incoming change' UX badge reads from it. Active from Spiral 2.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["provision_key", "instrument_id", "provision_ref", "status", "citation", "record_status"],
+  "required": [
+    "provision_key",
+    "instrument_id",
+    "provision_ref",
+    "status",
+    "citation",
+    "record_status"
+  ],
   "properties": {
-    "provision_key": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-    "instrument_id": { "type": "string", "pattern": "^instrument-[a-z0-9-]+$" },
-    "provision_ref": { "type": "string", "$comment": "human ref, e.g. 's.5(2)(a)', 'Sch.1 para.3'" },
-    "heading": { "type": ["string", "null"] },
-    "in_force_from": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-    "status": { "type": "string", "enum": ["in_force", "repealed", "prospective", "amended"] },
+    "provision_key": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "instrument_id": {
+      "type": "string",
+      "pattern": "^instrument-[a-z0-9-]+$"
+    },
+    "provision_ref": {
+      "type": "string",
+      "$comment": "human ref, e.g. 's.5(2)(a)', 'Sch.1 para.3'"
+    },
+    "heading": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "in_force_from": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "in_force",
+        "repealed",
+        "prospective",
+        "amended"
+      ]
+    },
     "citation": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["url", "version_date"],
+      "required": [
+        "url",
+        "version_date"
+      ],
       "properties": {
-        "url": { "type": "string" },
-        "version_date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
-        "content_hash": { "type": ["string", "null"] }
+        "url": {
+          "type": "string"
+        },
+        "version_date": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "content_hash": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
       }
     },
-    "references": { "type": "array", "items": { "type": "string" }, "$comment": "provision_keys this provision cross-references -> REFERENCES" },
-    "made_under": { "type": ["string", "null"] },
-    "commenced_by": { "type": ["string", "null"], "$comment": "instrument_id of the commencement SI -> COMMENCED_BY" },
-    "outstanding_effects": { "type": "boolean", "$comment": "true = legislation.gov.uk lists unapplied amendments for this provision; consolidated text may not be current" },
-    "outstanding_effects_note": { "type": ["string", "null"] },
-    "notes": { "type": ["string", "null"] },
-    "record_status": { "type": "string", "enum": ["draft", "extracted", "verified", "published", "deprecated"] }
+    "references": {
+      "type": "array",
+      "$comment": "Outbound cross-references mined from the OPERATIVE text (decision #27). Objects, not bare provision_keys: a reference that points out of the model is exactly the lead we want to keep, and it has to carry its raw wording and target instrument even when no provision_key resolves. CLML marks up <Citation> only in amendment commentary, so these are parsed from the text itself.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "raw",
+          "instrument_slug",
+          "internal",
+          "in_model"
+        ],
+        "properties": {
+          "raw": {
+            "type": "string",
+            "description": "The reference as it appears in the text."
+          },
+          "provision_key": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Resolved target, when both instrument and section are known."
+          },
+          "instrument_slug": {
+            "type": "string",
+            "description": "Slug of the instrument referred to."
+          },
+          "internal": {
+            "type": "boolean",
+            "description": "True when the target is in the same Act."
+          },
+          "in_model": {
+            "type": "boolean",
+            "description": "False = an adjacent instrument we do not hold: a breadcrumb lead."
+          }
+        }
+      }
+    },
+    "made_under": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "commenced_by": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "$comment": "instrument_id of the commencement SI -> COMMENCED_BY"
+    },
+    "outstanding_effects": {
+      "type": "boolean",
+      "$comment": "true = legislation.gov.uk lists unapplied amendments for this provision; consolidated text may not be current"
+    },
+    "outstanding_effects_note": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "record_status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "extracted",
+        "verified",
+        "published",
+        "deprecated"
+      ]
+    }
   }
 }

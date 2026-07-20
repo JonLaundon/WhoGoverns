@@ -16,7 +16,85 @@
     "provision_key": "insolvency-act-1986-s124a",
     "provision_ref": "s.124A",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": false,
+        "instrument_slug": "companies-act-1985",
+        "internal": false,
+        "provision_key": "companies-act-1985-s448a",
+        "raw": "section 448A"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "insolvency-act-1986",
+        "internal": true,
+        "provision_key": "insolvency-act-1986-s262",
+        "raw": "section 262(2)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "insolvency-act-1986",
+        "internal": true,
+        "provision_key": "insolvency-act-1986-s165",
+        "raw": "section 165"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "criminal-justice-act-1987",
+        "internal": false,
+        "provision_key": "criminal-justice-act-1987-s2",
+        "raw": "section 2"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "criminal-law-consolidation-scotland-act-1995",
+        "internal": false,
+        "provision_key": "criminal-law-consolidation-scotland-act-1995-s28",
+        "raw": "section 28"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "companies-act-1989",
+        "internal": false,
+        "provision_key": "companies-act-1989-s83",
+        "raw": "section 83"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "companies-act-1985",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Part XIV (except section 448A) of the Companies Act 1985"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "financial-services-and-markets-act-2000",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Financial Services and Markets Act 2000"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "criminal-justice-act-1987",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Criminal Justice Act 1987"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "criminal-law-consolidation-scotland-act-1995",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Criminal Law (Consolidation) (Scotland) Act 1995"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "companies-act-1989",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Companies Act 1989"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -36,7 +114,29 @@
     "provision_key": "water-act-2014-s22",
     "provision_ref": "s.22",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-act-2014",
+        "internal": true,
+        "provision_key": "water-act-2014-s17b",
+        "raw": "section 17B"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-act-2014",
+        "internal": true,
+        "provision_key": "water-act-2014-s94",
+        "raw": "section 94"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Water Industry Act 1991"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -56,7 +156,29 @@
     "provision_key": "water-industry-act-1991-s13",
     "provision_ref": "s.13",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s14",
+        "raw": "sections 14"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s7",
+        "raw": "section 7(4)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s16",
+        "raw": "section 16"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -76,7 +198,43 @@
     "provision_key": "water-industry-act-1991-s14",
     "provision_ref": "s.14",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s16a",
+        "raw": "section 16A"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": false,
+        "provision_key": "enterprise-act-2002-s109",
+        "raw": "sections 109"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s14b",
+        "raw": "sections 14B"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "enterprise-and-regulatory-reform-act-2013",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Enterprise and Regulatory Reform Act 2013"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Enterprise Act 2002"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -96,7 +254,22 @@
     "provision_key": "water-industry-act-1991-s15",
     "provision_ref": "s.15",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s14",
+        "raw": "section 14"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s16",
+        "raw": "section 16"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -116,7 +289,15 @@
     "provision_key": "water-industry-act-1991-s153",
     "provision_ref": "s.153",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s23",
+        "raw": "section 23"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -136,7 +317,29 @@
     "provision_key": "water-industry-act-1991-s16",
     "provision_ref": "s.16",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s14",
+        "raw": "section 14"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s16a",
+        "raw": "section 16A(1)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s7",
+        "raw": "section 7(4)"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -156,7 +359,15 @@
     "provision_key": "water-industry-act-1991-s16a",
     "provision_ref": "s.16A",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s16",
+        "raw": "section 16(4A)"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -176,7 +387,15 @@
     "provision_key": "water-industry-act-1991-s18",
     "provision_ref": "s.18",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s19",
+        "raw": "sections 19"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -196,7 +415,99 @@
     "provision_key": "water-industry-act-1991-s2",
     "provision_ref": "s.2",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17c",
+        "raw": "section 17C"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17d",
+        "raw": "section 17D"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17b",
+        "raw": "section 17B"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17ba",
+        "raw": "section 17BA(7)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s27a",
+        "raw": "section 27A"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s37a",
+        "raw": "sections 37A"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-act-2014",
+        "internal": false,
+        "provision_key": "water-act-2014-s42",
+        "raw": "sections 42"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s2a",
+        "raw": "sections 2A"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s31",
+        "raw": "section 31(3)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "electricity-act-1989",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Electricity Act 1989"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "gas-act-1986",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Gas Act 1986"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "communications-act-2003",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Communications Act 2003"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-act-2014",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Water Act 2014"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -216,7 +527,64 @@
     "provision_key": "water-industry-act-1991-s203",
     "provision_ref": "s.203",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s18",
+        "raw": "section 18"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s38",
+        "raw": "section 38(2)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s95",
+        "raw": "section 95(2)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s38za",
+        "raw": "section 38ZA(2)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s95za",
+        "raw": "section 95ZA(2)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s202",
+        "raw": "section 202"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17b",
+        "raw": "section 17B"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17ba",
+        "raw": "section 17BA(7)"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -236,7 +604,50 @@
     "provision_key": "water-industry-act-1991-s22a",
     "provision_ref": "s.22A",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s38",
+        "raw": "section 38(2)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s38za",
+        "raw": "section 38ZA"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s22c",
+        "raw": "section 22C"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s18",
+        "raw": "section 18"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s22b",
+        "raw": "sections 22B"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "competition-act-1998",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Competition Act 1998"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -256,7 +667,85 @@
     "provision_key": "water-industry-act-1991-s24",
     "provision_ref": "s.24",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s19",
+        "raw": "section 19"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s21",
+        "raw": "section 21(1)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s25",
+        "raw": "section 25"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "insolvency-act-1986",
+        "internal": false,
+        "provision_key": "insolvency-act-1986-s124a",
+        "raw": "section 124A"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s7",
+        "raw": "section 7(4)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "insolvency-act-1986",
+        "internal": false,
+        "provision_key": "insolvency-act-1986-s411",
+        "raw": "section 411"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s123",
+        "raw": "section 123"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s222",
+        "raw": "sections 222"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s221",
+        "raw": "section 221"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s37",
+        "raw": "section 37"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "insolvency-act-1986",
+        "internal": false,
+        "provision_key": null,
+        "raw": "A of the Insolvency Act 1986"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -356,7 +845,22 @@
     "provision_key": "water-industry-act-1991-s27a",
     "provision_ref": "s.27A",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": false,
+        "instrument_slug": "water-act-2003",
+        "internal": false,
+        "provision_key": "water-act-2003-s35",
+        "raw": "section 35"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "water-act-2003",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Water Act 2003"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -376,7 +880,22 @@
     "provision_key": "water-industry-act-1991-s27c",
     "provision_ref": "s.27C",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17c",
+        "raw": "section 17C"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17d",
+        "raw": "section 17D"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -396,7 +915,22 @@
     "provision_key": "water-industry-act-1991-s37",
     "provision_ref": "s.37",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s18",
+        "raw": "section 18"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s38",
+        "raw": "section 38"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -556,7 +1090,15 @@
     "provision_key": "water-industry-act-1991-s70",
     "provision_ref": "s.70",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s210",
+        "raw": "section 210"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -576,7 +1118,36 @@
     "provision_key": "water-industry-act-1991-s86",
     "provision_ref": "s.86",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s67",
+        "raw": "sections 67"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s208",
+        "raw": "section 208"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s68",
+        "raw": "sections 68"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s70",
+        "raw": "section 70"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -596,7 +1167,15 @@
     "provision_key": "water-resources-act-1991-s24",
     "provision_ref": "s.24",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": false,
+        "instrument_slug": "water-resources-act-1963",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Water Resources Act 1963"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -616,7 +1195,22 @@
     "provision_key": "water-resources-act-1991-s25a",
     "provision_ref": "s.25A",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-resources-act-1991",
+        "internal": true,
+        "provision_key": "water-resources-act-1991-s24",
+        "raw": "section 24(1)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-resources-act-1991",
+        "internal": true,
+        "provision_key": "water-resources-act-1991-s25",
+        "raw": "section 25(1)"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -636,7 +1230,57 @@
     "provision_key": "water-resources-act-1991-s38",
     "provision_ref": "s.38",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-resources-act-1991",
+        "internal": true,
+        "provision_key": "water-resources-act-1991-s37",
+        "raw": "section 37(4)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-resources-act-1991",
+        "internal": true,
+        "provision_key": "water-resources-act-1991-s51",
+        "raw": "section 51(2)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-resources-act-1991",
+        "internal": true,
+        "provision_key": "water-resources-act-1991-s39",
+        "raw": "section 39(1)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": false,
+        "provision_key": "water-industry-act-1991-s40",
+        "raw": "section 40"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-resources-act-1991",
+        "internal": true,
+        "provision_key": "water-resources-act-1991-s20c",
+        "raw": "section 20C"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-resources-act-1991",
+        "internal": true,
+        "provision_key": "water-resources-act-1991-s37a",
+        "raw": "section 37A"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Water Industry Act 1991"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -656,7 +1300,15 @@
     "provision_key": "water-resources-act-1991-s73",
     "provision_ref": "s.73",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-resources-act-1991",
+        "internal": true,
+        "provision_key": "water-resources-act-1991-s76",
+        "raw": "section 76(3)"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -676,7 +1328,15 @@
     "provision_key": "water-resources-act-1991-s79a",
     "provision_ref": "s.79A",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-resources-act-1991",
+        "internal": true,
+        "provision_key": "water-resources-act-1991-s77",
+        "raw": "section 77"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -696,7 +1356,36 @@
     "provision_key": "water-special-measures-act-2025-s14",
     "provision_ref": "s.14",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": false,
+        "provision_key": "water-industry-act-1991-s12i",
+        "raw": "section 12I"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-special-measures-act-2025",
+        "internal": true,
+        "provision_key": "water-special-measures-act-2025-s153",
+        "raw": "section 153"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-special-measures-act-2025",
+        "internal": true,
+        "provision_key": "water-special-measures-act-2025-s12j",
+        "raw": "section 12J"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": false,
+        "provision_key": null,
+        "raw": "I of the Water Industry Act 1991"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -716,7 +1405,85 @@
     "provision_key": "wildlife-and-countryside-act-1981-s28e",
     "provision_ref": "s.28E",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "wildlife-and-countryside-act-1981",
+        "internal": true,
+        "provision_key": "wildlife-and-countryside-act-1981-s28",
+        "raw": "section 28(1)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "wildlife-and-countryside-act-1981",
+        "internal": true,
+        "provision_key": "wildlife-and-countryside-act-1981-s28g",
+        "raw": "section 28G"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "natural-environment-and-rural-communities-act-2006",
+        "internal": false,
+        "provision_key": "natural-environment-and-rural-communities-act-2006-s16",
+        "raw": "section 16"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "natural-environment-and-rural-communities-act-2006",
+        "internal": false,
+        "provision_key": "natural-environment-and-rural-communities-act-2006-s7",
+        "raw": "section 7"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "environment-wales-act-2016",
+        "internal": false,
+        "provision_key": "environment-wales-act-2016-s16",
+        "raw": "section 16"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "wildlife-and-countryside-act-1981",
+        "internal": true,
+        "provision_key": "wildlife-and-countryside-act-1981-s28j",
+        "raw": "section 28J"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "wildlife-and-countryside-act-1981",
+        "internal": true,
+        "provision_key": "wildlife-and-countryside-act-1981-s28k",
+        "raw": "section 28K"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "wildlife-and-countryside-act-1981",
+        "internal": true,
+        "provision_key": "wildlife-and-countryside-act-1981-s28f",
+        "raw": "section 28F"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "wildlife-and-countryside-act-1981",
+        "internal": true,
+        "provision_key": "wildlife-and-countryside-act-1981-s28m",
+        "raw": "section 28M"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "natural-environment-and-rural-communities-act-2006",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Natural Environment and Rural Communities Act 2006"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "environment-wales-act-2016",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Environment (Wales) Act 2016"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -736,7 +1503,15 @@
     "provision_key": "wildlife-and-countryside-act-1981-s28h",
     "provision_ref": "s.28H",
     "record_status": "extracted",
-    "references": [],
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "wildlife-and-countryside-act-1981",
+        "internal": true,
+        "provision_key": "wildlife-and-countryside-act-1981-s28g",
+        "raw": "section 28G"
+      }
+    ],
     "status": "in_force"
   }
 ]

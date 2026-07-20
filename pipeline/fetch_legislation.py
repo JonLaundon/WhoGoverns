@@ -170,7 +170,75 @@ def parse_section(xml, want):
     return heading, body
 
 
-def build_act(act, dry_run):
+# Decision #27 (breadcrumb mining) needs each provision's OUTBOUND references — they are the
+# leads that widen the net to adjacent instruments without sweeping the whole statute book.
+# They have to be read out of the TEXT: CLML marks up <Citation>/<CitationSubRef> only in the
+# amendment commentary, so an operative "section 14 above" or "of the Insolvency Act 1986"
+# carries no markup at all. Verified against WIA 1991 s.16, whose references to ss.14, 16A
+# and 7 are all plain text inside <Body>.
+# An Act title may contain lowercase connectives ("Financial Services AND Markets Act 2000")
+# and parenthesised qualifiers ("Water (Special Measures) Act 2025"), so the token class has
+# to allow both — a capitals-only pattern silently truncates titles to their last few words.
+_TOK = r"(?:[A-Z][\w'-]*|\([^)]{1,40}\)|and|of|the|in|for|to)"
+ACT_RE = re.compile(rf"([A-Z][\w'-]*(?:\s+{_TOK}){{0,8}}\s+Act\s+((?:1[6-9]|20)\d{{2}}))")
+SEC_RE = re.compile(r"\bsections?\s+(\d+[A-Z]{0,2})(?:\s*\(\d+[A-Za-z]?\))?", re.I)
+# How far after a "section N" to look for "of the ... Act YYYY" before treating it as internal.
+LOOKAHEAD = 90
+
+
+def clean_act_title(title):
+    """Trim the preamble a greedy title match drags in.
+
+    "Part XIV except section 448A of the Companies Act 1985" -> "Companies Act 1985";
+    "a of the Insolvency Act 1986" -> "Insolvency Act 1986". Without this the slug — and so
+    the breadcrumb — points at an instrument that does not exist.
+    """
+    title = re.split(r"\bof the\b", title)[-1]
+    title = re.sub(r"^\s*(?:Part|Chapter|Schedule)\s+[IVXLC0-9A-Za-z]+\s+", "", title)
+    return title.strip()
+
+
+def act_slug(title):
+    """'Water Act 2014' -> 'water-act-2014' (the slug convention used for provision keys)."""
+    return re.sub(r"[^a-z0-9]+", "-", clean_act_title(title).lower()).strip("-")
+
+
+def extract_references(body, act, known_slugs):
+    """-> [{raw, provision_key, instrument_slug, internal, in_model}] for one provision.
+
+    A reference resolves to a provision_key only when we can name both the instrument and the
+    section. Anything pointing OUT of what we hold is exactly the breadcrumb we want to keep,
+    so unresolved references are retained with their raw text rather than dropped.
+    """
+    refs, seen = [], set()
+    for m in SEC_RE.finditer(body):
+        num = m.group(1)
+        tail = body[m.end():m.end() + LOOKAHEAD]
+        am = ACT_RE.search(tail)
+        # "section 14 above" (no Act named) is a reference within this same Act.
+        internal = not (am and re.match(r"\s*(above|below)?\s*of\b", tail[:am.start()] or " of "))
+        if am and re.search(r"\bof\b", tail[:am.start()] + " "):
+            slug, internal = act_slug(am.group(1)), False
+        else:
+            slug = act["slug"]
+        pk = f"{slug}-s{num.lower()}"
+        if pk in seen:
+            continue
+        seen.add(pk)
+        refs.append({"raw": m.group(0).strip(), "provision_key": pk, "instrument_slug": slug,
+                     "internal": internal, "in_model": slug in known_slugs})
+    # Acts named without a section — still a lead ("the Habitats Regulations", "Insolvency Act").
+    for am in ACT_RE.finditer(body):
+        slug = act_slug(am.group(1))
+        if slug == act["slug"] or slug in seen:
+            continue
+        seen.add(slug)
+        refs.append({"raw": am.group(1), "provision_key": None, "instrument_slug": slug,
+                     "internal": False, "in_model": slug in known_slugs})
+    return refs
+
+
+def build_act(act, dry_run, known_slugs=()):
     """Fetch one Act's configured sections; emit its Source, Instrument and Provision
     records (idempotent via store). Returns {section: (heading, text)} for --print."""
     accessed = datetime.date.today().isoformat()
@@ -223,7 +291,8 @@ def build_act(act, dry_run):
             "status": "in_force",
             "citation": {"url": f"{base}/section/{sec}", "version_date": accessed,
                          "content_hash": hashlib.sha256(body.encode("utf-8")).hexdigest()[:16]},
-            "references": [], "made_under": None, "commenced_by": None,
+            "references": extract_references(body, act, known_slugs),
+            "made_under": None, "commenced_by": None,
             "outstanding_effects": False,
             "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
             "notes": None, "record_status": "extracted",
@@ -248,9 +317,10 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
 
+    known_slugs = {a["slug"] for a in ACTS}
     texts_by_slug = {}
     for act in ACTS:
-        texts_by_slug[act["slug"]] = build_act(act, args.dry_run)
+        texts_by_slug[act["slug"]] = build_act(act, args.dry_run, known_slugs)
 
     if args.show:
         s = args.show.lstrip("s")

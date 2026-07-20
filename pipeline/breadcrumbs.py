@@ -81,6 +81,20 @@ def collect():
         if i["instrument_id"] not in mined:
             rows.append(("orphan instrument", i["instrument_id"],
                          f"{i.get('title')} registered with no provisions extracted"))
+
+    # 5. UNMINED PROVISION — fetched, hashed and cited-ready, but no operative record was ever
+    # extracted from it. This is the false-assurance case: the provision is in the model, so a
+    # body looks covered, while the powers and duties that provision confers are simply absent.
+    # A section-level provision counts as mined if a paragraph-level record cites into it
+    # (s.24 is mined by s24-1-a), so this is not tripped by granularity.
+    cited = {r["provision_key"] for r in powers + duties + vetoes if r.get("provision_key")}
+    for p in provs:
+        pk = p["provision_key"]
+        if pk in cited or any(c.startswith(pk + "-") for c in cited):
+            continue
+        rows.append(("unmined provision", pk,
+                     f"{p.get('heading') or '(no heading)'} — fetched but no power, duty or "
+                     f"veto extracted from it"))
     return rows
 
 

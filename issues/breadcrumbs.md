@@ -4,9 +4,91 @@
 
 Decision #27's breadcrumb method widens the net without sweeping the whole statute book, but it only works if the leads are tracked. This file is derived from the records every time it runs, so a stub that has been closed disappears by itself and the count is a real completeness measure rather than a feeling.
 
-**1 open stub(s).**
+**77 open stub(s).**
+
+## dangling reference (68)
+
+- **`insolvency-act-1986-s124a`** — references companies-act-1985-s448a, which is not held
+- **`insolvency-act-1986-s124a`** — references companies-act-1989-s83, which is not held
+- **`insolvency-act-1986-s124a`** — references criminal-justice-act-1987-s2, which is not held
+- **`insolvency-act-1986-s124a`** — references criminal-law-consolidation-scotland-act-1995-s28, which is not held
+- **`insolvency-act-1986-s124a`** — references insolvency-act-1986-s165, which is not held
+- **`insolvency-act-1986-s124a`** — references insolvency-act-1986-s262, which is not held
+- **`water-act-2014-s22`** — references water-act-2014-s17b, which is not held
+- **`water-act-2014-s22`** — references water-act-2014-s94, which is not held
+- **`water-industry-act-1991-s14`** — references enterprise-act-2002-s109, which is not held
+- **`water-industry-act-1991-s14`** — references water-industry-act-1991-s14b, which is not held
+- **`water-industry-act-1991-s153`** — references water-industry-act-1991-s23, which is not held
+- **`water-industry-act-1991-s18`** — references water-industry-act-1991-s19, which is not held
+- **`water-industry-act-1991-s2`** — references water-act-2014-s42, which is not held
+- **`water-industry-act-1991-s2`** — references water-industry-act-1991-s17b, which is not held
+- **`water-industry-act-1991-s2`** — references water-industry-act-1991-s17ba, which is not held
+- **`water-industry-act-1991-s2`** — references water-industry-act-1991-s17c, which is not held
+- **`water-industry-act-1991-s2`** — references water-industry-act-1991-s17d, which is not held
+- **`water-industry-act-1991-s2`** — references water-industry-act-1991-s2a, which is not held
+- **`water-industry-act-1991-s2`** — references water-industry-act-1991-s31, which is not held
+- **`water-industry-act-1991-s2`** — references water-industry-act-1991-s37a, which is not held
+- **`water-industry-act-1991-s203`** — references water-industry-act-1991-s17b, which is not held
+- **`water-industry-act-1991-s203`** — references water-industry-act-1991-s17ba, which is not held
+- **`water-industry-act-1991-s203`** — references water-industry-act-1991-s202, which is not held
+- **`water-industry-act-1991-s203`** — references water-industry-act-1991-s38, which is not held
+- **`water-industry-act-1991-s203`** — references water-industry-act-1991-s38za, which is not held
+- **`water-industry-act-1991-s203`** — references water-industry-act-1991-s95, which is not held
+- **`water-industry-act-1991-s203`** — references water-industry-act-1991-s95za, which is not held
+- **`water-industry-act-1991-s22a`** — references water-industry-act-1991-s22b, which is not held
+- **`water-industry-act-1991-s22a`** — references water-industry-act-1991-s22c, which is not held
+- **`water-industry-act-1991-s22a`** — references water-industry-act-1991-s38, which is not held
+- **`water-industry-act-1991-s22a`** — references water-industry-act-1991-s38za, which is not held
+- **`water-industry-act-1991-s24`** — references insolvency-act-1986-s411, which is not held
+- **`water-industry-act-1991-s24`** — references water-industry-act-1991-s123, which is not held
+- **`water-industry-act-1991-s24`** — references water-industry-act-1991-s19, which is not held
+- **`water-industry-act-1991-s24`** — references water-industry-act-1991-s21, which is not held
+- **`water-industry-act-1991-s24`** — references water-industry-act-1991-s221, which is not held
+- **`water-industry-act-1991-s24`** — references water-industry-act-1991-s222, which is not held
+- **`water-industry-act-1991-s24`** — references water-industry-act-1991-s25, which is not held
+- **`water-industry-act-1991-s27a`** — references water-act-2003-s35, which is not held
+- **`water-industry-act-1991-s27c`** — references water-industry-act-1991-s17c, which is not held
+- **`water-industry-act-1991-s27c`** — references water-industry-act-1991-s17d, which is not held
+- **`water-industry-act-1991-s37`** — references water-industry-act-1991-s38, which is not held
+- **`water-industry-act-1991-s70`** — references water-industry-act-1991-s210, which is not held
+- **`water-industry-act-1991-s86`** — references water-industry-act-1991-s208, which is not held
+- **`water-industry-act-1991-s86`** — references water-industry-act-1991-s67, which is not held
+- **`water-industry-act-1991-s86`** — references water-industry-act-1991-s68, which is not held
+- **`water-resources-act-1991-s25a`** — references water-resources-act-1991-s25, which is not held
+- **`water-resources-act-1991-s38`** — references water-industry-act-1991-s40, which is not held
+- **`water-resources-act-1991-s38`** — references water-resources-act-1991-s20c, which is not held
+- **`water-resources-act-1991-s38`** — references water-resources-act-1991-s37, which is not held
+- **`water-resources-act-1991-s38`** — references water-resources-act-1991-s37a, which is not held
+- **`water-resources-act-1991-s38`** — references water-resources-act-1991-s39, which is not held
+- **`water-resources-act-1991-s38`** — references water-resources-act-1991-s51, which is not held
+- **`water-resources-act-1991-s73`** — references water-resources-act-1991-s76, which is not held
+- **`water-resources-act-1991-s79a`** — references water-resources-act-1991-s77, which is not held
+- **`water-special-measures-act-2025-s14`** — references water-industry-act-1991-s12i, which is not held
+- **`water-special-measures-act-2025-s14`** — references water-special-measures-act-2025-s12j, which is not held
+- **`water-special-measures-act-2025-s14`** — references water-special-measures-act-2025-s153, which is not held
+- **`wildlife-and-countryside-act-1981-s28e`** — references environment-wales-act-2016-s16, which is not held
+- **`wildlife-and-countryside-act-1981-s28e`** — references natural-environment-and-rural-communities-act-2006-s16, which is not held
+- **`wildlife-and-countryside-act-1981-s28e`** — references natural-environment-and-rural-communities-act-2006-s7, which is not held
+- **`wildlife-and-countryside-act-1981-s28e`** — references wildlife-and-countryside-act-1981-s28, which is not held
+- **`wildlife-and-countryside-act-1981-s28e`** — references wildlife-and-countryside-act-1981-s28f, which is not held
+- **`wildlife-and-countryside-act-1981-s28e`** — references wildlife-and-countryside-act-1981-s28g, which is not held
+- **`wildlife-and-countryside-act-1981-s28e`** — references wildlife-and-countryside-act-1981-s28j, which is not held
+- **`wildlife-and-countryside-act-1981-s28e`** — references wildlife-and-countryside-act-1981-s28k, which is not held
+- **`wildlife-and-countryside-act-1981-s28e`** — references wildlife-and-countryside-act-1981-s28m, which is not held
+- **`wildlife-and-countryside-act-1981-s28h`** — references wildlife-and-countryside-act-1981-s28g, which is not held
 
 ## narrative stub (1)
 
 - **`duty-ofwat-wia1991-s16`** — Procedural gates NOT separately extracted in this first pass (decision #11), and logged as breadcrumb stubs instead: s.16(3) requires notice with at least 28 days for representations or objections, which Ofwat must consider — a genuine consultation duty in its own right; s.16(4A)-(4B) require notice
+
+## unmined provision (8)
+
+- **`insolvency-act-1986-s124a`** — Petition for winding up on grounds of public interest. — fetched but no power, duty or veto extracted from it
+- **`water-act-2014-s22`** — Primary duty to secure resilience — fetched but no power, duty or veto extracted from it
+- **`water-industry-act-1991-s15`** — Reports on modification references. — fetched but no power, duty or veto extracted from it
+- **`water-industry-act-1991-s27a`** — Establishment of the Council and committees — fetched but no power, duty or veto extracted from it
+- **`water-industry-act-1991-s37`** — General duty to maintain water supply system etc. — fetched but no power, duty or veto extracted from it
+- **`water-industry-act-1991-s86`** — Appointment and functions of inspectors — fetched but no power, duty or veto extracted from it
+- **`water-resources-act-1991-s24`** — Restrictions on abstraction. — fetched but no power, duty or veto extracted from it
+- **`water-special-measures-act-2025-s14`** — Modification by Secretary of State of water company’s appointment conditions etc to recover losses — fetched but no power, duty or veto extracted from it
 
