@@ -1,1 +1,33 @@
-{ "vocab": "legal_effect", "version": "0.1", "note": "The operative verb of a power (Annex A6.3): the finer reading under the modality. Active from Spiral 2.", "terms": ["may", "must", "must_not", "may_not", "conditional"] }
+{
+  "vocab": "legal_effect",
+  "version": "0.2",
+  "note": "The operative verb of a power (Annex A6.3): the finer reading under the modality. Active from Spiral 2. v0.2 (2026-07-20) adds definitions.",
+  "rule": "Read the effect off the statutory words, not off a paraphrase. Where an Act uses the legislative 'shall', map it to `must` (or `must_not` if negative) and note the original wording - Office of the Parliamentary Counsel policy is to avoid 'shall', so it appears mainly in older Acts.",
+  "terms": [
+    {
+      "term": "may",
+      "definition": "A discretion: the holder is permitted to act and may lawfully decline.",
+      "test": "Statutory words 'may', 'is entitled to', 'it shall be lawful for'."
+    },
+    {
+      "term": "must",
+      "definition": "A positive obligation: the holder is required to act.",
+      "test": "Statutory words 'must', 'shall' (older drafting), 'it is the duty of'."
+    },
+    {
+      "term": "must_not",
+      "definition": "A prohibition: the holder is required not to act.",
+      "test": "Statutory words 'must not', 'shall not', 'it is an offence to'."
+    },
+    {
+      "term": "may_not",
+      "definition": "An absence or withdrawal of capability: the holder lacks power to act, rather than being forbidden from doing something otherwise within their power.",
+      "test": "Distinguish from must_not by asking whether the statute removes the capability or prohibits its use. Where the distinction is unclear, prefer must_not and note the ambiguity."
+    },
+    {
+      "term": "conditional",
+      "definition": "The effect depends on a condition being met - the power exists but is exercisable only where specified circumstances obtain.",
+      "test": "Statutory words 'if', 'where', 'on being satisfied that', 'in a case where'. Record the trigger in `conditions`. Note that a condition requiring ANOTHER actor's agreement is a veto, not merely a condition."
+    }
+  ]
+}

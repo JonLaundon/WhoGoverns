@@ -1,1 +1,28 @@
-{ "vocab": "modality", "version": "0.1", "note": "The coarse legal character every operative record carries, and the single thing the extractor must get right: may (power) vs must (duty) vs block (veto). It MUST agree with the record type (a schema check: a Power record carries modality=power, etc.). Active from Spiral 2.", "terms": ["power", "duty", "veto"] }
+{
+  "vocab": "modality",
+  "version": "0.2",
+  "note": "The coarse legal character every operative record carries, and the single thing the extractor must get right: may (power) vs must (duty) vs block (veto). It MUST agree with the record type (a schema check: a Power record carries modality=power, etc.). Active from Spiral 2. v0.2 (2026-07-20) adds definitions and the boundary traps.",
+  "boundary_traps": [
+    "'must be consulted' is a DUTY owed by the consulting actor, not a veto held by the consultee. The consultee's modality is not veto merely because their view is inconvenient to ignore.",
+    "'must have regard to' creates a duty to consider, not an obligation to comply, and confers nothing on the body regarded. It is not recorded as a veto at all.",
+    "'may, with the consent of X' contains TWO records: a power held by the actor (modality=power) and a veto held by X (modality=veto, derived from that power). One provision, one canonical record - the veto is the derived projection.",
+    "A power expressed as a discretion the holder is in practice always expected to exercise is still a power. Grade the law, not the convention."
+  ],
+  "terms": [
+    {
+      "term": "power",
+      "definition": "A legal capability the holder MAY exercise at their discretion. The holder chooses whether to act; not acting is lawful.",
+      "test": "Could the holder lawfully decline to do this? If yes, it is a power."
+    },
+    {
+      "term": "duty",
+      "definition": "An obligation the holder MUST discharge. Not acting is a breach.",
+      "test": "Could the holder lawfully decline to do this? If no, it is a duty. Note that 'shall' and 'must' both create duties; Office of the Parliamentary Counsel drafting policy is to avoid the legislative 'shall', so older Acts use it where newer ones say 'must'."
+    },
+    {
+      "term": "veto",
+      "definition": "The blocking projection of a power: the holder's decision determines whether ANOTHER actor may lawfully proceed. Never a primitive - always derived from a canonical Power record, and always carrying the decision it blocks.",
+      "test": "Name the actor blocked and the decision blocked. If you cannot name both, it is not a veto record."
+    }
+  ]
+}

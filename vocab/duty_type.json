@@ -1,1 +1,20 @@
-{ "vocab": "duty_type", "version": "0.1", "note": "The character of a statutory duty a holder must discharge (Annex A6.4). 'consultation' covers 'must be consulted' — a consultation duty, NOT a veto (decision 2026-07-13). Active from Spiral 2.", "terms": ["consultation", "reporting", "publication", "enforcement", "maintenance", "provision", "review", "cooperation", "equality", "environmental", "financial", "other"] }
+{
+  "vocab": "duty_type",
+  "version": "0.2",
+  "note": "The character of a statutory duty a holder must discharge (Annex A6.4). 'consultation' covers 'must be consulted' - a consultation duty, NOT a veto (decision 2026-07-13). Active from Spiral 2. v0.2 (2026-07-20) adds definitions.",
+  "typing_rule": "Type from what the duty requires the holder to DO. A duty owed to a named other actor (consult them, notify them, co-operate with them) is still the holder's duty - it confers no power on the other actor. Where a duty's breach would invalidate a decision, that is a matter for the affected Veto's `strength`, not for the duty's type.",
+  "terms": [
+    { "term": "consultation", "definition": "Duty to seek and consider views before deciding. Covers 'must consult' and the mirror-image 'must be consulted'. Never a veto, however weighty the consultee - but breach is a live judicial-review ground, so it commonly underpins a `procedural_risk` grading elsewhere in the chain." },
+    { "term": "reporting", "definition": "Duty to report to a named recipient - a Minister, Parliament, a regulator - on performance, incidents or the discharge of functions." },
+    { "term": "publication", "definition": "Duty to make information public, as distinct from reporting it to a named recipient." },
+    { "term": "enforcement", "definition": "Duty to enforce a legal requirement, where statute obliges rather than merely empowers the holder to act." },
+    { "term": "maintenance", "definition": "Duty to maintain a thing, register, standard or state of affairs on a continuing basis." },
+    { "term": "provision", "definition": "Duty to provide or secure the provision of a service, facility or supply. Includes continuity backstops - the obligation that a service always be provided by someone." },
+    { "term": "review", "definition": "Duty to review, reconsider or keep under review a decision, scheme or state of affairs, periodically or on trigger." },
+    { "term": "cooperation", "definition": "Duty to co-operate, share information or act jointly with another body. Distinguished from consultation: co-operation is continuing and mutual, consultation is decision-specific and one-way." },
+    { "term": "equality", "definition": "Duty arising under equality legislation, chiefly the public sector equality duty (Equality Act 2010 s.149) - a duty to have due regard, not to achieve an outcome." },
+    { "term": "environmental", "definition": "Duty to protect, further or have regard to environmental interests. Note that 'have regard to' formulations create a duty to consider only, and confer nothing on any body regarded." },
+    { "term": "financial", "definition": "Duty relating to financial conduct - to break even, secure value for money, act as accounting officer, or observe a financial limit." },
+    { "term": "other", "definition": "A statutory duty whose character matches none of the above. Requires a `notes` entry saying why." }
+  ]
+}

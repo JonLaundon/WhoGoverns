@@ -46,6 +46,62 @@ def load_json(path):
         return json.load(fh)
 
 
+# Which vocab file backs which schema enum. Kept beside the check that uses it.
+VOCAB_FIELDS = {
+    "veto_type": ("veto.schema.json", "veto_type"),
+    "veto_strength": ("veto.schema.json", "strength"),
+    "power_type": ("power.schema.json", "power_type"),
+    "duty_type": ("duty.schema.json", "duty_type"),
+    "legal_effect": ("power.schema.json", "legal_effect"),
+}
+
+
+def veto_strength_errors(vetoes):
+    """Tier 1 of the strength audit (2026-07-20): internal coherence of a veto's grading.
+
+    A veto graded `hard_stop` claims there is NO lawful route around it, so a record that
+    also says `overridable: yes` contradicts itself, and one saying `unknown` asserts a
+    grading it admits it cannot support. Both are defects rather than opinions — this is
+    the check that would have caught all 8 Water-tranche vetoes being labelled hard_stop.
+    Rubric: vocab/veto_strength.json v0.2. Returns a list of message strings.
+    """
+    out = []
+    for rec in vetoes:
+        vid, strength, ovr = rec.get("veto_id"), rec.get("strength"), rec.get("overridable")
+        if strength == "hard_stop" and ovr == "yes":
+            out.append(f"vetoes[{vid}]: strength 'hard_stop' contradicts overridable 'yes' "
+                       f"(override: {rec.get('override_mechanism')!r}) — grade strong_delay")
+        elif strength == "hard_stop" and ovr in (None, "unknown"):
+            out.append(f"vetoes[{vid}]: strength 'hard_stop' unsupported while overridable is "
+                       f"'{ovr}' — run the override sweep before grading")
+        if strength == "strong_delay" and ovr != "yes":
+            out.append(f"vetoes[{vid}]: strength 'strong_delay' requires overridable 'yes' "
+                       f"(is '{ovr}')")
+        if ovr == "yes" and not rec.get("override_mechanism"):
+            out.append(f"vetoes[{vid}]: overridable 'yes' requires a cited override_mechanism")
+    return out
+
+
+def vocab_schema_errors(repo=REPO):
+    """Core rule 3 (no uncontrolled vocabulary drift): the vocab files are the human-readable
+    definitions, the schema enums are what is enforced. If they diverge, one is lying."""
+    out = []
+    for vocab_name, (schema_file, field) in VOCAB_FIELDS.items():
+        vpath = os.path.join(repo, "vocab", vocab_name + ".json")
+        spath = os.path.join(repo, "schemas", schema_file)
+        if not (os.path.exists(vpath) and os.path.exists(spath)):
+            continue
+        terms = load_json(vpath).get("terms", [])
+        # v0.2+ vocabs carry {term, definition, ...}; older ones are bare strings.
+        vocab_terms = {t["term"] if isinstance(t, dict) else t for t in terms}
+        enum = load_json(spath).get("properties", {}).get(field, {}).get("enum")
+        if enum and vocab_terms != set(enum):
+            out.append(f"vocab/{vocab_name}.json disagrees with {schema_file}.{field}: "
+                       f"only-in-vocab={sorted(vocab_terms - set(enum))} "
+                       f"only-in-schema={sorted(set(enum) - vocab_terms)}")
+    return out
+
+
 def main():
     # errors     = schema violations (a record breaks its contract)
     # integrity  = a data file/schema is missing, or a reference points nowhere, or a
@@ -160,6 +216,13 @@ def main():
                     integrity += 1
                     print(f"FAIL person-roles.office_id -> {ref} not among offices")
         print("ok   {}.json  ({} records{})".format(t, len(recs), ", " + str(bad) + " FAIL" if bad else ""))
+
+    for msg in veto_strength_errors(store.load("vetoes")):
+        errors += 1
+        print("FAIL " + msg)
+    for msg in vocab_schema_errors():
+        integrity += 1
+        print("FAIL " + msg)
 
     # provision_key duplicate check on canonical Power/Duty/Veto records (none in Spiral 1)
     seen = {}

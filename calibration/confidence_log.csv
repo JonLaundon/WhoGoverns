@@ -28,3 +28,11 @@ predicted_confidence,verification_outcome,record_id,reviewer,date,notes
 0.97,confirmed,uk-state-body-copyright-tribunal,build-agent (re-derivation),2026-07-06,format->body_type via map; clean format
 0.9,confirmed,office-chancellor-of-the-exchequer,build-agent (content API),2026-07-06,current holder from role_appointments; office_type heuristic
 0.9,confirmed,office-prime-minister,build-agent (content API),2026-07-06,current holder from role_appointments; office_type heuristic
+0.9,confirmed,veto-cma-wia1991-s16a-veto,"build-agent (Tier 2 override sweep, primary sources)",2026-07-20,"hard_stop confirmed: WIA 1991 s.16A gives the CMA a binding direction with no appeal; the only adjacent power is the Secretary of State extending the CMA's own decision period by 14 days, which does not let Ofwat proceed."
+0.85,corrected,veto-ea-wra1991-s38-abstraction-licence,"build-agent (Tier 2 override sweep, primary sources)",2026-07-20,hard_stop -> strong_delay; override re-cited to WRA s.43 appeal
+0.9,confirmed,veto-hm-treasury-wia1991-s153,"build-agent (Tier 2 override sweep, primary sources)",2026-07-20,"hard_stop confirmed: 'with the consent of the Treasury' governs s.153(1), (2) and (3)(b) with no exception, general authorisation, delegation or class consent."
+0.85,corrected,veto-natural-england-wca1981-s28e-consent,"build-agent (Tier 2 override sweep, primary sources)",2026-07-20,hard_stop -> strong_delay; overridable unknown -> yes (WCA s.28F appeal)
+0.85,corrected,veto-natural-england-wca1981-s28h-assent,"build-agent (Tier 2 override sweep, primary sources)",2026-07-20,hard_stop -> procedural_risk; flagged as probably not a veto at all
+0.9,confirmed,veto-sos-defra-wia1991-s24,"build-agent (Tier 2 override sweep, primary sources)",2026-07-20,"hard_stop confirmed: Ofwat cannot petition under s.24(1)(b) without the Secretary of State's consent. The Secretary of State's own power to petition under s.24(1)(a) is a different actor's route, not an override available to Ofwat."
+0.9,corrected,veto-sos-defra-wia1991-s6-1-b,"build-agent (Tier 2 override sweep, primary sources)",2026-07-20,strength confirmed; overridable yes -> no (same-holder rule)
+0.85,corrected,veto-sos-defra-wia1991-s7-2-b,"build-agent (Tier 2 override sweep, primary sources)",2026-07-20,strength confirmed; overridable yes -> no (same-holder rule)

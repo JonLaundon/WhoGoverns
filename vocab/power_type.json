@@ -1,1 +1,25 @@
-{ "vocab": "power_type", "version": "0.1", "note": "The character of a statutory power a holder may exercise (Annex A6.3). Active from Spiral 2.", "terms": ["direction", "designation", "consent", "approval", "licence", "enforcement", "inspection", "investigation", "rulemaking", "charging", "appointment", "funding", "information_request", "sanction", "appeal", "other"] }
+{
+  "vocab": "power_type",
+  "version": "0.2",
+  "note": "The character of a statutory power a holder may exercise (Annex A6.3). Active from Spiral 2. v0.2 (2026-07-20) adds definitions and flags the 'other' overload.",
+  "other_overload": "AUDIT FINDING (2026-07-20): 'other' currently carries 6 of 20 powers in the Water tranche, including the two most load-bearing records in the special-administration trace - the Secretary of State's petition to the High Court (WIA 1991 s.24(1)(a)) and the Court's own order-making power (s.24(1)). Two families of power have no term: (a) applying or petitioning a court, and (b) adjudicating - a court or tribunal determining a matter. Because 'other' erases them, the judicial layer is invisible to any query or colour axis. Proposed new terms `adjudication` and `application_to_court` are logged for the sponsor in issues/schema-decisions.md; do not add them to the schema enum without that decision.",
+  "typing_rule": "Choose the term describing what the holder DOES with the power, not the policy area it operates in. Where two terms fit, prefer the more specific. 'other' requires a `notes` entry saying why no term fits.",
+  "terms": [
+    { "term": "direction", "definition": "Power to require another body or person to act, or not act, in a specified way, binding on the recipient." },
+    { "term": "designation", "definition": "Power to confer, vary or withdraw a legal status on a person, body, site or thing." },
+    { "term": "consent", "definition": "Power to agree or refuse agreement to another actor's proposed decision. Usually generates a derived Veto record." },
+    { "term": "approval", "definition": "Power to approve or withhold approval of a completed decision, scheme, plan or set of rules before it takes effect." },
+    { "term": "licence", "definition": "Power to grant, refuse, vary, attach conditions to or revoke an authorisation without which an activity may not lawfully be carried on." },
+    { "term": "enforcement", "definition": "Power to compel compliance with a legal requirement - enforcement notices, orders, undertakings, injunctive steps. Distinguished from `sanction` by aiming at compliance rather than punishment." },
+    { "term": "inspection", "definition": "Power to enter, examine or survey premises, records or activities." },
+    { "term": "investigation", "definition": "Power to open and conduct a formal inquiry into a matter, person or body." },
+    { "term": "rulemaking", "definition": "Power to make rules of general application - regulations, orders, licence conditions, codes, standards, determinations binding a class." },
+    { "term": "charging", "definition": "Power to levy fees, charges or levies to fund functions." },
+    { "term": "appointment", "definition": "Power to appoint, reappoint or remove a person to or from an office or body." },
+    { "term": "funding", "definition": "Power to provide financial support - grants, loans, indemnities, guarantees. Frequently gated by a Treasury consent, which is its own derived Veto." },
+    { "term": "information_request", "definition": "Power to require the provision of information, documents or explanations." },
+    { "term": "sanction", "definition": "Power to impose a penalty for non-compliance - financial penalties, censure, licence revocation as punishment. Distinguished from `enforcement` by aiming at punishment rather than compliance." },
+    { "term": "appeal", "definition": "Power to hear and determine an appeal against another actor's decision. Note this is the power of the appellate BODY; the appellant's right of appeal is what makes the original decision `overridable`." },
+    { "term": "other", "definition": "A statutory power whose character matches none of the above. Requires a `notes` entry saying why. See `other_overload` above - a recurring 'other' is a vocabulary gap to be raised, not absorbed." }
+  ]
+}

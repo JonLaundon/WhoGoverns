@@ -1,1 +1,54 @@
-{ "vocab": "veto_type", "version": "0.2", "note": "A genuine statutory BLOCK (Annex A6.5). STRICT (decision 2026-07-13): only a real block counts. 'statutory_consultee' REMOVED — 'must be consulted' is a consultation duty (duty_type=consultation), not a veto. Soft influence is not recorded at all. A veto is a DERIVED projection of the underlying power (see veto.schema derived_from_record_id). Active from Spiral 2.", "terms": ["consent_required", "concurrence_required", "approval_required", "objection_power", "call_in_power", "licence_refusal", "designation_power", "environmental_assessment", "other"] }
+{
+  "vocab": "veto_type",
+  "version": "0.3",
+  "note": "A genuine statutory BLOCK (Annex A6.5). STRICT (decision 2026-07-13): only a real block counts. 'statutory_consultee' REMOVED - 'must be consulted' is a consultation duty (duty_type=consultation), not a veto. Soft influence is not recorded at all. A veto is a DERIVED projection of the underlying power (see veto.schema derived_from_record_id). Active from Spiral 2. v0.3 (2026-07-20) adds definitions and the gateway test, after an audit found 'other' and mis-typing masking records that fail the strict test entirely.",
+  "gateway_test": "Before choosing a type, confirm this is a veto AT ALL. Ask: can the other actor lawfully proceed if this holder says no? If yes, it is not a veto - it is a Duty (where a procedure is owed) or nothing (where the influence is merely political or practical). Worked counter-example: Natural England's 'assent' under WCA 1981 s.28H is NOT a veto - under s.28H(4)-(5) a public body may proceed after 28 days' notice regardless, subject only to minimising damage. That record should be a Duty, not a Veto.",
+  "typing_rule": "Type from the STATUTORY FORMULA, not from the effect. 'with the consent of X' is consent_required; 'acting jointly with X' or 'with the concurrence of X' is concurrence_required; 'subject to approval by X' is approval_required. Where the formula is unusual, prefer the closest term and explain in `notes`; 'other' must carry a note saying why no term fits, and a recurring 'other' is a signal to propose a new term, not to keep using it.",
+  "terms": [
+    {
+      "term": "consent_required",
+      "definition": "The decision may not lawfully be taken without the holder's positive agreement. The commonest veto formula: 'with the consent of the Secretary of State'.",
+      "test": "Statute conditions another actor's power on this holder agreeing."
+    },
+    {
+      "term": "concurrence_required",
+      "definition": "Two actors must agree and act together; neither may proceed alone. Distinguished from consent by symmetry - concurrence is joint decision-making, consent is one actor gating another.",
+      "test": "Would the statute be satisfied by either party acting alone? If no, and both must positively agree, it is concurrence."
+    },
+    {
+      "term": "approval_required",
+      "definition": "A decision made by one actor takes no legal effect until approved by the holder - approval attaches to a completed decision, where consent conditions the power to make it.",
+      "test": "Is the thing approved something already decided or drafted (a scheme, a plan, a set of rules), rather than the exercise of the power itself?"
+    },
+    {
+      "term": "objection_power",
+      "definition": "The holder may formally object, and a sustained objection stops or escalates the decision. Weaker than consent: the block is triggered by the holder acting, not by their silence.",
+      "test": "Does inaction by the holder let the decision through? If yes, and an objection stops it, this is objection_power - not consent_required."
+    },
+    {
+      "term": "call_in_power",
+      "definition": "The holder may remove a decision from its normal decision-maker and determine it themselves.",
+      "test": "Does the power transfer the decision upward rather than merely block it?"
+    },
+    {
+      "term": "licence_refusal",
+      "definition": "The holder controls an authorisation the activity cannot lawfully proceed without, and may refuse or revoke it.",
+      "test": "Is the block effected by withholding a permission that is itself the legal basis for the activity?"
+    },
+    {
+      "term": "designation_power",
+      "definition": "The holder may confer or withhold a legal status that determines whether, or on what terms, an activity may proceed.",
+      "test": "Does the block operate by changing the legal character of a person, body, site or thing?"
+    },
+    {
+      "term": "environmental_assessment",
+      "definition": "A statutory assessment regime whose adverse conclusion bars consent unless a defined derogation applies.",
+      "test": "Is the block a required assessment with a statutory consequence, rather than a body's discretionary decision? Note that most such regimes carry derogations - check before grading hard_stop."
+    },
+    {
+      "term": "other",
+      "definition": "A genuine statutory block whose formula matches none of the above.",
+      "test": "Requires a `notes` entry stating why no term fits. If this term recurs across a domain, propose a new term to the sponsor rather than continuing to use it."
+    }
+  ]
+}

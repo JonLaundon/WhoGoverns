@@ -78,6 +78,19 @@
     "version_date": "2026-07-20"
   },
   {
+    "accessed_date": "2026-07-20",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "METHODOLOGICAL source only. Used to anchor the DEFINITIONS in vocab/ (veto_strength, modality, legal_effect) to the mandatory/directory doctrine at paras 2.57-2.60, and to supply official definitions of Royal Prerogative (quoting Miller [2017] UKSC 5), delegation, justiciability and fettering of discretion. NOT cited as authority for any power, duty or veto record - those cite legislation.gov.uk per the source hierarchy (A3).",
+    "publication_date": "2022-01-01",
+    "publisher": "Government Legal Department",
+    "source_id": "source-guidance-judge-over-your-shoulder-2022",
+    "source_type": "guidance",
+    "title": "The Judge Over Your Shoulder (JOYS): a guide to the legal environment in which decisions in public bodies are made, 6th edition",
+    "url": "https://www.gov.uk/government/publications/the-judge-over-your-shoulder",
+    "version_date": "2026-07-20"
+  },
+  {
     "accessed_date": "2026-07-06",
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",

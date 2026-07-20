@@ -52,6 +52,14 @@ Six new types, `data/<type>.json` via store like the rest: **powers, duties, vet
 - **Scope (decision #11):** first pass over a body = its founding Act + principal instruments (the instruments conferring its current operative powers), NOT a full statute sweep.
 - **Breadcrumb / cross-reference mining (decision #27):** when extracting a provision, capture its outbound references to OTHER provisions/Acts in `Provision.references`. Any reference that points OUT of the domain's core instruments is a candidate adjacent instrument (e.g. WIA s.2 → "ss.42–54 Water Act 2014"; WCA s.28H → the Habitats Regs). Following these breadcrumbs is how the net widens to the left-field blockers (planning/DCO, Habitats, Reservoirs Act) WITHOUT sweeping the whole statute book — exhaustive on blocker-bearing provisions a decision actually reaches, not on all law. The decision-first retrodiction is the completeness audit that proves the net.
 
+## Grading a veto's strength (vocab/veto_strength.json v0.2 — READ IT BEFORE GRADING)
+The vocabularies now carry **definitions and an operational test per term** (veto_strength, veto_type, modality, legal_effect, power_type, duty_type). They are not optional reading: an audit on 2026-07-20 found all 8 Water-tranche vetoes graded `hard_stop` because the vocab was a bare term list with no criteria. Non-negotiables:
+- **Run the override sweep before grading `hard_stop`.** Look for an appeal, a deemed-consent/refusal clock, a direction power, a general authorisation, a disapplication or an alternative route — **in the adjacent sections too**, since appeals rarely sit in the cited provision (WCA s.28E's appeal is at s.28F).
+- **Same-holder rule.** A route operated by the *same* holder (e.g. the SoS giving a general authorisation instead of case-by-case consent) is NOT an override; the veto stays `hard_stop` with `overridable: no`.
+- **Wrong-mechanism trap.** A different power achieving a similar practical result is not an override of *this* veto (a drought order is not a route around an abstraction-licence refusal).
+- **Gateway test first.** Can the other actor lawfully proceed if the holder says no? If yes it is not a veto — it is a Duty, or nothing.
+- `validate.py` now **fails the build** on incoherent gradings (hard_stop+overridable:yes, hard_stop+unknown, strong_delay without a cited override) and on any vocab↔schema enum drift.
+
 ## Confidence (A9.3) — conservative
 0.95–1.00 explicit text + exact citation · 0.80–0.94 minor interpretation · 0.60–0.79 classification uncertain · 0.40–0.59 uncertain · <0.40 no record, log issue. Nothing below 0.80 publishes without human review. Log every verification as (predicted_confidence, outcome) in `calibration/confidence_log.csv`.
 

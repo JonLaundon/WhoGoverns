@@ -1,1 +1,36 @@
-{ "vocab": "veto_strength", "version": "0.1", "note": "How hard a veto bites (Annex A6.5). Active from Spiral 2.", "terms": ["hard_stop", "strong_delay", "procedural_risk", "advisory_only"] }
+{
+  "vocab": "veto_strength",
+  "version": "0.2",
+  "note": "How hard a veto bites (Annex A6.5). Active from Spiral 2. v0.2 (2026-07-20) adds a definition and an operational test per term, after an audit found all 8 vetoes in the Water tranche labelled 'hard_stop' - the signature of a missing rubric rather than eight independent judgements.",
+  "provenance": "These four terms are PROJECT VOCABULARY, not terms of art: no government document defines 'hard_stop' or 'strong_delay'. The DISTINCTION they encode is settled administrative law, and each term is anchored below to the mandatory/directory doctrine as stated in The Judge Over Your Shoulder (JOYS), 6th edition (Government Legal Department, 2022), paras 2.57-2.60 - source-guidance-judge-over-your-shoulder-2022. JOYS 2.60 warns that 'there is no clear distinction' between mandatory and directory and that what matters is 'the court's view of the effect of noncompliance'; these labels are therefore a graded model of that effect, not a claim that the courts use them.",
+  "grading_rule": "Grade on the EFFECT OF NON-COMPLIANCE, from the statutory text plus its neighbouring provisions - never from how important the blocker feels. Always run the override sweep before assigning hard_stop.",
+  "override_sweep": "Before labelling any veto, check the instrument for a lawful route by which the blocked actor may nonetheless proceed: an appeal against refusal, a deemed-consent or deemed-refusal clock, a direction power, a general authorisation, a disapplication, or an alternative consenting route. Appeals usually sit in an ADJACENT section, so never sweep the cited provision alone. If such a route exists the veto is NOT a hard_stop, `overridable` is 'yes', and `override_mechanism` must name and cite the route. Worked example: Natural England's consent under WCA 1981 s.28E is appealable to the Secretary of State under s.28F, who may 'direct Natural England to give consent' - so it grades strong_delay, not hard_stop.",
+  "same_holder_rule": "A route operated by the SAME holder is NOT an override - it is that holder consenting in another form, and the veto remains a hard_stop with `overridable: 'no'`. The test is whether the blocked actor can proceed WITHOUT this holder's agreement, not whether some other door exists. Worked example: WIA 1991 ss.6(1)(b) and 7(2)(b) let the Secretary of State give Ofwat a general authorisation instead of case-by-case consent; that is the Secretary of State pre-consenting in class, so it does not soften the veto. Added v0.2 (2026-07-20) after the first override sweep mis-read general authorisations as overrides.",
+  "wrong_mechanism_trap": "An alternative power that achieves a similar practical result is not an override of THIS veto. Worked example: a drought order under WRA 1991 Chapter III permits abstraction without a licence in drought conditions, but it is a separate power exercised on separate grounds - it does not override the Environment Agency's refusal of an abstraction licence. The real override there is the applicant's appeal to the Secretary of State under WRA 1991 s.43(1).",
+  "terms": [
+    {
+      "term": "hard_stop",
+      "definition": "A mandatory statutory requirement with no lawful route around it: the blocked actor cannot proceed at all without the holder's decision, and acting without it renders the decision unlawful.",
+      "test": "Is there ANY provision permitting the blocked actor to proceed without this decision - appeal, deemed consent, direction, general authorisation, disapplication, alternative route? If yes, this is NOT hard_stop. Requires `overridable: 'no'`; 'yes' or 'unknown' is a contradiction and fails validation.",
+      "anchor": "JOYS 6th ed. para 2.57: 'There is a presumption that a statutory requirement is \"mandatory\". Failure to comply with mandatory requirements will usually result in a decision being unlawful.'"
+    },
+    {
+      "term": "strong_delay",
+      "definition": "A mandatory requirement the blocked actor can ultimately get past, but only through a further defined legal process that costs substantial time - typically an appeal to a Minister, a redetermination, or a statutory clock.",
+      "test": "The decision can lawfully proceed in the end, but not now and not without going somewhere else first. Requires `overridable: 'yes'` and a cited `override_mechanism`.",
+      "anchor": "JOYS 6th ed. para 2.57 (mandatory) read with the existence of a statutory override route: the requirement still binds, but non-compliance is curable."
+    },
+    {
+      "term": "procedural_risk",
+      "definition": "A requirement whose breach does not automatically invalidate the decision but exposes it to judicial review - the directory end of the spectrum, and requirements of procedural fairness.",
+      "test": "Would a court likely treat non-compliance as curable or as substantial compliance, rather than as voiding the decision? Is the blocker's force that it creates litigation exposure rather than a legal bar?",
+      "anchor": "JOYS 6th ed. paras 2.58-2.59: the mandatory presumption 'can be rebutted... the requirement may be considered to be \"directory\"'; 'Failure to satisfy a directory requirement will not necessarily cause the decision to be unlawful.'"
+    },
+    {
+      "term": "advisory_only",
+      "definition": "The holder's disagreement carries no legal consequence: their view must be sought or considered, but need not be followed.",
+      "test": "STOP - this is almost certainly NOT a veto. Under the strict veto test (AGENT.md), a duty to seek or consider a view is a consultation DUTY, and soft influence is not recorded at all. Reach for advisory_only only where a record must be retained for continuity, and prefer re-typing it as a Duty.",
+      "anchor": "AGENT.md strict veto test; JOYS 6th ed. para 2.61 on procedural fairness (representations must be considered, not obeyed)."
+    }
+  ]
+}
