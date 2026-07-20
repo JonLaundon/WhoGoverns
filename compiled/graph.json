@@ -7828,6 +7828,18 @@
     },
     {
       "data": {
+        "duty_id": "duty-ofwat-wia1991-s24-consult",
+        "duty_type": "consultation",
+        "id": "mustconsult-duty-ofwat-wia1991-s24-consult",
+        "kind": "must_consult",
+        "label_text": "Consult the Welsh Ministers before a special-administration petition (Welsh licensee)",
+        "source": "uk-state-body-the-water-services-regulation-authority",
+        "source_id": "source-act-water-industry-act-1991",
+        "target": "uk-state-body-welsh-government"
+      }
+    },
+    {
+      "data": {
         "blocker_kind": "regulatory",
         "decision_affected": "Whether Ofwat's proposed modifications to a water company's licence/appointment conditions (including price controls) take effect.",
         "id": "canveto-veto-cma-wia1991-s16a-veto",
@@ -7892,7 +7904,7 @@
       }
     }
   ],
-  "generated": "2026-07-20T22:30:43",
+  "generated": "2026-07-20T23:02:26",
   "nodes": [
     {
       "data": {
@@ -12555,6 +12567,7 @@
           },
           "duties": [
             {
+              "beneficiary_or_object": null,
               "citation": {
                 "provision": "s.27C(1)",
                 "quote": null,
@@ -12567,12 +12580,16 @@
               "label": "Represent consumer interests, with regard to vulnerable groups",
               "legal_status": "current",
               "mandatory": true,
-              "notes": "INFLUENCE BOUNDARY: CCW's external leverage is INFLUENCE — it investigates complaints and makes representations to Ofwat and undertakers, but holds NO veto and no power to compel. Per the strict test its representation/consultation rights are influence, not recorded as vetoes. CCW is the consumer-voice node, deliberately veto-less — an honest outcome, not a gap.",
+              "notes": "INFLUENCE BOUNDARY: CCW's external leverage is INFLUENCE — it investigates complaints and makes representations to Ofwat and undertakers, but holds NO veto and no power to compel. Per the strict test its representation/consultation rights are influence, not recorded as vetoes. CCW is the consumer-voice node, deliberately veto-less — an honest outcome, not a gap. Counterparty (2026-07-20): Runs to consumers (disabled, chronically sick, pensionable age, low income, rural, household customers) — no state counterparty.",
               "office_id": null,
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
               "provision_key": "water-industry-act-1991-s27c",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
               "summary": "In considering the interests of consumers, the Consumer Council for Water shall have regard in particular to the interests of the disabled or chronically sick, people of pensionable age, those on low incomes, rural residents, and household customers (WIA 1991 s.27C). CCW's role is to represent and safeguard water consumers' interests.",
+              "trigger": null,
               "type": "other",
               "verification_status": "unverified"
             }
@@ -14892,6 +14909,7 @@
         "office_operative": {
           "duties": [
             {
+              "beneficiary_or_object": "Consumers in every area; continuity of water/sewerage service.",
               "citation": {
                 "provision": "s.7(1)",
                 "quote": null,
@@ -14904,12 +14922,16 @@
               "label": "Secure continuity of water and sewerage undertakers for every area",
               "legal_status": "current",
               "mandatory": true,
-              "notes": null,
+              "notes": "Counterparty (2026-07-20): A continuity backstop owed to consumers in every area — no state counterparty.",
               "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
               "provision_key": "water-industry-act-1991-s7-1",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
               "summary": "It is the duty of the Secretary of State to secure that appointments are made so that for every area of England and Wales there is at all times both a water undertaker and a sewerage undertaker (s.7(1)). The continuity-of-supply backstop that constrains how an undertaker can be removed or replaced.",
+              "trigger": "At all times — a continuing duty.",
               "type": "other",
               "verification_status": "unverified"
             }
@@ -34998,6 +35020,7 @@
           },
           "duties": [
             {
+              "beneficiary_or_object": "Compliance with appointment/licence conditions and statutory requirements.",
               "citation": {
                 "provision": "s.18(1)",
                 "quote": null,
@@ -35010,16 +35033,21 @@
               "label": "Make an enforcement order to secure compliance",
               "legal_status": "current",
               "mandatory": true,
-              "notes": "s.18 also names the Secretary of State as an alternative enforcement authority — modelled on Ofwat.",
+              "notes": "s.18 also names the Secretary of State as an alternative enforcement authority — modelled on Ofwat. Counterparty (2026-07-20): Enforcement duty directed at the contravening company/licensee — a private party.",
               "office_id": null,
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
               "provision_key": "water-industry-act-1991-s18",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
               "summary": "Where satisfied that a company/licensee is contravening (or is likely to contravene) a condition or an enforceable requirement for which it is the enforcement authority, Ofwat must by a final enforcement order make such provision as is requisite to secure compliance (subject to ss.19-20).",
+              "trigger": "On being satisfied of a contravention or likely contravention.",
               "type": "enforcement",
               "verification_status": "unverified"
             },
             {
+              "beneficiary_or_object": "Consumers; the water/sewerage sector.",
               "citation": {
                 "provision": "s.2(2A)",
                 "quote": null,
@@ -35032,16 +35060,21 @@
               "label": "General duties in regulating the water industry",
               "legal_status": "current",
               "mandatory": true,
-              "notes": "s.2 is long and multi-limbed; captured as one general-duties record (candidate for splitting per limb later). Co-held by the Secretary of State (s.2(1)); modelled here on the primary operative holder (Ofwat) per the calibration convention — full multi-holder modelling deferred (known issue). Limb (e) 'the resilience objective' and its s.2(2DA) definition were inserted by Water Act 2014 s.22 (instrument-act-water-act-2014 / provision water-act-2014-s22): amend-provenance, not a separate Water Act 2014 power.",
+              "notes": "s.2 is long and multi-limbed; captured as one general-duties record (candidate for splitting per limb later). Co-held by the Secretary of State (s.2(1)); modelled here on the primary operative holder (Ofwat) per the calibration convention — full multi-holder modelling deferred (known issue). Limb (e) 'the resilience objective' and its s.2(2DA) definition were inserted by Water Act 2014 s.22 (instrument-act-water-act-2014 / provision water-act-2014-s22): amend-provenance, not a separate Water Act 2014 power. Counterparty (2026-07-20): A general duty conditioning how Ofwat exercises every power; its objects are consumers and the sector, not a state counterparty.",
               "office_id": null,
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
               "provision_key": "water-industry-act-1991-s2",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
               "summary": "In exercising and performing its water-industry powers and duties, Ofwat must act in the manner it considers best calculated to further: (a) the consumer objective; (b) the proper carrying-out of water and sewerage undertakers' functions across England and Wales; (c) securing that appointed companies can (in particular by reasonable returns on capital) finance the proper carrying-out of those functions; (d) the proper carrying-out of licensees' authorised activities; and (e) the resilience objective. The overarching duty that conditions how EVERY Ofwat power is exercised — the financeability limb (c) is the statutory hook behind price-review and bill decisions.",
+              "trigger": "Whenever Ofwat exercises its functions under the Act.",
               "type": "other",
               "verification_status": "unverified"
             },
             {
+              "beneficiary_or_object": "The company/licensee facing the penalty.",
               "citation": {
                 "provision": "s.22A(4)",
                 "quote": null,
@@ -35054,16 +35087,21 @@
               "label": "Give notice and consider representations before imposing a penalty",
               "legal_status": "current",
               "mandatory": true,
-              "notes": "Procedural duty attached to the s.22A penalty power (same provision -> derived record, A2.5).",
+              "notes": "Procedural duty attached to the s.22A penalty power (same provision -> derived record, A2.5). Counterparty (2026-07-20): Notice and representations owed to the company facing the penalty — a private party. Note this is a consultation duty whose consultee is NOT a state body, which is why the type alone cannot imply an edge.",
               "office_id": null,
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
               "provision_key": "water-industry-act-1991-s22a",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
               "summary": "Before imposing a penalty under s.22A, Ofwat must give notice of the proposed penalty (with reasons and the acts/omissions relied on), allow at least 21 days for representations or objections, and consider any duly made.",
+              "trigger": "Before imposing a s.22A penalty.",
               "type": "consultation",
               "verification_status": "unverified"
             },
             {
+              "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
               "citation": {
                 "provision": "s.24(1B)",
                 "quote": null,
@@ -35076,12 +35114,16 @@
               "label": "Consult the Welsh Ministers before a special-administration petition (Welsh licensee)",
               "legal_status": "current",
               "mandatory": true,
-              "notes": "England/Wales split: WIA 1991 is E&W with Welsh Ministers' functions — a devolution touchpoint even within Tranche 0.",
+              "notes": "England/Wales split: WIA 1991 is E&W with Welsh Ministers' functions — a devolution touchpoint even within Tranche 0. Counterparty (2026-07-20): Statute names 'the Welsh Ministers' — the collective devolved executive, modelled here as the Welsh Government body. The two are not perfectly co-extensive (the Welsh Ministers are office-holders under the Government of Wales Act 2006); mapped to the body because no corresponding office node exists yet. Revisit if Welsh ministerial offices are modelled.",
               "office_id": null,
+              "owed_to_body_id": "uk-state-body-welsh-government",
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": false,
               "provision_key": "water-industry-act-1991-s24-1b",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
               "summary": "Before presenting a s.24(1A) petition in relation to a qualifying water supply licensee whose licence gives it a supplementary authorisation, the Secretary of State or Ofwat must consult the Welsh Ministers.",
+              "trigger": "Before presenting a s.24(1A) petition re a Welsh-authorised licensee.",
               "type": "consultation",
               "verification_status": "unverified"
             }
@@ -39526,6 +39568,7 @@
           },
           "duties": [
             {
+              "beneficiary_or_object": "Consumers in every area; continuity of water/sewerage service.",
               "citation": {
                 "provision": "s.7(1)",
                 "quote": null,
@@ -39538,12 +39581,16 @@
               "label": "Secure continuity of water and sewerage undertakers for every area",
               "legal_status": "current",
               "mandatory": true,
-              "notes": null,
+              "notes": "Counterparty (2026-07-20): A continuity backstop owed to consumers in every area — no state counterparty.",
               "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
               "provision_key": "water-industry-act-1991-s7-1",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
               "summary": "It is the duty of the Secretary of State to secure that appointments are made so that for every area of England and Wales there is at all times both a water undertaker and a sewerage undertaker (s.7(1)). The continuity-of-supply backstop that constrains how an undertaker can be removed or replaced.",
+              "trigger": "At all times — a continuing duty.",
               "type": "other",
               "verification_status": "unverified"
             }

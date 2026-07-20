@@ -294,6 +294,15 @@ function init(graph) {
         "curve-style": "bezier", "z-index": 60 } },
       { selector: "edge[kind = 'can_veto'][strength = 'strong_delay']", style: { "line-style": "dashed", "width": 1.8, "opacity": 0.7 } },
       { selector: "edge[kind = 'can_veto'][strength = 'procedural_risk']", style: { "line-style": "dotted", "width": 1.5, "opacity": 0.6 } },
+      // MUST_CONSULT: a duty owed to another state actor. Deliberately NOT styled like a
+      // veto — it is an obligation the holder owes, not a gate the other body operates.
+      // Green, thin, arrow (not the veto's tee), so it never reads as "this body can stop you".
+      { selector: "edge[kind = 'must_consult']", style: {
+        "line-color": "#3fa35b", "target-arrow-color": "#3fa35b", "line-style": "dashed",
+        "target-arrow-shape": "triangle", "arrow-scale": 0.8, "width": 1.8, "opacity": 0.85,
+        "curve-style": "bezier", "z-index": 58 } },
+      { selector: "edge[kind = 'must_consult'].thread-veto", style: {
+        "line-color": "#3fa35b", "target-arrow-color": "#3fa35b", "width": 3, "opacity": 1, "z-index": 99 } },
       { selector: "edge.veto-hide", style: { "display": "none" } },
       { selector: "edge.struct-hide", style: { "display": "none" } },
       { selector: "edge.struct-quiet", style: { "opacity": 0.12 } },
@@ -362,7 +371,8 @@ function unhover() {
 // STRUCTURAL edges only. A blocking link is not a line of accountability — walking one
 // would drag an unrelated department's whole subtree into the golden thread (select Ofwat,
 // and the CMA's entire estate lights up because the CMA can veto it).
-const STRUCTURAL = "edge[kind != 'can_veto']";
+const STRUCTURAL = "edge[kind != 'can_veto'][kind != 'must_consult']";
+const OPERATIVE_EDGES = "edge[kind = 'can_veto'], edge[kind = 'must_consult']";
 
 function traverse(node, dir) {
   let acc = node;
@@ -406,7 +416,7 @@ function highlightThread(node) {
   // glance, which lines are accountability and which are "this can stop you".
   // ...but only the ones currently on show, so the Info tab doesn't label bodies whose
   // blocking links are hidden.
-  const vetoEdges = node.connectedEdges("edge[kind = 'can_veto']").not(".veto-hide");
+  const vetoEdges = node.connectedEdges(OPERATIVE_EDGES).not(".veto-hide");
   tree = tree.union(vetoEdges).union(vetoEdges.connectedNodes());
   cy.elements().addClass("faded")
     .removeClass("thread-lbl thread-edge thread-assoc thread-veto hover-hl");
@@ -419,13 +429,13 @@ function highlightThread(node) {
     // Secretary of State is a direct link; the department's OTHER ministers are merely
     // associated (same department, different brief), so draw those dashed (as MoG does).
     tree.edges().forEach((e) => {
-      if (e.data("kind") === "can_veto") return;   // keeps its blocker colour
+      if (e.data("kind") === "can_veto" || e.data("kind") === "must_consult") return;  // keep own colour
       const assoc = (e.data("kind") === "office_of" && ["junior_minister", "other"].includes(e.source().data("office_type")))
         || (e.data("kind") === "leads" && e.target().data("office_type") === "junior_minister");
       e.addClass(assoc ? "thread-assoc" : "thread-edge");
     });
   } else {
-    tree.edges().not("edge[kind = 'can_veto']").addClass("thread-edge");
+    tree.edges().not(OPERATIVE_EDGES).addClass("thread-edge");
   }
   vetoEdges.addClass("thread-veto");
 }
@@ -786,6 +796,20 @@ function operativeCard(r) {
       extra += `<p class="override"><strong>Way around it:</strong> ${esc(r.override_mechanism)}</p>`;
     }
   }
+  if (r.kind === "duty") {
+    // The counterparty, mirroring the veto's "Blocks:" line. Most duties run to consumers or
+    // a regulated company rather than to another part of the state; where they run to a state
+    // actor it is a relationship the graph can traverse, and that is what answers "who must
+    // legally be consulted before X?".
+    if (r.owed_to_body_id || r.owed_to_office_id) {
+      const verb = r.type === "consultation" ? "Must consult" : "Owed to";
+      extra += `<p class="blocks"><strong>${verb}:</strong> ${gotoBtn(r.owed_to_office_id || r.owed_to_body_id)}</p>`;
+    } else if (r.beneficiary_or_object) {
+      extra += `<p class="blocks"><strong>Owed to:</strong> <span class="muted">${esc(r.beneficiary_or_object)}</span>
+        <span class="muted">— not a state body, so no link on the map.</span></p>`;
+    }
+    if (r.trigger) extra += `<p class="blocks"><strong>When:</strong> ${esc(r.trigger)}</p>`;
+  }
   if (r.kind === "power" && (r.constraints || []).length) {
     extra += `<p class="constraints"><strong>Limits:</strong></p><ul class="constraints-list">` +
       r.constraints.map((c) => `<li>${esc(c)}</li>`).join("") + `</ul>`;
@@ -932,6 +956,7 @@ function buildLegend() {
       return `<div class="row" data-blocker="${k}"><span class="swatch" style="background:none;border-top:3px solid ${color};height:0;border-radius:0"></span>${esc(label)}</div>`;
     }).join("") +
     `<div class="row nohover"><span class="swatch" style="background:none;border-top:3px solid #6b7280;height:0;border-radius:0"></span>solid = hard stop (no lawful route past it)</div>` +
+    `<div class="row nohover"><span class="swatch" style="background:none;border-top:2px dashed #3fa35b;height:0;border-radius:0"></span>green = must consult (a duty owed, not a block)</div>` +
     `<div class="row nohover"><span class="swatch" style="background:none;border-top:2px dashed #6b7280;height:0;border-radius:0"></span>dashed = a cited appeal or override exists</div>` +
     `<h3>Links</h3>` +
     `<div class="row nohover"><span class="swatch" style="background:none;border-top:2px solid #d3d6d8;height:0;border-radius:0"></span>sponsors</div>` +
@@ -1122,7 +1147,7 @@ function applyMapMode() {
     // sponsors whom, who answers to which minister. On the Powers tab you get obstruction.
     // Showing both at once for the selected node was the muddle: it looked like the blocking
     // layer never turned off.
-    cy.edges("[kind = 'can_veto']").toggleClass("veto-hide", !(always || onPowers));
+    cy.edges(OPERATIVE_EDGES).toggleClass("veto-hide", !(always || onPowers));
     cy.edges(STRUCTURAL).toggleClass("struct-hide", !structuralOn)
       .toggleClass("struct-quiet", structuralOn && onPowers);
   });

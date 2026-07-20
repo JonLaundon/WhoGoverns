@@ -198,7 +198,18 @@ def summarise_operative(rec, kind, ctx):
         out.update({"legal_effect": rec.get("legal_effect"), "basis": rec.get("power_basis"),
                     "constraints": rec.get("constraints") or []})
     elif kind == "duty":
-        out.update({"mandatory": rec.get("mandatory")})
+        out.update({
+            "mandatory": rec.get("mandatory"),
+            "owed_to_body_id": rec.get("owed_to_body_id"),
+            "owed_to_office_id": rec.get("owed_to_office_id"),
+            "beneficiary_or_object": rec.get("beneficiary_or_object"),
+            "trigger": rec.get("trigger"),
+            # As with vetoes: most duties run to consumers, the public or a private company.
+            # Those draw no edge, and the card says so rather than the register implying the
+            # drawable duties are the whole field.
+            "owed_to_party_outside_state": not (rec.get("owed_to_body_id")
+                                                or rec.get("owed_to_office_id")),
+        })
     elif kind == "veto":
         out.update({
             "strength": rec.get("strength"),
@@ -266,6 +277,28 @@ def attach_operative(graph, powers, duties, vetoes, provisions, instruments, bod
         kinds = sorted({v["blocker_kind"] for v in op["vetoes"] if v.get("blocker_kind")})
         if kinds:
             op["blocker_kinds"] = kinds
+
+    # MUST_CONSULT edges: a duty owed to another state actor is a relationship, and exactly
+    # as traversable as a veto. Without these, "which bodies must legally be consulted before
+    # X?" (U13) can only be answered by reading prose. Emitted for any duty naming a modelled
+    # counterparty — consultation duties are the common case, but a reporting or co-operation
+    # duty owed to a named body is the same shape.
+    for dty in duties:
+        target = (dty.get("owed_to_office_id") if dty.get("owed_to_holder_type") == "office"
+                  and dty.get("owed_to_office_id") in node_by_id else dty.get("owed_to_body_id"))
+        source = holder_node(dty)
+        if not target or target not in node_by_id or source not in node_by_id:
+            continue
+        graph["edges"].append({"data": {
+            "id": "mustconsult-" + dty["duty_id"],
+            "source": source,
+            "target": target,
+            "kind": "must_consult",
+            "duty_id": dty["duty_id"],
+            "duty_type": dty.get("duty_type"),
+            "label_text": dty.get("duty_label"),
+            "source_id": dty.get("source_id"),
+        }})
 
     # CAN_VETO edges: the blocking relation as a first-class traversable edge. These run
     # SIDEWAYS across the sponsor hierarchy (HM Treasury -> Defra), which is exactly why the
@@ -428,7 +461,8 @@ def build_sqlite_operative(cur, powers, duties, vetoes, instruments, provisions)
             url TEXT, legal_status TEXT, verification_status TEXT, confidence REAL,
             record_status TEXT);
         CREATE TABLE duties (duty_id TEXT PRIMARY KEY, duty_label TEXT, duty_type TEXT,
-            modality TEXT, holder_type TEXT, body_id TEXT, office_id TEXT, summary TEXT,
+            modality TEXT, holder_type TEXT, body_id TEXT, office_id TEXT,
+            owed_to_body_id TEXT, owed_to_office_id TEXT, beneficiary_or_object TEXT, summary TEXT,
             source_id TEXT, provision_key TEXT, provision TEXT, url TEXT, legal_status TEXT,
             verification_status TEXT, confidence REAL, record_status TEXT);
         CREATE TABLE vetoes (veto_id TEXT PRIMARY KEY, veto_label TEXT, veto_type TEXT,
@@ -448,6 +482,7 @@ def build_sqlite_operative(cur, powers, duties, vetoes, instruments, provisions)
         CREATE INDEX idx_vetoes_blocks_office ON vetoes(blocks_office_id);
         CREATE INDEX idx_vetoes_blocks_power ON vetoes(blocks_power_id);
         CREATE INDEX idx_powers_body ON powers(body_id);
+        CREATE INDEX idx_duties_owed_to ON duties(owed_to_body_id);
     """)
     for p in powers:
         c = p.get("citation") or {}
@@ -460,9 +495,11 @@ def build_sqlite_operative(cur, powers, duties, vetoes, instruments, provisions)
             (p.get("extraction") or {}).get("confidence"), p.get("record_status")))
     for d in duties:
         c = d.get("citation") or {}
-        cur.execute("INSERT INTO duties VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
+        cur.execute("INSERT INTO duties VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", (
             d["duty_id"], d.get("duty_label"), d.get("duty_type"), d.get("modality"),
-            d.get("holder_type"), d.get("body_id"), d.get("office_id"), d.get("summary"),
+            d.get("holder_type"), d.get("body_id"), d.get("office_id"),
+            d.get("owed_to_body_id"), d.get("owed_to_office_id"),
+            d.get("beneficiary_or_object"), d.get("summary"),
             d.get("source_id"), d.get("provision_key"), c.get("provision"), c.get("url"),
             d.get("legal_status"), (d.get("verification") or {}).get("verification_status"),
             (d.get("extraction") or {}).get("confidence"), d.get("record_status")))

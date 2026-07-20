@@ -154,3 +154,34 @@ def test_card_flags_a_veto_the_map_cannot_draw():
     card = {n["data"]["id"]: n["data"] for n in g["nodes"]}["o-sos"]["operative"]["vetoes"][0]
     assert card["blocks_party_outside_state"] is True
     assert card["decision_affected"]          # the card still answers "can I do this?"
+
+
+# --- duties: the counterparty axis (U13) -------------------------------------------------
+
+DUTY = {"duty_id": "d-1", "duty_type": "consultation", "modality": "duty", "mandatory": True,
+        "holder_type": "body", "body_id": "b-reg", "duty_label": "Consult before deciding",
+        "owed_to_holder_type": "body", "owed_to_body_id": "b-sos", "provision_key": "pk-1",
+        "summary": "Must consult before deciding."}
+
+
+def test_duty_owed_to_a_state_actor_draws_a_must_consult_edge():
+    """A consultation duty is a relationship, exactly as traversable as a veto. Without the
+    edge, "which bodies must legally be consulted before X?" (U13) needs prose-reading."""
+    g = _graph()
+    compile_mod.attach_operative(g, [], [DUTY], [], PROVISIONS, INSTRUMENTS, BODIES)
+    edges = [e["data"] for e in g["edges"] if e["data"]["kind"] == "must_consult"]
+    assert len(edges) == 1
+    assert edges[0]["source"] == "b-reg" and edges[0]["target"] == "b-sos"
+
+
+def test_duty_owed_to_consumers_draws_no_edge_but_stays_on_the_card():
+    """Most duties run to consumers or a regulated company. Same rule as vetoes: no edge,
+    but the card must still carry it."""
+    g = _graph()
+    d = dict(DUTY, duty_id="d-2", owed_to_body_id=None, owed_to_holder_type=None,
+             beneficiary_or_object="Consumers in every area.")
+    compile_mod.attach_operative(g, [], [d], [], PROVISIONS, INSTRUMENTS, BODIES)
+    assert [e for e in g["edges"] if e["data"]["kind"] == "must_consult"] == []
+    card = {n["data"]["id"]: n["data"] for n in g["nodes"]}["b-reg"]["operative"]["duties"][0]
+    assert card["owed_to_party_outside_state"] is True
+    assert card["beneficiary_or_object"] == "Consumers in every area."
