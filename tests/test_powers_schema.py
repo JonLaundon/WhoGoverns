@@ -24,6 +24,7 @@ POWER = {
     "power_id": "power-wsra-water-industry-act-1991-s13-001",
     "holder_type": "body", "body_id": "uk-state-body-water-services-regulation-authority",
     "power_label": "Power to modify licence conditions", "power_type": "rulemaking",
+    "power_basis": "statutory",
     "modality": "power", "legal_effect": "may", "summary": "Ofwat may modify conditions of a water company's licence.",
     "source_id": "source-act-water-industry-act-1991", "provision_key": "water-industry-act-1991-s13",
     "citation": CITATION, "record_status": "extracted",
@@ -67,3 +68,11 @@ def test_derived_from_must_reference_a_power_id():
 
 def test_unknown_field_rejected():
     assert not _ok("power.schema.json", {**POWER, "made_up_field": True})
+
+
+def test_power_basis_is_required_and_constrained():
+    # decision #21: legal basis is never silently assumed — the field is mandatory,
+    # and only the four recognised bases are allowed (Spiral 2 populates 'statutory').
+    assert not _ok("power.schema.json", {k: v for k, v in POWER.items() if k != "power_basis"})
+    assert not _ok("power.schema.json", {**POWER, "power_basis": "made_up"})
+    assert _ok("power.schema.json", {**POWER, "power_basis": "prerogative"})

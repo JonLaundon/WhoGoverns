@@ -13,3 +13,8 @@ compiled/*.sqlite
 
 # Internal codebase-review working note — not for the public repo.
 Review of Codebase.txt
+
+# Third-party reference reports (copyright; discovery/comparison material only,
+# never a data source — see decision #24). Not redistributed via the public repo.
+Over-ruled-why-Britain-has-too-many-regulators-and-what-to-do-about-it.pdf
+*.pdf
