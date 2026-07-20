@@ -1,8 +1,8 @@
 {
   "annex_a_version": "0.4",
-  "generated": "2026-07-14T21:54:55",
+  "generated": "2026-07-20T22:17:17",
   "graph": {
-    "edges": 883,
+    "edges": 888,
     "nodes": 820
   },
   "notes": "Compiled by pipeline/compile.py from data/. graph.json is the map contract; state_machine.sqlite is the query mirror (gitignored, regenerable).",
@@ -10,11 +10,16 @@
   "record_counts": {
     "bodies": 685,
     "budget_records": 1433,
+    "duties": 6,
+    "instruments": 6,
     "offices": 159,
     "person_roles": 159,
+    "powers": 20,
+    "provisions": 36,
     "relationships": 639,
-    "sources": 7,
-    "staffing_records": 3884
+    "sources": 15,
+    "staffing_records": 3884,
+    "vetoes": 8
   },
   "spiral": 1,
   "working_name": "The State Machine"

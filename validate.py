@@ -224,6 +224,17 @@ def main():
         integrity += 1
         print("FAIL " + msg)
 
+    # A veto with no blocked party draws no CAN_VETO edge, so it is invisible to any
+    # "who can block this?" traversal. That is sometimes CORRECT — plenty of real vetoes
+    # block a private person or an unnamed class, not another modelled body — so this is a
+    # warning, not a failure. It exists so the gap is a conscious choice, not an oversight.
+    for rec in store.load("vetoes"):
+        if not rec.get("blocks_body_id") and not rec.get("blocks_office_id"):
+            warnings += 1
+            print(f"WARN vetoes[{rec['veto_id']}]: no blocks_body_id/blocks_office_id — no "
+                  f"CAN_VETO edge. Confirm the blocked party is outside the modelled state "
+                  f"(decision_affected: {(rec.get('decision_affected') or '')[:60]}...)")
+
     # provision_key duplicate check on canonical Power/Duty/Veto records (none in Spiral 1)
     seen = {}
     for t in ("powers", "duties", "vetoes"):

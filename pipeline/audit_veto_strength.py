@@ -133,8 +133,26 @@ BLIND_EVAL = ("Re-graded 2026-07-20 by an independent agent blind to the existin
               "(schema-blind eval, Annex A10); agreed 8/8 with the post-audit gradings.")
 
 
+# Surfaced when compile.py first tried to draw the CAN_VETO edges (2026-07-20): five of the
+# eight vetoes had no `blocks_body_id`, so no edge could be drawn. Two of those are genuine
+# omissions — their own `decision_affected` names Ofwat, and the sibling s.24 record already
+# points at Ofwat, so the same relation was simply recorded inconsistently. The other three
+# are CORRECT as null: they block a private abstractor, a private owner/occupier, and an
+# unnamed class of public bodies respectively. A veto over someone outside the modelled state
+# has no edge to draw, which is a real limit of a state-only graph rather than a data defect.
+OFWAT = "uk-state-body-the-water-services-regulation-authority"
+BLOCKS_FIX = {
+    "veto-sos-defra-wia1991-s6-1-b": OFWAT,
+    "veto-sos-defra-wia1991-s7-2-b": OFWAT,
+}
+
+
 def main():
     vetoes = store.load("vetoes")
+    for rec in vetoes:
+        if rec["veto_id"] in BLOCKS_FIX and not rec.get("blocks_body_id"):
+            rec["blocks_body_id"] = BLOCKS_FIX[rec["veto_id"]]
+            rec["blocks_holder_type"] = "body"
     changed, rows = 0, []
     for rec in vetoes:
         vid = rec["veto_id"]

@@ -239,6 +239,8 @@
     "veto_type": "consent_required"
   },
   {
+    "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+    "blocks_holder_type": "body",
     "blocks_provision_key": null,
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {
@@ -277,6 +279,8 @@
     "veto_type": "consent_required"
   },
   {
+    "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+    "blocks_holder_type": "body",
     "blocks_provision_key": null,
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {

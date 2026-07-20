@@ -2,11 +2,16 @@
   "counts": {
     "bodies": 685,
     "budget_records": 1433,
+    "duties": 6,
+    "instruments": 6,
     "offices": 159,
     "person_roles": 159,
+    "powers": 20,
+    "provisions": 36,
     "relationships": 639,
-    "sources": 7,
-    "staffing_records": 3884
+    "sources": 15,
+    "staffing_records": 3884,
+    "vetoes": 8
   },
   "edges": [
     {
@@ -7820,9 +7825,74 @@
         "source": "office-prime-minister",
         "target": "office-hm-advocate-general-for-scotland"
       }
+    },
+    {
+      "data": {
+        "blocker_kind": "regulatory",
+        "decision_affected": "Whether Ofwat's proposed modifications to a water company's licence/appointment conditions (including price controls) take effect.",
+        "id": "canveto-veto-cma-wia1991-s16a-veto",
+        "kind": "can_veto",
+        "source": "uk-state-body-competition-and-markets-authority",
+        "source_id": "source-act-water-industry-act-1991",
+        "strength": "hard_stop",
+        "target": "uk-state-body-the-water-services-regulation-authority",
+        "veto_id": "veto-cma-wia1991-s16a-veto"
+      }
+    },
+    {
+      "data": {
+        "blocker_kind": "fiscal",
+        "decision_affected": "Whether the Secretary of State may fund, indemnify or guarantee a water company in special administration — the fiscal viability of the SAR.",
+        "id": "canveto-veto-hm-treasury-wia1991-s153",
+        "kind": "can_veto",
+        "source": "uk-state-body-hm-treasury",
+        "source_id": "source-act-water-industry-act-1991",
+        "strength": "hard_stop",
+        "target": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+        "veto_id": "veto-hm-treasury-wia1991-s153"
+      }
+    },
+    {
+      "data": {
+        "blocker_kind": "ministerial",
+        "decision_affected": "Ofwat's petition to the High Court for a special administration order against a water/sewerage company.",
+        "id": "canveto-veto-sos-defra-wia1991-s24",
+        "kind": "can_veto",
+        "source": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+        "source_id": "source-act-water-industry-act-1991",
+        "strength": "hard_stop",
+        "target": "uk-state-body-the-water-services-regulation-authority",
+        "veto_id": "veto-sos-defra-wia1991-s24"
+      }
+    },
+    {
+      "data": {
+        "blocker_kind": "ministerial",
+        "decision_affected": "Whether Ofwat may appoint a company as a water/sewerage undertaker.",
+        "id": "canveto-veto-sos-defra-wia1991-s6-1-b",
+        "kind": "can_veto",
+        "source": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+        "source_id": "source-act-water-industry-act-1991",
+        "strength": "hard_stop",
+        "target": "uk-state-body-the-water-services-regulation-authority",
+        "veto_id": "veto-sos-defra-wia1991-s6-1-b"
+      }
+    },
+    {
+      "data": {
+        "blocker_kind": "ministerial",
+        "decision_affected": "Whether Ofwat may terminate or vary an undertaker's appointment.",
+        "id": "canveto-veto-sos-defra-wia1991-s7-2-b",
+        "kind": "can_veto",
+        "source": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+        "source_id": "source-act-water-industry-act-1991",
+        "strength": "hard_stop",
+        "target": "uk-state-body-the-water-services-regulation-authority",
+        "veto_id": "veto-sos-defra-wia1991-s7-2-b"
+      }
     }
   ],
-  "generated": "2026-07-14T21:54:55",
+  "generated": "2026-07-20T22:17:17",
   "nodes": [
     {
       "data": {
@@ -10560,18 +10630,56 @@
     {
       "data": {
         "body_type": "other_body",
-        "functions": [],
+        "functions": [
+          "judicial"
+        ],
         "govuk_slug": "chancery-division-of-the-high-court",
         "id": "uk-state-body-chancery-division-of-the-high-court",
         "kind": "body",
         "label": "Chancery Division of the High Court",
         "needs_review": true,
+        "operative": {
+          "counts": {
+            "duties": 0,
+            "powers": 1,
+            "vetoes": 0
+          },
+          "duties": [],
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.24(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24"
+              },
+              "confidence": 0.85,
+              "constraints": [],
+              "holder_type": "body",
+              "id": "power-chancery-court-wia1991-s24-1-order",
+              "kind": "power",
+              "label": "Make a special administration order",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "JUDICIAL GAP CLOSED (retrodiction): the s.24 petition records name 'the High Court' as the decision-maker; this extracts that step. Holder = Chancery Division (company/insolvency work). Modelled as a power (adjudication on the grounds), NOT a veto — the Court defers to SoS/Ofwat on the public interest (Court of Appeal, Thames Water). power_type re-typed from \"other\" 2026-07-20 (vocab/power_type.json v0.3, sponsor decision).",
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s24-1-order",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "On a petition by the Secretary of State or Ofwat, if satisfied that one or more of the s.24(2) grounds is met (serious breach of a principal duty; inability to pay debts; etc.), the High Court may make a special administration order in relation to a water company (WIA 1991 s.24(1)). The Court is the adjudicator — it can refuse if the grounds are not met — but on the public-interest question it defers to the SoS and Ofwat as 'the guardians of the public interest'.",
+              "type": "adjudication",
+              "verification_status": "unverified"
+            }
+          ],
+          "vetoes": []
+        },
         "other_names": [],
         "parent_body_id": "uk-state-body-hm-courts-and-tribunals-service",
         "parent_body_ids": [
           "uk-state-body-hm-courts-and-tribunals-service"
         ],
         "source_ids": [
+          "source-act-senior-courts-act-1981",
           "source-official-dataset-govuk-organisations-api"
         ],
         "sponsor_department_id": null,
@@ -12104,6 +12212,76 @@
         "kind": "body",
         "label": "Competition and Markets Authority",
         "needs_review": false,
+        "operative": {
+          "blocker_kinds": [
+            "regulatory"
+          ],
+          "counts": {
+            "duties": 0,
+            "powers": 1,
+            "vetoes": 1
+          },
+          "duties": [],
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.16A(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/16A"
+              },
+              "confidence": 0.9,
+              "constraints": [],
+              "holder_type": "body",
+              "id": "power-cma-wia1991-s16a-veto",
+              "kind": "power",
+              "label": "Veto Ofwat's licence modifications following a CMA report",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "CROSS-BODY VETO: the CMA can override Ofwat's licence-modification (including price-control) decisions — the appellate check above Ofwat, reached via Ofwat's s.14 reference power. The statute names it a 'power of veto' (s.16A).",
+              "office_id": null,
+              "outstanding_effects": true,
+              "provision_key": "water-industry-act-1991-s16a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Following its report on a modification reference, the CMA may (within four weeks) direct Ofwat not to make some or all of the proposed licence/appointment modifications, and Ofwat must comply (WIA 1991 s.16A(1)). The direction may only cover modifications that are not requisite to remedy the adverse effects identified in the report (s.16A(3)). The statute's own term is a 'power of veto'.",
+              "type": "direction",
+              "verification_status": "unverified"
+            }
+          ],
+          "vetoes": [
+            {
+              "blocker_kind": "regulatory",
+              "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+              "blocks_office_id": null,
+              "citation": {
+                "provision": "s.16A(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/16A"
+              },
+              "confidence": 0.9,
+              "decision_affected": "Whether Ofwat's proposed modifications to a water company's licence/appointment conditions (including price controls) take effect.",
+              "derived_from_record_id": "power-cma-wia1991-s16a-veto",
+              "holder_type": "body",
+              "id": "veto-cma-wia1991-s16a-veto",
+              "kind": "veto",
+              "label": "CMA veto of Ofwat's proposed licence modifications",
+              "legal_status": "current",
+              "notes": "Currency check 2026-07-20: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route. Newer licence regimes run differently - the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL (Ofwat may modify, subject to the company's right of appeal) rather than a prior CMA direction. So this record must not be read as the CMA generally gating Ofwat. Provision flagged outstanding_effects=true.",
+              "office_id": null,
+              "outstanding_effects": true,
+              "overridable": "no",
+              "override_mechanism": null,
+              "provision_key": "water-industry-act-1991-s16a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "strength": "hard_stop",
+              "summary": "Following its report on a modification reference, the CMA may (within four weeks) direct Ofwat not to make some or all of the proposed licence/appointment modifications, and Ofwat must comply (WIA 1991 s.16A(1)). The direction may only cover modifications that are not requisite to remedy the adverse effects identified in the report (s.16A(3)). The statute's own term is a 'power of veto'.",
+              "type": "other",
+              "verification_status": "machine_verified"
+            }
+          ]
+        },
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -12366,6 +12544,39 @@
         "kind": "body",
         "label": "Consumer Council for Water",
         "needs_review": false,
+        "operative": {
+          "counts": {
+            "duties": 1,
+            "powers": 0,
+            "vetoes": 0
+          },
+          "duties": [
+            {
+              "citation": {
+                "provision": "s.27C(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/27C"
+              },
+              "confidence": 0.8,
+              "holder_type": "body",
+              "id": "duty-ccw-wia1991-s27c-consumer-interests",
+              "kind": "duty",
+              "label": "Represent consumer interests, with regard to vulnerable groups",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "INFLUENCE BOUNDARY: CCW's external leverage is INFLUENCE — it investigates complaints and makes representations to Ofwat and undertakers, but holds NO veto and no power to compel. Per the strict test its representation/consultation rights are influence, not recorded as vetoes. CCW is the consumer-voice node, deliberately veto-less — an honest outcome, not a gap.",
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s27c",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "In considering the interests of consumers, the Consumer Council for Water shall have regard in particular to the interests of the disabled or chronically sick, people of pensionable age, those on low incomes, rural residents, and household customers (WIA 1991 s.27C). CCW's role is to represent and safeguard water consumers' interests.",
+              "type": "other",
+              "verification_status": "unverified"
+            }
+          ],
+          "powers": [],
+          "vetoes": []
+        },
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -14675,6 +14886,281 @@
         "kind": "body",
         "label": "Department for Environment, Food & Rural Affairs",
         "needs_review": false,
+        "office_operative": {
+          "duties": [
+            {
+              "citation": {
+                "provision": "s.7(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7"
+              },
+              "confidence": 0.9,
+              "holder_type": "office",
+              "id": "duty-sos-defra-wia1991-s7-1",
+              "kind": "duty",
+              "label": "Secure continuity of water and sewerage undertakers for every area",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": null,
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-industry-act-1991-s7-1",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "It is the duty of the Secretary of State to secure that appointments are made so that for every area of England and Wales there is at all times both a water undertaker and a sewerage undertaker (s.7(1)). The continuity-of-supply backstop that constrains how an undertaker can be removed or replaced.",
+              "type": "other",
+              "verification_status": "unverified"
+            }
+          ],
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.153(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/153"
+              },
+              "confidence": 0.9,
+              "constraints": [],
+              "holder_type": "office",
+              "id": "power-sos-defra-wia1991-s153-funding",
+              "kind": "power",
+              "label": "Fund / indemnify / guarantee a company in special administration (Treasury consent)",
+              "legal_effect": "conditional",
+              "legal_status": "current",
+              "notes": "FISCAL GAP CLOSED (retrodiction 2026-07-20): the Treasury-funding blocker the model could NOT self-surface — the s.24 records never point to it. Named by an external SAR study (Octus briefing; discovery only, re-sourced here to legislation.gov.uk per #24). Gated by Treasury consent, so a SAR's fiscal viability sits with HM Treasury.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-industry-act-1991-s153",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Where a special administration order is in force, the Secretary of State may, WITH THE CONSENT OF THE TREASURY, make grants or loans to the company, offer indemnities to the special administrator and others, and guarantee the company's borrowing (WIA 1991 s.153(1)-(2)). The quasi-nationalisation funding lever — the fiscal engine of a water SAR.",
+              "type": "funding",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.24(1)(a)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Grounds are limited to those in s.24(2).",
+                "The High Court, not the SoS, makes the order."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-wia1991-s24-1-a",
+              "kind": "power",
+              "label": "Petition for a special administration order",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "power_type re-typed from \"other\" 2026-07-20 (vocab/power_type.json v0.3, sponsor decision).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-industry-act-1991-s24-1-a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "The Secretary of State may present a petition to the High Court for a special administration order against a water/sewerage company on the grounds in s.24(2) (e.g. serious breach of a principal duty, or inability to pay debts). The direct public-control lever short of statutory renationalisation.",
+              "type": "application_to_court",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.6(1)(a)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/6"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Appointee must be a limited company (s.6(5)) and not a water/sewerage licensee (s.6(5A))."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-wia1991-s6-1-a",
+              "kind": "power",
+              "label": "Appoint a company as water or sewerage undertaker",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-industry-act-1991-s6-1-a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "The Secretary of State may appoint a company to be the water undertaker or sewerage undertaker for any area of England and Wales (s.6(1)(a)), by written instrument served on the company (s.6(3)).",
+              "type": "appointment",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.7(2)(a)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "Termination takes effect only from the coming into force of a replacement appointment (s.7(3)).",
+                "A replacement generally requires the incumbent company's consent (s.7(4)(a)) unless the s.7(4)(b)-(c)/(5) conditions apply — a PRIVATE-party consent, not a state veto."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-wia1991-s7-2-a",
+              "kind": "power",
+              "label": "Terminate or vary an undertaker's appointment",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-industry-act-1991-s7-2-a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "The Secretary of State may, by notice to a company holding an appointment, terminate the appointment or vary the area to which it relates (s.7(2)(a)). The direct lever for removing/replacing a private undertaker — central to any renationalisation route short of special administration (s.24).",
+              "type": "other",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.70",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/70"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "Proceedings for the s.70 offence may be instituted only by the Secretary of State or the DPP (s.70(3)).",
+                "Quality standards themselves are set by regulations under s.67."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-wia1991-s70-dwi-quality-enforcement",
+              "kind": "power",
+              "label": "Enforce drinking water quality (via the Drinking Water Inspectorate)",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "DWI MODELLING (sponsor, 2026-07-20): the Drinking Water Inspectorate has no separate legal personality — s.86 inspectors act 'on [the Secretary of State's] behalf'. Its powers are held by the Defra office (SoS), tagged to the DWI / Chief Inspector function (a micro-department partition within Defra). The Chief Inspector is itself a statutory office (s.86(1A)) and could be promoted to an Office node if finer fidelity is wanted — the reference is already here.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-industry-act-1991-s70",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Supplying water unfit for human consumption is an offence by the water undertaker (WIA 1991 s.70). The Secretary of State enforces drinking-water quality and sufficiency standards (ss.67-70, 77-82); proceedings for the s.70 offence may be instituted only by the Secretary of State or the DPP (s.70(3)). These functions are exercised on the Secretary of State's behalf by appointed inspectors — the Drinking Water Inspectorate, led by the Chief Inspector of Drinking Water (s.86) — a unit within Defra, not a separate body.",
+              "type": "enforcement",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.73(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/73"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "Made on the application of the Environment Agency or a water undertaker (Chapter III).",
+                "Overrides normal abstraction restrictions (s.24(1)) for its duration."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-wra1991-s73-drought-order",
+              "kind": "power",
+              "label": "Make an ordinary or emergency drought order",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "BREADCRUMB: Chapter III drought orders override the s.24 abstraction restriction — the override_mechanism cited on the EA abstraction veto (veto-ea-wra1991-s38-abstraction-licence). Cross-actor: EA/undertaker applies, SoS makes the order.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-resources-act-1991-s73",
+              "since": 1991,
+              "source_id": "source-act-water-resources-act-1991",
+              "summary": "If satisfied that an exceptional shortage of rain has caused or threatens a serious deficiency of water supplies (or a serious threat to flora/fauna dependent on inland waters), the Secretary of State may make an ordinary drought order — or, where the deficiency is likely to impair economic or social well-being, an emergency drought order (s.73(1)-(2)) — authorising measures, including relaxing abstraction restrictions, to meet the deficiency.",
+              "type": "other",
+              "verification_status": "unverified"
+            }
+          ],
+          "vetoes": [
+            {
+              "blocker_kind": "ministerial",
+              "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+              "blocks_office_id": null,
+              "citation": {
+                "provision": "s.24(1)(b)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24"
+              },
+              "confidence": 0.9,
+              "decision_affected": "Ofwat's petition to the High Court for a special administration order against a water/sewerage company.",
+              "derived_from_record_id": "power-ofwat-wia1991-s24-1-b",
+              "holder_type": "office",
+              "id": "veto-sos-defra-wia1991-s24",
+              "kind": "veto",
+              "label": "SoS consent required for an Ofwat special-administration petition",
+              "legal_status": "current",
+              "notes": "The 'who can block?' showcase: the SoS gates the regulator's own escalation route.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "overridable": "no",
+              "override_mechanism": null,
+              "provision_key": "water-industry-act-1991-s24-1-b",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "strength": "hard_stop",
+              "summary": "Ofwat cannot petition for a special administration order without the consent of the Secretary of State — a hard gate over the regulator's use of the special-administration lever.",
+              "type": "consent_required",
+              "verification_status": "machine_verified"
+            },
+            {
+              "blocker_kind": "ministerial",
+              "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+              "blocks_office_id": null,
+              "citation": {
+                "provision": "s.6(1)(b)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/6"
+              },
+              "confidence": 0.9,
+              "decision_affected": "Whether Ofwat may appoint a company as a water/sewerage undertaker.",
+              "derived_from_record_id": "power-ofwat-wia1991-s6-1-b",
+              "holder_type": "office",
+              "id": "veto-sos-defra-wia1991-s6-1-b",
+              "kind": "veto",
+              "label": "Consent/authorisation gate over Ofwat's appointment of undertakers",
+              "legal_status": "current",
+              "notes": "overridable corrected yes -> no (audit 2026-07-20). A general authorisation under s.6(1)(b) is given BY the Secretary of State, so it is the same holder consenting in class, not a route around the consent (same-holder rule, vocab/veto_strength.json v0.2). Strength hard_stop confirmed.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "overridable": "no",
+              "override_mechanism": null,
+              "provision_key": "water-industry-act-1991-s6-1-b",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "strength": "hard_stop",
+              "summary": "Ofwat may appoint a company to be the water or sewerage undertaker for an area, but only with the consent of, or in accordance with a general authorisation given by, the Secretary of State (s.6(1)(b)).",
+              "type": "consent_required",
+              "verification_status": "machine_verified"
+            },
+            {
+              "blocker_kind": "ministerial",
+              "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+              "blocks_office_id": null,
+              "citation": {
+                "provision": "s.7(2)(b)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7"
+              },
+              "confidence": 0.85,
+              "decision_affected": "Whether Ofwat may terminate or vary an undertaker's appointment.",
+              "derived_from_record_id": "power-ofwat-wia1991-s7-2-b",
+              "holder_type": "office",
+              "id": "veto-sos-defra-wia1991-s7-2-b",
+              "kind": "veto",
+              "label": "Consent/authorisation gate over Ofwat's termination/variation of appointments",
+              "legal_status": "current",
+              "notes": "overridable corrected yes -> no (audit 2026-07-20). A general authorisation under s.7(2)(b) is given BY the Secretary of State, so it is the same holder consenting in class, not a route around the consent (same-holder rule, vocab/veto_strength.json v0.2). Strength hard_stop confirmed.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "overridable": "no",
+              "override_mechanism": null,
+              "provision_key": "water-industry-act-1991-s7-2-b",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "strength": "hard_stop",
+              "summary": "Ofwat may, by notice, terminate an undertaker's appointment or vary its area, but only with the consent of, or under a general authorisation given by, the Secretary of State (s.7(2)(b)); subject to the same replacement/consent conditions as the SoS power.",
+              "type": "consent_required",
+              "verification_status": "machine_verified"
+            }
+          ]
+        },
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -17165,6 +17651,131 @@
         "kind": "body",
         "label": "Environment Agency",
         "needs_review": false,
+        "operative": {
+          "blocker_kinds": [
+            "regulatory"
+          ],
+          "counts": {
+            "duties": 0,
+            "powers": 3,
+            "vetoes": 1
+          },
+          "duties": [],
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.25A",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/25A"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "Threshold: the breach must be causing or likely to cause significant damage to the environment (s.25A(2))."
+              ],
+              "holder_type": "body",
+              "id": "power-ea-wra1991-s25a-enforcement",
+              "kind": "power",
+              "label": "Serve an environmental enforcement notice (abstraction/impounding)",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "CROSS-BODY OVERLAP with Ofwat's enforcement power (WIA 1991 s.18): both the EA and Ofwat can take enforcement action against the same water company on different statutory grounds (EA: environmental damage from abstraction; Ofwat: breach of appointment conditions/statutory requirements) — the overlapping-enforcement pattern the Over Ruled and Cunliffe reviews flag.",
+              "office_id": null,
+              "provision_key": "water-resources-act-1991-s25a",
+              "since": 1991,
+              "source_id": "source-act-water-resources-act-1991",
+              "summary": "Where it appears to the Environment Agency that a person is in breach of the abstraction/impounding restrictions (WRA 1991 ss.24-25) or a licence condition, and the breach is causing or likely to cause significant damage to the environment (s.25A(2)), the Agency may serve an enforcement notice requiring the person to cease the breach or comply, and to carry out remedial works (s.25A(3)).",
+              "type": "enforcement",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.38(2)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/38"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "No abstraction is lawful without a licence (s.24) — the licence requirement is the source of the gate.",
+                "In determining an application the Agency shall have regard to all relevant circumstances, other inland-waters bodies' duties, and written representations (s.38(3)).",
+                "Drought orders/permits under Chapter III can override the abstraction restriction (s.24(1))."
+              ],
+              "holder_type": "body",
+              "id": "power-ea-wra1991-s38-abstraction-licence",
+              "kind": "power",
+              "label": "Grant or refuse an abstraction licence",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "CROSS-BODY TENSION: this EA abstraction gate caps the water supply that Ofwat's resilience duty (WIA 1991 s.2(2A)(e)) presses undertakers to secure — the Ofwat/EA conflict Cunliffe documented as regulators 'working against each other'. Discharge/pollution consents largely moved to the Environmental Permitting Regs 2016 (later SI).",
+              "office_id": null,
+              "provision_key": "water-resources-act-1991-s38",
+              "since": 1991,
+              "source_id": "source-act-water-resources-act-1991",
+              "summary": "No person may abstract water from a source of supply except under a licence granted by the Environment Agency (WRA 1991 s.24). On an application the Agency may grant a licence on such terms as it considers appropriate, or — where it considers it necessary or expedient having regard to the Chapter — refuse to grant a licence (s.38(2)). The gate on all new or increased water abstraction, including by water undertakers.",
+              "type": "licence",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.79A(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/79A"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "A lighter-touch alternative to a s.73 drought order (Agency-issued, not SoS-made).",
+                "Relaxes the s.24 abstraction restriction for the emergency."
+              ],
+              "holder_type": "body",
+              "id": "power-ea-wra1991-s79a-drought-permit",
+              "kind": "power",
+              "label": "Issue a drought permit",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "Enabling emergency relief, NOT a gate — modelled as a power with no veto: refusal maintains the normal abstraction limit rather than blocking a distinct decision (veto-attribution discipline).",
+              "office_id": null,
+              "provision_key": "water-resources-act-1991-s79a",
+              "since": 1991,
+              "source_id": "source-act-water-resources-act-1991",
+              "summary": "If satisfied that an exceptional shortage of rain has caused or threatens a serious deficiency of supplies in an area, the Environment Agency may, on the application of a water undertaker supplying that area, issue a drought permit authorising the undertaker to take water from a source (relaxing normal abstraction limits for the emergency) (s.79A(1)-(2)).",
+              "type": "licence",
+              "verification_status": "unverified"
+            }
+          ],
+          "vetoes": [
+            {
+              "blocker_kind": "regulatory",
+              "blocks_body_id": null,
+              "blocks_office_id": null,
+              "citation": {
+                "provision": "s.38(2)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/38"
+              },
+              "confidence": 0.85,
+              "decision_affected": "Whether a person (including a water undertaker) may lawfully abstract water — the cap on new or increased supply.",
+              "derived_from_record_id": "power-ea-wra1991-s38-abstraction-licence",
+              "holder_type": "body",
+              "id": "veto-ea-wra1991-s38-abstraction-licence",
+              "kind": "veto",
+              "label": "Refusal of an abstraction licence (cap on supply)",
+              "legal_status": "current",
+              "notes": "Strength corrected hard_stop -> strong_delay (audit 2026-07-20). The prior override_mechanism cited a drought order under WRA 1991 Chapter III; that is a separate power on separate grounds, not an override of a licence refusal.",
+              "office_id": null,
+              "overridable": "yes",
+              "override_mechanism": "Appeal to the Secretary of State under Water Resources Act 1991 s.43(1): an applicant 'dissatisfied with the decision of the appropriate agency on the application' may by notice appeal.",
+              "provision_key": "water-resources-act-1991-s38",
+              "since": 1991,
+              "source_id": "source-act-water-resources-act-1991",
+              "strength": "strong_delay",
+              "summary": "No person may abstract water from a source of supply except under a licence granted by the Environment Agency (WRA 1991 s.24). On an application the Agency may grant a licence on such terms as it considers appropriate, or — where it considers it necessary or expedient having regard to the Chapter — refuse to grant a licence (s.38(2)). The gate on all new or increased water abstraction, including by water undertakers.",
+              "type": "licence_refusal",
+              "verification_status": "machine_verified"
+            }
+          ]
+        },
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -21337,6 +21948,49 @@
         "kind": "body",
         "label": "HM Treasury",
         "needs_review": false,
+        "operative": {
+          "blocker_kinds": [
+            "fiscal"
+          ],
+          "counts": {
+            "duties": 0,
+            "powers": 0,
+            "vetoes": 1
+          },
+          "duties": [],
+          "powers": [],
+          "vetoes": [
+            {
+              "blocker_kind": "fiscal",
+              "blocks_body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+              "blocks_office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "citation": {
+                "provision": "s.153(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/153"
+              },
+              "confidence": 0.9,
+              "decision_affected": "Whether the Secretary of State may fund, indemnify or guarantee a water company in special administration — the fiscal viability of the SAR.",
+              "derived_from_record_id": "power-sos-defra-wia1991-s153-funding",
+              "holder_type": "body",
+              "id": "veto-hm-treasury-wia1991-s153",
+              "kind": "veto",
+              "label": "HM Treasury consent to government funding of a water special administration",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": null,
+              "overridable": "no",
+              "override_mechanism": null,
+              "provision_key": "water-industry-act-1991-s153",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "strength": "hard_stop",
+              "summary": "Where a special administration order is in force, the Secretary of State may, WITH THE CONSENT OF THE TREASURY, make grants or loans to the company, offer indemnities to the special administrator and others, and guarantee the company's borrowing (WIA 1991 s.153(1)-(2)). The quasi-nationalisation funding lever — the fiscal engine of a water SAR.",
+              "type": "consent_required",
+              "verification_status": "machine_verified"
+            }
+          ]
+        },
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -26979,6 +27633,130 @@
         "kind": "body",
         "label": "Natural England",
         "needs_review": false,
+        "operative": {
+          "blocker_kinds": [
+            "regulatory"
+          ],
+          "counts": {
+            "duties": 0,
+            "powers": 2,
+            "vetoes": 2
+          },
+          "duties": [],
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.28E(3)(a)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1981/69/section/28E"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "Does not apply to a s.28G authority (e.g. a water undertaker) acting in its functions — they use the s.28H assent route (s.28E(2)).",
+                "Consent is one route; a management agreement (s.16 1949 Act / s.7 NERC Act) is an alternative (s.28E(3)(b))."
+              ],
+              "holder_type": "body",
+              "id": "power-natural-england-wca1981-s28e-consent",
+              "kind": "power",
+              "label": "Consent to (or withhold consent from) damaging operations on an SSSI",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": null,
+              "provision_key": "wildlife-and-countryside-act-1981-s28e",
+              "since": 1981,
+              "source_id": "source-act-wildlife-and-countryside-act-1981",
+              "summary": "An owner or occupier of SSSI land may not carry out a notified potentially-damaging operation unless Natural England has given written consent (WCA 1981 s.28E(1),(3)(a)), or the operation is under a management agreement/scheme. The general SSSI consent gate.",
+              "type": "consent",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.28H(3)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1981/69/section/28H"
+              },
+              "confidence": 0.85,
+              "constraints": [],
+              "holder_type": "body",
+              "id": "power-natural-england-wca1981-s28h-assent",
+              "kind": "power",
+              "label": "Assent to (or refuse) a public body's operations affecting an SSSI",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "CROSS-BODY / LEFT-FIELD BLOCKER: Natural England's SSSI assent gates the very water infrastructure (reservoirs, abstraction works) that Ofwat's resilience duty and the EA's abstraction regime bear on — a veto from an entirely different Act (WCA 1981), invisible to any water-Act-only scrub. For European sites the sharper gate is the assimilated Conservation of Habitats and Species Regs 2017.",
+              "office_id": null,
+              "provision_key": "wildlife-and-countryside-act-1981-s28h",
+              "since": 1981,
+              "source_id": "source-act-wildlife-and-countryside-act-1981",
+              "summary": "A 'section 28G authority' (a public body, including a water or sewerage undertaker) must give Natural England notice before carrying out operations likely to damage an SSSI, even off-site (WCA 1981 s.28H(1)-(2)). Natural England may refuse assent, or assent with or without conditions (s.28H(3)); silence for 28 days is treated as a refusal. The gate on undertaker infrastructure — reservoirs, abstraction works — affecting protected sites.",
+              "type": "approval",
+              "verification_status": "unverified"
+            }
+          ],
+          "vetoes": [
+            {
+              "blocker_kind": "regulatory",
+              "blocks_body_id": null,
+              "blocks_office_id": null,
+              "citation": {
+                "provision": "s.28E(3)(a)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1981/69/section/28E"
+              },
+              "confidence": 0.85,
+              "decision_affected": "Whether an owner/occupier may carry out a potentially-damaging operation on SSSI land.",
+              "derived_from_record_id": "power-natural-england-wca1981-s28e-consent",
+              "holder_type": "body",
+              "id": "veto-natural-england-wca1981-s28e-consent",
+              "kind": "veto",
+              "label": "Withholding of SSSI consent to an owner/occupier's operations",
+              "legal_status": "current",
+              "notes": "Strength corrected hard_stop -> strong_delay and overridable unknown -> yes (audit 2026-07-20), on the s.28F appeal route.",
+              "office_id": null,
+              "overridable": "yes",
+              "override_mechanism": "Appeal to the Secretary of State under Wildlife and Countryside Act 1981 s.28F(5): the Secretary of State may 'direct Natural England to give consent', or quash or vary its terms. If Natural England neither gives nor refuses consent within four months the applicant may treat it as refused and appeal. (The s.28E(3)(b)-(c) routes are Natural England's own instruments — same holder, so not overrides.)",
+              "provision_key": "wildlife-and-countryside-act-1981-s28e",
+              "since": 1981,
+              "source_id": "source-act-wildlife-and-countryside-act-1981",
+              "strength": "strong_delay",
+              "summary": "An owner or occupier of SSSI land may not carry out a notified potentially-damaging operation unless Natural England has given written consent (WCA 1981 s.28E(1),(3)(a)), or the operation is under a management agreement/scheme. The general SSSI consent gate.",
+              "type": "consent_required",
+              "verification_status": "machine_verified"
+            },
+            {
+              "blocker_kind": "regulatory",
+              "blocks_body_id": null,
+              "blocks_office_id": null,
+              "citation": {
+                "provision": "s.28H(3)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1981/69/section/28H"
+              },
+              "confidence": 0.85,
+              "decision_affected": "Whether a public body (e.g. a water undertaker) may carry out operations likely to damage an SSSI — the gate on reservoirs / abstraction works affecting protected sites.",
+              "derived_from_record_id": "power-natural-england-wca1981-s28h-assent",
+              "holder_type": "body",
+              "id": "veto-natural-england-wca1981-s28h-assent",
+              "kind": "veto",
+              "label": "Refusal of SSSI assent to a public body's operations",
+              "legal_status": "current",
+              "notes": "Strength hard_stop -> procedural_risk (audit 2026-07-20). Under s.28H(4)-(6) a public body may proceed 28 days after notice regardless of assent, subject to minimising damage and restoring the site. SPONSOR RULING 2026-07-20: RETAIN as a Veto record at procedural_risk rather than re-typing it as a Duty or withdrawing it. The independent blind re-grading reached procedural_risk on the same reasoning, while noting advisory_only would also be defensible if the grading keyed purely on the assent decision's effect rather than the mandatory duties surrounding it.",
+              "office_id": null,
+              "overridable": "yes",
+              "override_mechanism": "Wildlife and Countryside Act 1981 s.28H(4)-(5): the public body 'shall not carry out the operations unless the condition set out in subsection (5) is satisfied', which is satisfied by notifying the start date 'after the expiry of the period of 28 days'. Subsection (6) then requires only that damage be minimised and the site restored.",
+              "provision_key": "wildlife-and-countryside-act-1981-s28h",
+              "since": 1981,
+              "source_id": "source-act-wildlife-and-countryside-act-1981",
+              "strength": "procedural_risk",
+              "summary": "A 'section 28G authority' (a public body, including a water or sewerage undertaker) must give Natural England notice before carrying out operations likely to damage an SSSI, even off-site (WCA 1981 s.28H(1)-(2)). Natural England may refuse assent, or assent with or without conditions (s.28H(3)); silence for 28 days is treated as a refusal. The gate on undertaker infrastructure — reservoirs, abstraction works — affecting protected sites.",
+              "type": "approval_required",
+              "verification_status": "machine_verified"
+            }
+          ]
+        },
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -34188,6 +34966,286 @@
         "kind": "body",
         "label": "The Water Services Regulation Authority",
         "needs_review": false,
+        "operative": {
+          "counts": {
+            "duties": 4,
+            "powers": 7,
+            "vetoes": 0
+          },
+          "duties": [
+            {
+              "citation": {
+                "provision": "s.18(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/18"
+              },
+              "confidence": 0.9,
+              "holder_type": "body",
+              "id": "duty-ofwat-wia1991-s18",
+              "kind": "duty",
+              "label": "Make an enforcement order to secure compliance",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "s.18 also names the Secretary of State as an alternative enforcement authority — modelled on Ofwat.",
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s18",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Where satisfied that a company/licensee is contravening (or is likely to contravene) a condition or an enforceable requirement for which it is the enforcement authority, Ofwat must by a final enforcement order make such provision as is requisite to secure compliance (subject to ss.19-20).",
+              "type": "enforcement",
+              "verification_status": "unverified"
+            },
+            {
+              "citation": {
+                "provision": "s.2(2A)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/2"
+              },
+              "confidence": 0.9,
+              "holder_type": "body",
+              "id": "duty-ofwat-wia1991-s2",
+              "kind": "duty",
+              "label": "General duties in regulating the water industry",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "s.2 is long and multi-limbed; captured as one general-duties record (candidate for splitting per limb later). Co-held by the Secretary of State (s.2(1)); modelled here on the primary operative holder (Ofwat) per the calibration convention — full multi-holder modelling deferred (known issue). Limb (e) 'the resilience objective' and its s.2(2DA) definition were inserted by Water Act 2014 s.22 (instrument-act-water-act-2014 / provision water-act-2014-s22): amend-provenance, not a separate Water Act 2014 power.",
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s2",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "In exercising and performing its water-industry powers and duties, Ofwat must act in the manner it considers best calculated to further: (a) the consumer objective; (b) the proper carrying-out of water and sewerage undertakers' functions across England and Wales; (c) securing that appointed companies can (in particular by reasonable returns on capital) finance the proper carrying-out of those functions; (d) the proper carrying-out of licensees' authorised activities; and (e) the resilience objective. The overarching duty that conditions how EVERY Ofwat power is exercised — the financeability limb (c) is the statutory hook behind price-review and bill decisions.",
+              "type": "other",
+              "verification_status": "unverified"
+            },
+            {
+              "citation": {
+                "provision": "s.22A(4)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/22A"
+              },
+              "confidence": 0.9,
+              "holder_type": "body",
+              "id": "duty-ofwat-wia1991-s22a-notice",
+              "kind": "duty",
+              "label": "Give notice and consider representations before imposing a penalty",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Procedural duty attached to the s.22A penalty power (same provision -> derived record, A2.5).",
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s22a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Before imposing a penalty under s.22A, Ofwat must give notice of the proposed penalty (with reasons and the acts/omissions relied on), allow at least 21 days for representations or objections, and consider any duly made.",
+              "type": "consultation",
+              "verification_status": "unverified"
+            },
+            {
+              "citation": {
+                "provision": "s.24(1B)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24"
+              },
+              "confidence": 0.9,
+              "holder_type": "body",
+              "id": "duty-ofwat-wia1991-s24-consult",
+              "kind": "duty",
+              "label": "Consult the Welsh Ministers before a special-administration petition (Welsh licensee)",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "England/Wales split: WIA 1991 is E&W with Welsh Ministers' functions — a devolution touchpoint even within Tranche 0.",
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s24-1b",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Before presenting a s.24(1A) petition in relation to a qualifying water supply licensee whose licence gives it a supplementary authorisation, the Secretary of State or Ofwat must consult the Welsh Ministers.",
+              "type": "consultation",
+              "verification_status": "unverified"
+            }
+          ],
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.13",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/13"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Modification is by AGREEMENT — the company (not a state body) must consent; contrast ss.14-16, modification by CMA reference."
+              ],
+              "holder_type": "body",
+              "id": "power-ofwat-wia1991-s13",
+              "kind": "power",
+              "label": "Modify licence/appointment conditions by agreement",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s13",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Ofwat may modify the conditions of a water/sewerage company's appointment where the company consents to the modification.",
+              "type": "rulemaking",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.14",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/14"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "The CMA, not Ofwat, determines the reference — a cross-body check on unilateral modification."
+              ],
+              "holder_type": "body",
+              "id": "power-ofwat-wia1991-s14",
+              "kind": "power",
+              "label": "Refer a licence-condition modification to the CMA",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "CMA determination role noted; full CMA modelling is a later slice.",
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s14",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Ofwat may refer to the Competition and Markets Authority the question whether conditions of a company's appointment should be modified; the CMA then determines the reference.",
+              "type": "rulemaking",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.203(2)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/203"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "No document compellable that could not be compelled in High Court civil proceedings (s.203(3))."
+              ],
+              "holder_type": "body",
+              "id": "power-ofwat-wia1991-s203",
+              "kind": "power",
+              "label": "Require information/documents for enforcement purposes",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "Co-held by 'the Minister' — the Secretary of State for England, the Welsh Ministers for Wales (s.203(8)); modelled here on Ofwat, multi-holder deferred. Each regulator holding its own s.203-style information power is the statutory root of the overlapping-reporting burden documented in the Over Ruled water example (30+ reports to Ofwat/Defra/EA).",
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s203",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Ofwat may serve a notice requiring a relevant undertaker, a licensee, or any person (for purposes connected with Chapter 2 of Part 2) to produce specified documents or furnish specified information, where it is of the opinion the enforcement conditions in s.203(1A)/(1B) are met (s.203(1),(2)). Non-compliance is a summary offence (s.203(4)); the High Court may order the default made good (s.203(6)).",
+              "type": "information_request",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.22A(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/22A"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Capped at 10% of turnover (s.22A(11)).",
+                "Ofwat must first consider whether to proceed under the Competition Act 1998 instead (s.22A(13)-(14)).",
+                "s.22A(2) also confers this on the Secretary of State / Welsh Ministers as enforcement authority — modelled here on the primary holder (Ofwat)."
+              ],
+              "holder_type": "body",
+              "id": "power-ofwat-wia1991-s22a",
+              "kind": "power",
+              "label": "Impose a financial penalty",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s22a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Where satisfied a company/licensee has contravened a condition or a statutory requirement, or failed a performance standard, Ofwat may impose a financial penalty of such amount as is reasonable in all the circumstances. (The lever behind the record Thames Water penalty.)",
+              "type": "sanction",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.24(1)(b)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Exercisable only with the Secretary of State's consent (materialises as the SoS veto, veto-sos-defra-wia1991-s24)."
+              ],
+              "holder_type": "body",
+              "id": "power-ofwat-wia1991-s24-1-b",
+              "kind": "power",
+              "label": "Petition for a special administration order (with SoS consent)",
+              "legal_effect": "conditional",
+              "legal_status": "current",
+              "notes": "power_type re-typed from \"other\" 2026-07-20 (vocab/power_type.json v0.3, sponsor decision).",
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s24-1-b",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Ofwat may, WITH THE CONSENT of the Secretary of State, present a petition to the High Court for a special administration order against a water/sewerage company.",
+              "type": "application_to_court",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.6(1)(b)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/6"
+              },
+              "confidence": 0.9,
+              "constraints": [],
+              "holder_type": "body",
+              "id": "power-ofwat-wia1991-s6-1-b",
+              "kind": "power",
+              "label": "Appoint a company as undertaker (with SoS consent/authorisation)",
+              "legal_effect": "conditional",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s6-1-b",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Ofwat may appoint a company to be the water or sewerage undertaker for an area, but only with the consent of, or in accordance with a general authorisation given by, the Secretary of State (s.6(1)(b)).",
+              "type": "appointment",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.7(2)(b)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7"
+              },
+              "confidence": 0.85,
+              "constraints": [],
+              "holder_type": "body",
+              "id": "power-ofwat-wia1991-s7-2-b",
+              "kind": "power",
+              "label": "Terminate or vary an undertaker's appointment (with SoS consent/authorisation)",
+              "legal_effect": "conditional",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s7-2-b",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Ofwat may, by notice, terminate an undertaker's appointment or vary its area, but only with the consent of, or under a general authorisation given by, the Secretary of State (s.7(2)(b)); subject to the same replacement/consent conditions as the SoS power.",
+              "type": "other",
+              "verification_status": "unverified"
+            }
+          ],
+          "vetoes": []
+        },
         "other_names": [
           "Ofwat"
         ],
@@ -38432,7 +39490,290 @@
         "id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
         "kind": "office",
         "label": "Secretary of State for Environment, Food and Rural Affairs",
-        "office_type": "cabinet_minister"
+        "office_type": "cabinet_minister",
+        "operative": {
+          "blocker_kinds": [
+            "ministerial"
+          ],
+          "counts": {
+            "duties": 1,
+            "powers": 6,
+            "vetoes": 3
+          },
+          "duties": [
+            {
+              "citation": {
+                "provision": "s.7(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7"
+              },
+              "confidence": 0.9,
+              "holder_type": "office",
+              "id": "duty-sos-defra-wia1991-s7-1",
+              "kind": "duty",
+              "label": "Secure continuity of water and sewerage undertakers for every area",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": null,
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-industry-act-1991-s7-1",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "It is the duty of the Secretary of State to secure that appointments are made so that for every area of England and Wales there is at all times both a water undertaker and a sewerage undertaker (s.7(1)). The continuity-of-supply backstop that constrains how an undertaker can be removed or replaced.",
+              "type": "other",
+              "verification_status": "unverified"
+            }
+          ],
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.153(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/153"
+              },
+              "confidence": 0.9,
+              "constraints": [],
+              "holder_type": "office",
+              "id": "power-sos-defra-wia1991-s153-funding",
+              "kind": "power",
+              "label": "Fund / indemnify / guarantee a company in special administration (Treasury consent)",
+              "legal_effect": "conditional",
+              "legal_status": "current",
+              "notes": "FISCAL GAP CLOSED (retrodiction 2026-07-20): the Treasury-funding blocker the model could NOT self-surface — the s.24 records never point to it. Named by an external SAR study (Octus briefing; discovery only, re-sourced here to legislation.gov.uk per #24). Gated by Treasury consent, so a SAR's fiscal viability sits with HM Treasury.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-industry-act-1991-s153",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Where a special administration order is in force, the Secretary of State may, WITH THE CONSENT OF THE TREASURY, make grants or loans to the company, offer indemnities to the special administrator and others, and guarantee the company's borrowing (WIA 1991 s.153(1)-(2)). The quasi-nationalisation funding lever — the fiscal engine of a water SAR.",
+              "type": "funding",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.24(1)(a)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Grounds are limited to those in s.24(2).",
+                "The High Court, not the SoS, makes the order."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-wia1991-s24-1-a",
+              "kind": "power",
+              "label": "Petition for a special administration order",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "power_type re-typed from \"other\" 2026-07-20 (vocab/power_type.json v0.3, sponsor decision).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-industry-act-1991-s24-1-a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "The Secretary of State may present a petition to the High Court for a special administration order against a water/sewerage company on the grounds in s.24(2) (e.g. serious breach of a principal duty, or inability to pay debts). The direct public-control lever short of statutory renationalisation.",
+              "type": "application_to_court",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.6(1)(a)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/6"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Appointee must be a limited company (s.6(5)) and not a water/sewerage licensee (s.6(5A))."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-wia1991-s6-1-a",
+              "kind": "power",
+              "label": "Appoint a company as water or sewerage undertaker",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-industry-act-1991-s6-1-a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "The Secretary of State may appoint a company to be the water undertaker or sewerage undertaker for any area of England and Wales (s.6(1)(a)), by written instrument served on the company (s.6(3)).",
+              "type": "appointment",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.7(2)(a)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "Termination takes effect only from the coming into force of a replacement appointment (s.7(3)).",
+                "A replacement generally requires the incumbent company's consent (s.7(4)(a)) unless the s.7(4)(b)-(c)/(5) conditions apply — a PRIVATE-party consent, not a state veto."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-wia1991-s7-2-a",
+              "kind": "power",
+              "label": "Terminate or vary an undertaker's appointment",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-industry-act-1991-s7-2-a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "The Secretary of State may, by notice to a company holding an appointment, terminate the appointment or vary the area to which it relates (s.7(2)(a)). The direct lever for removing/replacing a private undertaker — central to any renationalisation route short of special administration (s.24).",
+              "type": "other",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.70",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/70"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "Proceedings for the s.70 offence may be instituted only by the Secretary of State or the DPP (s.70(3)).",
+                "Quality standards themselves are set by regulations under s.67."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-wia1991-s70-dwi-quality-enforcement",
+              "kind": "power",
+              "label": "Enforce drinking water quality (via the Drinking Water Inspectorate)",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "DWI MODELLING (sponsor, 2026-07-20): the Drinking Water Inspectorate has no separate legal personality — s.86 inspectors act 'on [the Secretary of State's] behalf'. Its powers are held by the Defra office (SoS), tagged to the DWI / Chief Inspector function (a micro-department partition within Defra). The Chief Inspector is itself a statutory office (s.86(1A)) and could be promoted to an Office node if finer fidelity is wanted — the reference is already here.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-industry-act-1991-s70",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Supplying water unfit for human consumption is an offence by the water undertaker (WIA 1991 s.70). The Secretary of State enforces drinking-water quality and sufficiency standards (ss.67-70, 77-82); proceedings for the s.70 offence may be instituted only by the Secretary of State or the DPP (s.70(3)). These functions are exercised on the Secretary of State's behalf by appointed inspectors — the Drinking Water Inspectorate, led by the Chief Inspector of Drinking Water (s.86) — a unit within Defra, not a separate body.",
+              "type": "enforcement",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.73(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/57/section/73"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "Made on the application of the Environment Agency or a water undertaker (Chapter III).",
+                "Overrides normal abstraction restrictions (s.24(1)) for its duration."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-wra1991-s73-drought-order",
+              "kind": "power",
+              "label": "Make an ordinary or emergency drought order",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "BREADCRUMB: Chapter III drought orders override the s.24 abstraction restriction — the override_mechanism cited on the EA abstraction veto (veto-ea-wra1991-s38-abstraction-licence). Cross-actor: EA/undertaker applies, SoS makes the order.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "water-resources-act-1991-s73",
+              "since": 1991,
+              "source_id": "source-act-water-resources-act-1991",
+              "summary": "If satisfied that an exceptional shortage of rain has caused or threatens a serious deficiency of water supplies (or a serious threat to flora/fauna dependent on inland waters), the Secretary of State may make an ordinary drought order — or, where the deficiency is likely to impair economic or social well-being, an emergency drought order (s.73(1)-(2)) — authorising measures, including relaxing abstraction restrictions, to meet the deficiency.",
+              "type": "other",
+              "verification_status": "unverified"
+            }
+          ],
+          "vetoes": [
+            {
+              "blocker_kind": "ministerial",
+              "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+              "blocks_office_id": null,
+              "citation": {
+                "provision": "s.24(1)(b)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/24"
+              },
+              "confidence": 0.9,
+              "decision_affected": "Ofwat's petition to the High Court for a special administration order against a water/sewerage company.",
+              "derived_from_record_id": "power-ofwat-wia1991-s24-1-b",
+              "holder_type": "office",
+              "id": "veto-sos-defra-wia1991-s24",
+              "kind": "veto",
+              "label": "SoS consent required for an Ofwat special-administration petition",
+              "legal_status": "current",
+              "notes": "The 'who can block?' showcase: the SoS gates the regulator's own escalation route.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "overridable": "no",
+              "override_mechanism": null,
+              "provision_key": "water-industry-act-1991-s24-1-b",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "strength": "hard_stop",
+              "summary": "Ofwat cannot petition for a special administration order without the consent of the Secretary of State — a hard gate over the regulator's use of the special-administration lever.",
+              "type": "consent_required",
+              "verification_status": "machine_verified"
+            },
+            {
+              "blocker_kind": "ministerial",
+              "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+              "blocks_office_id": null,
+              "citation": {
+                "provision": "s.6(1)(b)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/6"
+              },
+              "confidence": 0.9,
+              "decision_affected": "Whether Ofwat may appoint a company as a water/sewerage undertaker.",
+              "derived_from_record_id": "power-ofwat-wia1991-s6-1-b",
+              "holder_type": "office",
+              "id": "veto-sos-defra-wia1991-s6-1-b",
+              "kind": "veto",
+              "label": "Consent/authorisation gate over Ofwat's appointment of undertakers",
+              "legal_status": "current",
+              "notes": "overridable corrected yes -> no (audit 2026-07-20). A general authorisation under s.6(1)(b) is given BY the Secretary of State, so it is the same holder consenting in class, not a route around the consent (same-holder rule, vocab/veto_strength.json v0.2). Strength hard_stop confirmed.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "overridable": "no",
+              "override_mechanism": null,
+              "provision_key": "water-industry-act-1991-s6-1-b",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "strength": "hard_stop",
+              "summary": "Ofwat may appoint a company to be the water or sewerage undertaker for an area, but only with the consent of, or in accordance with a general authorisation given by, the Secretary of State (s.6(1)(b)).",
+              "type": "consent_required",
+              "verification_status": "machine_verified"
+            },
+            {
+              "blocker_kind": "ministerial",
+              "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+              "blocks_office_id": null,
+              "citation": {
+                "provision": "s.7(2)(b)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7"
+              },
+              "confidence": 0.85,
+              "decision_affected": "Whether Ofwat may terminate or vary an undertaker's appointment.",
+              "derived_from_record_id": "power-ofwat-wia1991-s7-2-b",
+              "holder_type": "office",
+              "id": "veto-sos-defra-wia1991-s7-2-b",
+              "kind": "veto",
+              "label": "Consent/authorisation gate over Ofwat's termination/variation of appointments",
+              "legal_status": "current",
+              "notes": "overridable corrected yes -> no (audit 2026-07-20). A general authorisation under s.7(2)(b) is given BY the Secretary of State, so it is the same holder consenting in class, not a route around the consent (same-holder rule, vocab/veto_strength.json v0.2). Strength hard_stop confirmed.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "overridable": "no",
+              "override_mechanism": null,
+              "provision_key": "water-industry-act-1991-s7-2-b",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "strength": "hard_stop",
+              "summary": "Ofwat may, by notice, terminate an undertaker's appointment or vary its area, but only with the consent of, or under a general authorisation given by, the Secretary of State (s.7(2)(b)); subject to the same replacement/consent conditions as the SoS power.",
+              "type": "consent_required",
+              "verification_status": "machine_verified"
+            }
+          ]
+        }
       }
     },
     {
@@ -38557,6 +39898,46 @@
     }
   ],
   "sources": {
+    "source-act-insolvency-act-1986": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Insolvency Act 1986",
+      "url": "https://www.legislation.gov.uk/ukpga/1986/45"
+    },
+    "source-act-senior-courts-act-1981": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Senior Courts Act 1981",
+      "url": "https://www.legislation.gov.uk/ukpga/1981/54"
+    },
+    "source-act-water-act-2014": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Water Act 2014",
+      "url": "https://www.legislation.gov.uk/ukpga/2014/21"
+    },
+    "source-act-water-industry-act-1991": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Water Industry Act 1991",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56"
+    },
+    "source-act-water-resources-act-1991": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Water Resources Act 1991",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/57"
+    },
+    "source-act-water-special-measures-act-2025": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Water (Special Measures) Act 2025",
+      "url": "https://www.legislation.gov.uk/ukpga/2025/5"
+    },
+    "source-act-wildlife-and-countryside-act-1981": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Wildlife and Countryside Act 1981",
+      "url": "https://www.legislation.gov.uk/ukpga/1981/69"
+    },
+    "source-guidance-judge-over-your-shoulder-2022": {
+      "publisher": "Government Legal Department",
+      "title": "The Judge Over Your Shoulder (JOYS): a guide to the legal environment in which decisions in public bodies are made, 6th edition",
+      "url": "https://www.gov.uk/government/publications/the-judge-over-your-shoulder"
+    },
     "source-official-dataset-cabinet-office-public-bodies": {
       "publisher": "Cabinet Office",
       "title": "Cabinet Office Public Bodies Directory 2023/24",
