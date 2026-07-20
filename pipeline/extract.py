@@ -155,13 +155,22 @@ def duty_record(u, run_id):
 
 
 def derive_veto(power, blocks, run_id):
-    """Materialise the Veto that a blocking Power projects (decision #18). The veto mirrors
-    the power's holder and provision, points back via derived_from_record_id, and adds the
-    block target. Never hand-authored."""
+    """Materialise the Veto that a Power projects (decision #18), pointing back via
+    derived_from_record_id. Two shapes:
+      - self-block: the power IS the block (a consent/approval/licence/designation power) —
+        the veto holder is the power holder (default);
+      - consent-gate: the power is GATED by another actor's consent — the veto holder is that
+        gate-keeper, NOT the power holder (e.g. the SoS consent over Ofwat's petition, s.24).
+    For a consent-gate, blocks carries `holder` (a HOLDER_ALIASES key) and usually its own
+    `veto_id` (so the id names the gate-keeper). Citation/provision/source mirror the power."""
+    if blocks.get("holder"):
+        h = resolve_holder(blocks["holder"])
+    else:
+        h = {"holder_type": power["holder_type"], "office_id": power.get("office_id"),
+             "body_id": power["body_id"]}
     return {
-        "veto_id": power["power_id"].replace("power-", "veto-", 1),
-        "holder_type": power["holder_type"], "office_id": power.get("office_id"),
-        "body_id": power["body_id"],
+        "veto_id": blocks.get("veto_id") or power["power_id"].replace("power-", "veto-", 1),
+        "holder_type": h["holder_type"], "office_id": h.get("office_id"), "body_id": h["body_id"],
         "veto_label": blocks.get("veto_label", power["power_label"]),
         "veto_type": blocks["veto_type"], "modality": "veto", "strength": blocks["strength"],
         "summary": blocks.get("summary", power["summary"]),
@@ -171,10 +180,11 @@ def derive_veto(power, blocks, run_id):
         "decision_affected": blocks["decision_affected"],
         "blocks_provision_key": blocks.get("blocks_provision_key"),
         "overridable": blocks.get("overridable", "unknown"),
+        "override_mechanism": blocks.get("override_mechanism"),
         "legal_status": "current",
         "extraction": _extraction(run_id, power["extraction"]["confidence"]),
         "verification": _verification(),
-        "notes": None, "record_status": "extracted",
+        "notes": blocks.get("notes"), "record_status": "extracted",
     }
 
 
@@ -193,10 +203,13 @@ def build(units, run_id):
             p = power_record(u, run_id)
             bundle["powers"].append(p)
             if u.get("blocks"):
-                if u["subtype"] not in BLOCKING_POWER_TYPES:
-                    issues.append(f"{rid}: has blocks{{}} but power_type '{u['subtype']}' "
+                b = u["blocks"]
+                # A self-block must come from a blocking-family power; a consent-gate (a named
+                # `holder` gate-keeper) may sit on any power type, so only check the former.
+                if not b.get("holder") and u["subtype"] not in BLOCKING_POWER_TYPES:
+                    issues.append(f"{rid}: self-block on power_type '{u['subtype']}' "
                                   "is not a blocking family — check the classification")
-                bundle["vetoes"].append(derive_veto(p, u["blocks"], run_id))
+                bundle["vetoes"].append(derive_veto(p, b, run_id))
         elif u["kind"] == "duty":
             bundle["duties"].append(duty_record(u, run_id))
         else:
@@ -222,14 +235,34 @@ def validate_bundle(bundle):
     return errors
 
 
-def write(bundle):
+def paragraph_provision(pk, ref, url, instrument_id, version_date):
+    """A paragraph-level Provision node for an independent operative record that shares a
+    section with another (A2.5 — two canonical records may not share a provision_key). No
+    separate text is fetched, so content_hash/heading are null; the node exists so the
+    provision_key references resolve. Mirrors the s.24 calibration convention."""
+    return {
+        "provision_key": pk, "instrument_id": instrument_id, "provision_ref": ref,
+        "heading": None, "in_force_from": None, "status": "in_force",
+        "citation": {"url": url, "version_date": version_date, "content_hash": None},
+        "references": [], "made_under": None, "commenced_by": None,
+        "outstanding_effects": False,
+        "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+        "notes": "Paragraph-level provision for an independent operative record (see extract driver).",
+        "record_status": "extracted",
+    }
+
+
+def write(bundle, provisions=None):
+    if provisions:
+        store.upsert("provisions", provisions)
     for kind in ("powers", "duties", "vetoes"):
         if bundle[kind]:
             store.upsert(kind, bundle[kind])
 
 
-def run(units, run_id, dry_run=False):
-    """Full path: build -> validate -> (write). Refuses to write an invalid batch."""
+def run(units, run_id, provisions=None, dry_run=False):
+    """Full path: build -> validate -> (write). Refuses to write an invalid batch. Any
+    paragraph-level `provisions` are written first so the records' provision_keys resolve."""
     bundle, issues = build(units, run_id)
     for i in issues:
         print(f"  ! {i}")
@@ -240,8 +273,9 @@ def run(units, run_id, dry_run=False):
             print(f"  x {e}")
         return bundle, issues, errors
     counts = {k: len(v) for k, v in bundle.items()}
+    counts["provisions"] = len(provisions or [])
     print(f"built {counts} — run_id={run_id}")
     if not dry_run:
-        write(bundle)
+        write(bundle, provisions)
         print("written.")
     return bundle, issues, errors

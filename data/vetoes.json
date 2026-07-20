@@ -41,5 +41,81 @@
     "veto_id": "veto-sos-defra-wia1991-s24",
     "veto_label": "SoS consent required for an Ofwat special-administration petition",
     "veto_type": "consent_required"
+  },
+  {
+    "blocks_provision_key": null,
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.6(1)(b)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/6"
+    },
+    "decision_affected": "Whether Ofwat may appoint a company as a water/sewerage undertaker.",
+    "derived_from_record_id": "power-ofwat-wia1991-s6-1-b",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-15-wia1991-sweep-appointments-info",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_status": "current",
+    "modality": "veto",
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "overridable": "yes",
+    "override_mechanism": "A general authorisation given by the Secretary of State (pre-clears Ofwat to act without case-by-case consent).",
+    "provision_key": "water-industry-act-1991-s6-1-b",
+    "record_status": "extracted",
+    "source_id": "source-act-water-industry-act-1991",
+    "strength": "hard_stop",
+    "summary": "Ofwat may appoint a company to be the water or sewerage undertaker for an area, but only with the consent of, or in accordance with a general authorisation given by, the Secretary of State (s.6(1)(b)).",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    },
+    "veto_id": "veto-sos-defra-wia1991-s6-1-b",
+    "veto_label": "Consent/authorisation gate over Ofwat's appointment of undertakers",
+    "veto_type": "consent_required"
+  },
+  {
+    "blocks_provision_key": null,
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.7(2)(b)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7"
+    },
+    "decision_affected": "Whether Ofwat may terminate or vary an undertaker's appointment.",
+    "derived_from_record_id": "power-ofwat-wia1991-s7-2-b",
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-15-wia1991-sweep-appointments-info",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_status": "current",
+    "modality": "veto",
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "overridable": "yes",
+    "override_mechanism": "A general authorisation given by the Secretary of State (pre-clears Ofwat to act without case-by-case consent).",
+    "provision_key": "water-industry-act-1991-s7-2-b",
+    "record_status": "extracted",
+    "source_id": "source-act-water-industry-act-1991",
+    "strength": "hard_stop",
+    "summary": "Ofwat may, by notice, terminate an undertaker's appointment or vary its area, but only with the consent of, or under a general authorisation given by, the Secretary of State (s.7(2)(b)); subject to the same replacement/consent conditions as the SoS power.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    },
+    "veto_id": "veto-sos-defra-wia1991-s7-2-b",
+    "veto_label": "Consent/authorisation gate over Ofwat's termination/variation of appointments",
+    "veto_type": "consent_required"
   }
 ]

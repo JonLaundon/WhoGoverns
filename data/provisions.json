@@ -101,6 +101,26 @@
   },
   {
     "citation": {
+      "content_hash": "26e5159ff4f3b0c4",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/203",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Power to acquire information for enforcement purposes.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s203",
+    "provision_ref": "s.203",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "852406947f5ea168",
       "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/22A",
       "version_date": "2026-07-20"
@@ -215,6 +235,146 @@
     "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
     "provision_key": "water-industry-act-1991-s37",
     "provision_ref": "s.37",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "ecef153517c277ac",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/6",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Appointment of relevant undertakers.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s6",
+    "provision_ref": "s.6",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/6",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": null,
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision for an independent operative record (see extract driver).",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s6-1-a",
+    "provision_ref": "s.6(1)(a)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/6",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": null,
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision for an independent operative record (see extract driver).",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s6-1-b",
+    "provision_ref": "s.6(1)(b)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "f08abe45133501d5",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Continuity of appointments, replacement appointments etc.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s7",
+    "provision_ref": "s.7",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": null,
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision for an independent operative record (see extract driver).",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s7-1",
+    "provision_ref": "s.7(1)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": null,
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision for an independent operative record (see extract driver).",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s7-2-a",
+    "provision_ref": "s.7(2)(a)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": null,
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision for an independent operative record (see extract driver).",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s7-2-b",
+    "provision_ref": "s.7(2)(b)",
     "record_status": "extracted",
     "references": [],
     "status": "in_force"

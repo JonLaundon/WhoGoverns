@@ -149,5 +149,42 @@
       "verified_by": null,
       "verified_date": null
     }
+  },
+  {
+    "beneficiary_or_object": "Consumers in every area; continuity of water/sewerage service.",
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.7(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/7"
+    },
+    "duty_id": "duty-sos-defra-wia1991-s7-1",
+    "duty_label": "Secure continuity of water and sewerage undertakers for every area",
+    "duty_type": "other",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-15-wia1991-sweep-appointments-info",
+      "requires_review": true
+    },
+    "failure_consequence": "judicial_review_risk",
+    "holder_type": "office",
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "provision_key": "water-industry-act-1991-s7-1",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "It is the duty of the Secretary of State to secure that appointments are made so that for every area of England and Wales there is at all times both a water undertaker and a sewerage undertaker (s.7(1)). The continuity-of-supply backstop that constrains how an undertaker can be removed or replaced.",
+    "trigger": "At all times — a continuing duty.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
   }
 ]

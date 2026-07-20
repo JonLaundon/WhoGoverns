@@ -61,6 +61,30 @@ def test_power_basis_defaults_statutory():
     assert bundle["powers"][0]["power_basis"] == "statutory"
 
 
+def test_consent_gate_veto_holder_is_the_gatekeeper_not_the_power_holder():
+    # s.6/s.7/s.24 shape: Ofwat holds the power, but the SoS consent GATES it -> the veto is
+    # the SoS's, derived from Ofwat's power. Any power type may be gated (no flag).
+    unit = {
+        "record_id": "power-ofwat-test-act-s9", "kind": "power", "holder": "ofwat",
+        "label": "Appoint an undertaker (with SoS consent)", "subtype": "appointment",
+        "legal_effect": "conditional", "summary": "Ofwat may appoint, with the SoS's consent.",
+        "source_id": "source-act-test", "provision_key": "test-act-s9",
+        "provision_ref": "s.9", "citation_url": "https://example/section/9",
+        "blocks": {"holder": "sos-defra", "veto_id": "veto-sos-defra-test-act-s9",
+                   "veto_type": "consent_required", "strength": "hard_stop",
+                   "decision_affected": "Whether Ofwat may make the appointment.",
+                   "overridable": "yes", "override_mechanism": "SoS general authorisation"},
+    }
+    bundle, issues = extract.build([unit], "run-test")
+    assert not issues                                    # appointment is gated, not self-blocking
+    v = bundle["vetoes"][0]
+    assert v["veto_id"] == "veto-sos-defra-test-act-s9"
+    assert v["holder_type"] == "office"                  # the SoS, not Ofwat
+    assert v["body_id"] == "uk-state-body-department-for-environment-food-rural-affairs"
+    assert v["derived_from_record_id"] == "power-ofwat-test-act-s9"  # still points at Ofwat's power
+    assert not extract.validate_bundle(bundle)
+
+
 def test_blocks_on_non_blocking_family_is_flagged():
     bad = {**UNIT_POWER, "record_id": "power-x-test-act-s3", "subtype": "sanction",
            "provision_key": "test-act-s3"}
