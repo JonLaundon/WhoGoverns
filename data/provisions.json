@@ -372,6 +372,518 @@
   },
   {
     "citation": {
+      "content_hash": "615f9db30fd4391f",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17A",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Water supply licences",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17a",
+    "provision_ref": "s.17A",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "615f9db30fd4391f",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17A",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Water supply licences — general authorisation",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision (A2.5): the section carries more than one independent canonical record, so the operative records cite at this granularity. Hash and version_date inherited from the section fetch.",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17a-5",
+    "provision_ref": "s.17A(5)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "615f9db30fd4391f",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17A",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Water supply licences — consultation with the Welsh Ministers",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision (A2.5): the section carries more than one independent canonical record, so the operative records cite at this granularity. Hash and version_date inherited from the section fetch.",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17a-6",
+    "provision_ref": "s.17A(6)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "5468f545851ede80",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17B",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Meaning of supply system",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17b",
+    "provision_ref": "s.17B",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s37",
+        "raw": "section 37"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "5ddd7345016b2113",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17C",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Meaning of household premises",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17c",
+    "provision_ref": "s.17C",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "e23fec7b8d78313c",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17D",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "The threshold requirement",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17d",
+    "provision_ref": "s.17D",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "ccec1a23ad4e8e48",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17F",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Procedure for granting water supply and sewerage licences",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17f",
+    "provision_ref": "s.17F",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "ccec1a23ad4e8e48",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17F",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Procedure for granting licences — notice of proposed refusal",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision (A2.5): the section carries more than one independent canonical record, so the operative records cite at this granularity. Hash and version_date inherited from the section fetch.",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17f-4",
+    "provision_ref": "s.17F(4)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "ca44b74424b34042",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17G",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Licence conditions",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17g",
+    "provision_ref": "s.17G",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "15b376abf06d1e5b",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17H",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Standard conditions of water supply licences",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17h",
+    "provision_ref": "s.17H",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "c1bf4f2ee8503924",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17I",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Modification of licences by agreement",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17i",
+    "provision_ref": "s.17I",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "a3c85bbf014ad9eb",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Modification of standard conditions",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17j",
+    "provision_ref": "s.17J",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17h",
+        "raw": "section 17H(4)"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "a3c85bbf014ad9eb",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Modification of standard conditions — notice and representations",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision (A2.5): the section carries more than one independent canonical record, so the operative records cite at this granularity. Hash and version_date inherited from the section fetch.",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17j-3",
+    "provision_ref": "s.17J(3)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "a3c85bbf014ad9eb",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Modification of standard conditions — Secretary of State direction",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision (A2.5): the section carries more than one independent canonical record, so the operative records cite at this granularity. Hash and version_date inherited from the section fetch.",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17j-5",
+    "provision_ref": "s.17J(5)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "a3c85bbf014ad9eb",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Modification of standard conditions — consultation with the Welsh Ministers",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision (A2.5): the section carries more than one independent canonical record, so the operative records cite at this granularity. Hash and version_date inherited from the section fetch.",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17j-5a",
+    "provision_ref": "s.17J(5A)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "3a78b4869a5eb9b2",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17K",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Modification references to competition authority",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17k",
+    "provision_ref": "s.17K",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17p",
+        "raw": "section 17P"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": false,
+        "provision_key": "enterprise-act-2002-s109",
+        "raw": "sections 109"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17m",
+        "raw": "sections 17M"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "enterprise-and-regulatory-reform-act-2013",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Enterprise and Regulatory Reform Act 2013"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Enterprise Act 2002"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "d13bf7a2b29eace8",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17N",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Reports on modification references",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17n",
+    "provision_ref": "s.17N",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17k",
+        "raw": "section 17K"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17o",
+        "raw": "section 17O"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "27899a1704ec428c",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17Q",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Section 17P: supplementary",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17q",
+    "provision_ref": "s.17Q",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17p",
+        "raw": "Section 17P"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s109",
+        "raw": "section 109"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s65",
+        "raw": "section 65(3)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "competition-and-consumers-act-2024",
+        "internal": false,
+        "provision_key": "competition-and-consumers-act-2024-s143",
+        "raw": "section 143"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Enterprise Act 2002"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "competition-and-consumers-act-2024",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Competition and Consumers Act 2024"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "892f81271e7fe057",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17R",
+      "version_date": "2026-07-20"
+    },
+    "commenced_by": null,
+    "heading": "Modification by order under other enactments",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+    "provision_key": "water-industry-act-1991-s17r",
+    "provision_ref": "s.17R",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": false,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": false,
+        "provision_key": "enterprise-act-2002-s75",
+        "raw": "section 75"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s160",
+        "raw": "section 160"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Enterprise Act 2002"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "c0da8763de3c0ff9",
       "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/18",
       "version_date": "2026-07-20"

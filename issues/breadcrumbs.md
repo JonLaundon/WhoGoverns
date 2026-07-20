@@ -4,9 +4,11 @@
 
 Decision #27's breadcrumb method widens the net without sweeping the whole statute book, but it only works if the leads are tracked. This file is derived from the records every time it runs, so a stub that has been closed disappears by itself and the count is a real completeness measure rather than a feeling.
 
-**77 open stub(s).**
+**83 open stub(s).**
 
-## dangling reference (68)
+8 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
+
+## dangling reference (72)
 
 - **`insolvency-act-1986-s124a`** — references companies-act-1985-s448a, which is not held
 - **`insolvency-act-1986-s124a`** — references companies-act-1989-s83, which is not held
@@ -19,16 +21,22 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`water-industry-act-1991-s14`** — references enterprise-act-2002-s109, which is not held
 - **`water-industry-act-1991-s14`** — references water-industry-act-1991-s14b, which is not held
 - **`water-industry-act-1991-s153`** — references water-industry-act-1991-s23, which is not held
+- **`water-industry-act-1991-s17k`** — references enterprise-act-2002-s109, which is not held
+- **`water-industry-act-1991-s17k`** — references water-industry-act-1991-s17m, which is not held
+- **`water-industry-act-1991-s17k`** — references water-industry-act-1991-s17p, which is not held
+- **`water-industry-act-1991-s17n`** — references water-industry-act-1991-s17o, which is not held
+- **`water-industry-act-1991-s17q`** — references competition-and-consumers-act-2024-s143, which is not held
+- **`water-industry-act-1991-s17q`** — references water-industry-act-1991-s109, which is not held
+- **`water-industry-act-1991-s17q`** — references water-industry-act-1991-s17p, which is not held
+- **`water-industry-act-1991-s17q`** — references water-industry-act-1991-s65, which is not held
+- **`water-industry-act-1991-s17r`** — references enterprise-act-2002-s75, which is not held
+- **`water-industry-act-1991-s17r`** — references water-industry-act-1991-s160, which is not held
 - **`water-industry-act-1991-s18`** — references water-industry-act-1991-s19, which is not held
 - **`water-industry-act-1991-s2`** — references water-act-2014-s42, which is not held
-- **`water-industry-act-1991-s2`** — references water-industry-act-1991-s17b, which is not held
 - **`water-industry-act-1991-s2`** — references water-industry-act-1991-s17ba, which is not held
-- **`water-industry-act-1991-s2`** — references water-industry-act-1991-s17c, which is not held
-- **`water-industry-act-1991-s2`** — references water-industry-act-1991-s17d, which is not held
 - **`water-industry-act-1991-s2`** — references water-industry-act-1991-s2a, which is not held
 - **`water-industry-act-1991-s2`** — references water-industry-act-1991-s31, which is not held
 - **`water-industry-act-1991-s2`** — references water-industry-act-1991-s37a, which is not held
-- **`water-industry-act-1991-s203`** — references water-industry-act-1991-s17b, which is not held
 - **`water-industry-act-1991-s203`** — references water-industry-act-1991-s17ba, which is not held
 - **`water-industry-act-1991-s203`** — references water-industry-act-1991-s202, which is not held
 - **`water-industry-act-1991-s203`** — references water-industry-act-1991-s38, which is not held
@@ -47,8 +55,6 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`water-industry-act-1991-s24`** — references water-industry-act-1991-s222, which is not held
 - **`water-industry-act-1991-s24`** — references water-industry-act-1991-s25, which is not held
 - **`water-industry-act-1991-s27a`** — references water-act-2003-s35, which is not held
-- **`water-industry-act-1991-s27c`** — references water-industry-act-1991-s17c, which is not held
-- **`water-industry-act-1991-s27c`** — references water-industry-act-1991-s17d, which is not held
 - **`water-industry-act-1991-s37`** — references water-industry-act-1991-s38, which is not held
 - **`water-industry-act-1991-s70`** — references water-industry-act-1991-s210, which is not held
 - **`water-industry-act-1991-s86`** — references water-industry-act-1991-s208, which is not held
@@ -81,14 +87,16 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 
 - **`duty-ofwat-wia1991-s16`** — Procedural gates NOT separately extracted in this first pass (decision #11), and logged as breadcrumb stubs instead: s.16(3) requires notice with at least 28 days for representations or objections, which Ofwat must consider — a genuine consultation duty in its own right; s.16(4A)-(4B) require notice
 
-## unmined provision (8)
+## unmined provision (10)
 
 - **`insolvency-act-1986-s124a`** — Petition for winding up on grounds of public interest. — fetched but no power, duty or veto extracted from it
-- **`water-act-2014-s22`** — Primary duty to secure resilience — fetched but no power, duty or veto extracted from it
 - **`water-industry-act-1991-s15`** — Reports on modification references. — fetched but no power, duty or veto extracted from it
-- **`water-industry-act-1991-s27a`** — Establishment of the Council and committees — fetched but no power, duty or veto extracted from it
-- **`water-industry-act-1991-s37`** — General duty to maintain water supply system etc. — fetched but no power, duty or veto extracted from it
+- **`water-industry-act-1991-s17g`** — Licence conditions — fetched but no power, duty or veto extracted from it
+- **`water-industry-act-1991-s17h`** — Standard conditions of water supply licences — fetched but no power, duty or veto extracted from it
+- **`water-industry-act-1991-s17i`** — Modification of licences by agreement — fetched but no power, duty or veto extracted from it
+- **`water-industry-act-1991-s17k`** — Modification references to competition authority — fetched but no power, duty or veto extracted from it
+- **`water-industry-act-1991-s17n`** — Reports on modification references — fetched but no power, duty or veto extracted from it
+- **`water-industry-act-1991-s17r`** — Modification by order under other enactments — fetched but no power, duty or veto extracted from it
 - **`water-industry-act-1991-s86`** — Appointment and functions of inspectors — fetched but no power, duty or veto extracted from it
-- **`water-resources-act-1991-s24`** — Restrictions on abstraction. — fetched but no power, duty or veto extracted from it
 - **`water-special-measures-act-2025-s14`** — Modification by Secretary of State of water company’s appointment conditions etc to recover losses — fetched but no power, duty or veto extracted from it
 

@@ -374,6 +374,93 @@
   {
     "body_id": "uk-state-body-the-water-services-regulation-authority",
     "citation": {
+      "provision": "s.17A(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17A"
+    },
+    "constraints": [
+      "s.17A(5): exercisable only in accordance with a general authorisation given by the Secretary of State — Ofwat cannot licence at all without one.",
+      "Authorisations operate as provided by Schedule 2A (s.17A(3))."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.93,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wia1991-licensing-17a",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "conditional",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": null,
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-ofwat-wia1991-s17a",
+    "power_label": "Grant a water supply licence",
+    "power_type": "licence",
+    "provision_key": "water-industry-act-1991-s17a",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-department-for-environment-food-rural-affairs"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Ofwat may grant a person a licence to use the supply system of a water undertaker (a water supply licence), giving retail, wholesale, restricted retail and/or supplementary authorisations (WIA 1991 s.17A(1)-(2)). The gateway to competition in the water market. Exercisable ONLY in accordance with a general authorisation given by the Secretary of State (s.17A(5)).",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.17J(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J"
+    },
+    "constraints": [
+      "s.17J(3): 28 days' notice and representations must be considered first.",
+      "s.17J(5): the Secretary of State may direct Ofwat not to modify, and Ofwat shall comply.",
+      "s.17J(6): blocked where enough relevant licence holders object — by number and by market share, against thresholds set by SI."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.93,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-20-wia1991-licensing-17a",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": null,
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-ofwat-wia1991-s17j",
+    "power_label": "Modify the standard conditions of water supply and sewerage licences",
+    "power_type": "rulemaking",
+    "provision_key": "water-industry-act-1991-s17j",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-department-for-environment-food-rural-affairs"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Ofwat may modify the standard conditions of water supply or sewerage licences, and make incidental or consequential modifications to any licence affected (WIA 1991 s.17J(1)-(2)). The sector-wide rule-change lever: it reaches every licensee at once, unlike s.13 modification by agreement.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
       "provision": "s.203(2)",
       "quote": null,
       "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/203"

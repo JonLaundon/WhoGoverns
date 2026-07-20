@@ -2,16 +2,16 @@
   "counts": {
     "bodies": 685,
     "budget_records": 1433,
-    "duties": 7,
+    "duties": 11,
     "instruments": 6,
     "offices": 159,
     "person_roles": 159,
-    "powers": 20,
-    "provisions": 37,
+    "powers": 22,
+    "provisions": 56,
     "relationships": 639,
     "sources": 15,
     "staffing_records": 3884,
-    "vetoes": 8
+    "vetoes": 10
   },
   "edges": [
     {
@@ -7841,6 +7841,32 @@
     },
     {
       "data": {
+        "bow": -34,
+        "duty_id": "duty-sos-defra-wia1991-s17a-6-consult",
+        "duty_type": "consultation",
+        "id": "mustconsult-duty-sos-defra-wia1991-s17a-6-consult",
+        "kind": "must_consult",
+        "label_text": "Consult the Welsh Ministers before a general authorisation to licence",
+        "source": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+        "source_id": "source-act-water-industry-act-1991",
+        "target": "uk-state-body-welsh-government"
+      }
+    },
+    {
+      "data": {
+        "bow": 34,
+        "duty_id": "duty-sos-defra-wia1991-s17j-5a-consult",
+        "duty_type": "consultation",
+        "id": "mustconsult-duty-sos-defra-wia1991-s17j-5a-consult",
+        "kind": "must_consult",
+        "label_text": "Consult the Welsh Ministers before directing Ofwat not to modify",
+        "source": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+        "source_id": "source-act-water-industry-act-1991",
+        "target": "uk-state-body-welsh-government"
+      }
+    },
+    {
+      "data": {
         "blocker_kind": "regulatory",
         "bow": 34,
         "decision_affected": "Whether Ofwat's proposed modifications to a water company's licence/appointment conditions (including price controls) take effect.",
@@ -7871,6 +7897,34 @@
       "data": {
         "blocker_kind": "ministerial",
         "bow": 34,
+        "decision_affected": "Whether Ofwat may grant water supply licences at all.",
+        "id": "canveto-veto-sos-defra-wia1991-s17a-5",
+        "kind": "can_veto",
+        "source": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+        "source_id": "source-act-water-industry-act-1991",
+        "strength": "hard_stop",
+        "target": "uk-state-body-the-water-services-regulation-authority",
+        "veto_id": "veto-sos-defra-wia1991-s17a-5"
+      }
+    },
+    {
+      "data": {
+        "blocker_kind": "ministerial",
+        "bow": -34,
+        "decision_affected": "Whether Ofwat may modify the standard conditions of water supply or sewerage licences.",
+        "id": "canveto-veto-sos-defra-wia1991-s17j-5",
+        "kind": "can_veto",
+        "source": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+        "source_id": "source-act-water-industry-act-1991",
+        "strength": "hard_stop",
+        "target": "uk-state-body-the-water-services-regulation-authority",
+        "veto_id": "veto-sos-defra-wia1991-s17j-5"
+      }
+    },
+    {
+      "data": {
+        "blocker_kind": "ministerial",
+        "bow": 60,
         "decision_affected": "Ofwat's petition to the High Court for a special administration order against a water/sewerage company.",
         "id": "canveto-veto-sos-defra-wia1991-s24",
         "kind": "can_veto",
@@ -7884,7 +7938,7 @@
     {
       "data": {
         "blocker_kind": "ministerial",
-        "bow": -34,
+        "bow": -60,
         "decision_affected": "Whether Ofwat may appoint a company as a water/sewerage undertaker.",
         "id": "canveto-veto-sos-defra-wia1991-s6-1-b",
         "kind": "can_veto",
@@ -7898,7 +7952,7 @@
     {
       "data": {
         "blocker_kind": "ministerial",
-        "bow": 60,
+        "bow": 86,
         "decision_affected": "Whether Ofwat may terminate or vary an undertaker's appointment.",
         "id": "canveto-veto-sos-defra-wia1991-s7-2-b",
         "kind": "can_veto",
@@ -7910,7 +7964,7 @@
       }
     }
   ],
-  "generated": "2026-07-20T23:33:35",
+  "generated": "2026-07-20T23:42:05",
   "nodes": [
     {
       "data": {
@@ -14919,6 +14973,60 @@
         "office_operative": {
           "duties": [
             {
+              "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
+              "citation": {
+                "provision": "s.17A(6)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17A"
+              },
+              "confidence": 0.93,
+              "holder_type": "office",
+              "id": "duty-sos-defra-wia1991-s17a-6-consult",
+              "kind": "duty",
+              "label": "Consult the Welsh Ministers before a general authorisation to licence",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Counterparty mapped to the Welsh Government body; statute names 'the Welsh Ministers', who are officeholders under the Government of Wales Act 2006 and have no office node yet.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": "uk-state-body-welsh-government",
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": false,
+              "provision_key": "water-industry-act-1991-s17a-6",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Before giving a general authorisation as regards Ofwat, the Secretary of State must consult the Welsh Ministers (WIA 1991 s.17A(6)) — the devolved check on the gate that controls water-market entry.",
+              "trigger": "Before giving a general authorisation to Ofwat under s.17A(5).",
+              "type": "consultation",
+              "verification_status": "unverified"
+            },
+            {
+              "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
+              "citation": {
+                "provision": "s.17J(5A)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J"
+              },
+              "confidence": 0.92,
+              "holder_type": "office",
+              "id": "duty-sos-defra-wia1991-s17j-5a-consult",
+              "kind": "duty",
+              "label": "Consult the Welsh Ministers before directing Ofwat not to modify",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": null,
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": "uk-state-body-welsh-government",
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": false,
+              "provision_key": "water-industry-act-1991-s17j-5a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "The Secretary of State is to consult the Welsh Ministers before giving a direction under s.17J(5) in relation to a water supply licence (WIA 1991 s.17J(5A)).",
+              "trigger": "Before directing Ofwat not to modify standard conditions of a water supply licence.",
+              "type": "consultation",
+              "verification_status": "unverified"
+            },
+            {
               "beneficiary_or_object": "Consumers in every area; continuity of water/sewerage service.",
               "citation": {
                 "provision": "s.7(1)",
@@ -15107,6 +15215,72 @@
             }
           ],
           "vetoes": [
+            {
+              "blocker_kind": "ministerial",
+              "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+              "blocks_office_id": null,
+              "blocks_party_outside_state": false,
+              "blocks_record_id": "power-ofwat-wia1991-s17a",
+              "blocks_record_type": "power",
+              "citation": {
+                "provision": "s.17A(5)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17A"
+              },
+              "confidence": 0.93,
+              "decision_affected": "Whether Ofwat may grant water supply licences at all.",
+              "derived_from_record_id": "power-ofwat-wia1991-s17a",
+              "holder_type": "office",
+              "id": "veto-sos-defra-wia1991-s17a-5",
+              "kind": "veto",
+              "label": "General authorisation required before Ofwat may licence",
+              "legal_status": "current",
+              "notes": "Same-holder rule (vocab/veto_strength.json v0.2): the general authorisation is the Secretary of State's own act, so it is that holder consenting in class rather than a route around the consent — hard_stop, overridable no, as with ss.6(1)(b) and 7(2)(b).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "overridable": "no",
+              "override_mechanism": null,
+              "projection_shape": "embedded_consent",
+              "provision_key": "water-industry-act-1991-s17a-5",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "strength": "hard_stop",
+              "summary": "Ofwat 'may exercise the power to grant a water supply licence only in accordance with a general authorisation given by the Secretary of State' (WIA 1991 s.17A(5)). Without one there is no licensing at all — the entry gate to the competitive water market is held by the Secretary of State, not the regulator.",
+              "type": "consent_required",
+              "verification_status": "unverified"
+            },
+            {
+              "blocker_kind": "ministerial",
+              "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+              "blocks_office_id": null,
+              "blocks_party_outside_state": false,
+              "blocks_record_id": "power-ofwat-wia1991-s17j",
+              "blocks_record_type": "power",
+              "citation": {
+                "provision": "s.17J(5)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J"
+              },
+              "confidence": 0.92,
+              "decision_affected": "Whether Ofwat may modify the standard conditions of water supply or sewerage licences.",
+              "derived_from_record_id": "power-ofwat-wia1991-s17j",
+              "holder_type": "office",
+              "id": "veto-sos-defra-wia1991-s17j-5",
+              "kind": "veto",
+              "label": "Direction not to modify standard licence conditions",
+              "legal_status": "current",
+              "notes": "veto_type 'other' with a note per the vocab rule: a bare power to direct another body NOT to act matches no existing term cleanly — it is not a consent (silence lets Ofwat proceed) and not an objection power. Recurs with WIA s.16A; two instances now, so a `direction_not_to_act` term is worth proposing.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "overridable": "no",
+              "override_mechanism": null,
+              "projection_shape": "embedded_consent",
+              "provision_key": "water-industry-act-1991-s17j-5",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "strength": "hard_stop",
+              "summary": "Within the notice period, the Secretary of State may direct Ofwat not to make any modification of standard licence conditions, and 'the Authority shall comply with the direction' (WIA 1991 s.17J(5)). A direct ministerial stop on the regulator's sector-wide rule-change power.",
+              "type": "other",
+              "verification_status": "unverified"
+            },
             {
               "blocker_kind": "ministerial",
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
@@ -35038,8 +35212,8 @@
         "needs_review": false,
         "operative": {
           "counts": {
-            "duties": 5,
-            "powers": 7,
+            "duties": 7,
+            "powers": 9,
             "vetoes": 0
           },
           "duties": [
@@ -35068,6 +35242,60 @@
               "summary": "Where a CMA report on a s.14 reference concludes that matters operate against the public interest, specifies the adverse effects, and specifies modifications that would remedy or prevent them, Ofwat SHALL make such modifications of the company's appointment conditions as appear to it requisite to remedy or prevent those effects (WIA 1991 s.16(1)). The obligation is mandatory; the discretion is in which modifications, not whether to act. This is the decision the CMA's s.16A direction blocks — not s.13 (modification by agreement) and not s.14 (the referral).",
               "trigger": "A CMA report on a s.14 modification reference meeting all four limbs of s.16(1)(a)-(d).",
               "type": "other",
+              "verification_status": "unverified"
+            },
+            {
+              "beneficiary_or_object": "The applicant for the licence (a private party).",
+              "citation": {
+                "provision": "s.17F(4)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17F"
+              },
+              "confidence": 0.9,
+              "holder_type": "body",
+              "id": "duty-ofwat-wia1991-s17f-4-refusal-notice",
+              "kind": "duty",
+              "label": "Notice and reasons before refusing a licence application",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Owed to a private applicant, so no counterparty edge — carried on the card only.",
+              "office_id": null,
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "water-industry-act-1991-s17f-4",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Where Ofwat proposes to refuse an application for the grant or variation of a water supply or sewerage licence, it shall notify the applicant, state its reasons, specify a period for representations or objections, and consider any duly made and not withdrawn (WIA 1991 s.17F(4)). The procedural protection around market entry being refused.",
+              "trigger": "Where Ofwat proposes to refuse a relevant application under s.17F.",
+              "type": "consultation",
+              "verification_status": "unverified"
+            },
+            {
+              "beneficiary_or_object": "Relevant licence holders (private companies), plus the bodies served under s.17J(4).",
+              "citation": {
+                "provision": "s.17J(3)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J"
+              },
+              "confidence": 0.9,
+              "holder_type": "body",
+              "id": "duty-ofwat-wia1991-s17j-3-notice",
+              "kind": "duty",
+              "label": "Notice and representations before modifying standard conditions",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "owed_to left null deliberately: the consultees are chiefly private licence holders, so no single state counterparty is named and no must_consult edge is drawn. The s.17J(4) service list is a candidate for multi-counterparty modelling if that shape recurs.",
+              "office_id": null,
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "water-industry-act-1991-s17j-3",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Before modifying standard licence conditions Ofwat must give notice setting out the modifications, their effect and the reasons, allow at least 28 days for representations or objections, and consider any duly made and not withdrawn (WIA 1991 s.17J(3)). Notice is served on each relevant licence holder, the Consumer Council for Water, the Secretary of State, the Welsh Government and the Chief Inspector of Drinking Water (s.17J(4)).",
+              "trigger": "Before making any modification of standard conditions under s.17J.",
+              "type": "consultation",
               "verification_status": "unverified"
             },
             {
@@ -35183,6 +35411,8 @@
             "regulation": [
               "power-ofwat-wia1991-s13",
               "power-ofwat-wia1991-s14",
+              "power-ofwat-wia1991-s17a",
+              "power-ofwat-wia1991-s17j",
               "power-ofwat-wia1991-s22a"
             ]
           },
@@ -35236,6 +35466,61 @@
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
               "summary": "Ofwat may refer to the Competition and Markets Authority the question whether conditions of a company's appointment should be modified; the CMA then determines the reference.",
+              "type": "rulemaking",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.17A(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17A"
+              },
+              "confidence": 0.93,
+              "constraints": [
+                "s.17A(5): exercisable only in accordance with a general authorisation given by the Secretary of State — Ofwat cannot licence at all without one.",
+                "Authorisations operate as provided by Schedule 2A (s.17A(3))."
+              ],
+              "holder_type": "body",
+              "id": "power-ofwat-wia1991-s17a",
+              "kind": "power",
+              "label": "Grant a water supply licence",
+              "legal_effect": "conditional",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s17a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Ofwat may grant a person a licence to use the supply system of a water undertaker (a water supply licence), giving retail, wholesale, restricted retail and/or supplementary authorisations (WIA 1991 s.17A(1)-(2)). The gateway to competition in the water market. Exercisable ONLY in accordance with a general authorisation given by the Secretary of State (s.17A(5)).",
+              "type": "licence",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.17J(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J"
+              },
+              "confidence": 0.93,
+              "constraints": [
+                "s.17J(3): 28 days' notice and representations must be considered first.",
+                "s.17J(5): the Secretary of State may direct Ofwat not to modify, and Ofwat shall comply.",
+                "s.17J(6): blocked where enough relevant licence holders object — by number and by market share, against thresholds set by SI."
+              ],
+              "holder_type": "body",
+              "id": "power-ofwat-wia1991-s17j",
+              "kind": "power",
+              "label": "Modify the standard conditions of water supply and sewerage licences",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": null,
+              "provision_key": "water-industry-act-1991-s17j",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Ofwat may modify the standard conditions of water supply or sewerage licences, and make incidental or consequential modifications to any licence affected (WIA 1991 s.17J(1)-(2)). The sector-wide rule-change lever: it reaches every licensee at once, unlike s.13 modification by agreement.",
               "type": "rulemaking",
               "verification_status": "unverified"
             },
@@ -39620,11 +39905,65 @@
             "ministerial"
           ],
           "counts": {
-            "duties": 1,
+            "duties": 3,
             "powers": 6,
-            "vetoes": 3
+            "vetoes": 5
           },
           "duties": [
+            {
+              "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
+              "citation": {
+                "provision": "s.17A(6)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17A"
+              },
+              "confidence": 0.93,
+              "holder_type": "office",
+              "id": "duty-sos-defra-wia1991-s17a-6-consult",
+              "kind": "duty",
+              "label": "Consult the Welsh Ministers before a general authorisation to licence",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Counterparty mapped to the Welsh Government body; statute names 'the Welsh Ministers', who are officeholders under the Government of Wales Act 2006 and have no office node yet.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": "uk-state-body-welsh-government",
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": false,
+              "provision_key": "water-industry-act-1991-s17a-6",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "Before giving a general authorisation as regards Ofwat, the Secretary of State must consult the Welsh Ministers (WIA 1991 s.17A(6)) — the devolved check on the gate that controls water-market entry.",
+              "trigger": "Before giving a general authorisation to Ofwat under s.17A(5).",
+              "type": "consultation",
+              "verification_status": "unverified"
+            },
+            {
+              "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
+              "citation": {
+                "provision": "s.17J(5A)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J"
+              },
+              "confidence": 0.92,
+              "holder_type": "office",
+              "id": "duty-sos-defra-wia1991-s17j-5a-consult",
+              "kind": "duty",
+              "label": "Consult the Welsh Ministers before directing Ofwat not to modify",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": null,
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": "uk-state-body-welsh-government",
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": false,
+              "provision_key": "water-industry-act-1991-s17j-5a",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "summary": "The Secretary of State is to consult the Welsh Ministers before giving a direction under s.17J(5) in relation to a water supply licence (WIA 1991 s.17J(5A)).",
+              "trigger": "Before directing Ofwat not to modify standard conditions of a water supply licence.",
+              "type": "consultation",
+              "verification_status": "unverified"
+            },
             {
               "beneficiary_or_object": "Consumers in every area; continuity of water/sewerage service.",
               "citation": {
@@ -39819,6 +40158,72 @@
             }
           ],
           "vetoes": [
+            {
+              "blocker_kind": "ministerial",
+              "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+              "blocks_office_id": null,
+              "blocks_party_outside_state": false,
+              "blocks_record_id": "power-ofwat-wia1991-s17a",
+              "blocks_record_type": "power",
+              "citation": {
+                "provision": "s.17A(5)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17A"
+              },
+              "confidence": 0.93,
+              "decision_affected": "Whether Ofwat may grant water supply licences at all.",
+              "derived_from_record_id": "power-ofwat-wia1991-s17a",
+              "holder_type": "office",
+              "id": "veto-sos-defra-wia1991-s17a-5",
+              "kind": "veto",
+              "label": "General authorisation required before Ofwat may licence",
+              "legal_status": "current",
+              "notes": "Same-holder rule (vocab/veto_strength.json v0.2): the general authorisation is the Secretary of State's own act, so it is that holder consenting in class rather than a route around the consent — hard_stop, overridable no, as with ss.6(1)(b) and 7(2)(b).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "overridable": "no",
+              "override_mechanism": null,
+              "projection_shape": "embedded_consent",
+              "provision_key": "water-industry-act-1991-s17a-5",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "strength": "hard_stop",
+              "summary": "Ofwat 'may exercise the power to grant a water supply licence only in accordance with a general authorisation given by the Secretary of State' (WIA 1991 s.17A(5)). Without one there is no licensing at all — the entry gate to the competitive water market is held by the Secretary of State, not the regulator.",
+              "type": "consent_required",
+              "verification_status": "unverified"
+            },
+            {
+              "blocker_kind": "ministerial",
+              "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+              "blocks_office_id": null,
+              "blocks_party_outside_state": false,
+              "blocks_record_id": "power-ofwat-wia1991-s17j",
+              "blocks_record_type": "power",
+              "citation": {
+                "provision": "s.17J(5)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J"
+              },
+              "confidence": 0.92,
+              "decision_affected": "Whether Ofwat may modify the standard conditions of water supply or sewerage licences.",
+              "derived_from_record_id": "power-ofwat-wia1991-s17j",
+              "holder_type": "office",
+              "id": "veto-sos-defra-wia1991-s17j-5",
+              "kind": "veto",
+              "label": "Direction not to modify standard licence conditions",
+              "legal_status": "current",
+              "notes": "veto_type 'other' with a note per the vocab rule: a bare power to direct another body NOT to act matches no existing term cleanly — it is not a consent (silence lets Ofwat proceed) and not an objection power. Recurs with WIA s.16A; two instances now, so a `direction_not_to_act` term is worth proposing.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "overridable": "no",
+              "override_mechanism": null,
+              "projection_shape": "embedded_consent",
+              "provision_key": "water-industry-act-1991-s17j-5",
+              "since": 1991,
+              "source_id": "source-act-water-industry-act-1991",
+              "strength": "hard_stop",
+              "summary": "Within the notice period, the Secretary of State may direct Ofwat not to make any modification of standard licence conditions, and 'the Authority shall comply with the direction' (WIA 1991 s.17J(5)). A direct ministerial stop on the regulator's sector-wide rule-change power.",
+              "type": "other",
+              "verification_status": "unverified"
+            },
             {
               "blocker_kind": "ministerial",
               "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",

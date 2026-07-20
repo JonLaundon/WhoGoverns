@@ -36,6 +36,45 @@ OUT = os.path.join(REPO, "issues", "breadcrumbs.md")
 STUB_MARKERS = ("breadcrumb stub", "not separately extracted", "not yet extracted",
                 "have not extracted", "extraction work item")
 
+# A provision can be legitimately unmined for three reasons, and a register that flags those
+# forever is noise rather than a completeness measure. Each entry needs a stated reason, so
+# the suppression is auditable and not just a way of making the number go down.
+#
+#   AMENDING     — the provision's operative content lives in the Act it amends, and is
+#                  extracted THERE. Re-minting it would duplicate the same law twice.
+#   CONSTITUTIVE — establishes or defines a body or term; confers no power or duty.
+#   PRIVATE      — imposes the obligation on a private party (a water undertaker, an
+#                  abstractor), not on a body or office in the model. Real law, but its
+#                  holder is outside what the register models.
+CORRECTLY_UNMINED = {
+    "water-act-2014-s22":
+        "AMENDING — inserts the resilience objective into WIA 1991 s.2(2A)(e)/(2DA); the "
+        "operative duty is extracted from the consolidated WIA s.2 text, citing this as "
+        "amending provenance.",
+    "water-industry-act-1991-s27a":
+        "CONSTITUTIVE — establishes the Consumer Council for Water and its committees; the "
+        "Council's operative duties are extracted from s.27C.",
+    "water-industry-act-1991-s37":
+        "PRIVATE — the general duty to maintain an efficient and economical water supply "
+        "system falls on the water UNDERTAKER, a private company, not on a modelled body. "
+        "Ofwat's enforcement of it is held separately at s.18.",
+    "water-resources-act-1991-s24":
+        "PRIVATE — the restriction on abstraction binds any PERSON abstracting water. The "
+        "state-side records are the Environment Agency's licensing power (s.38) and its "
+        "enforcement power (s.25A), both held.",
+    # The licensing regime's definitional scaffolding. Fetched because ss.17A+ were fetched as
+    # a block, and they matter for INTERPRETING the operative sections — but they confer
+    # nothing, so flagging them forever would bury the sections that do.
+    "water-industry-act-1991-s17b":
+        "CONSTITUTIVE — defines 'supply system' for the licensing regime; confers no power.",
+    "water-industry-act-1991-s17c":
+        "CONSTITUTIVE — defines 'household premises'; confers no power.",
+    "water-industry-act-1991-s17d":
+        "CONSTITUTIVE — defines the threshold requirement; confers no power.",
+    "water-industry-act-1991-s17q":
+        "CONSTITUTIVE — supplementary provision to s.17P; confers no free-standing power.",
+}
+
 
 def collect():
     powers = store.load("powers")
@@ -92,6 +131,8 @@ def collect():
         pk = p["provision_key"]
         if pk in cited or any(c.startswith(pk + "-") for c in cited):
             continue
+        if pk in CORRECTLY_UNMINED:
+            continue
         rows.append(("unmined provision", pk,
                      f"{p.get('heading') or '(no heading)'} — fetched but no power, duty or "
                      f"veto extracted from it"))
@@ -110,7 +151,10 @@ def main():
              "book, but it only works if the leads are tracked. This file is derived from the "
              "records every time it runs, so a stub that has been closed disappears by itself "
              "and the count is a real completeness measure rather than a feeling.", "",
-             f"**{len(rows)} open stub(s).**", ""]
+             f"**{len(rows)} open stub(s).**", "",
+             f"{len(CORRECTLY_UNMINED)} provision(s) are suppressed as CORRECTLY unmined "
+             "(amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` "
+             "in the script for the reason recorded against each.", ""]
     for kind in sorted(by_kind):
         lines.append(f"## {kind} ({len(by_kind[kind])})")
         lines.append("")

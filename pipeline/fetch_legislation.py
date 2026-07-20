@@ -45,8 +45,13 @@ WIA_1991 = {
     # direct Ofwat NOT to modify) without s.16, the obligation it bites on. A veto whose
     # target is missing is only half a record — the chain could name the blocked BODY but
     # not the blocked decision.
-    "sections": ["2", "6", "7", "13", "14", "15", "16", "16A", "18", "22A", "24", "27A",
-                 "27C", "37", "70", "86", "153", "203"],
+    # ss.17A+ added 2026-07-20 (sponsor challenge): the water supply and sewerage LICENSING
+    # regime inserted by the Water Act 2003 and rebuilt by the Water Act 2014. This is the
+    # gap that made "Ofwat is complete" a false assurance — the whole licensing power set was
+    # absent while the body showed 11 records and a derived `regulation` function.
+    "sections": ["2", "6", "7", "13", "14", "15", "16", "16A", "17A", "17B", "17C", "17D",
+                 "17F", "17G", "17H", "17I", "17J", "17K", "17N", "17Q", "17R",
+                 "18", "22A", "24", "27A", "27C", "37", "70", "86", "153", "203"],
 }
 
 # Water Act 2014 (c.21). NOTE (decision #24 cross-check): the Act operates
