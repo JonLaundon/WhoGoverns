@@ -368,9 +368,13 @@ function traverse(node, dir) {
   let acc = node;
   let frontier = node;
   for (let i = 0; i < 25; i++) {
-    const step = dir === "in" ? frontier.incomers(STRUCTURAL) : frontier.outgoers(STRUCTURAL);
-    const fresh = step.nodes().difference(acc);
-    acc = acc.union(step);
+    // incomers(selector) FILTERS the result, so passing an edge selector returns edges only
+    // and drops the nodes at the far end — walk to those explicitly, or the thread dies after
+    // one hop and no connected body is ever highlighted.
+    const edges = dir === "in" ? frontier.incomers(STRUCTURAL) : frontier.outgoers(STRUCTURAL);
+    const reached = dir === "in" ? edges.sources() : edges.targets();
+    const fresh = reached.difference(acc);
+    acc = acc.union(edges).union(reached);
     if (fresh.empty()) break;
     frontier = fresh;
   }
@@ -400,7 +404,9 @@ function highlightThread(node) {
   // This node's own blocking links, and whoever sits at the other end. They join the
   // highlight but keep their OWN colour (see thread-veto) — the whole point is to see, at a
   // glance, which lines are accountability and which are "this can stop you".
-  const vetoEdges = node.connectedEdges("edge[kind = 'can_veto']");
+  // ...but only the ones currently on show, so the Info tab doesn't label bodies whose
+  // blocking links are hidden.
+  const vetoEdges = node.connectedEdges("edge[kind = 'can_veto']").not(".veto-hide");
   tree = tree.union(vetoEdges).union(vetoEdges.connectedNodes());
   cy.elements().addClass("faded")
     .removeClass("thread-lbl thread-edge thread-assoc thread-veto hover-hl");
@@ -925,7 +931,8 @@ function buildLegend() {
       const [label, color] = BLOCKER_KINDS[k];
       return `<div class="row" data-blocker="${k}"><span class="swatch" style="background:none;border-top:3px solid ${color};height:0;border-radius:0"></span>${esc(label)}</div>`;
     }).join("") +
-    `<div class="row nohover"><span class="swatch" style="background:none;border-top:2px dashed #6b7280;height:0;border-radius:0"></span>dashed = a way round it exists</div>` +
+    `<div class="row nohover"><span class="swatch" style="background:none;border-top:3px solid #6b7280;height:0;border-radius:0"></span>solid = hard stop (no lawful route past it)</div>` +
+    `<div class="row nohover"><span class="swatch" style="background:none;border-top:2px dashed #6b7280;height:0;border-radius:0"></span>dashed = a cited appeal or override exists</div>` +
     `<h3>Links</h3>` +
     `<div class="row nohover"><span class="swatch" style="background:none;border-top:2px solid #d3d6d8;height:0;border-radius:0"></span>sponsors</div>` +
     `<div class="row nohover"><span class="swatch" style="background:none;border-top:2px solid #8a1a12;height:0;border-radius:0"></span>leads (PM → cabinet → junior) <span class="flag" style="margin-left:4px">derived</span></div>`;
@@ -1111,15 +1118,19 @@ function applyMapMode() {
   const structuralOn = !$("#toggle-sponsors") || $("#toggle-sponsors").checked;
   const onPowers = activeTab === "powers";
   cy.batch(() => {
-    cy.edges("[kind = 'can_veto']").forEach((e) => {
-      const touchesSelection = selectedId &&
-        (e.source().id() === selectedId || e.target().id() === selectedId);
-      e.toggleClass("veto-hide", !(always || onPowers || touchesSelection));
-    });
-    // On the Powers tab the structural spine steps back so the blocking layer reads.
+    // The two layers genuinely SWAP. Off the Powers tab you get accountability — who
+    // sponsors whom, who answers to which minister. On the Powers tab you get obstruction.
+    // Showing both at once for the selected node was the muddle: it looked like the blocking
+    // layer never turned off.
+    cy.edges("[kind = 'can_veto']").toggleClass("veto-hide", !(always || onPowers));
     cy.edges(STRUCTURAL).toggleClass("struct-hide", !structuralOn)
       .toggleClass("struct-quiet", structuralOn && onPowers);
   });
+  // Re-run the highlight so the thread reflects the layer now on show.
+  if (selectedId) {
+    const n = cy.getElementById(selectedId);
+    if (!n.empty()) highlightThread(n);
+  }
 }
 
 // Gold halo on every regulator, wherever it sits in the rings — the cross-cutting view
