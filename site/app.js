@@ -295,11 +295,19 @@ function init(graph) {
       { selector: "edge[kind = 'can_veto'][strength = 'strong_delay']", style: { "line-style": "dashed", "width": 1.8, "opacity": 0.7 } },
       { selector: "edge[kind = 'can_veto'][strength = 'procedural_risk']", style: { "line-style": "dotted", "width": 1.5, "opacity": 0.6 } },
       { selector: "edge.veto-hide", style: { "display": "none" } },
+      { selector: "edge.struct-hide", style: { "display": "none" } },
+      { selector: "edge.struct-quiet", style: { "opacity": 0.12 } },
       { selector: "edge.rot-hide", style: { "display": "none" } },
       { selector: ".faded", style: { "opacity": 0.08, "text-opacity": 0 } },
       { selector: "node.thread-lbl", style: { "label": "data(label)", "z-index": 95, "border-width": 2, "border-color": "#0b0c0c" } },
       { selector: "edge.thread-edge", style: { "line-color": "#0b0c0c", "opacity": 1, "width": 2.5, "z-index": 85, "target-arrow-color": "#0b0c0c", "line-style": "solid" } },
       { selector: "edge.thread-assoc", style: { "line-color": "#0b0c0c", "opacity": 0.55, "width": 1.4, "z-index": 84, "target-arrow-color": "#0b0c0c", "line-style": "dashed" } },
+      // A highlighted blocking link keeps its OWN colour and just gets louder. Declared
+      // AFTER thread-edge/hover-hl so it wins — otherwise selecting a node turned every
+      // blocking link black and you could no longer tell accountability from obstruction.
+      { selector: "edge[kind = 'can_veto'].thread-veto", style: {
+        "line-color": "data(kindColor)", "target-arrow-color": "data(kindColor)",
+        "width": 3.4, "opacity": 1, "z-index": 99 } },
       { selector: "node.hover-hl", style: { "label": "data(label)", "z-index": 90, "border-width": 2, "border-color": "#0b0c0c" } },
       { selector: "edge.hover-hl", style: { "line-color": "#0b0c0c", "opacity": 1, "width": 2, "z-index": 80, "target-arrow-color": "#0b0c0c" } },
       { selector: "node:selected", style: { "label": "data(label)", "border-width": 3, "border-color": "#0b0c0c", "z-index": 100, "font-size": 11, "font-weight": "bold" } },
@@ -317,6 +325,7 @@ function init(graph) {
   runLayout("rings");
   buildLegend();
   wireControls();
+  applyMapMode();      // blocking links start hidden; they appear with a selection
   $("#counts").textContent =
     `${graph.counts.bodies} bodies · ${graph.counts.relationships} sponsor links · ` +
     `${graph.counts.offices} offices · ${graph.counts.person_roles} ministers`;
@@ -350,11 +359,16 @@ function unhover() {
 // Walk the graph from a node following edges one way: "in" = towards the centre
 // (sponsor department → minister → cabinet → PM), "out" = away (agencies → bodies →
 // sub-bodies, the whole downstream subtree). Returns the nodes AND connecting edges.
+// STRUCTURAL edges only. A blocking link is not a line of accountability — walking one
+// would drag an unrelated department's whole subtree into the golden thread (select Ofwat,
+// and the CMA's entire estate lights up because the CMA can veto it).
+const STRUCTURAL = "edge[kind != 'can_veto']";
+
 function traverse(node, dir) {
   let acc = node;
   let frontier = node;
   for (let i = 0; i < 25; i++) {
-    const step = dir === "in" ? frontier.incomers() : frontier.outgoers();
+    const step = dir === "in" ? frontier.incomers(STRUCTURAL) : frontier.outgoers(STRUCTURAL);
     const fresh = step.nodes().difference(acc);
     acc = acc.union(step);
     if (fresh.empty()) break;
@@ -382,9 +396,16 @@ function downstreamTree(node) {
 // the highlighted node changes (hover to a new node, or revert to the selected one).
 function highlightThread(node) {
   const up = traverse(node, "in");     // node → minister → cabinet → PM
-  const tree = up.union(downstreamTree(node));   // + the downstream subtree
-  cy.elements().addClass("faded").removeClass("thread-lbl thread-edge thread-assoc hover-hl");
+  let tree = up.union(downstreamTree(node));   // + the downstream subtree
+  // This node's own blocking links, and whoever sits at the other end. They join the
+  // highlight but keep their OWN colour (see thread-veto) — the whole point is to see, at a
+  // glance, which lines are accountability and which are "this can stop you".
+  const vetoEdges = node.connectedEdges("edge[kind = 'can_veto']");
+  tree = tree.union(vetoEdges).union(vetoEdges.connectedNodes());
+  cy.elements().addClass("faded")
+    .removeClass("thread-lbl thread-edge thread-assoc thread-veto hover-hl");
   tree.removeClass("faded");
+  vetoEdges.connectedNodes().addClass("thread-lbl");
   up.nodes().addClass("thread-lbl");   // label only the upward thread (downstream is too many)
   node.addClass("thread-lbl");
   if (node.data("kind") === "body") {
@@ -392,13 +413,15 @@ function highlightThread(node) {
     // Secretary of State is a direct link; the department's OTHER ministers are merely
     // associated (same department, different brief), so draw those dashed (as MoG does).
     tree.edges().forEach((e) => {
+      if (e.data("kind") === "can_veto") return;   // keeps its blocker colour
       const assoc = (e.data("kind") === "office_of" && ["junior_minister", "other"].includes(e.source().data("office_type")))
         || (e.data("kind") === "leads" && e.target().data("office_type") === "junior_minister");
       e.addClass(assoc ? "thread-assoc" : "thread-edge");
     });
   } else {
-    tree.edges().addClass("thread-edge");
+    tree.edges().not("edge[kind = 'can_veto']").addClass("thread-edge");
   }
+  vetoEdges.addClass("thread-veto");
 }
 
 // Smoothly rotate the ring layout by animating an angle applied to the base positions
@@ -448,14 +471,18 @@ function selectNode(id) {
   cy.$(":selected").unselect();
   node.select();
   renderDetail(node.data());
+  activeTab = "info";          // a fresh selection opens on Info
+  applyMapMode();
   if (currentLayout === "rings") rotateToTop(node);
   else cy.animate({ center: { eles: node }, zoom: Math.max(cy.zoom(), 1.0) }, { duration: 250 });
 }
 
 function clearFocus() {
   selectedId = null;
+  activeTab = "info";
   $("#tooltip").style.display = "none";
-  cy.elements().removeClass("faded hover-hl thread-lbl thread-edge thread-assoc");
+  cy.elements().removeClass("faded hover-hl thread-lbl thread-edge thread-assoc thread-veto");
+  applyMapMode();
   cy.$(":selected").unselect();
   if (currentLayout === "rings") animateRotation(0, 500);   // rotate back smoothly
   $("#detail-body").hidden = true;
@@ -475,6 +502,8 @@ function renderDetail(d) {
       const k = btn.getAttribute("data-tab");
       el.querySelectorAll(".tab").forEach((b) => b.classList.toggle("active", b === btn));
       el.querySelectorAll(".tabpanel").forEach((p) => { p.hidden = p.getAttribute("data-panel") !== k; });
+      activeTab = k;          // the tab IS the declared intent — let the map follow it
+      applyMapMode();
     }));
   // Power / Duty / Veto filter pills.
   el.querySelectorAll(".op-pill").forEach((btn) =>
@@ -995,6 +1024,9 @@ function applyTheme(dark) {
     .selector("node.hover-hl").style({ "border-color": ink })
     .selector("node:selected").style({ "border-color": ink })
     .selector("node[?forming]").style({ "border-color": ink })
+    // re-assert AFTER the thread overrides above, or dark mode repaints blocking links black
+    .selector("edge[kind = 'can_veto'].thread-veto")
+    .style({ "line-color": "data(kindColor)", "target-arrow-color": "data(kindColor)" })
     .update();
 }
 
@@ -1047,7 +1079,8 @@ function wireControls() {
 
   $("#toggle-forming").addEventListener("change", applyFilters);
   $("#toggle-regulators").addEventListener("change", applyRegulatorHighlight);
-  $("#toggle-vetoes").addEventListener("change", applyVetoLinks);
+  $("#toggle-vetoes").addEventListener("change", applyMapMode);
+  $("#toggle-sponsors").addEventListener("change", applyMapMode);
   document.querySelectorAll("input[name='layout']").forEach((r) =>
     r.addEventListener("change", (e) => { clearFocus(); runLayout(e.target.value); }));
 
@@ -1065,9 +1098,28 @@ function applyFilters() {
     n.style("display", (n.data("forming") && !showForming) ? "none" : "element")));
 }
 
-function applyVetoLinks() {
-  const on = $("#toggle-vetoes").checked;
-  cy.batch(() => cy.edges("[kind = 'can_veto']").toggleClass("veto-hide", !on));
+// What the map shows is driven by what you are looking at, not by a standing setting.
+// Blocking links are OFF by default — drawn across the whole state at once they are noise —
+// and appear for whatever you select, or across the board on the Powers tab, where they are
+// the subject. Two checkboxes override: show blocking everywhere, or hide the structural
+// spine so the blocking layer reads on its own.
+let activeTab = "info";
+
+function applyMapMode() {
+  if (!cy) return;
+  const always = $("#toggle-vetoes") && $("#toggle-vetoes").checked;
+  const structuralOn = !$("#toggle-sponsors") || $("#toggle-sponsors").checked;
+  const onPowers = activeTab === "powers";
+  cy.batch(() => {
+    cy.edges("[kind = 'can_veto']").forEach((e) => {
+      const touchesSelection = selectedId &&
+        (e.source().id() === selectedId || e.target().id() === selectedId);
+      e.toggleClass("veto-hide", !(always || onPowers || touchesSelection));
+    });
+    // On the Powers tab the structural spine steps back so the blocking layer reads.
+    cy.edges(STRUCTURAL).toggleClass("struct-hide", !structuralOn)
+      .toggleClass("struct-quiet", structuralOn && onPowers);
+  });
 }
 
 // Gold halo on every regulator, wherever it sits in the rings — the cross-cutting view

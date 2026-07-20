@@ -291,3 +291,4 @@ body.dark .badge.kind-judicial { color: #a58ee0; }
 body.dark .badge.mod-power { color: #7fb4e8; }
 body.dark .badge.mod-duty { color: #6fc98a; }
 body.dark .badge.mod-veto, body.dark .badge.kind-ministerial { color: #e88b80; }
+.filters .hintlet { display: block; font-size: 0.72rem; color: var(--mid); line-height: 1.35; }
