@@ -44,6 +44,86 @@
   {
     "body_id": "uk-state-body-competition-and-markets-authority",
     "citation": {
+      "provision": "s.109",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/2002/40/section/109"
+    },
+    "constraints": [
+      "Exercisable for the 'permitted purposes' in s.109(A1) — assisting the CMA (or SoS) in Part 3 functions connected with a reference."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.88,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-competition-spine",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "Cross-cutting spine record: reached identically by every sector that refers to the CMA (water via WIA ss.17K-17M; energy/telecoms/rail likewise).",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-cma-enterprise2002-s109",
+    "power_label": "Require attendance of witnesses and production of documents",
+    "power_type": "information_request",
+    "provision_key": "enterprise-act-2002-s109",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [],
+    "source_id": "source-act-enterprise-act-2002",
+    "summary": "The CMA may, for the purposes of its investigation and enforcement functions under Part 3, require any person to attend and give evidence or to produce documents (Enterprise Act 2002 s.109), enforced by penalties (ss.110-116). The general investigatory machinery applied to sectoral references — reached from the water regime via WIA 1991 s.17M and shared by every regulated sector.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-competition-and-markets-authority",
+    "citation": {
+      "provision": "s.75",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/2002/40/section/75"
+    },
+    "constraints": [
+      "Contingent on an accepted s.73 undertaking having failed (s.75(1))."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.86,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-competition-spine",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "Reached from WIA s.17R: such an order 'may also provide for the modification' of water/sewerage licence conditions — the competition-remedy route into the licence regime.",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-cma-enterprise2002-s75",
+    "power_label": "Make an order where an undertaking is not fulfilled",
+    "power_type": "enforcement",
+    "provision_key": "enterprise-act-2002-s75",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [],
+    "source_id": "source-act-enterprise-act-2002",
+    "summary": "Where the CMA considers that an undertaking it accepted under s.73 has not been or will not be fulfilled (or was procured by false information), it may make an order to achieve the purposes of that undertaking (Enterprise Act 2002 s.75). The order-making power reached from the water regime via WIA 1991 s.17R (competition orders that can modify a licence).",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-competition-and-markets-authority",
+    "citation": {
       "provision": "s.16A(1)",
       "quote": null,
       "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/16A"
@@ -363,6 +443,48 @@
     "related_power_ids": [],
     "source_id": "source-act-wildlife-and-countryside-act-1981",
     "summary": "A 'section 28G authority' (a public body, including a water or sewerage undertaker) must give Natural England notice before carrying out operations likely to damage an SSSI, even off-site (WCA 1981 s.28H(1)-(2)). Natural England may refuse assent, or assent with or without conditions (s.28H(3)); silence for 28 days is treated as a refusal. The gate on undertaker infrastructure — reservoirs, abstraction works — affecting protected sites.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.54",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1998/41/section/54"
+    },
+    "constraints": [
+      "Concurrent with the CMA, confined to the water/sewerage sector (s.54; Sch 10)."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.87,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-competition-spine",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "THE spine payoff: s.54 names Ofwat, Ofgem/GEMA, Ofcom, ORR, the CAA, the NI utility regulator, the PSR and the FCA as concurrent 'regulators'. The identical concurrent-enforcement power sits on each — a cross-cutting record every utility domain reuses, and part of why `regulation` is a function spanning body_types. The Chapter I/II prohibitions (ss.2, 18) themselves bind UNDERTAKINGS (private parties), so they are not state-body records; this enforcement power is.",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-ofwat-competition1998-s54",
+    "power_label": "Enforce competition law concurrently with the CMA (water sector)",
+    "power_type": "enforcement",
+    "provision_key": "competition-act-1998-s54",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-competition-and-markets-authority"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-competition-act-1998",
+    "summary": "Ofwat is a named 'regulator' under Competition Act 1998 s.54 and (via Schedule 10) exercises the Act's functions — enforcing the Chapter I prohibition on anti-competitive agreements (s.2) and the Chapter II prohibition on abuse of a dominant position (s.18) — CONCURRENTLY with the CMA, so far as they relate to the water and sewerage sector. The statutory basis of Ofwat's competition role, distinct from its WIA licensing role.",
     "verification": {
       "verification_notes": null,
       "verification_status": "unverified",

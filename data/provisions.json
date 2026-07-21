@@ -1,6 +1,327 @@
 [
   {
     "citation": {
+      "content_hash": "c4088169682f3218",
+      "url": "https://www.legislation.gov.uk/ukpga/1985/6/section/431",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Investigation of a company on its own application or that of its members.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-companies-act-1985",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "companies-act-1985-s431",
+    "provision_ref": "s.431",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "47e396ab4859701f",
+      "url": "https://www.legislation.gov.uk/ukpga/1998/41/section/18",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Abuse of dominant position.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-competition-act-1998",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "competition-act-1998-s18",
+    "provision_ref": "s.18",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "competition-act-1998",
+        "internal": true,
+        "provision_key": "competition-act-1998-s19",
+        "raw": "section 19"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "a098dc1c68bb9967",
+      "url": "https://www.legislation.gov.uk/ukpga/1998/41/section/2",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Agreements etc. preventing, restricting or distorting competition.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-competition-act-1998",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "competition-act-1998-s2",
+    "provision_ref": "s.2",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "competition-act-1998",
+        "internal": true,
+        "provision_key": "competition-act-1998-s3",
+        "raw": "section 3"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "1b3073eb37a2c021",
+      "url": "https://www.legislation.gov.uk/ukpga/1998/41/section/54",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Regulators.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-competition-act-1998",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "competition-act-1998-s54",
+    "provision_ref": "s.54",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": false,
+        "instrument_slug": "financial-services-banking-reform-act-2013",
+        "internal": false,
+        "provision_key": "financial-services-banking-reform-act-2013-s40",
+        "raw": "section 40"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "competition-act-1998",
+        "internal": true,
+        "provision_key": "competition-act-1998-s31",
+        "raw": "section 31(1)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "interpretation-act-1978",
+        "internal": false,
+        "provision_key": "interpretation-act-1978-s21",
+        "raw": "section 21(1)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "financial-services-banking-reform-act-2013",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Financial Services (Banking Reform) Act 2013"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "interpretation-act-1978",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Interpretation Act 1978"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "3dab3c5026d7e6ca",
+      "url": "https://www.legislation.gov.uk/ukpga/1987/38/section/2",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Director’s investigation powers.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-criminal-justice-act-1987",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "criminal-justice-act-1987-s2",
+    "provision_ref": "s.2",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "criminal-justice-act-1987",
+        "internal": true,
+        "provision_key": "criminal-justice-act-1987-s1",
+        "raw": "section 1"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "crime-and-courts-act-2013",
+        "internal": false,
+        "provision_key": "crime-and-courts-act-2013-s5",
+        "raw": "section 5(5)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "crime-international-co-operation-act-2003",
+        "internal": false,
+        "provision_key": "crime-international-co-operation-act-2003-s15",
+        "raw": "section 15(2)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "criminal-justice-act-1987",
+        "internal": true,
+        "provision_key": "criminal-justice-act-1987-s13",
+        "raw": "section 13(2)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "criminal-justice-and-police-act-2001",
+        "internal": false,
+        "provision_key": "criminal-justice-and-police-act-2001-s50",
+        "raw": "section 50"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "crime-and-courts-act-2013",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Crime and Courts Act 2013"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "crime-international-co-operation-act-2003",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Crime (International Co-operation) Act 2003"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "criminal-justice-and-police-act-2001",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Criminal Justice and Police Act 2001"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "ac0efcdb2404eb75",
+      "url": "https://www.legislation.gov.uk/ukpga/2002/40/section/109",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Attendance of witnesses and production of documents etc.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-enterprise-act-2002",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: The Competition (Amendment etc.) (EU Exit) (No. 2) Regulations 2019 (expired—not approved) reg. 10 (words substituted by S.I. 2019/93, reg. 50A(3)(a) (as inserted)); The Competition (Amendment etc.) (EU Exit) (No. 2) Regulations 2019 (expired—not approved) reg. 10 (words substituted by S.I. 2019/93, reg. 50A(3)(b) (as inserted)); The Competition (Amendment etc.) (EU Exit) (No. 2) Regulations 2019 (expired—not approved) reg. 10 (inserted by S.I. 2019/93, reg. 50A(4) (as inserted)); The Competition (Amendment etc.) (EU Exit) (No. 2) Regulations 2019 (expired—not approved) reg. 10 (inserted by S.I. 2019/93, reg. 50A(2) (as inserted)). Consolidated text may lag the law in force.",
+    "provision_key": "enterprise-act-2002-s109",
+    "provision_ref": "s.109",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": true,
+        "provision_key": "enterprise-act-2002-s22",
+        "raw": "section 22"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": true,
+        "provision_key": "enterprise-act-2002-s45",
+        "raw": "section 45"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": true,
+        "provision_key": "enterprise-act-2002-s70a",
+        "raw": "section 70A"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": true,
+        "provision_key": "enterprise-act-2002-s87",
+        "raw": "section 87"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": true,
+        "provision_key": "enterprise-act-2002-s75",
+        "raw": "section 75"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "b324cf592a28f935",
+      "url": "https://www.legislation.gov.uk/ukpga/2002/40/section/75",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Order-making power where undertakings under section 73 not fulfilled etc.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-enterprise-act-2002",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "enterprise-act-2002-s75",
+    "provision_ref": "s.75",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": true,
+        "provision_key": "enterprise-act-2002-s73",
+        "raw": "section 73"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "7dfa76fa9034e0ef",
+      "url": "https://www.legislation.gov.uk/ukpga/2000/8/section/167",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Appointment of persons to carry out general investigations.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-financial-services-and-markets-act-2000",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "financial-services-and-markets-act-2000-s167",
+    "provision_ref": "s.167",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "financial-services-and-markets-act-2000",
+        "internal": true,
+        "provision_key": "financial-services-and-markets-act-2000-s313",
+        "raw": "section 313(1)"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "b96003b88f8f3eb8",
       "url": "https://www.legislation.gov.uk/ukpga/1986/45/section/124A",
       "version_date": "2026-07-21"
@@ -18,7 +339,7 @@
     "record_status": "extracted",
     "references": [
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "companies-act-1985",
         "internal": false,
         "provision_key": "companies-act-1985-s448a",
@@ -39,7 +360,7 @@
         "raw": "section 165"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "criminal-justice-act-1987",
         "internal": false,
         "provision_key": "criminal-justice-act-1987-s2",
@@ -60,21 +381,21 @@
         "raw": "section 83"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "companies-act-1985",
         "internal": false,
         "provision_key": null,
         "raw": "Part XIV (except section 448A) of the Companies Act 1985"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "financial-services-and-markets-act-2000",
         "internal": false,
         "provision_key": null,
         "raw": "Financial Services and Markets Act 2000"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "criminal-justice-act-1987",
         "internal": false,
         "provision_key": null,
@@ -235,7 +556,7 @@
         "raw": "section 16A"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "enterprise-act-2002",
         "internal": false,
         "provision_key": "enterprise-act-2002-s109",
@@ -256,7 +577,7 @@
         "raw": "Enterprise and Regulatory Reform Act 2013"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "enterprise-act-2002",
         "internal": false,
         "provision_key": null,
@@ -780,7 +1101,7 @@
         "raw": "section 17P"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "enterprise-act-2002",
         "internal": false,
         "provision_key": "enterprise-act-2002-s109",
@@ -801,7 +1122,7 @@
         "raw": "Enterprise and Regulatory Reform Act 2013"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "enterprise-act-2002",
         "internal": false,
         "provision_key": null,
@@ -864,7 +1185,7 @@
     "record_status": "extracted",
     "references": [
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "enterprise-act-2002",
         "internal": false,
         "provision_key": "enterprise-act-2002-s17k",
@@ -899,7 +1220,7 @@
         "raw": "section 143"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "enterprise-act-2002",
         "internal": false,
         "provision_key": null,
@@ -1067,7 +1388,7 @@
         "raw": "section 143"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "enterprise-act-2002",
         "internal": false,
         "provision_key": null,
@@ -1102,7 +1423,7 @@
     "record_status": "extracted",
     "references": [
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "enterprise-act-2002",
         "internal": false,
         "provision_key": "enterprise-act-2002-s75",
@@ -1116,7 +1437,7 @@
         "raw": "section 160"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "enterprise-act-2002",
         "internal": false,
         "provision_key": null,
@@ -1396,7 +1717,7 @@
         "raw": "sections 22B"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "competition-act-1998",
         "internal": false,
         "provision_key": null,

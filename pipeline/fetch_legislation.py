@@ -128,7 +128,68 @@ WSMA_2025 = {
                        "Registered via the retrodiction; full extraction is a follow-on.",
 }
 
-ACTS = [WIA_1991, WATER_ACT_2014, WRA_1991, WCA_1981, INSOLVENCY_1986, WSMA_2025]
+# ---- The cross-cutting competition/company-law SPINE (build-out strategy v0.1). ----
+# General law reached by EVERY regulated domain's breadcrumbs, so extracted ONCE here rather
+# than re-touched per domain. Scoped (decision #11) to the provisions the water register
+# actually reaches, not the whole Acts.
+ENTERPRISE_2002 = {
+    "instrument_id": "instrument-act-enterprise-act-2002",
+    "source_id": "source-act-enterprise-act-2002",
+    "slug": "enterprise-act-2002",
+    "title": "Enterprise Act 2002",
+    "leg_type": "ukpga", "year": 2002, "number": "40",
+    # s.109 = CMA investigatory powers (attendance/documents) applied to sectoral references;
+    # s.75 = orders (reached from WIA s.17R, competition orders that modify licences).
+    "sections": ["75", "109"],
+    "instrument_note": "Cross-cutting spine: the CMA's general investigation and order-making "
+                       "machinery, applied to the water references by WIA 1991 ss.17M/17R and "
+                       "reached the same way by every regulated sector. Scoped to the reached "
+                       "provisions, not the whole Act.",
+}
+COMPETITION_1998 = {
+    "instrument_id": "instrument-act-competition-act-1998",
+    "source_id": "source-act-competition-act-1998",
+    "slug": "competition-act-1998",
+    "title": "Competition Act 1998",
+    "leg_type": "ukpga", "year": 1998, "number": "41",
+    # s.54 = concurrency (sector regulators exercise CA1998 powers concurrently with the CMA);
+    # s.2 / s.18 = the Chapter I / Chapter II prohibitions those powers enforce.
+    "sections": ["2", "18", "54"],
+    "instrument_note": "Cross-cutting spine: the Chapter I/II prohibitions and the concurrency "
+                       "regime by which sector regulators (Ofwat, Ofgem, etc.) enforce competition "
+                       "law in their sector alongside the CMA. Reached from WIA 1991 s.22A.",
+}
+# The s.124A public-interest-winding-up TRIGGER instruments — company-investigation and
+# fraud-investigation machinery. Registered as instrument nodes (resolving the orphan
+# references) but NOT extracted: they belong to a future corporate-enforcement domain, not the
+# competition spine. One principal section each so the node exists.
+COMPANIES_1985 = {
+    "instrument_id": "instrument-act-companies-act-1985", "source_id": "source-act-companies-act-1985",
+    "slug": "companies-act-1985", "title": "Companies Act 1985", "leg_type": "ukpga",
+    "year": 1985, "number": "6", "sections": ["431"],
+    "instrument_note": "Breadcrumb (s.124A trigger): Part XIV company-investigation reports found "
+                       "expedient in the public interest can ground a winding-up petition. Future "
+                       "corporate-enforcement domain; registered, not extracted.",
+}
+FSMA_2000 = {
+    "instrument_id": "instrument-act-financial-services-and-markets-act-2000",
+    "source_id": "source-act-financial-services-and-markets-act-2000",
+    "slug": "financial-services-and-markets-act-2000", "title": "Financial Services and Markets Act 2000",
+    "leg_type": "ukpga", "year": 2000, "number": "8", "sections": ["167"],
+    "instrument_note": "Breadcrumb (s.124A trigger): FCA/inspector reports under FSMA can ground a "
+                       "public-interest winding-up. Registered, not extracted.",
+}
+CJA_1987 = {
+    "instrument_id": "instrument-act-criminal-justice-act-1987",
+    "source_id": "source-act-criminal-justice-act-1987",
+    "slug": "criminal-justice-act-1987", "title": "Criminal Justice Act 1987",
+    "leg_type": "ukpga", "year": 1987, "number": "38", "sections": ["2"],
+    "instrument_note": "Breadcrumb (s.124A trigger): SFO fraud-investigation information (s.2) can "
+                       "ground a public-interest winding-up. Registered, not extracted.",
+}
+
+ACTS = [WIA_1991, WATER_ACT_2014, WRA_1991, WCA_1981, INSOLVENCY_1986, WSMA_2025,
+        ENTERPRISE_2002, COMPETITION_1998, COMPANIES_1985, FSMA_2000, CJA_1987]
 
 
 def fetch(url, timeout=30, retries=3):

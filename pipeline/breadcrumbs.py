@@ -81,8 +81,23 @@ CORRECTLY_UNMINED = {
         "PROCEDURAL — time limits on s.17K references; confers no operative power.",
     "water-industry-act-1991-s17m":
         "CROSS-REFERRING — applies the Enterprise Act 2002 investigation powers (ss.109-116) to "
-        "s.17K references; the operative powers are the Enterprise Act's, a cross-domain "
-        "breadcrumb captured in Provision.references, not re-minted here.",
+        "s.17K references; the operative power is the Enterprise Act's s.109 (now extracted).",
+    # Competition-law spine: the substantive prohibitions bind undertakings (private parties);
+    # the state-side records are the enforcement powers (CA1998 s.54 concurrency, EA2002 powers).
+    "competition-act-1998-s2":
+        "PRIVATE — the Chapter I prohibition binds UNDERTAKINGS, not the state; enforced via the "
+        "s.54 concurrency power (power-ofwat-competition1998-s54) and the CMA.",
+    "competition-act-1998-s18":
+        "PRIVATE — the Chapter II prohibition (abuse of dominance) binds UNDERTAKINGS; enforced "
+        "via s.54 concurrency and the CMA.",
+    # s.124A public-interest-winding-up trigger instruments — registered, future domain.
+    "companies-act-1985-s431":
+        "REGISTERED-NOT-EXTRACTED — a s.124A winding-up trigger (Part XIV company investigations); "
+        "belongs to a future corporate-enforcement domain, not the competition spine.",
+    "financial-services-and-markets-act-2000-s167":
+        "REGISTERED-NOT-EXTRACTED — a s.124A trigger (FCA/inspector reports); future domain.",
+    "criminal-justice-act-1987-s2":
+        "REGISTERED-NOT-EXTRACTED — a s.124A trigger (SFO fraud investigations); future domain.",
 }
 
 

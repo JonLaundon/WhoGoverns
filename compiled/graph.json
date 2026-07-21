@@ -3,13 +3,13 @@
     "bodies": 685,
     "budget_records": 1433,
     "duties": 16,
-    "instruments": 6,
+    "instruments": 11,
     "offices": 164,
     "person_roles": 181,
-    "powers": 31,
-    "provisions": 65,
+    "powers": 34,
+    "provisions": 73,
     "relationships": 639,
-    "sources": 15,
+    "sources": 20,
     "staffing_records": 3884,
     "vetoes": 11
   },
@@ -8082,7 +8082,7 @@
       }
     }
   ],
-  "generated": "2026-07-21T12:55:34",
+  "generated": "2026-07-21T13:01:02",
   "nodes": [
     {
       "data": {
@@ -12533,14 +12533,14 @@
         "kind": "body",
         "label": "Competition and Markets Authority",
         "needs_review": false,
-        "op_total": 7,
+        "op_total": 9,
         "operative": {
           "blocker_kinds": [
             "regulatory"
           ],
           "counts": {
             "duties": 2,
-            "powers": 3,
+            "powers": 5,
             "vetoes": 2
           },
           "duties": [
@@ -12600,7 +12600,66 @@
               "verification_status": "unverified"
             }
           ],
+          "functions_derived": {
+            "regulation": [
+              "power-cma-enterprise2002-s75",
+              "power-cma-wia1991-s17r"
+            ]
+          },
           "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.109",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2002/40/section/109"
+              },
+              "confidence": 0.88,
+              "constraints": [
+                "Exercisable for the 'permitted purposes' in s.109(A1) — assisting the CMA (or SoS) in Part 3 functions connected with a reference."
+              ],
+              "holder_type": "body",
+              "id": "power-cma-enterprise2002-s109",
+              "kind": "power",
+              "label": "Require attendance of witnesses and production of documents",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "Cross-cutting spine record: reached identically by every sector that refers to the CMA (water via WIA ss.17K-17M; energy/telecoms/rail likewise).",
+              "office_id": null,
+              "outstanding_effects": true,
+              "provision_key": "enterprise-act-2002-s109",
+              "since": 2002,
+              "source_id": "source-act-enterprise-act-2002",
+              "summary": "The CMA may, for the purposes of its investigation and enforcement functions under Part 3, require any person to attend and give evidence or to produce documents (Enterprise Act 2002 s.109), enforced by penalties (ss.110-116). The general investigatory machinery applied to sectoral references — reached from the water regime via WIA 1991 s.17M and shared by every regulated sector.",
+              "type": "information_request",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.75",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2002/40/section/75"
+              },
+              "confidence": 0.86,
+              "constraints": [
+                "Contingent on an accepted s.73 undertaking having failed (s.75(1))."
+              ],
+              "holder_type": "body",
+              "id": "power-cma-enterprise2002-s75",
+              "kind": "power",
+              "label": "Make an order where an undertaking is not fulfilled",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "Reached from WIA s.17R: such an order 'may also provide for the modification' of water/sewerage licence conditions — the competition-remedy route into the licence regime.",
+              "office_id": null,
+              "provision_key": "enterprise-act-2002-s75",
+              "since": 2002,
+              "source_id": "source-act-enterprise-act-2002",
+              "summary": "Where the CMA considers that an undertaking it accepted under s.73 has not been or will not be fulfilled (or was procured by false information), it may make an order to achieve the purposes of that undertaking (Enterprise Act 2002 s.75). The order-making power reached from the water regime via WIA 1991 s.17R (competition orders that can modify a licence).",
+              "type": "enforcement",
+              "verification_status": "unverified"
+            },
             {
               "basis": "statutory",
               "citation": {
@@ -36258,11 +36317,11 @@
         "kind": "body",
         "label": "The Water Services Regulation Authority",
         "needs_review": false,
-        "op_total": 20,
+        "op_total": 21,
         "operative": {
           "counts": {
             "duties": 8,
-            "powers": 12,
+            "powers": 13,
             "vetoes": 0
           },
           "duties": [
@@ -36487,6 +36546,7 @@
           ],
           "functions_derived": {
             "regulation": [
+              "power-ofwat-competition1998-s54",
               "power-ofwat-wia1991-s13",
               "power-ofwat-wia1991-s14",
               "power-ofwat-wia1991-s17a",
@@ -36498,6 +36558,32 @@
             ]
           },
           "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.54",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1998/41/section/54"
+              },
+              "confidence": 0.87,
+              "constraints": [
+                "Concurrent with the CMA, confined to the water/sewerage sector (s.54; Sch 10)."
+              ],
+              "holder_type": "body",
+              "id": "power-ofwat-competition1998-s54",
+              "kind": "power",
+              "label": "Enforce competition law concurrently with the CMA (water sector)",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "THE spine payoff: s.54 names Ofwat, Ofgem/GEMA, Ofcom, ORR, the CAA, the NI utility regulator, the PSR and the FCA as concurrent 'regulators'. The identical concurrent-enforcement power sits on each — a cross-cutting record every utility domain reuses, and part of why `regulation` is a function spanning body_types. The Chapter I/II prohibitions (ss.2, 18) themselves bind UNDERTAKINGS (private parties), so they are not state-body records; this enforcement power is.",
+              "office_id": null,
+              "provision_key": "competition-act-1998-s54",
+              "since": 1998,
+              "source_id": "source-act-competition-act-1998",
+              "summary": "Ofwat is a named 'regulator' under Competition Act 1998 s.54 and (via Schedule 10) exercises the Act's functions — enforcing the Chapter I prohibition on anti-competitive agreements (s.2) and the Chapter II prohibition on abuse of a dominant position (s.18) — CONCURRENTLY with the CMA, so far as they relate to the water and sewerage sector. The statutory basis of Ofwat's competition role, distinct from its WIA licensing role.",
+              "type": "enforcement",
+              "verification_status": "unverified"
+            },
             {
               "basis": "statutory",
               "citation": {
@@ -41936,6 +42022,31 @@
     }
   ],
   "sources": {
+    "source-act-companies-act-1985": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Companies Act 1985",
+      "url": "https://www.legislation.gov.uk/ukpga/1985/6"
+    },
+    "source-act-competition-act-1998": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Competition Act 1998",
+      "url": "https://www.legislation.gov.uk/ukpga/1998/41"
+    },
+    "source-act-criminal-justice-act-1987": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Criminal Justice Act 1987",
+      "url": "https://www.legislation.gov.uk/ukpga/1987/38"
+    },
+    "source-act-enterprise-act-2002": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Enterprise Act 2002",
+      "url": "https://www.legislation.gov.uk/ukpga/2002/40"
+    },
+    "source-act-financial-services-and-markets-act-2000": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Financial Services and Markets Act 2000",
+      "url": "https://www.legislation.gov.uk/ukpga/2000/8"
+    },
     "source-act-insolvency-act-1986": {
       "publisher": "legislation.gov.uk (The National Archives)",
       "title": "Insolvency Act 1986",

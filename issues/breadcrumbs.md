@@ -4,24 +4,37 @@
 
 Decision #27's breadcrumb method widens the net without sweeping the whole statute book, but it only works if the leads are tracked. This file is derived from the records every time it runs, so a stub that has been closed disappears by itself and the count is a real completeness measure rather than a feeling.
 
-**74 open stub(s).**
+**86 open stub(s).**
 
-11 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
+16 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
 
-## dangling reference (72)
+## dangling reference (84)
 
+- **`competition-act-1998-s18`** — references competition-act-1998-s19, which is not held
+- **`competition-act-1998-s2`** — references competition-act-1998-s3, which is not held
+- **`competition-act-1998-s54`** — references competition-act-1998-s31, which is not held
+- **`competition-act-1998-s54`** — references financial-services-banking-reform-act-2013-s40, which is not held
+- **`competition-act-1998-s54`** — references interpretation-act-1978-s21, which is not held
+- **`criminal-justice-act-1987-s2`** — references crime-and-courts-act-2013-s5, which is not held
+- **`criminal-justice-act-1987-s2`** — references crime-international-co-operation-act-2003-s15, which is not held
+- **`criminal-justice-act-1987-s2`** — references criminal-justice-act-1987-s1, which is not held
+- **`criminal-justice-act-1987-s2`** — references criminal-justice-act-1987-s13, which is not held
+- **`criminal-justice-act-1987-s2`** — references criminal-justice-and-police-act-2001-s50, which is not held
+- **`enterprise-act-2002-s109`** — references enterprise-act-2002-s22, which is not held
+- **`enterprise-act-2002-s109`** — references enterprise-act-2002-s45, which is not held
+- **`enterprise-act-2002-s109`** — references enterprise-act-2002-s70a, which is not held
+- **`enterprise-act-2002-s109`** — references enterprise-act-2002-s87, which is not held
+- **`enterprise-act-2002-s75`** — references enterprise-act-2002-s73, which is not held
+- **`financial-services-and-markets-act-2000-s167`** — references financial-services-and-markets-act-2000-s313, which is not held
 - **`insolvency-act-1986-s124a`** — references companies-act-1985-s448a, which is not held
 - **`insolvency-act-1986-s124a`** — references companies-act-1989-s83, which is not held
-- **`insolvency-act-1986-s124a`** — references criminal-justice-act-1987-s2, which is not held
 - **`insolvency-act-1986-s124a`** — references criminal-law-consolidation-scotland-act-1995-s28, which is not held
 - **`insolvency-act-1986-s124a`** — references insolvency-act-1986-s165, which is not held
 - **`insolvency-act-1986-s124a`** — references insolvency-act-1986-s262, which is not held
 - **`water-act-2014-s22`** — references water-act-2014-s17b, which is not held
 - **`water-act-2014-s22`** — references water-act-2014-s94, which is not held
-- **`water-industry-act-1991-s14`** — references enterprise-act-2002-s109, which is not held
 - **`water-industry-act-1991-s14`** — references water-industry-act-1991-s14b, which is not held
 - **`water-industry-act-1991-s153`** — references water-industry-act-1991-s23, which is not held
-- **`water-industry-act-1991-s17k`** — references enterprise-act-2002-s109, which is not held
 - **`water-industry-act-1991-s17m`** — references competition-and-consumers-act-2024-s143, which is not held
 - **`water-industry-act-1991-s17m`** — references enterprise-act-2002-s17k, which is not held
 - **`water-industry-act-1991-s17m`** — references water-industry-act-1991-s109, which is not held
@@ -29,7 +42,6 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`water-industry-act-1991-s17q`** — references competition-and-consumers-act-2024-s143, which is not held
 - **`water-industry-act-1991-s17q`** — references water-industry-act-1991-s109, which is not held
 - **`water-industry-act-1991-s17q`** — references water-industry-act-1991-s65, which is not held
-- **`water-industry-act-1991-s17r`** — references enterprise-act-2002-s75, which is not held
 - **`water-industry-act-1991-s17r`** — references water-industry-act-1991-s160, which is not held
 - **`water-industry-act-1991-s18`** — references water-industry-act-1991-s19, which is not held
 - **`water-industry-act-1991-s2`** — references water-act-2014-s42, which is not held
