@@ -188,8 +188,31 @@ CJA_1987 = {
                        "ground a public-interest winding-up. Registered, not extracted.",
 }
 
+# ---- Planning / infrastructure domain (Tranche A): the DCO decision-spine. ----
+# A large reservoir (SESRO/Abingdon, >30M m3) is a Nationally Significant Infrastructure
+# Project consented by a Development Consent Order under the Planning Act 2008 — the fusion
+# point with the water/environment tranches for the "can we build a reservoir?" chain.
+# Scoped (decision #11) to the blocker-bearing decision-spine, not the whole Act.
+PLANNING_2008 = {
+    "instrument_id": "instrument-act-planning-act-2008",
+    "source_id": "source-act-planning-act-2008",
+    "slug": "planning-act-2008",
+    "title": "Planning Act 2008",
+    "leg_type": "ukpga", "year": 2008, "number": "29",
+    # 35 direction into the NSIP regime; 55 acceptance gate (PINS); 104 SoS decision where an
+    # NPS applies; 114 grant/refuse the DCO; 120 what a DCO may include; 122/123 compulsory
+    # acquisition of land (the private-party dimension, #29); 150 consents under other regimes
+    # (the fusion with the EA/Natural England consents already held).
+    "sections": ["35", "55", "104", "114", "120", "122", "123", "150"],
+    "instrument_note": "Planning/infrastructure Tranche A — the DCO regime by which a large "
+                       "reservoir (an NSIP) is consented. Scoped to the decision-spine + the "
+                       "compulsory-acquisition and other-consents provisions the reservoir chain "
+                       "reaches.",
+}
+
 ACTS = [WIA_1991, WATER_ACT_2014, WRA_1991, WCA_1981, INSOLVENCY_1986, WSMA_2025,
-        ENTERPRISE_2002, COMPETITION_1998, COMPANIES_1985, FSMA_2000, CJA_1987]
+        ENTERPRISE_2002, COMPETITION_1998, COMPANIES_1985, FSMA_2000, CJA_1987,
+        PLANNING_2008]
 
 
 def fetch(url, timeout=30, retries=3):

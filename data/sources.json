@@ -78,6 +78,19 @@
     "version_date": "2026-07-21"
   },
   {
+    "accessed_date": "2026-07-21",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
+    "publication_date": "2008-01-01",
+    "publisher": "legislation.gov.uk (The National Archives)",
+    "source_id": "source-act-planning-act-2008",
+    "source_type": "act",
+    "title": "Planning Act 2008",
+    "url": "https://www.legislation.gov.uk/ukpga/2008/29",
+    "version_date": "2026-07-21"
+  },
+  {
     "accessed_date": "2026-07-20",
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",

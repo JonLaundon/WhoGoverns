@@ -85,6 +85,20 @@
   },
   {
     "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-planning-act-2008",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/2008/29",
+    "made_under": null,
+    "notes": "Planning/infrastructure Tranche A — the DCO regime by which a large reservoir (an NSIP) is consented. Scoped to the decision-spine + the compulsory-acquisition and other-consents provisions the reservoir chain reaches.",
+    "number": "29",
+    "record_status": "extracted",
+    "source_id": "source-act-planning-act-2008",
+    "status": "in_force",
+    "title": "Planning Act 2008",
+    "year": 2008
+  },
+  {
+    "enacted_by": "Parliament",
     "instrument_id": "instrument-act-water-act-2014",
     "instrument_type": "act",
     "legislation_url": "https://www.legislation.gov.uk/ukpga/2014/21",

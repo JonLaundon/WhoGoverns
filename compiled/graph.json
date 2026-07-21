@@ -3,13 +3,13 @@
     "bodies": 685,
     "budget_records": 1433,
     "duties": 16,
-    "instruments": 11,
+    "instruments": 12,
     "offices": 164,
     "person_roles": 181,
     "powers": 34,
-    "provisions": 73,
+    "provisions": 81,
     "relationships": 639,
-    "sources": 20,
+    "sources": 21,
     "staffing_records": 3884,
     "vetoes": 11
   },
@@ -8082,7 +8082,7 @@
       }
     }
   ],
-  "generated": "2026-07-21T13:01:02",
+  "generated": "2026-07-21T16:45:43",
   "nodes": [
     {
       "data": {
@@ -42051,6 +42051,11 @@
       "publisher": "legislation.gov.uk (The National Archives)",
       "title": "Insolvency Act 1986",
       "url": "https://www.legislation.gov.uk/ukpga/1986/45"
+    },
+    "source-act-planning-act-2008": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Planning Act 2008",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29"
     },
     "source-act-senior-courts-act-1981": {
       "publisher": "legislation.gov.uk (The National Archives)",

@@ -420,6 +420,276 @@
   },
   {
     "citation": {
+      "content_hash": "4da3b569e2f761a7",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/104",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Decisions in cases where national policy statement has effect",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "planning-act-2008-s104",
+    "provision_ref": "s.104",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": false,
+        "instrument_slug": "marine-and-coastal-access-act-2009",
+        "internal": false,
+        "provision_key": "marine-and-coastal-access-act-2009-s59",
+        "raw": "section 59"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s60",
+        "raw": "section 60(3)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "marine-and-coastal-access-act-2009",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Marine and Coastal Access Act 2009"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "3dfc7922f3697151",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/114",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Grant or refusal of development consent",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "planning-act-2008-s114",
+    "provision_ref": "s.114",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "4198be52f95de7d1",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/120",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "What may be included in order granting development consent",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "planning-act-2008-s120",
+    "provision_ref": "s.120",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s33",
+        "raw": "section 33(1)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "harbours-act-1964",
+        "internal": false,
+        "provision_key": "harbours-act-1964-s14",
+        "raw": "section 14"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "gas-act-1965",
+        "internal": false,
+        "provision_key": "gas-act-1965-s4",
+        "raw": "section 4(1)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "transport-and-works-act-1992",
+        "internal": false,
+        "provision_key": "transport-and-works-act-1992-s1",
+        "raw": "section 1"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "harbours-act-1964",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Harbours Act 1964"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "gas-act-1965",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Gas Act 1965"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "transport-and-works-act-1992",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Transport and Works Act 1992"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "b60406378f0e3189",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/122",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Purpose for which compulsory acquisition may be authorised",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "planning-act-2008-s122",
+    "provision_ref": "s.122",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s131",
+        "raw": "section 131"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "6904e057dd4adabc",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/123",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Land to which authorisation of compulsory acquisition can relate",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "planning-act-2008-s123",
+    "provision_ref": "s.123",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "09b5b2f2cfa2177b",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/150",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Removal of consent requirements",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "planning-act-2008-s150",
+    "provision_ref": "s.150",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "f682bd9a846e1e75",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/35",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Directions in relation to projects of national significance",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "planning-act-2008-s35",
+    "provision_ref": "s.35",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s35za",
+        "raw": "section 35ZA"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "03da90bd87417d99",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/55",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Acceptance of applications",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Planning and Infrastructure Act 2025 s. 7(3)(a) (inserted); Planning and Infrastructure Act 2025 s. 7(3)(b) (omitted); Planning and Infrastructure Act 2025 s. 7(4) (substituted for s. 55(4)); Planning and Infrastructure Act 2025 s. 7(5) (omitted); Planning and Infrastructure Act 2025 s. 7(6) (omitted); Planning and Infrastructure Act 2025 s. 7(7) (substituted). Consolidated text may lag the law in force.",
+    "provision_key": "planning-act-2008-s55",
+    "provision_ref": "s.55",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s37",
+        "raw": "section 37(3)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s50",
+        "raw": "section 50"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s42",
+        "raw": "section 42(1)"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "c31ae207b17efe4f",
       "url": "https://www.legislation.gov.uk/ukpga/2014/21/section/22",
       "version_date": "2026-07-21"
