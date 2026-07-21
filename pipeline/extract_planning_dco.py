@@ -86,7 +86,7 @@ POWERS = [
 
     {"power_id": "power-sos-defra-planning2008-s114", "holder_type": "office", "office_id": SOS,
      "body_id": DEFRA, "power_label": "Grant or refuse development consent",
-     "power_type": "approval", "power_basis": "statutory", "modality": "power",
+     "power_type": "consent_order", "power_basis": "statutory", "modality": "power",
      "legal_effect": "must",
      "summary": ("Once the Secretary of State has decided a DCO application, the Secretary of "
                  "State must either make an order granting development consent or refuse it "
@@ -103,7 +103,7 @@ POWERS = [
 
     {"power_id": "power-sos-defra-planning2008-s122", "holder_type": "office", "office_id": SOS,
      "body_id": DEFRA, "power_label": "Authorise compulsory acquisition of land in a DCO",
-     "power_type": "other", "power_basis": "statutory", "modality": "power",
+     "power_type": "compulsory_acquisition", "power_basis": "statutory", "modality": "power",
      "legal_effect": "may",
      "summary": ("A DCO may authorise the compulsory acquisition of land only if the Secretary "
                  "of State is satisfied the land is required for (or incidental to) the "
@@ -116,8 +116,7 @@ POWERS = [
      "source_id": SRC, "provision_key": "planning-act-2008-s122", "citation": cite("s.122(1)"),
      "related_body_ids": [], "related_power_ids": [], "derived_from_record_id": None,
      "legal_status": "current", "extraction": ext(0.9), "verification": dict(V),
-     "notes": "power_type 'other': compulsory acquisition is a sui generis land-taking power "
-              "with no closer vocab term (candidate `compulsory_acquisition` if it recurs). The "
+     "notes": "power_type `compulsory_acquisition` (v0.4). The "
               "blocked party is a PRIVATE landowner — the #29 state->private role-class, not a "
               "state-to-state edge; carried on the card, surfaced in the reservoir chain view.",
      "record_status": "extracted"},

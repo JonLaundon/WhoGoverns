@@ -65,6 +65,9 @@
         "appeal",
         "adjudication",
         "application_to_court",
+        "compulsory_acquisition",
+        "consent_order",
+        "guidance",
         "other"
       ]
     },

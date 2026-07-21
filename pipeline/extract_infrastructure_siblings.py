@@ -37,10 +37,9 @@ def ext(c):
 V = {"verification_status": "unverified", "verified_by": None, "verified_date": None,
      "verification_notes": None}
 
-CONSENT_ORDER_NOTE = ("VOCAB SIGNAL: a bespoke statutory 'consent order' authorising "
-                      "infrastructure works — the same shape as the Planning Act DCO (s.114) and "
-                      "harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate "
-                      "power_type for the sponsor (recurs 3x).")
+CONSENT_ORDER_NOTE = ("A bespoke statutory `consent_order` (power_type v0.4) authorising "
+                      "infrastructure works — the same shape as the Planning Act DCO (s.114): it "
+                      "consents to works AND can displace other consent regimes for them.")
 
 POWERS = [
     {"power_id": "power-mmo-marine2009-s71", "holder_type": "body", "body_id": MMO, "office_id": None,
@@ -61,7 +60,7 @@ POWERS = [
 
     {"power_id": "power-sos-transport-twa1992-s1", "holder_type": "office", "office_id": SOS_T,
      "body_id": DFT, "power_label": "Make a Transport and Works Act order",
-     "power_type": "approval", "power_basis": "statutory", "modality": "power", "legal_effect": "may",
+     "power_type": "consent_order", "power_basis": "statutory", "modality": "power", "legal_effect": "may",
      "summary": ("The Secretary of State may make an order authorising the construction or "
                  "operation of a railway, tramway, trolley-vehicle or guided-transport system in "
                  "England and Wales (Transport and Works Act 1992 s.1). The consent-order route "
@@ -76,7 +75,7 @@ POWERS = [
 
     {"power_id": "power-sos-transport-twa1992-s3", "holder_type": "office", "office_id": SOS_T,
      "body_id": DFT, "power_label": "Make a Transport and Works Act order for inland waterways / navigation works",
-     "power_type": "approval", "power_basis": "statutory", "modality": "power", "legal_effect": "may",
+     "power_type": "consent_order", "power_basis": "statutory", "modality": "power", "legal_effect": "may",
      "summary": ("The Secretary of State may make an order relating to the construction or "
                  "operation of an inland waterway, or works interfering with rights of navigation "
                  "(Transport and Works Act 1992 s.3). Directly reservoir-relevant: a reservoir with "
@@ -92,7 +91,7 @@ POWERS = [
 
     {"power_id": "power-sos-transport-harbours1964-s14", "holder_type": "office", "office_id": SOS_T,
      "body_id": DFT, "power_label": "Make a harbour revision or empowerment order",
-     "power_type": "approval", "power_basis": "statutory", "modality": "power", "legal_effect": "may",
+     "power_type": "consent_order", "power_basis": "statutory", "modality": "power", "legal_effect": "may",
      "summary": ("On the application of a harbour authority (or others), the appropriate Minister "
                  "may make an order for securing the improvement, maintenance or management of a "
                  "harbour, or reconstituting a harbour authority (Harbours Act 1964 s.14). The "

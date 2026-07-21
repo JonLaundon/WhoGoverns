@@ -8096,7 +8096,7 @@
       }
     }
   ],
-  "generated": "2026-07-21T20:08:09",
+  "generated": "2026-07-21T20:35:34",
   "nodes": [
     {
       "data": {
@@ -15746,7 +15746,7 @@
               "since": 2008,
               "source_id": "source-act-planning-act-2008",
               "summary": "Once the Secretary of State has decided a DCO application, the Secretary of State must either make an order granting development consent or refuse it (Planning Act 2008 s.114). THE decision — the reservoir is built or not on this. A refusal blocks the private applicant (the undertaker); a grant authorises development that could otherwise not lawfully proceed.",
-              "type": "approval",
+              "type": "consent_order",
               "verification_status": "unverified"
             },
             {
@@ -15766,13 +15766,13 @@
               "label": "Authorise compulsory acquisition of land in a DCO",
               "legal_effect": "may",
               "legal_status": "current",
-              "notes": "power_type 'other': compulsory acquisition is a sui generis land-taking power with no closer vocab term (candidate `compulsory_acquisition` if it recurs). The blocked party is a PRIVATE landowner — the #29 state->private role-class, not a state-to-state edge; carried on the card, surfaced in the reservoir chain view.",
+              "notes": "power_type `compulsory_acquisition` (v0.4). The blocked party is a PRIVATE landowner — the #29 state->private role-class, not a state-to-state edge; carried on the card, surfaced in the reservoir chain view.",
               "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
               "provision_key": "planning-act-2008-s122",
               "since": 2008,
               "source_id": "source-act-planning-act-2008",
               "summary": "A DCO may authorise the compulsory acquisition of land only if the Secretary of State is satisfied the land is required for (or incidental to) the development and there is a compelling case in the public interest (Planning Act 2008 ss.122-123). The land-taking power — for a reservoir, often the hardest blocker, and the clearest state->private relationship (it overrides private landowners).",
-              "type": "other",
+              "type": "compulsory_acquisition",
               "verification_status": "unverified"
             },
             {
@@ -17068,13 +17068,13 @@
               "label": "Make a harbour revision or empowerment order",
               "legal_effect": "may",
               "legal_status": "current",
-              "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x). 'Appropriate Minister' modelled as the SoS for Transport; for some harbours it is another department — holder-resolution note.",
+              "notes": "A bespoke statutory `consent_order` (power_type v0.4) authorising infrastructure works — the same shape as the Planning Act DCO (s.114): it consents to works AND can displace other consent regimes for them. 'Appropriate Minister' modelled as the SoS for Transport; for some harbours it is another department — holder-resolution note.",
               "office_id": "office-secretary-of-state-for-transport",
               "provision_key": "harbours-act-1964-s14",
               "since": 1964,
               "source_id": "source-act-harbours-act-1964",
               "summary": "On the application of a harbour authority (or others), the appropriate Minister may make an order for securing the improvement, maintenance or management of a harbour, or reconstituting a harbour authority (Harbours Act 1964 s.14). The harbour consent-order route — another DCO sibling.",
-              "type": "approval",
+              "type": "consent_order",
               "verification_status": "unverified"
             },
             {
@@ -17094,13 +17094,13 @@
               "label": "Make a Transport and Works Act order",
               "legal_effect": "may",
               "legal_status": "current",
-              "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x).",
+              "notes": "A bespoke statutory `consent_order` (power_type v0.4) authorising infrastructure works — the same shape as the Planning Act DCO (s.114): it consents to works AND can displace other consent regimes for them.",
               "office_id": "office-secretary-of-state-for-transport",
               "provision_key": "transport-and-works-act-1992-s1",
               "since": 1992,
               "source_id": "source-act-transport-and-works-act-1992",
               "summary": "The Secretary of State may make an order authorising the construction or operation of a railway, tramway, trolley-vehicle or guided-transport system in England and Wales (Transport and Works Act 1992 s.1). The consent-order route for transport works below the NSIP threshold — a sibling of the DCO.",
-              "type": "approval",
+              "type": "consent_order",
               "verification_status": "unverified"
             },
             {
@@ -17120,13 +17120,13 @@
               "label": "Make a Transport and Works Act order for inland waterways / navigation works",
               "legal_effect": "may",
               "legal_status": "current",
-              "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x).",
+              "notes": "A bespoke statutory `consent_order` (power_type v0.4) authorising infrastructure works — the same shape as the Planning Act DCO (s.114): it consents to works AND can displace other consent regimes for them.",
               "office_id": "office-secretary-of-state-for-transport",
               "provision_key": "transport-and-works-act-1992-s3",
               "since": 1992,
               "source_id": "source-act-transport-and-works-act-1992",
               "summary": "The Secretary of State may make an order relating to the construction or operation of an inland waterway, or works interfering with rights of navigation (Transport and Works Act 1992 s.3). Directly reservoir-relevant: a reservoir with water-transfer or navigation-affecting works needs this consent unless subsumed into a DCO.",
-              "type": "approval",
+              "type": "consent_order",
               "verification_status": "unverified"
             }
           ]
@@ -42030,7 +42030,7 @@
               "since": 2008,
               "source_id": "source-act-planning-act-2008",
               "summary": "Once the Secretary of State has decided a DCO application, the Secretary of State must either make an order granting development consent or refuse it (Planning Act 2008 s.114). THE decision — the reservoir is built or not on this. A refusal blocks the private applicant (the undertaker); a grant authorises development that could otherwise not lawfully proceed.",
-              "type": "approval",
+              "type": "consent_order",
               "verification_status": "unverified"
             },
             {
@@ -42050,13 +42050,13 @@
               "label": "Authorise compulsory acquisition of land in a DCO",
               "legal_effect": "may",
               "legal_status": "current",
-              "notes": "power_type 'other': compulsory acquisition is a sui generis land-taking power with no closer vocab term (candidate `compulsory_acquisition` if it recurs). The blocked party is a PRIVATE landowner — the #29 state->private role-class, not a state-to-state edge; carried on the card, surfaced in the reservoir chain view.",
+              "notes": "power_type `compulsory_acquisition` (v0.4). The blocked party is a PRIVATE landowner — the #29 state->private role-class, not a state-to-state edge; carried on the card, surfaced in the reservoir chain view.",
               "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
               "provision_key": "planning-act-2008-s122",
               "since": 2008,
               "source_id": "source-act-planning-act-2008",
               "summary": "A DCO may authorise the compulsory acquisition of land only if the Secretary of State is satisfied the land is required for (or incidental to) the development and there is a compelling case in the public interest (Planning Act 2008 ss.122-123). The land-taking power — for a reservoir, often the hardest blocker, and the clearest state->private relationship (it overrides private landowners).",
-              "type": "other",
+              "type": "compulsory_acquisition",
               "verification_status": "unverified"
             },
             {
@@ -42685,13 +42685,13 @@
               "label": "Make a Transport and Works Act order",
               "legal_effect": "may",
               "legal_status": "current",
-              "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x).",
+              "notes": "A bespoke statutory `consent_order` (power_type v0.4) authorising infrastructure works — the same shape as the Planning Act DCO (s.114): it consents to works AND can displace other consent regimes for them.",
               "office_id": "office-secretary-of-state-for-transport",
               "provision_key": "transport-and-works-act-1992-s1",
               "since": 1992,
               "source_id": "source-act-transport-and-works-act-1992",
               "summary": "The Secretary of State may make an order authorising the construction or operation of a railway, tramway, trolley-vehicle or guided-transport system in England and Wales (Transport and Works Act 1992 s.1). The consent-order route for transport works below the NSIP threshold — a sibling of the DCO.",
-              "type": "approval",
+              "type": "consent_order",
               "verification_status": "unverified"
             },
             {
@@ -42711,13 +42711,13 @@
               "label": "Make a Transport and Works Act order for inland waterways / navigation works",
               "legal_effect": "may",
               "legal_status": "current",
-              "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x).",
+              "notes": "A bespoke statutory `consent_order` (power_type v0.4) authorising infrastructure works — the same shape as the Planning Act DCO (s.114): it consents to works AND can displace other consent regimes for them.",
               "office_id": "office-secretary-of-state-for-transport",
               "provision_key": "transport-and-works-act-1992-s3",
               "since": 1992,
               "source_id": "source-act-transport-and-works-act-1992",
               "summary": "The Secretary of State may make an order relating to the construction or operation of an inland waterway, or works interfering with rights of navigation (Transport and Works Act 1992 s.3). Directly reservoir-relevant: a reservoir with water-transfer or navigation-affecting works needs this consent unless subsumed into a DCO.",
-              "type": "approval",
+              "type": "consent_order",
               "verification_status": "unverified"
             },
             {
@@ -42737,13 +42737,13 @@
               "label": "Make a harbour revision or empowerment order",
               "legal_effect": "may",
               "legal_status": "current",
-              "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x). 'Appropriate Minister' modelled as the SoS for Transport; for some harbours it is another department — holder-resolution note.",
+              "notes": "A bespoke statutory `consent_order` (power_type v0.4) authorising infrastructure works — the same shape as the Planning Act DCO (s.114): it consents to works AND can displace other consent regimes for them. 'Appropriate Minister' modelled as the SoS for Transport; for some harbours it is another department — holder-resolution note.",
               "office_id": "office-secretary-of-state-for-transport",
               "provision_key": "harbours-act-1964-s14",
               "since": 1964,
               "source_id": "source-act-harbours-act-1964",
               "summary": "On the application of a harbour authority (or others), the appropriate Minister may make an order for securing the improvement, maintenance or management of a harbour, or reconstituting a harbour authority (Harbours Act 1964 s.14). The harbour consent-order route — another DCO sibling.",
-              "type": "approval",
+              "type": "consent_order",
               "verification_status": "unverified"
             }
           ],
