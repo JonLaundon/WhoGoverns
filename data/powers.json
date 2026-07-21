@@ -1033,6 +1033,50 @@
     }
   },
   {
+    "body_id": "uk-state-body-planning-court",
+    "citation": {
+      "provision": "s.118(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/118"
+    },
+    "constraints": [
+      "Only by judicial review; only within the 6-week window (s.118(1))."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-planning-dco-bloom",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "The planning domain's judicial layer (as the Chancery Division is the water SAR's). A quash is adjudication, not a veto — the court decides on legality, deferring to the SoS on planning merits.",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-planning-court-planning2008-s118",
+    "power_label": "Judicial review of a development consent order",
+    "power_type": "adjudication",
+    "provision_key": "planning-act-2008-s118",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-department-for-environment-food-rural-affairs"
+    ],
+    "related_power_ids": [
+      "power-sos-defra-planning2008-s114"
+    ],
+    "source_id": "source-act-planning-act-2008",
+    "summary": "A DCO may be questioned only by a claim for judicial review filed within six weeks of the order (or its statement of reasons) being published (Planning Act 2008 s.118) — heard in the Planning Court. The narrow accountability backstop: the court can quash a DCO for illegality, but the 6-week ouster makes it a high-bar, time-boxed challenge, not an open appeal on the merits.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "body_id": "uk-state-body-department-for-business-and-trade",
     "citation": {
       "provision": "s.124A(1)",
@@ -1189,6 +1233,46 @@
     "related_power_ids": [],
     "source_id": "source-act-planning-act-2008",
     "summary": "The Secretary of State may direct that development in the field of energy, transport, WATER, waste water or waste be treated as development for which development consent is required (Planning Act 2008 s.35) — bringing a project into the NSIP/DCO regime. The 'in-scope' gate; this is how SESRO was directed in.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.5(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/5"
+    },
+    "constraints": [
+      "Subject to consultation and publicity (s.7), parliamentary requirements (s.9), and appraisal of sustainability."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-planning-dco-bloom",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "Produces the NPS instrument node (instrument-nps-water-resources). For water the designating SoS is Defra; holder-resolution per NPS.",
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "power_basis": "statutory",
+    "power_id": "power-sos-defra-planning2008-s5",
+    "power_label": "Designate a National Policy Statement",
+    "power_type": "designation",
+    "provision_key": "planning-act-2008-s5",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [],
+    "source_id": "source-act-planning-act-2008",
+    "summary": "The Secretary of State may designate a statement as a National Policy Statement setting out national policy for described developments (Planning Act 2008 s.5), subject to consultation, publicity and parliamentary requirements (ss.7-9). The NPS is the framework every DCO decision must have regard to (s.104) — designating it is where the policy that shapes consenting is set.",
     "verification": {
       "verification_notes": null,
       "verification_status": "unverified",

@@ -507,6 +507,49 @@
     }
   },
   {
+    "beneficiary_or_object": "The public interest; the decision framework.",
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.105(2)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/105"
+    },
+    "derived_from_record_id": null,
+    "duty_id": "duty-sos-defra-planning2008-s105",
+    "duty_label": "Decide a DCO on relevant matters where no NPS has effect",
+    "duty_type": "other",
+    "extraction": {
+      "confidence": 0.88,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-planning-dco-bloom",
+      "requires_review": true
+    },
+    "failure_consequence": "judicial_review_risk",
+    "holder_type": "office",
+    "in_force_from": null,
+    "in_force_to": null,
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": "Relevant where a designated water NPS is absent/pending — then s.105, not s.104, frames the reservoir decision.",
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "owed_to_body_id": null,
+    "owed_to_holder_type": null,
+    "owed_to_office_id": null,
+    "provision_key": "planning-act-2008-s105",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "source_id": "source-act-planning-act-2008",
+    "summary": "Where no National Policy Statement has effect for the development, the Secretary of State must decide the DCO application having regard to any local impact report, any relevant prescribed matters, and any other important and relevant matters (Planning Act 2008 s.105). The fallback decision framework parallel to s.104 — and the one that applies where a sector's NPS is not yet designated.",
+    "trigger": "Deciding a DCO application for which no NPS has effect.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {

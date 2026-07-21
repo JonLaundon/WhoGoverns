@@ -15254,6 +15254,12 @@
     },
     "founding_source_ids": [],
     "framework_document_source_ids": [],
+    "function_source_ids": [
+      "source-act-senior-courts-act-1981"
+    ],
+    "functions": [
+      "judicial"
+    ],
     "govuk_organisation_slug": "planning-court",
     "jurisdiction": [
       "UK"

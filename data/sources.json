@@ -169,6 +169,19 @@
     "version_date": "2026-07-21"
   },
   {
+    "accessed_date": "2026-07-21",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "The relevant National Policy Statement is a designated POLICY STATEMENT (Planning Act 2008 s.5), not legislation.gov.uk content, so it has no fetched provisions — a framework node, not a statutory instrument. Confirm the exact designated water NPS and its designation date before publication.",
+    "publication_date": null,
+    "publisher": "Department for Environment, Food and Rural Affairs",
+    "source_id": "source-framework-national-policy-statement-water-resources",
+    "source_type": "framework_document",
+    "title": "National Policy Statement for Water Resources Infrastructure (designated framework)",
+    "url": "https://www.gov.uk/government/collections/national-policy-statements-for-water-resources-infrastructure",
+    "version_date": "2026-07-21"
+  },
+  {
     "accessed_date": "2026-07-20",
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",

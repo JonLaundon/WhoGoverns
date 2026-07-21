@@ -166,5 +166,19 @@
     "status": "in_force",
     "title": "Wildlife and Countryside Act 1981",
     "year": 1981
+  },
+  {
+    "enacted_by": "Secretary of State (designation)",
+    "instrument_id": "instrument-nps-water-resources",
+    "instrument_type": "other",
+    "legislation_url": "https://www.gov.uk/government/collections/national-policy-statements-for-water-resources-infrastructure",
+    "made_under": "planning-act-2008-s5",
+    "notes": "Designated National Policy Statement — the framework a DCO decision must have regard to (s.104). A proposal counter to it faces refusal / heightened risk: a mild-to-strong policy blocker, not a hard statutory veto. Orphan-instrument by design (no legislation.gov.uk provisions).",
+    "number": null,
+    "record_status": "extracted",
+    "source_id": "source-framework-national-policy-statement-water-resources",
+    "status": "in_force",
+    "title": "National Policy Statement for Water Resources Infrastructure (designated framework)",
+    "year": null
   }
 ]

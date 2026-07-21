@@ -2,14 +2,14 @@
   "counts": {
     "bodies": 685,
     "budget_records": 1433,
-    "duties": 17,
-    "instruments": 12,
+    "duties": 18,
+    "instruments": 13,
     "offices": 164,
     "person_roles": 181,
-    "powers": 39,
-    "provisions": 81,
+    "powers": 41,
+    "provisions": 85,
     "relationships": 639,
-    "sources": 21,
+    "sources": 22,
     "staffing_records": 3884,
     "vetoes": 12
   },
@@ -8096,7 +8096,7 @@
       }
     }
   ],
-  "generated": "2026-07-21T17:28:59",
+  "generated": "2026-07-21T17:46:27",
   "nodes": [
     {
       "data": {
@@ -15532,6 +15532,33 @@
               "verification_status": "unverified"
             },
             {
+              "beneficiary_or_object": "The public interest; the decision framework.",
+              "citation": {
+                "provision": "s.105(2)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/105"
+              },
+              "confidence": 0.88,
+              "holder_type": "office",
+              "id": "duty-sos-defra-planning2008-s105",
+              "kind": "duty",
+              "label": "Decide a DCO on relevant matters where no NPS has effect",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Relevant where a designated water NPS is absent/pending — then s.105, not s.104, frames the reservoir decision.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "planning-act-2008-s105",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "Where no National Policy Statement has effect for the development, the Secretary of State must decide the DCO application having regard to any local impact report, any relevant prescribed matters, and any other important and relevant matters (Planning Act 2008 s.105). The fallback decision framework parallel to s.104 — and the one that applies where a sector's NPS is not yet designated.",
+              "trigger": "Deciding a DCO application for which no NPS has effect.",
+              "type": "other",
+              "verification_status": "unverified"
+            },
+            {
               "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
               "citation": {
                 "provision": "s.17A(6)",
@@ -15744,6 +15771,33 @@
               "since": 2008,
               "source_id": "source-act-planning-act-2008",
               "summary": "The Secretary of State may direct that development in the field of energy, transport, WATER, waste water or waste be treated as development for which development consent is required (Planning Act 2008 s.35) — bringing a project into the NSIP/DCO regime. The 'in-scope' gate; this is how SESRO was directed in.",
+              "type": "designation",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.5(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/5"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Subject to consultation and publicity (s.7), parliamentary requirements (s.9), and appraisal of sustainability."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-planning2008-s5",
+              "kind": "power",
+              "label": "Designate a National Policy Statement",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "Produces the NPS instrument node (instrument-nps-water-resources). For water the designating SoS is Defra; holder-resolution per NPS.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "outstanding_effects": true,
+              "provision_key": "planning-act-2008-s5",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "The Secretary of State may designate a statement as a National Policy Statement setting out national policy for described developments (Planning Act 2008 s.5), subject to consultation, publicity and parliamentary requirements (ss.7-9). The NPS is the framework every DCO decision must have regard to (s.104) — designating it is where the policy that shapes consenting is set.",
               "type": "designation",
               "verification_status": "unverified"
             },
@@ -16174,7 +16228,7 @@
             }
           ]
         },
-        "op_total": 24,
+        "op_total": 26,
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -32086,19 +32140,65 @@
     {
       "data": {
         "body_type": "other_body",
-        "functions": [],
+        "functions": [
+          "judicial"
+        ],
         "govuk_slug": "planning-court",
         "id": "uk-state-body-planning-court",
         "kind": "body",
         "label": "Planning Court",
         "needs_review": true,
-        "op_total": 0,
+        "op_total": 1,
+        "operative": {
+          "counts": {
+            "duties": 0,
+            "powers": 1,
+            "vetoes": 0
+          },
+          "duties": [],
+          "functions_derived": {
+            "judicial": [
+              "power-planning-court-planning2008-s118"
+            ]
+          },
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.118(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/118"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Only by judicial review; only within the 6-week window (s.118(1))."
+              ],
+              "holder_type": "body",
+              "id": "power-planning-court-planning2008-s118",
+              "kind": "power",
+              "label": "Judicial review of a development consent order",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "The planning domain's judicial layer (as the Chancery Division is the water SAR's). A quash is adjudication, not a veto — the court decides on legality, deferring to the SoS on planning merits.",
+              "office_id": null,
+              "outstanding_effects": true,
+              "provision_key": "planning-act-2008-s118",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "A DCO may be questioned only by a claim for judicial review filed within six weeks of the order (or its statement of reasons) being published (Planning Act 2008 s.118) — heard in the Planning Court. The narrow accountability backstop: the court can quash a DCO for illegality, but the 6-week ouster makes it a high-bar, time-boxed challenge, not an open appeal on the merits.",
+              "type": "adjudication",
+              "verification_status": "unverified"
+            }
+          ],
+          "vetoes": []
+        },
         "other_names": [],
         "parent_body_id": "uk-state-body-hm-courts-and-tribunals-service",
         "parent_body_ids": [
           "uk-state-body-hm-courts-and-tribunals-service"
         ],
         "source_ids": [
+          "source-act-senior-courts-act-1981",
           "source-official-dataset-govuk-organisations-api"
         ],
         "sponsor_department_id": null,
@@ -41516,14 +41616,14 @@
         "kind": "office",
         "label": "Secretary of State for Environment, Food and Rural Affairs",
         "office_type": "cabinet_minister",
-        "op_total": 24,
+        "op_total": 26,
         "operative": {
           "blocker_kinds": [
             "ministerial"
           ],
           "counts": {
-            "duties": 6,
-            "powers": 13,
+            "duties": 7,
+            "powers": 14,
             "vetoes": 5
           },
           "duties": [
@@ -41551,6 +41651,33 @@
               "source_id": "source-act-planning-act-2008",
               "summary": "Where a National Policy Statement has effect for the development, the Secretary of State must have regard to it (and to any other important and relevant matters) in deciding the DCO application (Planning Act 2008 s.104). The NPS frames — and largely predetermines — the decision, which is why the NPS itself is the real policy battleground.",
               "trigger": "When deciding a DCO application for which an NPS has effect.",
+              "type": "other",
+              "verification_status": "unverified"
+            },
+            {
+              "beneficiary_or_object": "The public interest; the decision framework.",
+              "citation": {
+                "provision": "s.105(2)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/105"
+              },
+              "confidence": 0.88,
+              "holder_type": "office",
+              "id": "duty-sos-defra-planning2008-s105",
+              "kind": "duty",
+              "label": "Decide a DCO on relevant matters where no NPS has effect",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Relevant where a designated water NPS is absent/pending — then s.105, not s.104, frames the reservoir decision.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "planning-act-2008-s105",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "Where no National Policy Statement has effect for the development, the Secretary of State must decide the DCO application having regard to any local impact report, any relevant prescribed matters, and any other important and relevant matters (Planning Act 2008 s.105). The fallback decision framework parallel to s.104 — and the one that applies where a sector's NPS is not yet designated.",
+              "trigger": "Deciding a DCO application for which no NPS has effect.",
               "type": "other",
               "verification_status": "unverified"
             },
@@ -41776,6 +41903,33 @@
               "since": 2008,
               "source_id": "source-act-planning-act-2008",
               "summary": "The Secretary of State may direct that development in the field of energy, transport, WATER, waste water or waste be treated as development for which development consent is required (Planning Act 2008 s.35) — bringing a project into the NSIP/DCO regime. The 'in-scope' gate; this is how SESRO was directed in.",
+              "type": "designation",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.5(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/5"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Subject to consultation and publicity (s.7), parliamentary requirements (s.9), and appraisal of sustainability."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-planning2008-s5",
+              "kind": "power",
+              "label": "Designate a National Policy Statement",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "Produces the NPS instrument node (instrument-nps-water-resources). For water the designating SoS is Defra; holder-resolution per NPS.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "outstanding_effects": true,
+              "provision_key": "planning-act-2008-s5",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "The Secretary of State may designate a statement as a National Policy Statement setting out national policy for described developments (Planning Act 2008 s.5), subject to consultation, publicity and parliamentary requirements (ss.7-9). The NPS is the framework every DCO decision must have regard to (s.104) — designating it is where the policy that shapes consenting is set.",
               "type": "designation",
               "verification_status": "unverified"
             },
@@ -42423,6 +42577,11 @@
       "publisher": "legislation.gov.uk (The National Archives)",
       "title": "Wildlife and Countryside Act 1981",
       "url": "https://www.legislation.gov.uk/ukpga/1981/69"
+    },
+    "source-framework-national-policy-statement-water-resources": {
+      "publisher": "Department for Environment, Food and Rural Affairs",
+      "title": "National Policy Statement for Water Resources Infrastructure (designated framework)",
+      "url": "https://www.gov.uk/government/collections/national-policy-statements-for-water-resources-infrastructure"
     },
     "source-guidance-judge-over-your-shoulder-2022": {
       "publisher": "Government Legal Department",

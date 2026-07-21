@@ -462,6 +462,41 @@
   },
   {
     "citation": {
+      "content_hash": "24760b46943b3656",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/105",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Decisions in cases where no national policy statement has effect",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "planning-act-2008-s105",
+    "provision_ref": "s.105",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s104",
+        "raw": "section 104"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s60",
+        "raw": "section 60(3)"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "3dfc7922f3697151",
       "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/114",
       "version_date": "2026-07-21"
@@ -478,6 +513,34 @@
     "provision_ref": "s.114",
     "record_status": "extracted",
     "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "8a509baba633c09f",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/118",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Legal challenges relating to applications for orders granting development consent",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Planning and Infrastructure Act 2025 s. 7(8) (words substituted); Planning and Infrastructure Act 2025 s. 12(5)(a) (omitted); Planning and Infrastructure Act 2025 s. 12(5)(b) (words substituted). Consolidated text may lag the law in force.",
+    "provision_key": "planning-act-2008-s118",
+    "provision_ref": "s.118",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s55",
+        "raw": "section 55"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -648,6 +711,41 @@
   },
   {
     "citation": {
+      "content_hash": "f9fe61ad8be4f910",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/5",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "National policy statements",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Planning (Consequential Provisions) (Wales) Act 2026 Sch. 2 para. 387 (inserted). Consolidated text may lag the law in force.",
+    "provision_key": "planning-act-2008-s5",
+    "provision_ref": "s.5",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s7",
+        "raw": "section 7"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s9",
+        "raw": "section 9"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "03da90bd87417d99",
       "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/55",
       "version_date": "2026-07-21"
@@ -684,6 +782,34 @@
         "internal": true,
         "provision_key": "planning-act-2008-s42",
         "raw": "section 42(1)"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "062d3b4a946a6244",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/87",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Examining authority to control examination of application",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "planning-act-2008-s87",
+    "provision_ref": "s.87",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s97",
+        "raw": "section 97"
       }
     ],
     "status": "in_force"

@@ -4,11 +4,11 @@
 
 Decision #27's breadcrumb method widens the net without sweeping the whole statute book, but it only works if the leads are tracked. This file is derived from the records every time it runs, so a stub that has been closed disappears by itself and the count is a real completeness measure rather than a feeling.
 
-**97 open stub(s).**
+**102 open stub(s).**
 
-18 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
+19 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
 
-## dangling reference (95)
+## dangling reference (99)
 
 - **`competition-act-1998-s18`** — references competition-act-1998-s19, which is not held
 - **`competition-act-1998-s2`** — references competition-act-1998-s3, which is not held
@@ -33,15 +33,19 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`insolvency-act-1986-s124a`** — references insolvency-act-1986-s262, which is not held
 - **`planning-act-2008-s104`** — references marine-and-coastal-access-act-2009-s59, which is not held
 - **`planning-act-2008-s104`** — references planning-act-2008-s60, which is not held
+- **`planning-act-2008-s105`** — references planning-act-2008-s60, which is not held
 - **`planning-act-2008-s120`** — references gas-act-1965-s4, which is not held
 - **`planning-act-2008-s120`** — references harbours-act-1964-s14, which is not held
 - **`planning-act-2008-s120`** — references planning-act-2008-s33, which is not held
 - **`planning-act-2008-s120`** — references transport-and-works-act-1992-s1, which is not held
 - **`planning-act-2008-s122`** — references planning-act-2008-s131, which is not held
 - **`planning-act-2008-s35`** — references planning-act-2008-s35za, which is not held
+- **`planning-act-2008-s5`** — references planning-act-2008-s7, which is not held
+- **`planning-act-2008-s5`** — references planning-act-2008-s9, which is not held
 - **`planning-act-2008-s55`** — references planning-act-2008-s37, which is not held
 - **`planning-act-2008-s55`** — references planning-act-2008-s42, which is not held
 - **`planning-act-2008-s55`** — references planning-act-2008-s50, which is not held
+- **`planning-act-2008-s87`** — references planning-act-2008-s97, which is not held
 - **`water-act-2014-s22`** — references water-act-2014-s17b, which is not held
 - **`water-act-2014-s22`** — references water-act-2014-s94, which is not held
 - **`water-industry-act-1991-s14`** — references water-industry-act-1991-s14b, which is not held
@@ -110,4 +114,8 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 
 - **`duty-ofwat-wia1991-s16`** — Procedural gates NOT separately extracted in this first pass (decision #11), and logged as breadcrumb stubs instead: s.16(3) requires notice with at least 28 days for representations or objections, which Ofwat must consider — a genuine consultation duty in its own right; s.16(4A)-(4B) require notice
 - **`power-ofwat-wia1991-s17k`** — BREADCRUMB STUB: the CMA's veto-following-report for LICENCE modifications (the s.16A-equivalent, a later section in Chapter 1A not yet fetched) and the s.17-series modification-following-report duty are not yet extracted. s.17N (the CMA's reporting duty on these references) IS extracted.
+
+## orphan instrument (1)
+
+- **`instrument-nps-water-resources`** — National Policy Statement for Water Resources Infrastructure (designated framework) registered with no provisions extracted
 

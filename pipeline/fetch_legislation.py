@@ -203,7 +203,7 @@ PLANNING_2008 = {
     # NPS applies; 114 grant/refuse the DCO; 120 what a DCO may include; 122/123 compulsory
     # acquisition of land (the private-party dimension, #29); 150 consents under other regimes
     # (the fusion with the EA/Natural England consents already held).
-    "sections": ["35", "55", "104", "114", "120", "122", "123", "150"],
+    "sections": ["5", "35", "55", "87", "104", "105", "114", "118", "120", "122", "123", "150"],
     "instrument_note": "Planning/infrastructure Tranche A — the DCO regime by which a large "
                        "reservoir (an NSIP) is consented. Scoped to the decision-spine + the "
                        "compulsory-acquisition and other-consents provisions the reservoir chain "

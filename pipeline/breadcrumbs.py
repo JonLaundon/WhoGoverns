@@ -103,6 +103,10 @@ CORRECTLY_UNMINED = {
         "is s.114.",
     "planning-act-2008-s123":
         "SUPPLEMENTARY — conditions for the s.122 compulsory-acquisition power (already held).",
+    "planning-act-2008-s87":
+        "PROCEDURAL — the Examining Authority controls how the examination is conducted; the "
+        "blocker-bearing decision powers vest in the SoS (s.114) and the examination is delegated "
+        "(PINS, #28), so no separate operative record.",
 }
 
 
