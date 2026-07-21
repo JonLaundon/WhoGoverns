@@ -306,6 +306,15 @@ def attach_operative(graph, powers, duties, vetoes, provisions, instruments, bod
     # Node rollups: counts for a tab badge, and the blocker kinds present for the legend.
     for n in graph["nodes"]:
         op = n["data"].get("operative")
+        via = n["data"].get("office_operative") or {}
+        # A scalar the MAP styles on, so the operative layer is visible at a glance and not
+        # only inside a body's Powers tab. Counts records held HERE plus those held via this
+        # node's offices, so a department reads as "extracted" when its minister holds the
+        # powers (Defra's records vest in the SoS office). Set even when the node has only
+        # office_operative — otherwise such departments would show no coverage cue.
+        n["data"]["op_total"] = (
+            (sum(len(op.get(k, [])) for k in ("powers", "duties", "vetoes")) if op else 0)
+            + sum(len(via.get(k, [])) for k in ("powers", "duties", "vetoes")))
         if not op:
             continue
         for key in ("powers", "duties", "vetoes"):
@@ -313,7 +322,7 @@ def attach_operative(graph, powers, duties, vetoes, provisions, instruments, bod
         op["counts"] = {k: len(op[k]) for k in ("powers", "duties", "vetoes")}
         # The functional read, computed from the powers on this node (plus any held by its
         # offices), each tag carrying the power ids that evidence it.
-        held = list(op["powers"]) + list((n["data"].get("office_operative") or {}).get("powers", []))
+        held = list(op["powers"]) + list(via.get("powers", []))
         derived = derive_functions([{"power_id": c["id"], "power_type": c.get("type")} for c in held])
         if derived:
             op["functions_derived"] = derived

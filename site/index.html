@@ -7,7 +7,7 @@
   <meta name="description" content="An open, machine-readable map of the UK state: bodies, ministers and the sponsor relationships between them, built from official primary sources.">
   <!-- Cytoscape.js, pinned. The only third-party runtime dependency. -->
   <script src="https://cdn.jsdelivr.net/npm/cytoscape@3.30.2/dist/cytoscape.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260721">
 </head>
 <body>
   <header class="site-header">
@@ -38,6 +38,7 @@
         <legend>Show</legend>
         <label><input type="checkbox" id="toggle-forming" checked> Bodies in formation</label>
         <label><input type="checkbox" id="toggle-regulators"> Highlight regulators</label>
+        <label><input type="checkbox" id="toggle-coverage"> Powers coverage <span class="hintlet">(light up every body with extracted powers)</span></label>
         <label><input type="checkbox" id="toggle-sponsors" checked> Sponsor &amp; ministerial links</label>
         <label><input type="checkbox" id="toggle-vetoes"> Blocking links everywhere <span class="hintlet">(otherwise they appear when you open an entity's Powers tab)</span></label>
       </fieldset>
@@ -67,6 +68,7 @@
     <p id="generated" class="generated"></p>
   </footer>
 
-  <script src="app.js"></script>
+  <!-- ?v= cache-buster: bump on any app.js/style.css change so shared viewers get the update. -->
+  <script src="app.js?v=20260721"></script>
 </body>
 </html>

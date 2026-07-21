@@ -252,6 +252,12 @@ function init(graph) {
     }
     d.forming = d.status === "forming";
     d.hasVeto = !!(d.operative && d.operative.counts && d.operative.counts.vetoes);
+    // Coverage cue baked into the base node style as data (a teal ring on any body holding
+    // operative records, its own or its ministers'). Data-driven so it is part of the initial
+    // stylesheet — asserting it as a later override rule did not survive init reliably.
+    const covered = (d.op_total || 0) > 0;
+    d.opColor = covered ? "#0d7d74" : "rgba(0,0,0,0.35)";
+    d.opWidth = covered ? 2.5 : 1;
     const aliases = (d.other_names || []).join(" ");
     const alsoHolds = (d.also_holds || []).join(" ");
     searchIndex.push({ id: d.id, label: d.label, sub: subOf(d),
@@ -273,7 +279,7 @@ function init(graph) {
       { selector: "node", style: {
         "background-color": "data(color)", "shape": "data(shape)",
         "width": "data(size)", "height": "data(size)",
-        "border-width": 1, "border-color": "rgba(0,0,0,0.35)",
+        "border-width": "data(opWidth)", "border-color": "data(opColor)",
         "label": "", "font-size": 9, "color": "#0b0c0c",
         "text-background-color": "#fff", "text-background-opacity": 0.9,
         "text-background-padding": 2, "min-zoomed-font-size": 7,
@@ -326,6 +332,11 @@ function init(graph) {
       { selector: "edge.hover-hl", style: { "line-color": "#0b0c0c", "opacity": 1, "width": 2, "z-index": 80, "target-arrow-color": "#0b0c0c" } },
       { selector: "node:selected", style: { "label": "data(label)", "border-width": 3, "border-color": "#0b0c0c", "z-index": 100, "font-size": 11, "font-weight": "bold" } },
       { selector: "node.func-hl", style: { "border-width": 4, "border-color": "#d4a017", "z-index": 70 } },
+      // Powers-coverage cue: the persistent teal ring is baked into the base node style via
+      // data(opColor)/data(opWidth), so the Spiral 2 buildout shows on the default map, not
+      // only inside a body's Powers tab. The "Powers coverage" toggle turns it into a bold
+      // halo + label so the extracted cluster stands out when sharing.
+      { selector: "node.cov-hl", style: { "border-width": 5, "border-color": "#0d7d74", "z-index": 72, "label": "data(label)" } },
     ],
     layout: { name: "preset" },   // real layout run below, once cy exists
   });
@@ -1116,6 +1127,7 @@ function wireControls() {
 
   $("#toggle-forming").addEventListener("change", applyFilters);
   $("#toggle-regulators").addEventListener("change", applyRegulatorHighlight);
+  $("#toggle-coverage").addEventListener("change", applyCoverageHighlight);
   $("#toggle-vetoes").addEventListener("change", applyMapMode);
   $("#toggle-sponsors").addEventListener("change", applyMapMode);
   document.querySelectorAll("input[name='layout']").forEach((r) =>
@@ -1165,6 +1177,16 @@ function applyMapMode() {
 
 // Gold halo on every regulator, wherever it sits in the rings — the cross-cutting view
 // the body_type axis can't give (regulators span four legal forms).
+// Bold-halo + label every body that holds operative records — the "how far has the powers
+// buildout reached?" view. The persistent teal ring already shows coverage; this makes it pop.
+function applyCoverageHighlight() {
+  const on = $("#toggle-coverage").checked;
+  cy.batch(() => {
+    cy.nodes().removeClass("cov-hl");
+    if (on) cy.nodes().filter((n) => (n.data("op_total") || 0) > 0).addClass("cov-hl");
+  });
+}
+
 function applyRegulatorHighlight() {
   const on = $("#toggle-regulators").checked;
   cy.batch(() => {
