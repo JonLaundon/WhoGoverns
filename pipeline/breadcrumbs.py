@@ -133,9 +133,13 @@ CORRECTLY_UNMINED = {
         "(held).",
     "marine-and-coastal-access-act-2009-s67":
         "CONSTITUTIVE — exempt activities / scope of the marine licensing regime; confers no power.",
-    # NOTE: transport-and-works-act-1992-s3 (works interfering with navigation) remains an open
-    # lead — a genuine further sibling power, extracted next round. Left unmined on purpose.
+    "marine-and-coastal-access-act-2009-s316":
+        "CONSTITUTIVE — general interpretation/definitions for the Marine Act; confers no power.",
 }
+# Deferred (not pruned): the England infrastructure-consent siblings now reach mainly the
+# DEVOLVED Infrastructure (Wales) Act 2024 (the Welsh DCO equivalent) and general/procedural
+# law. Devolved administrations are a Spiral-5 tranche (plan), so the Welsh Act is a deferred
+# sibling, not extracted here — noted so the flattening of the ENGLAND fabric is visible.
 
 
 def collect():

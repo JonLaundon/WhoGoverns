@@ -74,6 +74,22 @@ POWERS = [
      "legal_status": "current", "extraction": ext(0.87), "verification": dict(V),
      "notes": CONSENT_ORDER_NOTE, "record_status": "extracted"},
 
+    {"power_id": "power-sos-transport-twa1992-s3", "holder_type": "office", "office_id": SOS_T,
+     "body_id": DFT, "power_label": "Make a Transport and Works Act order for inland waterways / navigation works",
+     "power_type": "approval", "power_basis": "statutory", "modality": "power", "legal_effect": "may",
+     "summary": ("The Secretary of State may make an order relating to the construction or "
+                 "operation of an inland waterway, or works interfering with rights of navigation "
+                 "(Transport and Works Act 1992 s.3). Directly reservoir-relevant: a reservoir with "
+                 "water-transfer or navigation-affecting works needs this consent unless subsumed "
+                 "into a DCO."),
+     "constraints": ["Subject to the Act's application and objection procedure."],
+     "source_id": "source-act-transport-and-works-act-1992",
+     "provision_key": "transport-and-works-act-1992-s3",
+     "citation": {"provision": "s.3(1)", "url": "https://www.legislation.gov.uk/ukpga/1992/42/section/3", "quote": None},
+     "related_body_ids": [], "related_power_ids": [], "derived_from_record_id": None,
+     "legal_status": "current", "extraction": ext(0.86), "verification": dict(V),
+     "notes": CONSENT_ORDER_NOTE, "record_status": "extracted"},
+
     {"power_id": "power-sos-transport-harbours1964-s14", "holder_type": "office", "office_id": SOS_T,
      "body_id": DFT, "power_label": "Make a harbour revision or empowerment order",
      "power_type": "approval", "power_basis": "statutory", "modality": "power", "legal_effect": "may",
@@ -96,7 +112,7 @@ POWERS = [
 def main():
     have = {p["provision_key"] for p in store.load("provisions")}
     for pk in ("marine-and-coastal-access-act-2009-s71", "transport-and-works-act-1992-s1",
-               "harbours-act-1964-s14"):
+               "transport-and-works-act-1992-s3", "harbours-act-1964-s14"):
         if pk not in have:
             sys.exit(f"FAIL: {pk} not fetched.")
     store.upsert("powers", POWERS)

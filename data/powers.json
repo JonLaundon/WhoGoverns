@@ -1807,5 +1807,45 @@
       "verified_by": null,
       "verified_date": null
     }
+  },
+  {
+    "body_id": "uk-state-body-department-for-transport",
+    "citation": {
+      "provision": "s.3(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1992/42/section/3"
+    },
+    "constraints": [
+      "Subject to the Act's application and objection procedure."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.86,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-infra-siblings",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x).",
+    "office_id": "office-secretary-of-state-for-transport",
+    "power_basis": "statutory",
+    "power_id": "power-sos-transport-twa1992-s3",
+    "power_label": "Make a Transport and Works Act order for inland waterways / navigation works",
+    "power_type": "approval",
+    "provision_key": "transport-and-works-act-1992-s3",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [],
+    "source_id": "source-act-transport-and-works-act-1992",
+    "summary": "The Secretary of State may make an order relating to the construction or operation of an inland waterway, or works interfering with rights of navigation (Transport and Works Act 1992 s.3). Directly reservoir-relevant: a reservoir with water-transfer or navigation-affecting works needs this consent unless subsumed into a DCO.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
   }
 ]

@@ -4,9 +4,9 @@
 
 Decision #27's breadcrumb method widens the net without sweeping the whole statute book, but it only works if the leads are tracked. This file is derived from the records every time it runs, so a stub that has been closed disappears by itself and the count is a real completeness measure rather than a feeling.
 
-**128 open stub(s).**
+**127 open stub(s).**
 
-27 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
+28 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
 
 ## dangling reference (123)
 
@@ -143,8 +143,4 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 ## orphan instrument (1)
 
 - **`instrument-nps-water-resources`** — National Policy Statement for Water Resources Infrastructure (designated framework) registered with no provisions extracted
-
-## unmined provision (1)
-
-- **`transport-and-works-act-1992-s3`** — Orders as to inland waterways etc. — fetched but no power, duty or veto extracted from it
 
