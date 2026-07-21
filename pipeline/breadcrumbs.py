@@ -135,6 +135,9 @@ CORRECTLY_UNMINED = {
         "CONSTITUTIVE — exempt activities / scope of the marine licensing regime; confers no power.",
     "marine-and-coastal-access-act-2009-s316":
         "CONSTITUTIVE — general interpretation/definitions for the Marine Act; confers no power.",
+    "planning-act-2008-s43":
+        "CONSTITUTIVE — defines which local authorities are 'affected' for the s.42/s.60 "
+        "consultation and Local Impact Report duties; confers no power.",
 }
 # Deferred (not pruned): the England infrastructure-consent siblings now reach mainly the
 # DEVOLVED Infrastructure (Wales) Act 2024 (the Welsh DCO equivalent) and general/procedural

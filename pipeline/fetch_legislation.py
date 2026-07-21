@@ -203,7 +203,7 @@ PLANNING_2008 = {
     # NPS applies; 114 grant/refuse the DCO; 120 what a DCO may include; 122/123 compulsory
     # acquisition of land (the private-party dimension, #29); 150 consents under other regimes
     # (the fusion with the EA/Natural England consents already held).
-    "sections": ["5", "7", "9", "33", "35", "42", "47", "49", "55", "87", "104", "105", "114", "118", "120", "122", "123", "131", "150"],
+    "sections": ["5", "7", "9", "33", "35", "42", "47", "49", "55", "87", "104", "105", "114", "118", "120", "122", "123", "131", "150", "43", "60"],
     "instrument_note": "Planning/infrastructure Tranche A — the DCO regime by which a large "
                        "reservoir (an NSIP) is consented. Scoped to the decision-spine + the "
                        "compulsory-acquisition and other-consents provisions the reservoir chain "
@@ -240,6 +240,20 @@ TWA_1992 = {
                        "and works interfering with navigation (s.3). Reached from Planning Act s.120.",
 }
 
+AMAA_1979 = {
+    "instrument_id": "instrument-act-ancient-monuments-and-archaeological-areas-act-1979",
+    "source_id": "source-act-ancient-monuments-and-archaeological-areas-act-1979",
+    "slug": "ancient-monuments-and-archaeological-areas-act-1979", "title": "Ancient Monuments and Archaeological Areas Act 1979",
+    "leg_type": "ukpga", "year": 1979, "number": "46", "sections": ["2"],
+    "instrument_note": "Heritage consent regime: scheduled monument consent (s.2). Reached via the Planning Act one-consent list; a reservoir blocker where archaeology is affected.",
+}
+NERC_2006 = {
+    "instrument_id": "instrument-act-natural-environment-and-rural-communities-act-2006",
+    "source_id": "source-act-natural-environment-and-rural-communities-act-2006",
+    "slug": "natural-environment-and-rural-communities-act-2006", "title": "Natural Environment and Rural Communities Act 2006",
+    "leg_type": "ukpga", "year": 2006, "number": "16", "sections": ["40"],
+    "instrument_note": "Environment: the biodiversity duty on public authorities (s.40). Reached via the environment breadcrumbs; reservoir-relevant (biodiversity).",
+}
 GAS_1965 = {
     "instrument_id": "instrument-act-gas-act-1965", "source_id": "source-act-gas-act-1965",
     "slug": "gas-act-1965", "title": "Gas Act 1965", "leg_type": "ukpga", "year": 1965,
@@ -248,7 +262,7 @@ GAS_1965 = {
 }
 ACTS = [WIA_1991, WATER_ACT_2014, WRA_1991, WCA_1981, INSOLVENCY_1986, WSMA_2025,
         ENTERPRISE_2002, COMPETITION_1998, COMPANIES_1985, FSMA_2000, CJA_1987,
-        PLANNING_2008, MARINE_2009, HARBOURS_1964, TWA_1992, GAS_1965]
+        PLANNING_2008, MARINE_2009, HARBOURS_1964, TWA_1992, GAS_1965, AMAA_1979, NERC_2006]
 
 
 def fetch(url, timeout=30, retries=3):

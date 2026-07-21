@@ -2,14 +2,14 @@
   "counts": {
     "bodies": 685,
     "budget_records": 1433,
-    "duties": 19,
-    "instruments": 17,
+    "duties": 21,
+    "instruments": 19,
     "offices": 164,
     "person_roles": 181,
-    "powers": 46,
-    "provisions": 99,
+    "powers": 47,
+    "provisions": 103,
     "relationships": 639,
-    "sources": 26,
+    "sources": 28,
     "staffing_records": 3884,
     "vetoes": 12
   },
@@ -8096,7 +8096,7 @@
       }
     }
   ],
-  "generated": "2026-07-21T20:38:47",
+  "generated": "2026-07-21T20:44:39",
   "nodes": [
     {
       "data": {
@@ -14730,7 +14730,44 @@
         "kind": "body",
         "label": "Department for Culture, Media and Sport",
         "needs_review": false,
-        "op_total": 0,
+        "op_total": 1,
+        "operative": {
+          "counts": {
+            "duties": 0,
+            "powers": 1,
+            "vetoes": 0
+          },
+          "duties": [],
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.2",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1979/46/section/2"
+              },
+              "confidence": 0.86,
+              "constraints": [
+                "Works to a scheduled monument are otherwise an offence (s.2(1))."
+              ],
+              "holder_type": "body",
+              "id": "power-sos-dcms-amaa1979-s2",
+              "kind": "power",
+              "label": "Grant scheduled monument consent",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "HOLDER: the SoS for Culture (DCMS) grants SMC; recorded on the DCMS body (no clean DCMS-SoS office yet). Historic England (related) advises/administers.",
+              "office_id": null,
+              "provision_key": "ancient-monuments-and-archaeological-areas-act-1979-s2",
+              "since": 1979,
+              "source_id": "source-act-ancient-monuments-and-archaeological-areas-act-1979",
+              "summary": "Works to a scheduled monument are an offence unless authorised by scheduled monument consent (or by development consent) — the Secretary of State grants SMC (Ancient Monuments and Archaeological Areas Act 1979 s.2). A heritage gate a reservoir affecting archaeology must clear; Historic England advises. s.2(1) confirms a DCO can authorise the works instead, so SMC is another consent a DCO can subsume (the s.150 fusion pattern, for heritage).",
+              "type": "consent",
+              "verification_status": "unverified"
+            }
+          ],
+          "vetoes": []
+        },
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -15543,6 +15580,33 @@
         "office_operative": {
           "duties": [
             {
+              "beneficiary_or_object": "Biodiversity; the environment.",
+              "citation": {
+                "provision": "s.40",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2006/16/section/40"
+              },
+              "confidence": 0.85,
+              "holder_type": "office",
+              "id": "duty-sos-defra-nerc2006-s40",
+              "kind": "duty",
+              "label": "Have regard to conserving and enhancing biodiversity",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "CROSS-CUTTING: a general duty on EVERY public authority (like the Equality Act s.149 duty). Recorded on the Defra SoS as the reservoir DCO decision-maker instance; the same duty sits on every body exercising English functions.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "natural-environment-and-rural-communities-act-2006-s40",
+              "since": 2006,
+              "source_id": "source-act-natural-environment-and-rural-communities-act-2006",
+              "summary": "A public authority with functions in relation to England must have regard to the general biodiversity objective — conserving and enhancing biodiversity — in exercising its functions (NERC Act 2006 s.40, as strengthened by the Environment Act 2021). A cross-cutting have-regard duty: the reservoir decision-maker must weigh biodiversity, and departure invites challenge.",
+              "trigger": "In exercising any function in relation to England.",
+              "type": "environmental",
+              "verification_status": "unverified"
+            },
+            {
               "beneficiary_or_object": "The public interest, as framed by the NPS.",
               "citation": {
                 "provision": "s.104(2)",
@@ -15594,6 +15658,34 @@
               "summary": "Where no National Policy Statement has effect for the development, the Secretary of State must decide the DCO application having regard to any local impact report, any relevant prescribed matters, and any other important and relevant matters (Planning Act 2008 s.105). The fallback decision framework parallel to s.104 — and the one that applies where a sector's NPS is not yet designated.",
               "trigger": "Deciding a DCO application for which no NPS has effect.",
               "type": "other",
+              "verification_status": "unverified"
+            },
+            {
+              "beneficiary_or_object": "The affected local authorities (a class); local impact evidence.",
+              "citation": {
+                "provision": "s.60(2)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/60"
+              },
+              "confidence": 0.86,
+              "holder_type": "office",
+              "id": "duty-sos-defra-planning2008-s60",
+              "kind": "duty",
+              "label": "Invite Local Impact Reports from the affected local authorities",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Class counterparty: the 'affected local authorities' under s.43 — no single body, so owed_to is null (a multi-counterparty consultation, #29-adjacent).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "outstanding_effects": true,
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "planning-act-2008-s60",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "Where the Secretary of State has accepted a DCO application, the Secretary of State must give each affected local authority the opportunity to submit a Local Impact Report on the likely impact of the development (Planning Act 2008 s.60). The statutory channel for local-authority input into the decision — the local objectors' formal voice.",
+              "trigger": "After accepting a DCO application (s.55).",
+              "type": "consultation",
               "verification_status": "unverified"
             },
             {
@@ -16293,7 +16385,7 @@
             }
           ]
         },
-        "op_total": 27,
+        "op_total": 29,
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -41806,13 +41898,13 @@
         "kind": "office",
         "label": "Secretary of State for Environment, Food and Rural Affairs",
         "office_type": "cabinet_minister",
-        "op_total": 27,
+        "op_total": 29,
         "operative": {
           "blocker_kinds": [
             "ministerial"
           ],
           "counts": {
-            "duties": 8,
+            "duties": 10,
             "powers": 14,
             "vetoes": 5
           },
@@ -41872,6 +41964,34 @@
               "verification_status": "unverified"
             },
             {
+              "beneficiary_or_object": "The affected local authorities (a class); local impact evidence.",
+              "citation": {
+                "provision": "s.60(2)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/60"
+              },
+              "confidence": 0.86,
+              "holder_type": "office",
+              "id": "duty-sos-defra-planning2008-s60",
+              "kind": "duty",
+              "label": "Invite Local Impact Reports from the affected local authorities",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Class counterparty: the 'affected local authorities' under s.43 — no single body, so owed_to is null (a multi-counterparty consultation, #29-adjacent).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "outstanding_effects": true,
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "planning-act-2008-s60",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "Where the Secretary of State has accepted a DCO application, the Secretary of State must give each affected local authority the opportunity to submit a Local Impact Report on the likely impact of the development (Planning Act 2008 s.60). The statutory channel for local-authority input into the decision — the local objectors' formal voice.",
+              "trigger": "After accepting a DCO application (s.55).",
+              "type": "consultation",
+              "verification_status": "unverified"
+            },
+            {
               "beneficiary_or_object": "Consultees and the public; the legitimacy of the NPS framework.",
               "citation": {
                 "provision": "s.7",
@@ -41896,6 +42016,33 @@
               "summary": "Before designating a statement as a National Policy Statement, the Secretary of State must carry out the consultation and publicity prescribed by Planning Act 2008 s.7 (and satisfy the parliamentary requirements in s.9). The procedural gate on setting the framework that then shapes every DCO decision (s.104) — the NPS consultation is where the policy is contested before it hardens into the test a reservoir must pass.",
               "trigger": "Before designating (or amending) a National Policy Statement under s.5.",
               "type": "consultation",
+              "verification_status": "unverified"
+            },
+            {
+              "beneficiary_or_object": "Biodiversity; the environment.",
+              "citation": {
+                "provision": "s.40",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2006/16/section/40"
+              },
+              "confidence": 0.85,
+              "holder_type": "office",
+              "id": "duty-sos-defra-nerc2006-s40",
+              "kind": "duty",
+              "label": "Have regard to conserving and enhancing biodiversity",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "CROSS-CUTTING: a general duty on EVERY public authority (like the Equality Act s.149 duty). Recorded on the Defra SoS as the reservoir DCO decision-maker instance; the same duty sits on every body exercising English functions.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "natural-environment-and-rural-communities-act-2006-s40",
+              "since": 2006,
+              "source_id": "source-act-natural-environment-and-rural-communities-act-2006",
+              "summary": "A public authority with functions in relation to England must have regard to the general biodiversity objective — conserving and enhancing biodiversity — in exercising its functions (NERC Act 2006 s.40, as strengthened by the Environment Act 2021). A cross-cutting have-regard duty: the reservoir decision-maker must weigh biodiversity, and departure invites challenge.",
+              "trigger": "In exercising any function in relation to England.",
+              "type": "environmental",
               "verification_status": "unverified"
             },
             {
@@ -42819,6 +42966,11 @@
     }
   ],
   "sources": {
+    "source-act-ancient-monuments-and-archaeological-areas-act-1979": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Ancient Monuments and Archaeological Areas Act 1979",
+      "url": "https://www.legislation.gov.uk/ukpga/1979/46"
+    },
     "source-act-companies-act-1985": {
       "publisher": "legislation.gov.uk (The National Archives)",
       "title": "Companies Act 1985",
@@ -42863,6 +43015,11 @@
       "publisher": "legislation.gov.uk (The National Archives)",
       "title": "Marine and Coastal Access Act 2009",
       "url": "https://www.legislation.gov.uk/ukpga/2009/23"
+    },
+    "source-act-natural-environment-and-rural-communities-act-2006": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Natural Environment and Rural Communities Act 2006",
+      "url": "https://www.legislation.gov.uk/ukpga/2006/16"
     },
     "source-act-planning-act-2008": {
       "publisher": "legislation.gov.uk (The National Archives)",

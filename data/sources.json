@@ -4,6 +4,19 @@
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",
     "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
+    "publication_date": "1979-01-01",
+    "publisher": "legislation.gov.uk (The National Archives)",
+    "source_id": "source-act-ancient-monuments-and-archaeological-areas-act-1979",
+    "source_type": "act",
+    "title": "Ancient Monuments and Archaeological Areas Act 1979",
+    "url": "https://www.legislation.gov.uk/ukpga/1979/46",
+    "version_date": "2026-07-21"
+  },
+  {
+    "accessed_date": "2026-07-21",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
     "publication_date": "1985-01-01",
     "publisher": "legislation.gov.uk (The National Archives)",
     "source_id": "source-act-companies-act-1985",
@@ -114,6 +127,19 @@
     "source_type": "act",
     "title": "Marine and Coastal Access Act 2009",
     "url": "https://www.legislation.gov.uk/ukpga/2009/23",
+    "version_date": "2026-07-21"
+  },
+  {
+    "accessed_date": "2026-07-21",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
+    "publication_date": "2006-01-01",
+    "publisher": "legislation.gov.uk (The National Archives)",
+    "source_id": "source-act-natural-environment-and-rural-communities-act-2006",
+    "source_type": "act",
+    "title": "Natural Environment and Rural Communities Act 2006",
+    "url": "https://www.legislation.gov.uk/ukpga/2006/16",
     "version_date": "2026-07-21"
   },
   {

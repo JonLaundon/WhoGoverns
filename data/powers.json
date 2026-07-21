@@ -1157,6 +1157,48 @@
     }
   },
   {
+    "body_id": "uk-state-body-department-for-culture-media-and-sport",
+    "citation": {
+      "provision": "s.2",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1979/46/section/2"
+    },
+    "constraints": [
+      "Works to a scheduled monument are otherwise an offence (s.2(1))."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.86,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-planning-env-bloom",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "HOLDER: the SoS for Culture (DCMS) grants SMC; recorded on the DCMS body (no clean DCMS-SoS office yet). Historic England (related) advises/administers.",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-sos-dcms-amaa1979-s2",
+    "power_label": "Grant scheduled monument consent",
+    "power_type": "consent",
+    "provision_key": "ancient-monuments-and-archaeological-areas-act-1979-s2",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-historic-england"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-ancient-monuments-and-archaeological-areas-act-1979",
+    "summary": "Works to a scheduled monument are an offence unless authorised by scheduled monument consent (or by development consent) — the Secretary of State grants SMC (Ancient Monuments and Archaeological Areas Act 1979 s.2). A heritage gate a reservoir affecting archaeology must clear; Historic England advises. s.2(1) confirms a DCO can authorise the works instead, so SMC is another consent a DCO can subsume (the s.150 fusion pattern, for heritage).",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {
       "provision": "s.114(1)",

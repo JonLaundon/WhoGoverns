@@ -1,6 +1,26 @@
 [
   {
     "citation": {
+      "content_hash": "c6298ab13edbf4d7",
+      "url": "https://www.legislation.gov.uk/ukpga/1979/46/section/2",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Control of works affecting scheduled monuments.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-ancient-monuments-and-archaeological-areas-act-1979",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "ancient-monuments-and-archaeological-areas-act-1979-s2",
+    "provision_ref": "s.2",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "c4088169682f3218",
       "url": "https://www.legislation.gov.uk/ukpga/1985/6/section/431",
       "version_date": "2026-07-21"
@@ -664,6 +684,69 @@
   },
   {
     "citation": {
+      "content_hash": "5c7c5814990fd9ae",
+      "url": "https://www.legislation.gov.uk/ukpga/2006/16/section/40",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Duty to conserve and enhance biodiversity",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-natural-environment-and-rural-communities-act-2006",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "natural-environment-and-rural-communities-act-2006-s40",
+    "provision_ref": "s.40",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": false,
+        "instrument_slug": "environment-act-2021",
+        "internal": false,
+        "provision_key": "environment-act-2021-s102",
+        "raw": "section 102"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "gas-act-1986",
+        "internal": false,
+        "provision_key": "gas-act-1986-s7aa",
+        "raw": "section 7AA"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "environment-act-2021",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Environment Act 2021"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "town-and-country-planning-act-1990",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Town and Country Planning Act 1990"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "crown-act-1975",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Ministers of the Crown Act 1975"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "gas-act-1986",
+        "internal": false,
+        "provision_key": null,
+        "raw": "AA of the Gas Act 1986"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "4da3b569e2f761a7",
       "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/104",
       "version_date": "2026-07-21"
@@ -1007,14 +1090,14 @@
         "raw": "section 4(1)"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "ancient-monuments-and-archaeological-areas-act-1979",
         "internal": false,
         "provision_key": "ancient-monuments-and-archaeological-areas-act-1979-s2",
         "raw": "section 2(3)"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "ancient-monuments-and-archaeological-areas-act-1979",
         "internal": false,
         "provision_key": "ancient-monuments-and-archaeological-areas-act-1979-s35",
@@ -1133,7 +1216,7 @@
         "raw": "Gas Act 1965"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "ancient-monuments-and-archaeological-areas-act-1979",
         "internal": false,
         "provision_key": null,
@@ -1250,6 +1333,41 @@
         "internal": false,
         "provision_key": null,
         "raw": "Continental Shelf Act 1964"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "0427108d0eb5be3c",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/43",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Local authorities for purposes of section 42(1)(b)",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Planning and Infrastructure Act 2025 s. 5(b) (omitted). Consolidated text may lag the law in force.",
+    "provision_key": "planning-act-2008-s43",
+    "provision_ref": "s.43",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s42",
+        "raw": "section 42(1)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s2",
+        "raw": "section 2"
       }
     ],
     "status": "in_force"
@@ -1404,6 +1522,48 @@
         "internal": true,
         "provision_key": "planning-act-2008-s42",
         "raw": "section 42(1)"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "9f0f6ecce1ac7c81",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/60",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Local impact reports",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Planning and Infrastructure Act 2025 s. 8(2) (inserted). Consolidated text may lag the law in force.",
+    "provision_key": "planning-act-2008-s60",
+    "provision_ref": "s.60",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s58",
+        "raw": "section 58(2)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s59",
+        "raw": "section 59"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s56a",
+        "raw": "section 56A"
       }
     ],
     "status": "in_force"
@@ -3709,14 +3869,14 @@
         "raw": "section 28G"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "natural-environment-and-rural-communities-act-2006",
         "internal": false,
         "provision_key": "natural-environment-and-rural-communities-act-2006-s16",
         "raw": "section 16"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "natural-environment-and-rural-communities-act-2006",
         "internal": false,
         "provision_key": "natural-environment-and-rural-communities-act-2006-s7",
@@ -3758,7 +3918,7 @@
         "raw": "section 28M"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "natural-environment-and-rural-communities-act-2006",
         "internal": false,
         "provision_key": null,

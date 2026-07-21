@@ -4,11 +4,11 @@
 
 Decision #27's breadcrumb method widens the net without sweeping the whole statute book, but it only works if the leads are tracked. This file is derived from the records every time it runs, so a stub that has been closed disappears by itself and the count is a real completeness measure rather than a feeling.
 
-**130 open stub(s).**
+**131 open stub(s).**
 
-28 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
+29 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
 
-## dangling reference (126)
+## dangling reference (127)
 
 - **`competition-act-1998-s18`** — references competition-act-1998-s19, which is not held
 - **`competition-act-1998-s2`** — references competition-act-1998-s3, which is not held
@@ -40,12 +40,11 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`insolvency-act-1986-s124a`** — references insolvency-act-1986-s165, which is not held
 - **`insolvency-act-1986-s124a`** — references insolvency-act-1986-s262, which is not held
 - **`marine-and-coastal-access-act-2009-s66`** — references marine-and-coastal-access-act-2009-s316, which is not held
+- **`natural-environment-and-rural-communities-act-2006-s40`** — references environment-act-2021-s102, which is not held
+- **`natural-environment-and-rural-communities-act-2006-s40`** — references gas-act-1986-s7aa, which is not held
 - **`planning-act-2008-s104`** — references marine-and-coastal-access-act-2009-s59, which is not held
-- **`planning-act-2008-s104`** — references planning-act-2008-s60, which is not held
-- **`planning-act-2008-s105`** — references planning-act-2008-s60, which is not held
 - **`planning-act-2008-s131`** — references acquisition-of-land-act-1981-s19, which is not held
 - **`planning-act-2008-s131`** — references planning-act-2008-s132, which is not held
-- **`planning-act-2008-s33`** — references ancient-monuments-and-archaeological-areas-act-1979-s2, which is not held
 - **`planning-act-2008-s33`** — references ancient-monuments-and-archaeological-areas-act-1979-s35, which is not held
 - **`planning-act-2008-s33`** — references electricity-act-1989-s36, which is not held
 - **`planning-act-2008-s33`** — references green-belt-london-and-home-counties-act-1938-s10, which is not held
@@ -62,13 +61,15 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`planning-act-2008-s33`** — references planning-act-2008-s8, which is not held
 - **`planning-act-2008-s35`** — references planning-act-2008-s35za, which is not held
 - **`planning-act-2008-s42`** — references continental-shelf-act-1964-s1, which is not held
-- **`planning-act-2008-s42`** — references planning-act-2008-s43, which is not held
 - **`planning-act-2008-s42`** — references planning-act-2008-s44, which is not held
-- **`planning-act-2008-s47`** — references planning-act-2008-s43, which is not held
+- **`planning-act-2008-s43`** — references planning-act-2008-s2, which is not held
 - **`planning-act-2008-s49`** — references planning-act-2008-s45, which is not held
 - **`planning-act-2008-s49`** — references planning-act-2008-s48, which is not held
 - **`planning-act-2008-s55`** — references planning-act-2008-s37, which is not held
 - **`planning-act-2008-s55`** — references planning-act-2008-s50, which is not held
+- **`planning-act-2008-s60`** — references planning-act-2008-s56a, which is not held
+- **`planning-act-2008-s60`** — references planning-act-2008-s58, which is not held
+- **`planning-act-2008-s60`** — references planning-act-2008-s59, which is not held
 - **`planning-act-2008-s87`** — references planning-act-2008-s97, which is not held
 - **`planning-act-2008-s9`** — references planning-act-2008-s13, which is not held
 - **`transport-and-works-act-1992-s1`** — references planning-act-2008-s2, which is not held

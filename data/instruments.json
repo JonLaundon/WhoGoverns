@@ -1,6 +1,20 @@
 [
   {
     "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-ancient-monuments-and-archaeological-areas-act-1979",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/1979/46",
+    "made_under": null,
+    "notes": "Heritage consent regime: scheduled monument consent (s.2). Reached via the Planning Act one-consent list; a reservoir blocker where archaeology is affected.",
+    "number": "46",
+    "record_status": "extracted",
+    "source_id": "source-act-ancient-monuments-and-archaeological-areas-act-1979",
+    "status": "in_force",
+    "title": "Ancient Monuments and Archaeological Areas Act 1979",
+    "year": 1979
+  },
+  {
+    "enacted_by": "Parliament",
     "instrument_id": "instrument-act-companies-act-1985",
     "instrument_type": "act",
     "legislation_url": "https://www.legislation.gov.uk/ukpga/1985/6",
@@ -124,6 +138,20 @@
     "status": "in_force",
     "title": "Marine and Coastal Access Act 2009",
     "year": 2009
+  },
+  {
+    "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-natural-environment-and-rural-communities-act-2006",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/2006/16",
+    "made_under": null,
+    "notes": "Environment: the biodiversity duty on public authorities (s.40). Reached via the environment breadcrumbs; reservoir-relevant (biodiversity).",
+    "number": "16",
+    "record_status": "extracted",
+    "source_id": "source-act-natural-environment-and-rural-communities-act-2006",
+    "status": "in_force",
+    "title": "Natural Environment and Rural Communities Act 2006",
+    "year": 2006
   },
   {
     "enacted_by": "Parliament",

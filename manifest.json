@@ -1,6 +1,6 @@
 {
   "annex_a_version": "0.4",
-  "generated": "2026-07-21T20:38:47",
+  "generated": "2026-07-21T20:44:39",
   "graph": {
     "edges": 906,
     "nodes": 819
@@ -10,14 +10,14 @@
   "record_counts": {
     "bodies": 685,
     "budget_records": 1433,
-    "duties": 19,
-    "instruments": 17,
+    "duties": 21,
+    "instruments": 19,
     "offices": 164,
     "person_roles": 181,
-    "powers": 46,
-    "provisions": 99,
+    "powers": 47,
+    "provisions": 103,
     "relationships": 639,
-    "sources": 26,
+    "sources": 28,
     "staffing_records": 3884,
     "vetoes": 12
   },
