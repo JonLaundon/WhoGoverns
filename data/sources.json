@@ -1,6 +1,6 @@
 [
   {
-    "accessed_date": "2026-07-20",
+    "accessed_date": "2026-07-21",
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",
     "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
@@ -10,7 +10,7 @@
     "source_type": "act",
     "title": "Insolvency Act 1986",
     "url": "https://www.legislation.gov.uk/ukpga/1986/45",
-    "version_date": "2026-07-20"
+    "version_date": "2026-07-21"
   },
   {
     "accessed_date": "2026-07-20",
@@ -26,7 +26,7 @@
     "version_date": "2026-07-20"
   },
   {
-    "accessed_date": "2026-07-20",
+    "accessed_date": "2026-07-21",
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",
     "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
@@ -36,10 +36,10 @@
     "source_type": "act",
     "title": "Water Act 2014",
     "url": "https://www.legislation.gov.uk/ukpga/2014/21",
-    "version_date": "2026-07-20"
+    "version_date": "2026-07-21"
   },
   {
-    "accessed_date": "2026-07-20",
+    "accessed_date": "2026-07-21",
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",
     "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
@@ -49,10 +49,10 @@
     "source_type": "act",
     "title": "Water Industry Act 1991",
     "url": "https://www.legislation.gov.uk/ukpga/1991/56",
-    "version_date": "2026-07-20"
+    "version_date": "2026-07-21"
   },
   {
-    "accessed_date": "2026-07-20",
+    "accessed_date": "2026-07-21",
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",
     "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
@@ -62,10 +62,10 @@
     "source_type": "act",
     "title": "Water Resources Act 1991",
     "url": "https://www.legislation.gov.uk/ukpga/1991/57",
-    "version_date": "2026-07-20"
+    "version_date": "2026-07-21"
   },
   {
-    "accessed_date": "2026-07-20",
+    "accessed_date": "2026-07-21",
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",
     "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
@@ -75,10 +75,10 @@
     "source_type": "act",
     "title": "Water (Special Measures) Act 2025",
     "url": "https://www.legislation.gov.uk/ukpga/2025/5",
-    "version_date": "2026-07-20"
+    "version_date": "2026-07-21"
   },
   {
-    "accessed_date": "2026-07-20",
+    "accessed_date": "2026-07-21",
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",
     "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
@@ -88,7 +88,7 @@
     "source_type": "act",
     "title": "Wildlife and Countryside Act 1981",
     "url": "https://www.legislation.gov.uk/ukpga/1981/69",
-    "version_date": "2026-07-20"
+    "version_date": "2026-07-21"
   },
   {
     "accessed_date": "2026-07-20",

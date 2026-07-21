@@ -104,10 +104,18 @@ def main():
         if v["veto_id"] == "veto-cma-wia1991-s16a-veto":
             v["blocks_record_id"] = DUTY["duty_id"]
             v["blocks_record_type"] = "duty"
-            v["notes"] = (v.get("notes") or "") + (
-                " Target tied out 2026-07-20 (breadcrumb trawl): the CMA direction blocks the "
+            # OWN the whole note (idempotent — an earlier version appended, which double-stamped
+            # on re-run and carried a since-corrected outstanding_effects claim). s.16A itself has
+            # NO unapplied effects (the outstanding-effects wiring, decision #36, cleared the
+            # by-hand flag that was based on an Act-level warning, not a section-level one).
+            v["notes"] = (
+                "Target (breadcrumb trawl, 2026-07-20): the CMA's s.16A direction blocks the "
                 "s.16 DUTY to modify following an adverse report — the first case proving a veto "
-                "can obstruct a duty, not only a power.")
+                "can obstruct a duty, not only a power. Currency: s.16A is in force and the "
+                "hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition "
+                "modification route; newer licence regimes differ (the Environment Act 2021 moved "
+                "non-price-control licence modifications to a CMA APPEAL after the fact), so this "
+                "must not be read as the CMA generally gating Ofwat.")
     store.save("vetoes", vetoes)
 
     tied = sum(1 for v in vetoes if v.get("blocks_record_id"))

@@ -243,6 +243,48 @@ def extract_references(body, act, known_slugs):
     return refs
 
 
+UKM = "{http://www.legislation.gov.uk/namespaces/metadata}"
+
+
+def unapplied_effects(root, sec):
+    """Effects legislation.gov.uk records against THIS section but has NOT yet applied to the
+    consolidated text (decision #36). Returns [(affecting_title, affecting_provisions, type)].
+
+    Each section's CLML carries the WHOLE Act's <ukm:UnappliedEffects> block, so the signal is
+    per-section only after filtering on the affected provision. The nested <ukm:Section
+    FoundRef="section-17A"> resolves a sub-paragraph effect ("s. 17A(c)") to its parent section
+    — the reliable key; the flat AffectedProvisions attribute is a boundary-matched fallback.
+    Part/Chapter-level effects ("Pt. 3 Ch. 2B") are deliberately NOT attributed to individual
+    sections: mapping sections to chapters is not cheap, and a false 'stale' flag is worse than
+    a conservative miss. This is why the flag means "a change to THIS SECTION is pending", not
+    "this Act has any pending change".
+    """
+    want = "section-" + sec
+    # 17A must not match 17AA: after the section token the next char must not be alphanumeric.
+    attr_re = re.compile(r"s\. " + re.escape(sec) + r"(?![0-9A-Za-z])")
+    hits = []
+    for eff in root.iter(UKM + "UnappliedEffect"):
+        matched = False
+        for prov in eff.findall(UKM + "AffectedProvisions"):
+            for s in prov.iter(UKM + "Section"):
+                if want in (s.get("FoundRef"), s.get("Ref")):
+                    matched = True
+        if not matched and attr_re.match(eff.get("AffectedProvisions", "")):
+            matched = True
+        if matched:
+            title = (eff.findtext(UKM + "AffectingTitle")
+                     or "{} {} c.{}".format(eff.get("AffectingClass", ""),
+                                            eff.get("AffectingYear", ""), eff.get("AffectingNumber", "")))
+            hits.append((title.strip(), eff.get("AffectingProvisions", ""), eff.get("Type", "")))
+    # De-dup identical (title, provisions, type) triples, keep order.
+    seen, out = set(), []
+    for h in hits:
+        if h not in seen:
+            seen.add(h)
+            out.append(h)
+    return out
+
+
 def build_act(act, dry_run, known_slugs=()):
     """Fetch one Act's configured sections; emit its Source, Instrument and Provision
     records (idempotent via store). Returns {section: (heading, text)} for --print."""
@@ -284,12 +326,21 @@ def build_act(act, dry_run, known_slugs=()):
             if not dry_run:
                 with open(cache, "w", encoding="utf-8") as fh:
                     fh.write(xml)
+        root = ET.fromstring(xml)
         heading, body = parse_section(xml, sec)
         if body is None:
             print(f"  ! section {sec}: not found in XML (skipped)")
             continue
         texts[sec] = (heading, body)
         pk = f"{act['slug']}-s{sec.lower()}"
+        effects = unapplied_effects(root, sec)
+        if effects:
+            note = "Unapplied amendment(s) to this section as at {}: {}. Consolidated text may " \
+                   "lag the law in force.".format(accessed, "; ".join(
+                       f"{t} {p} ({ty})".strip() for t, p, ty in effects))
+        else:
+            note = f"No unapplied effects recorded against this section as at {accessed} (Act/Chapter-level " \
+                   "effects are not attributed to individual sections)."
         provisions.append({
             "provision_key": pk, "instrument_id": act["instrument_id"],
             "provision_ref": f"s.{sec}", "heading": heading, "in_force_from": None,
@@ -298,8 +349,8 @@ def build_act(act, dry_run, known_slugs=()):
                          "content_hash": hashlib.sha256(body.encode("utf-8")).hexdigest()[:16]},
             "references": extract_references(body, act, known_slugs),
             "made_under": None, "commenced_by": None,
-            "outstanding_effects": False,
-            "outstanding_effects_note": "Outstanding-effects check not yet wired (Spiral 2 TODO).",
+            "outstanding_effects": bool(effects),
+            "outstanding_effects_note": note,
             "notes": None, "record_status": "extracted",
         })
 

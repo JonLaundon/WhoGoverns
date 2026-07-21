@@ -7964,7 +7964,7 @@
       }
     }
   ],
-  "generated": "2026-07-20T23:42:05",
+  "generated": "2026-07-21T10:48:36",
   "nodes": [
     {
       "data": {
@@ -12346,7 +12346,7 @@
               "kind": "veto",
               "label": "CMA veto of Ofwat's proposed licence modifications",
               "legal_status": "current",
-              "notes": "Currency check 2026-07-20: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route. Newer licence regimes run differently - the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL (Ofwat may modify, subject to the company's right of appeal) rather than a prior CMA direction. So this record must not be read as the CMA generally gating Ofwat. Provision flagged outstanding_effects=true. Target tied out 2026-07-20 (breadcrumb trawl): the CMA direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power. Target tied out 2026-07-20 (breadcrumb trawl): the CMA direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power.",
+              "notes": "Target (breadcrumb trawl, 2026-07-20): the CMA's s.16A direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power. Currency: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route; newer licence regimes differ (the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL after the fact), so this must not be read as the CMA generally gating Ofwat.",
               "office_id": null,
               "overridable": "no",
               "override_mechanism": null,
@@ -12646,6 +12646,7 @@
               "mandatory": true,
               "notes": "INFLUENCE BOUNDARY: CCW's external leverage is INFLUENCE — it investigates complaints and makes representations to Ofwat and undertakers, but holds NO veto and no power to compel. Per the strict test its representation/consultation rights are influence, not recorded as vetoes. CCW is the consumer-voice node, deliberately veto-less — an honest outcome, not a gap. Counterparty (2026-07-20): Runs to consumers (disabled, chronically sick, pensionable age, low income, rural, household customers) — no state counterparty.",
               "office_id": null,
+              "outstanding_effects": true,
               "owed_to_body_id": null,
               "owed_to_office_id": null,
               "owed_to_party_outside_state": true,
@@ -27900,6 +27901,7 @@
               "legal_status": "current",
               "notes": null,
               "office_id": null,
+              "outstanding_effects": true,
               "provision_key": "wildlife-and-countryside-act-1981-s28e",
               "since": 1981,
               "source_id": "source-act-wildlife-and-countryside-act-1981",
@@ -27955,6 +27957,7 @@
               "legal_status": "current",
               "notes": "Strength corrected hard_stop -> strong_delay and overridable unknown -> yes (audit 2026-07-20), on the s.28F appeal route.",
               "office_id": null,
+              "outstanding_effects": true,
               "overridable": "yes",
               "override_mechanism": "Appeal to the Secretary of State under Wildlife and Countryside Act 1981 s.28F(5): the Secretary of State may 'direct Natural England to give consent', or quash or vary its terms. If Natural England neither gives nor refuses consent within four months the applicant may treat it as refused and appeal. (The s.28E(3)(b)-(c) routes are Natural England's own instruments — same holder, so not overrides.)",
               "projection_shape": "free_standing_block",
@@ -35341,6 +35344,7 @@
               "mandatory": true,
               "notes": "s.2 is long and multi-limbed; captured as one general-duties record (candidate for splitting per limb later). Co-held by the Secretary of State (s.2(1)); modelled here on the primary operative holder (Ofwat) per the calibration convention — full multi-holder modelling deferred (known issue). Limb (e) 'the resilience objective' and its s.2(2DA) definition were inserted by Water Act 2014 s.22 (instrument-act-water-act-2014 / provision water-act-2014-s22): amend-provenance, not a separate Water Act 2014 power. Counterparty (2026-07-20): A general duty conditioning how Ofwat exercises every power; its objects are consumers and the sector, not a state counterparty.",
               "office_id": null,
+              "outstanding_effects": true,
               "owed_to_body_id": null,
               "owed_to_office_id": null,
               "owed_to_party_outside_state": true,
@@ -35489,6 +35493,7 @@
               "legal_status": "current",
               "notes": null,
               "office_id": null,
+              "outstanding_effects": true,
               "provision_key": "water-industry-act-1991-s17a",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",
@@ -35517,6 +35522,7 @@
               "legal_status": "current",
               "notes": null,
               "office_id": null,
+              "outstanding_effects": true,
               "provision_key": "water-industry-act-1991-s17j",
               "since": 1991,
               "source_id": "source-act-water-industry-act-1991",

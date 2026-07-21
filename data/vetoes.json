@@ -23,7 +23,7 @@
     "holder_type": "body",
     "legal_status": "current",
     "modality": "veto",
-    "notes": "Currency check 2026-07-20: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route. Newer licence regimes run differently - the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL (Ofwat may modify, subject to the company's right of appeal) rather than a prior CMA direction. So this record must not be read as the CMA generally gating Ofwat. Provision flagged outstanding_effects=true. Target tied out 2026-07-20 (breadcrumb trawl): the CMA direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power. Target tied out 2026-07-20 (breadcrumb trawl): the CMA direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power.",
+    "notes": "Target (breadcrumb trawl, 2026-07-20): the CMA's s.16A direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power. Currency: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route; newer licence regimes differ (the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL after the fact), so this must not be read as the CMA generally gating Ofwat.",
     "office_id": null,
     "overridable": "no",
     "override_mechanism": null,
