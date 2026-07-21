@@ -107,6 +107,27 @@ CORRECTLY_UNMINED = {
         "PROCEDURAL — the Examining Authority controls how the examination is conducted; the "
         "blocker-bearing decision powers vest in the SoS (s.114) and the examination is delegated "
         "(PINS, #28), so no separate operative record.",
+    "planning-act-2008-s33":
+        "CONSTITUTIVE — the one-consent principle: development consent removes the need for other "
+        "consents (planning permission etc.). The disapplying EFFECT of a DCO; the state-side "
+        "record is s.150 (the consenting body's veto over that removal), which is held.",
+    "planning-act-2008-s42":
+        "PRIVATE — the duty to consult prescribed persons, the MMO, local authorities and the GLA "
+        "falls on the APPLICANT (a private party). The consultees' side is a private->state "
+        "consultation (the #29 view), not a state-to-state record.",
+    "planning-act-2008-s47":
+        "PRIVATE — the duty to consult the local community falls on the APPLICANT.",
+    "planning-act-2008-s49":
+        "PRIVATE — the duty to have regard to consultation responses falls on the APPLICANT.",
+    "planning-act-2008-s131":
+        "HEIGHTENED-CPO GATE — compulsory acquisition of common/open-space/allotment land triggers "
+        "special parliamentary procedure unless the SoS is satisfied of the s.131 conditions. A "
+        "real extra blocker on s.122 CPO; captured as a note here, a candidate for its own record "
+        "when the compulsory-acquisition layer is built out.",
+    "planning-act-2008-s9":
+        "PROCEDURAL — the parliamentary requirements for designating an NPS (laid before, approved "
+        "by resolution). Paired with the s.7 consultation duty (held); parliamentary procedure is "
+        "not a separate operative record.",
 }
 
 

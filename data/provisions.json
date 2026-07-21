@@ -663,6 +663,48 @@
   },
   {
     "citation": {
+      "content_hash": "29501373c8b0840d",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/131",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Commons, open spaces etc: compulsory acquisition of land",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "planning-act-2008-s131",
+    "provision_ref": "s.131",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s132",
+        "raw": "section 132"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "acquisition-of-land-act-1981",
+        "internal": false,
+        "provision_key": "acquisition-of-land-act-1981-s19",
+        "raw": "section 19"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "acquisition-of-land-act-1981",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Acquisition of Land Act 1981"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "09b5b2f2cfa2177b",
       "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/150",
       "version_date": "2026-07-21"
@@ -679,6 +721,216 @@
     "provision_ref": "s.150",
     "record_status": "extracted",
     "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "61a405bf96eae0ee",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/33",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Effect of requirement for development consent on other consent regimes",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: UnitedKingdomStatutoryInstrument 2020 c.1297 art. 3(1)(h) (excluded). Consolidated text may lag the law in force.",
+    "provision_key": "planning-act-2008-s33",
+    "provision_ref": "s.33",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": false,
+        "instrument_slug": "green-belt-london-and-home-counties-act-1938",
+        "internal": false,
+        "provision_key": "green-belt-london-and-home-counties-act-1938-s10",
+        "raw": "section 10(1)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "pipe-lines-act-1962",
+        "internal": false,
+        "provision_key": "pipe-lines-act-1962-s1",
+        "raw": "section 1(1)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "gas-act-1965",
+        "internal": false,
+        "provision_key": "gas-act-1965-s4",
+        "raw": "section 4(1)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "ancient-monuments-and-archaeological-areas-act-1979",
+        "internal": false,
+        "provision_key": "ancient-monuments-and-archaeological-areas-act-1979-s2",
+        "raw": "section 2(3)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "ancient-monuments-and-archaeological-areas-act-1979",
+        "internal": false,
+        "provision_key": "ancient-monuments-and-archaeological-areas-act-1979-s35",
+        "raw": "section 35"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "electricity-act-1989",
+        "internal": false,
+        "provision_key": "electricity-act-1989-s36",
+        "raw": "section 36"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s8",
+        "raw": "section 8(1)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s74",
+        "raw": "section 74(1)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "harbours-act-1964",
+        "internal": false,
+        "provision_key": "harbours-act-1964-s14",
+        "raw": "section 14"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "transport-and-works-act-1992",
+        "internal": false,
+        "provision_key": "transport-and-works-act-1992-s1",
+        "raw": "section 1"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s34",
+        "raw": "section 34"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "highways-act-1980",
+        "internal": false,
+        "provision_key": "highways-act-1980-s10",
+        "raw": "section 10"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s14",
+        "raw": "section 14"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s16",
+        "raw": "section 16"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s18",
+        "raw": "section 18"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s106",
+        "raw": "section 106"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s108",
+        "raw": "section 108"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "new-roads-and-street-works-act-1991",
+        "internal": false,
+        "provision_key": "new-roads-and-street-works-act-1991-s6",
+        "raw": "section 6"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "green-belt-london-and-home-counties-act-1938",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Green Belt (London and Home Counties) Act 1938"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "pipe-lines-act-1962",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Pipe-lines Act 1962"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "gas-act-1965",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Gas Act 1965"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "ancient-monuments-and-archaeological-areas-act-1979",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Ancient Monuments and Archaeological Areas Act 1979"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "electricity-act-1989",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Electricity Act 1989"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "harbours-act-1964",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Harbours Act 1964"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "transport-and-works-act-1992",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Transport and Works Act 1992"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "highways-act-1980",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Highways Act 1980"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "new-roads-and-street-works-act-1991",
+        "internal": false,
+        "provision_key": null,
+        "raw": "New Roads and Street Works Act 1991"
+      }
+    ],
     "status": "in_force"
   },
   {
@@ -705,6 +957,132 @@
         "internal": true,
         "provision_key": "planning-act-2008-s35za",
         "raw": "section 35ZA"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "a80cb2d581ed783c",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/42",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Duty to consult",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Planning and Infrastructure Act 2025 s. 5(a) (omitted). Consolidated text may lag the law in force.",
+    "provision_key": "planning-act-2008-s42",
+    "provision_ref": "s.42",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s43",
+        "raw": "section 43"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s44",
+        "raw": "section 44"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "continental-shelf-act-1964",
+        "internal": false,
+        "provision_key": "continental-shelf-act-1964-s1",
+        "raw": "section 1(7)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "continental-shelf-act-1964",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Continental Shelf Act 1964"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "c46885a46924309e",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/47",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Duty to consult local community",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Planning and Infrastructure Act 2025 s. 5(e) (omitted). Consolidated text may lag the law in force.",
+    "provision_key": "planning-act-2008-s47",
+    "provision_ref": "s.47",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s43",
+        "raw": "section 43(1)"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "1e19347488d57b93",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/49",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Duty to take account of responses to consultation and publicity",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Planning and Infrastructure Act 2025 s. 5(f) (omitted). Consolidated text may lag the law in force.",
+    "provision_key": "planning-act-2008-s49",
+    "provision_ref": "s.49",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s42",
+        "raw": "sections 42"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s45",
+        "raw": "section 45"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s47",
+        "raw": "section 47(7)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s48",
+        "raw": "section 48"
       }
     ],
     "status": "in_force"
@@ -788,6 +1166,34 @@
   },
   {
     "citation": {
+      "content_hash": "e02197deaba8170c",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/7",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Consultation and publicity",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "planning-act-2008-s7",
+    "provision_ref": "s.7",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s5",
+        "raw": "sections 5(4)"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "062d3b4a946a6244",
       "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/87",
       "version_date": "2026-07-21"
@@ -810,6 +1216,41 @@
         "internal": true,
         "provision_key": "planning-act-2008-s97",
         "raw": "section 97"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "bb25ac38c699c82e",
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/9",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Parliamentary requirements",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-planning-act-2008",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "planning-act-2008-s9",
+    "provision_ref": "s.9",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s5",
+        "raw": "sections 5(4)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": true,
+        "provision_key": "planning-act-2008-s13",
+        "raw": "section 13"
       }
     ],
     "status": "in_force"

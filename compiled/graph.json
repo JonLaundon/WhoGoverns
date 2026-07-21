@@ -2,12 +2,12 @@
   "counts": {
     "bodies": 685,
     "budget_records": 1433,
-    "duties": 18,
+    "duties": 19,
     "instruments": 13,
     "offices": 164,
     "person_roles": 181,
     "powers": 41,
-    "provisions": 85,
+    "provisions": 92,
     "relationships": 639,
     "sources": 22,
     "staffing_records": 3884,
@@ -8096,7 +8096,7 @@
       }
     }
   ],
-  "generated": "2026-07-21T17:46:27",
+  "generated": "2026-07-21T17:52:28",
   "nodes": [
     {
       "data": {
@@ -15559,6 +15559,33 @@
               "verification_status": "unverified"
             },
             {
+              "beneficiary_or_object": "Consultees and the public; the legitimacy of the NPS framework.",
+              "citation": {
+                "provision": "s.7",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/7"
+              },
+              "confidence": 0.88,
+              "holder_type": "office",
+              "id": "duty-sos-defra-planning2008-s7",
+              "kind": "duty",
+              "label": "Consult and publicise before designating a National Policy Statement",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Paired with s.9 (parliamentary requirements) — the NPS designation process gates on the s.5 power. s.9 not separately extracted (parliamentary procedure).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "planning-act-2008-s7",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "Before designating a statement as a National Policy Statement, the Secretary of State must carry out the consultation and publicity prescribed by Planning Act 2008 s.7 (and satisfy the parliamentary requirements in s.9). The procedural gate on setting the framework that then shapes every DCO decision (s.104) — the NPS consultation is where the policy is contested before it hardens into the test a reservoir must pass.",
+              "trigger": "Before designating (or amending) a National Policy Statement under s.5.",
+              "type": "consultation",
+              "verification_status": "unverified"
+            },
+            {
               "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
               "citation": {
                 "provision": "s.17A(6)",
@@ -16228,7 +16255,7 @@
             }
           ]
         },
-        "op_total": 26,
+        "op_total": 27,
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -41616,13 +41643,13 @@
         "kind": "office",
         "label": "Secretary of State for Environment, Food and Rural Affairs",
         "office_type": "cabinet_minister",
-        "op_total": 26,
+        "op_total": 27,
         "operative": {
           "blocker_kinds": [
             "ministerial"
           ],
           "counts": {
-            "duties": 7,
+            "duties": 8,
             "powers": 14,
             "vetoes": 5
           },
@@ -41679,6 +41706,33 @@
               "summary": "Where no National Policy Statement has effect for the development, the Secretary of State must decide the DCO application having regard to any local impact report, any relevant prescribed matters, and any other important and relevant matters (Planning Act 2008 s.105). The fallback decision framework parallel to s.104 — and the one that applies where a sector's NPS is not yet designated.",
               "trigger": "Deciding a DCO application for which no NPS has effect.",
               "type": "other",
+              "verification_status": "unverified"
+            },
+            {
+              "beneficiary_or_object": "Consultees and the public; the legitimacy of the NPS framework.",
+              "citation": {
+                "provision": "s.7",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/7"
+              },
+              "confidence": 0.88,
+              "holder_type": "office",
+              "id": "duty-sos-defra-planning2008-s7",
+              "kind": "duty",
+              "label": "Consult and publicise before designating a National Policy Statement",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Paired with s.9 (parliamentary requirements) — the NPS designation process gates on the s.5 power. s.9 not separately extracted (parliamentary procedure).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "planning-act-2008-s7",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "Before designating a statement as a National Policy Statement, the Secretary of State must carry out the consultation and publicity prescribed by Planning Act 2008 s.7 (and satisfy the parliamentary requirements in s.9). The procedural gate on setting the framework that then shapes every DCO decision (s.104) — the NPS consultation is where the policy is contested before it hardens into the test a reservoir must pass.",
+              "trigger": "Before designating (or amending) a National Policy Statement under s.5.",
+              "type": "consultation",
               "verification_status": "unverified"
             },
             {

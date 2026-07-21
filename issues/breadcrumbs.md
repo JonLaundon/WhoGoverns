@@ -4,11 +4,11 @@
 
 Decision #27's breadcrumb method widens the net without sweeping the whole statute book, but it only works if the leads are tracked. This file is derived from the records every time it runs, so a stub that has been closed disappears by itself and the count is a real completeness measure rather than a feeling.
 
-**102 open stub(s).**
+**125 open stub(s).**
 
-19 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
+25 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
 
-## dangling reference (99)
+## dangling reference (121)
 
 - **`competition-act-1998-s18`** — references competition-act-1998-s19, which is not held
 - **`competition-act-1998-s2`** — references competition-act-1998-s3, which is not held
@@ -36,16 +36,38 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`planning-act-2008-s105`** — references planning-act-2008-s60, which is not held
 - **`planning-act-2008-s120`** — references gas-act-1965-s4, which is not held
 - **`planning-act-2008-s120`** — references harbours-act-1964-s14, which is not held
-- **`planning-act-2008-s120`** — references planning-act-2008-s33, which is not held
 - **`planning-act-2008-s120`** — references transport-and-works-act-1992-s1, which is not held
-- **`planning-act-2008-s122`** — references planning-act-2008-s131, which is not held
+- **`planning-act-2008-s131`** — references acquisition-of-land-act-1981-s19, which is not held
+- **`planning-act-2008-s131`** — references planning-act-2008-s132, which is not held
+- **`planning-act-2008-s33`** — references ancient-monuments-and-archaeological-areas-act-1979-s2, which is not held
+- **`planning-act-2008-s33`** — references ancient-monuments-and-archaeological-areas-act-1979-s35, which is not held
+- **`planning-act-2008-s33`** — references electricity-act-1989-s36, which is not held
+- **`planning-act-2008-s33`** — references gas-act-1965-s4, which is not held
+- **`planning-act-2008-s33`** — references green-belt-london-and-home-counties-act-1938-s10, which is not held
+- **`planning-act-2008-s33`** — references harbours-act-1964-s14, which is not held
+- **`planning-act-2008-s33`** — references highways-act-1980-s10, which is not held
+- **`planning-act-2008-s33`** — references new-roads-and-street-works-act-1991-s6, which is not held
+- **`planning-act-2008-s33`** — references pipe-lines-act-1962-s1, which is not held
+- **`planning-act-2008-s33`** — references planning-act-2008-s106, which is not held
+- **`planning-act-2008-s33`** — references planning-act-2008-s108, which is not held
+- **`planning-act-2008-s33`** — references planning-act-2008-s14, which is not held
+- **`planning-act-2008-s33`** — references planning-act-2008-s16, which is not held
+- **`planning-act-2008-s33`** — references planning-act-2008-s18, which is not held
+- **`planning-act-2008-s33`** — references planning-act-2008-s34, which is not held
+- **`planning-act-2008-s33`** — references planning-act-2008-s74, which is not held
+- **`planning-act-2008-s33`** — references planning-act-2008-s8, which is not held
+- **`planning-act-2008-s33`** — references transport-and-works-act-1992-s1, which is not held
 - **`planning-act-2008-s35`** — references planning-act-2008-s35za, which is not held
-- **`planning-act-2008-s5`** — references planning-act-2008-s7, which is not held
-- **`planning-act-2008-s5`** — references planning-act-2008-s9, which is not held
+- **`planning-act-2008-s42`** — references continental-shelf-act-1964-s1, which is not held
+- **`planning-act-2008-s42`** — references planning-act-2008-s43, which is not held
+- **`planning-act-2008-s42`** — references planning-act-2008-s44, which is not held
+- **`planning-act-2008-s47`** — references planning-act-2008-s43, which is not held
+- **`planning-act-2008-s49`** — references planning-act-2008-s45, which is not held
+- **`planning-act-2008-s49`** — references planning-act-2008-s48, which is not held
 - **`planning-act-2008-s55`** — references planning-act-2008-s37, which is not held
-- **`planning-act-2008-s55`** — references planning-act-2008-s42, which is not held
 - **`planning-act-2008-s55`** — references planning-act-2008-s50, which is not held
 - **`planning-act-2008-s87`** — references planning-act-2008-s97, which is not held
+- **`planning-act-2008-s9`** — references planning-act-2008-s13, which is not held
 - **`water-act-2014-s22`** — references water-act-2014-s17b, which is not held
 - **`water-act-2014-s22`** — references water-act-2014-s94, which is not held
 - **`water-industry-act-1991-s14`** — references water-industry-act-1991-s14b, which is not held
@@ -110,9 +132,10 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`wildlife-and-countryside-act-1981-s28e`** — references wildlife-and-countryside-act-1981-s28m, which is not held
 - **`wildlife-and-countryside-act-1981-s28h`** — references wildlife-and-countryside-act-1981-s28g, which is not held
 
-## narrative stub (2)
+## narrative stub (3)
 
 - **`duty-ofwat-wia1991-s16`** — Procedural gates NOT separately extracted in this first pass (decision #11), and logged as breadcrumb stubs instead: s.16(3) requires notice with at least 28 days for representations or objections, which Ofwat must consider — a genuine consultation duty in its own right; s.16(4A)-(4B) require notice
+- **`duty-sos-defra-planning2008-s7`** — Paired with s.9 (parliamentary requirements) — the NPS designation process gates on the s.5 power. s.9 not separately extracted (parliamentary procedure).
 - **`power-ofwat-wia1991-s17k`** — BREADCRUMB STUB: the CMA's veto-following-report for LICENCE modifications (the s.16A-equivalent, a later section in Chapter 1A not yet fetched) and the s.17-series modification-following-report duty are not yet extracted. s.17N (the CMA's reporting duty on these references) IS extracted.
 
 ## orphan instrument (1)

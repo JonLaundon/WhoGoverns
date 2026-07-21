@@ -550,6 +550,49 @@
     }
   },
   {
+    "beneficiary_or_object": "Consultees and the public; the legitimacy of the NPS framework.",
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.7",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/7"
+    },
+    "derived_from_record_id": null,
+    "duty_id": "duty-sos-defra-planning2008-s7",
+    "duty_label": "Consult and publicise before designating a National Policy Statement",
+    "duty_type": "consultation",
+    "extraction": {
+      "confidence": 0.88,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-planning-dco-bloom2",
+      "requires_review": true
+    },
+    "failure_consequence": "judicial_review_risk",
+    "holder_type": "office",
+    "in_force_from": null,
+    "in_force_to": null,
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": "Paired with s.9 (parliamentary requirements) — the NPS designation process gates on the s.5 power. s.9 not separately extracted (parliamentary procedure).",
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "owed_to_body_id": null,
+    "owed_to_holder_type": null,
+    "owed_to_office_id": null,
+    "provision_key": "planning-act-2008-s7",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "source_id": "source-act-planning-act-2008",
+    "summary": "Before designating a statement as a National Policy Statement, the Secretary of State must carry out the consultation and publicity prescribed by Planning Act 2008 s.7 (and satisfy the parliamentary requirements in s.9). The procedural gate on setting the framework that then shapes every DCO decision (s.104) — the NPS consultation is where the policy is contested before it hardens into the test a reservoir must pass.",
+    "trigger": "Before designating (or amending) a National Policy Statement under s.5.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {
