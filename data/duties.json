@@ -256,6 +256,51 @@
     }
   },
   {
+    "beneficiary_or_object": "The public interest; the licensee whose conditions are modified.",
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.17O(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17O"
+    },
+    "derived_from_record_id": null,
+    "duty_id": "duty-ofwat-wia1991-s17o",
+    "duty_label": "Modify licence conditions following an adverse CMA report",
+    "duty_type": "other",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-wia1991-licence-veto",
+      "requires_review": true
+    },
+    "failure_consequence": "unknown",
+    "holder_type": "body",
+    "in_force_from": null,
+    "in_force_to": null,
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": "The mirror of duty-ofwat-wia1991-s16 in the licence chapter.",
+    "office_id": null,
+    "owed_to_body_id": null,
+    "owed_to_holder_type": null,
+    "owed_to_office_id": null,
+    "provision_key": "water-industry-act-1991-s17o",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-competition-and-markets-authority"
+    ],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Where a CMA report on a s.17K licence-modification reference concludes that matters operate against the public interest and specifies remedying modifications, Ofwat shall make such modifications of the relevant licence conditions as appear to it requisite (WIA 1991 s.17O). The licence analogue of the s.16 duty; the decision the CMA's s.17P veto blocks.",
+    "trigger": "A CMA report on a s.17K reference meeting all four limbs of s.17O(1)(a)-(d).",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "beneficiary_or_object": "Compliance with appointment/licence conditions and statutory requirements.",
     "body_id": "uk-state-body-the-water-services-regulation-authority",
     "citation": {

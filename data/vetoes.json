@@ -43,6 +43,49 @@
     "veto_type": "direction"
   },
   {
+    "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",
+    "blocks_holder_type": "body",
+    "blocks_office_id": null,
+    "blocks_provision_key": "water-industry-act-1991-s17o",
+    "blocks_record_id": "duty-ofwat-wia1991-s17o",
+    "blocks_record_type": "duty",
+    "body_id": "uk-state-body-competition-and-markets-authority",
+    "citation": {
+      "provision": "s.17P(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17P"
+    },
+    "decision_affected": "Whether Ofwat may modify the conditions of a water supply or sewerage licence following a CMA report.",
+    "derived_from_record_id": "power-cma-wia1991-s17p",
+    "extraction": {
+      "confidence": 0.92,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-wia1991-licence-veto",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_status": "current",
+    "modality": "veto",
+    "notes": "veto_type `direction` (the established term — statute heading 'Power of veto', mechanism 'may direct ... not to make'); blocks the s.17O DUTY, the third case of a veto obstructing a duty rather than a power.",
+    "office_id": null,
+    "overridable": "no",
+    "override_mechanism": null,
+    "provision_key": "water-industry-act-1991-s17p",
+    "record_status": "extracted",
+    "source_id": "source-act-water-industry-act-1991",
+    "strength": "hard_stop",
+    "summary": "The CMA may direct Ofwat not to make proposed licence-condition modifications following an adverse report, and Ofwat must comply (WIA 1991 s.17P(1)). No appeal for Ofwat; s.17P(2) only lets the Secretary of State extend the CMA's own four-week window on the CMA's application.",
+    "verification": {
+      "verification_notes": "Structurally identical to veto-cma-wia1991-s16a-veto (confirmed hard_stop in the strength audit); same 'shall comply', same SoS-extends-window-only escape.",
+      "verification_status": "machine_verified",
+      "verified_by": null,
+      "verified_date": "2026-07-21"
+    },
+    "veto_id": "veto-cma-wia1991-s17p",
+    "veto_label": "CMA veto of Ofwat's proposed licence-condition modifications",
+    "veto_type": "direction"
+  },
+  {
     "blocks_provision_key": null,
     "blocks_record_id": null,
     "blocks_record_type": null,

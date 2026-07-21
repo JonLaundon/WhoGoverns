@@ -6,7 +6,7 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 
 **74 open stub(s).**
 
-9 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
+11 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
 
 ## dangling reference (72)
 
@@ -22,12 +22,12 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`water-industry-act-1991-s14`** — references water-industry-act-1991-s14b, which is not held
 - **`water-industry-act-1991-s153`** — references water-industry-act-1991-s23, which is not held
 - **`water-industry-act-1991-s17k`** — references enterprise-act-2002-s109, which is not held
-- **`water-industry-act-1991-s17k`** — references water-industry-act-1991-s17m, which is not held
-- **`water-industry-act-1991-s17k`** — references water-industry-act-1991-s17p, which is not held
-- **`water-industry-act-1991-s17n`** — references water-industry-act-1991-s17o, which is not held
+- **`water-industry-act-1991-s17m`** — references competition-and-consumers-act-2024-s143, which is not held
+- **`water-industry-act-1991-s17m`** — references enterprise-act-2002-s17k, which is not held
+- **`water-industry-act-1991-s17m`** — references water-industry-act-1991-s109, which is not held
+- **`water-industry-act-1991-s17m`** — references water-industry-act-1991-s65, which is not held
 - **`water-industry-act-1991-s17q`** — references competition-and-consumers-act-2024-s143, which is not held
 - **`water-industry-act-1991-s17q`** — references water-industry-act-1991-s109, which is not held
-- **`water-industry-act-1991-s17q`** — references water-industry-act-1991-s17p, which is not held
 - **`water-industry-act-1991-s17q`** — references water-industry-act-1991-s65, which is not held
 - **`water-industry-act-1991-s17r`** — references enterprise-act-2002-s75, which is not held
 - **`water-industry-act-1991-s17r`** — references water-industry-act-1991-s160, which is not held

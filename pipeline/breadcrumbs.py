@@ -77,6 +77,12 @@ CORRECTLY_UNMINED = {
         "CONSTITUTIVE — defines the threshold requirement; confers no power.",
     "water-industry-act-1991-s17q":
         "CONSTITUTIVE — supplementary provision to s.17P; confers no free-standing power.",
+    "water-industry-act-1991-s17l":
+        "PROCEDURAL — time limits on s.17K references; confers no operative power.",
+    "water-industry-act-1991-s17m":
+        "CROSS-REFERRING — applies the Enterprise Act 2002 investigation powers (ss.109-116) to "
+        "s.17K references; the operative powers are the Enterprise Act's, a cross-domain "
+        "breadcrumb captured in Provision.references, not re-minted here.",
 }
 
 

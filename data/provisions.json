@@ -812,6 +812,111 @@
   },
   {
     "citation": {
+      "content_hash": "c5a8de1ebb2443f3",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17L",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "References under section 17K: time limits",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "water-industry-act-1991-s17l",
+    "provision_ref": "s.17L",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17k",
+        "raw": "section 17K"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17o",
+        "raw": "section 17O"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "2e0d38c80529b3b4",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17M",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "References under section 17K: powers of investigation",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: The Competition (Amendment etc.) (EU Exit) (No. 2) Regulations 2019 (expired—not approved) reg. 21 (words substituted by S.I. 2019/93, Sch. 1 para. 4(5) (as substituted)). Consolidated text may lag the law in force.",
+    "provision_key": "water-industry-act-1991-s17m",
+    "provision_ref": "s.17M",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": false,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": false,
+        "provision_key": "enterprise-act-2002-s17k",
+        "raw": "section 17K"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17k",
+        "raw": "section 17K"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s109",
+        "raw": "section 109"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s65",
+        "raw": "section 65(3)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "competition-and-consumers-act-2024",
+        "internal": false,
+        "provision_key": "competition-and-consumers-act-2024-s143",
+        "raw": "section 143"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "enterprise-act-2002",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Enterprise Act 2002"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "competition-and-consumers-act-2024",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Competition and Consumers Act 2024"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "d13bf7a2b29eace8",
       "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17N",
       "version_date": "2026-07-21"
@@ -841,6 +946,76 @@
         "internal": true,
         "provision_key": "water-industry-act-1991-s17o",
         "raw": "section 17O"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "18c4ef7f9397c9c0",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17O",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Modification of licences following report",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Water Act 2014 Sch. 5 para. 21 (words repealed). Consolidated text may lag the law in force.",
+    "provision_key": "water-industry-act-1991-s17o",
+    "provision_ref": "s.17O",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17k",
+        "raw": "section 17K"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17p",
+        "raw": "section 17P(1)"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "f53fe117133fa9a4",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17P",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Power of veto following report",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Water Act 2014 Sch. 5 para. 22 (words repealed). Consolidated text may lag the law in force.",
+    "provision_key": "water-industry-act-1991-s17p",
+    "provision_ref": "s.17P",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17o",
+        "raw": "section 17O(6)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s17k",
+        "raw": "section 17K(1)"
       }
     ],
     "status": "in_force"
