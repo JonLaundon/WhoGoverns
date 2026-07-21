@@ -1,7 +1,7 @@
 {
   "vocab": "veto_type",
-  "version": "0.3",
-  "note": "A genuine statutory BLOCK (Annex A6.5). STRICT (decision 2026-07-13): only a real block counts. 'statutory_consultee' REMOVED - 'must be consulted' is a consultation duty (duty_type=consultation), not a veto. Soft influence is not recorded at all. A veto is a DERIVED projection of the underlying power (see veto.schema derived_from_record_id). Active from Spiral 2. v0.3 (2026-07-20) adds definitions and the gateway test, after an audit found 'other' and mis-typing masking records that fail the strict test entirely.",
+  "version": "0.4",
+  "note": "A genuine statutory BLOCK (Annex A6.5). STRICT (decision 2026-07-13): only a real block counts. 'statutory_consultee' REMOVED - 'must be consulted' is a consultation duty (duty_type=consultation), not a veto. Soft influence is not recorded at all. A veto is a DERIVED projection of the underlying power (see veto.schema derived_from_record_id). Active from Spiral 2. v0.3 (2026-07-20) added definitions and the gateway test. v0.4 (2026-07-21) adds `direction` - NOT an invented term: it is the established term of art (see its provenance), so using it follows best practice rather than coining.",
   "gateway_test": "Before choosing a type, confirm this is a veto AT ALL. Ask: can the other actor lawfully proceed if this holder says no? If yes, it is not a veto - it is a Duty (where a procedure is owed) or nothing (where the influence is merely political or practical). Worked counter-example: Natural England's 'assent' under WCA 1981 s.28H is NOT a veto - under s.28H(4)-(5) a public body may proceed after 28 days' notice regardless, subject only to minimising damage. That record should be a Duty, not a Veto.",
   "typing_rule": "Type from the STATUTORY FORMULA, not from the effect. 'with the consent of X' is consent_required; 'acting jointly with X' or 'with the concurrence of X' is concurrence_required; 'subject to approval by X' is approval_required. Where the formula is unusual, prefer the closest term and explain in `notes`; 'other' must carry a note saying why no term fits, and a recurring 'other' is a signal to propose a new term, not to keep using it.",
   "terms": [
@@ -19,6 +19,13 @@
       "term": "approval_required",
       "definition": "A decision made by one actor takes no legal effect until approved by the holder - approval attaches to a completed decision, where consent conditions the power to make it.",
       "test": "Is the thing approved something already decided or drafted (a scheme, a plan, a set of rules), rather than the exercise of the power itself?"
+    },
+    {
+      "term": "direction",
+      "definition": "The holder may issue a binding direction that the other actor NOT proceed with a proposed act, and that actor must comply. The block operates through a prohibitory direction, not a withheld consent.",
+      "test": "Statute reads 'may direct A not to do X' (or 'not to make the modifications'), with 'A shall comply with any such direction'. Distinguish from consent_required: here the holder must ACT to block (silence lets the other proceed), and from objection_power: a direction is conclusive, not merely a trigger for escalation.",
+      "provenance": "Established term of art, NOT a project coinage. The mechanism is a statutory 'power of direction' (a power for one body to give another legally-binding instructions - Direction (delegated legislation)); legislation.gov.uk's own heading for WIA 1991 s.16A is 'CMA's power of veto following report', and the operative words are 'may direct the Authority not to make the modifications'. The regulatory-veto-by-direction family originates in the Utilities Act 2000 (amending the Electricity Act 1989, Gas Act 1986 etc.). 'Disallowance' was considered and REJECTED as the wrong register - it is a constitutional/Commonwealth term for the Crown nullifying legislation (Canada), not a regulator stopping another body's act. Mirrors the existing power_type `direction`, so a direction power projects to a direction veto.",
+      "instances": "WIA 1991 s.16A (CMA direction not to modify licence conditions); WIA 1991 s.17J(5) (SoS direction not to modify standard conditions)."
     },
     {
       "term": "objection_power",

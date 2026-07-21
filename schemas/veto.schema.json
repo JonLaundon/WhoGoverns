@@ -52,6 +52,7 @@
         "consent_required",
         "concurrence_required",
         "approval_required",
+        "direction",
         "objection_power",
         "call_in_power",
         "licence_refusal",

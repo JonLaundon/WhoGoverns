@@ -23,7 +23,7 @@
     "holder_type": "body",
     "legal_status": "current",
     "modality": "veto",
-    "notes": "Target (breadcrumb trawl, 2026-07-20): the CMA's s.16A direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power. Currency: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route; newer licence regimes differ (the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL after the fact), so this must not be read as the CMA generally gating Ofwat.",
+    "notes": "Target (breadcrumb trawl, 2026-07-20): the CMA's s.16A direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power. Currency: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route; newer licence regimes differ (the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL after the fact), so this must not be read as the CMA generally gating Ofwat. veto_type \"other\" -> \"direction\" (2026-07-21, decision #35): the established term of art for a binding \"direct...not to\" block (statute heading \"power of veto\"; mechanism \"may direct...not to make\"; Utilities Act 2000 lineage), not the coined \"direction_not_to_act\".",
     "office_id": null,
     "overridable": "no",
     "override_mechanism": null,
@@ -40,7 +40,7 @@
     },
     "veto_id": "veto-cma-wia1991-s16a-veto",
     "veto_label": "CMA veto of Ofwat's proposed licence modifications",
-    "veto_type": "other"
+    "veto_type": "direction"
   },
   {
     "blocks_provision_key": null,
@@ -272,7 +272,7 @@
     "holder_type": "office",
     "legal_status": "current",
     "modality": "veto",
-    "notes": "veto_type 'other' with a note per the vocab rule: a bare power to direct another body NOT to act matches no existing term cleanly — it is not a consent (silence lets Ofwat proceed) and not an objection power. Recurs with WIA s.16A; two instances now, so a `direction_not_to_act` term is worth proposing.",
+    "notes": "veto_type 'other' with a note per the vocab rule: a bare power to direct another body NOT to act matches no existing term cleanly — it is not a consent (silence lets Ofwat proceed) and not an objection power. Recurs with WIA s.16A; two instances now, so a `direction_not_to_act` term is worth proposing. veto_type \"other\" -> \"direction\" (2026-07-21, decision #35): the established term of art for a binding \"direct...not to\" block (statute heading \"power of veto\"; mechanism \"may direct...not to make\"; Utilities Act 2000 lineage), not the coined \"direction_not_to_act\".",
     "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
     "overridable": "no",
     "override_mechanism": null,
@@ -289,7 +289,7 @@
     },
     "veto_id": "veto-sos-defra-wia1991-s17j-5",
     "veto_label": "Direction not to modify standard licence conditions",
-    "veto_type": "other"
+    "veto_type": "direction"
   },
   {
     "blocks_body_id": "uk-state-body-the-water-services-regulation-authority",

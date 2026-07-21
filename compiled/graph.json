@@ -7964,7 +7964,7 @@
       }
     }
   ],
-  "generated": "2026-07-21T10:48:36",
+  "generated": "2026-07-21T10:52:17",
   "nodes": [
     {
       "data": {
@@ -12346,7 +12346,7 @@
               "kind": "veto",
               "label": "CMA veto of Ofwat's proposed licence modifications",
               "legal_status": "current",
-              "notes": "Target (breadcrumb trawl, 2026-07-20): the CMA's s.16A direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power. Currency: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route; newer licence regimes differ (the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL after the fact), so this must not be read as the CMA generally gating Ofwat.",
+              "notes": "Target (breadcrumb trawl, 2026-07-20): the CMA's s.16A direction blocks the s.16 DUTY to modify following an adverse report — the first case proving a veto can obstruct a duty, not only a power. Currency: s.16A is in force and the hard_stop grading holds, but it governs the ss.12-16 APPOINTMENT-condition modification route; newer licence regimes differ (the Environment Act 2021 moved non-price-control licence modifications to a CMA APPEAL after the fact), so this must not be read as the CMA generally gating Ofwat. veto_type \"other\" -> \"direction\" (2026-07-21, decision #35): the established term of art for a binding \"direct...not to\" block (statute heading \"power of veto\"; mechanism \"may direct...not to make\"; Utilities Act 2000 lineage), not the coined \"direction_not_to_act\".",
               "office_id": null,
               "overridable": "no",
               "override_mechanism": null,
@@ -12356,7 +12356,7 @@
               "source_id": "source-act-water-industry-act-1991",
               "strength": "hard_stop",
               "summary": "Following its report on a modification reference, the CMA may (within four weeks) direct Ofwat not to make some or all of the proposed licence/appointment modifications, and Ofwat must comply (WIA 1991 s.16A(1)). The direction may only cover modifications that are not requisite to remedy the adverse effects identified in the report (s.16A(3)). The statute's own term is a 'power of veto'.",
-              "type": "other",
+              "type": "direction",
               "verification_status": "machine_verified"
             }
           ]
@@ -15269,7 +15269,7 @@
               "kind": "veto",
               "label": "Direction not to modify standard licence conditions",
               "legal_status": "current",
-              "notes": "veto_type 'other' with a note per the vocab rule: a bare power to direct another body NOT to act matches no existing term cleanly — it is not a consent (silence lets Ofwat proceed) and not an objection power. Recurs with WIA s.16A; two instances now, so a `direction_not_to_act` term is worth proposing.",
+              "notes": "veto_type 'other' with a note per the vocab rule: a bare power to direct another body NOT to act matches no existing term cleanly — it is not a consent (silence lets Ofwat proceed) and not an objection power. Recurs with WIA s.16A; two instances now, so a `direction_not_to_act` term is worth proposing. veto_type \"other\" -> \"direction\" (2026-07-21, decision #35): the established term of art for a binding \"direct...not to\" block (statute heading \"power of veto\"; mechanism \"may direct...not to make\"; Utilities Act 2000 lineage), not the coined \"direction_not_to_act\".",
               "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
               "overridable": "no",
               "override_mechanism": null,
@@ -15279,7 +15279,7 @@
               "source_id": "source-act-water-industry-act-1991",
               "strength": "hard_stop",
               "summary": "Within the notice period, the Secretary of State may direct Ofwat not to make any modification of standard licence conditions, and 'the Authority shall comply with the direction' (WIA 1991 s.17J(5)). A direct ministerial stop on the regulator's sector-wide rule-change power.",
-              "type": "other",
+              "type": "direction",
               "verification_status": "unverified"
             },
             {
@@ -40217,7 +40217,7 @@
               "kind": "veto",
               "label": "Direction not to modify standard licence conditions",
               "legal_status": "current",
-              "notes": "veto_type 'other' with a note per the vocab rule: a bare power to direct another body NOT to act matches no existing term cleanly — it is not a consent (silence lets Ofwat proceed) and not an objection power. Recurs with WIA s.16A; two instances now, so a `direction_not_to_act` term is worth proposing.",
+              "notes": "veto_type 'other' with a note per the vocab rule: a bare power to direct another body NOT to act matches no existing term cleanly — it is not a consent (silence lets Ofwat proceed) and not an objection power. Recurs with WIA s.16A; two instances now, so a `direction_not_to_act` term is worth proposing. veto_type \"other\" -> \"direction\" (2026-07-21, decision #35): the established term of art for a binding \"direct...not to\" block (statute heading \"power of veto\"; mechanism \"may direct...not to make\"; Utilities Act 2000 lineage), not the coined \"direction_not_to_act\".",
               "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
               "overridable": "no",
               "override_mechanism": null,
@@ -40227,7 +40227,7 @@
               "source_id": "source-act-water-industry-act-1991",
               "strength": "hard_stop",
               "summary": "Within the notice period, the Secretary of State may direct Ofwat not to make any modification of standard licence conditions, and 'the Authority shall comply with the direction' (WIA 1991 s.17J(5)). A direct ministerial stop on the regulator's sector-wide rule-change power.",
-              "type": "other",
+              "type": "direction",
               "verification_status": "unverified"
             },
             {
