@@ -98,6 +98,11 @@ CORRECTLY_UNMINED = {
         "REGISTERED-NOT-EXTRACTED — a s.124A trigger (FCA/inspector reports); future domain.",
     "criminal-justice-act-1987-s2":
         "REGISTERED-NOT-EXTRACTED — a s.124A trigger (SFO fraud investigations); future domain.",
+    "planning-act-2008-s120":
+        "CONSTITUTIVE — defines what a DCO may include (requirements); the operative grant power "
+        "is s.114.",
+    "planning-act-2008-s123":
+        "SUPPLEMENTARY — conditions for the s.122 compulsory-acquisition power (already held).",
 }
 
 

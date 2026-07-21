@@ -2,16 +2,16 @@
   "counts": {
     "bodies": 685,
     "budget_records": 1433,
-    "duties": 16,
+    "duties": 17,
     "instruments": 12,
     "offices": 164,
     "person_roles": 181,
-    "powers": 34,
+    "powers": 39,
     "provisions": 81,
     "relationships": 639,
     "sources": 21,
     "staffing_records": 3884,
-    "vetoes": 11
+    "vetoes": 12
   },
   "edges": [
     {
@@ -7999,6 +7999,20 @@
     },
     {
       "data": {
+        "blocker_kind": "regulatory",
+        "bow": 34,
+        "decision_affected": "Whether a Development Consent Order may remove/subsume the Environment Agency's (or another body's) separate consent requirement.",
+        "id": "canveto-veto-ea-planning2008-s150",
+        "kind": "can_veto",
+        "source": "uk-state-body-environment-agency",
+        "source_id": "source-act-planning-act-2008",
+        "strength": "hard_stop",
+        "target": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+        "veto_id": "veto-ea-planning2008-s150"
+      }
+    },
+    {
+      "data": {
         "blocker_kind": "fiscal",
         "bow": 34,
         "decision_affected": "Whether the Secretary of State may fund, indemnify or guarantee a water company in special administration — the fiscal viability of the SAR.",
@@ -8082,7 +8096,7 @@
       }
     }
   ],
-  "generated": "2026-07-21T16:45:43",
+  "generated": "2026-07-21T17:28:59",
   "nodes": [
     {
       "data": {
@@ -15491,6 +15505,33 @@
         "office_operative": {
           "duties": [
             {
+              "beneficiary_or_object": "The public interest, as framed by the NPS.",
+              "citation": {
+                "provision": "s.104(2)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/104"
+              },
+              "confidence": 0.88,
+              "holder_type": "office",
+              "id": "duty-sos-defra-planning2008-s104",
+              "kind": "duty",
+              "label": "Decide a DCO having regard to the National Policy Statement",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Breadcrumb: the National Policy Statement is the framework instrument the DCO decision turns on; not yet held (a designated NPS, not primary legislation).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "planning-act-2008-s104",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "Where a National Policy Statement has effect for the development, the Secretary of State must have regard to it (and to any other important and relevant matters) in deciding the DCO application (Planning Act 2008 s.104). The NPS frames — and largely predetermines — the decision, which is why the NPS itself is the real policy battleground.",
+              "trigger": "When deciding a DCO application for which an NPS has effect.",
+              "type": "other",
+              "verification_status": "unverified"
+            },
+            {
               "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
               "citation": {
                 "provision": "s.17A(6)",
@@ -15628,6 +15669,111 @@
             }
           ],
           "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.114(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/114"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Decided having regard to the NPS (s.104) and the examining authority's report."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-planning2008-s114",
+              "kind": "power",
+              "label": "Grant or refuse development consent",
+              "legal_effect": "must",
+              "legal_status": "current",
+              "notes": "Holder: the Planning Act says 'the Secretary of State'; the decision-maker is the SoS responsible for the relevant National Policy Statement — for a water reservoir the Defra SoS (holder-resolution per sector). PINS examines on the SoS's behalf (#28 delegated pattern). The applicant (e.g. Thames Water) is a PRIVATE party — the state->private dimension surfaces here and at s.122 (#29).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "planning-act-2008-s114",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "Once the Secretary of State has decided a DCO application, the Secretary of State must either make an order granting development consent or refuse it (Planning Act 2008 s.114). THE decision — the reservoir is built or not on this. A refusal blocks the private applicant (the undertaker); a grant authorises development that could otherwise not lawfully proceed.",
+              "type": "approval",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.122(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/122"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Only if the s.122(2)-(3) conditions (land required; compelling public interest) are met."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-planning2008-s122",
+              "kind": "power",
+              "label": "Authorise compulsory acquisition of land in a DCO",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "power_type 'other': compulsory acquisition is a sui generis land-taking power with no closer vocab term (candidate `compulsory_acquisition` if it recurs). The blocked party is a PRIVATE landowner — the #29 state->private role-class, not a state-to-state edge; carried on the card, surfaced in the reservoir chain view.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "planning-act-2008-s122",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "A DCO may authorise the compulsory acquisition of land only if the Secretary of State is satisfied the land is required for (or incidental to) the development and there is a compelling case in the public interest (Planning Act 2008 ss.122-123). The land-taking power — for a reservoir, often the hardest blocker, and the clearest state->private relationship (it overrides private landowners).",
+              "type": "other",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.35(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/35"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Limited to the fields in s.35(2) and subject to s.35ZA."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-planning2008-s35",
+              "kind": "power",
+              "label": "Direct a project into the development-consent regime",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "Holder: the Planning Act says 'the Secretary of State'; the decision-maker is the SoS responsible for the relevant National Policy Statement — for a water reservoir the Defra SoS (holder-resolution per sector). PINS examines on the SoS's behalf (#28 delegated pattern).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "planning-act-2008-s35",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "The Secretary of State may direct that development in the field of energy, transport, WATER, waste water or waste be treated as development for which development consent is required (Planning Act 2008 s.35) — bringing a project into the NSIP/DCO regime. The 'in-scope' gate; this is how SESRO was directed in.",
+              "type": "designation",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.55(2)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/55"
+              },
+              "confidence": 0.88,
+              "constraints": [
+                "Acceptance only if the s.55(3) standards are met."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-planning2008-s55",
+              "kind": "power",
+              "label": "Accept or reject a development-consent application",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "Holder: the Planning Act says 'the Secretary of State'; the decision-maker is the SoS responsible for the relevant National Policy Statement — for a water reservoir the Defra SoS (holder-resolution per sector). PINS examines on the SoS's behalf (#28 delegated pattern).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "outstanding_effects": true,
+              "provision_key": "planning-act-2008-s55",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "The Secretary of State must decide within 28 days whether to accept a DCO application, and may accept it only if satisfied it is a proper application meeting the statutory standards (Planning Act 2008 s.55). The acceptance gate before examination.",
+              "type": "approval",
+              "verification_status": "unverified"
+            },
             {
               "basis": "statutory",
               "citation": {
@@ -16028,7 +16174,7 @@
             }
           ]
         },
-        "op_total": 19,
+        "op_total": 24,
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -18546,15 +18692,15 @@
         "kind": "body",
         "label": "Environment Agency",
         "needs_review": false,
-        "op_total": 4,
+        "op_total": 6,
         "operative": {
           "blocker_kinds": [
             "regulatory"
           ],
           "counts": {
             "duties": 0,
-            "powers": 3,
-            "vetoes": 1
+            "powers": 4,
+            "vetoes": 2
           },
           "duties": [],
           "functions_derived": {
@@ -18565,6 +18711,32 @@
             ]
           },
           "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.150(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/150"
+              },
+              "confidence": 0.87,
+              "constraints": [
+                "Applies to any 'prescribed consent'; the relevant body varies by what the DCO seeks to subsume."
+              ],
+              "holder_type": "body",
+              "id": "power-ea-planning2008-s150-consent",
+              "kind": "power",
+              "label": "Consent to a DCO removing the body's own consent requirement",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "CLASS power held by ANY consenting body whose consent a DCO would remove; recorded on the Environment Agency as the water-relevant instance, with Natural England as related. The reservoir chain instantiates it for the specific consents subsumed.",
+              "office_id": null,
+              "provision_key": "planning-act-2008-s150",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "A DCO may remove a requirement for a prescribed consent or authorisation only if the body that would otherwise grant it consents to that removal (Planning Act 2008 s.150). So a consenting body — for a reservoir, the Environment Agency (abstraction) or Natural England (SSSI/Habitats) — controls whether its consent regime is folded into the DCO. The statutory link between the planning decision and the environment/water tranches.",
+              "type": "consent",
+              "verification_status": "unverified"
+            },
             {
               "basis": "statutory",
               "citation": {
@@ -18648,6 +18820,39 @@
             }
           ],
           "vetoes": [
+            {
+              "blocker_kind": "regulatory",
+              "blocks_body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+              "blocks_office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "blocks_party_outside_state": false,
+              "blocks_record_id": "power-sos-defra-planning2008-s114",
+              "blocks_record_type": "power",
+              "citation": {
+                "provision": "s.150(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/150"
+              },
+              "confidence": 0.86,
+              "decision_affected": "Whether a Development Consent Order may remove/subsume the Environment Agency's (or another body's) separate consent requirement.",
+              "derived_from_record_id": "power-ea-planning2008-s150-consent",
+              "holder_type": "body",
+              "id": "veto-ea-planning2008-s150",
+              "kind": "veto",
+              "label": "Consenting body's veto over a DCO subsuming its consent",
+              "legal_status": "current",
+              "notes": "Class veto (any consenting body); recorded on the EA as the water instance. This is the FUSION edge: it draws a can_veto link from the Environment Agency to the SoS's DCO decision, connecting the planning and environment tranches in-statute.",
+              "office_id": null,
+              "overridable": "no",
+              "override_mechanism": null,
+              "projection_shape": "free_standing_block",
+              "provision_key": "planning-act-2008-s150",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "strength": "hard_stop",
+              "summary": "A DCO may remove a body's consent requirement ONLY IF that body consents (Planning Act 2008 s.150) — so the Environment Agency (and, for SSSI/Habitats, Natural England) can refuse to let its consent regime be folded into the DCO, forcing the developer to obtain that consent separately. The environment tranche's statutory hold over the planning decision.",
+              "type": "consent_required",
+              "verification_status": "unverified"
+            },
             {
               "blocker_kind": "regulatory",
               "blocks_body_id": null,
@@ -41311,17 +41516,44 @@
         "kind": "office",
         "label": "Secretary of State for Environment, Food and Rural Affairs",
         "office_type": "cabinet_minister",
-        "op_total": 19,
+        "op_total": 24,
         "operative": {
           "blocker_kinds": [
             "ministerial"
           ],
           "counts": {
-            "duties": 5,
-            "powers": 9,
+            "duties": 6,
+            "powers": 13,
             "vetoes": 5
           },
           "duties": [
+            {
+              "beneficiary_or_object": "The public interest, as framed by the NPS.",
+              "citation": {
+                "provision": "s.104(2)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/104"
+              },
+              "confidence": 0.88,
+              "holder_type": "office",
+              "id": "duty-sos-defra-planning2008-s104",
+              "kind": "duty",
+              "label": "Decide a DCO having regard to the National Policy Statement",
+              "legal_status": "current",
+              "mandatory": true,
+              "notes": "Breadcrumb: the National Policy Statement is the framework instrument the DCO decision turns on; not yet held (a designated NPS, not primary legislation).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "owed_to_body_id": null,
+              "owed_to_office_id": null,
+              "owed_to_party_outside_state": true,
+              "provision_key": "planning-act-2008-s104",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "Where a National Policy Statement has effect for the development, the Secretary of State must have regard to it (and to any other important and relevant matters) in deciding the DCO application (Planning Act 2008 s.104). The NPS frames — and largely predetermines — the decision, which is why the NPS itself is the real policy battleground.",
+              "trigger": "When deciding a DCO application for which an NPS has effect.",
+              "type": "other",
+              "verification_status": "unverified"
+            },
             {
               "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
               "citation": {
@@ -41469,6 +41701,111 @@
             ]
           },
           "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.114(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/114"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Decided having regard to the NPS (s.104) and the examining authority's report."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-planning2008-s114",
+              "kind": "power",
+              "label": "Grant or refuse development consent",
+              "legal_effect": "must",
+              "legal_status": "current",
+              "notes": "Holder: the Planning Act says 'the Secretary of State'; the decision-maker is the SoS responsible for the relevant National Policy Statement — for a water reservoir the Defra SoS (holder-resolution per sector). PINS examines on the SoS's behalf (#28 delegated pattern). The applicant (e.g. Thames Water) is a PRIVATE party — the state->private dimension surfaces here and at s.122 (#29).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "planning-act-2008-s114",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "Once the Secretary of State has decided a DCO application, the Secretary of State must either make an order granting development consent or refuse it (Planning Act 2008 s.114). THE decision — the reservoir is built or not on this. A refusal blocks the private applicant (the undertaker); a grant authorises development that could otherwise not lawfully proceed.",
+              "type": "approval",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.122(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/122"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Only if the s.122(2)-(3) conditions (land required; compelling public interest) are met."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-planning2008-s122",
+              "kind": "power",
+              "label": "Authorise compulsory acquisition of land in a DCO",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "power_type 'other': compulsory acquisition is a sui generis land-taking power with no closer vocab term (candidate `compulsory_acquisition` if it recurs). The blocked party is a PRIVATE landowner — the #29 state->private role-class, not a state-to-state edge; carried on the card, surfaced in the reservoir chain view.",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "planning-act-2008-s122",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "A DCO may authorise the compulsory acquisition of land only if the Secretary of State is satisfied the land is required for (or incidental to) the development and there is a compelling case in the public interest (Planning Act 2008 ss.122-123). The land-taking power — for a reservoir, often the hardest blocker, and the clearest state->private relationship (it overrides private landowners).",
+              "type": "other",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.35(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/35"
+              },
+              "confidence": 0.9,
+              "constraints": [
+                "Limited to the fields in s.35(2) and subject to s.35ZA."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-planning2008-s35",
+              "kind": "power",
+              "label": "Direct a project into the development-consent regime",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "Holder: the Planning Act says 'the Secretary of State'; the decision-maker is the SoS responsible for the relevant National Policy Statement — for a water reservoir the Defra SoS (holder-resolution per sector). PINS examines on the SoS's behalf (#28 delegated pattern).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "provision_key": "planning-act-2008-s35",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "The Secretary of State may direct that development in the field of energy, transport, WATER, waste water or waste be treated as development for which development consent is required (Planning Act 2008 s.35) — bringing a project into the NSIP/DCO regime. The 'in-scope' gate; this is how SESRO was directed in.",
+              "type": "designation",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.55(2)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/55"
+              },
+              "confidence": 0.88,
+              "constraints": [
+                "Acceptance only if the s.55(3) standards are met."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-defra-planning2008-s55",
+              "kind": "power",
+              "label": "Accept or reject a development-consent application",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "Holder: the Planning Act says 'the Secretary of State'; the decision-maker is the SoS responsible for the relevant National Policy Statement — for a water reservoir the Defra SoS (holder-resolution per sector). PINS examines on the SoS's behalf (#28 delegated pattern).",
+              "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+              "outstanding_effects": true,
+              "provision_key": "planning-act-2008-s55",
+              "since": 2008,
+              "source_id": "source-act-planning-act-2008",
+              "summary": "The Secretary of State must decide within 28 days whether to accept a DCO application, and may accept it only if satisfied it is a proper application meeting the statutory standards (Planning Act 2008 s.55). The acceptance gate before examination.",
+              "type": "approval",
+              "verification_status": "unverified"
+            },
             {
               "basis": "statutory",
               "citation": {

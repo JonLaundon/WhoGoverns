@@ -86,6 +86,49 @@
     "veto_type": "direction"
   },
   {
+    "blocks_body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "blocks_holder_type": "office",
+    "blocks_office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "blocks_provision_key": "planning-act-2008-s150",
+    "blocks_record_id": "power-sos-defra-planning2008-s114",
+    "blocks_record_type": "power",
+    "body_id": "uk-state-body-environment-agency",
+    "citation": {
+      "provision": "s.150(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/150"
+    },
+    "decision_affected": "Whether a Development Consent Order may remove/subsume the Environment Agency's (or another body's) separate consent requirement.",
+    "derived_from_record_id": "power-ea-planning2008-s150-consent",
+    "extraction": {
+      "confidence": 0.86,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-planning-dco",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_status": "current",
+    "modality": "veto",
+    "notes": "Class veto (any consenting body); recorded on the EA as the water instance. This is the FUSION edge: it draws a can_veto link from the Environment Agency to the SoS's DCO decision, connecting the planning and environment tranches in-statute.",
+    "office_id": null,
+    "overridable": "no",
+    "override_mechanism": null,
+    "provision_key": "planning-act-2008-s150",
+    "record_status": "extracted",
+    "source_id": "source-act-planning-act-2008",
+    "strength": "hard_stop",
+    "summary": "A DCO may remove a body's consent requirement ONLY IF that body consents (Planning Act 2008 s.150) — so the Environment Agency (and, for SSSI/Habitats, Natural England) can refuse to let its consent regime be folded into the DCO, forcing the developer to obtain that consent separately. The environment tranche's statutory hold over the planning decision.",
+    "verification": {
+      "verification_notes": "First-pass; the s.150 consent is unqualified in the text (no override), hence hard_stop — but confirm no deemed-consent clock in the prescribed-consent regulations before publication.",
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    },
+    "veto_id": "veto-ea-planning2008-s150",
+    "veto_label": "Consenting body's veto over a DCO subsuming its consent",
+    "veto_type": "consent_required"
+  },
+  {
     "blocks_provision_key": null,
     "blocks_record_id": null,
     "blocks_record_type": null,

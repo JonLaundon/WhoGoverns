@@ -4,11 +4,11 @@
 
 Decision #27's breadcrumb method widens the net without sweeping the whole statute book, but it only works if the leads are tracked. This file is derived from the records every time it runs, so a stub that has been closed disappears by itself and the count is a real completeness measure rather than a feeling.
 
-**86 open stub(s).**
+**97 open stub(s).**
 
-16 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
+18 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
 
-## dangling reference (84)
+## dangling reference (95)
 
 - **`competition-act-1998-s18`** — references competition-act-1998-s19, which is not held
 - **`competition-act-1998-s2`** — references competition-act-1998-s3, which is not held
@@ -31,6 +31,17 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`insolvency-act-1986-s124a`** — references criminal-law-consolidation-scotland-act-1995-s28, which is not held
 - **`insolvency-act-1986-s124a`** — references insolvency-act-1986-s165, which is not held
 - **`insolvency-act-1986-s124a`** — references insolvency-act-1986-s262, which is not held
+- **`planning-act-2008-s104`** — references marine-and-coastal-access-act-2009-s59, which is not held
+- **`planning-act-2008-s104`** — references planning-act-2008-s60, which is not held
+- **`planning-act-2008-s120`** — references gas-act-1965-s4, which is not held
+- **`planning-act-2008-s120`** — references harbours-act-1964-s14, which is not held
+- **`planning-act-2008-s120`** — references planning-act-2008-s33, which is not held
+- **`planning-act-2008-s120`** — references transport-and-works-act-1992-s1, which is not held
+- **`planning-act-2008-s122`** — references planning-act-2008-s131, which is not held
+- **`planning-act-2008-s35`** — references planning-act-2008-s35za, which is not held
+- **`planning-act-2008-s55`** — references planning-act-2008-s37, which is not held
+- **`planning-act-2008-s55`** — references planning-act-2008-s42, which is not held
+- **`planning-act-2008-s55`** — references planning-act-2008-s50, which is not held
 - **`water-act-2014-s22`** — references water-act-2014-s17b, which is not held
 - **`water-act-2014-s22`** — references water-act-2014-s94, which is not held
 - **`water-industry-act-1991-s14`** — references water-industry-act-1991-s14b, which is not held
