@@ -141,6 +141,34 @@
   },
   {
     "citation": {
+      "content_hash": "018f1a79b732d1a6",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/12J",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Modification by the Secretary of State: special administration orders",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "water-industry-act-1991-s12j",
+    "provision_ref": "s.12J",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "water-industry-act-1991",
+        "internal": true,
+        "provision_key": "water-industry-act-1991-s153",
+        "raw": "section 153"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "1bc0723daa0dab55",
       "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/13",
       "version_date": "2026-07-21"
@@ -574,6 +602,46 @@
     "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Water Act 2014 Sch. 5 para. 15(2) (repealed); Water Act 2014 Sch. 5 para. 15(3) (words substituted); Water Act 2014 Sch. 5 para. 15(4)(a) (words substituted); Water Act 2014 Sch. 5 para. 15(4)(b) (words substituted); Water Act 2014 Sch. 5 para. 15(5) (words substituted); Water Act 2014 Sch. 5 para. 15(6) (words repealed); Water Act 2014 Sch. 5 para. 15(7) (words repealed). Consolidated text may lag the law in force.",
     "provision_key": "water-industry-act-1991-s17h",
     "provision_ref": "s.17H",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "15b376abf06d1e5b",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17H",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Standard conditions of water supply licences — Secretary of State's power to determine",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision (A2.5): the section carries more than one independent canonical record. Hash/version inherited from the section.",
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Water Act 2014 Sch. 5 para. 15(2) (repealed); Water Act 2014 Sch. 5 para. 15(3) (words substituted); Water Act 2014 Sch. 5 para. 15(4)(a) (words substituted); Water Act 2014 Sch. 5 para. 15(4)(b) (words substituted); Water Act 2014 Sch. 5 para. 15(5) (words substituted); Water Act 2014 Sch. 5 para. 15(6) (words repealed); Water Act 2014 Sch. 5 para. 15(7) (words repealed). Consolidated text may lag the law in force.",
+    "provision_key": "water-industry-act-1991-s17h-1",
+    "provision_ref": "s.17H(1)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "15b376abf06d1e5b",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17H",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Standard conditions of water supply licences — consultation with the Welsh Ministers",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision (A2.5): the section carries more than one independent canonical record. Hash/version inherited from the section.",
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Water Act 2014 Sch. 5 para. 15(2) (repealed); Water Act 2014 Sch. 5 para. 15(3) (words substituted); Water Act 2014 Sch. 5 para. 15(4)(a) (words substituted); Water Act 2014 Sch. 5 para. 15(4)(b) (words substituted); Water Act 2014 Sch. 5 para. 15(5) (words substituted); Water Act 2014 Sch. 5 para. 15(6) (words repealed); Water Act 2014 Sch. 5 para. 15(7) (words repealed). Consolidated text may lag the law in force.",
+    "provision_key": "water-industry-act-1991-s17h-1a",
+    "provision_ref": "s.17H(1A)",
     "record_status": "extracted",
     "references": [],
     "status": "in_force"
@@ -1660,6 +1728,46 @@
         "raw": "section 70"
       }
     ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "2d31b63401e7054e",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/86",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Appointment of drinking-water inspectors",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision (A2.5): the section carries more than one independent canonical record. Hash/version inherited from the section.",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "water-industry-act-1991-s86-1",
+    "provision_ref": "s.86(1)",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "2d31b63401e7054e",
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/86",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Designation of the Chief Inspector of Drinking Water",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-water-industry-act-1991",
+    "made_under": null,
+    "notes": "Paragraph-level provision (A2.5): the section carries more than one independent canonical record. Hash/version inherited from the section.",
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "water-industry-act-1991-s86-1a",
+    "provision_ref": "s.86(1A)",
+    "record_status": "extracted",
+    "references": [],
     "status": "in_force"
   },
   {

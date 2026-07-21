@@ -49,7 +49,7 @@ WIA_1991 = {
     # regime inserted by the Water Act 2003 and rebuilt by the Water Act 2014. This is the
     # gap that made "Ofwat is complete" a false assurance — the whole licensing power set was
     # absent while the body showed 11 records and a derived `regulation` function.
-    "sections": ["2", "6", "7", "13", "14", "15", "16", "16A", "17A", "17B", "17C", "17D",
+    "sections": ["2", "6", "7", "12J", "13", "14", "15", "16", "16A", "17A", "17B", "17C", "17D",
                  "17F", "17G", "17H", "17I", "17J", "17K", "17N", "17Q", "17R",
                  "18", "22A", "24", "27A", "27C", "37", "70", "86", "153", "203"],
 }

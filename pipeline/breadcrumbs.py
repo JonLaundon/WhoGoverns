@@ -54,6 +54,10 @@ CORRECTLY_UNMINED = {
     "water-industry-act-1991-s27a":
         "CONSTITUTIVE — establishes the Consumer Council for Water and its committees; the "
         "Council's operative duties are extracted from s.27C.",
+    "water-special-measures-act-2025-s14":
+        "AMENDING — inserts WIA 1991 s.12J (the SoS's power to modify appointment conditions to "
+        "recover special-administration losses); the operative power is extracted from the "
+        "consolidated WIA s.12J (power-sos-defra-wia1991-s12j), citing WSMA 2025 as provenance.",
     "water-industry-act-1991-s37":
         "PRIVATE — the general duty to maintain an efficient and economical water supply "
         "system falls on the water UNDERTAKER, a private company, not on a modelled body. "

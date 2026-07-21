@@ -4,9 +4,9 @@
 
 Decision #27's breadcrumb method widens the net without sweeping the whole statute book, but it only works if the leads are tracked. This file is derived from the records every time it runs, so a stub that has been closed disappears by itself and the count is a real completeness measure rather than a feeling.
 
-**83 open stub(s).**
+**74 open stub(s).**
 
-8 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
+9 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
 
 ## dangling reference (72)
 
@@ -83,20 +83,8 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`wildlife-and-countryside-act-1981-s28e`** — references wildlife-and-countryside-act-1981-s28m, which is not held
 - **`wildlife-and-countryside-act-1981-s28h`** — references wildlife-and-countryside-act-1981-s28g, which is not held
 
-## narrative stub (1)
+## narrative stub (2)
 
 - **`duty-ofwat-wia1991-s16`** — Procedural gates NOT separately extracted in this first pass (decision #11), and logged as breadcrumb stubs instead: s.16(3) requires notice with at least 28 days for representations or objections, which Ofwat must consider — a genuine consultation duty in its own right; s.16(4A)-(4B) require notice
-
-## unmined provision (10)
-
-- **`insolvency-act-1986-s124a`** — Petition for winding up on grounds of public interest. — fetched but no power, duty or veto extracted from it
-- **`water-industry-act-1991-s15`** — Reports on modification references. — fetched but no power, duty or veto extracted from it
-- **`water-industry-act-1991-s17g`** — Licence conditions — fetched but no power, duty or veto extracted from it
-- **`water-industry-act-1991-s17h`** — Standard conditions of water supply licences — fetched but no power, duty or veto extracted from it
-- **`water-industry-act-1991-s17i`** — Modification of licences by agreement — fetched but no power, duty or veto extracted from it
-- **`water-industry-act-1991-s17k`** — Modification references to competition authority — fetched but no power, duty or veto extracted from it
-- **`water-industry-act-1991-s17n`** — Reports on modification references — fetched but no power, duty or veto extracted from it
-- **`water-industry-act-1991-s17r`** — Modification by order under other enactments — fetched but no power, duty or veto extracted from it
-- **`water-industry-act-1991-s86`** — Appointment and functions of inspectors — fetched but no power, duty or veto extracted from it
-- **`water-special-measures-act-2025-s14`** — Modification by Secretary of State of water company’s appointment conditions etc to recover losses — fetched but no power, duty or veto extracted from it
+- **`power-ofwat-wia1991-s17k`** — BREADCRUMB STUB: the CMA's veto-following-report for LICENCE modifications (the s.16A-equivalent, a later section in Chapter 1A not yet fetched) and the s.17-series modification-following-report duty are not yet extracted. s.17N (the CMA's reporting duty on these references) IS extracted.
 

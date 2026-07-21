@@ -39,6 +39,92 @@
     }
   },
   {
+    "beneficiary_or_object": "The public interest; Ofwat and the company (the report gates s.16).",
+    "body_id": "uk-state-body-competition-and-markets-authority",
+    "citation": {
+      "provision": "s.15(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/15"
+    },
+    "derived_from_record_id": null,
+    "duty_id": "duty-cma-wia1991-s15",
+    "duty_label": "Report definite conclusions on an appointment-modification reference",
+    "duty_type": "reporting",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-water-unmined",
+      "requires_review": true
+    },
+    "failure_consequence": "judicial_review_risk",
+    "holder_type": "body",
+    "in_force_from": null,
+    "in_force_to": null,
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": null,
+    "office_id": null,
+    "owed_to_body_id": null,
+    "owed_to_holder_type": null,
+    "owed_to_office_id": null,
+    "provision_key": "water-industry-act-1991-s15",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "In reporting on a s.14 appointment-condition reference, the CMA shall include definite conclusions with reasons, specify any effects adverse to the public interest, and specify modifications that could remedy them (WIA 1991 s.15). Conclusions bind s.16 only if reached by at least two-thirds of the CMA group (s.15(1A)).",
+    "trigger": "On making a report on a s.14 reference.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "beneficiary_or_object": "The public interest; Ofwat and the licensee.",
+    "body_id": "uk-state-body-competition-and-markets-authority",
+    "citation": {
+      "provision": "s.17N(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17N"
+    },
+    "derived_from_record_id": null,
+    "duty_id": "duty-cma-wia1991-s17n",
+    "duty_label": "Report definite conclusions on a licence-modification reference",
+    "duty_type": "reporting",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-water-unmined",
+      "requires_review": true
+    },
+    "failure_consequence": "judicial_review_risk",
+    "holder_type": "body",
+    "in_force_from": null,
+    "in_force_to": null,
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": null,
+    "office_id": null,
+    "owed_to_body_id": null,
+    "owed_to_holder_type": null,
+    "owed_to_office_id": null,
+    "provision_key": "water-industry-act-1991-s17n",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "In reporting on a s.17K licence-modification reference, the CMA shall include definite conclusions with reasons, specify effects adverse to the public interest, and specify modifications that could remedy them (WIA 1991 s.17N). The licence analogue of s.15.",
+    "trigger": "On making a report on a s.17K reference.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "beneficiary_or_object": "The public interest, as found by the CMA; the company whose appointment is modified.",
     "body_id": "uk-state-body-the-water-services-regulation-authority",
     "citation": {
@@ -381,6 +467,51 @@
     "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {
+      "provision": "s.17H(1A)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17H"
+    },
+    "derived_from_record_id": null,
+    "duty_id": "duty-sos-defra-wia1991-s17h-1a-consult",
+    "duty_label": "Consult the Welsh Ministers before determining standard licence conditions",
+    "duty_type": "consultation",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-water-unmined",
+      "requires_review": true
+    },
+    "failure_consequence": "judicial_review_risk",
+    "holder_type": "office",
+    "in_force_from": null,
+    "in_force_to": null,
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": "Counterparty mapped to the Welsh Government body; statute names 'the Welsh Ministers' (Government of Wales Act 2006 office-holders, no office node yet).",
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "owed_to_body_id": "uk-state-body-welsh-government",
+    "owed_to_holder_type": "body",
+    "owed_to_office_id": null,
+    "provision_key": "water-industry-act-1991-s17h-1a",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-welsh-government"
+    ],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Before determining the standard conditions of water supply licences, the Secretary of State must consult the Welsh Ministers as regards conditions relating to a restricted retail authorisation or a supplementary authorisation (WIA 1991 s.17H(1A)).",
+    "trigger": "Before determining standard conditions under s.17H(1).",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "beneficiary_or_object": "The Welsh Ministers (devolved interest).",
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
       "provision": "s.17J(5A)",
       "quote": null,
       "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J"
@@ -455,6 +586,49 @@
     "source_id": "source-act-water-industry-act-1991",
     "summary": "It is the duty of the Secretary of State to secure that appointments are made so that for every area of England and Wales there is at all times both a water undertaker and a sewerage undertaker (s.7(1)). The continuity-of-supply backstop that constrains how an undertaker can be removed or replaced.",
     "trigger": "At all times — a continuing duty.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "beneficiary_or_object": "Drinking-water quality regulation; the public.",
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.86(1A)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/86"
+    },
+    "derived_from_record_id": null,
+    "duty_id": "duty-sos-defra-wia1991-s86-1a",
+    "duty_label": "Designate a Chief Inspector of Drinking Water",
+    "duty_type": "other",
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-water-unmined",
+      "requires_review": true
+    },
+    "failure_consequence": "judicial_review_risk",
+    "holder_type": "office",
+    "in_force_from": null,
+    "in_force_to": null,
+    "legal_status": "current",
+    "mandatory": true,
+    "modality": "duty",
+    "notes": "A candidate OFFICE node (Chief Inspector of Drinking Water) under the #28 vested-vs-delegated test — the post is named in statute. Held for now as the Defra SoS's duty; promote to an office if the DWI tranche is built out.",
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "owed_to_body_id": null,
+    "owed_to_holder_type": null,
+    "owed_to_office_id": null,
+    "provision_key": "water-industry-act-1991-s86-1a",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "The Secretary of State shall designate one of the persons appointed under s.86(1) as the Chief Inspector of Drinking Water (WIA 1991 s.86(1A)). The statutory head of the Drinking Water Inspectorate — an office within the Defra SoS's function, not a separate body (decision #28).",
+    "trigger": "On appointing inspectors under s.86(1).",
     "verification": {
       "verification_notes": null,
       "verification_status": "unverified",

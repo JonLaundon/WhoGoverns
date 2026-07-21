@@ -83,6 +83,46 @@
     }
   },
   {
+    "body_id": "uk-state-body-competition-and-markets-authority",
+    "citation": {
+      "provision": "s.17R(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17R"
+    },
+    "constraints": [],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-water-unmined",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "Multi-holder: the 'relevant authority' is the CMA OR the Secretary of State — modelled on the CMA (primary) with the SoS as related; per the multi-holder rule (schema-decisions 2026-07-14). Reaches the Enterprise Act 2002 and Competition Act 1998 (breadcrumb references on the provision).",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-cma-wia1991-s17r",
+    "power_label": "Modify licence conditions by order under other enactments",
+    "power_type": "rulemaking",
+    "provision_key": "water-industry-act-1991-s17r",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-department-for-environment-food-rural-affairs"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Where the CMA or the Secretary of State makes a relevant competition order (under the Enterprise Act 2002 or the Competition Act 1998), the order may also modify the conditions or standard conditions of water supply and sewerage licences to the extent requisite to give effect to it (WIA 1991 s.17R). Competition remedies can reach into the licence regime directly.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "body_id": "uk-state-body-environment-agency",
     "citation": {
       "provision": "s.25A",
@@ -417,6 +457,84 @@
   {
     "body_id": "uk-state-body-the-water-services-regulation-authority",
     "citation": {
+      "provision": "s.17G(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17G"
+    },
+    "constraints": [],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-water-unmined",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "s.17G(1)(b) is a charging condition — Ofwat may make licence grant/holding conditional on payment.",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-ofwat-wia1991-s17g",
+    "power_label": "Attach conditions to water supply and sewerage licences",
+    "power_type": "licence",
+    "provision_key": "water-industry-act-1991-s17g",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Ofwat may include in a water supply or sewerage licence such conditions as appear to it requisite or expedient having regard to its Part 1 duties, including conditions requiring payments to Ofwat on grant or while the licence is in force (WIA 1991 s.17G). The substantive content of the licence sits under this power; s.17A grants the licence, s.17G shapes what it may contain.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.17I(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17I"
+    },
+    "constraints": [
+      "Requires the licence holder's consent (s.17I(2))."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-water-unmined",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "conditional",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": null,
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-ofwat-wia1991-s17i",
+    "power_label": "Modify licence conditions by agreement",
+    "power_type": "rulemaking",
+    "provision_key": "water-industry-act-1991-s17i",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Ofwat may modify the conditions of a particular water supply or sewerage licence where the licence holder has consented, and (for standard conditions) Ofwat is satisfied the modification is requisite to the case and leaves no licensee unduly disadvantaged in competition (WIA 1991 s.17I). The licence analogue of s.13 (appointment conditions by agreement).",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
       "provision": "s.17J(1)",
       "quote": null,
       "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17J"
@@ -451,6 +569,46 @@
     "related_power_ids": [],
     "source_id": "source-act-water-industry-act-1991",
     "summary": "Ofwat may modify the standard conditions of water supply or sewerage licences, and make incidental or consequential modifications to any licence affected (WIA 1991 s.17J(1)-(2)). The sector-wide rule-change lever: it reaches every licensee at once, unlike s.13 modification by agreement.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-the-water-services-regulation-authority",
+    "citation": {
+      "provision": "s.17K(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17K"
+    },
+    "constraints": [],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.88,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-water-unmined",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "BREADCRUMB STUB: the CMA's veto-following-report for LICENCE modifications (the s.16A-equivalent, a later section in Chapter 1A not yet fetched) and the s.17-series modification-following-report duty are not yet extracted. s.17N (the CMA's reporting duty on these references) IS extracted.",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-ofwat-wia1991-s17k",
+    "power_label": "Refer a licence-condition modification to the CMA",
+    "power_type": "rulemaking",
+    "provision_key": "water-industry-act-1991-s17k",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-competition-and-markets-authority"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "Ofwat may refer to the CMA the question whether matters relating to a water supply or sewerage licence operate against the public interest and, if so, whether licence modifications could remedy them (WIA 1991 s.17K). The licence analogue of s.14 (appointment-condition references).",
     "verification": {
       "verification_notes": null,
       "verification_status": "unverified",
@@ -669,6 +827,86 @@
     }
   },
   {
+    "body_id": "uk-state-body-department-for-business-and-trade",
+    "citation": {
+      "provision": "s.124A(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1986/45/section/124A"
+    },
+    "constraints": [],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-water-unmined",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "HOLDER-RESOLUTION GAP: this vests in 'the Secretary of State' exercising the insolvency/company-investigation function (in practice the Secretary of State for Business and Trade), for which no OFFICE node exists yet. Recorded on the DBT body with holder_type=body; an office should be created when a company-law/insolvency tranche is built (holder-resolution follows decision #13). The trigger instruments (Companies Act 1985/1989, FSMA 2000, Criminal Justice Act 1987, Criminal Law (Consolidation) (Scotland) Act 1995) are breadcrumb references on the provision.",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-sos-dbt-insolvency1986-s124a",
+    "power_label": "Petition for winding up on grounds of public interest",
+    "power_type": "application_to_court",
+    "provision_key": "insolvency-act-1986-s124a",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-chancery-division-of-the-high-court"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-insolvency-act-1986",
+    "summary": "Where it appears to the Secretary of State, from company-investigation or fraud-investigation reports and information (Companies Act 1985 Pt XIV; FSMA 2000; Criminal Justice Act 1987), that it is expedient in the public interest, the Secretary of State may petition for a company to be wound up (Insolvency Act 1986 s.124A). Reached via the water SAR: the ordinary public-interest winding-up route, the general-company-law alternative to a water special administration order.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.12J(2)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/12J"
+    },
+    "constraints": [],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-water-unmined",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "Applies to companies whose area is wholly or mainly in England (s.12J(1)). Recovers 'relevant financial assistance' given under s.153 etc. — the fiscal loop closed on the SAR funding power (veto-hm-treasury-wia1991-s153).",
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "power_basis": "statutory",
+    "power_id": "power-sos-defra-wia1991-s12j",
+    "power_label": "Modify appointment conditions to recover special-administration losses",
+    "power_type": "direction",
+    "provision_key": "water-industry-act-1991-s12j",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-the-water-services-regulation-authority"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "The Secretary of State may modify a company's appointment conditions so that they require or enable the company to raise charges on its customers and pay the amounts to the Secretary of State to make good any 'SAO loss' — financial assistance given under the special administration regime that the Secretary of State does not expect otherwise to recover (WIA 1991 s.12J, inserted by the Water (Special Measures) Act 2025 s.14). The cost-recovery counterpart to the s.153 funding lever.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
     "citation": {
       "provision": "s.153(1)",
@@ -701,6 +939,46 @@
     "related_power_ids": [],
     "source_id": "source-act-water-industry-act-1991",
     "summary": "Where a special administration order is in force, the Secretary of State may, WITH THE CONSENT OF THE TREASURY, make grants or loans to the company, offer indemnities to the special administrator and others, and guarantee the company's borrowing (WIA 1991 s.153(1)-(2)). The quasi-nationalisation funding lever — the fiscal engine of a water SAR.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.17H(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/17H"
+    },
+    "constraints": [],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.9,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-water-unmined",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "power_basis": "statutory",
+    "power_id": "power-sos-defra-wia1991-s17h",
+    "power_label": "Determine the standard conditions of water supply licences",
+    "power_type": "rulemaking",
+    "provision_key": "water-industry-act-1991-s17h-1",
+    "record_status": "extracted",
+    "related_body_ids": [
+      "uk-state-body-the-water-services-regulation-authority"
+    ],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "The Secretary of State may determine the conditions that are to be the STANDARD conditions of water supply licences granted by Ofwat, and must publish them (WIA 1991 s.17H). The baseline licence terms are set by the Secretary of State; Ofwat grants against them and may modify them only under ss.17I-17J.",
     "verification": {
       "verification_notes": null,
       "verification_status": "unverified",
@@ -866,6 +1144,44 @@
     "related_power_ids": [],
     "source_id": "source-act-water-industry-act-1991",
     "summary": "Supplying water unfit for human consumption is an offence by the water undertaker (WIA 1991 s.70). The Secretary of State enforces drinking-water quality and sufficiency standards (ss.67-70, 77-82); proceedings for the s.70 offence may be instituted only by the Secretary of State or the DPP (s.70(3)). These functions are exercised on the Secretary of State's behalf by appointed inspectors — the Drinking Water Inspectorate, led by the Chief Inspector of Drinking Water (s.86) — a unit within Defra, not a separate body.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
+    "citation": {
+      "provision": "s.86(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1991/56/section/86"
+    },
+    "constraints": [],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.92,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-water-unmined",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "Vindicates decision #28: DWI is a delegated inspectorate, not a body node. Its s.70 enforcement power is already held by the Defra SoS office (power-sos-defra-wia1991-s70-dwi-quality-enforcement).",
+    "office_id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
+    "power_basis": "statutory",
+    "power_id": "power-sos-defra-wia1991-s86",
+    "power_label": "Appoint drinking-water inspectors to act on the Secretary of State's behalf",
+    "power_type": "appointment",
+    "provision_key": "water-industry-act-1991-s86-1",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [],
+    "source_id": "source-act-water-industry-act-1991",
+    "summary": "The Secretary of State may appoint persons to act on his behalf in relation to the water-quality powers and duties under WIA 1991 ss.67-70 and 77-82 (WIA 1991 s.86). These are the Drinking Water Inspectorate inspectors. Because they act 'on his behalf', the water-quality enforcement powers remain the Secretary of State's — DWI has no separate legal personality (decision #28).",
     "verification": {
       "verification_notes": null,
       "verification_status": "unverified",
