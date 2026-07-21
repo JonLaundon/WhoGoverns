@@ -3,13 +3,13 @@
     "bodies": 685,
     "budget_records": 1433,
     "duties": 19,
-    "instruments": 13,
+    "instruments": 16,
     "offices": 164,
     "person_roles": 181,
-    "powers": 41,
-    "provisions": 92,
+    "powers": 44,
+    "provisions": 98,
     "relationships": 639,
-    "sources": 22,
+    "sources": 25,
     "staffing_records": 3884,
     "vetoes": 12
   },
@@ -8096,7 +8096,7 @@
       }
     }
   ],
-  "generated": "2026-07-21T17:52:28",
+  "generated": "2026-07-21T18:40:47",
   "nodes": [
     {
       "data": {
@@ -17049,7 +17049,63 @@
         "kind": "body",
         "label": "Department for Transport",
         "needs_review": false,
-        "op_total": 0,
+        "office_operative": {
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.14(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1964/40/section/14"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "Subject to the Act's provisions and objection procedure."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-transport-harbours1964-s14",
+              "kind": "power",
+              "label": "Make a harbour revision or empowerment order",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x). 'Appropriate Minister' modelled as the SoS for Transport; for some harbours it is another department — holder-resolution note.",
+              "office_id": "office-secretary-of-state-for-transport",
+              "provision_key": "harbours-act-1964-s14",
+              "since": 1964,
+              "source_id": "source-act-harbours-act-1964",
+              "summary": "On the application of a harbour authority (or others), the appropriate Minister may make an order for securing the improvement, maintenance or management of a harbour, or reconstituting a harbour authority (Harbours Act 1964 s.14). The harbour consent-order route — another DCO sibling.",
+              "type": "approval",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.1(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1992/42/section/1"
+              },
+              "confidence": 0.87,
+              "constraints": [
+                "Subject to the Act's application and objection procedure."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-transport-twa1992-s1",
+              "kind": "power",
+              "label": "Make a Transport and Works Act order",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x).",
+              "office_id": "office-secretary-of-state-for-transport",
+              "provision_key": "transport-and-works-act-1992-s1",
+              "since": 1992,
+              "source_id": "source-act-transport-and-works-act-1992",
+              "summary": "The Secretary of State may make an order authorising the construction or operation of a railway, tramway, trolley-vehicle or guided-transport system in England and Wales (Transport and Works Act 1992 s.1). The consent-order route for transport works below the NSIP threshold — a sibling of the DCO.",
+              "type": "approval",
+              "verification_status": "unverified"
+            }
+          ]
+        },
+        "op_total": 2,
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -26382,7 +26438,50 @@
         "kind": "body",
         "label": "Marine Management Organisation",
         "needs_review": false,
-        "op_total": 0,
+        "op_total": 1,
+        "operative": {
+          "counts": {
+            "duties": 0,
+            "powers": 1,
+            "vetoes": 0
+          },
+          "duties": [],
+          "functions_derived": {
+            "regulation": [
+              "power-mmo-marine2009-s71"
+            ]
+          },
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.71(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/2009/23/section/71"
+              },
+              "confidence": 0.88,
+              "constraints": [
+                "Conditions per s.71(2); the activity must be a licensable marine activity (s.66)."
+              ],
+              "holder_type": "body",
+              "id": "power-mmo-marine2009-s71",
+              "kind": "power",
+              "label": "Grant, condition or refuse a marine licence",
+              "legal_effect": "must",
+              "legal_status": "current",
+              "notes": null,
+              "office_id": null,
+              "outstanding_effects": true,
+              "provision_key": "marine-and-coastal-access-act-2009-s71",
+              "since": 2009,
+              "source_id": "source-act-marine-and-coastal-access-act-2009",
+              "summary": "Having considered an application, the Marine Management Organisation must grant a marine licence unconditionally, grant it subject to conditions, or refuse it (Marine and Coastal Access Act 2009 s.71). The consent for licensable marine activities (s.66) — the offshore counterpart a reservoir/transfer scheme with any marine works must clear.",
+              "type": "licence",
+              "verification_status": "unverified"
+            }
+          ],
+          "vetoes": []
+        },
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -42534,7 +42633,70 @@
         "kind": "office",
         "label": "Secretary of State for Transport",
         "office_type": "cabinet_minister",
-        "op_total": 0
+        "op_total": 2,
+        "operative": {
+          "counts": {
+            "duties": 0,
+            "powers": 2,
+            "vetoes": 0
+          },
+          "duties": [],
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.1(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1992/42/section/1"
+              },
+              "confidence": 0.87,
+              "constraints": [
+                "Subject to the Act's application and objection procedure."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-transport-twa1992-s1",
+              "kind": "power",
+              "label": "Make a Transport and Works Act order",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x).",
+              "office_id": "office-secretary-of-state-for-transport",
+              "provision_key": "transport-and-works-act-1992-s1",
+              "since": 1992,
+              "source_id": "source-act-transport-and-works-act-1992",
+              "summary": "The Secretary of State may make an order authorising the construction or operation of a railway, tramway, trolley-vehicle or guided-transport system in England and Wales (Transport and Works Act 1992 s.1). The consent-order route for transport works below the NSIP threshold — a sibling of the DCO.",
+              "type": "approval",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.14(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1964/40/section/14"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "Subject to the Act's provisions and objection procedure."
+              ],
+              "holder_type": "office",
+              "id": "power-sos-transport-harbours1964-s14",
+              "kind": "power",
+              "label": "Make a harbour revision or empowerment order",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x). 'Appropriate Minister' modelled as the SoS for Transport; for some harbours it is another department — holder-resolution note.",
+              "office_id": "office-secretary-of-state-for-transport",
+              "provision_key": "harbours-act-1964-s14",
+              "since": 1964,
+              "source_id": "source-act-harbours-act-1964",
+              "summary": "On the application of a harbour authority (or others), the appropriate Minister may make an order for securing the improvement, maintenance or management of a harbour, or reconstituting a harbour authority (Harbours Act 1964 s.14). The harbour consent-order route — another DCO sibling.",
+              "type": "approval",
+              "verification_status": "unverified"
+            }
+          ],
+          "vetoes": []
+        }
       }
     },
     {
@@ -42592,10 +42754,20 @@
       "title": "Financial Services and Markets Act 2000",
       "url": "https://www.legislation.gov.uk/ukpga/2000/8"
     },
+    "source-act-harbours-act-1964": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Harbours Act 1964",
+      "url": "https://www.legislation.gov.uk/ukpga/1964/40"
+    },
     "source-act-insolvency-act-1986": {
       "publisher": "legislation.gov.uk (The National Archives)",
       "title": "Insolvency Act 1986",
       "url": "https://www.legislation.gov.uk/ukpga/1986/45"
+    },
+    "source-act-marine-and-coastal-access-act-2009": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Marine and Coastal Access Act 2009",
+      "url": "https://www.legislation.gov.uk/ukpga/2009/23"
     },
     "source-act-planning-act-2008": {
       "publisher": "legislation.gov.uk (The National Archives)",
@@ -42606,6 +42778,11 @@
       "publisher": "legislation.gov.uk (The National Archives)",
       "title": "Senior Courts Act 1981",
       "url": "https://www.legislation.gov.uk/ukpga/1981/54"
+    },
+    "source-act-transport-and-works-act-1992": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Transport and Works Act 1992",
+      "url": "https://www.legislation.gov.uk/ukpga/1992/42"
     },
     "source-act-water-act-2014": {
       "publisher": "legislation.gov.uk (The National Archives)",

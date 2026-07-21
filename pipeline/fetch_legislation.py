@@ -210,9 +210,39 @@ PLANNING_2008 = {
                        "reaches.",
 }
 
+# ---- Sibling infrastructure-consent regimes (planning writ large; NOT spine). ----
+# Reached by the Planning Act breadcrumbs (s.104, s.120): the consent regimes a DCO interacts
+# with / can subsume. IN-domain for planning (the consenting fabric), bloomed per #11 to their
+# core consent-granting power, not the whole Act.
+MARINE_2009 = {
+    "instrument_id": "instrument-act-marine-and-coastal-access-act-2009",
+    "source_id": "source-act-marine-and-coastal-access-act-2009",
+    "slug": "marine-and-coastal-access-act-2009",
+    "title": "Marine and Coastal Access Act 2009",
+    "leg_type": "ukpga", "year": 2009, "number": "23", "sections": ["66", "67", "71"],
+    "instrument_note": "Sibling regime: the marine licensing system (MMO grants marine licences "
+                       "under Part 4). Reached from Planning Act s.104/s.120 (a DCO offshore).",
+}
+HARBOURS_1964 = {
+    "instrument_id": "instrument-act-harbours-act-1964",
+    "source_id": "source-act-harbours-act-1964",
+    "slug": "harbours-act-1964", "title": "Harbours Act 1964",
+    "leg_type": "ukpga", "year": 1964, "number": "40", "sections": ["14"],
+    "instrument_note": "Sibling regime: harbour revision/empowerment orders (s.14). Reached from "
+                       "Planning Act s.120.",
+}
+TWA_1992 = {
+    "instrument_id": "instrument-act-transport-and-works-act-1992",
+    "source_id": "source-act-transport-and-works-act-1992",
+    "slug": "transport-and-works-act-1992", "title": "Transport and Works Act 1992",
+    "leg_type": "ukpga", "year": 1992, "number": "42", "sections": ["1", "3"],
+    "instrument_note": "Sibling regime: orders for railways, tramways and inland waterways (s.1) "
+                       "and works interfering with navigation (s.3). Reached from Planning Act s.120.",
+}
+
 ACTS = [WIA_1991, WATER_ACT_2014, WRA_1991, WCA_1981, INSOLVENCY_1986, WSMA_2025,
         ENTERPRISE_2002, COMPETITION_1998, COMPANIES_1985, FSMA_2000, CJA_1987,
-        PLANNING_2008]
+        PLANNING_2008, MARINE_2009, HARBOURS_1964, TWA_1992]
 
 
 def fetch(url, timeout=30, retries=3):

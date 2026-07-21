@@ -413,6 +413,46 @@
     }
   },
   {
+    "body_id": "uk-state-body-marine-management-organisation",
+    "citation": {
+      "provision": "s.71(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/2009/23/section/71"
+    },
+    "constraints": [
+      "Conditions per s.71(2); the activity must be a licensable marine activity (s.66)."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.88,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-infra-siblings",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "must",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": null,
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-mmo-marine2009-s71",
+    "power_label": "Grant, condition or refuse a marine licence",
+    "power_type": "licence",
+    "provision_key": "marine-and-coastal-access-act-2009-s71",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [],
+    "source_id": "source-act-marine-and-coastal-access-act-2009",
+    "summary": "Having considered an application, the Marine Management Organisation must grant a marine licence unconditionally, grant it subject to conditions, or refuse it (Marine and Coastal Access Act 2009 s.71). The consent for licensable marine activities (s.66) — the offshore counterpart a reservoir/transfer scheme with any marine works must clear.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "body_id": "uk-state-body-natural-england",
     "citation": {
       "provision": "s.28E(3)(a)",
@@ -1681,6 +1721,86 @@
     "related_power_ids": [],
     "source_id": "source-act-water-resources-act-1991",
     "summary": "If satisfied that an exceptional shortage of rain has caused or threatens a serious deficiency of water supplies (or a serious threat to flora/fauna dependent on inland waters), the Secretary of State may make an ordinary drought order — or, where the deficiency is likely to impair economic or social well-being, an emergency drought order (s.73(1)-(2)) — authorising measures, including relaxing abstraction restrictions, to meet the deficiency.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-department-for-transport",
+    "citation": {
+      "provision": "s.14(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1964/40/section/14"
+    },
+    "constraints": [
+      "Subject to the Act's provisions and objection procedure."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.85,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-infra-siblings",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x). 'Appropriate Minister' modelled as the SoS for Transport; for some harbours it is another department — holder-resolution note.",
+    "office_id": "office-secretary-of-state-for-transport",
+    "power_basis": "statutory",
+    "power_id": "power-sos-transport-harbours1964-s14",
+    "power_label": "Make a harbour revision or empowerment order",
+    "power_type": "approval",
+    "provision_key": "harbours-act-1964-s14",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [],
+    "source_id": "source-act-harbours-act-1964",
+    "summary": "On the application of a harbour authority (or others), the appropriate Minister may make an order for securing the improvement, maintenance or management of a harbour, or reconstituting a harbour authority (Harbours Act 1964 s.14). The harbour consent-order route — another DCO sibling.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
+    "body_id": "uk-state-body-department-for-transport",
+    "citation": {
+      "provision": "s.1(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1992/42/section/1"
+    },
+    "constraints": [
+      "Subject to the Act's application and objection procedure."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.87,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-infra-siblings",
+      "requires_review": true
+    },
+    "holder_type": "office",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "VOCAB SIGNAL: a bespoke statutory 'consent order' authorising infrastructure works — the same shape as the Planning Act DCO (s.114) and harbour/TWA orders. Recorded as `approval`; `consent_order` is a candidate power_type for the sponsor (recurs 3x).",
+    "office_id": "office-secretary-of-state-for-transport",
+    "power_basis": "statutory",
+    "power_id": "power-sos-transport-twa1992-s1",
+    "power_label": "Make a Transport and Works Act order",
+    "power_type": "approval",
+    "provision_key": "transport-and-works-act-1992-s1",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [],
+    "source_id": "source-act-transport-and-works-act-1992",
+    "summary": "The Secretary of State may make an order authorising the construction or operation of a railway, tramway, trolley-vehicle or guided-transport system in England and Wales (Transport and Works Act 1992 s.1). The consent-order route for transport works below the NSIP threshold — a sibling of the DCO.",
     "verification": {
       "verification_notes": null,
       "verification_status": "unverified",

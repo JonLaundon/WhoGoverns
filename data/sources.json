@@ -69,12 +69,38 @@
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",
     "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
+    "publication_date": "1964-01-01",
+    "publisher": "legislation.gov.uk (The National Archives)",
+    "source_id": "source-act-harbours-act-1964",
+    "source_type": "act",
+    "title": "Harbours Act 1964",
+    "url": "https://www.legislation.gov.uk/ukpga/1964/40",
+    "version_date": "2026-07-21"
+  },
+  {
+    "accessed_date": "2026-07-21",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
     "publication_date": "1986-01-01",
     "publisher": "legislation.gov.uk (The National Archives)",
     "source_id": "source-act-insolvency-act-1986",
     "source_type": "act",
     "title": "Insolvency Act 1986",
     "url": "https://www.legislation.gov.uk/ukpga/1986/45",
+    "version_date": "2026-07-21"
+  },
+  {
+    "accessed_date": "2026-07-21",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
+    "publication_date": "2009-01-01",
+    "publisher": "legislation.gov.uk (The National Archives)",
+    "source_id": "source-act-marine-and-coastal-access-act-2009",
+    "source_type": "act",
+    "title": "Marine and Coastal Access Act 2009",
+    "url": "https://www.legislation.gov.uk/ukpga/2009/23",
     "version_date": "2026-07-21"
   },
   {
@@ -102,6 +128,19 @@
     "title": "Senior Courts Act 1981",
     "url": "https://www.legislation.gov.uk/ukpga/1981/54",
     "version_date": "2026-07-20"
+  },
+  {
+    "accessed_date": "2026-07-21",
+    "legal_status": "current",
+    "licence": "Open Government Licence v3.0",
+    "notes": "Current consolidated ('as amended') text; point-in-time via section version_date. Raw CLML cached under data/sources/raw/legislation/ (gitignored).",
+    "publication_date": "1992-01-01",
+    "publisher": "legislation.gov.uk (The National Archives)",
+    "source_id": "source-act-transport-and-works-act-1992",
+    "source_type": "act",
+    "title": "Transport and Works Act 1992",
+    "url": "https://www.legislation.gov.uk/ukpga/1992/42",
+    "version_date": "2026-07-21"
   },
   {
     "accessed_date": "2026-07-21",

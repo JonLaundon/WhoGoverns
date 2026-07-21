@@ -322,6 +322,83 @@
   },
   {
     "citation": {
+      "content_hash": "0251f952ad182540",
+      "url": "https://www.legislation.gov.uk/ukpga/1964/40/section/14",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Ministers’ powers, on application of harbour authorities, or others, to make orders for securing harbour efficiency, &c.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-harbours-act-1964",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "harbours-act-1964-s14",
+    "provision_ref": "s.14",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": false,
+        "instrument_slug": "courts-act-1980",
+        "internal": false,
+        "provision_key": "courts-act-1980-s32",
+        "raw": "section 32"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "criminal-procedure-scotland-act-1975",
+        "internal": false,
+        "provision_key": "criminal-procedure-scotland-act-1975-s289b",
+        "raw": "section 289B"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "companies-act-2006",
+        "internal": false,
+        "provision_key": "companies-act-2006-s1159",
+        "raw": "section 1159"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Planning Act 2008"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "infrastructure-wales-act-2024",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Infrastructure (Wales) Act 2024"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "courts-act-1980",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Courts Act 1980"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "criminal-procedure-scotland-act-1975",
+        "internal": false,
+        "provision_key": null,
+        "raw": "B of the Criminal Procedure (Scotland) Act 1975"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "companies-act-2006",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Companies Act 2006"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "b96003b88f8f3eb8",
       "url": "https://www.legislation.gov.uk/ukpga/1986/45/section/124A",
       "version_date": "2026-07-21"
@@ -420,6 +497,82 @@
   },
   {
     "citation": {
+      "content_hash": "4d447ee79b7f4bcb",
+      "url": "https://www.legislation.gov.uk/ukpga/2009/23/section/66",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Licensable marine activities",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-marine-and-coastal-access-act-2009",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: The Marine Licensing (Miscellaneous Provisions) (Amendment etc.) Order 2026 art. 4(2)(a) (words inserted); The Marine Licensing (Miscellaneous Provisions) (Amendment etc.) Order 2026 art. 4(2)(b) (words inserted); The Marine Licensing (Miscellaneous Provisions) (Amendment etc.) Order 2026 art. 4(2)(c) (words inserted); The Marine Licensing (Miscellaneous Provisions) (Amendment etc.) Order 2026 art. 4(2)(d) (words inserted); The Marine Licensing (Miscellaneous Provisions) (Amendment etc.) Order 2026 art. 4(3) (words substituted); The Marine Licensing (Miscellaneous Provisions) (Amendment etc.) Order 2026 art. 4(4)(a) (words substituted); The Marine Licensing (Miscellaneous Provisions) (Amendment etc.) Order 2026 art. 4(4)(b) (words substituted); The Marine Licensing (Miscellaneous Provisions) (Amendment etc.) Order 2026 art. 4(5) (inserted); The Marine Licensing (Miscellaneous Provisions) (Amendment etc.) Order 2026 art. 4(6) (words substituted). Consolidated text may lag the law in force.",
+    "provision_key": "marine-and-coastal-access-act-2009-s66",
+    "provision_ref": "s.66",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "marine-and-coastal-access-act-2009",
+        "internal": true,
+        "provision_key": "marine-and-coastal-access-act-2009-s316",
+        "raw": "section 316(1)"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "2870d0a73a5269b9",
+      "url": "https://www.legislation.gov.uk/ukpga/2009/23/section/67",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Applications",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-marine-and-coastal-access-act-2009",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "marine-and-coastal-access-act-2009-s67",
+    "provision_ref": "s.67",
+    "record_status": "extracted",
+    "references": [],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "fc5bfce3e546ff30",
+      "url": "https://www.legislation.gov.uk/ukpga/2009/23/section/71",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Licences",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-marine-and-coastal-access-act-2009",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: The Marine Licensing (Miscellaneous Provisions) (Amendment etc.) Order 2026 art. 6 (words inserted). Consolidated text may lag the law in force.",
+    "provision_key": "marine-and-coastal-access-act-2009-s71",
+    "provision_ref": "s.71",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "marine-and-coastal-access-act-2009",
+        "internal": true,
+        "provision_key": "marine-and-coastal-access-act-2009-s66",
+        "raw": "section 66(1)"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "4da3b569e2f761a7",
       "url": "https://www.legislation.gov.uk/ukpga/2008/29/section/104",
       "version_date": "2026-07-21"
@@ -437,7 +590,7 @@
     "record_status": "extracted",
     "references": [
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "marine-and-coastal-access-act-2009",
         "internal": false,
         "provision_key": "marine-and-coastal-access-act-2009-s59",
@@ -451,7 +604,7 @@
         "raw": "section 60(3)"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "marine-and-coastal-access-act-2009",
         "internal": false,
         "provision_key": null,
@@ -569,7 +722,7 @@
         "raw": "section 33(1)"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "harbours-act-1964",
         "internal": false,
         "provision_key": "harbours-act-1964-s14",
@@ -583,14 +736,14 @@
         "raw": "section 4(1)"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "transport-and-works-act-1992",
         "internal": false,
         "provision_key": "transport-and-works-act-1992-s1",
         "raw": "section 1"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "harbours-act-1964",
         "internal": false,
         "provision_key": null,
@@ -604,7 +757,7 @@
         "raw": "Gas Act 1965"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "transport-and-works-act-1992",
         "internal": false,
         "provision_key": null,
@@ -798,14 +951,14 @@
         "raw": "section 74(1)"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "harbours-act-1964",
         "internal": false,
         "provision_key": "harbours-act-1964-s14",
         "raw": "section 14"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "transport-and-works-act-1992",
         "internal": false,
         "provision_key": "transport-and-works-act-1992-s1",
@@ -903,14 +1056,14 @@
         "raw": "Electricity Act 1989"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "harbours-act-1964",
         "internal": false,
         "provision_key": null,
         "raw": "Harbours Act 1964"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "transport-and-works-act-1992",
         "internal": false,
         "provision_key": null,
@@ -1251,6 +1404,97 @@
         "internal": true,
         "provision_key": "planning-act-2008-s13",
         "raw": "section 13"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "f0f0a8928a295028",
+      "url": "https://www.legislation.gov.uk/ukpga/1992/42/section/1",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Orders as to railways, tramways etc.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-transport-and-works-act-1992",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "transport-and-works-act-1992-s1",
+    "provision_ref": "s.1",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": false,
+        "provision_key": "planning-act-2008-s2",
+        "raw": "section 2"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Planning Act 2008"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "infrastructure-wales-act-2024",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Infrastructure (Wales) Act 2024"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "b4d5f2d19de2e510",
+      "url": "https://www.legislation.gov.uk/ukpga/1992/42/section/3",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Orders as to inland waterways etc.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-transport-and-works-act-1992",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "transport-and-works-act-1992-s3",
+    "provision_ref": "s.3",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": false,
+        "provision_key": "planning-act-2008-s4",
+        "raw": "section 4"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Planning Act 2008"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "infrastructure-wales-act-2024",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Infrastructure (Wales) Act 2024"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "harbours-act-1964",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Harbours Act 1964"
       }
     ],
     "status": "in_force"

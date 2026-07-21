@@ -38,13 +38,30 @@ Three moves, composed (they are not rivals):
    says which seeds remain and lets a domain's coverage be cross-checked. It does not replace
    the bloom.
 
-## Why domains converge — the measured finding
+## Why domains converge — the measured finding, and how NOT to misread it
 
-Following an in-domain breadcrumb and measuring (2026-07-21): the raw reference count churns
-(you resolve some, each new section adds its own) but **distinct un-held instruments held flat
-at ~16** — new references pointed back at Acts already in the queue. A domain's
+Following an in-domain breadcrumb and measuring (Water, 2026-07-21): the raw reference count
+churns (you resolve some, each new section adds its own) but **distinct un-held instruments
+held flat at ~16** — new references pointed back at Acts already in the queue. A domain's
 adjacent-instrument footprint is finite and converges. The fan-out lives only in the general
-law shared by every domain, which is why the spine is extracted once:
+law shared by every domain, which is why the spine is extracted once.
+
+**Two ways this is misread (both caught 2026-07-21) — do not repeat:**
+- **Convergence is MEASURED over rounds, never asserted mid-bloom.** Early in a bloom the
+  reference count GROWS (each newly-fetched section adds its own outbound refs — Planning went
+  99 → 121); it flattens only late, once enough is held that new refs point back at held
+  provisions. A rising count means keep going, not "nearly done". Never declare a domain
+  exhausted while the count is still climbing.
+- **The domain is the consenting FABRIC (writ large), not the seed Act.** "Planning" is not
+  the Planning Act 2008 DCO sections alone — it is the whole infrastructure-consenting
+  landscape a project traverses: the DCO regime PLUS the sibling regimes its breadcrumbs reach
+  (Marine and Coastal Access Act 2009, Harbours Act 1964, Transport and Works Act 1992, the
+  NPS regime, special-category-land protection …). Sibling regimes reached by breadcrumb are
+  IN-domain — bloom them; do not defer them as "other domains". Some branches are far larger
+  than others; let the bloom flourish to its own flat point rather than pruning it to the
+  target case. The only thing extracted-once-and-inherited is the truly universal general-law
+  spine (competition/company/insolvency/financial-services), which every unrelated domain
+  hits; a sibling consent regime is not spine.
 
 ## The shared general-law spine — extracted ONCE
 
@@ -78,9 +95,11 @@ compile", and the human verification pass must re-run.
 ## Sequence
 
 1. **Done:** the competition/company-law spine (once).
-2. **In progress:** Planning / infrastructure (Tranche A). Bloom the DCO regime systematically
-   to convergence; the reservoir is the retrodiction against it (#37), not the extraction
-   driver.
+2. **In progress:** Planning / infrastructure WRIT LARGE (Tranche A) — the DCO regime AND the
+   sibling consent regimes its breadcrumbs reach (Marine, Harbours, Transport and Works, the NPS
+   regime, special-category land). Bloom it to its own flat point — do not cut it off at the DCO
+   sections or prune to the reservoir. The reservoir is the retrodiction against the finished
+   fabric (#37), not the extraction driver.
 3. **Then** outward by domain, catalogued against the 115-Act list, the spine reused.
 4. **Frontier (deferred):** convention / prerogative / international obligations — the last of
    these is captured by citing the DOMESTIC implementing instrument (#23; the UK is dualist),

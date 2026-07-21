@@ -4,11 +4,11 @@
 
 Decision #27's breadcrumb method widens the net without sweeping the whole statute book, but it only works if the leads are tracked. This file is derived from the records every time it runs, so a stub that has been closed disappears by itself and the count is a real completeness measure rather than a feeling.
 
-**125 open stub(s).**
+**128 open stub(s).**
 
-25 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
+27 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
 
-## dangling reference (121)
+## dangling reference (123)
 
 - **`competition-act-1998-s18`** — references competition-act-1998-s19, which is not held
 - **`competition-act-1998-s2`** — references competition-act-1998-s3, which is not held
@@ -26,17 +26,19 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`enterprise-act-2002-s109`** — references enterprise-act-2002-s87, which is not held
 - **`enterprise-act-2002-s75`** — references enterprise-act-2002-s73, which is not held
 - **`financial-services-and-markets-act-2000-s167`** — references financial-services-and-markets-act-2000-s313, which is not held
+- **`harbours-act-1964-s14`** — references companies-act-2006-s1159, which is not held
+- **`harbours-act-1964-s14`** — references courts-act-1980-s32, which is not held
+- **`harbours-act-1964-s14`** — references criminal-procedure-scotland-act-1975-s289b, which is not held
 - **`insolvency-act-1986-s124a`** — references companies-act-1985-s448a, which is not held
 - **`insolvency-act-1986-s124a`** — references companies-act-1989-s83, which is not held
 - **`insolvency-act-1986-s124a`** — references criminal-law-consolidation-scotland-act-1995-s28, which is not held
 - **`insolvency-act-1986-s124a`** — references insolvency-act-1986-s165, which is not held
 - **`insolvency-act-1986-s124a`** — references insolvency-act-1986-s262, which is not held
+- **`marine-and-coastal-access-act-2009-s66`** — references marine-and-coastal-access-act-2009-s316, which is not held
 - **`planning-act-2008-s104`** — references marine-and-coastal-access-act-2009-s59, which is not held
 - **`planning-act-2008-s104`** — references planning-act-2008-s60, which is not held
 - **`planning-act-2008-s105`** — references planning-act-2008-s60, which is not held
 - **`planning-act-2008-s120`** — references gas-act-1965-s4, which is not held
-- **`planning-act-2008-s120`** — references harbours-act-1964-s14, which is not held
-- **`planning-act-2008-s120`** — references transport-and-works-act-1992-s1, which is not held
 - **`planning-act-2008-s131`** — references acquisition-of-land-act-1981-s19, which is not held
 - **`planning-act-2008-s131`** — references planning-act-2008-s132, which is not held
 - **`planning-act-2008-s33`** — references ancient-monuments-and-archaeological-areas-act-1979-s2, which is not held
@@ -44,7 +46,6 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`planning-act-2008-s33`** — references electricity-act-1989-s36, which is not held
 - **`planning-act-2008-s33`** — references gas-act-1965-s4, which is not held
 - **`planning-act-2008-s33`** — references green-belt-london-and-home-counties-act-1938-s10, which is not held
-- **`planning-act-2008-s33`** — references harbours-act-1964-s14, which is not held
 - **`planning-act-2008-s33`** — references highways-act-1980-s10, which is not held
 - **`planning-act-2008-s33`** — references new-roads-and-street-works-act-1991-s6, which is not held
 - **`planning-act-2008-s33`** — references pipe-lines-act-1962-s1, which is not held
@@ -56,7 +57,6 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`planning-act-2008-s33`** — references planning-act-2008-s34, which is not held
 - **`planning-act-2008-s33`** — references planning-act-2008-s74, which is not held
 - **`planning-act-2008-s33`** — references planning-act-2008-s8, which is not held
-- **`planning-act-2008-s33`** — references transport-and-works-act-1992-s1, which is not held
 - **`planning-act-2008-s35`** — references planning-act-2008-s35za, which is not held
 - **`planning-act-2008-s42`** — references continental-shelf-act-1964-s1, which is not held
 - **`planning-act-2008-s42`** — references planning-act-2008-s43, which is not held
@@ -68,6 +68,8 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`planning-act-2008-s55`** — references planning-act-2008-s50, which is not held
 - **`planning-act-2008-s87`** — references planning-act-2008-s97, which is not held
 - **`planning-act-2008-s9`** — references planning-act-2008-s13, which is not held
+- **`transport-and-works-act-1992-s1`** — references planning-act-2008-s2, which is not held
+- **`transport-and-works-act-1992-s3`** — references planning-act-2008-s4, which is not held
 - **`water-act-2014-s22`** — references water-act-2014-s17b, which is not held
 - **`water-act-2014-s22`** — references water-act-2014-s94, which is not held
 - **`water-industry-act-1991-s14`** — references water-industry-act-1991-s14b, which is not held
@@ -141,4 +143,8 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 ## orphan instrument (1)
 
 - **`instrument-nps-water-resources`** — National Policy Statement for Water Resources Infrastructure (designated framework) registered with no provisions extracted
+
+## unmined provision (1)
+
+- **`transport-and-works-act-1992-s3`** — Orders as to inland waterways etc. — fetched but no power, duty or veto extracted from it
 

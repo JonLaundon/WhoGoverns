@@ -71,6 +71,20 @@
   },
   {
     "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-harbours-act-1964",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/1964/40",
+    "made_under": null,
+    "notes": "Sibling regime: harbour revision/empowerment orders (s.14). Reached from Planning Act s.120.",
+    "number": "40",
+    "record_status": "extracted",
+    "source_id": "source-act-harbours-act-1964",
+    "status": "in_force",
+    "title": "Harbours Act 1964",
+    "year": 1964
+  },
+  {
+    "enacted_by": "Parliament",
     "instrument_id": "instrument-act-insolvency-act-1986",
     "instrument_type": "act",
     "legislation_url": "https://www.legislation.gov.uk/ukpga/1986/45",
@@ -85,6 +99,20 @@
   },
   {
     "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-marine-and-coastal-access-act-2009",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/2009/23",
+    "made_under": null,
+    "notes": "Sibling regime: the marine licensing system (MMO grants marine licences under Part 4). Reached from Planning Act s.104/s.120 (a DCO offshore).",
+    "number": "23",
+    "record_status": "extracted",
+    "source_id": "source-act-marine-and-coastal-access-act-2009",
+    "status": "in_force",
+    "title": "Marine and Coastal Access Act 2009",
+    "year": 2009
+  },
+  {
+    "enacted_by": "Parliament",
     "instrument_id": "instrument-act-planning-act-2008",
     "instrument_type": "act",
     "legislation_url": "https://www.legislation.gov.uk/ukpga/2008/29",
@@ -96,6 +124,20 @@
     "status": "in_force",
     "title": "Planning Act 2008",
     "year": 2008
+  },
+  {
+    "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-transport-and-works-act-1992",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/1992/42",
+    "made_under": null,
+    "notes": "Sibling regime: orders for railways, tramways and inland waterways (s.1) and works interfering with navigation (s.3). Reached from Planning Act s.120.",
+    "number": "42",
+    "record_status": "extracted",
+    "source_id": "source-act-transport-and-works-act-1992",
+    "status": "in_force",
+    "title": "Transport and Works Act 1992",
+    "year": 1992
   },
   {
     "enacted_by": "Parliament",

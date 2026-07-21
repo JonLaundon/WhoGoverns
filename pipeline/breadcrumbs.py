@@ -128,6 +128,13 @@ CORRECTLY_UNMINED = {
         "PROCEDURAL — the parliamentary requirements for designating an NPS (laid before, approved "
         "by resolution). Paired with the s.7 consultation duty (held); parliamentary procedure is "
         "not a separate operative record.",
+    "marine-and-coastal-access-act-2009-s66":
+        "CONSTITUTIVE — defines 'licensable marine activity'; the operative grant power is s.71 "
+        "(held).",
+    "marine-and-coastal-access-act-2009-s67":
+        "CONSTITUTIVE — exempt activities / scope of the marine licensing regime; confers no power.",
+    # NOTE: transport-and-works-act-1992-s3 (works interfering with navigation) remains an open
+    # lead — a genuine further sibling power, extracted next round. Left unmined on purpose.
 }
 
 
