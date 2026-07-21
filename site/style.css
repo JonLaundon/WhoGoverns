@@ -292,3 +292,13 @@ body.dark .badge.mod-power { color: #7fb4e8; }
 body.dark .badge.mod-duty { color: #6fc98a; }
 body.dark .badge.mod-veto, body.dark .badge.kind-ministerial { color: #e88b80; }
 .filters .hintlet { display: block; font-size: 0.72rem; color: var(--mid); line-height: 1.35; }
+
+/* Derived role / responsibility view (decision #19: a heading over cited records, not data). */
+.detail-body .role { margin: 0 0 14px; padding: 10px 12px; background: var(--panel);
+  border-radius: 4px; border-left: 3px solid #0d7d74; }
+.detail-body .role > summary { cursor: pointer; font-size: 0.92rem; list-style-position: outside; }
+.detail-body .role-fn { font-size: 0.82rem; margin: 8px 0 4px; }
+.detail-body .role-note { font-size: 0.74rem; color: var(--mid); margin: 4px 0 8px; line-height: 1.4; }
+.detail-body .role-areas { margin: 0; padding-left: 16px; font-size: 0.82rem; line-height: 1.5; }
+.detail-body .role-area { font-weight: bold; }
+body.dark .detail-body .role { background: transparent; }

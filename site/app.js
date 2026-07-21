@@ -863,9 +863,70 @@ function operativeCard(r) {
   </article>`;
 }
 
+// Friendly display labels for the cited vocab types — a PRESENTATION rollup only (like the
+// legend's Officials/Departments grouping), not a new vocabulary. Each groups the cited
+// records into a readable "responsibility area"; the records beneath carry the real citations.
+const ROLE_AREA = {
+  licence: "Licensing & authorisation", rulemaking: "Rule-making & licence modification",
+  direction: "Directions", consent: "Consents", approval: "Approvals",
+  enforcement: "Enforcement", sanction: "Penalties & sanctions", inspection: "Inspection",
+  investigation: "Investigation", information_request: "Information-gathering",
+  charging: "Charging & fees", appointment: "Appointments", funding: "Funding",
+  application_to_court: "Court applications / special administration",
+  adjudication: "Adjudication", appeal: "Appeals", designation: "Designation", other: "Other powers",
+  consultation: "Consultation obligations", reporting: "Reporting & transparency",
+  publication: "Publication", maintenance: "Maintenance", provision: "Service provision",
+  review: "Review", cooperation: "Co-operation", equality: "Equality", environmental: "Environmental",
+  financial: "Financial",
+};
+
+// The DERIVED role/responsibility view — the honest answer to "what is this body FOR?".
+// Consistent with decision #19 (no Responsibility record type): this is a heading derived
+// over the cited powers and duties, every line traceable to the records below, NOT new data.
+// Functions shown two ways: SOURCED (functions[], from the DBT list etc.) and DERIVED
+// (functions_derived, computed from the powers, with the evidence count).
+function roleSummaryHtml(d) {
+  const op = d.operative || {};
+  const via = d.office_operative || {};
+  const powers = [].concat(op.powers || [], via.powers || []);
+  const duties = [].concat(op.duties || [], via.duties || []);
+  if (!powers.length && !duties.length) return "";
+
+  const sourced = (d.functions || []).map((f) => (FUNCTION_TYPES[f] || [f])[0]);
+  const derived = op.functions_derived || {};
+  const fnLine = (sourced.length || Object.keys(derived).length)
+    ? `<p class="role-fn"><strong>Function:</strong> ` +
+      (sourced.length ? `${sourced.map(esc).join(", ")} <span class="muted">(sourced)</span>` : "") +
+      Object.entries(derived).map(([f, ids]) =>
+        ` · ${esc((FUNCTION_TYPES[f] || [f])[0])} <span class="muted">(derived from ${ids.length} power${ids.length === 1 ? "" : "s"})</span>`).join("") +
+      `</p>`
+    : "";
+
+  // Group the cited records by their vocab type into readable areas.
+  const areas = {};
+  powers.forEach((p) => (areas[p.type] = areas[p.type] || []).push(p));
+  duties.forEach((x) => (areas[x.type] = areas[x.type] || []).push(x));
+  const order = Object.keys(ROLE_AREA);
+  const rows = Object.keys(areas)
+    .sort((a, b) => order.indexOf(a) - order.indexOf(b))
+    .map((t) => `<li><span class="role-area">${esc(ROLE_AREA[t] || t)}</span>` +
+      `<span class="muted"> — ${areas[t].map((r) => esc(r.label)).join("; ")}</span></li>`)
+    .join("");
+
+  return `<details class="role" open><summary><strong>Statutory role</strong>
+      <span class="muted">— derived from ${powers.length} power${powers.length === 1 ? "" : "s"} and
+      ${duties.length} dut${duties.length === 1 ? "y" : "ies"}</span></summary>
+    ${fnLine}
+    <p class="role-note">Responsibility areas below are a <em>derived</em> grouping of the cited
+      records — not a separate legal category. We record no "responsibility" type; a body's
+      responsibilities decompose into the powers and duties it actually holds.</p>
+    <ul class="role-areas">${rows}</ul>
+  </details>`;
+}
+
 // The Powers tab. Filter pills follow the precedent's pattern, but over OUR three cited
 // primitives (Power / Duty / Veto) rather than its four — we decline Function and
-// Responsibility, which are the soft, un-citable descriptors.
+// Responsibility as RECORD TYPES; the role view above derives them from the cited records.
 function powersTabHtml(d) {
   const own = d.operative || {};
   const via = d.office_operative || {};
@@ -890,7 +951,8 @@ function powersTabHtml(d) {
        officeholders hosted here.</p>`
       + viaAll.map((r) => operativeCard(r)).join("")
     : "";
-  return POWERS_CAVEAT + (all.length ? `<div class="op-pills">${pills}</div>${cards}` : "") + viaCards;
+  return POWERS_CAVEAT + roleSummaryHtml(d)
+    + (all.length ? `<div class="op-pills">${pills}</div>${cards}` : "") + viaCards;
 }
 
 // Cite the record's ACTUAL sources (resolved via the graph's source index), not a fixed
