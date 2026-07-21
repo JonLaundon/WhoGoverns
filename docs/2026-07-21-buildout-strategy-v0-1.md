@@ -93,6 +93,47 @@ distinct-instrument count has gone flat across a bloom round. "Complete" always 
 4. Retrodiction remains the completeness *audit* at the spiral exits (the decision-first half;
    the breadcrumb register is the automatic half).
 
+## The DATA is systematic; the CHAIN is goal-directed — never the reverse (added 2026-07-21)
+
+A correction the sponsor surfaced after the first planning extraction, worth stating as a
+hard rule because it is easy to slip.
+
+- **Domain EXTRACTION is systematic and decision-agnostic.** A domain is bloomed from its
+  seed instrument's own operative structure plus its breadcrumbs, to breadcrumb-exhaustion —
+  NOT scoped to the provisions one target case happens to need. The water tranche's value (the
+  8/8 strength audit, the s.16 breadcrumb, the licence-veto chain) came *because* the Act's
+  structure drove the extraction and surfaced gaps no goal could have predicted. Letting a
+  target case pick the sections is guesswork wearing a systematic coat.
+- **CHAIN assembly (a DeliveryChain / fusion / retrodiction) is goal-directed BY NATURE** — it
+  traces one decision through the register — but it runs *against a completed domain*, as the
+  `/analysis` step AFTER extraction, and is the completeness AUDIT, not the extraction driver.
+- **The failure mode** (caught 2026-07-21): extracting the "reservoir DCO decision-spine" — a
+  goal-directed slice — and calling it the planning bloom. The records were valid (the DCO
+  regime's blocker-bearing core, within #11) but the STOPPING POINT and framing were driven by
+  the reservoir, not the domain. Correct order: bloom the planning/DCO regime systematically
+  (its examination, designation, legal-challenge and requirements provisions; follow the NPS
+  and other-infrastructure breadcrumbs) to a flat instrument count, THEN assemble the reservoir
+  chain against the complete domain as the retrodiction.
+- **One-line test:** if you can't name the next provision to extract from the *domain's own
+  structure or a breadcrumb* — only from "what my target case needs" — you have slipped into
+  goal-directed extraction. Stop and return to the bloom.
+
+## Complete-body presentation gate (added 2026-07-21, sponsor)
+
+The "complete body" card — the derived role + responsibility view (functions sourced and
+derived; responsibility areas grouped from the cited powers/duties, per decision #19) — is
+**built for a body only when that body's breadcrumb is exhausted** (its first-pass domain
+coverage is complete on the metric above). Presenting a body as "complete" before then would
+be the false-assurance failure the register exists to prevent.
+
+**Guard (provisional-by-construction):** the derived view is *computed*, not authored — it
+recomputes in `compile.py` from whatever records exist. So when a later cross-domain breadcrumb
+surfaces new powers for that body (e.g. the CA1998 s.54 concurrency arriving on Ofwat from the
+competition spine), the view updates automatically — but the human verification pass must
+re-check it, because a new power can change the derived functions and responsibility areas.
+The card therefore carries its `Compiled …` timestamp, and "complete" means "complete as at
+this compile", not "closed".
+
 ## Open (sponsor)
 
 - **#34** (duplication/conflict flag) rides on this: once multiple domains share the spine, the
