@@ -3,13 +3,13 @@
     "bodies": 685,
     "budget_records": 1433,
     "duties": 19,
-    "instruments": 16,
+    "instruments": 17,
     "offices": 164,
     "person_roles": 181,
-    "powers": 45,
-    "provisions": 98,
+    "powers": 46,
+    "provisions": 99,
     "relationships": 639,
-    "sources": 25,
+    "sources": 26,
     "staffing_records": 3884,
     "vetoes": 12
   },
@@ -8096,7 +8096,7 @@
       }
     }
   ],
-  "generated": "2026-07-21T20:35:34",
+  "generated": "2026-07-21T20:38:47",
   "nodes": [
     {
       "data": {
@@ -15278,7 +15278,45 @@
         "kind": "body",
         "label": "Department for Energy Security and Net Zero",
         "needs_review": false,
-        "op_total": 0,
+        "op_total": 1,
+        "operative": {
+          "counts": {
+            "duties": 0,
+            "powers": 1,
+            "vetoes": 0
+          },
+          "duties": [],
+          "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.4(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1965/36/section/4"
+              },
+              "confidence": 0.84,
+              "constraints": [
+                "Subject to the Act's provisions; regard to safety and water protection."
+              ],
+              "holder_type": "body",
+              "id": "power-sos-energy-gas1965-s4",
+              "kind": "power",
+              "label": "Make a gas-storage authorisation order",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "HOLDER-RESOLUTION: 'the Minister' is the SoS for Energy Security and Net Zero; recorded on the DESNZ body (no clean energy-SoS office node yet), like the s.124A Business-SoS case. A candidate office when the energy tranche is built.",
+              "office_id": null,
+              "outstanding_effects": true,
+              "provision_key": "gas-act-1965-s4",
+              "since": 1965,
+              "source_id": "source-act-gas-act-1965",
+              "summary": "The Minister may make a storage authorisation order authorising a public gas transporter to store gas in underground porous strata, having regard to public safety and the protection of water resources (Gas Act 1965 s.4). A consent-order sibling of the DCO/TWA/harbour orders, reached from Planning Act s.120.",
+              "type": "consent_order",
+              "verification_status": "unverified"
+            }
+          ],
+          "vetoes": []
+        },
         "other_names": [],
         "parent_body_id": null,
         "parent_body_ids": [],
@@ -42805,6 +42843,11 @@
       "publisher": "legislation.gov.uk (The National Archives)",
       "title": "Financial Services and Markets Act 2000",
       "url": "https://www.legislation.gov.uk/ukpga/2000/8"
+    },
+    "source-act-gas-act-1965": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Gas Act 1965",
+      "url": "https://www.legislation.gov.uk/ukpga/1965/36"
     },
     "source-act-harbours-act-1964": {
       "publisher": "legislation.gov.uk (The National Archives)",

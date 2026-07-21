@@ -1729,6 +1729,46 @@
     }
   },
   {
+    "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
+    "citation": {
+      "provision": "s.4(1)",
+      "quote": null,
+      "url": "https://www.legislation.gov.uk/ukpga/1965/36/section/4"
+    },
+    "constraints": [
+      "Subject to the Act's provisions; regard to safety and water protection."
+    ],
+    "derived_from_record_id": null,
+    "extraction": {
+      "confidence": 0.84,
+      "extracted_by": "llm",
+      "extraction_run_id": "run-2026-07-21-gas-sibling",
+      "requires_review": true
+    },
+    "holder_type": "body",
+    "legal_effect": "may",
+    "legal_status": "current",
+    "modality": "power",
+    "notes": "HOLDER-RESOLUTION: 'the Minister' is the SoS for Energy Security and Net Zero; recorded on the DESNZ body (no clean energy-SoS office node yet), like the s.124A Business-SoS case. A candidate office when the energy tranche is built.",
+    "office_id": null,
+    "power_basis": "statutory",
+    "power_id": "power-sos-energy-gas1965-s4",
+    "power_label": "Make a gas-storage authorisation order",
+    "power_type": "consent_order",
+    "provision_key": "gas-act-1965-s4",
+    "record_status": "extracted",
+    "related_body_ids": [],
+    "related_power_ids": [],
+    "source_id": "source-act-gas-act-1965",
+    "summary": "The Minister may make a storage authorisation order authorising a public gas transporter to store gas in underground porous strata, having regard to public safety and the protection of water resources (Gas Act 1965 s.4). A consent-order sibling of the DCO/TWA/harbour orders, reached from Planning Act s.120.",
+    "verification": {
+      "verification_notes": null,
+      "verification_status": "unverified",
+      "verified_by": null,
+      "verified_date": null
+    }
+  },
+  {
     "body_id": "uk-state-body-department-for-transport",
     "citation": {
       "provision": "s.14(1)",

@@ -71,6 +71,20 @@
   },
   {
     "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-gas-act-1965",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/1965/36",
+    "made_under": null,
+    "notes": "Sibling regime: underground gas storage authorisation orders (s.4). Reached from Planning Act s.120.",
+    "number": "36",
+    "record_status": "extracted",
+    "source_id": "source-act-gas-act-1965",
+    "status": "in_force",
+    "title": "Gas Act 1965",
+    "year": 1965
+  },
+  {
+    "enacted_by": "Parliament",
     "instrument_id": "instrument-act-harbours-act-1964",
     "instrument_type": "act",
     "legislation_url": "https://www.legislation.gov.uk/ukpga/1964/40",

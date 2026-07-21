@@ -322,6 +322,97 @@
   },
   {
     "citation": {
+      "content_hash": "4e83885a0a5ca7c4",
+      "url": "https://www.legislation.gov.uk/ukpga/1965/36/section/4",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Storage authorisation orders.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-gas-act-1965",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Planning (Consequential Provisions) (Wales) Act 2026 Sch. 2 para. 55(a) (words inserted); Planning (Consequential Provisions) (Wales) Act 2026 Sch. 2 para. 55(b) (words inserted); Planning (Consequential Provisions) (Wales) Act 2026 Sch. 2 para. 55(c) (words inserted). Consolidated text may lag the law in force.",
+    "provision_key": "gas-act-1965-s4",
+    "provision_ref": "s.4",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": false,
+        "provision_key": "planning-act-2008-s17",
+        "raw": "section 17(2)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "gas-act-1965",
+        "internal": true,
+        "provision_key": "gas-act-1965-s33",
+        "raw": "section 33(2)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": false,
+        "provision_key": "planning-act-2008-s120",
+        "raw": "section 120(9)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "water-resources-act-1963",
+        "internal": false,
+        "provision_key": "water-resources-act-1963-s72",
+        "raw": "Section 72"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "gas-act-1965",
+        "internal": true,
+        "provision_key": "gas-act-1965-s90",
+        "raw": "section 90"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "gas-act-1965",
+        "internal": true,
+        "provision_key": "gas-act-1965-s57",
+        "raw": "section 57"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Planning Act 2008"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "water-resources-act-1963",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Water Resources Act 1963"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "town-and-country-planning-act-1990",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Town and Country Planning Act 1990"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "town-and-country-planning-scotland-act-1997",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Town and Country Planning (Scotland) Act 1997"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "0251f952ad182540",
       "url": "https://www.legislation.gov.uk/ukpga/1964/40/section/14",
       "version_date": "2026-07-21"
@@ -729,7 +820,7 @@
         "raw": "section 14"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "gas-act-1965",
         "internal": false,
         "provision_key": "gas-act-1965-s4",
@@ -750,7 +841,7 @@
         "raw": "Harbours Act 1964"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "gas-act-1965",
         "internal": false,
         "provision_key": null,
@@ -909,7 +1000,7 @@
         "raw": "section 1(1)"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "gas-act-1965",
         "internal": false,
         "provision_key": "gas-act-1965-s4",
@@ -1035,7 +1126,7 @@
         "raw": "Pipe-lines Act 1962"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "gas-act-1965",
         "internal": false,
         "provision_key": null,
