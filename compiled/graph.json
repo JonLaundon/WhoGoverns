@@ -4,8 +4,8 @@
     "budget_records": 1433,
     "duties": 16,
     "instruments": 6,
-    "offices": 159,
-    "person_roles": 159,
+    "offices": 164,
+    "person_roles": 181,
     "powers": 31,
     "provisions": 65,
     "relationships": 639,
@@ -256,18 +256,26 @@
     },
     {
       "data": {
-        "id": "hostedge-office-minister-for-women-and-equalities-4",
+        "id": "hostedge-office-minister-for-intergovernmental-relations",
         "kind": "office_of",
-        "source": "office-minister-for-women-and-equalities-4",
-        "target": "uk-state-body-department-for-education"
+        "source": "office-minister-for-intergovernmental-relations",
+        "target": "uk-state-body-cabinet-office"
       }
     },
     {
       "data": {
-        "id": "hostedge-office-minister-of-state-174",
+        "id": "hostedge-office-minister-for-women-and-equalities-3",
         "kind": "office_of",
-        "source": "office-minister-of-state-174",
-        "target": "uk-state-body-cabinet-office"
+        "source": "office-minister-for-women-and-equalities-3",
+        "target": "uk-state-body-ministry-of-housing-communities-local-government"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-minister-for-women-and-equalities-4",
+        "kind": "office_of",
+        "source": "office-minister-for-women-and-equalities-4",
+        "target": "uk-state-body-department-for-education"
       }
     },
     {
@@ -292,14 +300,6 @@
         "kind": "office_of",
         "source": "office-minister-of-state-180",
         "target": "uk-state-body-ministry-of-justice"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-minister-of-state-182",
-        "kind": "office_of",
-        "source": "office-minister-of-state-182",
-        "target": "uk-state-body-department-of-health-and-social-care"
       }
     },
     {
@@ -384,22 +384,6 @@
     },
     {
       "data": {
-        "id": "hostedge-office-minister-of-state-205",
-        "kind": "office_of",
-        "source": "office-minister-of-state-205",
-        "target": "uk-state-body-home-office"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-minister-of-state-206",
-        "kind": "office_of",
-        "source": "office-minister-of-state-206",
-        "target": "uk-state-body-department-for-business-and-trade"
-      }
-    },
-    {
-      "data": {
         "id": "hostedge-office-minister-of-state-207",
         "kind": "office_of",
         "source": "office-minister-of-state-207",
@@ -432,6 +416,14 @@
     },
     {
       "data": {
+        "id": "hostedge-office-minister-of-state-minister-for-artificial-intelligence",
+        "kind": "office_of",
+        "source": "office-minister-of-state-minister-for-artificial-intelligence",
+        "target": "uk-state-body-cabinet-office"
+      }
+    },
+    {
+      "data": {
         "id": "hostedge-office-minister-of-state-minister-for-energy-2",
         "kind": "office_of",
         "source": "office-minister-of-state-minister-for-energy-2",
@@ -444,6 +436,14 @@
         "kind": "office_of",
         "source": "office-minister-of-state-minister-for-energy-security-and-net-zero",
         "target": "uk-state-body-department-for-energy-security-and-net-zero"
+      }
+    },
+    {
+      "data": {
+        "id": "hostedge-office-minister-of-state-minister-for-intergovernmental-relations-and-european-relations",
+        "kind": "office_of",
+        "source": "office-minister-of-state-minister-for-intergovernmental-relations-and-european-relations",
+        "target": "uk-state-body-cabinet-office"
       }
     },
     {
@@ -616,14 +616,6 @@
     },
     {
       "data": {
-        "id": "hostedge-office-parliamentary-under-secretary-of-state-276",
-        "kind": "office_of",
-        "source": "office-parliamentary-under-secretary-of-state-276",
-        "target": "uk-state-body-foreign-commonwealth-development-office"
-      }
-    },
-    {
-      "data": {
         "id": "hostedge-office-parliamentary-under-secretary-of-state-278",
         "kind": "office_of",
         "source": "office-parliamentary-under-secretary-of-state-278",
@@ -764,14 +756,6 @@
         "kind": "office_of",
         "source": "office-parliamentary-under-secretary-of-state-313",
         "target": "uk-state-body-ministry-of-housing-communities-local-government"
-      }
-    },
-    {
-      "data": {
-        "id": "hostedge-office-parliamentary-under-secretary-of-state-minister-for-ai-and-online-safety",
-        "kind": "office_of",
-        "source": "office-parliamentary-under-secretary-of-state-minister-for-ai-and-online-safety",
-        "target": "uk-state-body-department-for-science-innovation-and-technology"
       }
     },
     {
@@ -1040,10 +1024,18 @@
     },
     {
       "data": {
+        "id": "hostedge-office-secretary-of-state-for-justice",
+        "kind": "office_of",
+        "source": "office-secretary-of-state-for-justice",
+        "target": "uk-state-body-home-office"
+      }
+    },
+    {
+      "data": {
         "id": "hostedge-office-secretary-of-state-for-northern-ireland",
         "kind": "office_of",
         "source": "office-secretary-of-state-for-northern-ireland",
-        "target": "uk-state-body-northern-ireland-office"
+        "target": "uk-state-body-department-for-business-and-trade"
       }
     },
     {
@@ -1080,18 +1072,18 @@
     },
     {
       "data": {
-        "id": "hostedge-office-secretary-of-state-for-work-and-pensions",
+        "id": "hostedge-office-secretary-of-state-for-wales",
         "kind": "office_of",
-        "source": "office-secretary-of-state-for-work-and-pensions",
-        "target": "uk-state-body-department-for-work-pensions"
+        "source": "office-secretary-of-state-for-wales",
+        "target": "uk-state-body-department-of-health-and-social-care"
       }
     },
     {
       "data": {
-        "id": "hostedge-office-solicitor-general",
+        "id": "hostedge-office-secretary-of-state-for-work-and-pensions",
         "kind": "office_of",
-        "source": "office-solicitor-general",
-        "target": "uk-state-body-attorney-generals-office"
+        "source": "office-secretary-of-state-for-work-and-pensions",
+        "target": "uk-state-body-department-for-work-pensions"
       }
     },
     {
@@ -7001,6 +6993,15 @@
     {
       "data": {
         "derived": true,
+        "id": "leads-office-prime-minister-office-secretary-of-state-for-justice",
+        "kind": "leads",
+        "source": "office-prime-minister",
+        "target": "office-secretary-of-state-for-justice"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
         "id": "leads-office-prime-minister-office-secretary-of-state-for-northern-ireland",
         "kind": "leads",
         "source": "office-prime-minister",
@@ -7041,6 +7042,15 @@
         "kind": "leads",
         "source": "office-prime-minister",
         "target": "office-secretary-of-state-for-transport"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-prime-minister-office-secretary-of-state-for-wales",
+        "kind": "leads",
+        "source": "office-prime-minister",
+        "target": "office-secretary-of-state-for-wales"
       }
     },
     {
@@ -7100,28 +7110,37 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-attorney-general-office-solicitor-general",
-        "kind": "leads",
-        "source": "office-attorney-general",
-        "target": "office-solicitor-general"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-chancellor-of-the-duchy-of-lancaster-office-minister-of-state-174",
+        "id": "leads-office-chancellor-of-the-duchy-of-lancaster-office-minister-of-state-minister-for-artificial-intelligence",
         "kind": "leads",
         "source": "office-chancellor-of-the-duchy-of-lancaster",
-        "target": "office-minister-of-state-174"
+        "target": "office-minister-of-state-minister-for-artificial-intelligence"
       }
     },
     {
       "data": {
         "derived": true,
-        "id": "leads-office-paymaster-general-office-minister-of-state-174",
+        "id": "leads-office-paymaster-general-office-minister-of-state-minister-for-artificial-intelligence",
         "kind": "leads",
         "source": "office-paymaster-general",
-        "target": "office-minister-of-state-174"
+        "target": "office-minister-of-state-minister-for-artificial-intelligence"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-chancellor-of-the-duchy-of-lancaster-office-minister-of-state-minister-for-intergovernmental-relations-and-european-relations",
+        "kind": "leads",
+        "source": "office-chancellor-of-the-duchy-of-lancaster",
+        "target": "office-minister-of-state-minister-for-intergovernmental-relations-and-european-relations"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-paymaster-general-office-minister-of-state-minister-for-intergovernmental-relations-and-european-relations",
+        "kind": "leads",
+        "source": "office-paymaster-general",
+        "target": "office-minister-of-state-minister-for-intergovernmental-relations-and-european-relations"
       }
     },
     {
@@ -7316,60 +7335,6 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-secretary-of-state-for-education-office-minister-for-women-and-equalities-4",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-education",
-        "target": "office-minister-for-women-and-equalities-4"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-education-office-minister-of-state-187",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-education",
-        "target": "office-minister-of-state-187"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-education-office-minister-of-state-192",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-education",
-        "target": "office-minister-of-state-192"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-education-office-parliamentary-under-secretary-of-state-256",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-education",
-        "target": "office-parliamentary-under-secretary-of-state-256"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-education-office-parliamentary-under-secretary-of-state-257",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-education",
-        "target": "office-parliamentary-under-secretary-of-state-257"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-for-education-office-parliamentary-under-secretary-of-state-283",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-education",
-        "target": "office-parliamentary-under-secretary-of-state-283"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
         "id": "leads-office-secretary-of-state-for-housing-communities-local-government-office-minister-of-state-176",
         "kind": "leads",
         "source": "office-secretary-of-state-for-housing-communities-local-government",
@@ -7424,6 +7389,60 @@
     {
       "data": {
         "derived": true,
+        "id": "leads-office-secretary-of-state-for-education-office-minister-for-women-and-equalities-4",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-education",
+        "target": "office-minister-for-women-and-equalities-4"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-education-office-minister-of-state-187",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-education",
+        "target": "office-minister-of-state-187"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-education-office-minister-of-state-192",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-education",
+        "target": "office-minister-of-state-192"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-education-office-parliamentary-under-secretary-of-state-256",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-education",
+        "target": "office-parliamentary-under-secretary-of-state-256"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-education-office-parliamentary-under-secretary-of-state-257",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-education",
+        "target": "office-parliamentary-under-secretary-of-state-257"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-education-office-parliamentary-under-secretary-of-state-283",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-education",
+        "target": "office-parliamentary-under-secretary-of-state-283"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
         "id": "leads-office-secretary-of-state-for-foreign-commonwealth-and-development-affairs-office-minister-of-state-178",
         "kind": "leads",
         "source": "office-secretary-of-state-for-foreign-commonwealth-and-development-affairs",
@@ -7442,15 +7461,6 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-secretary-of-state-for-foreign-commonwealth-and-development-affairs-office-parliamentary-under-secretary-of-state-276",
-        "kind": "leads",
-        "source": "office-secretary-of-state-for-foreign-commonwealth-and-development-affairs",
-        "target": "office-parliamentary-under-secretary-of-state-276"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
         "id": "leads-office-secretary-of-state-for-foreign-commonwealth-and-development-affairs-office-parliamentary-under-secretary-of-state-290",
         "kind": "leads",
         "source": "office-secretary-of-state-for-foreign-commonwealth-and-development-affairs",
@@ -7460,18 +7470,18 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-secretary-of-state-for-health-and-social-care-office-minister-of-state-182",
+        "id": "leads-office-secretary-of-state-for-health-and-social-care-office-minister-of-state-188",
         "kind": "leads",
         "source": "office-secretary-of-state-for-health-and-social-care",
-        "target": "office-minister-of-state-182"
+        "target": "office-minister-of-state-188"
       }
     },
     {
       "data": {
         "derived": true,
-        "id": "leads-office-secretary-of-state-for-health-and-social-care-office-minister-of-state-188",
+        "id": "leads-office-secretary-of-state-for-wales-office-minister-of-state-188",
         "kind": "leads",
-        "source": "office-secretary-of-state-for-health-and-social-care",
+        "source": "office-secretary-of-state-for-wales",
         "target": "office-minister-of-state-188"
       }
     },
@@ -7487,6 +7497,15 @@
     {
       "data": {
         "derived": true,
+        "id": "leads-office-secretary-of-state-for-wales-office-parliamentary-under-secretary-of-state-255",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-wales",
+        "target": "office-parliamentary-under-secretary-of-state-255"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
         "id": "leads-office-secretary-of-state-for-health-and-social-care-office-parliamentary-under-secretary-of-state-306",
         "kind": "leads",
         "source": "office-secretary-of-state-for-health-and-social-care",
@@ -7496,9 +7515,27 @@
     {
       "data": {
         "derived": true,
+        "id": "leads-office-secretary-of-state-for-wales-office-parliamentary-under-secretary-of-state-306",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-wales",
+        "target": "office-parliamentary-under-secretary-of-state-306"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
         "id": "leads-office-secretary-of-state-for-health-and-social-care-office-parliamentary-under-secretary-of-state-310",
         "kind": "leads",
         "source": "office-secretary-of-state-for-health-and-social-care",
+        "target": "office-parliamentary-under-secretary-of-state-310"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-wales-office-parliamentary-under-secretary-of-state-310",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-wales",
         "target": "office-parliamentary-under-secretary-of-state-310"
       }
     },
@@ -7541,10 +7578,28 @@
     {
       "data": {
         "derived": true,
+        "id": "leads-office-secretary-of-state-for-justice-office-minister-of-state-195",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-justice",
+        "target": "office-minister-of-state-195"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
         "id": "leads-office-secretary-of-state-for-the-home-department-office-minister-of-state-195",
         "kind": "leads",
         "source": "office-secretary-of-state-for-the-home-department",
         "target": "office-minister-of-state-195"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-justice-office-minister-of-state-204",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-justice",
+        "target": "office-minister-of-state-204"
       }
     },
     {
@@ -7559,10 +7614,10 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-secretary-of-state-for-the-home-department-office-minister-of-state-205",
+        "id": "leads-office-secretary-of-state-for-justice-office-parliamentary-under-secretary-of-state-282",
         "kind": "leads",
-        "source": "office-secretary-of-state-for-the-home-department",
-        "target": "office-minister-of-state-205"
+        "source": "office-secretary-of-state-for-justice",
+        "target": "office-parliamentary-under-secretary-of-state-282"
       }
     },
     {
@@ -7572,6 +7627,15 @@
         "kind": "leads",
         "source": "office-secretary-of-state-for-the-home-department",
         "target": "office-parliamentary-under-secretary-of-state-282"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-justice-office-parliamentary-under-secretary-of-state-308",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-justice",
+        "target": "office-parliamentary-under-secretary-of-state-308"
       }
     },
     {
@@ -7617,60 +7681,6 @@
         "kind": "leads",
         "source": "office-secretary-of-state-for-work-and-pensions",
         "target": "office-parliamentary-under-secretary-of-state-260"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-2-office-minister-of-state-206",
-        "kind": "leads",
-        "source": "office-secretary-of-state-2",
-        "target": "office-minister-of-state-206"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-2-office-minister-of-state-minister-for-investment-2",
-        "kind": "leads",
-        "source": "office-secretary-of-state-2",
-        "target": "office-minister-of-state-minister-for-investment-2"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-2-office-parliamentary-under-secretary-of-state-292",
-        "kind": "leads",
-        "source": "office-secretary-of-state-2",
-        "target": "office-parliamentary-under-secretary-of-state-292"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-2-office-parliamentary-under-secretary-of-state-294",
-        "kind": "leads",
-        "source": "office-secretary-of-state-2",
-        "target": "office-parliamentary-under-secretary-of-state-294"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-2-office-parliamentary-under-secretary-of-state-312",
-        "kind": "leads",
-        "source": "office-secretary-of-state-2",
-        "target": "office-parliamentary-under-secretary-of-state-312"
-      }
-    },
-    {
-      "data": {
-        "derived": true,
-        "id": "leads-office-secretary-of-state-2-office-parliamentary-under-secretary-of-state-minister-for-industry",
-        "kind": "leads",
-        "source": "office-secretary-of-state-2",
-        "target": "office-parliamentary-under-secretary-of-state-minister-for-industry"
       }
     },
     {
@@ -7784,19 +7794,100 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-secretary-of-state-for-scotland-office-parliamentary-under-secretary-of-state-273",
+        "id": "leads-office-secretary-of-state-2-office-minister-of-state-minister-for-investment-2",
         "kind": "leads",
-        "source": "office-secretary-of-state-for-scotland",
-        "target": "office-parliamentary-under-secretary-of-state-273"
+        "source": "office-secretary-of-state-2",
+        "target": "office-minister-of-state-minister-for-investment-2"
       }
     },
     {
       "data": {
         "derived": true,
-        "id": "leads-office-secretary-of-state-for-northern-ireland-office-parliamentary-under-secretary-of-state-297",
+        "id": "leads-office-secretary-of-state-for-northern-ireland-office-minister-of-state-minister-for-investment-2",
         "kind": "leads",
         "source": "office-secretary-of-state-for-northern-ireland",
-        "target": "office-parliamentary-under-secretary-of-state-297"
+        "target": "office-minister-of-state-minister-for-investment-2"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-2-office-parliamentary-under-secretary-of-state-292",
+        "kind": "leads",
+        "source": "office-secretary-of-state-2",
+        "target": "office-parliamentary-under-secretary-of-state-292"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-northern-ireland-office-parliamentary-under-secretary-of-state-292",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-northern-ireland",
+        "target": "office-parliamentary-under-secretary-of-state-292"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-2-office-parliamentary-under-secretary-of-state-294",
+        "kind": "leads",
+        "source": "office-secretary-of-state-2",
+        "target": "office-parliamentary-under-secretary-of-state-294"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-northern-ireland-office-parliamentary-under-secretary-of-state-294",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-northern-ireland",
+        "target": "office-parliamentary-under-secretary-of-state-294"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-2-office-parliamentary-under-secretary-of-state-312",
+        "kind": "leads",
+        "source": "office-secretary-of-state-2",
+        "target": "office-parliamentary-under-secretary-of-state-312"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-northern-ireland-office-parliamentary-under-secretary-of-state-312",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-northern-ireland",
+        "target": "office-parliamentary-under-secretary-of-state-312"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-2-office-parliamentary-under-secretary-of-state-minister-for-industry",
+        "kind": "leads",
+        "source": "office-secretary-of-state-2",
+        "target": "office-parliamentary-under-secretary-of-state-minister-for-industry"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-northern-ireland-office-parliamentary-under-secretary-of-state-minister-for-industry",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-northern-ireland",
+        "target": "office-parliamentary-under-secretary-of-state-minister-for-industry"
+      }
+    },
+    {
+      "data": {
+        "derived": true,
+        "id": "leads-office-secretary-of-state-for-scotland-office-parliamentary-under-secretary-of-state-273",
+        "kind": "leads",
+        "source": "office-secretary-of-state-for-scotland",
+        "target": "office-parliamentary-under-secretary-of-state-273"
       }
     },
     {
@@ -7811,19 +7902,19 @@
     {
       "data": {
         "derived": true,
-        "id": "leads-office-secretary-of-state-for-science-innovation-and-technology-office-parliamentary-under-secretary-of-state-minister-for-ai-and-online-safety",
+        "id": "leads-office-prime-minister-office-hm-advocate-general-for-scotland",
         "kind": "leads",
-        "source": "office-secretary-of-state-for-science-innovation-and-technology",
-        "target": "office-parliamentary-under-secretary-of-state-minister-for-ai-and-online-safety"
+        "source": "office-prime-minister",
+        "target": "office-hm-advocate-general-for-scotland"
       }
     },
     {
       "data": {
         "derived": true,
-        "id": "leads-office-prime-minister-office-hm-advocate-general-for-scotland",
+        "id": "leads-office-prime-minister-office-parliamentary-under-secretary-of-state-297",
         "kind": "leads",
         "source": "office-prime-minister",
-        "target": "office-hm-advocate-general-for-scotland"
+        "target": "office-parliamentary-under-secretary-of-state-297"
       }
     },
     {
@@ -7991,7 +8082,7 @@
       }
     }
   ],
-  "generated": "2026-07-21T12:42:45",
+  "generated": "2026-07-21T12:55:34",
   "nodes": [
     {
       "data": {
@@ -39507,10 +39598,12 @@
     },
     {
       "data": {
-        "also_holds": [],
+        "also_holds": [
+          "Solicitor General"
+        ],
         "body_id": "uk-state-body-attorney-generals-office",
-        "holder": "The Rt Hon Lord Hermer KC",
-        "holder_since": "2024-07-05",
+        "holder": "The Rt Hon Ellie Reeves KC MP",
+        "holder_since": "2026-07-20",
         "id": "office-attorney-general",
         "kind": "office",
         "label": "Attorney General",
@@ -39521,12 +39614,12 @@
     {
       "data": {
         "also_holds": [
-          "Minister for Intergovernmental Relations",
-          "Chief Secretary to the Prime Minister"
+          "First Secretary of State",
+          "Minister for the Cabinet Office"
         ],
         "body_id": "uk-state-body-cabinet-office",
-        "holder": "The Rt Hon Darren Jones MP",
-        "holder_since": "2025-09-05",
+        "holder": "The Rt Hon Louise Haigh MP",
+        "holder_since": "2026-07-20",
         "id": "office-chancellor-of-the-duchy-of-lancaster",
         "kind": "office",
         "label": "Chancellor of the Duchy of Lancaster",
@@ -39538,8 +39631,8 @@
       "data": {
         "also_holds": [],
         "body_id": "uk-state-body-hm-treasury",
-        "holder": "The Rt Hon Rachel Reeves MP",
-        "holder_since": "2024-07-05",
+        "holder": "The Rt Hon John Healey MP",
+        "holder_since": "2026-07-20",
         "id": "office-chancellor-of-the-exchequer",
         "kind": "office",
         "label": "Chancellor of the Exchequer",
@@ -39551,8 +39644,8 @@
       "data": {
         "also_holds": [],
         "body_id": "uk-state-body-hm-treasury",
-        "holder": "Lucy Rigby KC MP",
-        "holder_since": "2026-05-14",
+        "holder": "The Rt Hon Emma Reynolds MP",
+        "holder_since": "2026-07-21",
         "id": "office-chief-secretary-to-the-treasury",
         "kind": "office",
         "label": "Chief Secretary to the Treasury",
@@ -39562,9 +39655,7 @@
     },
     {
       "data": {
-        "also_holds": [
-          "Lord Chancellor and Secretary of State for Justice"
-        ],
+        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-justice",
         "holder": "The Rt Hon David Lammy MP",
         "holder_since": "2025-09-05",
@@ -39896,6 +39987,34 @@
     {
       "data": {
         "also_holds": [
+          "Chief Secretary to the Prime Minister"
+        ],
+        "body_id": "uk-state-body-cabinet-office",
+        "holder": "The Rt Hon Darren Jones MP",
+        "holder_since": "2025-09-06",
+        "id": "office-minister-for-intergovernmental-relations",
+        "kind": "office",
+        "label": "Minister for Intergovernmental Relations",
+        "office_type": "other",
+        "op_total": 0
+      }
+    },
+    {
+      "data": {
+        "also_holds": [],
+        "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
+        "holder": "The Rt Hon Bridget Phillipson MP",
+        "holder_since": "2024-07-08",
+        "id": "office-minister-for-women-and-equalities-3",
+        "kind": "office",
+        "label": "Minister for Women and Equalities",
+        "office_type": "other",
+        "op_total": 0
+      }
+    },
+    {
+      "data": {
+        "also_holds": [
           "Minister of State (Minister for Skills)"
         ],
         "body_id": "uk-state-body-department-for-education",
@@ -39904,21 +40023,6 @@
         "id": "office-minister-for-women-and-equalities-4",
         "kind": "office",
         "label": "Minister of State (Minister for Women and Equalities)",
-        "office_type": "junior_minister",
-        "op_total": 0
-      }
-    },
-    {
-      "data": {
-        "also_holds": [
-          "Minister of State"
-        ],
-        "body_id": "uk-state-body-cabinet-office",
-        "holder": "Dame Angela Eagle DBE MP",
-        "holder_since": "2026-06-12",
-        "id": "office-minister-of-state-174",
-        "kind": "office",
-        "label": "Minister of State (Minister for Security)",
         "office_type": "junior_minister",
         "op_total": 0
       }
@@ -39958,19 +40062,6 @@
         "id": "office-minister-of-state-180",
         "kind": "office",
         "label": "Minister of State for Courts and Legal Services",
-        "office_type": "junior_minister",
-        "op_total": 0
-      }
-    },
-    {
-      "data": {
-        "also_holds": [],
-        "body_id": "uk-state-body-department-of-health-and-social-care",
-        "holder": "Stephen Kinnock MP",
-        "holder_since": "2024-07-08",
-        "id": "office-minister-of-state-182",
-        "kind": "office",
-        "label": "Minister of State for Care",
         "office_type": "junior_minister",
         "op_total": 0
       }
@@ -40108,32 +40199,6 @@
     {
       "data": {
         "also_holds": [],
-        "body_id": "uk-state-body-home-office",
-        "holder": "Alex Norris MP",
-        "holder_since": "2025-09-06",
-        "id": "office-minister-of-state-205",
-        "kind": "office",
-        "label": "Minister of State (Minister for Border Security and Asylum)",
-        "office_type": "junior_minister",
-        "op_total": 0
-      }
-    },
-    {
-      "data": {
-        "also_holds": [],
-        "body_id": "uk-state-body-department-for-business-and-trade",
-        "holder": "Sir Chris Bryant MP",
-        "holder_since": "2025-09-06",
-        "id": "office-minister-of-state-206",
-        "kind": "office",
-        "label": "Minister of State (Minister for Trade)",
-        "office_type": "junior_minister",
-        "op_total": 0
-      }
-    },
-    {
-      "data": {
-        "also_holds": [],
         "body_id": "uk-state-body-ministry-of-defence",
         "holder": "Luke Pollard MP",
         "holder_since": "2025-09-06",
@@ -40187,6 +40252,21 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Parliamentary Under-Secretary of State (Minister for AI and Online Safety)"
+        ],
+        "body_id": "uk-state-body-cabinet-office",
+        "holder": "Kanishka Narayan MP",
+        "holder_since": "2026-07-20",
+        "id": "office-minister-of-state-minister-for-artificial-intelligence",
+        "kind": "office",
+        "label": "Minister of State (Minister for Artificial Intelligence)",
+        "office_type": "junior_minister",
+        "op_total": 0
+      }
+    },
+    {
+      "data": {
         "also_holds": [],
         "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
         "holder": "Michael Shanks MP",
@@ -40207,6 +40287,21 @@
         "id": "office-minister-of-state-minister-for-energy-security-and-net-zero",
         "kind": "office",
         "label": "Minister of State (Minister for Energy Security and Net Zero)",
+        "office_type": "junior_minister",
+        "op_total": 0
+      }
+    },
+    {
+      "data": {
+        "also_holds": [
+          "Parliamentary Under-Secretary of State (Middle East, North Africa, Afghanistan and Pakistan)"
+        ],
+        "body_id": "uk-state-body-cabinet-office",
+        "holder": "Hamish Falconer MP",
+        "holder_since": "2026-07-20",
+        "id": "office-minister-of-state-minister-for-intergovernmental-relations-and-european-relations",
+        "kind": "office",
+        "label": "Minister of State (Minister for Intergovernmental Relations and European Relations)",
         "office_type": "junior_minister",
         "op_total": 0
       }
@@ -40497,19 +40592,6 @@
     {
       "data": {
         "also_holds": [],
-        "body_id": "uk-state-body-foreign-commonwealth-development-office",
-        "holder": "Hamish Falconer MP",
-        "holder_since": "2024-07-18",
-        "id": "office-parliamentary-under-secretary-of-state-276",
-        "kind": "office",
-        "label": "Parliamentary Under-Secretary of State (Middle East, North Africa, Afghanistan and Pakistan)",
-        "office_type": "junior_minister",
-        "op_total": 0
-      }
-    },
-    {
-      "data": {
-        "also_holds": [],
         "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
         "holder": "Mary Creagh CBE MP",
         "holder_since": "2024-07-18",
@@ -40741,19 +40823,6 @@
         "id": "office-parliamentary-under-secretary-of-state-313",
         "kind": "office",
         "label": "Parliamentary Under-Secretary of State (Minister for Faith)",
-        "office_type": "junior_minister",
-        "op_total": 0
-      }
-    },
-    {
-      "data": {
-        "also_holds": [],
-        "body_id": "uk-state-body-department-for-science-innovation-and-technology",
-        "holder": "Kanishka Narayan MP",
-        "holder_since": "2025-09-07",
-        "id": "office-parliamentary-under-secretary-of-state-minister-for-ai-and-online-safety",
-        "kind": "office",
-        "label": "Parliamentary Under-Secretary of State (Minister for AI and Online Safety)",
         "office_type": "junior_minister",
         "op_total": 0
       }
@@ -41067,8 +41136,8 @@
           "Minister for the Union"
         ],
         "body_id": "uk-state-body-prime-ministers-office-10-downing-street",
-        "holder": "The Rt Hon Sir Keir Starmer KCB KC MP",
-        "holder_since": "2024-07-05",
+        "holder": "The Rt Hon Andy Burnham MP",
+        "holder_since": "2026-07-20",
         "id": "office-prime-minister",
         "kind": "office",
         "label": "Prime Minister",
@@ -41080,8 +41149,8 @@
       "data": {
         "also_holds": [],
         "body_id": "uk-state-body-department-for-energy-security-and-net-zero",
-        "holder": "The Rt Hon Ed Miliband MP",
-        "holder_since": "2024-07-05",
+        "holder": "Miatta Fahnbulleh MP",
+        "holder_since": "2026-07-20",
         "id": "office-secretary-of-state",
         "kind": "office",
         "label": "Secretary of State for Energy Security and Net Zero",
@@ -41121,8 +41190,8 @@
       "data": {
         "also_holds": [],
         "body_id": "uk-state-body-ministry-of-defence",
-        "holder": "Dan Jarvis MBE MP",
-        "holder_since": "2026-06-11",
+        "holder": "The Rt Hon Wes Streeting MP",
+        "holder_since": "2026-07-20",
         "id": "office-secretary-of-state-for-defence",
         "kind": "office",
         "label": "Secretary of State for Defence",
@@ -41132,12 +41201,10 @@
     },
     {
       "data": {
-        "also_holds": [
-          "Minister for Women and Equalities"
-        ],
+        "also_holds": [],
         "body_id": "uk-state-body-department-for-education",
-        "holder": "The Rt Hon Bridget Phillipson MP",
-        "holder_since": "2024-07-05",
+        "holder": "The Rt Hon Lucy Powell MP",
+        "holder_since": "2026-07-20",
         "id": "office-secretary-of-state-for-education",
         "kind": "office",
         "label": "Secretary of State for Education",
@@ -41147,10 +41214,13 @@
     },
     {
       "data": {
-        "also_holds": [],
+        "also_holds": [
+          "Minister of State (Minister for Security)",
+          "Minister of State"
+        ],
         "body_id": "uk-state-body-department-for-environment-food-rural-affairs",
-        "holder": "The Rt Hon Emma Reynolds MP",
-        "holder_since": "2025-09-05",
+        "holder": "Dame Angela Eagle DBE MP",
+        "holder_since": "2026-07-20",
         "id": "office-secretary-of-state-for-environment-food-and-rural-affairs",
         "kind": "office",
         "label": "Secretary of State for Environment, Food and Rural Affairs",
@@ -41719,8 +41789,8 @@
       "data": {
         "also_holds": [],
         "body_id": "uk-state-body-foreign-commonwealth-development-office",
-        "holder": "The Rt Hon Yvette Cooper MP",
-        "holder_since": "2025-09-05",
+        "holder": "The Rt Hon Ed Miliband MP",
+        "holder_since": "2026-07-20",
         "id": "office-secretary-of-state-for-foreign-commonwealth-and-development-affairs",
         "kind": "office",
         "label": "Secretary of State for Foreign, Commonwealth and Development Affairs",
@@ -41732,8 +41802,8 @@
       "data": {
         "also_holds": [],
         "body_id": "uk-state-body-department-of-health-and-social-care",
-        "holder": "The Rt Hon James Murray MP",
-        "holder_since": "2026-05-14",
+        "holder": "The Rt Hon Yvette Cooper MP",
+        "holder_since": "2026-07-20",
         "id": "office-secretary-of-state-for-health-and-social-care",
         "kind": "office",
         "label": "Secretary of State for Health and Social Care",
@@ -41745,8 +41815,8 @@
       "data": {
         "also_holds": [],
         "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
-        "holder": "The Rt Hon Steve Reed OBE MP",
-        "holder_since": "2025-09-05",
+        "holder": "The Rt Hon Angela Rayner MP",
+        "holder_since": "2026-07-20",
         "id": "office-secretary-of-state-for-housing-communities-local-government",
         "kind": "office",
         "label": "Secretary of State for Housing, Communities and Local Government",
@@ -41756,10 +41826,27 @@
     },
     {
       "data": {
-        "also_holds": [],
-        "body_id": "uk-state-body-northern-ireland-office",
-        "holder": "The Rt Hon Hilary Benn MP",
-        "holder_since": "2024-07-05",
+        "also_holds": [
+          "Minister of State (Minister for Border Security and Asylum)"
+        ],
+        "body_id": "uk-state-body-home-office",
+        "holder": "Alex Norris MP",
+        "holder_since": "2026-07-20",
+        "id": "office-secretary-of-state-for-justice",
+        "kind": "office",
+        "label": "Lord Chancellor and Secretary of State for Justice",
+        "office_type": "cabinet_minister",
+        "op_total": 0
+      }
+    },
+    {
+      "data": {
+        "also_holds": [
+          "Minister of State (Minister for Trade)"
+        ],
+        "body_id": "uk-state-body-department-for-business-and-trade",
+        "holder": "Sir Chris Bryant MP",
+        "holder_since": "2026-07-20",
         "id": "office-secretary-of-state-for-northern-ireland",
         "kind": "office",
         "label": "Secretary of State for Northern Ireland",
@@ -41821,6 +41908,21 @@
     },
     {
       "data": {
+        "also_holds": [
+          "Minister of State for Care"
+        ],
+        "body_id": "uk-state-body-department-of-health-and-social-care",
+        "holder": "Stephen Kinnock MP",
+        "holder_since": "2026-07-20",
+        "id": "office-secretary-of-state-for-wales",
+        "kind": "office",
+        "label": "Secretary of State for Wales",
+        "office_type": "cabinet_minister",
+        "op_total": 0
+      }
+    },
+    {
+      "data": {
         "also_holds": [],
         "body_id": "uk-state-body-department-for-work-pensions",
         "holder": "The Rt Hon Pat McFadden MP",
@@ -41829,19 +41931,6 @@
         "kind": "office",
         "label": "Secretary of State for Work and Pensions",
         "office_type": "cabinet_minister",
-        "op_total": 0
-      }
-    },
-    {
-      "data": {
-        "also_holds": [],
-        "body_id": "uk-state-body-attorney-generals-office",
-        "holder": "The Rt Hon Ellie Reeves KC MP",
-        "holder_since": "2025-09-06",
-        "id": "office-solicitor-general",
-        "kind": "office",
-        "label": "Solicitor General",
-        "office_type": "junior_minister",
         "op_total": 0
       }
     }

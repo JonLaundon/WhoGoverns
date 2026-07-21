@@ -132,6 +132,18 @@
     "title": "First Lord of the Treasury"
   },
   {
+    "body_id": "uk-state-body-cabinet-office",
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-first-secretary-of-state",
+    "office_type": "cabinet_minister",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "title": "First Secretary of State"
+  },
+  {
     "body_id": "uk-state-body-office-of-the-leader-of-the-house-of-lords",
     "last_reviewed": null,
     "notes": "office_type heuristic = other; review.",
@@ -350,7 +362,7 @@
   {
     "body_id": "uk-state-body-office-of-the-advocate-general-for-scotland",
     "last_reviewed": null,
-    "notes": "Junior law officer (advises the UK government on Scots law); tiered as a junior minister, appointed by the PM.",
+    "notes": null,
     "office_id": "office-hm-advocate-general-for-scotland",
     "office_type": "junior_minister",
     "record_status": "extracted",
@@ -432,6 +444,18 @@
     "title": "Minister for Intergovernmental Relations"
   },
   {
+    "body_id": "uk-state-body-cabinet-office",
+    "last_reviewed": null,
+    "notes": "office_type heuristic = other; review.",
+    "office_id": "office-minister-for-the-cabinet-office",
+    "office_type": "other",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "title": "Minister for the Cabinet Office"
+  },
+  {
     "body_id": "uk-state-body-prime-ministers-office-10-downing-street",
     "last_reviewed": null,
     "notes": "office_type heuristic = other; review.",
@@ -468,7 +492,7 @@
     "title": "Minister for the Union"
   },
   {
-    "body_id": "uk-state-body-department-for-education",
+    "body_id": "uk-state-body-ministry-of-housing-communities-local-government",
     "last_reviewed": null,
     "notes": "office_type heuristic = other; review.",
     "office_id": "office-minister-for-women-and-equalities-3",
@@ -780,6 +804,18 @@
     "title": "Minister of State (International Development and Africa)"
   },
   {
+    "body_id": "uk-state-body-cabinet-office",
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-minister-for-artificial-intelligence",
+    "office_type": "junior_minister",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "title": "Minister of State (Minister for Artificial Intelligence)"
+  },
+  {
     "body_id": "uk-state-body-department-for-culture-media-and-sport",
     "last_reviewed": null,
     "notes": null,
@@ -814,6 +850,18 @@
       "source-official-dataset-govuk-content-api"
     ],
     "title": "Minister of State (Minister for Energy Security and Net Zero)"
+  },
+  {
+    "body_id": "uk-state-body-cabinet-office",
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-minister-of-state-minister-for-intergovernmental-relations-and-european-relations",
+    "office_type": "junior_minister",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "title": "Minister of State (Minister for Intergovernmental Relations and European Relations)"
   },
   {
     "body_id": "uk-state-body-department-for-business-and-trade",
@@ -1788,7 +1836,7 @@
     "title": "Secretary of State for Housing, Communities and Local Government"
   },
   {
-    "body_id": "uk-state-body-ministry-of-justice",
+    "body_id": "uk-state-body-home-office",
     "last_reviewed": null,
     "notes": null,
     "office_id": "office-secretary-of-state-for-justice",
@@ -1800,7 +1848,7 @@
     "title": "Lord Chancellor and Secretary of State for Justice"
   },
   {
-    "body_id": "uk-state-body-northern-ireland-office",
+    "body_id": "uk-state-body-department-for-business-and-trade",
     "last_reviewed": null,
     "notes": null,
     "office_id": "office-secretary-of-state-for-northern-ireland",
@@ -1858,6 +1906,18 @@
       "source-official-dataset-govuk-content-api"
     ],
     "title": "Secretary of State for Transport"
+  },
+  {
+    "body_id": "uk-state-body-department-of-health-and-social-care",
+    "last_reviewed": null,
+    "notes": null,
+    "office_id": "office-secretary-of-state-for-wales",
+    "office_type": "cabinet_minister",
+    "record_status": "extracted",
+    "source_ids": [
+      "source-official-dataset-govuk-content-api"
+    ],
+    "title": "Secretary of State for Wales"
   },
   {
     "body_id": "uk-state-body-department-for-work-pensions",

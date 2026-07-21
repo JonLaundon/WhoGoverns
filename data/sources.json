@@ -130,7 +130,7 @@
     "version_date": "2025-10-29"
   },
   {
-    "accessed_date": "2026-07-06",
+    "accessed_date": "2026-07-21",
     "legal_status": "current",
     "licence": "Open Government Licence v3.0",
     "notes": "Per-organisation content items; links.ordered_ministers -> role_appointments used for current ministers. Raw responses cached under data/sources/raw/govuk-content-ministers/ by ingest_ministers.py. This access: 24 organisations.",
@@ -140,7 +140,7 @@
     "source_type": "official_dataset",
     "title": "GOV.UK Content API — organisation ministers",
     "url": "https://www.gov.uk/api/content/government/organisations",
-    "version_date": "2026-07-06"
+    "version_date": "2026-07-21"
   },
   {
     "accessed_date": "2026-07-05",

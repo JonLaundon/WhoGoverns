@@ -1,9 +1,9 @@
 {
   "annex_a_version": "0.4",
-  "generated": "2026-07-21T12:42:45",
+  "generated": "2026-07-21T12:55:34",
   "graph": {
-    "edges": 895,
-    "nodes": 820
+    "edges": 905,
+    "nodes": 819
   },
   "notes": "Compiled by pipeline/compile.py from data/. graph.json is the map contract; state_machine.sqlite is the query mirror (gitignored, regenerable).",
   "project": "WhoGoverns",
@@ -12,8 +12,8 @@
     "budget_records": 1433,
     "duties": 16,
     "instruments": 6,
-    "offices": 159,
-    "person_roles": 159,
+    "offices": 164,
+    "person_roles": 181,
     "powers": 31,
     "provisions": 65,
     "relationships": 639,
