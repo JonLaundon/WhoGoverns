@@ -4,11 +4,11 @@
 
 Decision #27's breadcrumb method widens the net without sweeping the whole statute book, but it only works if the leads are tracked. This file is derived from the records every time it runs, so a stub that has been closed disappears by itself and the count is a real completeness measure rather than a feeling.
 
-**131 open stub(s).**
+**137 open stub(s).**
 
 29 provision(s) are suppressed as CORRECTLY unmined (amending, constitutive, or binding a private party) — see `CORRECTLY_UNMINED` in the script for the reason recorded against each.
 
-## dangling reference (127)
+## dangling reference (133)
 
 - **`competition-act-1998-s18`** — references competition-act-1998-s19, which is not held
 - **`competition-act-1998-s2`** — references competition-act-1998-s3, which is not held
@@ -20,6 +20,13 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`criminal-justice-act-1987-s2`** — references criminal-justice-act-1987-s1, which is not held
 - **`criminal-justice-act-1987-s2`** — references criminal-justice-act-1987-s13, which is not held
 - **`criminal-justice-act-1987-s2`** — references criminal-justice-and-police-act-2001-s50, which is not held
+- **`electricity-act-1989-s36`** — references electricity-act-1989-s32, which is not held
+- **`electricity-act-1989-s36`** — references electricity-act-1989-s4, which is not held
+- **`electricity-act-1989-s36`** — references government-of-wales-act-2006-s158, which is not held
+- **`electricity-act-1989-s36`** — references infrastructure-wales-act-2024-s20, which is not held
+- **`electricity-act-1989-s36`** — references marine-and-coastal-access-act-2009-s12, which is not held
+- **`electricity-act-1989-s37`** — references electricity-act-1989-s37a, which is not held
+- **`electricity-act-1989-s37`** — references wales-act-2017-s39, which is not held
 - **`enterprise-act-2002-s109`** — references enterprise-act-2002-s22, which is not held
 - **`enterprise-act-2002-s109`** — references enterprise-act-2002-s45, which is not held
 - **`enterprise-act-2002-s109`** — references enterprise-act-2002-s70a, which is not held
@@ -46,7 +53,6 @@ Decision #27's breadcrumb method widens the net without sweeping the whole statu
 - **`planning-act-2008-s131`** — references acquisition-of-land-act-1981-s19, which is not held
 - **`planning-act-2008-s131`** — references planning-act-2008-s132, which is not held
 - **`planning-act-2008-s33`** — references ancient-monuments-and-archaeological-areas-act-1979-s35, which is not held
-- **`planning-act-2008-s33`** — references electricity-act-1989-s36, which is not held
 - **`planning-act-2008-s33`** — references green-belt-london-and-home-counties-act-1938-s10, which is not held
 - **`planning-act-2008-s33`** — references highways-act-1980-s10, which is not held
 - **`planning-act-2008-s33`** — references new-roads-and-street-works-act-1991-s6, which is not held

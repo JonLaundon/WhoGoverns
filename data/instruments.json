@@ -57,6 +57,20 @@
   },
   {
     "enacted_by": "Parliament",
+    "instrument_id": "instrument-act-electricity-act-1989",
+    "instrument_type": "act",
+    "legislation_url": "https://www.legislation.gov.uk/ukpga/1989/29",
+    "made_under": null,
+    "notes": "Sibling regime: consent for generating stations (s.36) and overhead lines (s.37). Reached from Planning Act s.120.",
+    "number": "29",
+    "record_status": "extracted",
+    "source_id": "source-act-electricity-act-1989",
+    "status": "in_force",
+    "title": "Electricity Act 1989",
+    "year": 1989
+  },
+  {
+    "enacted_by": "Parliament",
     "instrument_id": "instrument-act-enterprise-act-2002",
     "instrument_type": "act",
     "legislation_url": "https://www.legislation.gov.uk/ukpga/2002/40",

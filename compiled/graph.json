@@ -3,13 +3,13 @@
     "bodies": 685,
     "budget_records": 1433,
     "duties": 21,
-    "instruments": 19,
+    "instruments": 20,
     "offices": 164,
     "person_roles": 181,
-    "powers": 47,
-    "provisions": 103,
+    "powers": 49,
+    "provisions": 105,
     "relationships": 639,
-    "sources": 28,
+    "sources": 29,
     "staffing_records": 3884,
     "vetoes": 12
   },
@@ -8096,7 +8096,7 @@
       }
     }
   ],
-  "generated": "2026-07-21T20:44:39",
+  "generated": "2026-07-21T20:49:03",
   "nodes": [
     {
       "data": {
@@ -15315,15 +15315,68 @@
         "kind": "body",
         "label": "Department for Energy Security and Net Zero",
         "needs_review": false,
-        "op_total": 1,
+        "op_total": 3,
         "operative": {
           "counts": {
             "duties": 0,
-            "powers": 1,
+            "powers": 3,
             "vetoes": 0
           },
           "duties": [],
           "powers": [
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.36(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1989/29/section/36"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "Subject to the exceptions in s.36(1A)-(2), (4)."
+              ],
+              "holder_type": "body",
+              "id": "power-sos-energy-electricity1989-s36",
+              "kind": "power",
+              "label": "Consent to the construction of a generating station",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "HOLDER-RESOLUTION: the SoS for Energy Security and Net Zero; recorded on the DESNZ body (no clean energy-SoS office yet), like the gas and s.124A cases.",
+              "office_id": null,
+              "outstanding_effects": true,
+              "provision_key": "electricity-act-1989-s36",
+              "since": 1989,
+              "source_id": "source-act-electricity-act-1989",
+              "summary": "A generating station may not be constructed, extended or operated except with the consent of the Secretary of State (Electricity Act 1989 s.36). The energy infrastructure consent — the pre-DCO route, now used for stations below the NSIP threshold; a sibling of the DCO in the consenting fabric.",
+              "type": "consent",
+              "verification_status": "unverified"
+            },
+            {
+              "basis": "statutory",
+              "citation": {
+                "provision": "s.37(1)",
+                "quote": null,
+                "url": "https://www.legislation.gov.uk/ukpga/1989/29/section/37"
+              },
+              "confidence": 0.85,
+              "constraints": [
+                "Subject to the exceptions in s.37(1A)-(2A)."
+              ],
+              "holder_type": "body",
+              "id": "power-sos-energy-electricity1989-s37",
+              "kind": "power",
+              "label": "Consent to overhead electric lines",
+              "legal_effect": "may",
+              "legal_status": "current",
+              "notes": "HOLDER-RESOLUTION as s.36 (DESNZ body).",
+              "office_id": null,
+              "provision_key": "electricity-act-1989-s37",
+              "since": 1989,
+              "source_id": "source-act-electricity-act-1989",
+              "summary": "An overhead electric line may not be installed or kept installed except with the consent of the appropriate authority (Electricity Act 1989 s.37). The overhead-lines consent — the routine energy-infrastructure gate, alongside the s.36 generating-station consent.",
+              "type": "consent",
+              "verification_status": "unverified"
+            },
             {
               "basis": "statutory",
               "citation": {
@@ -42985,6 +43038,11 @@
       "publisher": "legislation.gov.uk (The National Archives)",
       "title": "Criminal Justice Act 1987",
       "url": "https://www.legislation.gov.uk/ukpga/1987/38"
+    },
+    "source-act-electricity-act-1989": {
+      "publisher": "legislation.gov.uk (The National Archives)",
+      "title": "Electricity Act 1989",
+      "url": "https://www.legislation.gov.uk/ukpga/1989/29"
     },
     "source-act-enterprise-act-2002": {
       "publisher": "legislation.gov.uk (The National Archives)",

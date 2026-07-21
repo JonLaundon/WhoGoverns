@@ -230,6 +230,181 @@
   },
   {
     "citation": {
+      "content_hash": "ab8260a697114939",
+      "url": "https://www.legislation.gov.uk/ukpga/1989/29/section/36",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Consent required for construction etc. of generating stations.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-electricity-act-1989",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": true,
+    "outstanding_effects_note": "Unapplied amendment(s) to this section as at 2026-07-21: Planning and Infrastructure Act 2025 s. 4(5)(a) (inserted); Planning and Infrastructure Act 2025 s. 4(5)(b) (inserted). Consolidated text may lag the law in force.",
+    "provision_key": "electricity-act-1989-s36",
+    "provision_ref": "s.36",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "electricity-act-1989",
+        "internal": true,
+        "provision_key": "electricity-act-1989-s4",
+        "raw": "section 4"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": false,
+        "provision_key": "planning-act-2008-s33",
+        "raw": "section 33(1)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "infrastructure-wales-act-2024",
+        "internal": false,
+        "provision_key": "infrastructure-wales-act-2024-s20",
+        "raw": "section 20(1)"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "marine-and-coastal-access-act-2009",
+        "internal": false,
+        "provision_key": "marine-and-coastal-access-act-2009-s12",
+        "raw": "section 12"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "electricity-act-1989",
+        "internal": true,
+        "provision_key": "electricity-act-1989-s37",
+        "raw": "section 37"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "electricity-act-1989",
+        "internal": true,
+        "provision_key": "electricity-act-1989-s36",
+        "raw": "section 36"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "electricity-act-1989",
+        "internal": true,
+        "provision_key": "electricity-act-1989-s32",
+        "raw": "section 32(2)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "government-of-wales-act-2006",
+        "internal": false,
+        "provision_key": "government-of-wales-act-2006-s158",
+        "raw": "section 158"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Planning Act 2008"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "infrastructure-wales-act-2024",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Infrastructure (Wales) Act 2024"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "marine-and-coastal-access-act-2009",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Marine and Coastal Access Act 2009"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "water-environment-and-water-services-scotland-act-2003",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Water Environment and Water Services (Scotland) Act 2003"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "government-of-wales-act-2006",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Government of Wales Act 2006"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
+      "content_hash": "24d0493ff7dc5616",
+      "url": "https://www.legislation.gov.uk/ukpga/1989/29/section/37",
+      "version_date": "2026-07-21"
+    },
+    "commenced_by": null,
+    "heading": "Consent required for overhead lines.",
+    "in_force_from": null,
+    "instrument_id": "instrument-act-electricity-act-1989",
+    "made_under": null,
+    "notes": null,
+    "outstanding_effects": false,
+    "outstanding_effects_note": "No unapplied effects recorded against this section as at 2026-07-21 (Act/Chapter-level effects are not attributed to individual sections).",
+    "provision_key": "electricity-act-1989-s37",
+    "provision_ref": "s.37",
+    "record_status": "extracted",
+    "references": [
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": false,
+        "provision_key": "planning-act-2008-s33",
+        "raw": "section 33(1)"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "wales-act-2017",
+        "internal": false,
+        "provision_key": "wales-act-2017-s39",
+        "raw": "section 39"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "electricity-act-1989",
+        "internal": true,
+        "provision_key": "electricity-act-1989-s36",
+        "raw": "section 36"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "electricity-act-1989",
+        "internal": true,
+        "provision_key": "electricity-act-1989-s37a",
+        "raw": "sections 37A"
+      },
+      {
+        "in_model": true,
+        "instrument_slug": "planning-act-2008",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Planning Act 2008"
+      },
+      {
+        "in_model": false,
+        "instrument_slug": "wales-act-2017",
+        "internal": false,
+        "provision_key": null,
+        "raw": "Wales Act 2017"
+      }
+    ],
+    "status": "in_force"
+  },
+  {
+    "citation": {
       "content_hash": "ac0efcdb2404eb75",
       "url": "https://www.legislation.gov.uk/ukpga/2002/40/section/109",
       "version_date": "2026-07-21"
@@ -1104,7 +1279,7 @@
         "raw": "section 35"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "electricity-act-1989",
         "internal": false,
         "provision_key": "electricity-act-1989-s36",
@@ -1223,7 +1398,7 @@
         "raw": "Ancient Monuments and Archaeological Areas Act 1979"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "electricity-act-1989",
         "internal": false,
         "provision_key": null,
@@ -2888,7 +3063,7 @@
         "raw": "section 31(3)"
       },
       {
-        "in_model": false,
+        "in_model": true,
         "instrument_slug": "electricity-act-1989",
         "internal": false,
         "provision_key": null,

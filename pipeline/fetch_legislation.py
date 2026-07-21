@@ -254,6 +254,12 @@ NERC_2006 = {
     "leg_type": "ukpga", "year": 2006, "number": "16", "sections": ["40"],
     "instrument_note": "Environment: the biodiversity duty on public authorities (s.40). Reached via the environment breadcrumbs; reservoir-relevant (biodiversity).",
 }
+ELECTRICITY_1989 = {
+    "instrument_id": "instrument-act-electricity-act-1989", "source_id": "source-act-electricity-act-1989",
+    "slug": "electricity-act-1989", "title": "Electricity Act 1989", "leg_type": "ukpga", "year": 1989,
+    "number": "29", "sections": ["36", "37"],
+    "instrument_note": "Sibling regime: consent for generating stations (s.36) and overhead lines (s.37). Reached from Planning Act s.120.",
+}
 GAS_1965 = {
     "instrument_id": "instrument-act-gas-act-1965", "source_id": "source-act-gas-act-1965",
     "slug": "gas-act-1965", "title": "Gas Act 1965", "leg_type": "ukpga", "year": 1965,
@@ -262,7 +268,7 @@ GAS_1965 = {
 }
 ACTS = [WIA_1991, WATER_ACT_2014, WRA_1991, WCA_1981, INSOLVENCY_1986, WSMA_2025,
         ENTERPRISE_2002, COMPETITION_1998, COMPANIES_1985, FSMA_2000, CJA_1987,
-        PLANNING_2008, MARINE_2009, HARBOURS_1964, TWA_1992, GAS_1965, AMAA_1979, NERC_2006]
+        PLANNING_2008, MARINE_2009, HARBOURS_1964, TWA_1992, GAS_1965, AMAA_1979, NERC_2006, ELECTRICITY_1989]
 
 
 def fetch(url, timeout=30, retries=3):
